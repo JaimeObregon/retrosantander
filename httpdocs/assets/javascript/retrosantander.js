@@ -1,94 +1,51 @@
-import { MasonryInfiniteGrid } from 'https://cdn.skypack.dev/@egjs/infinitegrid'
+import { data } from './data.js'
+import { Grid } from './grid.js'
 import { zoom } from './zoom.js'
 
-const response = await fetch('/retrosantander.json')
-const db = await response.json()
+const search = document.querySelector('input')
+const main = document.querySelector('main')
+const cite = document.querySelector('cite')
+const details = document.querySelector('tr:nth-child(2)')
 
-function getItems(nextGroupKey, count) {
-  const nextItems = []
+search.setAttribute(
+  'placeholder',
+  `Filtra ${data.length} imágenes de Santander…`
+)
 
-  const regexp = new RegExp(document.querySelector('input').value, 'i')
-  const results = db
-    .reverse()
-    .filter((resource) => resource.details['Título'].match(regexp))
+const url = new URL(document.location.href)
+search.value = url.searchParams.get('q')
 
-  const z = results.map((o) => o.id)
+const grid = new Grid(main)
 
-  for (let i = 0; i < 50; ++i) {
-    const num = nextGroupKey * count + i
-    if (!z[num]) {
-      continue
-    }
-
-    const url = `https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${z[num]}`
-
-    nextItems.push(`
-      <figure>
-        <img src="${url}" alt="egjs" data-id="${z[num]}" />
-      </figure>`)
-  }
-
-  return nextItems
-}
-
-let grid
-const reset = () => {
-  grid = new MasonryInfiniteGrid('main', {
-    gap: 0,
-  })
-
-  grid.setPlaceholder({
-    html: `<figure class="placeholder"></figure>`,
-  })
-
-  grid.on('requestAppend', (e) => {
-    const nextGroupKey = +(e.groupKey || 0) + 1
-    e.wait()
-    e.currentTarget.appendPlaceholders(5, nextGroupKey)
-
-    setTimeout(() => {
-      e.ready()
-      grid.append(getItems(nextGroupKey, 50), nextGroupKey)
-    }, 1)
-  })
-}
-
-reset()
-
-grid.renderItems()
-
-document.addEventListener('click', (event) => {
-  if (event.target.tagName !== 'IMG') {
+main.addEventListener('mouseover', (event) => {
+  if (!(event.target instanceof HTMLImageElement)) {
     return
   }
 
-  zoom.to({
-    element: event.target,
-  })
-})
-
-document.addEventListener('mouseover', (event) => {
   const id = event.target.dataset.id
-  const p = db.find((l) => l.id === id)
-  if (!p) {
+  cite.innerText = data.find(id)?.details['Título'] || ''
+
+  const image = data.find(event.target.dataset.id)
+
+  details.innerHTML = `
+    <td>${image.details['Fecha']}</td>
+    <td>${image.details['Colección/Fondo']}</td>
+    <td>${image.details['Fotógrafo']}</td>
+    <td>${image.details['Soporte']}</td>
+    <td>${image.details['Procedimiento']}</td>
+    <td><a href="http://portal.ayto-santander.es/portalcdis/Public/FotoView.do?id=${image.id}" target="cdis">${image.id}</a></td>
+    `
+})
+
+main.addEventListener('click', (event) => {
+  if (
+    !(event.target instanceof HTMLImageElement) ||
+    event.target.parentElement.classList.contains('placeholder')
+  ) {
     return
   }
 
-  document.querySelector('aside span').innerText = p.details['Título']
+  zoom.to({ element: event.target })
 })
 
-document.querySelector('input').addEventListener('input', (event) => {
-  grid
-    .getItems()
-    .map((e) => e.key)
-    .forEach((i) => {
-      grid.removeByKey(i)
-    })
-
-  grid.destroy()
-  reset()
-
-  // grid.removeGroupByKey(0)
-  // grid.removeByKey(0)
-  // grid.renderItems()
-})
+search.addEventListener('input', grid.clear.bind(grid))

@@ -8,7 +8,9 @@ const REGEX_IMAGE = [
 			'<img src="\/portalcdis\/image\/DownloadFile\.do\?id=(?P<id>\d+)&ima=\d" width=".*" height=".*" alt=".*" title=".*" \/>',
 		'<\/a>\s*',
 		'<ul>\s*',
-			'<li class="acciones">\s*<a .+?\/a>\s*?<\/li>',
+			'<li class="acciones">\s*',
+        '<a href="\/portalcdis\/PrepareElegirResolucionView\.do;jsessionid=.{32}\?id=(?P<file>\d+)" .+?\/a>\s*?',
+      '<\/li>',
 			'(?P<details>.*?)',
 		'<\/ul>\s+',
 	'<\/dd>\s+',
@@ -37,6 +39,7 @@ if (!empty($matches['tags'])) {
 
 $result = [
 	'id' => trim($matches['id']),
+	'file' => trim($matches['file']),
 	'details' => $details ?? [],
 	'tags' => $tags ?? [],
 ];

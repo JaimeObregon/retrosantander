@@ -1,6 +1,21 @@
+@keyframes pulsate {
+  0% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.25;
+  }
+}
+
 :root {
   --color-neutral-50: #fafafa;
   --color-neutral-200: #e5e5e5;
+  --color-neutral-600: #525252;
   --color-neutral-700: #404040;
   --color-neutral-800: #262626;
   --color-neutral-900: #171717;
@@ -11,7 +26,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   user-select: none;
-  margin: 0 1.5rem;
+  margin: 0 20px;
   background: var(--color-neutral-900);
 }
 
@@ -22,6 +37,7 @@ body {
 }
 
 aside {
+  box-sizing: border-box;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,11 +45,12 @@ aside {
   z-index: 10000;
   display: flex;
   align-items: center;
-  padding: 0.5rem 1.5rem;
+  padding: 8px 20px;
   border-bottom: 1px solid var(--color-neutral-700);
-  box-shadow: 0 0.25em 0.25em #1c191750;
-  background-color: #171717c0; /* --color-neutral-900 */
+  box-shadow: 0 5px 5px #1c191750;
+  background-color: #171717f0; /* --color-neutral-900 */
   backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 aside h1 {
@@ -42,16 +59,87 @@ aside h1 {
 
 aside input {
   font-size: 14px;
-  margin: 0 1.5rem;
+  width: 20em;
+  margin: 0 25px;
   border: none;
   border-radius: 50px;
-  padding: 0.5rem 1rem;
-  width: 25em;
+  padding: 8px 15px;
 }
 
-aside span {
+aside div {
+  flex-grow: 1;
+}
+
+aside div cite {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   color: var(--color-neutral-50);
-  font-size: 15px;
+}
+
+aside div table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5px;
+}
+
+aside div table th {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: left;
+  padding: 0;
+}
+
+aside div table th:nth-child(1) {
+  width: 11%;
+}
+
+aside div table th:nth-child(2) {
+  width: 25%;
+}
+
+aside div table th:nth-child(3) {
+  width: 20%;
+}
+
+aside div table th:nth-child(4) {
+  width: 10%;
+}
+
+aside div table th:nth-child(5) {
+  width: 24%;
+}
+
+aside div table th:nth-child(6) {
+  width: 10%;
+}
+
+aside div table td {
+  font-size: 14px;
+  padding: 0;
+  vertical-align: top;
+  font-weight: 800;
+}
+
+aside div table td a {
+  color: inherit;
+  text-decoration: none;
+}
+
+aside button {
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+aside button svg {
+  fill: white;
+  width: 30px;
+  height: 30px;
 }
 
 main {
@@ -59,25 +147,30 @@ main {
 }
 
 main figure {
-  width: calc(20% - 1rem);
+  width: calc(20% - 15px);
   margin: 0;
+  box-sizing: border-box;
 }
 
-main figure.placeholder {
-  min-height: 12em;
-  border-radius: 4px;
-  background-color: var(--color-neutral-800);
+main figure.placeholder img {
+  height: 250px;
+  border: none;
+  background: var(--color-neutral-800);
+  animation: pulsate 2s ease-in-out infinite;
 }
 
 main img {
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 15px;
   border-radius: 4px;
-  cursor: pointer;
   transition: ease-out 500ms;
 }
 
-main img:hover {
+main figure:not(.placeholder) {
+  cursor: pointer;
+}
+
+main:not(.zoomed) figure:not(.placeholder) img:hover {
   transform: scale(1.05);
   transition: ease-in-out 100ms;
 }

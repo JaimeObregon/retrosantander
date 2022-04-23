@@ -1,4 +1,5 @@
 const target = document.querySelector('main')
+
 const padding = 10
 
 var level = 1
@@ -20,12 +21,14 @@ const magnify = (rect, scale) => {
   // Reset
   if (scale === 1) {
     target.style.transform = ''
+    target.classList.remove('zoomed')
   }
   // Scale
   else {
     const scrollOffset = getScrollOffset()
     target.style.transformOrigin = `${scrollOffset.x}px ${scrollOffset.y}px`
     target.style.transform = `translate(${-rect.x}px, ${-rect.y}px) scale(${scale})`
+    target.classList.add('zoomed')
   }
 
   level = scale
