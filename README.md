@@ -62,15 +62,15 @@ mkdir jpeg && curl -K jpeg.txt
 
 ```bash
 for file in images/image_*.html;
-    do cat $file | php parse.php; done \
-| jq --slurp > cdis.json
+    do cat $file | php parser.php; done \
+| jq --slurp > retrosantander.json
 ```
 
 ## 7. Eliminar la marca de agua
 
 ```bash
 mkdir merged
-for id in `jq --raw-output '.[].id' cdis.json`; do
+for id in `jq --raw-output '.[].id' retrosantander.json`; do
     convert \
         jpeg/${id}_b.jpeg \
         \( jpeg/${id}_a.jpeg -gravity south -crop 0x10%+0+0 \) \
