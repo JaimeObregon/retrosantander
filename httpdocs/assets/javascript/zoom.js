@@ -1,57 +1,15 @@
-// The current zoom level (scale)
+const target = document.querySelector('main')
+const padding = 10
+
 var level = 1
 
-// The current mouse position, used for panning
-var mouseX = 0
-var mouseY = 0
-
-// Timeout before pan is activated
-var panEngageTimeout = -1
-var panUpdateInterval = -1
-
-// Check for transform support so that we can fallback otherwise
-var supportsTransforms =
-  'WebkitTransform' in document.body.style ||
-  'MozTransform' in document.body.style ||
-  'msTransform' in document.body.style ||
-  'OTransform' in document.body.style ||
-  'transform' in document.body.style
-
-if (supportsTransforms) {
-  // The easing that will be applied when we zoom in/out
-  document.body.style.transition = 'transform 0.8s ease'
-  document.body.style.OTransition = '-o-transform 0.8s ease'
-  document.body.style.msTransition = '-ms-transform 0.8s ease'
-  document.body.style.MozTransition = '-moz-transform 0.8s ease'
-  document.body.style.WebkitTransition = '-webkit-transform 0.8s ease'
-}
-
-// Zoom out if the user hits escape
 document.addEventListener('keyup', (event) => {
-  if (level !== 1 && event.keyCode === 27) {
+  if (level !== 1 && event.key === 'Escape') {
     zoom.out()
   }
 })
 
-// Monitor mouse movement for panning
-document.addEventListener('mousemove', (event) => {
-  if (level !== 1) {
-    mouseX = event.clientX
-    mouseY = event.clientY
-  }
-})
-
-/**
- * Applies the CSS required to zoom in, prefers the use of CSS3
- * transforms but falls back on zoom for IE.
- *
- * @param {Object} rect
- * @param {Number} scale
- */
 const magnify = (rect, scale) => {
-  var scrollOffset = getScrollOffset()
-
-  // Ensure a width/height is set
   rect.width = rect.width || 1
   rect.height = rect.height || 1
 
@@ -59,98 +17,18 @@ const magnify = (rect, scale) => {
   rect.x -= (window.innerWidth - rect.width * scale) / 2
   rect.y -= (window.innerHeight - rect.height * scale) / 2
 
-  if (supportsTransforms) {
-    // Reset
-    if (scale === 1) {
-      document.body.style.transform = ''
-      document.body.style.OTransform = ''
-      document.body.style.msTransform = ''
-      document.body.style.MozTransform = ''
-      document.body.style.WebkitTransform = ''
-    }
-    // Scale
-    else {
-      var origin = scrollOffset.x + 'px ' + scrollOffset.y + 'px',
-        transform =
-          'translate(' + -rect.x + 'px,' + -rect.y + 'px) scale(' + scale + ')'
-
-      document.body.style.transformOrigin = origin
-      document.body.style.OTransformOrigin = origin
-      document.body.style.msTransformOrigin = origin
-      document.body.style.MozTransformOrigin = origin
-      document.body.style.WebkitTransformOrigin = origin
-
-      document.body.style.transform = transform
-      document.body.style.OTransform = transform
-      document.body.style.msTransform = transform
-      document.body.style.MozTransform = transform
-      document.body.style.WebkitTransform = transform
-    }
-  } else {
-    // Reset
-    if (scale === 1) {
-      document.body.style.position = ''
-      document.body.style.left = ''
-      document.body.style.top = ''
-      document.body.style.width = ''
-      document.body.style.height = ''
-      document.body.style.zoom = ''
-    }
-    // Scale
-    else {
-      document.body.style.position = 'relative'
-      document.body.style.left = -(scrollOffset.x + rect.x) / scale + 'px'
-      document.body.style.top = -(scrollOffset.y + rect.y) / scale + 'px'
-      document.body.style.width = scale * 100 + '%'
-      document.body.style.height = scale * 100 + '%'
-      document.body.style.zoom = scale
-    }
+  // Reset
+  if (scale === 1) {
+    target.style.transform = ''
+  }
+  // Scale
+  else {
+    const scrollOffset = getScrollOffset()
+    target.style.transformOrigin = `${scrollOffset.x}px ${scrollOffset.y}px`
+    target.style.transform = `translate(${-rect.x}px, ${-rect.y}px) scale(${scale})`
   }
 
   level = scale
-}
-
-/**
- * Pan the document when the mosue cursor approaches the edges
- * of the window.
- */
-const pan = () => {
-  var range = 0.12,
-    rangeX = window.innerWidth * range,
-    rangeY = window.innerHeight * range,
-    scrollOffset = getScrollOffset()
-
-  // Up
-  if (mouseY < rangeY) {
-    window.scroll(
-      scrollOffset.x,
-      scrollOffset.y - (1 - mouseY / rangeY) * (14 / level)
-    )
-  }
-  // Down
-  else if (mouseY > window.innerHeight - rangeY) {
-    window.scroll(
-      scrollOffset.x,
-      scrollOffset.y +
-        (1 - (window.innerHeight - mouseY) / rangeY) * (14 / level)
-    )
-  }
-
-  // Left
-  if (mouseX < rangeX) {
-    window.scroll(
-      scrollOffset.x - (1 - mouseX / rangeX) * (14 / level),
-      scrollOffset.y
-    )
-  }
-  // Right
-  else if (mouseX > window.innerWidth - rangeX) {
-    window.scroll(
-      scrollOffset.x +
-        (1 - (window.innerWidth - mouseX) / rangeX) * (14 / level),
-      scrollOffset.y
-    )
-  }
 }
 
 const getScrollOffset = () => ({
@@ -179,10 +57,9 @@ const zoom = {
       options.y = options.y || 0
 
       // If an element is set, that takes precedence
-      if (!!options.element) {
+      if (Boolean(options.element)) {
         // Space around the zoomed in element to leave on screen
-        const padding = 20
-        var bounds = options.element.getBoundingClientRect()
+        const bounds = options.element.getBoundingClientRect()
 
         options.x = bounds.left - padding
         options.y = bounds.top - padding
@@ -206,14 +83,6 @@ const zoom = {
         options.y *= options.scale
 
         magnify(options, options.scale)
-
-        if (options.pan !== false) {
-          // Wait with engaging panning as it may conflict with the
-          // zoom transition
-          panEngageTimeout = setTimeout(function () {
-            panUpdateInterval = setInterval(pan, 1000 / 60)
-          }, 800)
-        }
       }
     }
   },
@@ -222,18 +91,9 @@ const zoom = {
    * Resets the document zoom state to its default.
    */
   out: () => {
-    clearTimeout(panEngageTimeout)
-    clearInterval(panUpdateInterval)
-
     magnify({ x: 0, y: 0 }, 1)
-
     level = 1
   },
-
-  // Alias
-  magnify: (options) => this.to(options),
-  reset: () => this.out,
-  zoomLevel: () => level,
 }
 
 export { zoom }

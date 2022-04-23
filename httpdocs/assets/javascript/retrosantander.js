@@ -8,9 +8,9 @@ function getItems(nextGroupKey, count) {
   const nextItems = []
 
   const regexp = new RegExp(document.querySelector('input').value, 'i')
-  const results = db.filter((resource) =>
-    resource.details['Título'].match(regexp)
-  )
+  const results = db
+    .reverse()
+    .filter((resource) => resource.details['Título'].match(regexp))
 
   const z = results.map((o) => o.id)
 
@@ -28,7 +28,6 @@ function getItems(nextGroupKey, count) {
       </figure>`)
   }
 
-  console.log(nextItems)
   return nextItems
 }
 
@@ -50,7 +49,7 @@ const reset = () => {
     setTimeout(() => {
       e.ready()
       grid.append(getItems(nextGroupKey, 50), nextGroupKey)
-    }, 1000)
+    }, 1)
   })
 }
 
@@ -65,7 +64,6 @@ document.addEventListener('click', (event) => {
 
   zoom.to({
     element: event.target,
-    pan: false,
   })
 })
 
@@ -77,7 +75,6 @@ document.addEventListener('mouseover', (event) => {
   }
 
   document.querySelector('aside span').innerText = p.details['Título']
-  // console.log(event.target);
 })
 
 document.querySelector('input').addEventListener('input', (event) => {
@@ -92,9 +89,6 @@ document.querySelector('input').addEventListener('input', (event) => {
   reset()
 
   // grid.removeGroupByKey(0)
-  // grid.removeGroupByKey(1)
-  // grid.removeByKey(1)
-  // console.log(grid.getItems())
+  // grid.removeByKey(0)
   // grid.renderItems()
-  // console.log(grid.getItems())
 })
