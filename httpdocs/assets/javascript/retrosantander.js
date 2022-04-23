@@ -1,3 +1,5 @@
+// @ts-ignore
+import debounce from 'https://cdn.skypack.dev/debounce'
 import { data } from './data.js'
 import { Grid } from './grid.js'
 import { zoom } from './zoom.js'
@@ -18,7 +20,7 @@ search.value = url.searchParams.get('q')
 const grid = new Grid(main)
 
 main.addEventListener('mouseover', (event) => {
-  if (!(event.target instanceof HTMLImageElement)) {
+  if (!(event.target instanceof HTMLImageElement) || !event.target.dataset.id) {
     return
   }
 
@@ -48,4 +50,24 @@ main.addEventListener('click', (event) => {
   zoom.to({ element: event.target })
 })
 
-search.addEventListener('input', grid.clear.bind(grid))
+search.addEventListener(
+  'input',
+  debounce(() => {
+    grid.clear()
+    history.pushState(null, null, `/?q=${search.value}`)
+  }, 350).bind(grid)
+)
+
+search.addEventListener('blur', () => {
+  setTimeout(() => {
+    search.focus()
+  }, 0)
+})
+
+window.addEventListener('popstate', (event) => {
+  // Stay dry
+  // zoom out…
+  grid.clear()
+  const url = new URL(document.location.href)
+  search.value = url.searchParams.get('q')
+})

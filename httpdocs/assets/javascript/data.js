@@ -32,7 +32,7 @@ const data = {
     const query = normalize(string)
 
     if (!query.length) {
-      return index.map((result) => result.id)
+      return index
     }
 
     const regexp = new RegExp(query)

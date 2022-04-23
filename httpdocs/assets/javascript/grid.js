@@ -2,7 +2,7 @@
 import { MasonryInfiniteGrid } from 'https://cdn.skypack.dev/@egjs/infinitegrid'
 import { data } from './data.js'
 
-const itemsPerPage = 50
+const itemsPerPage = 30
 
 class Grid {
   grid
@@ -28,9 +28,6 @@ class Grid {
       const query = document.querySelector('input').value
       const results = data.search(query)
 
-      console.log(key)
-      console.log(results)
-
       const start = (key - 1) * itemsPerPage
       const items = results.slice(start, start + 50).map(
         (result) => `
@@ -42,9 +39,6 @@ class Grid {
             />
           </figure>`
       )
-
-      console.log(start, key)
-      console.log(items)
 
       if (items.length) {
         this.grid.append(items, key)
