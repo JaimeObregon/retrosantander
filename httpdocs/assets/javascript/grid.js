@@ -35,7 +35,7 @@ class Grid {
             <img
               src="https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${result.id}"
               data-id="${result.id}"
-              alt="${result.details['Título']}"
+              alt="${result.title}"
             />
           </figure>`
       )

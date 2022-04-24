@@ -53,17 +53,20 @@ aside {
   -webkit-backdrop-filter: blur(14px);
 }
 
-aside h1 {
-  font-size: 1em;
+aside > svg {
+  width: 16px;
+  left: 115px;
+  position: absolute;
+  fill: var(--color-neutral-800);
 }
 
 aside input {
   font-size: 14px;
-  width: 20em;
+  width: 21em;
   margin: 0 25px;
   border: none;
   border-radius: 50px;
-  padding: 8px 15px;
+  padding: 7px 15px 7px 35px;
 }
 
 aside div {
@@ -71,7 +74,7 @@ aside div {
 }
 
 aside div cite {
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   overflow: hidden;
@@ -80,51 +83,67 @@ aside div cite {
   color: var(--color-neutral-50);
 }
 
-aside div table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 5px;
-}
-
-aside div table th {
-  font-size: 12px;
-  font-weight: 300;
-  text-align: left;
+aside div ul {
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 1px 0 0 0;
   padding: 0;
+  list-style: none;
 }
 
-aside div table th:nth-child(1) {
-  width: 11%;
+aside div ul li {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-aside div table th:nth-child(2) {
+aside div ul li:not(:last-child) {
+  margin-right: 15px;
+}
+
+aside div ul li#date {
+  width: 12%;
+}
+
+aside div ul li#collection {
   width: 25%;
 }
 
-aside div table th:nth-child(3) {
+aside div ul li#author {
   width: 20%;
 }
 
-aside div table th:nth-child(4) {
-  width: 10%;
+aside div ul li#material {
+  width: 11%;
 }
 
-aside div table th:nth-child(5) {
+aside div ul li#procedure {
   width: 24%;
 }
 
-aside div table th:nth-child(6) {
-  width: 10%;
+aside div ul li#link {
+  width: 8%;
 }
 
-aside div table td {
-  font-size: 14px;
-  padding: 0;
-  vertical-align: top;
-  font-weight: 800;
+aside div ul li svg {
+  vertical-align: middle;
+  height: 17px;
+  stroke: currentColor;
+  stroke-width: 2px;
+  fill: none;
 }
 
-aside div table td a {
+aside div ul li svg path {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+aside div ul li span {
+  vertical-align: middle;
+}
+
+aside div ul li a {
   color: inherit;
   text-decoration: none;
 }
@@ -138,8 +157,8 @@ aside button {
 
 aside button svg {
   fill: white;
-  width: 30px;
-  height: 30px;
+  height: 25px;
+  vertical-align: middle;
 }
 
 main {
@@ -147,7 +166,7 @@ main {
 }
 
 main figure {
-  width: calc(20% - 15px);
+  width: calc(25% - 15px);
   margin: 0;
   box-sizing: border-box;
 }
@@ -164,6 +183,7 @@ main img {
   margin-bottom: 15px;
   border-radius: 4px;
   transition: ease-out 500ms;
+  transition-delay: 250ms;
 }
 
 main figure:not(.placeholder) {
@@ -171,6 +191,6 @@ main figure:not(.placeholder) {
 }
 
 main:not(.zoomed) figure:not(.placeholder) img:hover {
-  transform: scale(1.05);
-  transition: ease-in-out 100ms;
+  transform: scale(1.025);
+  transition: cubic-bezier(0.22, 1, 0.36, 1) 100ms;
 }

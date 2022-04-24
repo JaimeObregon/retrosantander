@@ -1,6 +1,6 @@
 <?php
 
-const REGEX_DETAILS = '/<li><strong>(?P<keys>.+?):<\/strong>[ "\[]*(?P<values>.+?)[ "\]]*<\/li>/';
+const REGEX_DETAILS = '/<li><strong>(?P<keys>.+?):<\/strong>\s*(?P<values>.*?)\s*<\/li>/';
 const REGEX_TAGS = '/<a href="\/portalcdis\/Prepare.+List.do;jsessionid=.{32}\?idcateg=\d+">(?P<tags>.*?)<\/a>/';
 const REGEX_IMAGE = [
 	'/<dd>\s+',
@@ -38,10 +38,14 @@ if (!empty($matches['tags'])) {
 }
 
 $result = [
-	'id' => trim($matches['id']),
-	'file' => trim($matches['file']),
-	'details' => $details ?? [],
-	'tags' => $tags ?? [],
+	'id' => $matches['id'],
+	'file' => $matches['file'],
+  'title' => trim($details['Título']),
+  'author' => trim($details['Fotógrafo']),
+  'date' => trim($details['Fecha']),
+  'collection' => trim($details['Colección/Fondo']),
+  'procedure' => trim($details['Procedimiento']),
+  'material' => trim($details['Soporte']),
 ];
 
 echo json_encode($result);

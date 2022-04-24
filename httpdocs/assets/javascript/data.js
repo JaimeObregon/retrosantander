@@ -15,11 +15,8 @@ const normalize = (string) => {
 
 const index = json.map((item) => {
   return {
-    id: item.id,
-    title: normalize(item.details['Título']),
-    details: {
-      ...item.details,
-    },
+    ...item,
+    index: normalize(item.title),
   }
 })
 
@@ -32,11 +29,11 @@ const data = {
     const query = normalize(string)
 
     if (!query.length) {
-      return index
+      return index.sort(() => Math.random() - 0.5)
     }
 
     const regexp = new RegExp(query)
-    return index.filter((item) => item.title.match(regexp))
+    return index.filter((item) => item.index.match(regexp))
   },
 }
 

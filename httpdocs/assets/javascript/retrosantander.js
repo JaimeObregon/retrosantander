@@ -7,7 +7,7 @@ import { zoom } from './zoom.js'
 const search = document.querySelector('input')
 const main = document.querySelector('main')
 const cite = document.querySelector('cite')
-const details = document.querySelector('tr:nth-child(2)')
+const details = document.querySelector('ul')
 
 search.setAttribute(
   'placeholder',
@@ -25,18 +25,19 @@ main.addEventListener('mouseover', (event) => {
   }
 
   const id = event.target.dataset.id
-  cite.innerText = data.find(id)?.details['Título'] || ''
+  cite.innerText = data.find(id)?.title || ''
 
   const image = data.find(event.target.dataset.id)
 
-  details.innerHTML = `
-    <td>${image.details['Fecha']}</td>
-    <td>${image.details['Colección/Fondo']}</td>
-    <td>${image.details['Fotógrafo']}</td>
-    <td>${image.details['Soporte']}</td>
-    <td>${image.details['Procedimiento']}</td>
-    <td><a href="http://portal.ayto-santander.es/portalcdis/Public/FotoView.do?id=${image.id}" target="cdis">${image.id}</a></td>
-    `
+  details.querySelector('#date span').innerHTML = image.date
+  details.querySelector('#collection span').innerHTML = image.collection
+  details.querySelector('#author span').innerHTML = image.author
+  details.querySelector('#material span').innerHTML = image.material
+  details.querySelector('#procedure span').innerHTML = image.procedure
+  details.querySelector('#link span').innerHTML = `
+    <a href="http://portal.ayto-santander.es/portalcdis/Public/FotoView.do?id=${image.id}" target="cdis">
+      ${image.id}
+    </a>`
 })
 
 main.addEventListener('click', (event) => {
