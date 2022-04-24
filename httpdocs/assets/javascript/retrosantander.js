@@ -37,7 +37,7 @@ main.addEventListener('mouseover', (event) => {
   details.querySelector('#material span').innerHTML = image.material
   details.querySelector('#procedure span').innerHTML = image.procedure
   details.querySelector('#link span').innerHTML = `
-    <a href="http://portal.ayto-santander.es/portalcdis/Public/FotoView.do?id=${image.id}" target="cdis">
+    <a href="http://portal.ayto-santander.es/portalcdis/Public/FotoView.do?id=${image.file}" target="cdis">
       ${image.id}
     </a>`
 
