@@ -12,6 +12,40 @@
   }
 }
 
+@keyframes rainbow {
+  from {
+    fill: rgb(255, 255, 255);
+  }
+
+  12.5% {
+    fill: rgb(255, 0, 255);
+  }
+
+  25% {
+    fill: rgb(0, 0, 255);
+  }
+
+  37.5% {
+    fill: rgb(0, 255, 255);
+  }
+
+  50% {
+    fill: rgb(0, 255, 0);
+  }
+
+  62.5% {
+    fill: rgb(255, 255, 0);
+  }
+
+  75% {
+    fill: rgb(255, 0, 0);
+  }
+
+  to {
+    fill: rgb(255, 255, 255);
+  }
+}
+
 :root {
   --color-neutral-50: #fafafa;
   --color-neutral-200: #e5e5e5;
@@ -71,6 +105,7 @@ aside input {
 
 aside div {
   flex-grow: 1;
+  visibility: hidden;
 }
 
 aside div cite {
@@ -153,12 +188,17 @@ aside button {
   border: none;
   background: none;
   padding: 0;
+  cursor: pointer;
 }
 
 aside button svg {
   fill: white;
   height: 25px;
   vertical-align: middle;
+}
+
+aside button:hover svg path.ink {
+  animation: rainbow 15s linear 0s infinite;
 }
 
 main {
@@ -193,4 +233,16 @@ main figure:not(.placeholder) {
 main:not(.zoomed) figure:not(.placeholder) img:hover {
   transform: scale(1.025);
   transition: cubic-bezier(0.22, 1, 0.36, 1) 100ms;
+}
+
+@media (max-width: 1024px) {
+  main figure {
+    width: calc(100% / 3 - 15px);
+  }
+}
+
+@media (max-width: 640px) {
+  main figure {
+    width: calc(50% - 10px);
+  }
 }

@@ -5,9 +5,10 @@ import { Grid } from './grid.js'
 import { zoom } from './zoom.js'
 
 const search = document.querySelector('input')
+const status = document.querySelector('div')
 const main = document.querySelector('main')
-const cite = document.querySelector('cite')
-const details = document.querySelector('ul')
+const details = status.querySelector('ul')
+const cite = status.querySelector('cite')
 
 search.setAttribute(
   'placeholder',
@@ -21,6 +22,7 @@ const grid = new Grid(main)
 
 main.addEventListener('mouseover', (event) => {
   if (!(event.target instanceof HTMLImageElement) || !event.target.dataset.id) {
+    status.style.visibility = 'hidden'
     return
   }
 
@@ -38,6 +40,8 @@ main.addEventListener('mouseover', (event) => {
     <a href="http://portal.ayto-santander.es/portalcdis/Public/FotoView.do?id=${image.id}" target="cdis">
       ${image.id}
     </a>`
+
+  status.style.visibility = 'visible'
 })
 
 main.addEventListener('click', (event) => {

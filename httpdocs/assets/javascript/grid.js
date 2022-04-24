@@ -4,6 +4,19 @@ import { data } from './data.js'
 
 const itemsPerPage = 30
 
+const escape = (string) =>
+  string.replace(
+    /[&<>'"]/g,
+    (tag) =>
+      ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        "'": '&#39;',
+        '"': '&quot;',
+      }[tag])
+  )
+
 class Grid {
   grid
 
@@ -33,9 +46,11 @@ class Grid {
         (result) => `
           <figure>
             <img
-              src="https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${result.id}"
+              src="https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${
+                result.id
+              }"
               data-id="${result.id}"
-              alt="${result.title}"
+              alt="${escape(result.title)}"
             />
           </figure>`
       )
