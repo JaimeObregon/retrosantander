@@ -59,7 +59,7 @@ search.addEventListener(
   'input',
   debounce(() => {
     grid.clear()
-    history.pushState(null, null, `/?q=${search.value}`)
+    history.pushState(null, null, search.value ? `/?q=${search.value}` : '/')
   }, 350).bind(grid)
 )
 

@@ -17,27 +17,23 @@
     fill: rgb(255, 255, 255);
   }
 
-  12.5% {
+  14.29% {
     fill: rgb(255, 0, 255);
   }
 
-  25% {
-    fill: rgb(0, 0, 255);
-  }
-
-  37.5% {
+  28.57% {
     fill: rgb(0, 255, 255);
   }
 
-  50% {
+  42.86% {
     fill: rgb(0, 255, 0);
   }
 
-  62.5% {
+  57.14% {
     fill: rgb(255, 255, 0);
   }
 
-  75% {
+  71.43% {
     fill: rgb(255, 0, 0);
   }
 
@@ -89,7 +85,7 @@ aside {
 
 aside > svg {
   width: 16px;
-  left: 115px;
+  left: 105px;
   position: absolute;
   fill: var(--color-neutral-800);
 }
@@ -193,12 +189,17 @@ aside button {
 
 aside button svg {
   fill: white;
-  height: 25px;
+  height: 20px;
   vertical-align: middle;
+  transition: transform 0.8s ease;
+}
+
+aside button:hover svg {
+  transform: scale(1.25);
 }
 
 aside button:hover svg path.ink {
-  animation: rainbow 15s linear 0s infinite;
+  animation: rainbow 30s linear 0s infinite;
 }
 
 main {
