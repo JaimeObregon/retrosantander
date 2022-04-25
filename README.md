@@ -96,6 +96,8 @@ Y sin permiso previo no está permitido hacer con los recursos fotográficos del
 
 **Si el fondo del CDIS es un tesoro de la ciudad, más que ponerse a disposición de sus habitantes, parece estar cogiendo polvo en una catacumba municipal.**
 
+Dicho esto, creo que es magnífico contar en la ciudad con una entidad como el CDIS, y valoro muy positivamente la labor que desarrolla.
+
 # ¿Y por qué sucede esto?
 
 Voy a ser muy claro aquí.
