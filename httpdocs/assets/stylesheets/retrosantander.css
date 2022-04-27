@@ -66,7 +66,7 @@ body {
   color: var(--color-neutral-200);
 }
 
-aside {
+header {
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -83,28 +83,34 @@ aside {
   -webkit-backdrop-filter: blur(14px);
 }
 
-aside > svg {
+header label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0 25px;
+}
+
+header label svg {
   width: 16px;
-  left: 105px;
+  left: 10px;
   position: absolute;
   fill: var(--color-neutral-800);
 }
 
-aside input {
+header label input {
   font-size: 14px;
   width: 22em;
-  margin: 0 25px;
   border: none;
   border-radius: 50px;
   padding: 7px 15px 7px 35px;
 }
 
-aside div {
+header div {
   flex-grow: 1;
   visibility: hidden;
 }
 
-aside div cite {
+header div cite {
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -114,7 +120,7 @@ aside div cite {
   color: var(--color-neutral-50);
 }
 
-aside div ul {
+header div ul {
   display: flex;
   font-size: 14px;
   font-weight: 500;
@@ -123,41 +129,41 @@ aside div ul {
   list-style: none;
 }
 
-aside div ul li {
+header div ul li {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-aside div ul li:not(:last-child) {
+header div ul li:not(:last-child) {
   margin-right: 15px;
 }
 
-aside div ul li#date {
+header div ul li#date {
   width: 12%;
 }
 
-aside div ul li#collection {
+header div ul li#collection {
   width: 25%;
 }
 
-aside div ul li#author {
+header div ul li#author {
   width: 20%;
 }
 
-aside div ul li#material {
+header div ul li#material {
   width: 11%;
 }
 
-aside div ul li#procedure {
+header div ul li#procedure {
   width: 24%;
 }
 
-aside div ul li#link {
+header div ul li#link {
   width: 8%;
 }
 
-aside div ul li svg {
+header div ul li svg {
   vertical-align: middle;
   height: 17px;
   stroke: currentColor;
@@ -165,21 +171,21 @@ aside div ul li svg {
   fill: none;
 }
 
-aside div ul li svg path {
+header div ul li svg path {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-aside div ul li span {
+header div ul li span {
   vertical-align: middle;
 }
 
-aside div ul li a {
+header div ul li a {
   color: inherit;
   text-decoration: none;
 }
 
-aside button {
+header button {
   outline: none;
   border: none;
   background: none;
@@ -187,18 +193,18 @@ aside button {
   cursor: pointer;
 }
 
-aside button svg {
+header button svg {
   fill: white;
   height: 20px;
   vertical-align: middle;
   transition: transform 0.8s ease;
 }
 
-aside button:hover svg {
+header button:hover svg {
   transform: scale(1.25);
 }
 
-aside button:hover svg path.ink {
+header button:hover svg path.ink {
   animation: rainbow 30s linear 0s infinite;
 }
 
