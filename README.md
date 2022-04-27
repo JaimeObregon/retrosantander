@@ -2,9 +2,9 @@
 
 Un experimento personal con el portal del [Centro de Documentación de la Imagen de Santander](http://portal.ayto-santander.es/portalcdis/Index.do) (CDIS) y sus contenidos. Por [Jaime Gómez-Obregón](https://twitter.com/JaimeObregon).
 
-[![Retrosantander](/docs/assets/retrosantander.jpg)](https://retrosantander.com)
+[![Retrosantander](/docs/retrosantander.jpg)](https://retrosantander.com)
 
-Prueba de concepto en [🔗 retrosantander.com](https://retrosantander.com). También [🎦 en vídeo](/docs/assets/retrosantander.mp4).
+Prueba de concepto en [🔗 retrosantander.com](https://retrosantander.com). También [🎦 en vídeo](/docs/retrosantander.mp4).
 
 # El contexto
 
@@ -14,9 +14,9 @@ He llamado al CDIS para interesarme por ese patrimonio, y me han expresado que e
 
 Puesto que mi interés no es académico ni historiográfico, sino la mera curiosidad abstracta, me veo con que el sitio web del CDIS es, esencialmente, mi única ventana al patrimonio fotográfico de la ciudad. Esto no sería inconveniente de no ser porque **el referido portal es muy mejorable**.
 
-| La portada del CDIS                                | Vista de una imagen                                   | Una exposición virtual                                                 |
-| -------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------- |
-| ![Portada del CDIS](/docs/assets/cdis-portada.jpg) | ![Una imagen del CDIS](/docs/assets/cdis-detalle.jpg) | ![Detalle de una exposición virtual](/docs/assets/cdis-exposicion.jpg) |
+| La portada del CDIS                         | Vista de una imagen                            | Una exposición virtual                                          |
+| ------------------------------------------- | ---------------------------------------------- | --------------------------------------------------------------- |
+| ![Portada del CDIS](/docs/cdis-portada.jpg) | ![Una imagen del CDIS](/docs/cdis-detalle.jpg) | ![Detalle de una exposición virtual](/docs/cdis-exposicion.jpg) |
 
 # Por qué el portal del CDIS es muy mejorable
 
@@ -30,13 +30,13 @@ Sin embargo, el sitio del CDIS tiene un diseño que relega el tesoro a la últim
 
 En mi portátil, las imágenes del CDIS representan **solo el 3 % de la superficie visible** de la pantalla, y en ocasiones por debajo del corte que obliga a hacer desplazamiento vertical.
 
-| La experiencia de búsqueda en el CDIS                            | La ficha de una imagen                                  |
-| ---------------------------------------------------------------- | ------------------------------------------------------- |
-| ![Resultados de la búsqueda](/docs/assets/analisis-busqueda.jpg) | ![Ficha de una imagen](/docs/assets/analisis-ficha.jpg) |
+| La experiencia de búsqueda en el CDIS                     | La ficha de una imagen                           |
+| --------------------------------------------------------- | ------------------------------------------------ |
+| ![Resultados de la búsqueda](/docs/analisis-busqueda.jpg) | ![Ficha de una imagen](/docs/analisis-ficha.jpg) |
 
 Contrapongamos esta equivocada decisión con la maquetación elegida por el Museo del Prado para su sitio web: el museo **luce las obras en el centro de atención**. Las exhibe en toda su grandeza. Se recrea en ellas e invita a seguir explorándolas. Todo lo demás es accesorio y queda oculto tras un interfaz de usuario reducido a la mínima expresión.
 
-![Portada del Museo del Prado](/docs/assets/museo.jpg)
+![Portada del Museo del Prado](/docs/museo.jpg)
 
 **La navegación** por al colección fotográfica del CDIS también es tediosa. La retahíla de defectos y limitaciones es la tristemente habitual en cualquier sitio web promovido por organismos públicos. La omitiré aquí, para no hacer este resumen largo y penoso.
 
@@ -48,9 +48,9 @@ Antes de presentarlas al ciudadano, el CDIS sobreimprime **una enorme marca de a
 
 Pero es que esta marca de agua <strong>además de molesta es también ineficaz</strong>, pues es posible eliminarla de cualquier imagen para dejar sin efecto la función denominativa y protectora que se le presume. Un poco más abajo explico cómo, a efectos únicamente pedagógicos.
 
-| Con marca de agua                                         | Sin marca de agua                                           |
-| --------------------------------------------------------- | ----------------------------------------------------------- |
-| ![Con marca de agua](/docs/assets/inundacion-marcada.jpg) | ![Sin marca de agua](/docs/assets/inundacion-sin-marca.jpg) |
+| Con marca de agua                                  | Sin marca de agua                                    |
+| -------------------------------------------------- | ---------------------------------------------------- |
+| ![Con marca de agua](/docs/inundacion-marcada.jpg) | ![Sin marca de agua](/docs/inundacion-sin-marca.jpg) |
 
 ## 3. Por el modelo de licenciamiento
 
@@ -66,7 +66,7 @@ El [aviso legal del CDIS](http://portal.ayto-santander.es/portalcdis/InfoLegal.d
 >
 > Todos los derechos Reservados.
 
-![Compra de una imagen](/docs/assets/cdis-compra.jpg)
+![Compra de una imagen](/docs/cdis-compra.jpg)
 
 Por otro lado, y sin embargo, el sitio web del CDIS ofrece al ciudadano la compra unitaria de imágenes, que son entregadas al comprador en un CD (!). Y especifica:
 
@@ -78,13 +78,13 @@ Queda claro, pues, que es preciso comprar las imágenes para cualquier uso «pri
 
 El aviso legal del sitio web del CDIS data de 2008. Y aunque por aquel entonces ya eran habituales las tabletas y teléfonos, **el sitio web no está adaptado a estos dispositivos**.
 
-| Las exposiciones, desde mi iPhone                                      | La ficha de una imágen, desde el móvil                               |
-| ---------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| ![Las exposiciones, desde el móvil](/docs/assets/movil-exposicion.jpg) | ![Ficha de una imagen, desde el móvil](/docs/assets/movil-ficha.jpg) |
+| Las exposiciones, desde mi iPhone                               | La ficha de una imágen, desde el móvil                        |
+| --------------------------------------------------------------- | ------------------------------------------------------------- |
+| ![Las exposiciones, desde el móvil](/docs/movil-exposicion.jpg) | ![Ficha de una imagen, desde el móvil](/docs/movil-ficha.jpg) |
 
 Y aunque el sitio tiene instalado un certificado criptográfico y ofrece la posibilidad de comunicaciones seguras, no está redireccionado correctamente. Esto hace que **el intercambio de información personal del ciudadano con el sitio**, por ejemplo para comprar imágenes, **no se realiza de forma segura**. He comprobado que los usuarios que acceden al CDIS desde una búsqueda en Google lo hacen por un canal inseguro:
 
-![Aviso de sitio no seguro](/docs/assets/cdis-http.jpg)
+![Aviso de sitio no seguro](/docs/cdis-http.jpg)
 
 # En resumen…
 
@@ -204,7 +204,7 @@ for file in images/image_*.html;
 
 Obtenidas dos versiones de cada imagen, cada una con una marca de agua diferente, es posible combinarlas en una tercera sin marca de agua alguna. Un método para ello es recortar el 10 % inferior de la primera versión con el 90 % superior de la segunda y unir ambos recortes. Esto se puede automatizar para todo el fondo del CDIS.
 
-![Eliminación de la marca de agua](/docs/assets/marca-de-agua.gif)
+![Eliminación de la marca de agua](/docs/marca-de-agua.gif)
 
 ```bash
 mkdir merged
