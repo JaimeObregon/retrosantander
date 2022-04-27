@@ -1,10 +1,6 @@
 // @ts-ignore
 import { MasonryInfiniteGrid } from 'https://cdn.skypack.dev/@egjs/infinitegrid'
-// @ts-ignore
-import debounce from 'https://cdn.skypack.dev/debounce'
-import { data } from './data.js'
-
-const itemsPerPage = 30
+import { state, debounce } from './retrosantander.js'
 
 const escape = (string) =>
   string.replace(
@@ -21,31 +17,29 @@ const escape = (string) =>
 
 class Grid {
   grid
+  container
+  footer
+  itemsPerPage = 30
+  padding = 10
+  scale = 1
 
-  constructor(container) {
+  constructor(container, footer) {
+    this.container = container
+    this.footer = footer
     this.grid = new MasonryInfiniteGrid(container, { gap: 0 })
-
-    this.grid.setPlaceholder({
-      // https://stackoverflow.com/a/9967193
-      html: `
-        <figure class="placeholder">
-          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" />
-        </figure>`,
-    })
-
-    this.grid.on('requestAppend', debounce(this.append.bind(this), 350))
-
+    this.grid.setPlaceholder({ html: '<div></div>' })
+    this.grid.on('requestAppend', debounce(this.append.bind(this), 150))
     this.grid.renderItems()
   }
 
   append(event) {
-    const key = (event.groupKey ?? 0) + 1
+    if (!state.images.length) {
+      return
+    }
 
-    const query = document.querySelector('input').value
-    const results = data.search(query)
-
-    const start = (key - 1) * itemsPerPage
-    const items = results.slice(start, start + itemsPerPage).map(
+    const key = event.groupKey ?? 0
+    const start = key * this.itemsPerPage
+    const items = state.images.slice(start, start + this.itemsPerPage).map(
       (result) => `
         <figure>
           <img
@@ -58,28 +52,72 @@ class Grid {
         </figure>`
     )
 
-    if (!items.length) {
-      return
-    }
+    this.grid.append(items, key + 1)
 
-    event.wait()
+    const interval = setInterval(() => {
+      const images = [...this.container.querySelectorAll('img')]
+      const pending = images.filter((img) => !img.complete)
+      const percent = 100 - (100 * pending.length) / items.length
 
-    console.log(items.length, itemsPerPage, items.length === itemsPerPage)
-    if (key > 1 && items.length === itemsPerPage) {
-      this.grid.removePlaceholders(5, key)
-      this.grid.appendPlaceholders(5, key)
-    }
+      this.footer.style.width = `${percent}%`
+      this.footer.classList.toggle('visible', pending.length)
 
-    setTimeout(() => {
-      event.ready()
-      this.grid.append(items, key)
-    }, 150)
+      if (!pending.length) {
+        this.footer.style.width = 0
+        clearInterval(interval)
+      }
+    }, 100)
   }
 
   clear() {
     this.grid
       .getGroups()
       .forEach((group) => this.grid.removeGroupByKey(group.groupKey))
+  }
+
+  magnify(area, scale) {
+    area.x -= (window.innerWidth - (area.width || 1) * scale) / 2
+    area.y -= (window.innerHeight - (area.height || 1) * scale) / 2
+
+    if (scale === 1) {
+      this.container.style.transform = ''
+    } else {
+      const [x, y] = [window.pageXOffset, window.pageYOffset]
+      this.container.style.transformOrigin = `${x}px ${y}px`
+      this.container.style.transform = `translate(${-area.x}px, ${-area.y}px) scale(${scale})`
+    }
+
+    this.container.classList.toggle('zoomed', scale > 1)
+    this.scale = scale
+  }
+
+  zoom(options) {
+    if (this.scale > 1) {
+      this.restore()
+      return
+    }
+
+    const bounds = options.element.getBoundingClientRect()
+    options.width = bounds.width + this.padding * 2
+    options.height = bounds.height + this.padding * 2
+
+    const scale = Math.max(
+      Math.min(
+        window.innerWidth / options.width,
+        window.innerHeight / options.height
+      ),
+      1
+    )
+
+    options.x = scale * (bounds.left - this.padding)
+    options.y = scale * (bounds.top - this.padding)
+
+    this.magnify(options, scale)
+  }
+
+  restore() {
+    this.scale > 1 && this.magnify({ x: 0, y: 0 }, 1)
+    this.scale = 1
   }
 }
 
