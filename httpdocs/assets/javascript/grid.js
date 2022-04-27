@@ -1,5 +1,6 @@
 // @ts-ignore
 import { MasonryInfiniteGrid } from 'https://cdn.skypack.dev/@egjs/infinitegrid'
+// @ts-ignore
 import debounce from 'https://cdn.skypack.dev/debounce'
 import { data } from './data.js'
 
@@ -22,7 +23,7 @@ class Grid {
   grid
 
   constructor(container) {
-    this.grid = new MasonryInfiniteGrid(container)
+    this.grid = new MasonryInfiniteGrid(container, { gap: 0 })
 
     this.grid.setPlaceholder({
       // https://stackoverflow.com/a/9967193

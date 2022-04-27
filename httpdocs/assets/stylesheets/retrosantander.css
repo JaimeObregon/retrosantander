@@ -1,14 +1,10 @@
 @keyframes pulsate {
-  0% {
+  from {
     opacity: 0.25;
   }
 
-  50% {
+  to {
     opacity: 1;
-  }
-
-  100% {
-    opacity: 0.25;
   }
 }
 
@@ -17,32 +13,29 @@
     fill: rgb(255, 255, 255);
   }
 
-  14.29% {
+  20% {
     fill: rgb(255, 0, 255);
   }
 
-  28.57% {
+  40% {
     fill: rgb(0, 255, 255);
   }
 
-  42.86% {
+  60% {
     fill: rgb(0, 255, 0);
   }
 
-  57.14% {
+  80% {
     fill: rgb(255, 255, 0);
   }
 
-  71.43% {
+  100% {
     fill: rgb(255, 0, 0);
-  }
-
-  to {
-    fill: rgb(255, 255, 255);
   }
 }
 
 :root {
+  --gap: 18px;
   --color-neutral-50: #fafafa;
   --color-neutral-200: #e5e5e5;
   --color-neutral-600: #525252;
@@ -52,18 +45,15 @@
 }
 
 html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
+  margin: 0 var(--gap);
   user-select: none;
-  margin: 0 20px;
-  background: var(--color-neutral-900);
-}
-
-body {
+  scroll-behavior: smooth;
   font-family: 'Inter', sans-serif;
   font-weight: 300;
+  background: var(--color-neutral-900);
   color: var(--color-neutral-200);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 header {
@@ -71,11 +61,11 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  z-index: 10000;
+  width: 100%;
+  z-index: 1;
   display: flex;
   align-items: center;
-  padding: 8px 20px;
+  padding: 8px var(--gap);
   border-bottom: 1px solid var(--color-neutral-700);
   box-shadow: 0 5px 5px #1c191750;
   background-color: #171717f0; /* --color-neutral-900 */
@@ -83,26 +73,48 @@ header {
   -webkit-backdrop-filter: blur(14px);
 }
 
+header button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+header button svg {
+  height: 22px;
+  vertical-align: middle;
+  transition: transform 200ms ease;
+  fill: white;
+}
+
+header button:hover svg {
+  transform: scale(1.25);
+}
+
+header button:hover svg path.ink {
+  animation: rainbow 20s ease-in-out infinite alternate;
+}
+
 header label {
   display: flex;
   align-items: center;
   position: relative;
-  margin: 0 25px;
+  width: 20em;
+  margin: 0 var(--gap);
 }
 
 header label svg {
-  width: 16px;
-  left: 10px;
   position: absolute;
-  fill: var(--color-neutral-800);
+  width: 16px;
+  left: 12px;
+  fill: var(--color-neutral-600);
 }
 
 header label input {
   font-size: 14px;
-  width: 22em;
+  width: 100%;
   border: none;
   border-radius: 50px;
-  padding: 7px 15px 7px 35px;
+  padding: 8px 15px 8px 35px;
 }
 
 header div {
@@ -126,7 +138,6 @@ header div ul {
   font-weight: 500;
   margin: 1px 0 0 0;
   padding: 0;
-  list-style: none;
 }
 
 header div ul li {
@@ -136,7 +147,7 @@ header div ul li {
 }
 
 header div ul li:not(:last-child) {
-  margin-right: 15px;
+  margin-right: var(--gap);
 }
 
 header div ul li#date {
@@ -164,8 +175,8 @@ header div ul li#link {
 }
 
 header div ul li svg {
-  vertical-align: middle;
   height: 17px;
+  vertical-align: middle;
   stroke: currentColor;
   stroke-width: 2px;
   fill: none;
@@ -185,52 +196,28 @@ header div ul li a {
   text-decoration: none;
 }
 
-header button {
-  outline: none;
-  border: none;
-  background: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-header button svg {
-  fill: white;
-  height: 20px;
-  vertical-align: middle;
-  transition: transform 0.8s ease;
-}
-
-header button:hover svg {
-  transform: scale(1.25);
-}
-
-header button:hover svg path.ink {
-  animation: rainbow 30s linear 0s infinite;
-}
-
 main {
   transition: transform 0.8s ease;
 }
 
 main figure {
-  width: calc(25% - 15px);
-  margin: 0;
+  width: calc(25% - var(--gap));
   box-sizing: border-box;
+  margin: 0;
 }
 
 main figure.placeholder img {
   height: 250px;
   border: none;
   background: var(--color-neutral-800);
-  animation: pulsate 2s ease-in-out infinite;
+  animation: pulsate 3s ease-in-out infinite alternate;
 }
 
 main img {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: var(--gap);
   border-radius: 4px;
-  transition: ease-out 500ms;
-  transition-delay: 250ms;
+  transition: ease-out 500ms 250ms;
 }
 
 main figure:not(.placeholder) {
@@ -243,13 +230,21 @@ main:not(.zoomed) figure:not(.placeholder) img:hover {
 }
 
 @media (max-width: 1024px) {
+  :root {
+    --gap: 10px;
+  }
+
   main figure {
-    width: calc(100% / 3 - 15px);
+    width: calc(100% / 3 - var(--gap));
   }
 }
 
 @media (max-width: 640px) {
+  :root {
+    --gap: 5px;
+  }
+
   main figure {
-    width: calc(50% - 10px);
+    width: calc(50% - var(--gap));
   }
 }
