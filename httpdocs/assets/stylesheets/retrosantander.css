@@ -195,7 +195,6 @@ main figure {
   width: calc(25% - var(--gap));
   box-sizing: border-box;
   margin: 0;
-  cursor: pointer;
 }
 
 main figure img {
@@ -203,6 +202,7 @@ main figure img {
   margin-bottom: var(--gap);
   border-radius: 4px;
   transition: background ease-out 500ms 250ms;
+  cursor: pointer;
 }
 
 main:not(.zoomed) img:hover {
@@ -228,6 +228,47 @@ aside li a {
   font-weight: 800;
 }
 
+dialog {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 75vw;
+  max-width: 50em;
+  max-height: 75vh;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 1.35;
+  padding: calc(4 * var(--gap));
+  overflow: scroll;
+}
+
+dialog strong {
+  font-weight: 700;
+}
+
+dialog h1 {
+  margin: 0;
+}
+
+dialog p:last-child {
+  margin-bottom: 0;
+}
+
+dialog button {
+  position: absolute;
+  font-size: 32px;
+  top: 0.5em;
+  right: 0.5em;
+  width: 2em;
+  height: 2em;
+  border: none;
+  border-radius: 50px;
+  background: none;
+  cursor: pointer;
+  padding: calc(var(--gap) / 2) var(--gap);
+}
+
 footer {
   position: fixed;
   left: 0;
@@ -249,6 +290,11 @@ footer.visible {
 
   main figure {
     width: calc(100% / 3 - var(--gap));
+  }
+
+  dialog button {
+    top: 0;
+    right: 0;
   }
 }
 
@@ -272,5 +318,10 @@ footer.visible {
   aside {
     font-size: 16px;
     line-height: 1.35;
+  }
+
+  dialog {
+    font-size: 16px;
+    width: calc(100% - 4 * var(--gap));
   }
 }

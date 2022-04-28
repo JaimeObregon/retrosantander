@@ -8,7 +8,9 @@ const data = new Database(json)
 const header = document.querySelector('header')
 const main = document.querySelector('main')
 const aside = document.querySelector('aside')
+const dialog = document.querySelector('dialog')
 const footer = document.querySelector('footer')
+const button = header.querySelector('button')
 const search = header.querySelector('input')
 const status = header.querySelector('div')
 const cite = status.querySelector('cite')
@@ -98,10 +100,13 @@ main.addEventListener('mouseover', (event) => {
 })
 
 main.addEventListener('click', (event) => {
+  dialog.removeAttribute('open')
   if (event.target instanceof HTMLImageElement) {
     grid.zoom({ element: event.target })
   }
 })
+
+button.addEventListener('click', () => dialog.toggleAttribute('open'))
 
 search.addEventListener('input', debounce(onInput, 350).bind(grid))
 
@@ -110,10 +115,22 @@ search.setAttribute(
   search.dataset.placeholder.replace('%', data.length.toLocaleString())
 )
 
+dialog.addEventListener('click', (event) => {
+  if (event.target instanceof HTMLButtonElement) {
+    dialog.removeAttribute('open')
+  }
+})
+
 document.addEventListener('keydown', () => search.focus())
 
 document.addEventListener('keyup', (event) => {
-  event.key === 'Escape' && grid.restore()
+  if (event.key === 'Escape') {
+    if (dialog.hasAttribute('open')) {
+      dialog.removeAttribute('open')
+      return
+    }
+    grid.restore()
+  }
 })
 
 window.dispatchEvent(new Event('popstate'))
