@@ -1,19 +1,6 @@
 // @ts-ignore
 import { MasonryInfiniteGrid } from 'https://cdn.skypack.dev/@egjs/infinitegrid'
-import { state, debounce } from './retrosantander.js'
-
-const escape = (string) =>
-  string.replace(
-    /[&<>'"]/g,
-    (tag) =>
-      ({
-        '&': '&amp;',
-        '<': '&lt;',
-        '>': '&gt;',
-        "'": '&#39;',
-        '"': '&quot;',
-      }[tag])
-  )
+import { state, debounce, escape } from './retrosantander.js'
 
 class Grid {
   grid

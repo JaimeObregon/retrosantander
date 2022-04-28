@@ -89,6 +89,7 @@ header label {
   align-items: center;
   position: relative;
   width: 20em;
+  min-width: 12em;
   margin: 0 var(--gap);
 }
 
@@ -209,6 +210,24 @@ main:not(.zoomed) img:hover {
   transition: transform cubic-bezier(0.22, 1, 0.36, 1) 100ms;
 }
 
+aside {
+  display: none;
+  max-width: 50rem;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: calc(4 * var(--gap));
+}
+
+aside li {
+  margin: 0.5em 0;
+}
+
+aside li a {
+  color: inherit;
+  font-weight: 800;
+}
+
 footer {
   position: fixed;
   left: 0;
@@ -248,5 +267,10 @@ footer.visible {
 
   main figure {
     width: calc(50% - var(--gap));
+  }
+
+  aside {
+    font-size: 16px;
+    line-height: 1.35;
   }
 }

@@ -5,12 +5,27 @@ const response = await fetch('/retrosantander.json')
 const json = await response.json()
 const data = new Database(json)
 
-const search = document.querySelector('input')
+const header = document.querySelector('header')
 const main = document.querySelector('main')
+const aside = document.querySelector('aside')
 const footer = document.querySelector('footer')
-const status = document.querySelector('div')
+const search = header.querySelector('input')
+const status = header.querySelector('div')
 const cite = status.querySelector('cite')
 const details = status.querySelector('ul')
+
+const escape = (string) =>
+  string.replace(
+    /[&<>'"]/g,
+    (tag) =>
+      ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        "'": '&#39;',
+        '"': '&quot;',
+      }[tag])
+  )
 
 const debounce = (callback, wait) => {
   let timeout
@@ -51,7 +66,10 @@ const state = {
   },
 
   get images() {
-    return data.search(this.query)
+    const results = data.search(this.query)
+    aside.innerHTML = aside.innerHTML.replace('%%QUERY%%', escape(this.query))
+    aside.style.display = results.length ? 'none' : 'block'
+    return results
   },
 }
 
@@ -64,12 +82,14 @@ const onInput = () => {
   history.pushState(null, null, state.query ? `/?q=${state.query}` : '/')
 }
 
-const onPopState = () => {
+window.addEventListener('popstate', () => {
   const url = new URL(document.location.href)
   state.query = url.searchParams.get('q')
-}
+})
 
-window.addEventListener('popstate', onPopState)
+window.addEventListener('resize', () => {
+  document.body.style.marginTop = `calc(${header.offsetHeight}px + var(--gap))`
+})
 
 main.addEventListener('mouseover', (event) => {
   if (event.target instanceof HTMLImageElement) {
@@ -96,6 +116,7 @@ document.addEventListener('keyup', (event) => {
   event.key === 'Escape' && grid.restore()
 })
 
-onPopState()
+window.dispatchEvent(new Event('popstate'))
+window.dispatchEvent(new Event('resize'))
 
-export { state, debounce }
+export { state, debounce, escape }
