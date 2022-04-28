@@ -1,3 +1,5 @@
+// @ts-ignore
+import dialogPolyfill from 'https://cdn.skypack.dev/dialog-polyfill'
 import { Database } from './database.js'
 import { Grid } from './grid.js'
 
@@ -135,5 +137,7 @@ document.addEventListener('keyup', (event) => {
 
 window.dispatchEvent(new Event('popstate'))
 window.dispatchEvent(new Event('resize'))
+
+dialogPolyfill.registerDialog(dialog)
 
 export { state, debounce, escape }
