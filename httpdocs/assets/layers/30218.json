@@ -1,0 +1,89 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Monument",
+      "Confidence": 91.25627899169922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 90.87135314941406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tomb",
+      "Confidence": 90.53211212158203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 90.40742492675781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Pillar",
+      "Confidence": 74.26252746582031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Column",
+      "Confidence": 74.26252746582031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tombstone",
+      "Confidence": 73.3887939453125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tomb"
+        }
+      ]
+    },
+    {
+      "Name": "Obelisk",
+      "Confidence": 59.61477279663086,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Monument"
+        },
+        {
+          "Name": "Pillar"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

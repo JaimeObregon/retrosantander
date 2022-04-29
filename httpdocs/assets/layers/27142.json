@@ -1,0 +1,133 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Water",
+      "Confidence": 99.20280456542969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 97.20906066894531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 95.47709655761719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 93.940185546875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.05379799008369446,
+            "Height": 0.1000787541270256,
+            "Left": 0.5776039958000183,
+            "Top": 0.5662556886672974
+          },
+          "Confidence": 93.940185546875
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 93.940185546875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Land",
+      "Confidence": 72.0893325805664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 71.89974212646484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 71.89974212646484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pond",
+      "Confidence": 64.74150085449219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Tub",
+      "Confidence": 61.09682846069336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 60.50895690917969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 60.50895690917969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Path",
+      "Confidence": 59.06681823730469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pool",
+      "Confidence": 55.9559440612793,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

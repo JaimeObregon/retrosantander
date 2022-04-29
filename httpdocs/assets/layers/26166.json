@@ -1,0 +1,82 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Archaeology",
+      "Confidence": 93.16111755371094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 89.41966247558594,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.937363862991333,
+            "Height": 0.8987008333206177,
+            "Left": 0.03277621790766716,
+            "Top": 0.07760735601186752
+          },
+          "Confidence": 89.41966247558594
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 89.41966247558594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 69.16504669189453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 66.64215087890625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5009329915046692,
+            "Height": 0.67274010181427,
+            "Left": 0.22698238492012024,
+            "Top": 0.19366073608398438
+          },
+          "Confidence": 66.64215087890625
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 66.64215087890625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Worship",
+      "Confidence": 61.41773223876953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sculpture",
+      "Confidence": 61.30692672729492,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

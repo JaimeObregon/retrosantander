@@ -1,0 +1,74 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bus",
+      "Confidence": 96.61583709716797,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.18566261231899261,
+            "Height": 0.23674732446670532,
+            "Left": 0.2473980337381363,
+            "Top": 0.5610578060150146
+          },
+          "Confidence": 96.61583709716797
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 96.61583709716797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 96.61583709716797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cable Car",
+      "Confidence": 72.22329711914062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Poster",
+      "Confidence": 63.67674255371094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Advertisement",
+      "Confidence": 63.67674255371094,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

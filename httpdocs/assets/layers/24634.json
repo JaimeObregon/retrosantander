@@ -1,0 +1,150 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 99.1081771850586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Lighthouse",
+      "Confidence": 94.99288177490234,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.11063827574253082,
+            "Height": 0.5463179349899292,
+            "Left": 0.6047895550727844,
+            "Top": 0.0933915376663208
+          },
+          "Confidence": 94.99288177490234
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Beacon"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Beacon",
+      "Confidence": 94.99288177490234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tower",
+      "Confidence": 94.99288177490234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 94.99288177490234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 85.81607818603516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 79.86194610595703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pillar",
+      "Confidence": 76.64398956298828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Column",
+      "Confidence": 76.64398956298828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 76.03723907470703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 63.73623275756836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Ground",
+      "Confidence": 56.72891616821289,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

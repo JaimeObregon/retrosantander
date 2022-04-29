@@ -1,0 +1,183 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.91169738769531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ice",
+      "Confidence": 99.0317153930664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.0317153930664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 96.53388214111328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Winter",
+      "Confidence": 89.98249816894531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cave",
+      "Confidence": 86.04824829101562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Car",
+      "Confidence": 75.52555084228516,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.11870086938142776,
+            "Height": 0.13508296012878418,
+            "Left": 0.8277223110198975,
+            "Top": 0.598516047000885
+          },
+          "Confidence": 75.52555084228516
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 75.52555084228516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 75.52555084228516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 75.52555084228516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Icicle",
+      "Confidence": 74.94149017333984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Winter"
+        },
+        {
+          "Name": "Ice"
+        },
+        {
+          "Name": "Snow"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Bus",
+      "Confidence": 71.52123260498047,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07381736487150192,
+            "Height": 0.15116746723651886,
+            "Left": 0.5214221477508545,
+            "Top": 0.5126045346260071
+          },
+          "Confidence": 71.52123260498047
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 55.60154724121094,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9697554707527161,
+            "Height": 0.9330322742462158,
+            "Left": 0.014238663017749786,
+            "Top": 0.040864888578653336
+          },
+          "Confidence": 55.60154724121094
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 55.60154724121094,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

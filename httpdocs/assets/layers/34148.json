@@ -1,0 +1,190 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Construction Crane",
+      "Confidence": 99.31285858154297,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8067042827606201,
+            "Height": 0.8216046094894409,
+            "Left": 0.07245147973299026,
+            "Top": 0.042294301092624664
+          },
+          "Confidence": 95.75862884521484
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.4863288998603821,
+            "Height": 0.7331621050834656,
+            "Left": 0.3302425444126129,
+            "Top": 0.002901603002101183
+          },
+          "Confidence": 58.23146438598633
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 81.10235595703125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.021783294156193733,
+            "Height": 0.07602769881486893,
+            "Left": 0.09936031699180603,
+            "Top": 0.610628604888916
+          },
+          "Confidence": 81.10235595703125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.018403930589556694,
+            "Height": 0.060722652822732925,
+            "Left": 0.8246127367019653,
+            "Top": 0.709624707698822
+          },
+          "Confidence": 77.46763610839844
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.024750633165240288,
+            "Height": 0.06727912276983261,
+            "Left": 0.2829359173774719,
+            "Top": 0.5878131985664368
+          },
+          "Confidence": 71.79332733154297
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01717224158346653,
+            "Height": 0.044843658804893494,
+            "Left": 0.6624763607978821,
+            "Top": 0.6184706091880798
+          },
+          "Confidence": 55.695098876953125
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 81.10235595703125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 80.58734130859375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Waterfront",
+      "Confidence": 77.43474578857422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Truck",
+      "Confidence": 68.23637390136719,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.17241333425045013,
+            "Height": 0.14033736288547516,
+            "Left": 0.8114179968833923,
+            "Top": 0.6505024433135986
+          },
+          "Confidence": 68.23637390136719
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 68.23637390136719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 68.23637390136719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Pier",
+      "Confidence": 58.45478820800781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Port",
+      "Confidence": 58.45478820800781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Dock",
+      "Confidence": 58.45478820800781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Harbor",
+      "Confidence": 57.05751037597656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pier"
+        },
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

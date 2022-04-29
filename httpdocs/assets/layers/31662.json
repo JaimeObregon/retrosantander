@@ -1,0 +1,177 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Urban",
+      "Confidence": 94.39552307128906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 91.5548324584961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 91.5548324584961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 91.5548324584961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "High Rise",
+      "Confidence": 91.07331085205078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Construction",
+      "Confidence": 78.99830627441406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apartment Building",
+      "Confidence": 77.1394271850586,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "High Rise"
+        },
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 68.29863739013672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 67.4830551147461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Street",
+      "Confidence": 65.72908020019531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 65.72908020019531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Condo",
+      "Confidence": 63.898860931396484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 63.898860931396484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 61.85340881347656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Demolition",
+      "Confidence": 59.08699035644531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Scaffolding",
+      "Confidence": 58.510108947753906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Construction"
+        }
+      ]
+    },
+    {
+      "Name": "Utility Pole",
+      "Confidence": 58.3272819519043,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

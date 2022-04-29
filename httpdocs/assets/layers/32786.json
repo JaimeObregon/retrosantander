@@ -1,0 +1,211 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Truck",
+      "Confidence": 99.9657211303711,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7701125144958496,
+            "Height": 0.5206118226051331,
+            "Left": 0.14039085805416107,
+            "Top": 0.2309126853942871
+          },
+          "Confidence": 99.9657211303711
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.9657211303711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.9657211303711,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.38160705566406,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.05864380672574043,
+            "Height": 0.21481461822986603,
+            "Left": 0.000748193240724504,
+            "Top": 0.4298756718635559
+          },
+          "Confidence": 99.38160705566406
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1439540833234787,
+            "Height": 0.3978949785232544,
+            "Left": 0.1250888556241989,
+            "Top": 0.5413629412651062
+          },
+          "Confidence": 94.8658676147461
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.38160705566406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bicycle",
+      "Confidence": 98.65992736816406,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.32851722836494446,
+            "Height": 0.32267996668815613,
+            "Left": 0.012508716434240341,
+            "Top": 0.6708828210830688
+          },
+          "Confidence": 98.65992736816406
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bike",
+      "Confidence": 98.65992736816406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 98.56452941894531,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09935542196035385,
+            "Height": 0.2044680118560791,
+            "Left": 0.00009147643868345767,
+            "Top": 0.7936089038848877
+          },
+          "Confidence": 98.56452941894531
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.15042366087436676,
+            "Height": 0.16991576552391052,
+            "Left": 0.18966403603553772,
+            "Top": 0.8265860676765442
+          },
+          "Confidence": 89.75279998779297
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 98.56452941894531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cyclist",
+      "Confidence": 62.940521240234375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bicycle"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 62.940521240234375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 62.940521240234375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Fire Truck",
+      "Confidence": 55.80596923828125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Truck"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Tire",
+      "Confidence": 55.068485260009766,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

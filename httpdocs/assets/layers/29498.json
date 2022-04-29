@@ -1,0 +1,251 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Street",
+      "Confidence": 99.99751281738281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 99.99751281738281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 99.99751281738281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 99.99751281738281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.99751281738281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Town",
+      "Confidence": 99.99751281738281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Walkway",
+      "Confidence": 99.84571838378906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Path",
+      "Confidence": 99.84571838378906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Alley",
+      "Confidence": 95.6812973022461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Street"
+        },
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Alleyway",
+      "Confidence": 95.6812973022461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Street"
+        },
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Sidewalk",
+      "Confidence": 91.61487579345703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Pavement",
+      "Confidence": 91.61487579345703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 86.93421173095703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 82.85112762451172,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.018066558986902237,
+            "Height": 0.04792063310742378,
+            "Left": 0.4725164473056793,
+            "Top": 0.5961118936538696
+          },
+          "Confidence": 82.85112762451172
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 82.85112762451172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 72.86587524414062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Cobblestone",
+      "Confidence": 66.19743347167969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Walkway"
+        },
+        {
+          "Name": "Sidewalk"
+        },
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Arch",
+      "Confidence": 66.09430694580078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arched",
+      "Confidence": 66.09430694580078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Wall",
+      "Confidence": 65.40142059326172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Metropolis",
+      "Confidence": 60.12812042236328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

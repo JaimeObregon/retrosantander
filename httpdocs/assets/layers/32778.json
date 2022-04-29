@@ -1,0 +1,119 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Machine",
+      "Confidence": 98.21131134033203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Gas Station",
+      "Confidence": 92.98982238769531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pump"
+        },
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Pump",
+      "Confidence": 92.98982238769531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Gas Pump",
+      "Confidence": 60.02983474731445,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pump"
+        },
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Bicycle",
+      "Confidence": 58.27638626098633,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.027084579691290855,
+            "Height": 0.06959662586450577,
+            "Left": 0.5074150562286377,
+            "Top": 0.703947126865387
+          },
+          "Confidence": 58.27638626098633
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 58.27638626098633,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 58.27638626098633,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bike",
+      "Confidence": 58.27638626098633,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Petrol",
+      "Confidence": 55.28220748901367,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Gas Pump"
+        },
+        {
+          "Name": "Gas Station"
+        },
+        {
+          "Name": "Pump"
+        },
+        {
+          "Name": "Machine"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

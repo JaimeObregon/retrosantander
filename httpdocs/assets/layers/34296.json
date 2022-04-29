@@ -1,0 +1,105 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Tent",
+      "Confidence": 74.21736145019531,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2613266110420227,
+            "Height": 0.26677393913269043,
+            "Left": 0.6473386883735657,
+            "Top": 0.4141938090324402
+          },
+          "Confidence": 74.21736145019531
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09947002679109573,
+            "Height": 0.24743299186229706,
+            "Left": 0.5793583989143372,
+            "Top": 0.37881436944007874
+          },
+          "Confidence": 61.39110565185547
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Dog",
+      "Confidence": 73.63589477539062,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.0629250630736351,
+            "Height": 0.06090801954269409,
+            "Left": 0.03653249889612198,
+            "Top": 0.632407009601593
+          },
+          "Confidence": 73.63589477539062
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 73.63589477539062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 73.63589477539062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 73.63589477539062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 73.63589477539062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 55.0989875793457,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

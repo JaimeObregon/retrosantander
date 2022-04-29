@@ -1,0 +1,115 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Furniture",
+      "Confidence": 99.97843170166016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bed",
+      "Confidence": 99.10643768310547,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9245365858078003,
+            "Height": 0.7772339582443237,
+            "Left": 0.0524846650660038,
+            "Top": 0.21568144857883453
+          },
+          "Confidence": 97.21644592285156
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Bedroom",
+      "Confidence": 98.46917724609375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Room",
+      "Confidence": 98.46917724609375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 98.46917724609375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Dorm Room",
+      "Confidence": 73.7172622680664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bedroom"
+        },
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 70.49994659423828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 70.49994659423828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Home Decor",
+      "Confidence": 65.50472259521484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pillow",
+      "Confidence": 56.01142120361328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cushion"
+        }
+      ]
+    },
+    {
+      "Name": "Cushion",
+      "Confidence": 56.01142120361328,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,174 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Villa",
+      "Confidence": 99.0072021484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "House"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.0072021484375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 99.0072021484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "House",
+      "Confidence": 99.0072021484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 95.42618560791016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Car",
+      "Confidence": 93.17416381835938,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09937522560358047,
+            "Height": 0.2961059510707855,
+            "Left": 0.0014966392191126943,
+            "Top": 0.6995413303375244
+          },
+          "Confidence": 93.17416381835938
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 93.17416381835938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 93.17416381835938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 93.17416381835938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Arch",
+      "Confidence": 86.91737365722656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arched",
+      "Confidence": 86.91737365722656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Hacienda",
+      "Confidence": 64.41184997558594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Villa"
+        },
+        {
+          "Name": "House"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Path",
+      "Confidence": 61.37067794799805,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Walkway",
+      "Confidence": 61.06475067138672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

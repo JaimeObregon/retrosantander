@@ -1,0 +1,157 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Furniture",
+      "Confidence": 99.9815673828125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bench",
+      "Confidence": 99.97689819335938,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5313549041748047,
+            "Height": 0.43764060735702515,
+            "Left": 0.3370492458343506,
+            "Top": 0.44030502438545227
+          },
+          "Confidence": 99.97689819335938
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.30558907985687256,
+            "Height": 0.2785528600215912,
+            "Left": 0.19922997057437897,
+            "Top": 0.36432233452796936
+          },
+          "Confidence": 97.5971908569336
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Park Bench",
+      "Confidence": 95.55733489990234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bench"
+        },
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 84.5550537109375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.20856422185897827,
+            "Height": 0.5910106897354126,
+            "Left": 0.49665793776512146,
+            "Top": 0.23202523589134216
+          },
+          "Confidence": 84.5550537109375
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 84.5550537109375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sheep",
+      "Confidence": 72.68368530273438,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1405293345451355,
+            "Height": 0.19146764278411865,
+            "Left": 0.2567036747932434,
+            "Top": 0.1533503532409668
+          },
+          "Confidence": 72.68368530273438
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 72.68368530273438,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 72.68368530273438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 61.23636245727539,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.15195602178573608,
+            "Height": 0.22104327380657196,
+            "Left": 0.2505384683609009,
+            "Top": 0.12682729959487915
+          },
+          "Confidence": 61.23636245727539
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 61.111961364746094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Grass",
+      "Confidence": 55.921260833740234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 55.921260833740234,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

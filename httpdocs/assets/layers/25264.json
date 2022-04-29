@@ -1,0 +1,101 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Military",
+      "Confidence": 82.80303192138672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Military Uniform",
+      "Confidence": 82.05686950683594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Sniper",
+      "Confidence": 76.77861785888672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Soldier"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Soldier",
+      "Confidence": 76.77861785888672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Weapon",
+      "Confidence": 76.5700912475586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Weaponry",
+      "Confidence": 76.5700912475586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ground",
+      "Confidence": 75.48707580566406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Army",
+      "Confidence": 68.00128173828125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Armored"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Armored",
+      "Confidence": 68.00128173828125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Gun",
+      "Confidence": 60.12009811401367,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Weapon"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

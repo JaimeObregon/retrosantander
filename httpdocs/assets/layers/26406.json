@@ -1,0 +1,145 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.81194305419922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.911865234375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 95.450439453125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Winter",
+      "Confidence": 88.34427642822266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ice",
+      "Confidence": 86.45091247558594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Weather",
+      "Confidence": 83.53541564941406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Storm",
+      "Confidence": 79.56402587890625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 78.8647232055664,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.05523034557700157,
+            "Height": 0.08817104995250702,
+            "Left": 0.350212037563324,
+            "Top": 0.7462730407714844
+          },
+          "Confidence": 78.8647232055664
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04652160406112671,
+            "Height": 0.05472220107913017,
+            "Left": 0.4636118412017822,
+            "Top": 0.778489351272583
+          },
+          "Confidence": 70.38154602050781
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 78.8647232055664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Home Decor",
+      "Confidence": 77.11531066894531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fog",
+      "Confidence": 68.049072265625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Blizzard",
+      "Confidence": 67.57759857177734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Winter"
+        },
+        {
+          "Name": "Storm"
+        },
+        {
+          "Name": "Snow"
+        },
+        {
+          "Name": "Nature"
+        },
+        {
+          "Name": "Outdoors"
+        }
+      ]
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 56.508975982666016,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

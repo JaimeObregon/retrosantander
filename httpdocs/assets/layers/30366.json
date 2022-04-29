@@ -1,0 +1,67 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Tower",
+      "Confidence": 99.86956787109375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 99.86956787109375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.86956787109375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Lighthouse",
+      "Confidence": 92.76904296875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Beacon"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Beacon",
+      "Confidence": 92.76904296875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

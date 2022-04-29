@@ -1,0 +1,76 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Corridor",
+      "Confidence": 98.588623046875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Prison",
+      "Confidence": 91.49179077148438,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 83.75313568115234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 72.99549102783203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 60.85024642944336,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9587142467498779,
+            "Height": 0.930046796798706,
+            "Left": 0.024697493761777878,
+            "Top": 0.021210061386227608
+          },
+          "Confidence": 60.85024642944336
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 60.85024642944336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 57.9499397277832,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Warehouse",
+      "Confidence": 57.65085983276367,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

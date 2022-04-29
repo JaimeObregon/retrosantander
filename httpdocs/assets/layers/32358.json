@@ -1,0 +1,54 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Book",
+      "Confidence": 99.87577819824219,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.936923623085022,
+            "Height": 0.7178174257278442,
+            "Left": 0.028827209025621414,
+            "Top": 0.179566890001297
+          },
+          "Confidence": 99.87577819824219
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Text",
+      "Confidence": 98.99851989746094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Page",
+      "Confidence": 79.04547119140625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Diary",
+      "Confidence": 58.98320770263672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Paper",
+      "Confidence": 55.965023040771484,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

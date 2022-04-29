@@ -1,0 +1,112 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Plan",
+      "Confidence": 99.76665496826172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plot"
+        },
+        {
+          "Name": "Diagram"
+        }
+      ]
+    },
+    {
+      "Name": "Plot",
+      "Confidence": 99.76665496826172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Diagram",
+      "Confidence": 99.76665496826172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rug",
+      "Confidence": 71.77259826660156,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.955740213394165,
+            "Height": 0.9443687796592712,
+            "Left": 0.03630718216300011,
+            "Top": 0.047816578298807144
+          },
+          "Confidence": 71.77259826660156
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Passport",
+      "Confidence": 66.73210906982422,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9987499713897705,
+            "Height": 0.9695653319358826,
+            "Left": 0,
+            "Top": 0.02154679223895073
+          },
+          "Confidence": 66.73210906982422
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Id Cards"
+        },
+        {
+          "Name": "Document"
+        },
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Text",
+      "Confidence": 66.73210906982422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Document",
+      "Confidence": 66.73210906982422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Id Cards",
+      "Confidence": 66.73210906982422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Document"
+        },
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Map",
+      "Confidence": 58.757564544677734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Diagram"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

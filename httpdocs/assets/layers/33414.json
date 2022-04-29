@@ -1,0 +1,272 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.51950073242188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.3741226196289,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.059383392333984375,
+            "Height": 0.16054341197013855,
+            "Left": 0.4184914529323578,
+            "Top": 0.41074198484420776
+          },
+          "Confidence": 99.3741226196289
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.050324324518442154,
+            "Height": 0.15251488983631134,
+            "Left": 0.4225795865058899,
+            "Top": 0.7177435755729675
+          },
+          "Confidence": 68.22748565673828
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.3741226196289,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.93981170654297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 98.50582885742188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 95.87320709228516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 95.84075164794922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 95.84075164794922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 91.32581329345703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Hut",
+      "Confidence": 91.24774932861328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Shack",
+      "Confidence": 89.55252838134766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Hut"
+        },
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 79.84078216552734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "House",
+      "Confidence": 75.19291687011719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Elephant",
+      "Confidence": 60.643367767333984,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.4517902433872223,
+            "Height": 0.3839990794658661,
+            "Left": 0.14797067642211914,
+            "Top": 0.5059686303138733
+          },
+          "Confidence": 60.643367767333984
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 60.643367767333984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 60.643367767333984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 60.643367767333984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 58.53129959106445,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Walkway",
+      "Confidence": 57.323455810546875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Path",
+      "Confidence": 57.323455810546875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cottage",
+      "Confidence": 56.24161148071289,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "House"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

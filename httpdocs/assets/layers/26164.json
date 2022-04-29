@@ -1,0 +1,156 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.73626708984375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.4285423755645752,
+            "Height": 0.6332078576087952,
+            "Left": 0.25133609771728516,
+            "Top": 0.17919902503490448
+          },
+          "Confidence": 98.73626708984375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.21149668097496033,
+            "Height": 0.7092474102973938,
+            "Left": 0.010129954665899277,
+            "Top": 0.1826227754354477
+          },
+          "Confidence": 84.75357055664062
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.73626708984375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Worship",
+      "Confidence": 93.50000762939453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Archaeology",
+      "Confidence": 90.3758773803711,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Art",
+      "Confidence": 83.50247192382812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 72.72090148925781,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.965996503829956,
+            "Height": 0.9072732329368591,
+            "Left": 0.023045632988214493,
+            "Top": 0.06784139573574066
+          },
+          "Confidence": 72.72090148925781
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 67.43236541748047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 67.43236541748047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Buddha",
+      "Confidence": 66.1268081665039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Worship"
+        },
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Shrine",
+      "Confidence": 63.60942840576172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Worship"
+        },
+        {
+          "Name": "Temple"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Temple",
+      "Confidence": 63.60942840576172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Prayer",
+      "Confidence": 63.09962463378906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Worship"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 55.12354278564453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

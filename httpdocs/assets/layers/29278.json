@@ -1,0 +1,60 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Map",
+      "Confidence": 97.44031524658203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Diagram"
+        }
+      ]
+    },
+    {
+      "Name": "Diagram",
+      "Confidence": 97.44031524658203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Plot",
+      "Confidence": 95.94490814208984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Atlas",
+      "Confidence": 91.25109100341797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plot"
+        },
+        {
+          "Name": "Map"
+        },
+        {
+          "Name": "Diagram"
+        }
+      ]
+    },
+    {
+      "Name": "Rug",
+      "Confidence": 80.97378540039062,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.973327100276947,
+            "Height": 0.921786367893219,
+            "Left": 0.014687499962747097,
+            "Top": 0.038765378296375275
+          },
+          "Confidence": 80.97378540039062
+        }
+      ],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

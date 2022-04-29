@@ -1,0 +1,332 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bicycle",
+      "Confidence": 99.8482437133789,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1239636242389679,
+            "Height": 0.22333396971225739,
+            "Left": 0.6495276689529419,
+            "Top": 0.6165273785591125
+          },
+          "Confidence": 99.8482437133789
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.8482437133789,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.8482437133789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bike",
+      "Confidence": 99.8482437133789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 99.65702819824219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.38520812988281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.1733627319336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 96.91582489013672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 95.12871551513672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 93.49031829833984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 93.49031829833984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Shack",
+      "Confidence": 92.05677795410156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Hut"
+        },
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Hut",
+      "Confidence": 92.05677795410156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "House",
+      "Confidence": 87.44988250732422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 83.85810852050781,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.061285246163606644,
+            "Height": 0.10901923477649689,
+            "Left": 0.708645224571228,
+            "Top": 0.6991536021232605
+          },
+          "Confidence": 83.85810852050781
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0629701241850853,
+            "Height": 0.1913684606552124,
+            "Left": 0.6491013169288635,
+            "Top": 0.6740648150444031
+          },
+          "Confidence": 59.19059753417969
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 83.85810852050781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 81.8893051147461,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.11012878268957138,
+            "Height": 0.05593930929899216,
+            "Left": 0.003296580398455262,
+            "Top": 0.5008187294006348
+          },
+          "Confidence": 81.8893051147461
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 81.8893051147461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 78.59449005126953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 64.51570892333984,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04415847733616829,
+            "Height": 0.038764484226703644,
+            "Left": 0.24927595257759094,
+            "Top": 0.796847403049469
+          },
+          "Confidence": 64.51570892333984
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 64.51570892333984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cabin",
+      "Confidence": 63.489990234375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "House"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Door",
+      "Confidence": 57.039794921875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10838958621025085,
+            "Height": 0.4439605474472046,
+            "Left": 0.3768457770347595,
+            "Top": 0.3340837061405182
+          },
+          "Confidence": 57.039794921875
+        }
+      ],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

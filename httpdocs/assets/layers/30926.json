@@ -1,0 +1,119 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 99.60069274902344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Factory",
+      "Confidence": 99.20835876464844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 94.24951934814453,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06238739937543869,
+            "Height": 0.1288161724805832,
+            "Left": 0.02368216961622238,
+            "Top": 0.6602470278739929
+          },
+          "Confidence": 94.24951934814453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04734935984015465,
+            "Height": 0.11725690215826035,
+            "Left": 0.0016635615611448884,
+            "Top": 0.6640290021896362
+          },
+          "Confidence": 84.42606353759766
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.028957586735486984,
+            "Height": 0.024190831929445267,
+            "Left": 0.35977572202682495,
+            "Top": 0.5134627223014832
+          },
+          "Confidence": 74.05458068847656
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03774533420801163,
+            "Height": 0.03725201636552811,
+            "Left": 0.21461710333824158,
+            "Top": 0.7399642467498779
+          },
+          "Confidence": 68.5296401977539
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 94.24951934814453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Brewery",
+      "Confidence": 89.40675354003906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Factory"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Refinery",
+      "Confidence": 81.80567932128906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Factory"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Handrail",
+      "Confidence": 77.8655776977539,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Banister",
+      "Confidence": 77.8655776977539,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Power Plant",
+      "Confidence": 56.9246826171875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

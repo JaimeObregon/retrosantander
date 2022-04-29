@@ -1,0 +1,80 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Architecture",
+      "Confidence": 99.81922912597656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.81922912597656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pillar",
+      "Confidence": 97.3204116821289,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Column",
+      "Confidence": 97.3204116821289,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Fire Hydrant",
+      "Confidence": 67.2951889038086,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5758651494979858,
+            "Height": 0.7288973331451416,
+            "Left": 0.12812668085098267,
+            "Top": 0.23025232553482056
+          },
+          "Confidence": 67.2951889038086
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Hydrant"
+        }
+      ]
+    },
+    {
+      "Name": "Hydrant",
+      "Confidence": 67.2951889038086,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crypt",
+      "Confidence": 65.70671081542969,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

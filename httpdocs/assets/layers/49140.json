@@ -1,0 +1,129 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Animal",
+      "Confidence": 91.84648895263672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Train",
+      "Confidence": 87.88127899169922,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08261673152446747,
+            "Height": 0.17643605172634125,
+            "Left": 0.4939918518066406,
+            "Top": 0.6453529000282288
+          },
+          "Confidence": 87.88127899169922
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 87.88127899169922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 87.88127899169922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 78.71052551269531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 67.0678482055664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 62.47620391845703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Den",
+      "Confidence": 61.99150085449219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Finch",
+      "Confidence": 56.10872268676758,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Parakeet",
+      "Confidence": 55.34896469116211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Parrot"
+        },
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Parrot",
+      "Confidence": 55.34896469116211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

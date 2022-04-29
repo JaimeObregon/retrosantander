@@ -1,0 +1,132 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 94.46942138671875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bed",
+      "Confidence": 89.23908996582031,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.21318039298057556,
+            "Height": 0.25004488229751587,
+            "Left": 0.691922664642334,
+            "Top": 0.514431357383728
+          },
+          "Confidence": 89.23908996582031
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 89.23908996582031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Train",
+      "Confidence": 84.03858184814453,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5393338203430176,
+            "Height": 0.2724896967411041,
+            "Left": 0.2866249084472656,
+            "Top": 0.3344869017601013
+          },
+          "Confidence": 84.03858184814453
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 84.03858184814453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 84.03858184814453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 80.36515045166016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bedroom",
+      "Confidence": 76.82745361328125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Room",
+      "Confidence": 76.82745361328125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Factory",
+      "Confidence": 75.74193572998047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 64.34326934814453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Shop",
+      "Confidence": 57.385902404785156,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

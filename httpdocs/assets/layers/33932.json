@@ -1,0 +1,169 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Water",
+      "Confidence": 99.42853546142578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 97.73638916015625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04950050264596939,
+            "Height": 0.04448723793029785,
+            "Left": 0.5478919744491577,
+            "Top": 0.7966882586479187
+          },
+          "Confidence": 97.73638916015625
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 97.73638916015625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 97.73638916015625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 97.73638916015625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Waterfront",
+      "Confidence": 96.83851623535156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Pier",
+      "Confidence": 93.25343322753906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Dock",
+      "Confidence": 93.25343322753906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Port",
+      "Confidence": 93.25343322753906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Harbor",
+      "Confidence": 89.57986450195312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pier"
+        },
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 65.66278076171875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03782661259174347,
+            "Height": 0.08986067771911621,
+            "Left": 0.3929601013660431,
+            "Top": 0.751751720905304
+          },
+          "Confidence": 65.66278076171875
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 65.66278076171875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 64.65674591064453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Oilfield",
+      "Confidence": 60.11606216430664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 55.52619552612305,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

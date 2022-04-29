@@ -1,0 +1,132 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Restaurant",
+      "Confidence": 99.52167510986328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 97.66051483154297,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03218086063861847,
+            "Height": 0.13412544131278992,
+            "Left": 0.5937886238098145,
+            "Top": 0.4313317835330963
+          },
+          "Confidence": 97.66051483154297
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.036462631076574326,
+            "Height": 0.15302875638008118,
+            "Left": 0.5489578247070312,
+            "Top": 0.4168175458908081
+          },
+          "Confidence": 97.0616455078125
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.66051483154297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cafeteria",
+      "Confidence": 97.38497924804688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Restaurant"
+        }
+      ]
+    },
+    {
+      "Name": "Meal",
+      "Confidence": 94.92290496826172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Food"
+        }
+      ]
+    },
+    {
+      "Name": "Food",
+      "Confidence": 94.92290496826172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Interior Design",
+      "Confidence": 85.94770812988281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 85.94770812988281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Home Decor",
+      "Confidence": 82.06441497802734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 62.366355895996094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Buffet",
+      "Confidence": 62.3570442199707,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Meal"
+        },
+        {
+          "Name": "Cafeteria"
+        },
+        {
+          "Name": "Food"
+        },
+        {
+          "Name": "Restaurant"
+        }
+      ]
+    },
+    {
+      "Name": "Lab",
+      "Confidence": 57.40050506591797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cafe",
+      "Confidence": 56.70603942871094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Restaurant"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,140 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Flooring",
+      "Confidence": 99.73589324951172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Floor",
+      "Confidence": 99.64269256591797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 96.42161560058594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bench",
+      "Confidence": 95.36274719238281,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.17192871868610382,
+            "Height": 0.1006828024983406,
+            "Left": 0.7090051770210266,
+            "Top": 0.6009052395820618
+          },
+          "Confidence": 95.36274719238281
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.22757591307163239,
+            "Height": 0.0774059146642685,
+            "Left": 0.18932676315307617,
+            "Top": 0.6311672925949097
+          },
+          "Confidence": 90.57743835449219
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 95.36274719238281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Lobby",
+      "Confidence": 95.1366958618164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Room",
+      "Confidence": 95.1366958618164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 93.52556610107422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 93.52556610107422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Corridor",
+      "Confidence": 87.79803466796875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pillar",
+      "Confidence": 80.48541259765625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Column",
+      "Confidence": 80.48541259765625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 55.143707275390625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

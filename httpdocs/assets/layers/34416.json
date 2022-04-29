@@ -1,0 +1,136 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bull",
+      "Confidence": 98.64019012451172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 98.64019012451172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 98.64019012451172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 96.26837158203125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.21884781122207642,
+            "Height": 0.6051693558692932,
+            "Left": 0.5983130931854248,
+            "Top": 0.30794402956962585
+          },
+          "Confidence": 96.26837158203125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.29528340697288513,
+            "Height": 0.5141969919204712,
+            "Left": 0.34481197595596313,
+            "Top": 0.4624353349208832
+          },
+          "Confidence": 67.43614959716797
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.38005638122558594,
+            "Height": 0.5972131490707397,
+            "Left": 0.4059934914112091,
+            "Top": 0.3508371114730835
+          },
+          "Confidence": 60.000755310058594
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 96.26837158203125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bullfighter",
+      "Confidence": 89.28933715820312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Bullfighting",
+      "Confidence": 81.8783187866211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bullfighter"
+        },
+        {
+          "Name": "Bull"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 80.60051727294922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Stadium",
+      "Confidence": 59.46402359008789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Arena"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arena",
+      "Confidence": 59.46402359008789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

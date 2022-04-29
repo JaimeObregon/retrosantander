@@ -1,0 +1,122 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.2090835571289,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.017580872401595116,
+            "Height": 0.05529976636171341,
+            "Left": 0.9329521656036377,
+            "Top": 0.5676553249359131
+          },
+          "Confidence": 96.76611328125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.018175506964325905,
+            "Height": 0.07256242632865906,
+            "Left": 0.7866183519363403,
+            "Top": 0.5494176745414734
+          },
+          "Confidence": 96.1087646484375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.047061920166015625,
+            "Height": 0.11852895468473434,
+            "Left": 0.46809321641921997,
+            "Top": 0.5645809769630432
+          },
+          "Confidence": 95.38029479980469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.013602828606963158,
+            "Height": 0.053081437945365906,
+            "Left": 0.48054516315460205,
+            "Top": 0.5345450639724731
+          },
+          "Confidence": 87.82887268066406
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.013683319091796875,
+            "Height": 0.05933595448732376,
+            "Left": 0.4020124077796936,
+            "Top": 0.49116429686546326
+          },
+          "Confidence": 55.14104461669922
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012742538005113602,
+            "Height": 0.04015706479549408,
+            "Left": 0.5735393762588501,
+            "Top": 0.5333155393600464
+          },
+          "Confidence": 42.40044403076172
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.2090835571289,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cricket",
+      "Confidence": 98.07304382324219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 98.07304382324219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 98.07304382324219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Field",
+      "Confidence": 86.94414520263672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 67.55387115478516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,102 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Diagram",
+      "Confidence": 86.8416519165039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Text",
+      "Confidence": 85.11468505859375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Plot",
+      "Confidence": 83.59712219238281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Plan",
+      "Confidence": 82.55335998535156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plot"
+        },
+        {
+          "Name": "Diagram"
+        }
+      ]
+    },
+    {
+      "Name": "Passport",
+      "Confidence": 78.07901000976562,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9827337861061096,
+            "Height": 0.9577351808547974,
+            "Left": 0.016016196459531784,
+            "Top": 0.0340411439538002
+          },
+          "Confidence": 78.07901000976562
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Id Cards"
+        },
+        {
+          "Name": "Document"
+        },
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Document",
+      "Confidence": 78.07901000976562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Id Cards",
+      "Confidence": 78.07901000976562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Document"
+        },
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Paper",
+      "Confidence": 67.0954818725586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Map",
+      "Confidence": 58.1325569152832,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Diagram"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

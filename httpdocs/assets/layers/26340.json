@@ -1,0 +1,188 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.89820098876953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 93.50739288330078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fog",
+      "Confidence": 90.90272521972656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Smoke",
+      "Confidence": 87.28052520751953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 81.303466796875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.02471771277487278,
+            "Height": 0.07324936240911484,
+            "Left": 0.4722362160682678,
+            "Top": 0.7633582353591919
+          },
+          "Confidence": 81.303466796875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.052799224853515625,
+            "Height": 0.2168230414390564,
+            "Left": 0.6041200757026672,
+            "Top": 0.44158482551574707
+          },
+          "Confidence": 56.501216888427734
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 81.303466796875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Smog",
+      "Confidence": 74.47045135498047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fog"
+        },
+        {
+          "Name": "Smoke"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Monitor",
+      "Confidence": 68.31572723388672,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9911555647850037,
+            "Height": 0.9981343150138855,
+            "Left": 0.0075944517739117146,
+            "Top": 0
+          },
+          "Confidence": 68.31572723388672
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Screen"
+        },
+        {
+          "Name": "Electronics"
+        }
+      ]
+    },
+    {
+      "Name": "Electronics",
+      "Confidence": 68.31572723388672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Screen",
+      "Confidence": 68.31572723388672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Electronics"
+        }
+      ]
+    },
+    {
+      "Name": "Display",
+      "Confidence": 68.31572723388672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Screen"
+        },
+        {
+          "Name": "Electronics"
+        }
+      ]
+    },
+    {
+      "Name": "Weather",
+      "Confidence": 65.07284545898438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 64.55252075195312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Pollution",
+      "Confidence": 58.5715217590332,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 57.263160705566406,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9305265545845032,
+            "Height": 0.8923603892326355,
+            "Left": 0.024570312350988388,
+            "Top": 0.060671593993902206
+          },
+          "Confidence": 57.263160705566406
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 57.263160705566406,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

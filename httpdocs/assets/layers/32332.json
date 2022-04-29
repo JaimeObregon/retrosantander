@@ -1,0 +1,137 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Railing",
+      "Confidence": 99.97381591796875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Handrail",
+      "Confidence": 99.39266204833984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Banister",
+      "Confidence": 99.39266204833984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 97.95306396484375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09275848418474197,
+            "Height": 0.05349218472838402,
+            "Left": 0.5672568678855896,
+            "Top": 0.0894421637058258
+          },
+          "Confidence": 97.95306396484375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.11578775197267532,
+            "Height": 0.06037748605012894,
+            "Left": 0.20668119192123413,
+            "Top": 0.1081317812204361
+          },
+          "Confidence": 93.57130432128906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.12749344110488892,
+            "Height": 0.0644010603427887,
+            "Left": 0.6928567290306091,
+            "Top": 0.08442658185958862
+          },
+          "Confidence": 87.3255386352539
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 97.95306396484375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 97.95306396484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 97.95306396484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Balcony",
+      "Confidence": 86.22672271728516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 82.340087890625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.01811111532151699,
+            "Height": 0.07209748774766922,
+            "Left": 0.9196458458900452,
+            "Top": 0.07066920399665833
+          },
+          "Confidence": 82.340087890625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02115505188703537,
+            "Height": 0.0749562606215477,
+            "Left": 0.6176691055297852,
+            "Top": 0.12107305973768234
+          },
+          "Confidence": 44.79153823852539
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 82.340087890625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fence",
+      "Confidence": 68.32849884033203,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

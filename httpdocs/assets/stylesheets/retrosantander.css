@@ -1,3 +1,13 @@
+@keyframes pulsate {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.025);
+  }
+}
+
 @keyframes rainbow {
   from {
     fill: rgb(255, 255, 255);
@@ -203,6 +213,32 @@ main figure img {
   border-radius: 4px;
   transition: background ease-out 500ms 250ms;
   cursor: pointer;
+}
+
+main.zoomed figure:hover div {
+  position: absolute;
+  border: 0.5px solid;
+  border-radius: 1px;
+  transition: ease-out 150ms;
+}
+
+main.zoomed figure:hover div.face {
+  border-color: yellow;
+}
+
+main.zoomed figure:hover div.label {
+  border-color: magenta;
+}
+
+main.zoomed figure:hover div:hover {
+  border-color: white;
+  animation: pulsate 750ms ease-in-out infinite alternate;
+  background: rgba(255, 255, 255, 0.25);
+  cursor: help;
+}
+
+main.zoomed img {
+  margin-bottom: 0;
 }
 
 main:not(.zoomed) img:hover {

@@ -1,0 +1,124 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Art",
+      "Confidence": 93.44010162353516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 91.22307586669922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 83.8724365234375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.11835414916276932,
+            "Height": 0.4932304620742798,
+            "Left": 0.26012924313545227,
+            "Top": 0.2598460912704468
+          },
+          "Confidence": 83.8724365234375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1807483732700348,
+            "Height": 0.5792561769485474,
+            "Left": 0.4010264575481415,
+            "Top": 0.2587433457374573
+          },
+          "Confidence": 82.06536865234375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09099868685007095,
+            "Height": 0.47021588683128357,
+            "Left": 0.3216405212879181,
+            "Top": 0.27753546833992004
+          },
+          "Confidence": 72.38815307617188
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 83.8724365234375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Elephant",
+      "Confidence": 61.14645004272461,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3651464879512787,
+            "Height": 0.6386417746543884,
+            "Left": 0.46266859769821167,
+            "Top": 0.17042726278305054
+          },
+          "Confidence": 61.14645004272461
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 61.14645004272461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 61.14645004272461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 61.14645004272461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Funeral",
+      "Confidence": 56.504234313964844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

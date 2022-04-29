@@ -1,0 +1,135 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Lion",
+      "Confidence": 98.4623031616211,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.4176483452320099,
+            "Height": 0.19831356406211853,
+            "Left": 0.1987009346485138,
+            "Top": 0.36703190207481384
+          },
+          "Confidence": 98.4623031616211
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 98.4623031616211,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 98.4623031616211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 98.4623031616211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 94.39159393310547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 94.39159393310547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Archaeology",
+      "Confidence": 87.83613586425781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pillar",
+      "Confidence": 87.10810089111328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Column",
+      "Confidence": 87.10810089111328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Sculpture",
+      "Confidence": 85.22203063964844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 85.22203063964844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Statue",
+      "Confidence": 75.62674713134766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sculpture"
+        },
+        {
+          "Name": "Art"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

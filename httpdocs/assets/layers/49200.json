@@ -1,0 +1,129 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Workshop",
+      "Confidence": 98.58610534667969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Clock Tower",
+      "Confidence": 90.75038146972656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07504045218229294,
+            "Height": 0.14542272686958313,
+            "Left": 0.30942976474761963,
+            "Top": 0.14387600123882294
+          },
+          "Confidence": 90.75038146972656
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 90.75038146972656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 90.75038146972656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tower",
+      "Confidence": 90.75038146972656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 83.51153564453125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06632497161626816,
+            "Height": 0.3048095107078552,
+            "Left": 0.09530612081289291,
+            "Top": 0.16557344794273376
+          },
+          "Confidence": 83.51153564453125
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 83.51153564453125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shop",
+      "Confidence": 82.98822784423828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Museum",
+      "Confidence": 63.61993408203125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Armory",
+      "Confidence": 59.15985107421875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Weapon"
+        }
+      ]
+    },
+    {
+      "Name": "Weapon",
+      "Confidence": 59.15985107421875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Weaponry",
+      "Confidence": 59.15985107421875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 57.89375305175781,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

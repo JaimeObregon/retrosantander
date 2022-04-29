@@ -1,0 +1,200 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Boat",
+      "Confidence": 99.2337646484375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7635625600814819,
+            "Height": 0.454695463180542,
+            "Left": 0.11904838681221008,
+            "Top": 0.3120623528957367
+          },
+          "Confidence": 99.2337646484375
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.2337646484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.2337646484375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cruiser",
+      "Confidence": 99.18978881835938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Navy"
+        },
+        {
+          "Name": "Ship"
+        },
+        {
+          "Name": "Military"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Military",
+      "Confidence": 99.18978881835938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Navy",
+      "Confidence": 99.18978881835938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Ship",
+      "Confidence": 99.18978881835938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Watercraft",
+      "Confidence": 97.8923568725586,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vessel",
+      "Confidence": 97.8923568725586,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Barge",
+      "Confidence": 86.59947204589844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Watercraft"
+        },
+        {
+          "Name": "Boat"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Battleship",
+      "Confidence": 85.24932098388672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Navy"
+        },
+        {
+          "Name": "Ship"
+        },
+        {
+          "Name": "Military"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Destroyer",
+      "Confidence": 75.19209289550781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Watercraft"
+        },
+        {
+          "Name": "Navy"
+        },
+        {
+          "Name": "Ship"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Military"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 63.29328536987305,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 55.61750411987305,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

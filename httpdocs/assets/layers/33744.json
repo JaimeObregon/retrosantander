@@ -1,0 +1,128 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Train",
+      "Confidence": 97.75846862792969,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8306592702865601,
+            "Height": 0.5794757008552551,
+            "Left": 0.025729674845933914,
+            "Top": 0.19813799858093262
+          },
+          "Confidence": 97.75846862792969
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 97.75846862792969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 97.75846862792969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Passenger Car",
+      "Confidence": 89.3511734008789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 80.22626495361328,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.014042968861758709,
+            "Height": 0.06293237209320068,
+            "Left": 0.9300426244735718,
+            "Top": 0.5512471199035645
+          },
+          "Confidence": 80.22626495361328
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01337432861328125,
+            "Height": 0.06196951866149902,
+            "Left": 0.9491998553276062,
+            "Top": 0.5549732446670532
+          },
+          "Confidence": 77.20207214355469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01518936175853014,
+            "Height": 0.07021307945251465,
+            "Left": 0.8174118995666504,
+            "Top": 0.5292737483978271
+          },
+          "Confidence": 64.68122100830078
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 80.22626495361328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Railway",
+      "Confidence": 61.59432601928711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Train Track",
+      "Confidence": 61.59432601928711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Rail",
+      "Confidence": 61.59432601928711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

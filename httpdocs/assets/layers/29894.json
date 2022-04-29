@@ -1,0 +1,67 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bus",
+      "Confidence": 99.95348358154297,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7754690647125244,
+            "Height": 0.6468489170074463,
+            "Left": 0.10148845613002777,
+            "Top": 0.1692773997783661
+          },
+          "Confidence": 99.95348358154297
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.95348358154297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.95348358154297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 88.34315490722656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07037597894668579,
+            "Height": 0.3162367343902588,
+            "Left": 0.4440813362598419,
+            "Top": 0.5049927234649658
+          },
+          "Confidence": 88.34315490722656
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 88.34315490722656,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

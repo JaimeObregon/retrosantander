@@ -1,0 +1,359 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.71121215820312,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.017348632216453552,
+            "Height": 0.07198581099510193,
+            "Left": 0.6736074090003967,
+            "Top": 0.6354323029518127
+          },
+          "Confidence": 98.71121215820312
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.014562073163688183,
+            "Height": 0.06484600156545639,
+            "Left": 0.6576626300811768,
+            "Top": 0.645149290561676
+          },
+          "Confidence": 79.47543334960938
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012242737226188183,
+            "Height": 0.031971875578165054,
+            "Left": 0.6148685812950134,
+            "Top": 0.634320855140686
+          },
+          "Confidence": 76.85350036621094
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.017764128744602203,
+            "Height": 0.06496889889240265,
+            "Left": 0.7189275622367859,
+            "Top": 0.6419860124588013
+          },
+          "Confidence": 73.56128692626953
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.71121215820312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 98.20185089111328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 96.7391586303711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 96.7391586303711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 96.7391586303711,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Neighborhood",
+      "Confidence": 91.3846664428711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "High Rise",
+      "Confidence": 91.27361297607422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 90.79613494873047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apartment Building",
+      "Confidence": 86.58570861816406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "High Rise"
+        },
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 82.83189392089844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 82.83189392089844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Downtown",
+      "Confidence": 80.85350799560547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Path",
+      "Confidence": 80.69430541992188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 79.62592315673828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Metropolis",
+      "Confidence": 79.20301055908203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Street",
+      "Confidence": 79.1337661743164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 78.30821228027344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 77.68001556396484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 74.5401611328125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Pedestrian",
+      "Confidence": 72.48744201660156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Condo",
+      "Confidence": 69.48123168945312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Palm Tree",
+      "Confidence": 69.03688049316406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Arecaceae",
+      "Confidence": 69.03688049316406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 59.2353515625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Villa",
+      "Confidence": 59.052425384521484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "House"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "House",
+      "Confidence": 59.052425384521484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 56.59145736694336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Intersection",
+      "Confidence": 56.13821792602539,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Road"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

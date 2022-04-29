@@ -1,0 +1,146 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Locomotive",
+      "Confidence": 99.91537475585938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Train"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Train",
+      "Confidence": 99.91537475585938,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5504294037818909,
+            "Height": 0.7372139096260071,
+            "Left": 0.2501780688762665,
+            "Top": 0.18335703015327454
+          },
+          "Confidence": 97.50408172607422
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.91537475585938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.91537475585938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Steam Engine",
+      "Confidence": 97.28165435791016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Engine"
+        },
+        {
+          "Name": "Locomotive"
+        },
+        {
+          "Name": "Motor"
+        },
+        {
+          "Name": "Train"
+        },
+        {
+          "Name": "Machine"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Engine",
+      "Confidence": 97.28165435791016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Motor"
+        },
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 97.28165435791016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Motor",
+      "Confidence": 97.28165435791016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 97.17781829833984,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09552101045846939,
+            "Height": 0.37891316413879395,
+            "Left": 0.5384392738342285,
+            "Top": 0.3470419943332672
+          },
+          "Confidence": 97.17781829833984
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.17781829833984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Art",
+      "Confidence": 68.34188842773438,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

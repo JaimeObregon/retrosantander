@@ -1,0 +1,54 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Clothing",
+      "Confidence": 99.9947280883789,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 99.9947280883789,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Veil",
+      "Confidence": 97.97097778320312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 79.83529663085938,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9121856093406677,
+            "Height": 0.9316322803497314,
+            "Left": 0.061536893248558044,
+            "Top": 0.04932830110192299
+          },
+          "Confidence": 79.83529663085938
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 79.83529663085938,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

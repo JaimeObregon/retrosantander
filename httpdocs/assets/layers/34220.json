@@ -1,0 +1,211 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.50130462646484,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08932662755250931,
+            "Height": 0.30601659417152405,
+            "Left": 0.2814617156982422,
+            "Top": 0.36601918935775757
+          },
+          "Confidence": 99.50130462646484
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02466588094830513,
+            "Height": 0.04535011574625969,
+            "Left": 0.14883087575435638,
+            "Top": 0.39856958389282227
+          },
+          "Confidence": 86.91619110107422
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.16613341867923737,
+            "Height": 0.28667593002319336,
+            "Left": 0.40242522954940796,
+            "Top": 0.43276137113571167
+          },
+          "Confidence": 76.07190704345703
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.50130462646484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.07862091064453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 98.98816680908203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Field",
+      "Confidence": 97.80321502685547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Agriculture",
+      "Confidence": 96.08216094970703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Field"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 96.08216094970703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Grassland",
+      "Confidence": 89.99833679199219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Field"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 79.7027359008789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Planting",
+      "Confidence": 65.5855941772461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Farm",
+      "Confidence": 65.57969665527344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 60.92151641845703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 60.92151641845703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Photography",
+      "Confidence": 60.19491195678711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photo",
+      "Confidence": 60.19491195678711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Land",
+      "Confidence": 59.024871826171875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Harvest",
+      "Confidence": 55.47414779663086,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

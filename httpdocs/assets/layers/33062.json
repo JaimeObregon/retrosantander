@@ -1,0 +1,108 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Wood",
+      "Confidence": 82.63462829589844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 72.62257385253906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 70.93602752685547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Elephant",
+      "Confidence": 67.26866912841797,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.6013327240943909,
+            "Height": 0.8493725657463074,
+            "Left": 0.23738506436347961,
+            "Top": 0.10154067724943161
+          },
+          "Confidence": 67.26866912841797
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 67.26866912841797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 67.26866912841797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 67.26866912841797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 62.48444747924805,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.030383529141545296,
+            "Height": 0.13961295783519745,
+            "Left": 0.3226860463619232,
+            "Top": 0.6694561839103699
+          },
+          "Confidence": 62.48444747924805
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 62.48444747924805,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 56.30723190307617,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

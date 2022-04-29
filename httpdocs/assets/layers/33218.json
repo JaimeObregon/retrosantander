@@ -1,0 +1,183 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.31902313232422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.88641357421875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 95.3315200805664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 92.0943832397461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Farm",
+      "Confidence": 89.927490234375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 84.2041244506836,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.0347096249461174,
+            "Height": 0.12355522066354752,
+            "Left": 0.8471025824546814,
+            "Top": 0.438721239566803
+          },
+          "Confidence": 84.2041244506836
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 84.2041244506836,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 81.28883361816406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 81.28883361816406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 80.77352142333984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 71.49945831298828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Tractor",
+      "Confidence": 68.88377380371094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Farm Plow",
+      "Confidence": 64.48217010498047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Farm"
+        },
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Bulldozer",
+      "Confidence": 59.768653869628906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tractor"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

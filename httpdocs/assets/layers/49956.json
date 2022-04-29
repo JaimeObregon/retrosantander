@@ -1,0 +1,165 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 79.24729919433594,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06697578728199005,
+            "Height": 0.1666126400232315,
+            "Left": 0.3824099004268646,
+            "Top": 0.401435911655426
+          },
+          "Confidence": 66.53385162353516
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06075027585029602,
+            "Height": 0.14055152237415314,
+            "Left": 0.31184351444244385,
+            "Top": 0.39841800928115845
+          },
+          "Confidence": 53.976287841796875
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 79.24729919433594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Art",
+      "Confidence": 79.00347900390625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Room",
+      "Confidence": 71.4679183959961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 71.4679183959961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Drawing",
+      "Confidence": 70.1106185913086,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 63.68796920776367,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 63.68796920776367,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Home Decor",
+      "Confidence": 62.690093994140625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 61.71146774291992,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9455339908599854,
+            "Height": 0.8986372947692871,
+            "Left": 0.019318237900733948,
+            "Top": 0.07383251190185547
+          },
+          "Confidence": 61.71146774291992
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 61.030845642089844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bedroom",
+      "Confidence": 60.78297424316406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Advertisement",
+      "Confidence": 57.54705047607422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bed",
+      "Confidence": 57.364219665527344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Dorm Room",
+      "Confidence": 55.83082580566406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bedroom"
+        },
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,165 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 97.59684753417969,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06368782371282578,
+            "Height": 0.06805723160505295,
+            "Left": 0.4234229326248169,
+            "Top": 0.5669476985931396
+          },
+          "Confidence": 97.59684753417969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07745025306940079,
+            "Height": 0.07562290877103806,
+            "Left": 0.350320965051651,
+            "Top": 0.5525969862937927
+          },
+          "Confidence": 95.1427230834961
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06575805693864822,
+            "Height": 0.07838839292526245,
+            "Left": 0.4967401921749115,
+            "Top": 0.5795843601226807
+          },
+          "Confidence": 93.24531555175781
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.59684753417969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 80.76895141601562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 80.76895141601562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 80.18624877929688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 78.48084259033203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Boat",
+      "Confidence": 74.73987579345703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.27460020780563354,
+            "Height": 0.13117995858192444,
+            "Left": 0.30714675784111023,
+            "Top": 0.5718016028404236
+          },
+          "Confidence": 50.515724182128906
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Pillar",
+      "Confidence": 74.71810913085938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Column",
+      "Confidence": 74.71810913085938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Curtain",
+      "Confidence": 62.3068733215332,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Corridor",
+      "Confidence": 56.41281509399414,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Watercraft",
+      "Confidence": 55.61412811279297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vessel",
+      "Confidence": 55.61412811279297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

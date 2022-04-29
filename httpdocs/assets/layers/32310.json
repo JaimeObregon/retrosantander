@@ -1,0 +1,86 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 79.53842163085938,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10823355615139008,
+            "Height": 0.11608864367008209,
+            "Left": 0.8391408920288086,
+            "Top": 0.6920610666275024
+          },
+          "Confidence": 79.53842163085938
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 79.53842163085938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Gazebo",
+      "Confidence": 61.639652252197266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bicycle",
+      "Confidence": 57.72298049926758,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.21405458450317383,
+            "Height": 0.10427743196487427,
+            "Left": 0.20384487509727478,
+            "Top": 0.6470465064048767
+          },
+          "Confidence": 57.72298049926758
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 57.72298049926758,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bike",
+      "Confidence": 57.72298049926758,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 57.72298049926758,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

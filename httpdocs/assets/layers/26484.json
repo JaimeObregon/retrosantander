@@ -1,0 +1,259 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 98.4227066040039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 94.25067138671875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Weather",
+      "Confidence": 85.31430053710938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Fog",
+      "Confidence": 81.83636474609375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 81.28067779541016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 81.28067779541016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 77.57496643066406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 77.57496643066406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vegetation",
+      "Confidence": 69.72190856933594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Mist",
+      "Confidence": 63.78495788574219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Fog"
+        },
+        {
+          "Name": "Weather"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Antelope",
+      "Confidence": 62.5738410949707,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.11891471594572067,
+            "Height": 0.1536882221698761,
+            "Left": 0.49963268637657166,
+            "Top": 0.6079976558685303
+          },
+          "Confidence": 62.5738410949707
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 62.5738410949707,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wolf",
+      "Confidence": 61.70295715332031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Woodland",
+      "Confidence": 61.58790588378906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Land"
+        },
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Forest",
+      "Confidence": 61.58790588378906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Land"
+        },
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Land",
+      "Confidence": 61.58790588378906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Deer",
+      "Confidence": 59.121826171875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Red Wolf",
+      "Confidence": 58.33075714111328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wolf"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 58.33075714111328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

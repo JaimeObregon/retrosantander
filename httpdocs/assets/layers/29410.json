@@ -1,0 +1,287 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Path",
+      "Confidence": 98.54131317138672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 96.47479248046875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09922133386135101,
+            "Height": 0.03466062247753143,
+            "Left": 0.8719229102134705,
+            "Top": 0.44593968987464905
+          },
+          "Confidence": 96.47479248046875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1002395749092102,
+            "Height": 0.03257239982485771,
+            "Left": 0.7924482822418213,
+            "Top": 0.44181883335113525
+          },
+          "Confidence": 87.41590881347656
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 96.47479248046875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 96.47479248046875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 96.47479248046875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 94.57123565673828,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.01842823438346386,
+            "Height": 0.03338131308555603,
+            "Left": 0.3921813666820526,
+            "Top": 0.4284716546535492
+          },
+          "Confidence": 94.57123565673828
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.022906212136149406,
+            "Height": 0.036208655685186386,
+            "Left": 0.4581195116043091,
+            "Top": 0.4277603328227997
+          },
+          "Confidence": 84.49310302734375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.021529365330934525,
+            "Height": 0.028364846482872963,
+            "Left": 0.36210963129997253,
+            "Top": 0.42611369490623474
+          },
+          "Confidence": 76.28719329833984
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01287353876978159,
+            "Height": 0.0174391008913517,
+            "Left": 0.2940749526023865,
+            "Top": 0.42479732632637024
+          },
+          "Confidence": 72.64373016357422
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01709534414112568,
+            "Height": 0.029329145327210426,
+            "Left": 0.2725312411785126,
+            "Top": 0.4255311191082001
+          },
+          "Confidence": 66.8614730834961
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012212944217026234,
+            "Height": 0.018653078004717827,
+            "Left": 0.3265962600708008,
+            "Top": 0.4214567542076111
+          },
+          "Confidence": 53.959781646728516
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 94.57123565673828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sidewalk",
+      "Confidence": 87.81578063964844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Pavement",
+      "Confidence": 87.81578063964844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 86.98892974853516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 86.98892974853516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 78.0792465209961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tarmac",
+      "Confidence": 77.8770980834961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Asphalt",
+      "Confidence": 77.8770980834961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Road",
+      "Confidence": 76.181640625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 73.32140350341797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pedestrian",
+      "Confidence": 70.02507019042969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 61.1620979309082,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.846463680267334,
+            "Height": 0.43460986018180847,
+            "Left": 0.07377277314662933,
+            "Top": 0.5150575041770935
+          },
+          "Confidence": 61.1620979309082
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 61.1620979309082,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Grass",
+      "Confidence": 60.35255432128906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Walkway",
+      "Confidence": 58.311317443847656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Ice",
+      "Confidence": 55.27390670776367,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Handrail",
+      "Confidence": 55.062076568603516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Banister",
+      "Confidence": 55.062076568603516,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

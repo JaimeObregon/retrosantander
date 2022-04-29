@@ -1,0 +1,145 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.68708801269531,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08942146599292755,
+            "Height": 0.439980149269104,
+            "Left": 0.4732585847377777,
+            "Top": 0.5187720656394958
+          },
+          "Confidence": 99.68708801269531
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07784942537546158,
+            "Height": 0.23164010047912598,
+            "Left": 0.7101799845695496,
+            "Top": 0.5424196720123291
+          },
+          "Confidence": 99.12874603271484
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03389526531100273,
+            "Height": 0.1485438346862793,
+            "Left": 0.879859983921051,
+            "Top": 0.5550277829170227
+          },
+          "Confidence": 92.9222183227539
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.025826111435890198,
+            "Height": 0.13637173175811768,
+            "Left": 0.9083600044250488,
+            "Top": 0.5453819632530212
+          },
+          "Confidence": 90.62667083740234
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02413024939596653,
+            "Height": 0.12977385520935059,
+            "Left": 0.9207538366317749,
+            "Top": 0.5485663414001465
+          },
+          "Confidence": 76.95235443115234
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.044415589421987534,
+            "Height": 0.1477646827697754,
+            "Left": 0.791978657245636,
+            "Top": 0.5608348250389099
+          },
+          "Confidence": 70.01708221435547
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.68708801269531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fireman",
+      "Confidence": 83.45529174804688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 83.364990234375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Smoke",
+      "Confidence": 76.87626647949219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sea",
+      "Confidence": 60.474212646484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 60.474212646484375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ocean",
+      "Confidence": 60.474212646484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Water",
+      "Confidence": 60.474212646484375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pollution",
+      "Confidence": 58.02104568481445,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

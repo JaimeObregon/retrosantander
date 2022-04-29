@@ -1,0 +1,296 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Car",
+      "Confidence": 99.54351043701172,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.16387462615966797,
+            "Height": 0.11362964659929276,
+            "Left": 0.15933574736118317,
+            "Top": 0.669299304485321
+          },
+          "Confidence": 99.54351043701172
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05253034457564354,
+            "Height": 0.02799800969660282,
+            "Left": 0.01885395310819149,
+            "Top": 0.5280855894088745
+          },
+          "Confidence": 78.58351135253906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02911071851849556,
+            "Height": 0.05006561055779457,
+            "Left": 0.9696393013000488,
+            "Top": 0.5424133539199829
+          },
+          "Confidence": 75.83256530761719
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.54351043701172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.54351043701172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 99.54351043701172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 96.33233642578125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.01567455381155014,
+            "Height": 0.07663360238075256,
+            "Left": 0.2810114622116089,
+            "Top": 0.6054909825325012
+          },
+          "Confidence": 62.912174224853516
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.013071060180664062,
+            "Height": 0.04879740625619888,
+            "Left": 0.5614554286003113,
+            "Top": 0.4715355634689331
+          },
+          "Confidence": 46.613582611083984
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 96.33233642578125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Truck",
+      "Confidence": 95.55167388916016,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.15733420848846436,
+            "Height": 0.1630277782678604,
+            "Left": 0.36539405584335327,
+            "Top": 0.5624021887779236
+          },
+          "Confidence": 95.55167388916016
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bus",
+      "Confidence": 92.30101776123047,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.16735626757144928,
+            "Height": 0.21883539855480194,
+            "Left": 0.6765506863594055,
+            "Top": 0.7056827545166016
+          },
+          "Confidence": 92.30101776123047
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.18008728325366974,
+            "Height": 0.2341846525669098,
+            "Left": 0.675370991230011,
+            "Top": 0.610079288482666
+          },
+          "Confidence": 87.20896911621094
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Camping",
+      "Confidence": 91.64205169677734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 78.97648620605469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tent",
+      "Confidence": 76.99439239501953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 75.96076965332031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 75.96076965332031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 75.96076965332031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 75.96076965332031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 75.96076965332031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Boat",
+      "Confidence": 70.82441711425781,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10459442436695099,
+            "Height": 0.11458735913038254,
+            "Left": 0.6066191792488098,
+            "Top": 0.38075265288352966
+          },
+          "Confidence": 70.82441711425781
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 67.8931884765625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.02192068099975586,
+            "Height": 0.03565913066267967,
+            "Left": 0.30101579427719116,
+            "Top": 0.7078362703323364
+          },
+          "Confidence": 67.8931884765625
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 67.8931884765625,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

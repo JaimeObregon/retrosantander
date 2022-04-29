@@ -1,0 +1,112 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bull",
+      "Confidence": 99.32130432128906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 99.32130432128906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.32130432128906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.19109344482422,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.13177287578582764,
+            "Height": 0.6064702868461609,
+            "Left": 0.5783607363700867,
+            "Top": 0.17898793518543243
+          },
+          "Confidence": 99.19109344482422
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.19109344482422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bullfighter",
+      "Confidence": 93.59698486328125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Bullfighting",
+      "Confidence": 93.38550567626953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bullfighter"
+        },
+        {
+          "Name": "Bull"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Horse",
+      "Confidence": 90.58805847167969,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2192952036857605,
+            "Height": 0.5094242691993713,
+            "Left": 0.36994829773902893,
+            "Top": 0.3826777935028076
+          },
+          "Confidence": 90.58805847167969
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

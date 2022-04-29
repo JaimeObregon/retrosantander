@@ -18,6 +18,8 @@ const status = header.querySelector('div')
 const cite = status.querySelector('cite')
 const details = status.querySelector('ul')
 
+const confidenceThreshold = 80
+
 const escape = (string) =>
   string.replace(
     /[&<>'"]/g,
@@ -77,6 +79,14 @@ const state = {
   },
 }
 
+const areaToDOM = (item) => ({
+  top: 100 * item.BoundingBox.Top,
+  left: 100 * item.BoundingBox.Left,
+  width: 100 * item.BoundingBox.Width,
+  height: 100 * item.BoundingBox.Height,
+  area: 10000 * item.BoundingBox.Width * item.BoundingBox.Height,
+})
+
 const grid = new Grid(main, footer)
 
 const onInput = () => {
@@ -101,10 +111,72 @@ main.addEventListener('mouseover', (event) => {
   }
 })
 
-main.addEventListener('click', (event) => {
+main.addEventListener('click', async (event) => {
   dialog.removeAttribute('open')
   if (event.target instanceof HTMLImageElement) {
-    grid.zoom({ element: event.target })
+    const image = event.target
+
+    grid.zoom({ element: image })
+
+    const { id } = image.dataset
+    const response = await fetch(`/assets/layers/${id}.json`)
+    const layers = await response.json()
+
+    const faces = layers.FaceDetails.map((face) => ({
+      type: 'face',
+      confidence: Math.round(face.Confidence * 100) / 100,
+      ...(face.AgeRange && {
+        age: `Entre ${face.AgeRange.Low} y ${face.AgeRange.High} años`,
+      }),
+      ...(face.Gender && {
+        gender: `${{ Male: 'Hombre', Female: 'Mujer' }[face.Gender.Value]} (${
+          Math.round(face.Gender.Confidence * 100) / 100
+        } %)`,
+      }),
+      ...areaToDOM(face),
+    }))
+
+    const labels = layers.Labels.filter(
+      (label) => label.Instances.length
+    ).flatMap((label) =>
+      label.Instances.map((instance) => ({
+        type: 'label',
+        name: label.Name,
+        confidence: Math.round(instance.Confidence * 100) / 100,
+        ...areaToDOM(instance),
+      }))
+    )
+
+    const areas = [...faces, ...labels]
+
+    const figure = image.closest('figure')
+    figure.innerHTML += areas
+      .sort((a, b) => (a.area < b.area ? 1 : -1))
+      .filter((area) => area.confidence >= confidenceThreshold)
+      .map((area) => {
+        const title =
+          area.type === 'label'
+            ? [`${area.name} (${area.confidence} %)`]
+            : [`Rostro (${area.confidence} %)`, area.gender, area.age]
+
+        return `<div
+              class="${area.type}"
+              title="${title.join('\n')}"
+              style="
+                top: ${area.top}%;
+                left: ${area.left}%;
+                width: ${area.width}%;
+                height: ${area.height}%
+              "></div>`
+      })
+      .join('')
+
+    const tags = layers.Labels.filter((label) => !label.Instances.length)
+    const title = tags
+      .filter((tag) => tag.Confidence >= confidenceThreshold)
+      .map((tag) => `${tag.Name} (${Math.round(tag.Confidence * 100) / 100} %)`)
+      .join('\n')
+    figure.setAttribute('title', title)
   }
 })
 

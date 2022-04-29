@@ -1,0 +1,80 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nickel",
+      "Confidence": 96.17969512939453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Coin"
+        },
+        {
+          "Name": "Money"
+        }
+      ]
+    },
+    {
+      "Name": "Coin",
+      "Confidence": 96.17969512939453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Money"
+        }
+      ]
+    },
+    {
+      "Name": "Money",
+      "Confidence": 96.17969512939453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ring",
+      "Confidence": 69.08149719238281,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.6042303442955017,
+            "Height": 0.7476932406425476,
+            "Left": 0.21531423926353455,
+            "Top": 0.1461348980665207
+          },
+          "Confidence": 69.08149719238281
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Jewelry"
+        },
+        {
+          "Name": "Accessories"
+        }
+      ]
+    },
+    {
+      "Name": "Accessories",
+      "Confidence": 69.08149719238281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Jewelry",
+      "Confidence": 69.08149719238281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Accessories"
+        }
+      ]
+    },
+    {
+      "Name": "Accessory",
+      "Confidence": 69.08149719238281,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

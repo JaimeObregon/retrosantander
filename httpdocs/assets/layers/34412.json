@@ -1,0 +1,113 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Urban",
+      "Confidence": 98.76449584960938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Prison",
+      "Confidence": 96.78898620605469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Slum",
+      "Confidence": 95.96484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 95.96484375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 86.69427490234375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.02052108757197857,
+            "Height": 0.11955422908067703,
+            "Left": 0.7748554944992065,
+            "Top": 0.3941372334957123
+          },
+          "Confidence": 86.69427490234375
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 86.69427490234375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "High Rise",
+      "Confidence": 77.25709533691406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "City",
+      "Confidence": 77.25709533691406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 77.25709533691406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Railing",
+      "Confidence": 63.43526077270508,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Construction",
+      "Confidence": 55.57297897338867,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

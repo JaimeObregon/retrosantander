@@ -1,0 +1,86 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Horse",
+      "Confidence": 95.2097396850586,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.27820277214050293,
+            "Height": 0.2859158217906952,
+            "Left": 0.3734337091445923,
+            "Top": 0.4697241485118866
+          },
+          "Confidence": 95.2097396850586
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.14178848266601562,
+            "Height": 0.20303145051002502,
+            "Left": 0.6437017321586609,
+            "Top": 0.523242712020874
+          },
+          "Confidence": 60.546443939208984
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 95.2097396850586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 95.2097396850586,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 92.70858001708984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 90.7930908203125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8758317828178406,
+            "Height": 0.8362365961074829,
+            "Left": 0.0550321564078331,
+            "Top": 0.09636211395263672
+          },
+          "Confidence": 85.78195190429688
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 71.65989685058594,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

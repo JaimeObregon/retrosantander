@@ -1,0 +1,114 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.3458480834961,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.4529060423374176,
+            "Height": 0.7940552234649658,
+            "Left": 0.42434388399124146,
+            "Top": 0.19427523016929626
+          },
+          "Confidence": 97.02092742919922
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.4212532937526703,
+            "Height": 0.6611680388450623,
+            "Left": 0.2950063943862915,
+            "Top": 0.32717403769493103
+          },
+          "Confidence": 93.51382446289062
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.3458480834961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 95.30799102783203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 95.30799102783203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Shorts",
+      "Confidence": 87.25386047363281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 87.25386047363281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 87.25386047363281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Wrestling",
+      "Confidence": 59.95747756958008,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sumo",
+      "Confidence": 59.432682037353516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wrestling"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Jaw",
+      "Confidence": 58.16925811767578,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

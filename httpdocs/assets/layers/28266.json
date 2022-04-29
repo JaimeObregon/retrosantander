@@ -1,0 +1,148 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Machine",
+      "Confidence": 97.45728302001953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 75.26162719726562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Construction Crane",
+      "Confidence": 74.93853759765625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7215582132339478,
+            "Height": 0.8665320873260498,
+            "Left": 0.2407902479171753,
+            "Top": 0.03434358909726143
+          },
+          "Confidence": 74.93853759765625
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Truck",
+      "Confidence": 74.46372985839844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9187694787979126,
+            "Height": 0.7116363644599915,
+            "Left": 0.03144386410713196,
+            "Top": 0.19541458785533905
+          },
+          "Confidence": 74.46372985839844
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 74.46372985839844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 74.46372985839844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Axle",
+      "Confidence": 66.11708068847656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Tire",
+      "Confidence": 65.67909240722656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car Wheel",
+      "Confidence": 60.10552215576172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tire"
+        },
+        {
+          "Name": "Wheel"
+        },
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Bulldozer",
+      "Confidence": 59.61723327636719,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.941718339920044,
+            "Height": 0.826402485370636,
+            "Left": 0.03176101669669151,
+            "Top": 0.06971684843301773
+          },
+          "Confidence": 59.61723327636719
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Tractor"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Tractor",
+      "Confidence": 59.61723327636719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

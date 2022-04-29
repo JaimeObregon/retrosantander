@@ -1,0 +1,112 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 97.94149017333984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 97.78273010253906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Pillar",
+      "Confidence": 88.76360321044922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Column",
+      "Confidence": 88.76360321044922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Crypt",
+      "Confidence": 86.00177764892578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fire Hydrant",
+      "Confidence": 71.95503234863281,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5233655571937561,
+            "Height": 0.8006008267402649,
+            "Left": 0.2895468771457672,
+            "Top": 0.06026721000671387
+          },
+          "Confidence": 71.95503234863281
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Hydrant"
+        }
+      ]
+    },
+    {
+      "Name": "Hydrant",
+      "Confidence": 71.95503234863281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Archaeology",
+      "Confidence": 66.56097412109375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Arch",
+      "Confidence": 55.699832916259766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arched",
+      "Confidence": 55.699832916259766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

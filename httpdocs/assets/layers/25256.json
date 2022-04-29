@@ -1,0 +1,203 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Military",
+      "Confidence": 99.67609405517578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Military Uniform",
+      "Confidence": 99.58560180664062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Army",
+      "Confidence": 99.11165618896484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Armored"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.11165618896484,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07169494777917862,
+            "Height": 0.30667248368263245,
+            "Left": 0.19106216728687286,
+            "Top": 0.33383867144584656
+          },
+          "Confidence": 95.34288787841797
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04952941834926605,
+            "Height": 0.28398367762565613,
+            "Left": 0.33424651622772217,
+            "Top": 0.3331867456436157
+          },
+          "Confidence": 71.82182312011719
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06400752812623978,
+            "Height": 0.29501911997795105,
+            "Left": 0.27213725447654724,
+            "Top": 0.3313745856285095
+          },
+          "Confidence": 51.93635177612305
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Armored",
+      "Confidence": 99.11165618896484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.11165618896484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Truck",
+      "Confidence": 96.10016632080078,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.30544430017471313,
+            "Height": 0.494515985250473,
+            "Left": 0.008283882401883602,
+            "Top": 0.13636817038059235
+          },
+          "Confidence": 96.10016632080078
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 96.10016632080078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 96.10016632080078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Troop",
+      "Confidence": 93.8240966796875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Army"
+        },
+        {
+          "Name": "People"
+        },
+        {
+          "Name": "Armored"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 93.8240966796875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Soldier",
+      "Confidence": 93.77730560302734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 76.38859558105469,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.12258262932300568,
+            "Height": 0.1599970906972885,
+            "Left": 0.03712492063641548,
+            "Top": 0.46319252252578735
+          },
+          "Confidence": 76.38859558105469
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 76.38859558105469,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

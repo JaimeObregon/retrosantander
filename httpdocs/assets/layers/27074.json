@@ -1,0 +1,172 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Water",
+      "Confidence": 99.7632827758789,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.33795928955078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Path",
+      "Confidence": 99.0170669555664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 98.85199737548828,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.02470489591360092,
+            "Height": 0.10741452872753143,
+            "Left": 0.5935901403427124,
+            "Top": 0.46929916739463806
+          },
+          "Confidence": 98.85199737548828
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.022287597879767418,
+            "Height": 0.09695524722337723,
+            "Left": 0.6305158138275146,
+            "Top": 0.4754883944988251
+          },
+          "Confidence": 98.25309753417969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.019580230116844177,
+            "Height": 0.09592975676059723,
+            "Left": 0.6939988136291504,
+            "Top": 0.4721096456050873
+          },
+          "Confidence": 98.08787536621094
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.014916152693331242,
+            "Height": 0.0967932716012001,
+            "Left": 0.614371657371521,
+            "Top": 0.4759672284126282
+          },
+          "Confidence": 65.14590454101562
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.85199737548828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ditch",
+      "Confidence": 96.22196197509766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Canal",
+      "Confidence": 94.1572494506836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 87.13016510009766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Towpath",
+      "Confidence": 83.44178009033203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        },
+        {
+          "Name": "Canal"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 76.30445098876953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 76.30445098876953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Castle",
+      "Confidence": 65.47944641113281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Fort",
+      "Confidence": 62.92743682861328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Castle"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Trail",
+      "Confidence": 58.76169204711914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

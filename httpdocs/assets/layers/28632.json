@@ -1,0 +1,128 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Room",
+      "Confidence": 99.87261962890625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 99.87261962890625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Library",
+      "Confidence": 99.76620483398438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Book"
+        },
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Book",
+      "Confidence": 99.76620483398438,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 71.01575469970703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.028936119750142097,
+            "Height": 0.04214012995362282,
+            "Left": 0.6379349231719971,
+            "Top": 0.595463752746582
+          },
+          "Confidence": 71.01575469970703
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0328022763133049,
+            "Height": 0.1239013671875,
+            "Left": 0.5666630268096924,
+            "Top": 0.669147789478302
+          },
+          "Confidence": 54.37192153930664
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.020693207159638405,
+            "Height": 0.04515761137008667,
+            "Left": 0.4964493215084076,
+            "Top": 0.7270217537879944
+          },
+          "Confidence": 45.038936614990234
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 71.01575469970703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Window",
+      "Confidence": 66.74739074707031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Skylight",
+      "Confidence": 60.58582305908203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Window"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 60.58582305908203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 60.58582305908203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 56.68757629394531,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

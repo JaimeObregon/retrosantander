@@ -1,0 +1,128 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 97.84864044189453,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.16310515999794006,
+            "Height": 0.2666992247104645,
+            "Left": 0.11192622035741806,
+            "Top": 0.6118968725204468
+          },
+          "Confidence": 97.84864044189453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01478639617562294,
+            "Height": 0.04910263046622276,
+            "Left": 0.08300802856683731,
+            "Top": 0.45460161566734314
+          },
+          "Confidence": 94.32439422607422
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06620782613754272,
+            "Height": 0.23818455636501312,
+            "Left": 0.09599986672401428,
+            "Top": 0.5967893004417419
+          },
+          "Confidence": 88.46954345703125
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.84864044189453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 93.15003204345703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 93.15003204345703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 91.45339965820312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Play Area",
+      "Confidence": 89.90690612792969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Playground",
+      "Confidence": 89.90690612792969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Downtown",
+      "Confidence": 89.63817596435547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "City",
+      "Confidence": 89.63817596435547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 89.63817596435547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoor Play Area",
+      "Confidence": 59.88233184814453,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

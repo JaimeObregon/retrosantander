@@ -1,0 +1,246 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Boat",
+      "Confidence": 99.82239532470703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8286265730857849,
+            "Height": 0.5401009917259216,
+            "Left": 0.05690471827983856,
+            "Top": 0.18089430034160614
+          },
+          "Confidence": 99.82239532470703
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.82239532470703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.82239532470703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 95.98770904541016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 92.03662109375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.020427092909812927,
+            "Height": 0.04584742337465286,
+            "Left": 0.6629300713539124,
+            "Top": 0.4994344115257263
+          },
+          "Confidence": 92.03662109375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02278587408363819,
+            "Height": 0.04835207015275955,
+            "Left": 0.5698511004447937,
+            "Top": 0.48495203256607056
+          },
+          "Confidence": 80.1012954711914
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0384022518992424,
+            "Height": 0.12539906799793243,
+            "Left": 0.5545532703399658,
+            "Top": 0.7173374891281128
+          },
+          "Confidence": 71.92195892333984
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.022405395284295082,
+            "Height": 0.048204995691776276,
+            "Left": 0.49431586265563965,
+            "Top": 0.47876644134521484
+          },
+          "Confidence": 64.67174530029297
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 92.03662109375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 90.25896453857422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 88.15785217285156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 86.06855010986328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ground",
+      "Confidence": 79.38346862792969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 78.8140640258789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 78.8140640258789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 78.8140640258789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 71.088134765625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 70.82747650146484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 67.30260467529297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 65.86834716796875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 58.078529357910156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Field",
+      "Confidence": 57.958011627197266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bunker",
+      "Confidence": 56.65857696533203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tower",
+      "Confidence": 55.611366271972656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

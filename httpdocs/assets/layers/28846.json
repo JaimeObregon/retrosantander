@@ -1,0 +1,189 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.66522979736328,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.0349065400660038,
+            "Height": 0.19759973883628845,
+            "Left": 0.2916170358657837,
+            "Top": 0.4143843352794647
+          },
+          "Confidence": 99.66522979736328
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02371484786272049,
+            "Height": 0.18200983107089996,
+            "Left": 0.03700680658221245,
+            "Top": 0.4201638698577881
+          },
+          "Confidence": 98.26583862304688
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01452681329101324,
+            "Height": 0.13522154092788696,
+            "Left": 0.00043026983621530235,
+            "Top": 0.41571229696273804
+          },
+          "Confidence": 97.10018920898438
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.66522979736328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Advertisement",
+      "Confidence": 97.34477233886719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Poster",
+      "Confidence": 96.40227508544922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Interior Design",
+      "Confidence": 87.37451171875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 87.37451171875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Flyer",
+      "Confidence": 83.5907974243164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Poster"
+        },
+        {
+          "Name": "Paper"
+        },
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Brochure",
+      "Confidence": 83.5907974243164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Poster"
+        },
+        {
+          "Name": "Paper"
+        },
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Paper",
+      "Confidence": 83.5907974243164,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Street",
+      "Confidence": 56.493656158447266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 56.493656158447266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 56.493656158447266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 56.493656158447266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 56.493656158447266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 56.493656158447266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Billboard",
+      "Confidence": 56.09285354614258,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,239 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Road",
+      "Confidence": 99.7993392944336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 99.15213775634766,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07914230227470398,
+            "Height": 0.05960677191615105,
+            "Left": 0.5214645266532898,
+            "Top": 0.6190198659896851
+          },
+          "Confidence": 99.15213775634766
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06297042965888977,
+            "Height": 0.04415905103087425,
+            "Left": 0.49869751930236816,
+            "Top": 0.5599040389060974
+          },
+          "Confidence": 96.80025482177734
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07267910242080688,
+            "Height": 0.07119937241077423,
+            "Left": 0.05523662641644478,
+            "Top": 0.5003140568733215
+          },
+          "Confidence": 93.5864028930664
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07533065974712372,
+            "Height": 0.08497724682092667,
+            "Left": 0.4201276898384094,
+            "Top": 0.6606287360191345
+          },
+          "Confidence": 89.39251708984375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.054435521364212036,
+            "Height": 0.04018329456448555,
+            "Left": 0.06291918456554413,
+            "Top": 0.4596708118915558
+          },
+          "Confidence": 52.24350357055664
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 99.15213775634766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.15213775634766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.15213775634766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tarmac",
+      "Confidence": 97.06314849853516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Asphalt",
+      "Confidence": 97.06314849853516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Intersection",
+      "Confidence": 81.42498016357422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Road"
+        }
+      ]
+    },
+    {
+      "Name": "Freeway",
+      "Confidence": 69.5379409790039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Road"
+        }
+      ]
+    },
+    {
+      "Name": "Highway",
+      "Confidence": 65.54801940917969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Freeway"
+        },
+        {
+          "Name": "Road"
+        }
+      ]
+    },
+    {
+      "Name": "Chess",
+      "Confidence": 62.66392517089844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.881295919418335,
+            "Height": 0.8118339776992798,
+            "Left": 0.07730083167552948,
+            "Top": 0.18625763058662415
+          },
+          "Confidence": 62.66392517089844
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Game"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 62.66392517089844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.022703858092427254,
+            "Height": 0.08356306701898575,
+            "Left": 0.929818868637085,
+            "Top": 0.46044257283210754
+          },
+          "Confidence": 41.71320724487305
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Game",
+      "Confidence": 62.66392517089844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Human",
+      "Confidence": 62.66392517089844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Airplane",
+      "Confidence": 60.688636779785156,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1410328894853592,
+            "Height": 0.08387785404920578,
+            "Left": 0.0074131060391664505,
+            "Top": 0.2932559847831726
+          },
+          "Confidence": 60.688636779785156
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Aircraft",
+      "Confidence": 60.688636779785156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

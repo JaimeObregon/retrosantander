@@ -1,0 +1,102 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Text",
+      "Confidence": 92.12982177734375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Plan",
+      "Confidence": 92.04232788085938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plot"
+        },
+        {
+          "Name": "Diagram"
+        }
+      ]
+    },
+    {
+      "Name": "Plot",
+      "Confidence": 92.04232788085938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Diagram",
+      "Confidence": 92.04232788085938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Document",
+      "Confidence": 77.58456420898438,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9745728969573975,
+            "Height": 0.9527078866958618,
+            "Left": 0.011738243512809277,
+            "Top": 0.026995716616511345
+          },
+          "Confidence": 77.58456420898438
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Paper",
+      "Confidence": 77.02903747558594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Passport",
+      "Confidence": 66.63184356689453,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9873262047767639,
+            "Height": 0.9247382283210754,
+            "Left": 0.011423759162425995,
+            "Top": 0.03702124208211899
+          },
+          "Confidence": 66.63184356689453
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Id Cards"
+        },
+        {
+          "Name": "Document"
+        },
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Id Cards",
+      "Confidence": 66.63184356689453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Document"
+        },
+        {
+          "Name": "Text"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

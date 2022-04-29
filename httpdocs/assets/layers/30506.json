@@ -1,0 +1,77 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Analog Clock",
+      "Confidence": 96.5057601928711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clock"
+        }
+      ]
+    },
+    {
+      "Name": "Clock",
+      "Confidence": 96.5057601928711,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Clock Tower",
+      "Confidence": 92.47539520263672,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10635620355606079,
+            "Height": 0.1239662691950798,
+            "Left": 0.4187566041946411,
+            "Top": 0.3634011745452881
+          },
+          "Confidence": 92.47539520263672
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tower",
+      "Confidence": 92.47539520263672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 92.47539520263672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 92.47539520263672,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

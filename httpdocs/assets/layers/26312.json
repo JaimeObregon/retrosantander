@@ -1,0 +1,85 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 93.80115509033203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 89.55255889892578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Text",
+      "Confidence": 79.05616760253906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sand",
+      "Confidence": 75.55899810791016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 65.5958023071289,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9197382926940918,
+            "Height": 0.8975098729133606,
+            "Left": 0.051211319863796234,
+            "Top": 0.059147145599126816
+          },
+          "Confidence": 65.5958023071289
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 65.5958023071289,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rock",
+      "Confidence": 56.0544548034668,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Interior Design",
+      "Confidence": 55.03450012207031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 55.03450012207031,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

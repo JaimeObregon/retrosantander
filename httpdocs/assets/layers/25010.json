@@ -1,0 +1,195 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Military",
+      "Confidence": 97.99077606201172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Military Uniform",
+      "Confidence": 97.44268035888672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 97.10323333740234,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.011227264069020748,
+            "Height": 0.06970269232988358,
+            "Left": 0.557967483997345,
+            "Top": 0.38732433319091797
+          },
+          "Confidence": 85.94234466552734
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012621002271771431,
+            "Height": 0.10130918771028519,
+            "Left": 0.5962339639663696,
+            "Top": 0.4075745642185211
+          },
+          "Confidence": 77.12289428710938
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012574157677590847,
+            "Height": 0.09204328805208206,
+            "Left": 0.6715978980064392,
+            "Top": 0.42872679233551025
+          },
+          "Confidence": 70.21322631835938
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.011372260749340057,
+            "Height": 0.08428146690130234,
+            "Left": 0.08416099846363068,
+            "Top": 0.43575337529182434
+          },
+          "Confidence": 69.86751556396484
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.10323333740234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Army",
+      "Confidence": 94.45565795898438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Armored"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Armored",
+      "Confidence": 94.45565795898438,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 84.5406265258789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Soldier",
+      "Confidence": 72.8489761352539,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Troop",
+      "Confidence": 71.34751892089844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Army"
+        },
+        {
+          "Name": "People"
+        },
+        {
+          "Name": "Armored"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Officer",
+      "Confidence": 70.50630187988281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 67.15766906738281,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.010856094770133495,
+            "Height": 0.01743748039007187,
+            "Left": 0.6047012209892273,
+            "Top": 0.202799454331398
+          },
+          "Confidence": 67.15766906738281
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 67.15766906738281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Symbol",
+      "Confidence": 59.496402740478516,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,82 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Crypt",
+      "Confidence": 98.3875503540039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 97.27547454833984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 97.27547454833984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Door",
+      "Confidence": 96.51581573486328,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.37522491812705994,
+            "Height": 0.32928571105003357,
+            "Left": 0.30681702494621277,
+            "Top": 0.33013686537742615
+          },
+          "Confidence": 96.51581573486328
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Arch",
+      "Confidence": 90.82241821289062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arched",
+      "Confidence": 90.82241821289062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Corridor",
+      "Confidence": 82.56600189208984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Dungeon",
+      "Confidence": 56.28718185424805,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

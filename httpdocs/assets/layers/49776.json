@@ -1,0 +1,169 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Furniture",
+      "Confidence": 89.58197784423828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Piano",
+      "Confidence": 79.70186614990234,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5525095462799072,
+            "Height": 0.6251198649406433,
+            "Left": 0.3511096239089966,
+            "Top": 0.3123403489589691
+          },
+          "Confidence": 79.70186614990234
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Leisure Activities"
+        },
+        {
+          "Name": "Musical Instrument"
+        }
+      ]
+    },
+    {
+      "Name": "Musical Instrument",
+      "Confidence": 79.70186614990234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Leisure Activities",
+      "Confidence": 79.70186614990234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 76.30381774902344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Room",
+      "Confidence": 72.03990936279297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Clock Tower",
+      "Confidence": 71.9111099243164,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06341522186994553,
+            "Height": 0.09080429375171661,
+            "Left": 0.7193379998207092,
+            "Top": 0.434589147567749
+          },
+          "Confidence": 71.9111099243164
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 71.9111099243164,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 71.9111099243164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tower",
+      "Confidence": 71.9111099243164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 66.15715026855469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Electronics",
+      "Confidence": 64.06443786621094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 63.78120040893555,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shop",
+      "Confidence": 58.782108306884766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Table",
+      "Confidence": 58.58681869506836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Desk",
+      "Confidence": 57.635948181152344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Table"
+        },
+        {
+          "Name": "Furniture"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

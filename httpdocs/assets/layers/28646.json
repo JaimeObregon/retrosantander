@@ -1,0 +1,261 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.6656723022461,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.11494845151901245,
+            "Height": 0.17200182378292084,
+            "Left": 0.21374782919883728,
+            "Top": 0.7589656114578247
+          },
+          "Confidence": 99.6656723022461
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0530952624976635,
+            "Height": 0.06964269280433655,
+            "Left": 0.913332462310791,
+            "Top": 0.7131347060203552
+          },
+          "Confidence": 96.41255950927734
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.049874771386384964,
+            "Height": 0.06449415534734726,
+            "Left": 0.48095932602882385,
+            "Top": 0.6468967795372009
+          },
+          "Confidence": 92.66976928710938
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.6656723022461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 90.70142364501953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Clock Tower",
+      "Confidence": 88.10348510742188,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09300276637077332,
+            "Height": 0.047309085726737976,
+            "Left": 0.4617408812046051,
+            "Top": 0.40849098563194275
+          },
+          "Confidence": 88.10348510742188
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tower",
+      "Confidence": 88.10348510742188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 88.10348510742188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 88.10348510742188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Flooring",
+      "Confidence": 84.47854614257812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Room",
+      "Confidence": 77.28353118896484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Hall",
+      "Confidence": 70.5364761352539,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Floor",
+      "Confidence": 69.4117660522461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Church",
+      "Confidence": 65.79747009277344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Corridor",
+      "Confidence": 62.04888153076172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Art",
+      "Confidence": 61.529319763183594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Auditorium",
+      "Confidence": 59.163944244384766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Hall"
+        },
+        {
+          "Name": "Theater"
+        },
+        {
+          "Name": "Indoors"
+        },
+        {
+          "Name": "Room"
+        }
+      ]
+    },
+    {
+      "Name": "Theater",
+      "Confidence": 59.163944244384766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Lobby",
+      "Confidence": 58.81797790527344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Living Room",
+      "Confidence": 58.395904541015625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Altar",
+      "Confidence": 57.419921875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Crypt",
+      "Confidence": 56.064449310302734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Court",
+      "Confidence": 55.02399826049805,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

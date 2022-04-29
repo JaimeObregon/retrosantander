@@ -1,0 +1,131 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Art",
+      "Confidence": 95.441162109375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Face",
+      "Confidence": 94.48455810546875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 94.48455810546875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7424308657646179,
+            "Height": 0.6631138324737549,
+            "Left": 0.11497751623392105,
+            "Top": 0.21877546608448029
+          },
+          "Confidence": 93.6433334350586
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 94.48455810546875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Drawing",
+      "Confidence": 91.17375183105469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 85.85932159423828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Sketch",
+      "Confidence": 74.56330871582031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Drawing"
+        },
+        {
+          "Name": "Art"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Portrait",
+      "Confidence": 71.92464447021484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Face"
+        },
+        {
+          "Name": "Photography"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photography",
+      "Confidence": 71.92464447021484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photo",
+      "Confidence": 71.92464447021484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Text",
+      "Confidence": 71.80606842041016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Head",
+      "Confidence": 56.47391128540039,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

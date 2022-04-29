@@ -1,0 +1,113 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 93.08185577392578,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.027811305597424507,
+            "Height": 0.04834730178117752,
+            "Left": 0.9063647985458374,
+            "Top": 0.6426377296447754
+          },
+          "Confidence": 93.08185577392578
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 93.08185577392578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Construction",
+      "Confidence": 89.61689758300781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Boat",
+      "Confidence": 85.42415618896484,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8740889430046082,
+            "Height": 0.6961718797683716,
+            "Left": 0.06698551028966904,
+            "Top": 0.1195099726319313
+          },
+          "Confidence": 85.42415618896484
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 85.42415618896484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 85.42415618896484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 76.6874008178711,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 73.5881118774414,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Monument",
+      "Confidence": 62.76262664794922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 58.078529357910156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Demolition",
+      "Confidence": 57.831451416015625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Scaffolding",
+      "Confidence": 55.929847717285156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Construction"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

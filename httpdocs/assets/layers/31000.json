@@ -1,0 +1,287 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.9342041015625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.02153911627829075,
+            "Height": 0.09491061419248581,
+            "Left": 0.6266646385192871,
+            "Top": 0.6648786067962646
+          },
+          "Confidence": 98.9342041015625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.027271270751953125,
+            "Height": 0.0878356322646141,
+            "Left": 0.8753787279129028,
+            "Top": 0.644075870513916
+          },
+          "Confidence": 64.62273406982422
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.022131577134132385,
+            "Height": 0.06711947172880173,
+            "Left": 0.5942544937133789,
+            "Top": 0.7066159844398499
+          },
+          "Confidence": 64.60992431640625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.011724242940545082,
+            "Height": 0.034777238965034485,
+            "Left": 0.33548110723495483,
+            "Top": 0.722687304019928
+          },
+          "Confidence": 43.31542205810547
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.9342041015625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 97.60428619384766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 97.30265045166016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 95.99923706054688,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09891647100448608,
+            "Height": 0.15017622709274292,
+            "Left": 0.7285606861114502,
+            "Top": 0.663356363773346
+          },
+          "Confidence": 95.99923706054688
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03971908614039421,
+            "Height": 0.05810440331697464,
+            "Left": 0.811906635761261,
+            "Top": 0.6445937752723694
+          },
+          "Confidence": 56.45411682128906
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 95.99923706054688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 95.99923706054688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 95.99923706054688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 89.34527587890625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 86.09894561767578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Canal",
+      "Confidence": 82.85377502441406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 78.86145782470703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Path",
+      "Confidence": 76.03549194335938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 72.91558837890625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 72.91558837890625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Watercraft",
+      "Confidence": 68.28518676757812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vessel",
+      "Confidence": 68.28518676757812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Metropolis",
+      "Confidence": 65.06205749511719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "River",
+      "Confidence": 59.952518463134766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Street",
+      "Confidence": 57.71372985839844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 57.71372985839844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Neighborhood",
+      "Confidence": 55.24745559692383,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

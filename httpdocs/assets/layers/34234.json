@@ -1,0 +1,275 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Cow",
+      "Confidence": 97.55642700195312,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07687601447105408,
+            "Height": 0.11284050345420837,
+            "Left": 0.11625570058822632,
+            "Top": 0.7202920913696289
+          },
+          "Confidence": 97.55642700195312
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05815117061138153,
+            "Height": 0.10470205545425415,
+            "Left": 0.1909511387348175,
+            "Top": 0.7276433706283569
+          },
+          "Confidence": 93.62256622314453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1033545657992363,
+            "Height": 0.11133469641208649,
+            "Left": 0.14034883677959442,
+            "Top": 0.7193282842636108
+          },
+          "Confidence": 89.47754669189453
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Cattle"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 97.55642700195312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 97.55642700195312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cattle",
+      "Confidence": 97.55642700195312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 97.42974853515625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 97.42974853515625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 97.09280395507812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 92.34620666503906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Land",
+      "Confidence": 91.01012420654297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 91.01012420654297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Canal",
+      "Confidence": 79.6644287109375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Ditch",
+      "Confidence": 69.97857666015625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Scenery",
+      "Confidence": 63.56471252441406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Grove",
+      "Confidence": 62.2147216796875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Woodland"
+        },
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Land"
+        },
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Vegetation",
+      "Confidence": 62.2147216796875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Woodland",
+      "Confidence": 62.2147216796875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Land"
+        },
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Forest",
+      "Confidence": 62.2147216796875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Land"
+        },
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "River",
+      "Confidence": 60.83868408203125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Landscape",
+      "Confidence": 59.372398376464844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

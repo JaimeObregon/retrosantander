@@ -1,0 +1,112 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Map",
+      "Confidence": 95.45011901855469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Diagram"
+        }
+      ]
+    },
+    {
+      "Name": "Diagram",
+      "Confidence": 95.45011901855469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Plot",
+      "Confidence": 95.1739501953125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Plan",
+      "Confidence": 85.34114837646484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plot"
+        },
+        {
+          "Name": "Diagram"
+        }
+      ]
+    },
+    {
+      "Name": "Atlas",
+      "Confidence": 84.02495574951172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plot"
+        },
+        {
+          "Name": "Map"
+        },
+        {
+          "Name": "Diagram"
+        }
+      ]
+    },
+    {
+      "Name": "Text",
+      "Confidence": 72.51537322998047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Passport",
+      "Confidence": 71.08687591552734,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9699082374572754,
+            "Height": 0.9427209496498108,
+            "Left": 0,
+            "Top": 0.016256781294941902
+          },
+          "Confidence": 71.08687591552734
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Id Cards"
+        },
+        {
+          "Name": "Document"
+        },
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Document",
+      "Confidence": 71.08687591552734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Id Cards",
+      "Confidence": 71.08687591552734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Document"
+        },
+        {
+          "Name": "Text"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

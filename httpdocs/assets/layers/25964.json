@@ -1,0 +1,70 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Lamp",
+      "Confidence": 99.91471862792969,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5728940963745117,
+            "Height": 0.7886420488357544,
+            "Left": 0.17597205936908722,
+            "Top": 0.08536345511674881
+          },
+          "Confidence": 99.91471862792969
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 93.34026336669922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 93.34026336669922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Lighting",
+      "Confidence": 88.17971801757812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pillar",
+      "Confidence": 77.65731811523438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Column",
+      "Confidence": 77.65731811523438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

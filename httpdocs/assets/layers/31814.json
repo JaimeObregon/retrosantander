@@ -1,0 +1,123 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "High Rise",
+      "Confidence": 99.90826416015625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 99.90826416015625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 99.90826416015625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.90826416015625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Town",
+      "Confidence": 99.90826416015625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Apartment Building",
+      "Confidence": 99.76878356933594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "High Rise"
+        },
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 75.37190246582031,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.015428313985466957,
+            "Height": 0.0980532169342041,
+            "Left": 0.1863272488117218,
+            "Top": 0.6873538494110107
+          },
+          "Confidence": 75.37190246582031
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.029330367222428322,
+            "Height": 0.1299433708190918,
+            "Left": 0.2696787118911743,
+            "Top": 0.6524143218994141
+          },
+          "Confidence": 74.51213073730469
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 75.37190246582031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Neighborhood",
+      "Confidence": 57.21427917480469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

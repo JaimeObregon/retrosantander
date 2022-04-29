@@ -1,0 +1,341 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Motorcycle",
+      "Confidence": 99.42425537109375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.13958042860031128,
+            "Height": 0.217031791806221,
+            "Left": 0.11299174278974533,
+            "Top": 0.4983236491680145
+          },
+          "Confidence": 99.42425537109375
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.42425537109375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.42425537109375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.04572296142578,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10825133323669434,
+            "Height": 0.2580795884132385,
+            "Left": 0.13722527027130127,
+            "Top": 0.39642333984375
+          },
+          "Confidence": 99.04572296142578
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04894600063562393,
+            "Height": 0.14706385135650635,
+            "Left": 0.3706170618534088,
+            "Top": 0.4424656629562378
+          },
+          "Confidence": 96.63948059082031
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.014312438666820526,
+            "Height": 0.06139923632144928,
+            "Left": 0.7792019844055176,
+            "Top": 0.44931209087371826
+          },
+          "Confidence": 87.8705825805664
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.025264816358685493,
+            "Height": 0.11336585134267807,
+            "Left": 0.500788152217865,
+            "Top": 0.4419384002685547
+          },
+          "Confidence": 77.35877990722656
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.018355712294578552,
+            "Height": 0.1067349910736084,
+            "Left": 0.9364138245582581,
+            "Top": 0.3556778132915497
+          },
+          "Confidence": 77.0058364868164
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.016131363809108734,
+            "Height": 0.08823873847723007,
+            "Left": 0.606321394443512,
+            "Top": 0.4531918168067932
+          },
+          "Confidence": 70.3725814819336
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02338920533657074,
+            "Height": 0.09539742022752762,
+            "Left": 0.5732083320617676,
+            "Top": 0.4436321258544922
+          },
+          "Confidence": 55.599647521972656
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.025363922119140625,
+            "Height": 0.11132428050041199,
+            "Left": 0.26021626591682434,
+            "Top": 0.30560925602912903
+          },
+          "Confidence": 51.95436096191406
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.04572296142578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bicycle",
+      "Confidence": 98.61006164550781,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.053836822509765625,
+            "Height": 0.11473379284143448,
+            "Left": 0.3630651831626892,
+            "Top": 0.5024615526199341
+          },
+          "Confidence": 98.61006164550781
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03938659653067589,
+            "Height": 0.09841208904981613,
+            "Left": 0.4299485683441162,
+            "Top": 0.5004364848136902
+          },
+          "Confidence": 76.5013198852539
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bike",
+      "Confidence": 98.61006164550781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 84.5058822631836,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cyclist",
+      "Confidence": 83.48717498779297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bicycle"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 83.48717498779297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 83.48717498779297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 79.50714111328125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tarmac",
+      "Confidence": 75.0320816040039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Asphalt",
+      "Confidence": 75.0320816040039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 69.77279663085938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 65.1823959350586,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 58.38813400268555,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04666554555296898,
+            "Height": 0.1278727948665619,
+            "Left": 0.13219662010669708,
+            "Top": 0.5974234938621521
+          },
+          "Confidence": 58.38813400268555
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.017652053385972977,
+            "Height": 0.07063625007867813,
+            "Left": 0.3646661043167114,
+            "Top": 0.5470522046089172
+          },
+          "Confidence": 55.44683837890625
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 58.38813400268555,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Portrait",
+      "Confidence": 56.03523635864258,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Face"
+        },
+        {
+          "Name": "Photography"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photography",
+      "Confidence": 56.03523635864258,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Face",
+      "Confidence": 56.03523635864258,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photo",
+      "Confidence": 56.03523635864258,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

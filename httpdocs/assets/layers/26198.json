@@ -1,0 +1,50 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Window",
+      "Confidence": 93.27498626708984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 86.19742584228516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Door",
+      "Confidence": 82.66839599609375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.21404579281806946,
+            "Height": 0.43341049551963806,
+            "Left": 0.3498997092247009,
+            "Top": 0.3876294195652008
+          },
+          "Confidence": 82.66839599609375
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 65.14450073242188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 65.14450073242188,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,63 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Furniture",
+      "Confidence": 99.95492553710938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cradle",
+      "Confidence": 95.6229476928711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Crib",
+      "Confidence": 89.89404296875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 79.68930053710938,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.027913857251405716,
+            "Height": 0.10807370394468307,
+            "Left": 0.17268766462802887,
+            "Top": 0.17901141941547394
+          },
+          "Confidence": 79.68930053710938
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.027430687099695206,
+            "Height": 0.10338564217090607,
+            "Left": 0.12800079584121704,
+            "Top": 0.16056764125823975
+          },
+          "Confidence": 56.89945602416992
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 79.68930053710938,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

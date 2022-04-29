@@ -1,0 +1,201 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Truck",
+      "Confidence": 99.9297103881836,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.24989210069179535,
+            "Height": 0.3265599310398102,
+            "Left": 0.2589152753353119,
+            "Top": 0.28606346249580383
+          },
+          "Confidence": 99.9297103881836
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.9297103881836,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.9297103881836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 98.8129653930664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Flood",
+      "Confidence": 94.73474884033203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Car",
+      "Confidence": 94.15711975097656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1347932666540146,
+            "Height": 0.6115027666091919,
+            "Left": 0.0017381333746016026,
+            "Top": 0.3843507170677185
+          },
+          "Confidence": 94.15711975097656
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 94.15711975097656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Water",
+      "Confidence": 84.47222137451172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 84.3504638671875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 70.29141235351562,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.010207023471593857,
+            "Height": 0.042458370327949524,
+            "Left": 0.19961610436439514,
+            "Top": 0.3983457088470459
+          },
+          "Confidence": 70.29141235351562
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 70.29141235351562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 59.480159759521484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 59.480159759521484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 59.480159759521484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 59.480159759521484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Canal",
+      "Confidence": 56.94859313964844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

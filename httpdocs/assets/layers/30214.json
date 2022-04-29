@@ -1,0 +1,92 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Tomb",
+      "Confidence": 98.68334197998047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tombstone",
+      "Confidence": 93.24494934082031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tomb"
+        }
+      ]
+    },
+    {
+      "Name": "Clock Tower",
+      "Confidence": 79.19103240966797,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.4043070077896118,
+            "Height": 0.23837772011756897,
+            "Left": 0.2822757065296173,
+            "Top": 0.7499116659164429
+          },
+          "Confidence": 79.19103240966797
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.8122302889823914,
+            "Height": 0.8978233337402344,
+            "Left": 0.07372527569532394,
+            "Top": 0.05736660584807396
+          },
+          "Confidence": 65.56848907470703
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 79.19103240966797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 79.19103240966797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tower",
+      "Confidence": 79.19103240966797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Plaque",
+      "Confidence": 55.03169631958008,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

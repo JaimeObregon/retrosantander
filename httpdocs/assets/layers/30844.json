@@ -1,0 +1,95 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Office Building",
+      "Confidence": 94.27299499511719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 94.27299499511719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Clock Tower",
+      "Confidence": 74.5989990234375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.016403045505285263,
+            "Height": 0.04122919216752052,
+            "Left": 0.6923264265060425,
+            "Top": 0.5379167795181274
+          },
+          "Confidence": 74.5989990234375
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tower",
+      "Confidence": 74.5989990234375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 74.5989990234375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tarmac",
+      "Confidence": 72.40678405761719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Asphalt",
+      "Confidence": 72.40678405761719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tire",
+      "Confidence": 66.22005462646484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 64.4571762084961,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

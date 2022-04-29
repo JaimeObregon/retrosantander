@@ -1,0 +1,285 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.27677917480469,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.02886379323899746,
+            "Height": 0.13213017582893372,
+            "Left": 0.16538946330547333,
+            "Top": 0.5626455545425415
+          },
+          "Confidence": 99.27677917480469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03825691342353821,
+            "Height": 0.16294559836387634,
+            "Left": 0.2543207108974457,
+            "Top": 0.5520549416542053
+          },
+          "Confidence": 98.20357513427734
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.029658354818820953,
+            "Height": 0.14772959053516388,
+            "Left": 0.2311050444841385,
+            "Top": 0.5638918876647949
+          },
+          "Confidence": 98.14825439453125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02809680998325348,
+            "Height": 0.1281256526708603,
+            "Left": 0.19371047616004944,
+            "Top": 0.5618136525154114
+          },
+          "Confidence": 92.73692321777344
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.024097366258502007,
+            "Height": 0.14950789511203766,
+            "Left": 0.28762754797935486,
+            "Top": 0.5555349588394165
+          },
+          "Confidence": 88.4173812866211
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01923011802136898,
+            "Height": 0.15907539427280426,
+            "Left": 0.27653712034225464,
+            "Top": 0.5513709187507629
+          },
+          "Confidence": 62.89790725708008
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.27677917480469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tarmac",
+      "Confidence": 99.04308319091797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Asphalt",
+      "Confidence": 99.04308319091797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Road",
+      "Confidence": 98.85118865966797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pedestrian",
+      "Confidence": 98.7555160522461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Bus Stop",
+      "Confidence": 98.39976501464844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Street",
+      "Confidence": 93.95948791503906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 93.95948791503906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 93.95948791503906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 93.95948791503906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Town",
+      "Confidence": 93.95948791503906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 83.13499450683594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Neighborhood",
+      "Confidence": 74.97933197021484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Path",
+      "Confidence": 69.73641204833984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "High Rise",
+      "Confidence": 64.73465728759766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Zebra Crossing",
+      "Confidence": 62.06415557861328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tarmac"
+        },
+        {
+          "Name": "Road"
+        }
+      ]
+    },
+    {
+      "Name": "Intersection",
+      "Confidence": 61.72727966308594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Road"
+        }
+      ]
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 59.051998138427734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 59.051998138427734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 59.051998138427734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 59.051998138427734,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

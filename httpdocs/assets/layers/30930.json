@@ -1,0 +1,45 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 99.58580780029297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Factory",
+      "Confidence": 98.86915588378906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Brewery",
+      "Confidence": 94.54566192626953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Factory"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 58.22710037231445,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

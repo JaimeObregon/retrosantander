@@ -1,0 +1,63 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "College",
+      "Confidence": 94.44209289550781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Campus",
+      "Confidence": 78.42134857177734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 71.95722961425781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 71.95722961425781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mansion",
+      "Confidence": 58.565757751464844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "House"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "House",
+      "Confidence": 58.565757751464844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

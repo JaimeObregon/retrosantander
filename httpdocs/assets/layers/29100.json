@@ -1,0 +1,63 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Text",
+      "Confidence": 97.19485473632812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Plan",
+      "Confidence": 82.77318572998047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plot"
+        },
+        {
+          "Name": "Diagram"
+        }
+      ]
+    },
+    {
+      "Name": "Plot",
+      "Confidence": 82.77318572998047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Diagram",
+      "Confidence": 82.77318572998047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Book",
+      "Confidence": 71.64363098144531,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9405531287193298,
+            "Height": 0.9407583475112915,
+            "Left": 0.01868213713169098,
+            "Top": 0.014246264472603798
+          },
+          "Confidence": 71.64363098144531
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Handwriting",
+      "Confidence": 67.16082000732422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

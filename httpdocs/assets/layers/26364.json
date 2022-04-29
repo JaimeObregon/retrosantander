@@ -1,0 +1,124 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.60269927978516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.43504333496094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 91.85363006591797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Winter",
+      "Confidence": 86.26331329345703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Storm",
+      "Confidence": 82.54985809326172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 78.62673950195312,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9019696116447449,
+            "Height": 0.8581254482269287,
+            "Left": 0.044215127825737,
+            "Top": 0.08917108178138733
+          },
+          "Confidence": 78.62673950195312
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 78.62673950195312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Weather",
+      "Confidence": 75.07323455810547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Ice",
+      "Confidence": 73.28821563720703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Blizzard",
+      "Confidence": 60.81542205810547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Winter"
+        },
+        {
+          "Name": "Storm"
+        },
+        {
+          "Name": "Snow"
+        },
+        {
+          "Name": "Nature"
+        },
+        {
+          "Name": "Outdoors"
+        }
+      ]
+    },
+    {
+      "Name": "Steamer",
+      "Confidence": 58.9205436706543,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

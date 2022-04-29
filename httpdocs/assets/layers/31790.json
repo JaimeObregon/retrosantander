@@ -1,0 +1,209 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Tree",
+      "Confidence": 98.12931823730469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 98.12931823730469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cross",
+      "Confidence": 97.3466796875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.27028435468673706,
+            "Height": 0.5012924671173096,
+            "Left": 0.2875363826751709,
+            "Top": 0.49062201380729675
+          },
+          "Confidence": 97.3466796875
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Symbol"
+        }
+      ]
+    },
+    {
+      "Name": "Symbol",
+      "Confidence": 97.3466796875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 92.90475463867188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 86.17208862304688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 76.4222183227539,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 76.4222183227539,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Neighborhood",
+      "Confidence": 74.76702117919922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "High Rise",
+      "Confidence": 69.8563461303711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 68.85663604736328,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.017821846529841423,
+            "Height": 0.06910157948732376,
+            "Left": 0.18307867646217346,
+            "Top": 0.8130518794059753
+          },
+          "Confidence": 68.85663604736328
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01290952693670988,
+            "Height": 0.053785521537065506,
+            "Left": 0.30945539474487305,
+            "Top": 0.761012852191925
+          },
+          "Confidence": 65.61670684814453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01821693405508995,
+            "Height": 0.09269967675209045,
+            "Left": 0.5361840724945068,
+            "Top": 0.778092622756958
+          },
+          "Confidence": 64.502685546875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01131111104041338,
+            "Height": 0.04864077642560005,
+            "Left": 0.328253835439682,
+            "Top": 0.7631142139434814
+          },
+          "Confidence": 64.44158935546875
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 68.85663604736328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apartment Building",
+      "Confidence": 62.38154220581055,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "High Rise"
+        },
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Oak",
+      "Confidence": 57.37871551513672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Tree Trunk",
+      "Confidence": 56.76054000854492,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

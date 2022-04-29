@@ -1,0 +1,57 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Plot",
+      "Confidence": 98.29859924316406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Plan",
+      "Confidence": 97.72856903076172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plot"
+        },
+        {
+          "Name": "Diagram"
+        }
+      ]
+    },
+    {
+      "Name": "Diagram",
+      "Confidence": 97.72856903076172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Map",
+      "Confidence": 80.07331085205078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Diagram"
+        }
+      ]
+    },
+    {
+      "Name": "Atlas",
+      "Confidence": 71.13998413085938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plot"
+        },
+        {
+          "Name": "Map"
+        },
+        {
+          "Name": "Diagram"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

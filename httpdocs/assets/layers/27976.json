@@ -1,0 +1,204 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Antique Car",
+      "Confidence": 99.88294219970703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Car",
+      "Confidence": 99.88294219970703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.6866732835769653,
+            "Height": 0.779663622379303,
+            "Left": 0.07421520352363586,
+            "Top": 0.1795116364955902
+          },
+          "Confidence": 64.50397491455078
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.88294219970703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.88294219970703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 99.88294219970703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Model T",
+      "Confidence": 98.7387466430664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Antique Car"
+        },
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 98.6773681640625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.149663046002388,
+            "Height": 0.3485247790813446,
+            "Left": 0.6040762662887573,
+            "Top": 0.6434903144836426
+          },
+          "Confidence": 98.6773681640625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.12370552122592926,
+            "Height": 0.322389155626297,
+            "Left": 0.13966184854507446,
+            "Top": 0.6747823357582092
+          },
+          "Confidence": 98.49433135986328
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 98.6773681640625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Motorcycle",
+      "Confidence": 98.2917251586914,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.6619032025337219,
+            "Height": 0.6518394351005554,
+            "Left": 0.10700260102748871,
+            "Top": 0.3449791967868805
+          },
+          "Confidence": 98.2917251586914
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 73.11603546142578,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1487591564655304,
+            "Height": 0.20680053532123566,
+            "Left": 0.1624659299850464,
+            "Top": 0.21360529959201813
+          },
+          "Confidence": 73.11603546142578
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.027574997395277023,
+            "Height": 0.034523215144872665,
+            "Left": 0.3664688467979431,
+            "Top": 0.34982728958129883
+          },
+          "Confidence": 62.21390914916992
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 73.11603546142578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Hot Rod",
+      "Confidence": 65.75509643554688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Tire",
+      "Confidence": 58.495819091796875,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

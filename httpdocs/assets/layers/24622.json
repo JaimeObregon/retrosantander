@@ -1,0 +1,108 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.96611785888672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cave",
+      "Confidence": 99.31471252441406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Ice",
+      "Confidence": 98.17420959472656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.17420959472656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 90.68600463867188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Winter",
+      "Confidence": 83.89315032958984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 79.31592559814453,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9704179167747498,
+            "Height": 0.9779921770095825,
+            "Left": 0.009425048716366291,
+            "Top": 0.00844886526465416
+          },
+          "Confidence": 79.31592559814453
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 79.31592559814453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Icicle",
+      "Confidence": 67.12460327148438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Winter"
+        },
+        {
+          "Name": "Ice"
+        },
+        {
+          "Name": "Snow"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

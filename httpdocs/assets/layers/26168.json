@@ -1,0 +1,193 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 95.12541198730469,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5112790465354919,
+            "Height": 0.713211715221405,
+            "Left": 0.23586726188659668,
+            "Top": 0.15339210629463196
+          },
+          "Confidence": 95.12541198730469
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 95.12541198730469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Art",
+      "Confidence": 90.12036895751953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 77.81851196289062,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9279145002365112,
+            "Height": 0.9335528612136841,
+            "Left": 0.03868540748953819,
+            "Top": 0.047752294689416885
+          },
+          "Confidence": 77.81851196289062
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Drawing",
+      "Confidence": 70.24995422363281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Portrait",
+      "Confidence": 66.03781127929688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Face"
+        },
+        {
+          "Name": "Photography"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photography",
+      "Confidence": 66.03781127929688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Face",
+      "Confidence": 66.03781127929688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photo",
+      "Confidence": 66.03781127929688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sketch",
+      "Confidence": 59.25682830810547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Drawing"
+        },
+        {
+          "Name": "Art"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Archaeology",
+      "Confidence": 58.224647521972656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Kneeling",
+      "Confidence": 57.34194564819336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sculpture",
+      "Confidence": 56.76316452026367,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Worship",
+      "Confidence": 56.30458450317383,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 56.28168487548828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 56.28168487548828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Angel",
+      "Confidence": 55.12029266357422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Archangel",
+      "Confidence": 55.12029266357422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

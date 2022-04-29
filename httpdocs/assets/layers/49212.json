@@ -1,0 +1,93 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Boat",
+      "Confidence": 99.96436309814453,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9131981730461121,
+            "Height": 0.8523237705230713,
+            "Left": 0.05085664987564087,
+            "Top": 0.042543623596429825
+          },
+          "Confidence": 99.96436309814453
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.96436309814453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.96436309814453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Art",
+      "Confidence": 86.84395599365234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Drawing",
+      "Confidence": 85.54071807861328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Steamer",
+      "Confidence": 78.08684539794922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sketch",
+      "Confidence": 60.50518035888672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Drawing"
+        },
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Aircraft",
+      "Confidence": 57.28647994995117,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

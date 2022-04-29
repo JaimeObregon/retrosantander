@@ -1,0 +1,76 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Horse",
+      "Confidence": 89.63690185546875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7381814122200012,
+            "Height": 0.722368061542511,
+            "Left": 0.21036188304424286,
+            "Top": 0.0854136124253273
+          },
+          "Confidence": 89.63690185546875
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 89.63690185546875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 89.63690185546875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 70.02161407470703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.208830788731575,
+            "Height": 0.27533552050590515,
+            "Left": 0.25195667147636414,
+            "Top": 0.058710068464279175
+          },
+          "Confidence": 70.02161407470703
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08311533182859421,
+            "Height": 0.09665019065141678,
+            "Left": 0.4399991035461426,
+            "Top": 0.2760423421859741
+          },
+          "Confidence": 64.08523559570312
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 70.02161407470703,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

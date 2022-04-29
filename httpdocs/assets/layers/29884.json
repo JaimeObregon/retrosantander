@@ -1,0 +1,70 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Art",
+      "Confidence": 89.22425079345703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Drawing",
+      "Confidence": 81.69911193847656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Text",
+      "Confidence": 70.80848693847656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 60.37581253051758,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7383743524551392,
+            "Height": 0.8841474056243896,
+            "Left": 0.19657348096370697,
+            "Top": 0.08770611882209778
+          },
+          "Confidence": 60.37581253051758
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Leisure Activities",
+      "Confidence": 59.30400466918945,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Poster",
+      "Confidence": 58.30827713012695,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Advertisement",
+      "Confidence": 58.30827713012695,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

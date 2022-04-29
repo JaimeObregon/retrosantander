@@ -1,0 +1,96 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Architecture",
+      "Confidence": 99.39940643310547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.39940643310547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Church",
+      "Confidence": 90.36516571044922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Apse",
+      "Confidence": 85.82820892333984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Altar",
+      "Confidence": 85.34154510498047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 77.4410629272461,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9396142363548279,
+            "Height": 0.9006988406181335,
+            "Left": 0.01868659444153309,
+            "Top": 0.07359325140714645
+          },
+          "Confidence": 77.4410629272461
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 77.4410629272461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crypt",
+      "Confidence": 57.557151794433594,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}
