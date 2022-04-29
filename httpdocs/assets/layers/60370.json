@@ -1,0 +1,168 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Car",
+      "Confidence": 99.03736114501953,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3526442050933838,
+            "Height": 0.2801627814769745,
+            "Left": 0.5805311799049377,
+            "Top": 0.1964876651763916
+          },
+          "Confidence": 98.07976531982422
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.20399460196495056,
+            "Height": 0.5410679578781128,
+            "Left": 0.002175989095121622,
+            "Top": 0.25267013907432556
+          },
+          "Confidence": 96.64773559570312
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1045948788523674,
+            "Height": 0.13582581281661987,
+            "Left": 0.8848742842674255,
+            "Top": 0.23947212100028992
+          },
+          "Confidence": 66.65473175048828
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 99.03736114501953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.03736114501953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.03736114501953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sedan",
+      "Confidence": 91.43232727050781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Antique Car",
+      "Confidence": 90.79511260986328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 88.85707092285156,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.11252975463867188,
+            "Height": 0.4524883031845093,
+            "Left": 0.0020991277415305376,
+            "Top": 0.414710134267807
+          },
+          "Confidence": 88.85707092285156
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 88.85707092285156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 73.74278259277344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bumper",
+      "Confidence": 64.83546447753906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Model T",
+      "Confidence": 58.26081466674805,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Antique Car"
+        },
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

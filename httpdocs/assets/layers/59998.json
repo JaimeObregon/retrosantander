@@ -1,0 +1,41 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Cable",
+      "Confidence": 97.49281311035156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Power Lines",
+      "Confidence": 95.8893814086914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cable"
+        }
+      ]
+    },
+    {
+      "Name": "Electric Transmission Tower",
+      "Confidence": 95.62730407714844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Power Lines"
+        },
+        {
+          "Name": "Cable"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 58.196353912353516,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

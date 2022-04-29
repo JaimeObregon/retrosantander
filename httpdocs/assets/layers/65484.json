@@ -1,0 +1,161 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Art",
+      "Confidence": 90.10108184814453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 87.16294860839844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.021301116794347763,
+            "Height": 0.08896598219871521,
+            "Left": 0.2022704929113388,
+            "Top": 0.7987762689590454
+          },
+          "Confidence": 83.37919616699219
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01894889771938324,
+            "Height": 0.08797410130500793,
+            "Left": 0.19445589184761047,
+            "Top": 0.7985478043556213
+          },
+          "Confidence": 74.91349792480469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.014192886650562286,
+            "Height": 0.08526777476072311,
+            "Left": 0.2126111537218094,
+            "Top": 0.8007325530052185
+          },
+          "Confidence": 55.176090240478516
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 87.16294860839844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 83.88896179199219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 83.88896179199219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 83.04962158203125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Drawing",
+      "Confidence": 78.83467102050781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 78.30350494384766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 74.71392822265625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.938555896282196,
+            "Height": 0.9413307309150696,
+            "Left": 0.03891746699810028,
+            "Top": 0.05041960999369621
+          },
+          "Confidence": 74.71392822265625
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "House",
+      "Confidence": 66.9582290649414,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 65.84375762939453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Sketch",
+      "Confidence": 59.94362258911133,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Drawing"
+        },
+        {
+          "Name": "Art"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 58.25252914428711,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

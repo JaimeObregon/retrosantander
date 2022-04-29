@@ -1,0 +1,144 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bus",
+      "Confidence": 99.43329620361328,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1798732429742813,
+            "Height": 0.10399492084980011,
+            "Left": 0.10627913475036621,
+            "Top": 0.5074284672737122
+          },
+          "Confidence": 99.43329620361328
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.43329620361328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.43329620361328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Truck",
+      "Confidence": 99.26828002929688,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5436341762542725,
+            "Height": 0.6034002304077148,
+            "Left": 0.29941070079803467,
+            "Top": 0.2095891386270523
+          },
+          "Confidence": 99.26828002929688
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 87.5761489868164,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.020973242819309235,
+            "Height": 0.07200674712657928,
+            "Left": 0.2130003422498703,
+            "Top": 0.5551271438598633
+          },
+          "Confidence": 87.5761489868164
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 87.5761489868164,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tow Truck",
+      "Confidence": 81.77559661865234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Truck"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "City",
+      "Confidence": 58.8924446105957,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 58.8924446105957,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Town",
+      "Confidence": 58.8924446105957,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 58.8924446105957,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

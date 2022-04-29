@@ -1,0 +1,181 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 97.41596984863281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 94.79885864257812,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.0795993059873581,
+            "Height": 0.08965077996253967,
+            "Left": 0.9065998196601868,
+            "Top": 0.9059907793998718
+          },
+          "Confidence": 94.79885864257812
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 94.79885864257812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 94.79885864257812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 94.79885864257812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 91.98088836669922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 86.99340057373047,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.0295674130320549,
+            "Height": 0.09105314314365387,
+            "Left": 0.9083126783370972,
+            "Top": 0.8585048317909241
+          },
+          "Confidence": 86.99340057373047
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.011466827243566513,
+            "Height": 0.0469263419508934,
+            "Left": 0.8895561695098877,
+            "Top": 0.8798133730888367
+          },
+          "Confidence": 80.54573059082031
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.021076355129480362,
+            "Height": 0.0801929235458374,
+            "Left": 0.8981280326843262,
+            "Top": 0.8773075342178345
+          },
+          "Confidence": 56.84566879272461
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 86.99340057373047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 81.76693725585938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Postal Office",
+      "Confidence": 79.16938781738281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mansion",
+      "Confidence": 63.231788635253906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "House"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "House",
+      "Confidence": 63.231788635253906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Office Building",
+      "Confidence": 62.98478698730469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 61.93672561645508,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "College",
+      "Confidence": 55.05561065673828,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

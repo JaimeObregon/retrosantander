@@ -1,0 +1,77 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Truck",
+      "Confidence": 99.75045776367188,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9040595889091492,
+            "Height": 0.6095419526100159,
+            "Left": 0.029518738389015198,
+            "Top": 0.2804228365421295
+          },
+          "Confidence": 99.75045776367188
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.75045776367188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.75045776367188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 57.84465026855469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 57.84465026855469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Trailer Truck",
+      "Confidence": 56.12928009033203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Truck"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

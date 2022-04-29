@@ -1,0 +1,157 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Soil",
+      "Confidence": 98.25125885009766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Train",
+      "Confidence": 97.37926483154297,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.27570414543151855,
+            "Height": 0.17384664714336395,
+            "Left": 0.06879334151744843,
+            "Top": 0.27322766184806824
+          },
+          "Confidence": 97.37926483154297
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 97.37926483154297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 97.37926483154297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 92.31068420410156,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.014812622219324112,
+            "Height": 0.050722431391477585,
+            "Left": 0.8247995972633362,
+            "Top": 0.34092649817466736
+          },
+          "Confidence": 92.31068420410156
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.008942871354520321,
+            "Height": 0.031396351754665375,
+            "Left": 0.8121424317359924,
+            "Top": 0.3583786189556122
+          },
+          "Confidence": 82.10317993164062
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.019676361232995987,
+            "Height": 0.04092065617442131,
+            "Left": 0.877071738243103,
+            "Top": 0.4005659818649292
+          },
+          "Confidence": 54.63484191894531
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 92.31068420410156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Construction",
+      "Confidence": 72.09857177734375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 70.46309661865234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 68.03730010986328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 59.43246078491211,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Railway",
+      "Confidence": 58.04312515258789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Train Track",
+      "Confidence": 58.04312515258789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Rail",
+      "Confidence": 58.04312515258789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 56.80543899536133,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Road",
+      "Confidence": 55.899452209472656,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,217 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.68607330322266,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.01677101105451584,
+            "Height": 0.07321533560752869,
+            "Left": 0.5803780555725098,
+            "Top": 0.5970350503921509
+          },
+          "Confidence": 98.68607330322266
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01649932935833931,
+            "Height": 0.0749540776014328,
+            "Left": 0.606365442276001,
+            "Top": 0.601042628288269
+          },
+          "Confidence": 97.66049194335938
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.014121093787252903,
+            "Height": 0.08298096060752869,
+            "Left": 0.6393787264823914,
+            "Top": 0.5956506133079529
+          },
+          "Confidence": 94.38346862792969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01901371031999588,
+            "Height": 0.08062465488910675,
+            "Left": 0.6239510774612427,
+            "Top": 0.6014329791069031
+          },
+          "Confidence": 94.32555389404297
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.020003432407975197,
+            "Height": 0.07924839854240417,
+            "Left": 0.5346758961677551,
+            "Top": 0.5930873155593872
+          },
+          "Confidence": 93.53644561767578
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0174810029566288,
+            "Height": 0.09229515492916107,
+            "Left": 0.40287503600120544,
+            "Top": 0.6005162596702576
+          },
+          "Confidence": 91.97398376464844
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0192011259496212,
+            "Height": 0.09497012197971344,
+            "Left": 0.38174498081207275,
+            "Top": 0.5982740521430969
+          },
+          "Confidence": 91.06619262695312
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.016084594652056694,
+            "Height": 0.09189674258232117,
+            "Left": 0.373343288898468,
+            "Top": 0.599945068359375
+          },
+          "Confidence": 82.47920989990234
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.019578780978918076,
+            "Height": 0.08015532046556473,
+            "Left": 0.5115436911582947,
+            "Top": 0.5877546072006226
+          },
+          "Confidence": 80.89051055908203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01531066931784153,
+            "Height": 0.06696544587612152,
+            "Left": 0.46952301263809204,
+            "Top": 0.5895527005195618
+          },
+          "Confidence": 77.2573471069336
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.017835617065429688,
+            "Height": 0.06499918550252914,
+            "Left": 0.4004978537559509,
+            "Top": 0.733217179775238
+          },
+          "Confidence": 56.71009063720703
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01711731031537056,
+            "Height": 0.07102689892053604,
+            "Left": 0.4653061628341675,
+            "Top": 0.7100805044174194
+          },
+          "Confidence": 46.48482894897461
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.68607330322266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Construction Crane",
+      "Confidence": 78.68038940429688,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.28325995802879333,
+            "Height": 0.6814845204353333,
+            "Left": 0.13079795241355896,
+            "Top": 0
+          },
+          "Confidence": 78.68038940429688
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Oilfield",
+      "Confidence": 69.45675659179688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bus",
+      "Confidence": 62.84787368774414,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07993736118078232,
+            "Height": 0.0645110234618187,
+            "Left": 0.3851063549518585,
+            "Top": 0.535794734954834
+          },
+          "Confidence": 62.84787368774414
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 62.84787368774414,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 62.84787368774414,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Cable",
+      "Confidence": 59.58415985107422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Power Lines",
+      "Confidence": 57.157989501953125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cable"
+        }
+      ]
+    },
+    {
+      "Name": "Electric Transmission Tower",
+      "Confidence": 57.09543228149414,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Power Lines"
+        },
+        {
+          "Name": "Cable"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

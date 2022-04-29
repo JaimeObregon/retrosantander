@@ -1,0 +1,237 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 91.44805145263672,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.007768707349896431,
+            "Height": 0.0363994762301445,
+            "Left": 0.6776337623596191,
+            "Top": 0.8849248290061951
+          },
+          "Confidence": 91.44805145263672
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.011304016225039959,
+            "Height": 0.043773993849754333,
+            "Left": 0.6569221615791321,
+            "Top": 0.8787826895713806
+          },
+          "Confidence": 86.10572814941406
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.010711822658777237,
+            "Height": 0.04535110667347908,
+            "Left": 0.7338578104972839,
+            "Top": 0.8490368723869324
+          },
+          "Confidence": 84.1587905883789
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.007990455254912376,
+            "Height": 0.032763391733169556,
+            "Left": 0.139723002910614,
+            "Top": 0.832426130771637
+          },
+          "Confidence": 82.90279388427734
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.007566909771412611,
+            "Height": 0.03293401002883911,
+            "Left": 0.453552782535553,
+            "Top": 0.6921848654747009
+          },
+          "Confidence": 79.59790802001953
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.011735077016055584,
+            "Height": 0.0378386452794075,
+            "Left": 0.6358808875083923,
+            "Top": 0.8753315806388855
+          },
+          "Confidence": 71.00163269042969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.010105285793542862,
+            "Height": 0.04057110846042633,
+            "Left": 0.6990501284599304,
+            "Top": 0.8793039917945862
+          },
+          "Confidence": 67.76819610595703
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0068670655600726604,
+            "Height": 0.03075331635773182,
+            "Left": 0.6800291538238525,
+            "Top": 0.7875518798828125
+          },
+          "Confidence": 65.66574096679688
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.008096694946289062,
+            "Height": 0.029713034629821777,
+            "Left": 0.3900180160999298,
+            "Top": 0.7466442584991455
+          },
+          "Confidence": 65.49127960205078
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.007928924635052681,
+            "Height": 0.027447497472167015,
+            "Left": 0.40467190742492676,
+            "Top": 0.7493621706962585
+          },
+          "Confidence": 64.84689331054688
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 91.44805145263672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 90.47634887695312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 90.15838623046875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Cable Car",
+      "Confidence": 83.83637237548828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 74.34606170654297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 73.91264343261719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 61.395668029785156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Landscape",
+      "Confidence": 57.7606315612793,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 57.7606315612793,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 57.7606315612793,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Streetcar",
+      "Confidence": 57.281314849853516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cable Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Trolley",
+      "Confidence": 57.281314849853516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cable Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Tram",
+      "Confidence": 57.281314849853516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cable Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,208 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Car",
+      "Confidence": 99.5669174194336,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03989708051085472,
+            "Height": 0.04062088578939438,
+            "Left": 0.39142146706581116,
+            "Top": 0.6855394244194031
+          },
+          "Confidence": 99.5669174194336
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.050883177667856216,
+            "Height": 0.039543766528367996,
+            "Left": 0.49551665782928467,
+            "Top": 0.6887479424476624
+          },
+          "Confidence": 98.15770721435547
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03249244764447212,
+            "Height": 0.0334339365363121,
+            "Left": 0.32597362995147705,
+            "Top": 0.6866429448127747
+          },
+          "Confidence": 88.14396667480469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05459466949105263,
+            "Height": 0.033606868237257004,
+            "Left": 0.06783976405858994,
+            "Top": 0.6795779466629028
+          },
+          "Confidence": 87.39289855957031
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09544777125120163,
+            "Height": 0.05998001992702484,
+            "Left": 0.16895991563796997,
+            "Top": 0.650117039680481
+          },
+          "Confidence": 55.39155578613281
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 99.5669174194336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.5669174194336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.5669174194336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Postal Office",
+      "Confidence": 85.77690124511719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car Dealership",
+      "Confidence": 82.4242172241211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Clock Tower",
+      "Confidence": 75.87568664550781,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.021350020542740822,
+            "Height": 0.059421464800834656,
+            "Left": 0.12376968562602997,
+            "Top": 0.48610439896583557
+          },
+          "Confidence": 75.87568664550781
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 75.87568664550781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tower",
+      "Confidence": 75.87568664550781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 75.87568664550781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Road",
+      "Confidence": 69.60787963867188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 67.21561431884766,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.015974121168255806,
+            "Height": 0.03910529613494873,
+            "Left": 0.7807603478431702,
+            "Top": 0.6745606660842896
+          },
+          "Confidence": 67.21561431884766
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.007985076867043972,
+            "Height": 0.027941590175032616,
+            "Left": 0.8032029867172241,
+            "Top": 0.6861631274223328
+          },
+          "Confidence": 60.4906005859375
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 67.21561431884766,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

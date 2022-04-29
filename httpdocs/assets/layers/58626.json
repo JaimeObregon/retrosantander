@@ -1,0 +1,172 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Construction Crane",
+      "Confidence": 97.12554931640625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5513035655021667,
+            "Height": 0.6215814352035522,
+            "Left": 0.06907732039690018,
+            "Top": 0.10256551206111908
+          },
+          "Confidence": 92.89620971679688
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 88.8690414428711,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 78.10504150390625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 78.10504150390625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 77.08820343017578,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03635009750723839,
+            "Height": 0.05440274998545647,
+            "Left": 0.7257229685783386,
+            "Top": 0.9420541524887085
+          },
+          "Confidence": 77.08820343017578
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 77.08820343017578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pier",
+      "Confidence": 74.80272674560547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Dock",
+      "Confidence": 74.80272674560547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Port",
+      "Confidence": 74.80272674560547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Waterfront",
+      "Confidence": 74.80272674560547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Military",
+      "Confidence": 72.29718017578125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ship",
+      "Confidence": 72.29181671142578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Cruiser",
+      "Confidence": 68.12384796142578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Navy"
+        },
+        {
+          "Name": "Ship"
+        },
+        {
+          "Name": "Military"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Navy",
+      "Confidence": 68.12384796142578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Steamer",
+      "Confidence": 57.90829849243164,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

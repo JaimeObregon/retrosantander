@@ -1,0 +1,258 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Machine",
+      "Confidence": 99.74073028564453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 99.69818115234375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.21423667669296265,
+            "Height": 0.15179669857025146,
+            "Left": 0.25044894218444824,
+            "Top": 0.7053217887878418
+          },
+          "Confidence": 99.69818115234375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.4242042601108551,
+            "Height": 0.22140663862228394,
+            "Left": 0.5595237612724304,
+            "Top": 0.670367956161499
+          },
+          "Confidence": 97.44278717041016
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.21840812265872955,
+            "Height": 0.14797274768352509,
+            "Left": 0.057182226330041885,
+            "Top": 0.6927463412284851
+          },
+          "Confidence": 97.3348159790039
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03569765016436577,
+            "Height": 0.09213490039110184,
+            "Left": 0.00003255367118981667,
+            "Top": 0.7353277206420898
+          },
+          "Confidence": 95.08675384521484
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10730955004692078,
+            "Height": 0.0947013571858406,
+            "Left": 0.009017701260745525,
+            "Top": 0.7070127129554749
+          },
+          "Confidence": 91.7214126586914
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.2199924886226654,
+            "Height": 0.13994573056697845,
+            "Left": 0.4971764087677002,
+            "Top": 0.6737344861030579
+          },
+          "Confidence": 89.15482330322266
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04811950773000717,
+            "Height": 0.0483219288289547,
+            "Left": 0.0024799180682748556,
+            "Top": 0.6930341720581055
+          },
+          "Confidence": 82.22944641113281
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09177474677562714,
+            "Height": 0.10248758643865585,
+            "Left": 0.4129882752895355,
+            "Top": 0.7055882215499878
+          },
+          "Confidence": 81.44010162353516
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.69818115234375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.69818115234375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 99.69818115234375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Pump",
+      "Confidence": 96.4076919555664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Gas Station",
+      "Confidence": 94.74920654296875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pump"
+        },
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 89.93041229248047,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.016230354085564613,
+            "Height": 0.06189717352390289,
+            "Left": 0.28631913661956787,
+            "Top": 0.6756942272186279
+          },
+          "Confidence": 89.93041229248047
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01974494941532612,
+            "Height": 0.059262748807668686,
+            "Left": 0.26585274934768677,
+            "Top": 0.6703217029571533
+          },
+          "Confidence": 87.12266540527344
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.027824535965919495,
+            "Height": 0.060301657766103745,
+            "Left": 0.3036389648914337,
+            "Top": 0.6603267192840576
+          },
+          "Confidence": 73.90904235839844
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01767417974770069,
+            "Height": 0.053415555506944656,
+            "Left": 0.5708171725273132,
+            "Top": 0.6373634934425354
+          },
+          "Confidence": 69.3480224609375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.025018539279699326,
+            "Height": 0.02998594008386135,
+            "Left": 0.19816158711910248,
+            "Top": 0.667391836643219
+          },
+          "Confidence": 64.24565887451172
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.016103820875287056,
+            "Height": 0.027266589924693108,
+            "Left": 0.7737464904785156,
+            "Top": 0.6434093117713928
+          },
+          "Confidence": 43.579288482666016
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012992038391530514,
+            "Height": 0.017362769693136215,
+            "Left": 0.14350828528404236,
+            "Top": 0.6820990443229675
+          },
+          "Confidence": 43.318851470947266
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 89.93041229248047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Gas Pump",
+      "Confidence": 86.6252670288086,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pump"
+        },
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Petrol",
+      "Confidence": 59.78635787963867,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Gas Pump"
+        },
+        {
+          "Name": "Gas Station"
+        },
+        {
+          "Name": "Pump"
+        },
+        {
+          "Name": "Machine"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

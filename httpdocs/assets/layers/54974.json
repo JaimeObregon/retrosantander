@@ -1,0 +1,305 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Car",
+      "Confidence": 99.21358489990234,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.21771183609962463,
+            "Height": 0.09090644121170044,
+            "Left": 0.03461434692144394,
+            "Top": 0.7917201519012451
+          },
+          "Confidence": 99.21358489990234
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0790063887834549,
+            "Height": 0.030445918440818787,
+            "Left": 0.17561843991279602,
+            "Top": 0.7724912762641907
+          },
+          "Confidence": 98.52190399169922
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08855289220809937,
+            "Height": 0.0432756207883358,
+            "Left": 0.3232143521308899,
+            "Top": 0.7703245282173157
+          },
+          "Confidence": 71.77369689941406
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05684966966509819,
+            "Height": 0.030512943863868713,
+            "Left": 0.007056254893541336,
+            "Top": 0.756759762763977
+          },
+          "Confidence": 67.07202911376953
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.21358489990234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 99.21358489990234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.21358489990234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Office Building",
+      "Confidence": 98.11097717285156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 98.11097717285156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 96.69034576416016,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03877439349889755,
+            "Height": 0.06608863919973373,
+            "Left": 0.9371706247329712,
+            "Top": 0.7575275301933289
+          },
+          "Confidence": 96.69034576416016
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03229668363928795,
+            "Height": 0.14742782711982727,
+            "Left": 0,
+            "Top": 0.7871578931808472
+          },
+          "Confidence": 89.96853637695312
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 96.69034576416016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "High Rise",
+      "Confidence": 96.31513214111328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 96.31513214111328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 96.31513214111328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 96.31513214111328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Condo",
+      "Confidence": 93.1561508178711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 93.1561508178711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Apartment Building",
+      "Confidence": 92.42372131347656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "High Rise"
+        },
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 65.99903106689453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 65.99903106689453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 65.75128173828125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.034702882170677185,
+            "Height": 0.03249986469745636,
+            "Left": 0.09793486446142197,
+            "Top": 0.8473542332649231
+          },
+          "Confidence": 65.75128173828125
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 65.75128173828125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Road",
+      "Confidence": 65.59590911865234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 64.88973999023438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Neighborhood",
+      "Confidence": 59.93781280517578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tarmac",
+      "Confidence": 57.5557746887207,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Asphalt",
+      "Confidence": 57.5557746887207,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

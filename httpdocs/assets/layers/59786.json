@@ -1,0 +1,230 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Truck",
+      "Confidence": 98.67711639404297,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3052218556404114,
+            "Height": 0.3217296898365021,
+            "Left": 0.2681957483291626,
+            "Top": 0.48410099744796753
+          },
+          "Confidence": 98.67711639404297
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 98.67711639404297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 98.67711639404297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Locomotive",
+      "Confidence": 93.63098907470703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Train"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Train",
+      "Confidence": 93.63098907470703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.37065133452415466,
+            "Height": 0.3052273094654083,
+            "Left": 0.2046050876379013,
+            "Top": 0.491932213306427
+          },
+          "Confidence": 85.99671173095703
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.13475345075130463,
+            "Height": 0.17752955853939056,
+            "Left": 0.18006926774978638,
+            "Top": 0.5421500205993652
+          },
+          "Confidence": 77.64979553222656
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Railway",
+      "Confidence": 86.62870788574219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Train Track",
+      "Confidence": 86.62870788574219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Rail",
+      "Confidence": 86.62870788574219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 82.14323425292969,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.016532784327864647,
+            "Height": 0.07552478462457657,
+            "Left": 0.171180859208107,
+            "Top": 0.6113774180412292
+          },
+          "Confidence": 82.14323425292969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.011687231250107288,
+            "Height": 0.03132030740380287,
+            "Left": 0.14870387315750122,
+            "Top": 0.6056953072547913
+          },
+          "Confidence": 68.94371795654297
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.015227670781314373,
+            "Height": 0.06817615032196045,
+            "Left": 0.14986690878868103,
+            "Top": 0.6069158911705017
+          },
+          "Confidence": 61.20100402832031
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 82.14323425292969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 75.40165710449219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Engine",
+      "Confidence": 63.10886764526367,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Motor"
+        },
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Motor",
+      "Confidence": 63.10886764526367,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Steam Engine",
+      "Confidence": 55.55820846557617,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Engine"
+        },
+        {
+          "Name": "Locomotive"
+        },
+        {
+          "Name": "Motor"
+        },
+        {
+          "Name": "Train"
+        },
+        {
+          "Name": "Machine"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 55.40555953979492,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

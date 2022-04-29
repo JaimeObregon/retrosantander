@@ -1,0 +1,103 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Metropolis",
+      "Confidence": 95.56706237792969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "City",
+      "Confidence": 95.56706237792969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 95.56706237792969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 95.56706237792969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 95.56706237792969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Trash",
+      "Confidence": 85.63957977294922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 79.78910064697266,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.027280541136860847,
+            "Height": 0.06395231932401657,
+            "Left": 0.2844957411289215,
+            "Top": 0.3301254212856293
+          },
+          "Confidence": 79.78910064697266
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.022240256890654564,
+            "Height": 0.05666442587971687,
+            "Left": 0.2632243037223816,
+            "Top": 0.3356086015701294
+          },
+          "Confidence": 44.746192932128906
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 79.78910064697266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rubble",
+      "Confidence": 74.22736358642578,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

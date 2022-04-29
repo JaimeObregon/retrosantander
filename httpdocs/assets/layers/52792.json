@@ -1,0 +1,88 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Classroom",
+      "Confidence": 99.9879379272461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "School"
+        },
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "School",
+      "Confidence": 99.9879379272461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Room",
+      "Confidence": 99.9879379272461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 99.9879379272461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Chair",
+      "Confidence": 88.7106704711914,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1031370535492897,
+            "Height": 0.20389924943447113,
+            "Left": 0.40667489171028137,
+            "Top": 0.46819543838500977
+          },
+          "Confidence": 88.7106704711914
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10984554141759872,
+            "Height": 0.37089213728904724,
+            "Left": 0.2025122493505478,
+            "Top": 0.400665283203125
+          },
+          "Confidence": 85.27294921875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.11980514228343964,
+            "Height": 0.2596428394317627,
+            "Left": 0.3054884374141693,
+            "Top": 0.4431832730770111
+          },
+          "Confidence": 60.36186599731445
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 88.7106704711914,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

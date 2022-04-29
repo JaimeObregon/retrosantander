@@ -1,0 +1,95 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Tower",
+      "Confidence": 99.57424926757812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 99.57424926757812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.57424926757812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Handrail",
+      "Confidence": 95.90898132324219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Banister",
+      "Confidence": 95.90898132324219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Lighthouse",
+      "Confidence": 95.36553955078125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.36978772282600403,
+            "Height": 0.5027992725372314,
+            "Left": 0.23121346533298492,
+            "Top": 0.10616559535264969
+          },
+          "Confidence": 83.08242797851562
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Beacon"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Beacon",
+      "Confidence": 95.36553955078125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Railing",
+      "Confidence": 68.27410888671875,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,72 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Monument",
+      "Confidence": 99.85082244873047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Statue",
+      "Confidence": 97.80135345458984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sculpture"
+        },
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Sculpture",
+      "Confidence": 97.80135345458984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 97.80135345458984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 97.78504180908203,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2767848074436188,
+            "Height": 0.2984757125377655,
+            "Left": 0.5335296988487244,
+            "Top": 0.5577661991119385
+          },
+          "Confidence": 97.78504180908203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1692621111869812,
+            "Height": 0.1465493142604828,
+            "Left": 0.46600019931793213,
+            "Top": 0.3389284610748291
+          },
+          "Confidence": 81.97196960449219
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.78504180908203,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

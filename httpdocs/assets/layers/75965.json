@@ -1,0 +1,109 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Indoors",
+      "Confidence": 99.64958190917969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Room",
+      "Confidence": 99.51065063476562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Library",
+      "Confidence": 97.9373550415039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Book"
+        },
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Book",
+      "Confidence": 97.9373550415039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Interior Design",
+      "Confidence": 85.07330322265625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 63.7593994140625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.0648944079875946,
+            "Height": 0.10524721443653107,
+            "Left": 0.7517945170402527,
+            "Top": 0.8463164567947388
+          },
+          "Confidence": 63.7593994140625
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 63.7593994140625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 63.704219818115234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Court",
+      "Confidence": 58.616153717041016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 55.75117111206055,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

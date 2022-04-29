@@ -1,0 +1,105 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Classroom",
+      "Confidence": 99.94615936279297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "School"
+        },
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "School",
+      "Confidence": 99.94615936279297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Room",
+      "Confidence": 99.94615936279297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 99.94615936279297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bench",
+      "Confidence": 99.11759948730469,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5327827334403992,
+            "Height": 0.43009689450263977,
+            "Left": 0.04202611744403839,
+            "Top": 0.5565638542175293
+          },
+          "Confidence": 99.11759948730469
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 99.11759948730469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Chair",
+      "Confidence": 74.8016586303711,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.12295558303594589,
+            "Height": 0.32752519845962524,
+            "Left": 0.0449533574283123,
+            "Top": 0.5760369300842285
+          },
+          "Confidence": 74.8016586303711
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05980638042092323,
+            "Height": 0.28402969241142273,
+            "Left": 0,
+            "Top": 0.6152465343475342
+          },
+          "Confidence": 69.95520782470703
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Blackboard",
+      "Confidence": 55.49186325073242,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

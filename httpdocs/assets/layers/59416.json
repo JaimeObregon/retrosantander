@@ -1,0 +1,196 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Car",
+      "Confidence": 99.28486633300781,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5571190714836121,
+            "Height": 0.34034213423728943,
+            "Left": 0.35614991188049316,
+            "Top": 0.5509577393531799
+          },
+          "Confidence": 99.28486633300781
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.19623641669750214,
+            "Height": 0.21949872374534607,
+            "Left": 0.2794146239757538,
+            "Top": 0.5377945303916931
+          },
+          "Confidence": 96.77336120605469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10612518340349197,
+            "Height": 0.13970352709293365,
+            "Left": 0.26665711402893066,
+            "Top": 0.5350183844566345
+          },
+          "Confidence": 94.0076904296875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08293291181325912,
+            "Height": 0.1026880219578743,
+            "Left": 0.2596750855445862,
+            "Top": 0.5302153825759888
+          },
+          "Confidence": 82.44596862792969
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 99.28486633300781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.28486633300781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.28486633300781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Sedan",
+      "Confidence": 97.8794937133789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 97.76907348632812,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.01773323118686676,
+            "Height": 0.06987074017524719,
+            "Left": 0.09121134877204895,
+            "Top": 0.4998615086078644
+          },
+          "Confidence": 97.76907348632812
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012041473761200905,
+            "Height": 0.0629076138138771,
+            "Left": 0.0729331374168396,
+            "Top": 0.5034046769142151
+          },
+          "Confidence": 96.72919464111328
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.76907348632812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Parking Lot",
+      "Confidence": 92.29192352294922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Parking",
+      "Confidence": 92.29192352294922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 59.55109786987305,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 59.55109786987305,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Spoke",
+      "Confidence": 57.67290115356445,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 55.49029541015625,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

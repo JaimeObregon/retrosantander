@@ -1,0 +1,142 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Castle",
+      "Confidence": 99.50173950195312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 99.50173950195312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.50173950195312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fort",
+      "Confidence": 92.10550689697266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Castle"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 81.07164764404297,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.01617533713579178,
+            "Height": 0.07067946344614029,
+            "Left": 0.02916938252747059,
+            "Top": 0.4663279354572296
+          },
+          "Confidence": 81.07164764404297
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.016904907301068306,
+            "Height": 0.07369066029787064,
+            "Left": 0.5348195433616638,
+            "Top": 0.650983989238739
+          },
+          "Confidence": 72.19938659667969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01236877404153347,
+            "Height": 0.04139425978064537,
+            "Left": 0.5063610076904297,
+            "Top": 0.6625566482543945
+          },
+          "Confidence": 44.28183364868164
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 81.07164764404297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 64.99324798583984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Monastery",
+      "Confidence": 62.79093551635742,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 60.99283981323242,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Moat",
+      "Confidence": 57.030757904052734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fort"
+        },
+        {
+          "Name": "Castle"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

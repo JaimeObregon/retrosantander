@@ -1,0 +1,222 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Street",
+      "Confidence": 99.9998550415039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 99.9998550415039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 99.9998550415039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 99.9998550415039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.9998550415039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Town",
+      "Confidence": 99.9998550415039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Path",
+      "Confidence": 99.561767578125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.52912139892578,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.033617857843637466,
+            "Height": 0.14274001121520996,
+            "Left": 0.6062344312667847,
+            "Top": 0.26600927114486694
+          },
+          "Confidence": 99.52912139892578
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.010401534847915173,
+            "Height": 0.052883148193359375,
+            "Left": 0.5337518453598022,
+            "Top": 0.2675365209579468
+          },
+          "Confidence": 94.89920806884766
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.007336807437241077,
+            "Height": 0.02871837094426155,
+            "Left": 0.5567113757133484,
+            "Top": 0.2751900255680084
+          },
+          "Confidence": 80.94908905029297
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.009830551221966743,
+            "Height": 0.04760042950510979,
+            "Left": 0.5245059728622437,
+            "Top": 0.2720000147819519
+          },
+          "Confidence": 79.08816528320312
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.009942322038114071,
+            "Height": 0.053385186940431595,
+            "Left": 0.5291027426719666,
+            "Top": 0.2665145695209503
+          },
+          "Confidence": 74.7070541381836
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.010844574309885502,
+            "Height": 0.05016402155160904,
+            "Left": 0.5798634886741638,
+            "Top": 0.27836933732032776
+          },
+          "Confidence": 70.35847473144531
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.52912139892578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Alley",
+      "Confidence": 98.53834533691406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Street"
+        },
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Alleyway",
+      "Confidence": 98.53834533691406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Street"
+        },
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Walkway",
+      "Confidence": 96.88231658935547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Sidewalk",
+      "Confidence": 94.71614837646484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Pavement",
+      "Confidence": 94.71614837646484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Flagstone",
+      "Confidence": 79.73025512695312,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

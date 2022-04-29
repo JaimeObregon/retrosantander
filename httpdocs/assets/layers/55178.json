@@ -1,0 +1,195 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Truck",
+      "Confidence": 85.93384552001953,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.16262511909008026,
+            "Height": 0.1464986950159073,
+            "Left": 0.7765089273452759,
+            "Top": 0.8422818779945374
+          },
+          "Confidence": 85.93384552001953
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 85.93384552001953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 85.93384552001953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Amusement Park",
+      "Confidence": 79.32667541503906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Train",
+      "Confidence": 74.44855499267578,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.23270736634731293,
+            "Height": 0.17601951956748962,
+            "Left": 0.7616679668426514,
+            "Top": 0.8146992325782776
+          },
+          "Confidence": 74.44855499267578
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Canopy",
+      "Confidence": 70.65863800048828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bench",
+      "Confidence": 69.27162170410156,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2688949406147003,
+            "Height": 0.2292446494102478,
+            "Left": 0.0017146110767498612,
+            "Top": 0.7610472440719604
+          },
+          "Confidence": 69.27162170410156
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 69.27162170410156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Theme Park",
+      "Confidence": 68.25952911376953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Amusement Park"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 63.438255310058594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Carousel",
+      "Confidence": 57.29555892944336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Amusement Park"
+        }
+      ]
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 56.528900146484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 56.528900146484375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 56.528900146484375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 56.528900146484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 56.528900146484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

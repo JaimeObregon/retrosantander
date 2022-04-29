@@ -1,0 +1,184 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 93.06159210205078,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.038107991218566895,
+            "Height": 0.05518493801355362,
+            "Left": 0.11971934139728546,
+            "Top": 0.819985568523407
+          },
+          "Confidence": 93.06159210205078
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 93.06159210205078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Airplane",
+      "Confidence": 92.03858947753906,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.15997625887393951,
+            "Height": 0.03153194859623909,
+            "Left": 0.1876954734325409,
+            "Top": 0.1498263031244278
+          },
+          "Confidence": 92.03858947753906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.19630607962608337,
+            "Height": 0.04227877035737038,
+            "Left": 0.40051695704460144,
+            "Top": 0.2400953769683838
+          },
+          "Confidence": 68.79589080810547
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 92.03858947753906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 92.03858947753906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Aircraft",
+      "Confidence": 92.03858947753906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 70.44255065917969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 68.75415802001953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 68.75415802001953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Grass",
+      "Confidence": 65.19071960449219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 63.53498077392578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Antenna",
+      "Confidence": 61.09658432006836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Electrical Device"
+        }
+      ]
+    },
+    {
+      "Name": "Electrical Device",
+      "Confidence": 61.09658432006836,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 57.467811584472656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 55.29808807373047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 55.29808807373047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Town",
+      "Confidence": 55.29808807373047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

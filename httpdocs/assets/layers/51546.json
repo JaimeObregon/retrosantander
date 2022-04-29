@@ -1,0 +1,230 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 97.48277282714844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07860500365495682,
+            "Height": 0.11033223569393158,
+            "Left": 0.835438072681427,
+            "Top": 0.8862840533256531
+          },
+          "Confidence": 84.80767822265625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.033187609165906906,
+            "Height": 0.0575951486825943,
+            "Left": 0.9604572653770447,
+            "Top": 0.802413821220398
+          },
+          "Confidence": 83.54549407958984
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.36220934987068176,
+            "Height": 0.3653307855129242,
+            "Left": 0.31228673458099365,
+            "Top": 0.5204046368598938
+          },
+          "Confidence": 81.52527618408203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04592585191130638,
+            "Height": 0.07456568628549576,
+            "Left": 0.9014396667480469,
+            "Top": 0.9035111665725708
+          },
+          "Confidence": 81.12092590332031
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.030204126611351967,
+            "Height": 0.04767953231930733,
+            "Left": 0.9621910452842712,
+            "Top": 0.7407780885696411
+          },
+          "Confidence": 77.35948181152344
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03601988032460213,
+            "Height": 0.055987775325775146,
+            "Left": 0.8989818096160889,
+            "Top": 0.834102988243103
+          },
+          "Confidence": 72.58692169189453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02864191122353077,
+            "Height": 0.061886370182037354,
+            "Left": 0.18461647629737854,
+            "Top": 0.7344645261764526
+          },
+          "Confidence": 66.51847076416016
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.027054954320192337,
+            "Height": 0.0461539663374424,
+            "Left": 0.6281595826148987,
+            "Top": 0.46253472566604614
+          },
+          "Confidence": 61.79058074951172
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04629033803939819,
+            "Height": 0.09150481224060059,
+            "Left": 0.9487766027450562,
+            "Top": 0.9032095670700073
+          },
+          "Confidence": 60.133182525634766
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0259360671043396,
+            "Height": 0.04324544221162796,
+            "Left": 0.08826332539319992,
+            "Top": 0.7294532060623169
+          },
+          "Confidence": 59.32587432861328
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.48277282714844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crowd",
+      "Confidence": 93.9423828125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Parade",
+      "Confidence": 88.7778549194336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pedestrian",
+      "Confidence": 83.87522888183594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Metropolis",
+      "Confidence": 81.7234115600586,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 81.7234115600586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 81.7234115600586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 81.7234115600586,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 81.7234115600586,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 77.58982849121094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Traffic Jam",
+      "Confidence": 75.46192169189453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Street",
+      "Confidence": 72.91139221191406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 72.91139221191406,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

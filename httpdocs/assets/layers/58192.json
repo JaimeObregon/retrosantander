@@ -1,0 +1,141 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Car",
+      "Confidence": 97.70138549804688,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.768320620059967,
+            "Height": 0.8220111131668091,
+            "Left": 0.14330115914344788,
+            "Top": 0.09576290845870972
+          },
+          "Confidence": 89.83782958984375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.44077011942863464,
+            "Height": 0.5332144498825073,
+            "Left": 0.5579798817634583,
+            "Top": 0.061441510915756226
+          },
+          "Confidence": 60.809749603271484
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 97.70138549804688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 97.70138549804688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 97.70138549804688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Antique Car",
+      "Confidence": 92.84832000732422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 91.36839294433594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sedan",
+      "Confidence": 85.60249328613281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Factory",
+      "Confidence": 81.04412078857422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Bumper",
+      "Confidence": 71.30780029296875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Assembly Line",
+      "Confidence": 58.840965270996094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Factory"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

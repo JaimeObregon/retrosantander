@@ -1,0 +1,109 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Truck",
+      "Confidence": 98.32357788085938,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8837970495223999,
+            "Height": 0.7341270446777344,
+            "Left": 0.043349914252758026,
+            "Top": 0.1820431798696518
+          },
+          "Confidence": 98.32357788085938
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 98.32357788085938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 98.32357788085938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 97.14216613769531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 97.14216613769531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 76.96585083007812,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03232845291495323,
+            "Height": 0.08593132346868515,
+            "Left": 0.6150497198104858,
+            "Top": 0.2864595353603363
+          },
+          "Confidence": 76.96585083007812
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 76.96585083007812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Jeep",
+      "Confidence": 74.64334106445312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

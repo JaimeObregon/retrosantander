@@ -1,0 +1,325 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Path",
+      "Confidence": 99.26856231689453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 98.01705932617188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 95.64663696289062,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.044837187975645065,
+            "Height": 0.10780549049377441,
+            "Left": 0.8822275400161743,
+            "Top": 0.5219448208808899
+          },
+          "Confidence": 95.64663696289062
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0167124941945076,
+            "Height": 0.0313093401491642,
+            "Left": 0.9820374846458435,
+            "Top": 0.4947344660758972
+          },
+          "Confidence": 78.61592102050781
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.029727019369602203,
+            "Height": 0.04681713134050369,
+            "Left": 0.7923557758331299,
+            "Top": 0.5190735459327698
+          },
+          "Confidence": 76.98590850830078
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 95.64663696289062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 95.64663696289062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 95.64663696289062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 91.76026916503906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 91.76026916503906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Walkway",
+      "Confidence": 90.77086639404297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Bench",
+      "Confidence": 89.25704193115234,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.14889922738075256,
+            "Height": 0.18838512897491455,
+            "Left": 0.5665820240974426,
+            "Top": 0.7397735714912415
+          },
+          "Confidence": 89.25704193115234
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.058200541883707047,
+            "Height": 0.035764794796705246,
+            "Left": 0.006546077784150839,
+            "Top": 0.5338440537452698
+          },
+          "Confidence": 61.18647003173828
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 87.10637664794922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sidewalk",
+      "Confidence": 86.5168685913086,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Pavement",
+      "Confidence": 86.5168685913086,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 83.12368774414062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 77.34807586669922,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.024770207703113556,
+            "Height": 0.06856508553028107,
+            "Left": 0.002891866024583578,
+            "Top": 0.46377015113830566
+          },
+          "Confidence": 77.34807586669922
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 77.34807586669922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Street",
+      "Confidence": 77.0899887084961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 77.0899887084961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 77.0899887084961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 77.0899887084961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 75.38137817382812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vegetation",
+      "Confidence": 66.36258697509766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Tarmac",
+      "Confidence": 65.15235900878906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Asphalt",
+      "Confidence": 65.15235900878906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Park Bench",
+      "Confidence": 60.3615837097168,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bench"
+        },
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 60.08330154418945,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 59.85673522949219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Grass",
+      "Confidence": 59.65630340576172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 56.73172378540039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

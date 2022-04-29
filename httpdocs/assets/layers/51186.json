@@ -1,0 +1,300 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Car",
+      "Confidence": 99.64965057373047,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.30287474393844604,
+            "Height": 0.22561056911945343,
+            "Left": 0.5765053629875183,
+            "Top": 0.36473265290260315
+          },
+          "Confidence": 99.64965057373047
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.18430817127227783,
+            "Height": 0.16544197499752045,
+            "Left": 0.4301964044570923,
+            "Top": 0.360929012298584
+          },
+          "Confidence": 98.79706573486328
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.12971383333206177,
+            "Height": 0.13260500133037567,
+            "Left": 0.31621626019477844,
+            "Top": 0.3580109179019928
+          },
+          "Confidence": 97.2437515258789
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10774931311607361,
+            "Height": 0.10192014276981354,
+            "Left": 0.22264185547828674,
+            "Top": 0.3594895899295807
+          },
+          "Confidence": 96.27867889404297
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 99.64965057373047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.64965057373047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.64965057373047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Metropolis",
+      "Confidence": 92.9566421508789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "City",
+      "Confidence": 92.9566421508789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 92.9566421508789,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 92.9566421508789,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Town",
+      "Confidence": 92.9566421508789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 88.8240737915039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tarmac",
+      "Confidence": 85.87155151367188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Asphalt",
+      "Confidence": 85.87155151367188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Path",
+      "Confidence": 84.54574584960938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Street",
+      "Confidence": 84.02291107177734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Pedestrian",
+      "Confidence": 81.93727111816406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 69.38444519042969,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03269264101982117,
+            "Height": 0.07587967067956924,
+            "Left": 0.5946692824363708,
+            "Top": 0.4798250198364258
+          },
+          "Confidence": 69.38444519042969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.029476776719093323,
+            "Height": 0.05886906385421753,
+            "Left": 0.5145143270492554,
+            "Top": 0.47335660457611084
+          },
+          "Confidence": 65.41504669189453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04618850722908974,
+            "Height": 0.07801958918571472,
+            "Left": 0.7191274166107178,
+            "Top": 0.510516345500946
+          },
+          "Confidence": 59.76374435424805
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 69.38444519042969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sidewalk",
+      "Confidence": 60.811580657958984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Pavement",
+      "Confidence": 60.811580657958984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Parking Lot",
+      "Confidence": 59.789608001708984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Parking",
+      "Confidence": 59.789608001708984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Sedan",
+      "Confidence": 58.669071197509766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

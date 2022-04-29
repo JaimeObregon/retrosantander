@@ -1,0 +1,139 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 99.349853515625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Warehouse",
+      "Confidence": 97.28601837158203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 86.51323699951172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 78.73248291015625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Factory",
+      "Confidence": 78.49347686767578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Train",
+      "Confidence": 76.8907241821289,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.24389392137527466,
+            "Height": 0.7781129479408264,
+            "Left": 0,
+            "Top": 0.02306782454252243
+          },
+          "Confidence": 76.8907241821289
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.7626230120658875,
+            "Height": 0.8934106230735779,
+            "Left": 0.1721380203962326,
+            "Top": 0.04879211261868477
+          },
+          "Confidence": 68.56961822509766
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.4572773873806,
+            "Height": 0.9253214001655579,
+            "Left": 0.525327742099762,
+            "Top": 0.034860510379076004
+          },
+          "Confidence": 55.5504035949707
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 76.8907241821289,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 76.8907241821289,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "City",
+      "Confidence": 59.94121551513672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 59.94121551513672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Wood",
+      "Confidence": 59.683143615722656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Workshop",
+      "Confidence": 55.16393280029297,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

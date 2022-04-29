@@ -1,0 +1,66 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Crypt",
+      "Confidence": 99.638427734375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bench",
+      "Confidence": 87.13956451416016,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.18965457379817963,
+            "Height": 0.25517645478248596,
+            "Left": 0.5073129534721375,
+            "Top": 0.7324389815330505
+          },
+          "Confidence": 87.13956451416016
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 87.13956451416016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 85.85781860351562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 81.93386840820312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Corridor",
+      "Confidence": 76.90495300292969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Dungeon",
+      "Confidence": 58.26516342163086,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

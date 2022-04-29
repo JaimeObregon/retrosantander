@@ -1,0 +1,238 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.74344635009766,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.026670532301068306,
+            "Height": 0.10330471396446228,
+            "Left": 0.8694218993186951,
+            "Top": 0.4706396758556366
+          },
+          "Confidence": 98.74344635009766
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01599975675344467,
+            "Height": 0.04209599271416664,
+            "Left": 0.8335979580879211,
+            "Top": 0.4754239320755005
+          },
+          "Confidence": 72.8451919555664
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.010994567535817623,
+            "Height": 0.06091650202870369,
+            "Left": 0.8583455085754395,
+            "Top": 0.4957522749900818
+          },
+          "Confidence": 69.66931915283203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012819061055779457,
+            "Height": 0.07351958751678467,
+            "Left": 0.888663113117218,
+            "Top": 0.46934011578559875
+          },
+          "Confidence": 58.12490463256836
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02086547762155533,
+            "Height": 0.03258199244737625,
+            "Left": 0.5315978527069092,
+            "Top": 0.4543960690498352
+          },
+          "Confidence": 51.090423583984375
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.74344635009766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 98.51123046875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2927093505859375,
+            "Height": 0.20550811290740967,
+            "Left": 0.49966180324554443,
+            "Top": 0.48610615730285645
+          },
+          "Confidence": 98.51123046875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.14135345816612244,
+            "Height": 0.11439811438322067,
+            "Left": 0.6962734460830688,
+            "Top": 0.48632121086120605
+          },
+          "Confidence": 97.17568969726562
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.032613981515169144,
+            "Height": 0.04005202278494835,
+            "Left": 0.7496158480644226,
+            "Top": 0.42723211646080017
+          },
+          "Confidence": 95.23100280761719
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.5042651891708374,
+            "Height": 0.36299267411231995,
+            "Left": 0.21135413646697998,
+            "Top": 0.46860525012016296
+          },
+          "Confidence": 93.76597595214844
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.6082873344421387,
+            "Height": 0.5027440190315247,
+            "Left": 0,
+            "Top": 0.4953254461288452
+          },
+          "Confidence": 83.69762420654297
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 98.51123046875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 98.51123046875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 98.51123046875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 97.04472351074219,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09485671669244766,
+            "Height": 0.15504567325115204,
+            "Left": 0.5902001857757568,
+            "Top": 0.6860787868499756
+          },
+          "Confidence": 97.04472351074219
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 97.04472351074219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Metropolis",
+      "Confidence": 88.57511138916016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 88.57511138916016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 88.57511138916016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 88.57511138916016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Town",
+      "Confidence": 88.57511138916016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Traffic Jam",
+      "Confidence": 63.34247970581055,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

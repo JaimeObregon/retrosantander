@@ -1,0 +1,177 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Airplane",
+      "Confidence": 97.73500061035156,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8934372663497925,
+            "Height": 0.659866452217102,
+            "Left": 0.06413421779870987,
+            "Top": 0.19241657853126526
+          },
+          "Confidence": 97.73500061035156
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.39737188816070557,
+            "Height": 0.20388439297676086,
+            "Left": 0.012880210764706135,
+            "Top": 0.6173583269119263
+          },
+          "Confidence": 69.50836944580078
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 97.73500061035156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 97.73500061035156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Aircraft",
+      "Confidence": 97.73500061035156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 79.60841369628906,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06189320236444473,
+            "Height": 0.06179217994213104,
+            "Left": 0.0611896850168705,
+            "Top": 0.6096571087837219
+          },
+          "Confidence": 79.60841369628906
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 79.60841369628906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 75.46244812011719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Airfield",
+      "Confidence": 70.3514175415039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Airport"
+        }
+      ]
+    },
+    {
+      "Name": "Airport",
+      "Confidence": 70.3514175415039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 58.408302307128906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Warplane",
+      "Confidence": 58.097015380859375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Airplane"
+        },
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Airliner",
+      "Confidence": 57.345027923583984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Airplane"
+        },
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Jet",
+      "Confidence": 56.9549674987793,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Airplane"
+        },
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

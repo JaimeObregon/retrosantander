@@ -1,0 +1,271 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 97.40038299560547,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.05407867580652237,
+            "Height": 0.12523561716079712,
+            "Left": 0.3248031735420227,
+            "Top": 0.8727958798408508
+          },
+          "Confidence": 97.40038299560547
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.013867110945284367,
+            "Height": 0.058319091796875,
+            "Left": 0.3791866600513458,
+            "Top": 0.5634726881980896
+          },
+          "Confidence": 65.66520690917969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.013682885095477104,
+            "Height": 0.06550081819295883,
+            "Left": 0.00714019313454628,
+            "Top": 0.4639618694782257
+          },
+          "Confidence": 64.32160186767578
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.016632385551929474,
+            "Height": 0.06845777481794357,
+            "Left": 0.45746472477912903,
+            "Top": 0.5546458959579468
+          },
+          "Confidence": 64.08648681640625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.015136336907744408,
+            "Height": 0.050672635436058044,
+            "Left": 0.39553046226501465,
+            "Top": 0.5970315337181091
+          },
+          "Confidence": 62.28168487548828
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.40038299560547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Construction Crane",
+      "Confidence": 88.20674896240234,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.546471118927002,
+            "Height": 0.661965548992157,
+            "Left": 0.3573821187019348,
+            "Top": 0.045629244297742844
+          },
+          "Confidence": 83.953857421875
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 84.4010009765625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.032843999564647675,
+            "Height": 0.021880142390727997,
+            "Left": 0.12940295040607452,
+            "Top": 0.4588760733604431
+          },
+          "Confidence": 84.4010009765625
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 84.4010009765625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 84.4010009765625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 84.4010009765625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 78.3999252319336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 73.55502319335938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bridge",
+      "Confidence": 70.69625854492188,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8826501965522766,
+            "Height": 0.8671532869338989,
+            "Left": 0.019419783726334572,
+            "Top": 0.1308782696723938
+          },
+          "Confidence": 70.69625854492188
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 69.22088623046875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Metropolis",
+      "Confidence": 66.91448211669922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "City",
+      "Confidence": 66.91448211669922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 66.91448211669922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Waterfront",
+      "Confidence": 65.75267028808594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Pier",
+      "Confidence": 61.913455963134766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Port",
+      "Confidence": 61.913455963134766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Dock",
+      "Confidence": 61.913455963134766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Factory",
+      "Confidence": 59.206241607666016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

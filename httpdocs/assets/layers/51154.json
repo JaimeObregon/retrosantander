@@ -1,0 +1,119 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.89202880859375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.19042296707630157,
+            "Height": 0.78504478931427,
+            "Left": 0.4721274673938751,
+            "Top": 0.1172465905547142
+          },
+          "Confidence": 99.89202880859375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.13842369616031647,
+            "Height": 0.5264155864715576,
+            "Left": 0.8603262901306152,
+            "Top": 0.18827690184116364
+          },
+          "Confidence": 75.09330749511719
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.89202880859375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Elephant",
+      "Confidence": 75.59071350097656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.15647125244140625,
+            "Height": 0.4395325481891632,
+            "Left": 0.6731893420219421,
+            "Top": 0.47535133361816406
+          },
+          "Confidence": 75.59071350097656
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 75.59071350097656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 75.59071350097656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 75.59071350097656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 66.73092651367188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 65.34180450439453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 61.74690628051758,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 61.74690628051758,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 61.69685745239258,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

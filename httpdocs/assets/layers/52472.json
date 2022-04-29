@@ -1,0 +1,93 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Art",
+      "Confidence": 95.9444351196289,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 93.98048400878906,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9448386430740356,
+            "Height": 0.9531245231628418,
+            "Left": 0.028118150308728218,
+            "Top": 0.045949582010507584
+          },
+          "Confidence": 80.98282623291016
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Drawing",
+      "Confidence": 89.17576599121094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 89.17576599121094,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.6586552858352661,
+            "Height": 0.7908839583396912,
+            "Left": 0.245242640376091,
+            "Top": 0.1535118669271469
+          },
+          "Confidence": 44.512847900390625
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 89.17576599121094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sketch",
+      "Confidence": 71.40553283691406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Drawing"
+        },
+        {
+          "Name": "Art"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Modern Art",
+      "Confidence": 56.70711898803711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

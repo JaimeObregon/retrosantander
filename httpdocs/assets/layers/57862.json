@@ -1,0 +1,297 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.19789123535156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 97.59712982177734,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.16360001266002655,
+            "Height": 0.13464660942554474,
+            "Left": 0.23154620826244354,
+            "Top": 0.8449978232383728
+          },
+          "Confidence": 97.59712982177734
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.033366087824106216,
+            "Height": 0.05225959047675133,
+            "Left": 0.5847821235656738,
+            "Top": 0.40154463052749634
+          },
+          "Confidence": 88.69855499267578
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.043398719280958176,
+            "Height": 0.044171493500471115,
+            "Left": 0.00008370399154955521,
+            "Top": 0.35354307293891907
+          },
+          "Confidence": 83.97969818115234
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05454010143876076,
+            "Height": 0.03681435063481331,
+            "Left": 0.8098254203796387,
+            "Top": 0.4230690896511078
+          },
+          "Confidence": 56.879337310791016
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 97.59712982177734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 97.59712982177734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 97.59712982177734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 97.38082122802734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 97.38082122802734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 97.38082122802734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 97.38082122802734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 97.38082122802734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 88.56937408447266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 87.36546325683594,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.014727401547133923,
+            "Height": 0.046738024801015854,
+            "Left": 0.088139608502388,
+            "Top": 0.4377538561820984
+          },
+          "Confidence": 80.75601959228516
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.023443298414349556,
+            "Height": 0.04430524259805679,
+            "Left": 0.1751391738653183,
+            "Top": 0.4296875
+          },
+          "Confidence": 75.33369445800781
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.023244934156537056,
+            "Height": 0.04443154111504555,
+            "Left": 0.26190900802612305,
+            "Top": 0.43020933866500854
+          },
+          "Confidence": 64.47752380371094
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0209030918776989,
+            "Height": 0.054822951555252075,
+            "Left": 0.473039448261261,
+            "Top": 0.6580281257629395
+          },
+          "Confidence": 51.066192626953125
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 87.36546325683594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tent",
+      "Confidence": 75.76358032226562,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.28487375378608704,
+            "Height": 0.27317869663238525,
+            "Left": 0.3020544946193695,
+            "Top": 0.6798985600471497
+          },
+          "Confidence": 75.76358032226562
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Landscape",
+      "Confidence": 69.20720672607422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Camping",
+      "Confidence": 64.48797607421875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 63.41288757324219,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.016548804938793182,
+            "Height": 0.0525243915617466,
+            "Left": 0.16207168996334076,
+            "Top": 0.5080223083496094
+          },
+          "Confidence": 63.41288757324219
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 63.41288757324219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 58.934906005859375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Neighborhood",
+      "Confidence": 55.858280181884766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

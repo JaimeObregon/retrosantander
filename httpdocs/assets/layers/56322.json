@@ -1,0 +1,89 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.79093933105469,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.24681617319583893,
+            "Height": 0.5569692850112915,
+            "Left": 0.33012664318084717,
+            "Top": 0.4015173614025116
+          },
+          "Confidence": 98.79093933105469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.24487906694412231,
+            "Height": 0.4354652762413025,
+            "Left": 0.010768231935799122,
+            "Top": 0.4646769165992737
+          },
+          "Confidence": 81.66410064697266
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.43399128317832947,
+            "Height": 0.511277437210083,
+            "Left": 0.051925886422395706,
+            "Top": 0.438965767621994
+          },
+          "Confidence": 45.3274040222168
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.79093933105469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 96.28895568847656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 96.28895568847656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Boxing",
+      "Confidence": 81.46126556396484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 63.251407623291016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

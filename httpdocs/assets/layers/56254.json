@@ -1,0 +1,146 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 98.84256744384766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Factory",
+      "Confidence": 92.61076354980469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 81.8221206665039,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.014179992489516735,
+            "Height": 0.013336661271750927,
+            "Left": 0.9480783343315125,
+            "Top": 0.15395164489746094
+          },
+          "Confidence": 81.8221206665039
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 81.8221206665039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Train",
+      "Confidence": 75.6792221069336,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.13416823744773865,
+            "Height": 0.09014640748500824,
+            "Left": 0.8643817901611328,
+            "Top": 0.45222416520118713
+          },
+          "Confidence": 75.6792221069336
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 75.6792221069336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 75.6792221069336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 72.89236450195312,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.029826965183019638,
+            "Height": 0.12370405346155167,
+            "Left": 0.4443529546260834,
+            "Top": 0.8743312954902649
+          },
+          "Confidence": 72.89236450195312
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012956695631146431,
+            "Height": 0.07204918563365936,
+            "Left": 0.8587023019790649,
+            "Top": 0.7211645245552063
+          },
+          "Confidence": 58.73753356933594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.019777869805693626,
+            "Height": 0.051644135266542435,
+            "Left": 0.12327688187360764,
+            "Top": 0.36979109048843384
+          },
+          "Confidence": 55.153316497802734
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 72.89236450195312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 69.76162719726562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Refinery",
+      "Confidence": 65.62226867675781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Factory"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

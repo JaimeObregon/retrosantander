@@ -1,0 +1,51 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Postcard",
+      "Confidence": 98.53012084960938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mail"
+        },
+        {
+          "Name": "Envelope"
+        }
+      ]
+    },
+    {
+      "Name": "Envelope",
+      "Confidence": 98.53012084960938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mail",
+      "Confidence": 98.53012084960938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Envelope"
+        }
+      ]
+    },
+    {
+      "Name": "Rug",
+      "Confidence": 69.81766510009766,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9112077355384827,
+            "Height": 0.919713020324707,
+            "Left": 0.05372383072972298,
+            "Top": 0.05815305560827255
+          },
+          "Confidence": 69.81766510009766
+        }
+      ],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

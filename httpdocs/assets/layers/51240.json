@@ -1,0 +1,324 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.65022277832031,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.015359649434685707,
+            "Height": 0.0817965418100357,
+            "Left": 0.5818793773651123,
+            "Top": 0.6810935139656067
+          },
+          "Confidence": 98.65022277832031
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.013334503397345543,
+            "Height": 0.07457886636257172,
+            "Left": 0.8178926110267639,
+            "Top": 0.6893024444580078
+          },
+          "Confidence": 95.6365737915039
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0128326416015625,
+            "Height": 0.07850351184606552,
+            "Left": 0.749046802520752,
+            "Top": 0.6846132278442383
+          },
+          "Confidence": 90.61027526855469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.013605956919491291,
+            "Height": 0.07052869349718094,
+            "Left": 0.6567667126655579,
+            "Top": 0.6896659731864929
+          },
+          "Confidence": 89.90452575683594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012019348330795765,
+            "Height": 0.06553694605827332,
+            "Left": 0.7854000926017761,
+            "Top": 0.6653465032577515
+          },
+          "Confidence": 89.7573471069336
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.013215485028922558,
+            "Height": 0.06890295445919037,
+            "Left": 0.5501713752746582,
+            "Top": 0.6759063601493835
+          },
+          "Confidence": 87.04318237304688
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.014390869066119194,
+            "Height": 0.06758514791727066,
+            "Left": 0.7732187509536743,
+            "Top": 0.6763330101966858
+          },
+          "Confidence": 77.00333404541016
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.014345550909638405,
+            "Height": 0.07916176319122314,
+            "Left": 0.5095588564872742,
+            "Top": 0.6838957667350769
+          },
+          "Confidence": 75.88006591796875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01374008134007454,
+            "Height": 0.06709662824869156,
+            "Left": 0.6185302138328552,
+            "Top": 0.68006831407547
+          },
+          "Confidence": 73.70008087158203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01557968184351921,
+            "Height": 0.07203163951635361,
+            "Left": 0.7155410647392273,
+            "Top": 0.6763036847114563
+          },
+          "Confidence": 69.65425109863281
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03405693173408508,
+            "Height": 0.1446537971496582,
+            "Left": 0.4154411256313324,
+            "Top": 0.6108992695808411
+          },
+          "Confidence": 54.08832931518555
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.65022277832031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Marching",
+      "Confidence": 98.58091735839844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Crowd"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Crowd",
+      "Confidence": 98.58091735839844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 78.98603057861328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Parade",
+      "Confidence": 76.03399658203125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Street",
+      "Confidence": 75.87102508544922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 75.87102508544922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Road",
+      "Confidence": 75.87102508544922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 75.87102508544922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 75.87102508544922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 75.87102508544922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Military",
+      "Confidence": 66.09967041015625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Military Uniform",
+      "Confidence": 61.97549057006836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Alley",
+      "Confidence": 59.93943405151367,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Street"
+        },
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Alleyway",
+      "Confidence": 59.93943405151367,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Street"
+        },
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Musician",
+      "Confidence": 59.46678924560547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Musical Instrument"
+        }
+      ]
+    },
+    {
+      "Name": "Musical Instrument",
+      "Confidence": 59.46678924560547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Army",
+      "Confidence": 59.260467529296875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Armored"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Armored",
+      "Confidence": 59.260467529296875,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

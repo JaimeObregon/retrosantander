@@ -1,0 +1,282 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Path",
+      "Confidence": 97.28154754638672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 95.50562286376953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 94.82866668701172,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.138041689991951,
+            "Height": 0.10784637182950974,
+            "Left": 0.6083793640136719,
+            "Top": 0.6803162097930908
+          },
+          "Confidence": 94.82866668701172
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 94.82866668701172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 94.82866668701172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 94.82866668701172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 94.20427703857422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Street",
+      "Confidence": 93.65853118896484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "City",
+      "Confidence": 93.65853118896484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 93.65853118896484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 93.65853118896484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Town",
+      "Confidence": 93.65853118896484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 82.57405090332031,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.027171172201633453,
+            "Height": 0.09766688197851181,
+            "Left": 0.5403822064399719,
+            "Top": 0.6888642311096191
+          },
+          "Confidence": 82.57405090332031
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01504875160753727,
+            "Height": 0.0646093562245369,
+            "Left": 0.5687636733055115,
+            "Top": 0.5935322642326355
+          },
+          "Confidence": 80.67550659179688
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.009957046248018742,
+            "Height": 0.05021640658378601,
+            "Left": 0.31174609065055847,
+            "Top": 0.6663786172866821
+          },
+          "Confidence": 72.42388153076172
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.027170639485120773,
+            "Height": 0.09003234654664993,
+            "Left": 0.5163295865058899,
+            "Top": 0.6993128061294556
+          },
+          "Confidence": 48.559967041015625
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 82.57405090332031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Lamp Post",
+      "Confidence": 82.4572525024414,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 79.38784790039062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Downtown",
+      "Confidence": 79.01563262939453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Sidewalk",
+      "Confidence": 77.8857421875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Pavement",
+      "Confidence": 77.8857421875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Bench",
+      "Confidence": 75.3530502319336,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.12081680446863174,
+            "Height": 0.12155432254076004,
+            "Left": 0.6903353333473206,
+            "Top": 0.7519212961196899
+          },
+          "Confidence": 73.0697021484375
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 61.62729263305664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Chair",
+      "Confidence": 59.78777313232422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 56.58747482299805,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Lamp",
+      "Confidence": 55.575496673583984,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

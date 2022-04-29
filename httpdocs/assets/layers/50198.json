@@ -1,0 +1,99 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.07721710205078,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06786037236452103,
+            "Height": 0.17574048042297363,
+            "Left": 0.08009225130081177,
+            "Top": 0.46329692006111145
+          },
+          "Confidence": 99.07721710205078
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.07721710205078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Construction Crane",
+      "Confidence": 97.60968017578125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 93.39094543457031,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.11887527257204056,
+            "Height": 0.28241434693336487,
+            "Left": 0.4703897535800934,
+            "Top": 0.5915154814720154
+          },
+          "Confidence": 93.39094543457031
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 93.39094543457031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Train",
+      "Confidence": 55.93156051635742,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.4991587698459625,
+            "Height": 0.5051457285881042,
+            "Left": 0.46775466203689575,
+            "Top": 0.35977956652641296
+          },
+          "Confidence": 55.93156051635742
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 55.93156051635742,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 55.93156051635742,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

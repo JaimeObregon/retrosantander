@@ -1,0 +1,174 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.48043823242188,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.031262483447790146,
+            "Height": 0.05772784352302551,
+            "Left": 0.5757308602333069,
+            "Top": 0.6603352427482605
+          },
+          "Confidence": 98.48043823242188
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.025136584416031837,
+            "Height": 0.04808620736002922,
+            "Left": 0.5181850790977478,
+            "Top": 0.6640442609786987
+          },
+          "Confidence": 97.71835327148438
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01869337260723114,
+            "Height": 0.050571244210004807,
+            "Left": 0.5408074855804443,
+            "Top": 0.6588608026504517
+          },
+          "Confidence": 96.8343734741211
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02500685304403305,
+            "Height": 0.05172130465507507,
+            "Left": 0.6268577575683594,
+            "Top": 0.659733772277832
+          },
+          "Confidence": 94.79226684570312
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02205917239189148,
+            "Height": 0.05167722329497337,
+            "Left": 0.6043885350227356,
+            "Top": 0.6610628366470337
+          },
+          "Confidence": 88.12200927734375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.030155757442116737,
+            "Height": 0.05149050056934357,
+            "Left": 0.6137567162513733,
+            "Top": 0.660202145576477
+          },
+          "Confidence": 79.66344451904297
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02333175390958786,
+            "Height": 0.0489010289311409,
+            "Left": 0.1641465276479721,
+            "Top": 0.675753653049469
+          },
+          "Confidence": 70.4167251586914
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.029081745073199272,
+            "Height": 0.051343679428100586,
+            "Left": 0.5275207161903381,
+            "Top": 0.6611495018005371
+          },
+          "Confidence": 61.67091369628906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.026423273608088493,
+            "Height": 0.05091055482625961,
+            "Left": 0.20405443012714386,
+            "Top": 0.6712383031845093
+          },
+          "Confidence": 53.680267333984375
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.48043823242188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Puddle",
+      "Confidence": 78.7520980834961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Train",
+      "Confidence": 70.50660705566406,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.4923025071620941,
+            "Height": 0.07265669852495193,
+            "Left": 0.21650372445583344,
+            "Top": 0.6251436471939087
+          },
+          "Confidence": 70.50660705566406
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 70.50660705566406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 70.50660705566406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Cable",
+      "Confidence": 67.36650848388672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Electric Transmission Tower",
+      "Confidence": 59.9206657409668,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Power Lines"
+        },
+        {
+          "Name": "Cable"
+        }
+      ]
+    },
+    {
+      "Name": "Power Lines",
+      "Confidence": 59.9206657409668,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cable"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

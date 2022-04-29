@@ -1,0 +1,118 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bull",
+      "Confidence": 98.52753448486328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 98.52753448486328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 98.52753448486328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 97.89253234863281,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.6041520237922668,
+            "Height": 0.25122010707855225,
+            "Left": 0.39459797739982605,
+            "Top": 0.5651946663856506
+          },
+          "Confidence": 89.63272094726562
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.89253234863281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bullfighter",
+      "Confidence": 93.97581481933594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Bullfighting",
+      "Confidence": 90.16751861572266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bullfighter"
+        },
+        {
+          "Name": "Bull"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 72.43281555175781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Stadium",
+      "Confidence": 60.40611267089844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Arena"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arena",
+      "Confidence": 60.40611267089844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

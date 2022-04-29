@@ -1,0 +1,183 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.66323852539062,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06171487644314766,
+            "Height": 0.2221037596464157,
+            "Left": 0.08564765006303787,
+            "Top": 0
+          },
+          "Confidence": 99.66323852539062
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.66323852539062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 90.68289947509766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 90.68289947509766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Buggy",
+      "Confidence": 89.16968536376953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 86.68470764160156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 86.68470764160156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Truck",
+      "Confidence": 83.8683090209961,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8681120276451111,
+            "Height": 0.8694421648979187,
+            "Left": 0.11909946799278259,
+            "Top": 0.06469839066267014
+          },
+          "Confidence": 83.8683090209961
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Car",
+      "Confidence": 81.07388305664062,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7991532683372498,
+            "Height": 0.8688752055168152,
+            "Left": 0.12530788779258728,
+            "Top": 0.07192768156528473
+          },
+          "Confidence": 78.9885025024414
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 81.07388305664062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Tire",
+      "Confidence": 78.48066711425781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car Wheel",
+      "Confidence": 69.6042251586914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tire"
+        },
+        {
+          "Name": "Wheel"
+        },
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Motorcycle",
+      "Confidence": 68.59562683105469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Sidecar",
+      "Confidence": 57.7499885559082,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Motorcycle"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

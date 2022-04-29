@@ -1,0 +1,160 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Boat",
+      "Confidence": 99.33927154541016,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3344649374485016,
+            "Height": 0.11211173236370087,
+            "Left": 0.1809023916721344,
+            "Top": 0.5990667343139648
+          },
+          "Confidence": 99.33927154541016
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.12951019406318665,
+            "Height": 0.06722813099622726,
+            "Left": 0.611051619052887,
+            "Top": 0.6075220704078674
+          },
+          "Confidence": 88.37071228027344
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.33927154541016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.33927154541016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Chess",
+      "Confidence": 62.76477813720703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8150842189788818,
+            "Height": 0.6950064897537231,
+            "Left": 0.06812603026628494,
+            "Top": 0.09807506203651428
+          },
+          "Confidence": 62.76477813720703
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Game"
+        }
+      ]
+    },
+    {
+      "Name": "Game",
+      "Confidence": 62.76477813720703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Icing",
+      "Confidence": 62.377647399902344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cream"
+        },
+        {
+          "Name": "Cake"
+        },
+        {
+          "Name": "Dessert"
+        },
+        {
+          "Name": "Food"
+        }
+      ]
+    },
+    {
+      "Name": "Food",
+      "Confidence": 62.377647399902344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Dessert",
+      "Confidence": 62.377647399902344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Food"
+        }
+      ]
+    },
+    {
+      "Name": "Cake",
+      "Confidence": 62.377647399902344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Dessert"
+        },
+        {
+          "Name": "Food"
+        }
+      ]
+    },
+    {
+      "Name": "Cream",
+      "Confidence": 62.377647399902344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Dessert"
+        },
+        {
+          "Name": "Food"
+        }
+      ]
+    },
+    {
+      "Name": "Creme",
+      "Confidence": 62.377647399902344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Dessert"
+        },
+        {
+          "Name": "Food"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 56.02355194091797,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

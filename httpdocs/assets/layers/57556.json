@@ -1,0 +1,190 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Door",
+      "Confidence": 98.47881317138672,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10281143337488174,
+            "Height": 0.3424207866191864,
+            "Left": 0.5773735642433167,
+            "Top": 0.5924928784370422
+          },
+          "Confidence": 98.47881317138672
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.11014160513877869,
+            "Height": 0.31012704968452454,
+            "Left": 0.2674880623817444,
+            "Top": 0.5644989013671875
+          },
+          "Confidence": 89.0860595703125
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 94.63893127441406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 94.1737289428711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 94.1737289428711,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 94.1737289428711,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 94.1737289428711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 94.1737289428711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Wall",
+      "Confidence": 91.06350708007812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bunker",
+      "Confidence": 88.9317626953125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Walkway",
+      "Confidence": 84.49443817138672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Path",
+      "Confidence": 84.49443817138672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 63.34369659423828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 63.27577590942383,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 58.17926025390625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Flagstone",
+      "Confidence": 57.79774475097656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Window",
+      "Confidence": 56.111934661865234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sidewalk",
+      "Confidence": 55.696128845214844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Pavement",
+      "Confidence": 55.696128845214844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

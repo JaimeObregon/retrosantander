@@ -1,0 +1,104 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 92.17985534667969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Forge",
+      "Confidence": 87.83509063720703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 80.87226104736328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Workshop",
+      "Confidence": 79.83358001708984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Art",
+      "Confidence": 60.33197784423828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crypt",
+      "Confidence": 59.2672233581543,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Train",
+      "Confidence": 58.31443786621094,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.4832214415073395,
+            "Height": 0.6816485524177551,
+            "Left": 0.5089402794837952,
+            "Top": 0.11850627511739731
+          },
+          "Confidence": 58.31443786621094
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 58.31443786621094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 58.31443786621094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Factory",
+      "Confidence": 56.44145202636719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Slum",
+      "Confidence": 55.06438446044922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

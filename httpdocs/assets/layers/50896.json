@@ -1,0 +1,111 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Room",
+      "Confidence": 99.35101318359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 99.35101318359375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bathroom",
+      "Confidence": 97.74547576904297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Toilet",
+      "Confidence": 96.88642883300781,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.12948592007160187,
+            "Height": 0.19967582821846008,
+            "Left": 0.40802815556526184,
+            "Top": 0.44592902064323425
+          },
+          "Confidence": 96.88642883300781
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06391097605228424,
+            "Height": 0.07312916219234467,
+            "Left": 0.06972905993461609,
+            "Top": 0.5527238249778748
+          },
+          "Confidence": 73.8007583618164
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05061189457774162,
+            "Height": 0.09769705682992935,
+            "Left": 0.835395872592926,
+            "Top": 0.5308913588523865
+          },
+          "Confidence": 60.97248458862305
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Bathroom"
+        },
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Door",
+      "Confidence": 92.8864517211914,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.32484325766563416,
+            "Height": 0.5651077628135681,
+            "Left": 0.30290353298187256,
+            "Top": 0.12699350714683533
+          },
+          "Confidence": 92.8864517211914
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Floor",
+      "Confidence": 61.15292739868164,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Interior Design",
+      "Confidence": 55.03450012207031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

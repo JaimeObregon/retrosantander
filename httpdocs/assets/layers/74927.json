@@ -1,0 +1,157 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.90098571777344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.78755950927734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 98.24281311035156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Winter",
+      "Confidence": 95.34103393554688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Blizzard",
+      "Confidence": 92.20073699951172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Winter"
+        },
+        {
+          "Name": "Storm"
+        },
+        {
+          "Name": "Snow"
+        },
+        {
+          "Name": "Nature"
+        },
+        {
+          "Name": "Outdoors"
+        }
+      ]
+    },
+    {
+      "Name": "Storm",
+      "Confidence": 92.20073699951172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 77.7769546508789,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9666466116905212,
+            "Height": 0.9871387481689453,
+            "Left": 0.022875409573316574,
+            "Top": 0
+          },
+          "Confidence": 77.7769546508789
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 77.7769546508789,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 76.60346984863281,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.21697676181793213,
+            "Height": 0.19304771721363068,
+            "Left": 0.3572400212287903,
+            "Top": 0.11970586329698563
+          },
+          "Confidence": 76.60346984863281
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07060477137565613,
+            "Height": 0.1189456507563591,
+            "Left": 0.3046770393848419,
+            "Top": 0.7881655097007751
+          },
+          "Confidence": 72.44197082519531
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10394495725631714,
+            "Height": 0.1412205994129181,
+            "Left": 0.23226973414421082,
+            "Top": 0.36437472701072693
+          },
+          "Confidence": 69.17724609375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08328256011009216,
+            "Height": 0.11407425254583359,
+            "Left": 0.2294875532388687,
+            "Top": 0.7945908308029175
+          },
+          "Confidence": 46.724369049072266
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 76.60346984863281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ice",
+      "Confidence": 59.76205825805664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

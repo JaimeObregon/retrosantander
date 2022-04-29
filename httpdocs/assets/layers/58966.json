@@ -1,0 +1,77 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Roof",
+      "Confidence": 99.73342895507812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tile Roof",
+      "Confidence": 93.18035888671875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Roof"
+        }
+      ]
+    },
+    {
+      "Name": "Clock Tower",
+      "Confidence": 58.98968505859375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.031236419454216957,
+            "Height": 0.06610538065433502,
+            "Left": 0.4983746409416199,
+            "Top": 0.45124688744544983
+          },
+          "Confidence": 58.98968505859375
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 58.98968505859375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 58.98968505859375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tower",
+      "Confidence": 58.98968505859375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

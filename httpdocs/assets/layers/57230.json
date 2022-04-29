@@ -1,0 +1,397 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Pedestrian",
+      "Confidence": 99.99740600585938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.99740600585938,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.05014709383249283,
+            "Height": 0.23014600574970245,
+            "Left": 0.7323689460754395,
+            "Top": 0.6766079664230347
+          },
+          "Confidence": 99.56151580810547
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03521408140659332,
+            "Height": 0.20174942910671234,
+            "Left": 0.7015796899795532,
+            "Top": 0.6672943234443665
+          },
+          "Confidence": 99.39932250976562
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05663875490427017,
+            "Height": 0.27586355805397034,
+            "Left": 0.63100266456604,
+            "Top": 0.6819937229156494
+          },
+          "Confidence": 99.21329498291016
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02802841179072857,
+            "Height": 0.1606082171201706,
+            "Left": 0.3835985064506531,
+            "Top": 0.6926965117454529
+          },
+          "Confidence": 97.96818542480469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01360801700502634,
+            "Height": 0.06218041479587555,
+            "Left": 0.48724937438964844,
+            "Top": 0.6884099245071411
+          },
+          "Confidence": 97.35175323486328
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012771072797477245,
+            "Height": 0.05383382737636566,
+            "Left": 0.4633476138114929,
+            "Top": 0.6969207525253296
+          },
+          "Confidence": 97.01329040527344
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04078323394060135,
+            "Height": 0.1647801548242569,
+            "Left": 0.4028731882572174,
+            "Top": 0.6895265579223633
+          },
+          "Confidence": 97.00033569335938
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.015459594316780567,
+            "Height": 0.07489423453807831,
+            "Left": 0.4401707351207733,
+            "Top": 0.6908504962921143
+          },
+          "Confidence": 96.29589080810547
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04794597625732422,
+            "Height": 0.22133128345012665,
+            "Left": 0.5993754863739014,
+            "Top": 0.7433211803436279
+          },
+          "Confidence": 94.41759490966797
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.014010696671903133,
+            "Height": 0.07024162262678146,
+            "Left": 0.5877790451049805,
+            "Top": 0.6897892355918884
+          },
+          "Confidence": 80.16011810302734
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.010843124240636826,
+            "Height": 0.051282886415719986,
+            "Left": 0.520141065120697,
+            "Top": 0.6838430762290955
+          },
+          "Confidence": 69.23719787597656
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.013168868608772755,
+            "Height": 0.06918715685606003,
+            "Left": 0.5816676616668701,
+            "Top": 0.6892334818840027
+          },
+          "Confidence": 61.09901809692383
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012731781229376793,
+            "Height": 0.06700477004051208,
+            "Left": 0.5764769911766052,
+            "Top": 0.6893566250801086
+          },
+          "Confidence": 55.662498474121094
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.99740600585938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Street",
+      "Confidence": 99.85752868652344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 99.85752868652344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 99.85752868652344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 99.85752868652344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.85752868652344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Town",
+      "Confidence": 99.85752868652344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Path",
+      "Confidence": 99.25738525390625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Alley",
+      "Confidence": 84.8442611694336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Street"
+        },
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Alleyway",
+      "Confidence": 84.8442611694336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Street"
+        },
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Sidewalk",
+      "Confidence": 84.58809661865234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Pavement",
+      "Confidence": 84.58809661865234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 81.39239501953125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 81.39239501953125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shorts",
+      "Confidence": 72.33321380615234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Walking",
+      "Confidence": 65.77481842041016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 59.337589263916016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 59.337589263916016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 59.337589263916016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 59.337589263916016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 59.337589263916016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Neighborhood",
+      "Confidence": 59.25048065185547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Walkway",
+      "Confidence": 58.19765090942383,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

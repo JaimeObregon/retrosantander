@@ -1,0 +1,536 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.33091735839844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10871124267578125,
+            "Height": 0.3200567662715912,
+            "Left": 0.6881852746009827,
+            "Top": 0.47432586550712585
+          },
+          "Confidence": 99.33091735839844
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.009878387674689293,
+            "Height": 0.03809379041194916,
+            "Left": 0.906771183013916,
+            "Top": 0.49875926971435547
+          },
+          "Confidence": 90.1911392211914
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.009893646463751793,
+            "Height": 0.04325290396809578,
+            "Left": 0.8707932829856873,
+            "Top": 0.49012795090675354
+          },
+          "Confidence": 83.80313110351562
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03870544582605362,
+            "Height": 0.259213924407959,
+            "Left": 0.7673103213310242,
+            "Top": 0.5062808990478516
+          },
+          "Confidence": 81.09178924560547
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.015544643625617027,
+            "Height": 0.05588318035006523,
+            "Left": 0.061759885400533676,
+            "Top": 0.4672148525714874
+          },
+          "Confidence": 79.47139739990234
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.008923645131289959,
+            "Height": 0.03296385332942009,
+            "Left": 0.8080419898033142,
+            "Top": 0.4908802807331085
+          },
+          "Confidence": 77.06949615478516
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.007752533070743084,
+            "Height": 0.044200293719768524,
+            "Left": 0.9277198314666748,
+            "Top": 0.4942188262939453
+          },
+          "Confidence": 69.52921295166016
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.007411041297018528,
+            "Height": 0.026267332956194878,
+            "Left": 0.9521167874336243,
+            "Top": 0.5109468102455139
+          },
+          "Confidence": 63.79905319213867
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.009950866922736168,
+            "Height": 0.03124871663749218,
+            "Left": 0.8038429021835327,
+            "Top": 0.4921042323112488
+          },
+          "Confidence": 43.432125091552734
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.33091735839844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 92.13978576660156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 90.47615814208984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 90.47615814208984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 80.2806625366211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 80.2806625366211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 80.2806625366211,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Downtown",
+      "Confidence": 79.38595581054688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 77.83514404296875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 77.83514404296875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 76.69309997558594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 76.69309997558594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shorts",
+      "Confidence": 76.3698501586914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Cricket",
+      "Confidence": 73.50630950927734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sheep",
+      "Confidence": 73.34103393554688,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.02861884981393814,
+            "Height": 0.03338240832090378,
+            "Left": 0.4185124337673187,
+            "Top": 0.7420700788497925
+          },
+          "Confidence": 73.34103393554688
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03967041149735451,
+            "Height": 0.037804052233695984,
+            "Left": 0.24834246933460236,
+            "Top": 0.7521437406539917
+          },
+          "Confidence": 63.00532913208008
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 73.34103393554688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 73.34103393554688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Beach",
+      "Confidence": 69.0555191040039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Coast"
+        },
+        {
+          "Name": "Shoreline"
+        },
+        {
+          "Name": "Sea"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Sea",
+      "Confidence": 69.0555191040039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Ocean",
+      "Confidence": 69.0555191040039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Water",
+      "Confidence": 69.0555191040039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Coast",
+      "Confidence": 69.0555191040039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Shoreline"
+        },
+        {
+          "Name": "Sea"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Shoreline",
+      "Confidence": 69.0555191040039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 69.0555191040039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 69.0555191040039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Team Sport",
+      "Confidence": 68.01115417480469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Team",
+      "Confidence": 68.01115417480469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "People"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sand",
+      "Confidence": 63.93998336791992,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Ball",
+      "Confidence": 62.97483444213867,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Portrait",
+      "Confidence": 62.289974212646484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Face"
+        },
+        {
+          "Name": "Photography"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Face",
+      "Confidence": 62.289974212646484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photography",
+      "Confidence": 62.289974212646484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photo",
+      "Confidence": 62.289974212646484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Waterfront",
+      "Confidence": 60.29744338989258,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Boardwalk",
+      "Confidence": 59.43495559692383,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bridge"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Bridge",
+      "Confidence": 59.43495559692383,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Volleyball",
+      "Confidence": 56.5858154296875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Team Sport"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,151 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 95.0396957397461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 92.61741638183594,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.05591209977865219,
+            "Height": 0.1097361221909523,
+            "Left": 0.3611477017402649,
+            "Top": 0.6057080626487732
+          },
+          "Confidence": 92.61741638183594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.15243682265281677,
+            "Height": 0.2518503963947296,
+            "Left": 0.5482509136199951,
+            "Top": 0.6160395741462708
+          },
+          "Confidence": 87.61744689941406
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09450051933526993,
+            "Height": 0.12297838181257248,
+            "Left": 0.5218009948730469,
+            "Top": 0.62032151222229
+          },
+          "Confidence": 53.62428283691406
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06654641777276993,
+            "Height": 0.1390921175479889,
+            "Left": 0.33271652460098267,
+            "Top": 0.5985592603683472
+          },
+          "Confidence": 43.2734260559082
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 92.61741638183594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Art",
+      "Confidence": 89.98470306396484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 88.48231506347656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 87.97058868408203,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9661335349082947,
+            "Height": 0.8879030346870422,
+            "Left": 0.010139454156160355,
+            "Top": 0.03192729130387306
+          },
+          "Confidence": 87.97058868408203
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Tower",
+      "Confidence": 86.03710174560547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Bazaar",
+      "Confidence": 69.9842758178711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Market"
+        },
+        {
+          "Name": "Shop"
+        }
+      ]
+    },
+    {
+      "Name": "Shop",
+      "Confidence": 69.9842758178711,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Market",
+      "Confidence": 69.9842758178711,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bell Tower",
+      "Confidence": 57.399192810058594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

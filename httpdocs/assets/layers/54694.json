@@ -1,0 +1,188 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Horse",
+      "Confidence": 98.29331970214844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2755339741706848,
+            "Height": 0.370820552110672,
+            "Left": 0.2029021829366684,
+            "Top": 0.4197043776512146
+          },
+          "Confidence": 98.29331970214844
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 98.29331970214844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 98.29331970214844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 97.40000915527344,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09153597056865692,
+            "Height": 0.2044675648212433,
+            "Left": 0.305012583732605,
+            "Top": 0.380998432636261
+          },
+          "Confidence": 94.78633117675781
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.014463653787970543,
+            "Height": 0.06417907029390335,
+            "Left": 0.7330354452133179,
+            "Top": 0.6432065963745117
+          },
+          "Confidence": 77.76268005371094
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.013215789571404457,
+            "Height": 0.06110367178916931,
+            "Left": 0.7387356758117676,
+            "Top": 0.6469079256057739
+          },
+          "Confidence": 57.385528564453125
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.40000915527344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Equestrian",
+      "Confidence": 94.81319427490234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Horse"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Stallion",
+      "Confidence": 57.41389083862305,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Horse"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Dog",
+      "Confidence": 56.86860656738281,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.021921081468462944,
+            "Height": 0.031654808670282364,
+            "Left": 0.6992326378822327,
+            "Top": 0.734040379524231
+          },
+          "Confidence": 56.86860656738281
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 56.86860656738281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 56.86860656738281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Andalusian Horse",
+      "Confidence": 55.24143600463867,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Horse"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

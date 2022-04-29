@@ -1,0 +1,101 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Sink",
+      "Confidence": 99.46995544433594,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2967275381088257,
+            "Height": 0.0870700404047966,
+            "Left": 0.32349368929862976,
+            "Top": 0.5881524085998535
+          },
+          "Confidence": 99.46995544433594
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Room",
+      "Confidence": 98.12354278564453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 98.12354278564453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bathroom",
+      "Confidence": 93.5869369506836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Door",
+      "Confidence": 85.24617004394531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Lighting",
+      "Confidence": 81.28950500488281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Interior Design",
+      "Confidence": 76.20349884033203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Shower",
+      "Confidence": 73.00978088378906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bathroom"
+        },
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Floor",
+      "Confidence": 56.25801467895508,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Corner",
+      "Confidence": 55.22014236450195,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

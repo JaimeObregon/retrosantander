@@ -1,0 +1,88 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Train",
+      "Confidence": 94.99251556396484,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.20795105397701263,
+            "Height": 0.10137314349412918,
+            "Left": 0.3582923114299774,
+            "Top": 0.4207983911037445
+          },
+          "Confidence": 94.99251556396484
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.16666202247142792,
+            "Height": 0.15975341200828552,
+            "Left": 0.5833321213722229,
+            "Top": 0.8366216421127319
+          },
+          "Confidence": 70.3550796508789
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 94.99251556396484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 94.99251556396484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 82.56056213378906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 71.40267944335938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 66.40574645996094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 64.73299407958984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Construction",
+      "Confidence": 58.08900451660156,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

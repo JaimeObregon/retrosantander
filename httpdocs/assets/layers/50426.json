@@ -1,0 +1,219 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 97.00593566894531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 95.34403228759766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 86.66571044921875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04929836094379425,
+            "Height": 0.0990830734372139,
+            "Left": 0.5963800549507141,
+            "Top": 0.26173847913742065
+          },
+          "Confidence": 86.66571044921875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10933209210634232,
+            "Height": 0.3598257899284363,
+            "Left": 0.15273424983024597,
+            "Top": 0.2984622120857239
+          },
+          "Confidence": 50.59489440917969
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 86.66571044921875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 83.07588195800781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 81.68046569824219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Horse",
+      "Confidence": 79.53965759277344,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.20728054642677307,
+            "Height": 0.3909580111503601,
+            "Left": 0.43263736367225647,
+            "Top": 0.4825211465358734
+          },
+          "Confidence": 79.53965759277344
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 79.53965759277344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 79.53965759277344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 78.98743438720703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9304180145263672,
+            "Height": 0.927793025970459,
+            "Left": 0.032443542033433914,
+            "Top": 0.04000266268849373
+          },
+          "Confidence": 78.98743438720703
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 78.98743438720703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 77.55097198486328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Farm Plow",
+      "Confidence": 65.16525268554688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Farm"
+        },
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Farm",
+      "Confidence": 65.16525268554688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 65.16525268554688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Carriage",
+      "Confidence": 56.61906433105469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Duel",
+      "Confidence": 56.291255950927734,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

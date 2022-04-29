@@ -1,0 +1,194 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.74040222167969,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.13585953414440155,
+            "Height": 0.4204842150211334,
+            "Left": 0.2716100215911865,
+            "Top": 0.5775778293609619
+          },
+          "Confidence": 99.74040222167969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10202422738075256,
+            "Height": 0.35804489254951477,
+            "Left": 0.3988489508628845,
+            "Top": 0.6251283288002014
+          },
+          "Confidence": 99.13059997558594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10730930417776108,
+            "Height": 0.2678597569465637,
+            "Left": 0.5377421379089355,
+            "Top": 0.7224175333976746
+          },
+          "Confidence": 97.73497772216797
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.74040222167969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 95.14685821533203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 91.45338439941406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Crowd",
+      "Confidence": 83.65534973144531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Field",
+      "Confidence": 83.5512466430664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Stadium",
+      "Confidence": 83.23170471191406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Arena"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arena",
+      "Confidence": 83.23170471191406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Team Sport",
+      "Confidence": 68.80789184570312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 68.80789184570312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Team",
+      "Confidence": 68.80789184570312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "People"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 68.80789184570312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Text",
+      "Confidence": 60.15531921386719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Audience",
+      "Confidence": 59.690433502197266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Crowd"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Football",
+      "Confidence": 58.30583953857422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Team Sport"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,143 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Flying",
+      "Confidence": 95.85396575927734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 95.85396575927734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 95.85396575927734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Airplane",
+      "Confidence": 92.72770690917969,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5930344462394714,
+            "Height": 0.3687320947647095,
+            "Left": 0.1562519520521164,
+            "Top": 0.131393700838089
+          },
+          "Confidence": 92.72770690917969
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Aircraft",
+      "Confidence": 92.72770690917969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 92.72770690917969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 92.72770690917969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Helicopter",
+      "Confidence": 85.97045135498047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 78.1219482421875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.013701600953936577,
+            "Height": 0.02654249407351017,
+            "Left": 0.11273051798343658,
+            "Top": 0.7432272434234619
+          },
+          "Confidence": 78.1219482421875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012769968248903751,
+            "Height": 0.02476704865694046,
+            "Left": 0.04839293658733368,
+            "Top": 0.7477388978004456
+          },
+          "Confidence": 55.60361099243164
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 78.1219482421875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 72.5244369506836,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

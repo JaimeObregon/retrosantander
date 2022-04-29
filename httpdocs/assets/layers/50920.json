@@ -1,0 +1,170 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Architecture",
+      "Confidence": 98.71428680419922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 98.71428680419922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Altar",
+      "Confidence": 98.48554229736328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Church",
+      "Confidence": 98.48554229736328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Symbol",
+      "Confidence": 90.5074234008789,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crucifix",
+      "Confidence": 90.41212463378906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cross"
+        },
+        {
+          "Name": "Symbol"
+        }
+      ]
+    },
+    {
+      "Name": "Cross",
+      "Confidence": 90.41212463378906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Symbol"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 73.30964660644531,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.29802027344703674,
+            "Height": 0.3226977288722992,
+            "Left": 0.47290095686912537,
+            "Top": 0.13446855545043945
+          },
+          "Confidence": 73.30964660644531
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 73.30964660644531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Giraffe",
+      "Confidence": 59.93244171142578,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3541269898414612,
+            "Height": 0.337258905172348,
+            "Left": 0.4417726397514343,
+            "Top": 0.12790751457214355
+          },
+          "Confidence": 59.93244171142578
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 59.93244171142578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 59.93244171142578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 59.93244171142578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Sculpture",
+      "Confidence": 56.009220123291016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 56.009220123291016,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

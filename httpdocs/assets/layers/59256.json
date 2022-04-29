@@ -1,0 +1,240 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Poster",
+      "Confidence": 99.96244049072266,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.599901556968689,
+            "Height": 0.8197233080863953,
+            "Left": 0.15963101387023926,
+            "Top": 0.12648741900920868
+          },
+          "Confidence": 99.96244049072266
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Advertisement",
+      "Confidence": 99.96244049072266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.8070297241211,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09644661843776703,
+            "Height": 0.1650172472000122,
+            "Left": 0.027767930179834366,
+            "Top": 0.5061770081520081
+          },
+          "Confidence": 99.8070297241211
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.24950309097766876,
+            "Height": 0.318375825881958,
+            "Left": 0.22848671674728394,
+            "Top": 0.2379465103149414
+          },
+          "Confidence": 98.57301330566406
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.13288934528827667,
+            "Height": 0.10637275129556656,
+            "Left": 0.5712312459945679,
+            "Top": 0.5155531167984009
+          },
+          "Confidence": 60.719139099121094
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.8070297241211,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Text",
+      "Confidence": 99.09375762939453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Label",
+      "Confidence": 98.80157470703125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Car",
+      "Confidence": 95.38941192626953,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.14302696287631989,
+            "Height": 0.07765819132328033,
+            "Left": 0.8209541440010071,
+            "Top": 0.5464510917663574
+          },
+          "Confidence": 95.38941192626953
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10870565474033356,
+            "Height": 0.09772395342588425,
+            "Left": 0.7302930355072021,
+            "Top": 0.5428565144538879
+          },
+          "Confidence": 86.05431365966797
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04807683080434799,
+            "Height": 0.03772741183638573,
+            "Left": 0.9481300711631775,
+            "Top": 0.5394273400306702
+          },
+          "Confidence": 70.69938659667969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1670856922864914,
+            "Height": 0.0947214737534523,
+            "Left": 0.746339738368988,
+            "Top": 0.5395317673683167
+          },
+          "Confidence": 61.60468292236328
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 95.38941192626953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 95.38941192626953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 95.38941192626953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Pedestrian",
+      "Confidence": 86.14420318603516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 71.19949340820312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Billboard",
+      "Confidence": 60.3538818359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Bus Stop",
+      "Confidence": 58.74427795410156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tarmac",
+      "Confidence": 58.60081100463867,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Asphalt",
+      "Confidence": 58.60081100463867,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sticker",
+      "Confidence": 58.15339660644531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Label"
+        },
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Banner",
+      "Confidence": 56.91869354248047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Paper",
+      "Confidence": 55.4774055480957,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

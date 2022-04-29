@@ -1,0 +1,100 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Coin",
+      "Confidence": 95.16287994384766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Money"
+        }
+      ]
+    },
+    {
+      "Name": "Money",
+      "Confidence": 95.16287994384766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nickel",
+      "Confidence": 87.6153564453125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Coin"
+        },
+        {
+          "Name": "Money"
+        }
+      ]
+    },
+    {
+      "Name": "Mouse",
+      "Confidence": 86.56952667236328,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.34797465801239014,
+            "Height": 0.5396144986152649,
+            "Left": 0.5572725534439087,
+            "Top": 0.229446142911911
+          },
+          "Confidence": 86.56952667236328
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Hardware"
+        },
+        {
+          "Name": "Computer"
+        },
+        {
+          "Name": "Electronics"
+        }
+      ]
+    },
+    {
+      "Name": "Electronics",
+      "Confidence": 86.56952667236328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Computer",
+      "Confidence": 86.56952667236328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Electronics"
+        }
+      ]
+    },
+    {
+      "Name": "Hardware",
+      "Confidence": 86.56952667236328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Electronics"
+        }
+      ]
+    },
+    {
+      "Name": "Dime",
+      "Confidence": 64.64921569824219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Coin"
+        },
+        {
+          "Name": "Money"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

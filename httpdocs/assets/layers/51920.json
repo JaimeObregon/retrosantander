@@ -1,0 +1,136 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.5467529296875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.01886947639286518,
+            "Height": 0.09073495864868164,
+            "Left": 0.46114155650138855,
+            "Top": 0.6623165011405945
+          },
+          "Confidence": 99.5467529296875
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.5467529296875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 98.92616271972656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.12976358830928802,
+            "Height": 0.19120797514915466,
+            "Left": 0.0010398769518360496,
+            "Top": 0.6614844799041748
+          },
+          "Confidence": 98.92616271972656
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 98.92616271972656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 98.92616271972656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 98.92616271972656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Postal Office",
+      "Confidence": 95.79224395751953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Office Building",
+      "Confidence": 93.79114532470703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 93.79114532470703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Road",
+      "Confidence": 88.68244934082031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tarmac",
+      "Confidence": 86.8902816772461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Asphalt",
+      "Confidence": 86.8902816772461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 78.02590942382812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Warehouse",
+      "Confidence": 56.27308654785156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,86 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Helicopter",
+      "Confidence": 99.99485778808594,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.6657698154449463,
+            "Height": 0.42217957973480225,
+            "Left": 0.15829937160015106,
+            "Top": 0.3452359139919281
+          },
+          "Confidence": 99.99485778808594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.13150417804718018,
+            "Height": 0.16261833906173706,
+            "Left": 0.11637309938669205,
+            "Top": 0.48443254828453064
+          },
+          "Confidence": 92.52455139160156
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Aircraft",
+      "Confidence": 99.99485778808594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.99485778808594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.99485778808594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Airfield",
+      "Confidence": 84.32527160644531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Airport"
+        }
+      ]
+    },
+    {
+      "Name": "Airport",
+      "Confidence": 84.32527160644531,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,193 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Watercraft",
+      "Confidence": 99.81395721435547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vessel",
+      "Confidence": 99.81395721435547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.81395721435547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.81395721435547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Boat",
+      "Confidence": 99.65081787109375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10616001486778259,
+            "Height": 0.1986207216978073,
+            "Left": 0.7199763655662537,
+            "Top": 0.3028809130191803
+          },
+          "Confidence": 99.65081787109375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.16016851365566254,
+            "Height": 0.37903594970703125,
+            "Left": 0.4696280360221863,
+            "Top": 0.15636098384857178
+          },
+          "Confidence": 98.34588623046875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.11173549294471741,
+            "Height": 0.04471932724118233,
+            "Left": 0.549371063709259,
+            "Top": 0.5100310444831848
+          },
+          "Confidence": 80.1541976928711
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 97.18090057373047,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.044664688408374786,
+            "Height": 0.03832510486245155,
+            "Left": 0.6057436466217041,
+            "Top": 0.49473464488983154
+          },
+          "Confidence": 97.18090057373047
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04749349504709244,
+            "Height": 0.03540479764342308,
+            "Left": 0.5644126534461975,
+            "Top": 0.4966740906238556
+          },
+          "Confidence": 91.99353790283203
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.18090057373047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sailboat",
+      "Confidence": 94.5215835571289,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Boat"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Dinghy",
+      "Confidence": 71.51959228515625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Watercraft"
+        },
+        {
+          "Name": "Boat"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Shorts",
+      "Confidence": 64.28843688964844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 64.28843688964844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 64.28843688964844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Waterfront",
+      "Confidence": 55.853153228759766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Water",
+      "Confidence": 55.853153228759766,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

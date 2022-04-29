@@ -1,0 +1,70 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Tomb",
+      "Confidence": 95.4517593383789,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tombstone",
+      "Confidence": 87.70050048828125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tomb"
+        }
+      ]
+    },
+    {
+      "Name": "Rug",
+      "Confidence": 73.00202941894531,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8852058053016663,
+            "Height": 0.5918542742729187,
+            "Left": 0.03514822944998741,
+            "Top": 0.16805437207221985
+          },
+          "Confidence": 73.00202941894531
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Bench",
+      "Confidence": 66.94397735595703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.971011757850647,
+            "Height": 0.2383338063955307,
+            "Left": 0.017108645290136337,
+            "Top": 0.6426988840103149
+          },
+          "Confidence": 66.94397735595703
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 66.94397735595703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 61.323543548583984,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,205 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Boat",
+      "Confidence": 98.3393325805664,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.38318052887916565,
+            "Height": 0.11143790930509567,
+            "Left": 0.20484131574630737,
+            "Top": 0.40523990988731384
+          },
+          "Confidence": 98.3393325805664
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 98.3393325805664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 98.3393325805664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Watercraft",
+      "Confidence": 97.18527221679688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vessel",
+      "Confidence": 97.18527221679688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 94.54049682617188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rowboat",
+      "Confidence": 93.17475891113281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Boat"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Water",
+      "Confidence": 91.80493927001953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 90.5352554321289,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03099418617784977,
+            "Height": 0.06513261049985886,
+            "Left": 0.4286003112792969,
+            "Top": 0.41105368733406067
+          },
+          "Confidence": 90.5352554321289
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04814361408352852,
+            "Height": 0.0853055939078331,
+            "Left": 0.26624614000320435,
+            "Top": 0.40501925349235535
+          },
+          "Confidence": 88.00684356689453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.024404678493738174,
+            "Height": 0.047296177595853806,
+            "Left": 0.505088210105896,
+            "Top": 0.4088565707206726
+          },
+          "Confidence": 87.68318176269531
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.036386337131261826,
+            "Height": 0.05710402503609657,
+            "Left": 0.3655945658683777,
+            "Top": 0.4179728031158447
+          },
+          "Confidence": 86.55679321289062
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 90.5352554321289,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 87.87517547607422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vegetation",
+      "Confidence": 66.7068099975586,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 66.7068099975586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Canoe",
+      "Confidence": 66.26937866210938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rowboat"
+        },
+        {
+          "Name": "Boat"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "River",
+      "Confidence": 59.58253479003906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

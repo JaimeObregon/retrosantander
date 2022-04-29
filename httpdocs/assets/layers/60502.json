@@ -1,0 +1,124 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bus",
+      "Confidence": 99.85137939453125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.32595038414001465,
+            "Height": 0.2693641781806946,
+            "Left": 0.3658848702907562,
+            "Top": 0.45960280299186707
+          },
+          "Confidence": 99.85137939453125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.30370354652404785,
+            "Height": 0.28978195786476135,
+            "Left": 0.11683817952871323,
+            "Top": 0.4421077370643616
+          },
+          "Confidence": 99.8277359008789
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.20357787609100342,
+            "Height": 0.2508503794670105,
+            "Left": 0.684786319732666,
+            "Top": 0.4766499996185303
+          },
+          "Confidence": 99.77854919433594
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.85137939453125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.85137939453125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 99.10548400878906,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.033021241426467896,
+            "Height": 0.043537240475416183,
+            "Left": 0.8859399557113647,
+            "Top": 0.6229038238525391
+          },
+          "Confidence": 99.10548400878906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04672714322805405,
+            "Height": 0.05764361098408699,
+            "Left": 0.9250333905220032,
+            "Top": 0.6256090998649597
+          },
+          "Confidence": 77.5218734741211
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 99.10548400878906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Tour Bus",
+      "Confidence": 86.0704574584961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bus"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

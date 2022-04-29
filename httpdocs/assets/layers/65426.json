@@ -1,0 +1,87 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Boat",
+      "Confidence": 99.63709259033203,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5679044127464294,
+            "Height": 0.5614181160926819,
+            "Left": 0.19544878602027893,
+            "Top": 0.15106160938739777
+          },
+          "Confidence": 99.63709259033203
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.63709259033203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.63709259033203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 88.64418029785156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Postage Stamp",
+      "Confidence": 87.75498962402344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Drawing",
+      "Confidence": 73.86576080322266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 65.34832000732422,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8760448098182678,
+            "Height": 0.7189381718635559,
+            "Left": 0.04977186769247055,
+            "Top": 0.05032975971698761
+          },
+          "Confidence": 62.04710388183594
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

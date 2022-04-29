@@ -1,0 +1,128 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bull",
+      "Confidence": 99.48699188232422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 99.48699188232422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.48699188232422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.21926879882812,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.14279595017433167,
+            "Height": 0.4926304519176483,
+            "Left": 0.4738929271697998,
+            "Top": 0.2176637500524521
+          },
+          "Confidence": 99.21926879882812
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.21926879882812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cow",
+      "Confidence": 98.40321350097656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3422834873199463,
+            "Height": 0.47599807381629944,
+            "Left": 0.6258304119110107,
+            "Top": 0.26514729857444763
+          },
+          "Confidence": 98.40321350097656
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Cattle"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cattle",
+      "Confidence": 98.40321350097656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bullfighter",
+      "Confidence": 86.73841857910156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Bullfighting",
+      "Confidence": 80.15933990478516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bullfighter"
+        },
+        {
+          "Name": "Bull"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

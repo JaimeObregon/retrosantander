@@ -1,0 +1,82 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Construction Crane",
+      "Confidence": 99.99610137939453,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.41799691319465637,
+            "Height": 0.8517824411392212,
+            "Left": 0.0965225026011467,
+            "Top": 0.09130415320396423
+          },
+          "Confidence": 93.73933410644531
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.38870999217033386,
+            "Height": 0.6332675814628601,
+            "Left": 0.48952731490135193,
+            "Top": 0.33248311281204224
+          },
+          "Confidence": 82.01335906982422
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Truck",
+      "Confidence": 77.48213195800781,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2595314085483551,
+            "Height": 0.2133621871471405,
+            "Left": 0.5237810015678406,
+            "Top": 0.7457239031791687
+          },
+          "Confidence": 77.48213195800781
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 77.48213195800781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 77.48213195800781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Demolition",
+      "Confidence": 76.54462432861328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Construction",
+      "Confidence": 56.45241165161133,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

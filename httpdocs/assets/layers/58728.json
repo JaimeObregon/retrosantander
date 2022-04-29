@@ -1,0 +1,114 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Car",
+      "Confidence": 99.94818115234375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.701854944229126,
+            "Height": 0.6551802754402161,
+            "Left": 0.13302788138389587,
+            "Top": 0.2659112513065338
+          },
+          "Confidence": 99.94818115234375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.19130821526050568,
+            "Height": 0.3592224717140198,
+            "Left": 0.807441771030426,
+            "Top": 0.35867637395858765
+          },
+          "Confidence": 91.99661254882812
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 99.94818115234375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.94818115234375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.94818115234375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bumper",
+      "Confidence": 96.22144317626953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 81.3354263305664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car Wash",
+      "Confidence": 80.92709350585938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 79.3399887084961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 66.6738510131836,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

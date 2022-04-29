@@ -1,0 +1,118 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Urban",
+      "Confidence": 99.93636322021484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.86705780029297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Slum",
+      "Confidence": 99.7416763305664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 92.70648193359375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09279342740774155,
+            "Height": 0.347257524728775,
+            "Left": 0.19151604175567627,
+            "Top": 0.5141652822494507
+          },
+          "Confidence": 92.70648193359375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06507133692502975,
+            "Height": 0.2167128324508667,
+            "Left": 0.22406750917434692,
+            "Top": 0.6537879109382629
+          },
+          "Confidence": 83.48831939697266
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05035213381052017,
+            "Height": 0.3124127984046936,
+            "Left": 0.24591922760009766,
+            "Top": 0.5201350450515747
+          },
+          "Confidence": 50.179508209228516
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 92.70648193359375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tent",
+      "Confidence": 91.81598663330078,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.4767291247844696,
+            "Height": 0.6950924396514893,
+            "Left": 0.01870780996978283,
+            "Top": 0.1545620560646057
+          },
+          "Confidence": 91.81598663330078
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.5830329656600952,
+            "Height": 0.4150509238243103,
+            "Left": 0.34030142426490784,
+            "Top": 0.29241445660591125
+          },
+          "Confidence": 68.8770751953125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.23404556512832642,
+            "Height": 0.33692967891693115,
+            "Left": 0.7198436260223389,
+            "Top": 0.3434610366821289
+          },
+          "Confidence": 67.71446990966797
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Neighborhood",
+      "Confidence": 58.83631896972656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

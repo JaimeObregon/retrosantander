@@ -1,0 +1,224 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.46717834472656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.025067100301384926,
+            "Height": 0.0887870267033577,
+            "Left": 0.2850828468799591,
+            "Top": 0.5274139642715454
+          },
+          "Confidence": 99.46717834472656
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.024724425747990608,
+            "Height": 0.1038772314786911,
+            "Left": 0.6888401508331299,
+            "Top": 0.5601140856742859
+          },
+          "Confidence": 98.7676010131836
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02705177292227745,
+            "Height": 0.08146847784519196,
+            "Left": 0.33336272835731506,
+            "Top": 0.5356944799423218
+          },
+          "Confidence": 98.73710632324219
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.020898589864373207,
+            "Height": 0.0816597267985344,
+            "Left": 0.592311680316925,
+            "Top": 0.5750271081924438
+          },
+          "Confidence": 96.6290283203125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01241859421133995,
+            "Height": 0.05882089212536812,
+            "Left": 0.6219788193702698,
+            "Top": 0.573430061340332
+          },
+          "Confidence": 83.58660125732422
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.46717834472656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 97.90900421142578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 97.90900421142578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bus",
+      "Confidence": 78.35653686523438,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06774414330720901,
+            "Height": 0.20404303073883057,
+            "Left": 0.0016212963964790106,
+            "Top": 0.4500363767147064
+          },
+          "Confidence": 78.35653686523438
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 78.35653686523438,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 78.35653686523438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 75.24555206298828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tree Trunk",
+      "Confidence": 73.87654113769531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 72.38691711425781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Campus",
+      "Confidence": 68.30462646484375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Grass",
+      "Confidence": 63.83515930175781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Vegetation",
+      "Confidence": 63.4588508605957,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Tarmac",
+      "Confidence": 62.014156341552734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Asphalt",
+      "Confidence": 62.014156341552734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 61.025264739990234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "City",
+      "Confidence": 60.39788818359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 60.39788818359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 57.819175720214844,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

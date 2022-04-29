@@ -1,0 +1,204 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Machine",
+      "Confidence": 98.89151763916016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Truck",
+      "Confidence": 98.62535858154297,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1766832023859024,
+            "Height": 0.23117367923259735,
+            "Left": 0.7269793748855591,
+            "Top": 0.638523519039154
+          },
+          "Confidence": 98.62535858154297
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 98.62535858154297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 98.62535858154297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 98.1221694946289,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.021694030612707138,
+            "Height": 0.14006538689136505,
+            "Left": 0.9770559668540955,
+            "Top": 0.703764021396637
+          },
+          "Confidence": 98.1221694946289
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.026771239936351776,
+            "Height": 0.14001670479774475,
+            "Left": 0.9447084069252014,
+            "Top": 0.703260600566864
+          },
+          "Confidence": 97.54735565185547
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.011485137976706028,
+            "Height": 0.06501152366399765,
+            "Left": 0.4949144423007965,
+            "Top": 0.7082987427711487
+          },
+          "Confidence": 42.035884857177734
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.1221694946289,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Gas Station",
+      "Confidence": 92.86392974853516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pump"
+        },
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Pump",
+      "Confidence": 92.86392974853516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 74.0081787109375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Gas Pump",
+      "Confidence": 65.95555877685547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pump"
+        },
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Downtown",
+      "Confidence": 60.66815185546875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "City",
+      "Confidence": 60.66815185546875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 60.66815185546875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Town",
+      "Confidence": 60.66815185546875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Condo",
+      "Confidence": 57.98112106323242,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 57.98112106323242,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

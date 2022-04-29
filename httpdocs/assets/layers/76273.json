@@ -1,0 +1,285 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.93582153320312,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.035753630101680756,
+            "Height": 0.14400377869606018,
+            "Left": 0.539085328578949,
+            "Top": 0.7484828233718872
+          },
+          "Confidence": 98.93582153320312
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.022146759554743767,
+            "Height": 0.09815874695777893,
+            "Left": 0.7944282293319702,
+            "Top": 0.654607355594635
+          },
+          "Confidence": 98.35064697265625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.020437851548194885,
+            "Height": 0.09562475234270096,
+            "Left": 0.3182532489299774,
+            "Top": 0.710053563117981
+          },
+          "Confidence": 97.82078552246094
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.020487213507294655,
+            "Height": 0.03392329439520836,
+            "Left": 0.4252856373786926,
+            "Top": 0.6635885238647461
+          },
+          "Confidence": 85.19133758544922
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.009065628051757812,
+            "Height": 0.042902860790491104,
+            "Left": 0.5661623477935791,
+            "Top": 0.5822065472602844
+          },
+          "Confidence": 63.88371658325195
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.041844166815280914,
+            "Height": 0.1109214574098587,
+            "Left": 0.023861577734351158,
+            "Top": 0.7558481693267822
+          },
+          "Confidence": 48.859527587890625
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.93582153320312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Horse",
+      "Confidence": 98.45182800292969,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.12604889273643494,
+            "Height": 0.1493932604789734,
+            "Left": 0.11105483770370483,
+            "Top": 0.7893098592758179
+          },
+          "Confidence": 98.45182800292969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03176742419600487,
+            "Height": 0.10978617519140244,
+            "Left": 0.4930191934108734,
+            "Top": 0.6935670971870422
+          },
+          "Confidence": 82.06370544433594
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 98.45182800292969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 98.45182800292969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Horse Cart",
+      "Confidence": 94.535888671875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wagon"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Wagon",
+      "Confidence": 94.535888671875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 94.535888671875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 94.535888671875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Carriage",
+      "Confidence": 92.6253662109375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 85.14226531982422,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.02950996346771717,
+            "Height": 0.08123860508203506,
+            "Left": 0.42093390226364136,
+            "Top": 0.7742046117782593
+          },
+          "Confidence": 85.14226531982422
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02968093939125538,
+            "Height": 0.07988253235816956,
+            "Left": 0.35826849937438965,
+            "Top": 0.7731848359107971
+          },
+          "Confidence": 80.83940124511719
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 85.14226531982422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bicycle",
+      "Confidence": 82.82659912109375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08188683539628983,
+            "Height": 0.1438218355178833,
+            "Left": 0.029317721724510193,
+            "Top": 0.8175207376480103
+          },
+          "Confidence": 82.82659912109375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08946395665407181,
+            "Height": 0.12323402613401413,
+            "Left": 0.3594387173652649,
+            "Top": 0.7354032397270203
+          },
+          "Confidence": 82.0177001953125
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bike",
+      "Confidence": 82.82659912109375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 58.896331787109375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8832228183746338,
+            "Height": 0.9090943932533264,
+            "Left": 0.1155271902680397,
+            "Top": 0.029771892353892326
+          },
+          "Confidence": 58.896331787109375
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 58.896331787109375,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

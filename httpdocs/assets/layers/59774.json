@@ -1,0 +1,179 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.90070343017578,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1374184489250183,
+            "Height": 0.39081040024757385,
+            "Left": 0.32467421889305115,
+            "Top": 0.3976863920688629
+          },
+          "Confidence": 97.91551971435547
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03362507373094559,
+            "Height": 0.15382607281208038,
+            "Left": 0.021519798785448074,
+            "Top": 0.5105636119842529
+          },
+          "Confidence": 84.18693542480469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.027574462816119194,
+            "Height": 0.07740023732185364,
+            "Left": 0.4651328921318054,
+            "Top": 0.5404151678085327
+          },
+          "Confidence": 79.56869506835938
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.018913574516773224,
+            "Height": 0.05940282344818115,
+            "Left": 0.8703547120094299,
+            "Top": 0.4124661982059479
+          },
+          "Confidence": 49.952972412109375
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.90070343017578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 98.88690185546875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Team Sport",
+      "Confidence": 95.58928680419922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Team",
+      "Confidence": 95.58928680419922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "People"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 95.58928680419922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 95.58928680419922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Volleyball",
+      "Confidence": 90.6747817993164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Team Sport"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Football",
+      "Confidence": 87.01006317138672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Team Sport"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Field",
+      "Confidence": 67.8924789428711,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ball",
+      "Confidence": 67.17709350585938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 62.06037139892578,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

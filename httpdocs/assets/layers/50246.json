@@ -1,0 +1,176 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Animal",
+      "Confidence": 82.85357666015625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 79.97979736328125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bunker",
+      "Confidence": 74.97830200195312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 74.97830200195312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Archaeology",
+      "Confidence": 73.11393737792969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Dog",
+      "Confidence": 68.80721282958984,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.22678515315055847,
+            "Height": 0.10428149998188019,
+            "Left": 0.416830450296402,
+            "Top": 0.518204927444458
+          },
+          "Confidence": 68.80721282958984
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 68.80721282958984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 68.80721282958984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 65.005859375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cat",
+      "Confidence": 64.14073944091797,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2133135050535202,
+            "Height": 0.11509964615106583,
+            "Left": 0.4208987355232239,
+            "Top": 0.5165648460388184
+          },
+          "Confidence": 64.14073944091797
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Dungeon",
+      "Confidence": 56.6832275390625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Kit Fox",
+      "Confidence": 55.65055847167969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fox"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Fox",
+      "Confidence": 55.65055847167969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

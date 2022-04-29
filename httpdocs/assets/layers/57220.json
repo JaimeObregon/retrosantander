@@ -1,0 +1,112 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Architecture",
+      "Confidence": 98.891845703125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 98.891845703125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Altar",
+      "Confidence": 95.24566650390625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Church",
+      "Confidence": 95.24566650390625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 94.41371154785156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apse",
+      "Confidence": 84.9502182006836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Staircase",
+      "Confidence": 65.78157043457031,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8756982684135437,
+            "Height": 0.28483885526657104,
+            "Left": 0.05905850976705551,
+            "Top": 0.6976367831230164
+          },
+          "Confidence": 65.78157043457031
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Aisle",
+      "Confidence": 60.00417709350586,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Corridor",
+      "Confidence": 58.60472106933594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Interior Design",
+      "Confidence": 56.576393127441406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

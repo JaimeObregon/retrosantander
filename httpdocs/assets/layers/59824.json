@@ -1,0 +1,114 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 93.08592987060547,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.15216247737407684,
+            "Height": 0.13996057212352753,
+            "Left": 0.3171328008174896,
+            "Top": 0.43902263045310974
+          },
+          "Confidence": 92.92481231689453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03465881198644638,
+            "Height": 0.08112161606550217,
+            "Left": 0.7538121938705444,
+            "Top": 0.4862607717514038
+          },
+          "Confidence": 69.58702087402344
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03183090314269066,
+            "Height": 0.09426028281450272,
+            "Left": 0.7217824459075928,
+            "Top": 0.46604958176612854
+          },
+          "Confidence": 68.9623794555664
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 93.08592987060547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 92.79399871826172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Field",
+      "Confidence": 89.8466796875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crowd",
+      "Confidence": 85.25447845458984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Audience",
+      "Confidence": 84.62883758544922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Crowd"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Stadium",
+      "Confidence": 82.3082046508789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Arena"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arena",
+      "Confidence": 82.3082046508789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 81.56049346923828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

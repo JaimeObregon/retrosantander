@@ -1,0 +1,120 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Text",
+      "Confidence": 77.96416473388672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Poster",
+      "Confidence": 76.92377471923828,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9985401630401611,
+            "Height": 0.9778607487678528,
+            "Left": 0,
+            "Top": 0.017516128718852997
+          },
+          "Confidence": 51.630821228027344
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Advertisement",
+      "Confidence": 76.92377471923828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Flyer",
+      "Confidence": 67.3710708618164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Poster"
+        },
+        {
+          "Name": "Paper"
+        },
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Brochure",
+      "Confidence": 67.3710708618164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Poster"
+        },
+        {
+          "Name": "Paper"
+        },
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Paper",
+      "Confidence": 67.3710708618164,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 66.57782745361328,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.20581117272377014,
+            "Height": 0.047637276351451874,
+            "Left": 0.15076853334903717,
+            "Top": 0.0004892791039310396
+          },
+          "Confidence": 66.57782745361328
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 66.57782745361328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Hook",
+      "Confidence": 63.04726028442383,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Art",
+      "Confidence": 60.69384002685547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Anchor",
+      "Confidence": 55.14167785644531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Hook"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

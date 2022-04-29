@@ -1,0 +1,217 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.54917907714844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.05149261653423309,
+            "Height": 0.30240631103515625,
+            "Left": 0.7694798111915588,
+            "Top": 0.4198515713214874
+          },
+          "Confidence": 99.54917907714844
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08090858161449432,
+            "Height": 0.24774838984012604,
+            "Left": 0.48342540860176086,
+            "Top": 0.3900456428527832
+          },
+          "Confidence": 99.31141662597656
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09787437319755554,
+            "Height": 0.2724764347076416,
+            "Left": 0.5644463896751404,
+            "Top": 0.3840464651584625
+          },
+          "Confidence": 99.30711364746094
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.11283686012029648,
+            "Height": 0.3266925513744354,
+            "Left": 0.08263811469078064,
+            "Top": 0.4272373616695404
+          },
+          "Confidence": 99.26628875732422
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.039150312542915344,
+            "Height": 0.1736295521259308,
+            "Left": 0.2828201353549957,
+            "Top": 0.4401370882987976
+          },
+          "Confidence": 98.95269775390625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03797801956534386,
+            "Height": 0.08868983387947083,
+            "Left": 0.19521889090538025,
+            "Top": 0.5007889866828918
+          },
+          "Confidence": 72.97150421142578
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.54917907714844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 94.17571258544922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 94.17571258544922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 94.0409164428711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Field",
+      "Confidence": 90.73106384277344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Football",
+      "Confidence": 85.15934753417969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Team Sport"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Team Sport",
+      "Confidence": 85.15934753417969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Team",
+      "Confidence": 85.15934753417969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "People"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 73.63888549804688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cricket",
+      "Confidence": 72.1927261352539,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Crowd",
+      "Confidence": 67.83704376220703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Soccer",
+      "Confidence": 58.61494827270508,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Football"
+        },
+        {
+          "Name": "Team Sport"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

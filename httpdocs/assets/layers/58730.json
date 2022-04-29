@@ -1,0 +1,118 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Car",
+      "Confidence": 98.37760925292969,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8390718698501587,
+            "Height": 0.7484487295150757,
+            "Left": 0.08500777930021286,
+            "Top": 0.22168315947055817
+          },
+          "Confidence": 97.56075286865234
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.4872748851776123,
+            "Height": 0.5404340624809265,
+            "Left": 0.5114750862121582,
+            "Top": 0.24548988044261932
+          },
+          "Confidence": 80.42052459716797
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 98.37760925292969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 98.37760925292969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 98.37760925292969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Antique Car",
+      "Confidence": 96.47486877441406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Hot Rod",
+      "Confidence": 82.15201568603516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Model T",
+      "Confidence": 78.79061889648438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Antique Car"
+        },
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

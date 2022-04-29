@@ -1,0 +1,77 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Art",
+      "Confidence": 91.83792114257812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 86.09465026855469,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8865037560462952,
+            "Height": 0.8496477603912354,
+            "Left": 0.05661194026470184,
+            "Top": 0.06823631376028061
+          },
+          "Confidence": 61.855621337890625
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Rug",
+      "Confidence": 74.2625503540039,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8914138674736023,
+            "Height": 0.8449967503547668,
+            "Left": 0.04168224334716797,
+            "Top": 0.12836463749408722
+          },
+          "Confidence": 74.2625503540039
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 65.90397644042969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sketch",
+      "Confidence": 58.171470642089844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Drawing"
+        },
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Drawing",
+      "Confidence": 58.171470642089844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,114 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.24434661865234,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.013564377091825008,
+            "Height": 0.028483616188168526,
+            "Left": 0.4810406565666199,
+            "Top": 0.7867874503135681
+          },
+          "Confidence": 98.24434661865234
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.017949217930436134,
+            "Height": 0.027555160224437714,
+            "Left": 0.4961385726928711,
+            "Top": 0.7855265140533447
+          },
+          "Confidence": 97.76237487792969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.011814193800091743,
+            "Height": 0.05290210619568825,
+            "Left": 0.458723247051239,
+            "Top": 0.7931885123252869
+          },
+          "Confidence": 95.72892761230469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.013661193661391735,
+            "Height": 0.06697607040405273,
+            "Left": 0.4307515323162079,
+            "Top": 0.7976539731025696
+          },
+          "Confidence": 73.23828125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03033950738608837,
+            "Height": 0.0454556979238987,
+            "Left": 0.6791412830352783,
+            "Top": 0.7960422039031982
+          },
+          "Confidence": 62.42411804199219
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012868194840848446,
+            "Height": 0.022800590842962265,
+            "Left": 0.6119645237922668,
+            "Top": 0.7916286587715149
+          },
+          "Confidence": 54.009220123291016
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.24434661865234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Smoke",
+      "Confidence": 95.92510986328125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 95.1891098022461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Factory",
+      "Confidence": 90.32122039794922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Pollution",
+      "Confidence": 79.55736541748047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Refinery",
+      "Confidence": 55.892738342285156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Factory"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}
