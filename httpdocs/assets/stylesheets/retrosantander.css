@@ -211,8 +211,9 @@ main figure img {
   width: 100%;
   margin-bottom: var(--gap);
   border-radius: 4px;
-  transition: background ease-out 500ms 250ms;
+  transition: transform ease-out 500ms 250ms, opacity ease-out 150ms;
   cursor: pointer;
+  opacity: 0;
 }
 
 main.zoomed figure:hover div {

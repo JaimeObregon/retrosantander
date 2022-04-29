@@ -30,6 +30,8 @@ class Grid {
       (result) => `
         <figure>
           <img
+            loading="lazy"
+            onload="this.style.opacity = 1"
             src="https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${
               result.id
             }"
