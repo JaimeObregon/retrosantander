@@ -45,6 +45,7 @@ template.innerHTML = `
       border: 1px solid var(--color-neutral-900);
       box-shadow: 0 0 0 1px var(--color-neutral-50);
       cursor: pointer;
+      appearance: none;
     }
 
     label input:hover,
