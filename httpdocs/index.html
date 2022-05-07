@@ -4,12 +4,30 @@
     <meta charset="UTF-8" />
 
     <title>Retrosantander</title>
+
     <meta
       name="description"
-      content="Un experimento personal con el portal del Centro de Documentación de la Imagen de Santander."
+      content="Un experimento personal con el Centro de Documentación de la Imagen de Santander (CDIS)."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Jaime Gómez-Obregón" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@JaimeObregon" />
+    <meta name="twitter:creator" content="@JaimeObregon" />
+    <meta name="twitter:title" content="Retrosantander" />
+    <meta
+      name="twitter:description"
+      content="Un experimento personal con el Centro de Documentación de la Imagen de Santander (CDIS)."
+    />
+    <meta
+      name="twitter:image"
+      content="https://retrosantander.es/assets/retrosantander.jpg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="La bahía de Santander, en una fotografía antigua"
+    />
 
     <link rel="preconnect" href="https://portal.ayto-santander.es" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -25,206 +43,123 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.skypack.dev/dialog-polyfill/dist/dialog-polyfill.css"
-    />
-    <link rel="stylesheet" href="/assets/stylesheets/retrosantander.css" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/assets/icons/retrosantander.svg"
-    />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+
+    <style>
+      :root {
+        --gap: 18px;
+        --details-width: 350px;
+        --about-width: 30rem;
+        --header-height: 55px;
+        --color-neutral-50: #fafafa;
+        --color-neutral-100: #f5f5f5;
+        --color-neutral-200: #e5e5e5;
+        --color-neutral-300: #d4d4d4;
+        --color-neutral-400: #a3a3a3;
+        --color-neutral-500: #737373;
+        --color-neutral-600: #525252;
+        --color-neutral-700: #404040;
+        --color-neutral-800: #262626;
+        --color-neutral-900: #171717;
+        --color-yellow-500: #eab308;
+        --color-red-600: #dc2626;
+      }
+
+      html {
+        margin: 0 var(--gap);
+        user-select: none;
+        scroll-behavior: smooth;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        background: var(--color-neutral-900);
+        color: var(--color-neutral-200);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: var(--header-height);
+        z-index: 1;
+        box-sizing: border-box;
+        align-items: center;
+        border-bottom: 1px solid var(--color-neutral-700);
+        box-shadow: 0 5px 5px #1c191750;
+        background-color: #171717f0;
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+      }
+
+      header rs-logo {
+        flex-shrink: 0;
+        width: var(--details-width);
+      }
+
+      header rs-title {
+        flex-grow: 1;
+        overflow: hidden;
+      }
+
+      header rs-search {
+        flex-shrink: 0;
+      }
+
+      header rs-menu {
+        flex-shrink: 0;
+      }
+
+      @media (max-width: 1536px) {
+      }
+
+      @media (max-width: 1280px) {
+        :root {
+          --gap: 15px;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        :root {
+          --gap: 10px;
+          --details-width: 280px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        :root {
+          --gap: 9px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        :root {
+          --gap: 8px;
+        }
+
+        header rs-logo {
+          display: none;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <header>
-      <button>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="14.87 62.53 163.02 67.67"
-        >
-          <path
-            class="ink"
-            d="M123.842 62.568c-7.799 0-19.402 5.607-19.402 21.05 0 15.119 11.326 21.241 18.949 21.667l22.652.015c.934.08 2.205.482 2.205 4.158 0 2.955-.812 4.299-2.699 4.492 0 0-62.1-.015-69.628-.015-1.682-2.42-3.093-4.445-6.01-8.636H82.77c7.675 0 19.09-5.774 19.09-21.682 0-8.495-3.33-13.417-6.117-16.055-5.475-5.163-12.155-5.054-13.443-4.98l-34.767-.015a14.143 14.143 0 0 0-13.438 9.694l-19.206 57.931h17.13L49.05 78.827h33.72c1.129.009 2.834.039 2.834 4.791 0 4.663-1.763 5.331-3.087 5.428l-23.059-.006c-4.411 0-8.133 2.097-9.961 5.604-1.835 3.508-1.424 7.763 1.1 11.376l16.831 24.172h78.613c7.568-.229 18.459-5.936 18.459-20.734 0-14.981-11.037-20.418-18.459-20.418h-22.199c-3.146-.399-3.146-4.049-3.146-5.422 0-2.391.404-4.625 3.346-4.793l48.439.002c1.811-5.478 3.623-10.926 5.387-16.26h-54.026v.001z"
-          />
-          <path
-            fill="black"
-            d="M123.842 69.493c-.125 0-12.48.161-12.48 14.125 0 13.898 12.285 14.748 12.416 14.755l22.264.003c.369.002 9.125.19 9.125 11.082 0 10.93-8.791 11.388-9.168 11.402l-73.696-.003-14.049-20.174c-.358-.521-.559-1.015-.559-1.385a.67.67 0 0 1 .077-.338c.188-.362.835-.585 1.688-.585h23.31c.124 0 12.167-.171 12.167-14.758 0-4.837-1.329-8.545-3.952-11.018-3.534-3.337-8.092-3.117-8.286-3.105l-35.167-.002c-3.17 0-5.863 1.947-6.863 4.955l-18.483 55.745h2.535l18.23-54.987c.676-2.038 2.434-3.302 4.581-3.302H82.77c.101-.006 3.823-.159 6.587 2.47 2.104 1.999 3.169 5.11 3.169 9.245 0 12.137-9.362 12.343-9.763 12.346H59.458c-2.476 0-3.458 1.18-3.822 1.882-.371.703-.776 2.186.641 4.214l14.767 21.209h74.998c.152-.006 11.537-.509 11.537-13.811 0-13.338-11.42-13.494-11.537-13.494h-22.199c-.342-.023-10.068-.758-10.068-12.346 0-11.521 9.662-11.715 10.072-11.715h50.928c.271-.806.535-1.608.799-2.411h-51.732v.001z"
-          />
-        </svg>
-      </button>
-
-      <label>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-          <path
-            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-          />
-        </svg>
-
-        <input
-          type="search"
-          autofocus
-          data-placeholder="Filtra % imágenes de Santander…"
-        />
-      </label>
-
-      <div>
-        <cite>Título de la imagen</cite>
-        <ul>
-          <li id="date" title="Fecha">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-              />
-            </svg>
-            <span>Fecha</span>
-          </li>
-          <li id="collection" title="Colección o fondo">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"
-              />
-            </svg>
-            <span>Colección o fondo</span>
-          </li>
-          <li id="author" title="Fotógrafo">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
-              />
-              <path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-            <span>Fotógrafo</span>
-          </li>
-          <li id="material" title="Soporte">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-              />
-            </svg>
-            <span>Material</span>
-          </li>
-          <li id="procedure" title="Procedimiento">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-              />
-            </svg>
-            <span>Procedimiento</span>
-          </li>
-          <li id="link" title="Enlace a la ficha del CDIS">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-              />
-            </svg>
-            <span>Referencia</span>
-          </li>
-        </ul>
-      </div>
+      <rs-logo></rs-logo>
+      <rs-title></rs-title>
+      <rs-search></rs-search>
+      <rs-menu></rs-menu>
     </header>
 
-    <main></main>
+    <rs-grid></rs-grid>
+    <rs-panel></rs-panel>
+    <rs-help></rs-help>
+    <rs-loading></rs-loading>
 
-    <aside>
-      <h1>No hay imágenes sobre <q>%%QUERY%%</q></h1>
-      <p>
-        La búsqueda se realiza sobre el título de la imagen consignado por el
-        <abbr title="Centro de Documentación de la Imagen de Santander"
-          >CDIS</abbr
-        >. Si no encuentras lo que buscas, prueba con alguna de estas búsquedas
-        de ejemplo:
-      </p>
-      <ul>
-        <li>
-          <a href="/?q=cicl"><q>cicl</q></a
-          >, para mostrar imágenes de ciclismo y ciclistas.
-        </li>
-        <li>
-          <a href="/?q=sardinero"><q>sardinero</q></a
-          >, presenta escenas de El Sardinero.
-        </li>
-        <li>
-          <a href="/?q=valde"><q>valde</q></a
-          >, carga fotografías de Valdecilla, Valderredible, Valdeajos…
-        </li>
-        <li>
-          <a href="/?q=cervatos"><q>cervatos</q></a
-          >, para ver la Colegiata de Cervatos
-        </li>
-        <li>
-          Usa la imaginación: <a href="/?q=jóvenes"><q>jóvenes</q></a
-          >, <a href="/?q=desfile"><q>desfile</q></a
-          >, <a href="/?q=racing"><q>racing</q></a
-          >, <a href="/?q=retrato"><q>retrato</q></a
-          >, <a href="/?q=piquio"><q>piquío</q></a
-          >, <a href="/?q=puerto"><q>puerto</q></a
-          >…
-        </li>
-      </ul>
-    </aside>
-
-    <dialog>
-      <button>×</button>
-
-      <!--
-        Este proyecto es software libre y se distribuye bajo la licencia
-        GNU AFFERO GENERAL PUBLIC LICENSE versión 3.
-
-        Esto significa que puedes utilizar mi código para usos personales o
-        comerciales, modificarlo y distribuirlo libremente, siempre y cuando
-        publiques también el código fuente de tus modificaciones, lo distribuyas
-        bajo la misma licencia y mantegas la información de la autoría original.
-
-        Para esto último debes mantener en tu proyecto, en un lugar accesible,
-        una mención a Jaime Gómez-Obregón como autor original y un enlace a
-        https://twitter.com/jaimeobregon.
-      -->
-
-      <h1>Acerca de Retrosantander</h1>
-      <p>
-        Retrosantander es <strong>un experimento personal</strong> de
-        <a href="https://twitter.com/jaimeobregon">Jaime Gómez-Obregón</a> con
-        el archivo fotográfico del
-        <a href="https://portal.ayto-santander.es/portalcdis/"
-          >Centro de Documentación de la Imagen de Santander</a
-        >
-        (CDIS).
-      </p>
-
-      <p>
-        El CDIS es una entidad dependiente del Ayuntamiento de Santander que
-        tiene como objetivo poner a disposición de la ciudadanía el patrimonio
-        fotográfico municipal.
-      </p>
-
-      <p>
-        Las imágenes que puedes ver en Retrosantander son obra de sus
-        respectivos autores y
-        <strong>los derechos pertenecen al Ayuntamiento de Santander</strong>.
-        Estas imágenes son transmitidas directamente desde los servidores del
-        ayuntamiento, sin modificación o copia alguna. Desde el sitio web del
-        CDIS es posible adquirirlas.
-      </p>
-
-      <p>
-        El código fuente de Retrosantander y una explicación detallada de los
-        porqués de este proyecto personal
-        <strong
-          ><a href="https://github.com/JaimeObregon/retrosantander/"
-            >están disponibles en GitHub</a
-          ></strong
-        >
-        con licencia abierta (software libre). También puedes conocer más en
-        <a href="https://twitter.com/JaimeObregon/status/1518688031028301824"
-          >este hilo de Twitter</a
-        >.
-      </p>
-    </dialog>
-
-    <footer></footer>
-
-    <script type="module" src="/assets/javascript/retrosantander.js"></script>
+    <script type="module" src="/modules/retrosantander.js"></script>
   </body>
 </html>
