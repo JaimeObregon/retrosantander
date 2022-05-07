@@ -10,7 +10,7 @@ template.innerHTML = `
       margin: auto;
       font-size: 18px;
       line-height: 1.5;
-      padding: calc(4 * var(--gap));
+      padding: calc(var(--header-height) + var(--gap)) var(--gap);
     }
 
     article.hidden {

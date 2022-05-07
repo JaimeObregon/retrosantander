@@ -35,6 +35,7 @@ template.innerHTML = `
       font-size: 14px;
       font-weight: 500;
       width: 100%;
+      height: 30px;
       border: none;
       border-radius: 1em;
       padding: 5px 15px 5px 35px;
@@ -60,7 +61,7 @@ template.innerHTML = `
       display: none;
       position: absolute;
       z-index: 1;
-      top: calc(var(--header-height) - 1.5 * var(--gap));
+      top: 29px;
       left: 0;
       width: 100%;
       max-height: 70vh;
@@ -131,7 +132,7 @@ template.innerHTML = `
 
     @media (max-width: 640px) {
       label {
-        width: 4em;
+        width: 6em;
       }
     }
   </style>

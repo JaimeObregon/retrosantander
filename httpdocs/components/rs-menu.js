@@ -27,7 +27,7 @@ template.innerHTML = `
       position: fixed;
       width: 100%;
       max-width: var(--about-width);
-      height: calc(100% - var(--header-height));
+      height: calc(100vh - var(--header-height));
       top: var(--header-height);
       right: 0;
       overflow: scroll;

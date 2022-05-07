@@ -33,11 +33,18 @@ template.innerHTML = `
 
     @media (max-width: 1280px) {
       cite {
-        font-size: 19px;
+        text-align: left;
+        margin: 0;
       }
     }
 
     @media (max-width: 1024px) {
+      cite {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 768px) {
       cite {
         font-size: 17px;
       }

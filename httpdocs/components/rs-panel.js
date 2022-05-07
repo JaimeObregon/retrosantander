@@ -139,6 +139,7 @@ template.innerHTML = `
     }
 
     aside details p {
+      color: var(--color-neutral-300);
     }
 
     aside section#faces ul {
@@ -223,8 +224,8 @@ template.innerHTML = `
 
       <p>
         Esta imagen es obra de su autor, y sus derechos pertenecen al Centro de
-        Documentación de la Imagen de Santander (CDIS), una entidad pública
-        municipal dependiente del Ayuntamiento de Santander.
+        Documentación de la Imagen de Santander (CDIS), una entidad dependiente
+        del Ayuntamiento de Santander.
       </p>
 
       <p>
