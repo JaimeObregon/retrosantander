@@ -196,6 +196,10 @@ customElements.define(
 
       const images = [...this.container.querySelectorAll('rs-image')]
 
+      if (!images.length) {
+        return
+      }
+
       images.forEach((image) => {
         delete image.dataset.top
         delete image.dataset.column

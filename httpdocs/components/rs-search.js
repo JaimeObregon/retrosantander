@@ -212,11 +212,11 @@ customElements.define(
       })
 
       this.input.addEventListener('click', () => {
-        this.label.classList.toggle('open', this.results.length)
+        this.label.classList.toggle('open', this.results?.length)
       })
 
       this.input.addEventListener('focus', () => {
-        this.label.classList.toggle('open', this.results.length)
+        this.label.classList.toggle('open', this.results?.length)
       })
 
       window.addEventListener('popstate', this.init.bind(this))
