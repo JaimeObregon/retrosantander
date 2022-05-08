@@ -30,10 +30,10 @@ template.innerHTML = `
 
     aside button {
       position: absolute;
-      width: 3em;
-      height: 3em;
-      top: .5em;
-      right: .5em;
+      width: 4em;
+      height: 4em;
+      top: .25em;
+      right: .25em;
       padding: 0;
       border-radius: 100%;
       border: none;
@@ -359,6 +359,8 @@ customElements.define(
 
       const { width, height } = app.selected.getBoundingClientRect()
       const aspectRatio = width / height
+
+      alert(JSON.stringify([app.selected, width, height, aspectRatio], null, 2))
 
       panel.querySelector('section#faces ul').innerHTML = faces
         .map((face) => {
