@@ -2,7 +2,8 @@ import { app } from '../modules/retrosantander.js'
 
 const component = 'rs-panel'
 const template = document.createElement('template')
-const containerHeight = 80
+const containerHeight = 68
+const facesPerRow = 5
 
 template.innerHTML = `
   <style>
@@ -84,6 +85,7 @@ template.innerHTML = `
     }
 
     aside section ul li {
+      width: calc(100% / ${facesPerRow});
       display: inline;
     }
 
@@ -107,7 +109,7 @@ template.innerHTML = `
     }
 
     aside section:not(:first-of-type) h2 {
-      margin-top: calc(3 * var(--gap));
+      margin-top: calc(2 * var(--gap));
     }
 
     aside section#details svg {
@@ -153,7 +155,7 @@ template.innerHTML = `
     aside details {
       font-size: 14px;
       font-weight: 400;
-      margin: var(--gap) 0;
+      margin: calc(2 * var(--gap)) 0 0 0;
       padding: 0 22px 5px 22px;
       border-radius: 5px;
       background: var(--color-neutral-800);
@@ -202,7 +204,7 @@ template.innerHTML = `
       height: 100%;
       box-sizing: border-box;
       border: var(--border-width) solid transparent;
-      border-radius: 3px;
+      border-radius: 100%;
       background-repeat: no-repeat;
     }
 
@@ -274,6 +276,21 @@ template.innerHTML = `
       </dl>
     </section>
 
+    <section id="faces">
+      <h2><span></span> Personas detectadas</h2>
+      <ul></ul>
+    </section>
+
+    <section id="objects">
+      <h2><span></span> Objetos detectados</h2>
+      <ul></ul>
+    </section>
+
+    <section id="tags">
+      <h2>Etiquetas automáticas</h2>
+      <ul></ul>
+    </section>
+
     <details>
       <summary>Derechos de esta imagen</summary>
 
@@ -289,21 +306,6 @@ template.innerHTML = `
         una utilización comercial de esta imagen.
       </p>
     </details>
-
-    <section id="faces">
-      <h2>Personas detectadas</h2>
-      <ul></ul>
-    </section>
-
-    <section id="objects">
-      <h2>Objetos detectados</h2>
-      <ul></ul>
-    </section>
-
-    <section id="tags">
-      <h2>Etiquetas detectadas</h2>
-      <ul></ul>
-    </section>
   </aside>
 `
 
@@ -370,7 +372,12 @@ customElements.define(
           .classList.toggle('hidden', !contents[key].length)
       })
 
+      panel.querySelector('section#faces h2 span').innerHTML = faces.length
+      panel.querySelector('section#objects h2 span').innerHTML = objects.length
+
       const url = `https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${details.id}`
+
+      const containerWidth = panel.querySelector('ul').offsetWidth / facesPerRow
 
       const { width, height } = app.selected.getBoundingClientRect()
       const aspectRatio = width / height
@@ -380,14 +387,17 @@ customElements.define(
           const backgroundHeight = containerHeight / face.height
           const backgroundWidth = backgroundHeight * aspectRatio
 
-          const containerWidth =
+          const realFaceWidth =
             (containerHeight * aspectRatio * face.width) / face.height
 
-          const positionX = backgroundWidth * face.left
+          const facePadding = (containerWidth - realFaceWidth) / 2 - 5
+
+          console.log({ containerWidth, realFaceWidth, facePadding })
+          const positionX = backgroundWidth * face.left - facePadding
           const positionY = backgroundHeight * face.top
 
           return `
-            <li style="width: ${containerWidth + 10}px;">
+            <li>
               <img
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                 data-id="${face.id}"
