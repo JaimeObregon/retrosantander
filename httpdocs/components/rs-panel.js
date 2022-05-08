@@ -169,7 +169,7 @@ template.innerHTML = `
       hyphens: none;
       cursor: pointer;
       transition: background ease-in-out 150ms;
-      background: inherit;
+      background: var(--color-neutral-800);
     }
 
     aside details summary:hover {
@@ -215,6 +215,9 @@ template.innerHTML = `
         top: auto;
         bottom: 0;
         height: 30vh;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        box-shadow: 0 -5px 5px #1c191750;
       }
     }
   </style>
@@ -367,29 +370,34 @@ customElements.define(
           .classList.toggle('hidden', !contents[key].length)
       })
 
+      const url = `https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${details.id}`
+
       const { width, height } = app.selected.getBoundingClientRect()
       const aspectRatio = width / height
 
       panel.querySelector('section#faces ul').innerHTML = faces
         .map((face) => {
-          const width =
-            (containerHeight * aspectRatio * face.width) / face.height + 4
-          const height = containerHeight / face.height
+          const backgroundHeight = containerHeight / face.height
+          const backgroundWidth = backgroundHeight * aspectRatio
+
+          const containerWidth =
+            (containerHeight * aspectRatio * face.width) / face.height
+
+          const positionX = backgroundWidth * face.left
+          const positionY = backgroundHeight * face.top
 
           return `
-            <li style="width: ${width}px;">
+            <li style="width: ${containerWidth + 10}px;">
               <img
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                 data-id="${face.id}"
                 alt="${face.name}"
                 style="
-                  background-image: url(https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${
-                    details.id
-                  });
+                  background-image: url(${url});
+                  background-size: ${backgroundWidth}px ${backgroundHeight}px;
                   background-position:
-                    -${Math.max(height * aspectRatio * face.left, 0)}px
-                    -${Math.max(height * face.top, 0)}px;
-                  background-size: auto ${height}px;
+                    -${Math.max(positionX, 0)}px
+                    -${Math.max(positionY, 0)}px;
                 "
               />
             </li>

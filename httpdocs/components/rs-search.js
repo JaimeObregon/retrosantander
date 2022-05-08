@@ -223,6 +223,9 @@ customElements.define(
 
       this.input.addEventListener('focus', () => {
         this.label.classList.toggle('open', this.results?.length)
+
+        const end = this.input.value.length
+        this.input.setSelectionRange(end, end)
       })
 
       this.input.addEventListener('blur', () => {

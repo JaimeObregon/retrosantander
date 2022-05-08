@@ -16,6 +16,7 @@ template.innerHTML = `
     }
 
     figure {
+      position: relative;
       margin: 0;
       font-size: 0;
     }
