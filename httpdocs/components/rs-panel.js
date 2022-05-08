@@ -22,10 +22,12 @@ template.innerHTML = `
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       transition: 350ms;
+      opacity: 1;
     }
 
     aside.hidden {
       transform: translateX(calc(-1 * var(--details-width)));
+      opacity: 0;
     }
 
     aside button {
@@ -207,6 +209,14 @@ template.innerHTML = `
     aside section#faces ul li img.active {
       border-color: var(--color-yellow-500);
     }
+
+    @media (max-width: 768px) {
+      aside {
+        top: auto;
+        bottom: 0;
+        height: 30vh;
+      }
+    }
   </style>
   <aside class="hidden">
     <button>
@@ -359,8 +369,6 @@ customElements.define(
 
       const { width, height } = app.selected.getBoundingClientRect()
       const aspectRatio = width / height
-
-      alert(JSON.stringify(app.selected.getBoundingClientRect(), null, 2))
 
       panel.querySelector('section#faces ul').innerHTML = faces
         .map((face) => {

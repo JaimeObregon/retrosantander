@@ -132,6 +132,7 @@ template.innerHTML = `
     @media (max-width: 768px) {
       label {
         font-size: 14px;
+        width: 8rem;
       }
 
       label:focus-within {
@@ -142,7 +143,7 @@ template.innerHTML = `
     @media (max-width: 640px) {
       label {
         font-size: 13px;
-        width: 10rem;
+        width: 2rem;
       }
     }
   </style>

@@ -44,10 +44,12 @@ template.innerHTML = `
       font-weight: 400;
       line-height: 1.35;
       padding: var(--gap);
+      opacity: 1;
     }
 
     article.hidden {
       transform: translateX(var(--about-width));
+      opacity: 0;
     }
 
     article h1 {
