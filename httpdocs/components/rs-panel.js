@@ -360,7 +360,7 @@ customElements.define(
       const { width, height } = app.selected.getBoundingClientRect()
       const aspectRatio = width / height
 
-      alert(JSON.stringify([app.selected, width, height, aspectRatio], null, 2))
+      alert(JSON.stringify(app.selected.getBoundingClientRect(), null, 2))
 
       panel.querySelector('section#faces ul').innerHTML = faces
         .map((face) => {
