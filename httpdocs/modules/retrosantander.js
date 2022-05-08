@@ -81,9 +81,13 @@ const app = {
       history.pushState(null, null, app.query ? `/?q=${app.query}` : '/')
     }
 
-    grid.restore()
+    this.restore()
     help.hidden = Boolean(this.results.length)
     this.results.length ? grid.append() : grid.clear()
+  },
+
+  restore() {
+    grid.restore()
   },
 }
 

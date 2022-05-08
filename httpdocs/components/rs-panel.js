@@ -28,6 +28,43 @@ template.innerHTML = `
       transform: translateX(calc(-1 * var(--details-width)));
     }
 
+    aside button {
+      position: absolute;
+      width: 3em;
+      height: 3em;
+      top: .5em;
+      right: .5em;
+      padding: 0;
+      border-radius: 100%;
+      border: none;
+      background: transparent;
+      transition: background ease-in-out 150ms;
+      cursor: pointer;
+    }
+
+    aside button:hover {
+      background: var(--color-neutral-800);
+    }
+
+    aside button svg {
+      display: block;
+      width: 25px;
+      margin: auto;
+      stroke: currentColor;
+      stroke-width: 2px;
+      color: var(--color-neutral-500);
+      transition: color ease-in-out 150ms;
+    }
+
+    aside button:hover svg {
+      color: var(--color-neutral-400);
+    }
+
+    aside button svg path {
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
     aside h2 {
       font-size: 11px;
       margin: 0 0 10px 0;
@@ -48,7 +85,6 @@ template.innerHTML = `
       display: inline;
     }
 
-
     aside a {
       color: inherit;
       text-decoration: underline;
@@ -68,7 +104,7 @@ template.innerHTML = `
       display: none;
     }
 
-    aside section:not(:first-child) h2 {
+    aside section:not(:first-of-type) h2 {
       margin-top: calc(3 * var(--gap));
     }
 
@@ -125,8 +161,8 @@ template.innerHTML = `
     aside details summary {
       padding: 10px 7px;
       margin: 0 -22px -10px -22px;
-      font-size: 15px;
-      font-weight: 700;
+      font-size: 14px;
+      font-weight: 600;
       border-radius: 5px;
       hyphens: none;
       cursor: pointer;
@@ -173,6 +209,12 @@ template.innerHTML = `
     }
   </style>
   <aside class="hidden">
+    <button>
+      <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24">
+        <path d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
     <section id="details">
       <h2>Ficha técnica</h2>
 
@@ -220,7 +262,7 @@ template.innerHTML = `
     </section>
 
     <details>
-      <summary>Conoce los derechos de esta imagen</summary>
+      <summary>Derechos de esta imagen</summary>
 
       <p>
         Esta imagen es obra de su autor, y sus derechos pertenecen al Centro de
@@ -264,6 +306,9 @@ customElements.define(
 
     connectedCallback() {
       this.aside = this.shadowRoot.querySelector('aside')
+      this.button = this.aside.querySelector('button')
+
+      this.button.addEventListener('click', () => app.restore())
 
       this.aside.addEventListener('mouseover', (event) => {
         if (event.target.dataset.id) {

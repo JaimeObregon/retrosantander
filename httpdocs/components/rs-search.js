@@ -14,6 +14,7 @@ template.innerHTML = `
     label {
       position: relative;
       display: flex;
+      font-size: 16px;
       width: 15em;
       align-items: center;
       transition: width 350ms ease;
@@ -25,20 +26,19 @@ template.innerHTML = `
 
     label svg {
       position: absolute;
-      width: 16px;
-      left: 10px;
+      width: 1em;
+      left: .65em;
       fill: var(--color-neutral-500);
       pointer-events: none;
     }
 
     label input {
-      font-size: 14px;
+      font-size: inherit;
       font-weight: 500;
       width: 100%;
-      height: 30px;
       border: none;
-      border-radius: 1em;
-      padding: 5px 15px 5px 35px;
+      border-radius: 1rem;
+      padding: .35em .25em .35em 2.25em;
       outline: none;
       background: var(--color-neutral-200);
       transition: background 350ms ease;
@@ -46,6 +46,7 @@ template.innerHTML = `
       box-shadow: 0 0 0 1px var(--color-neutral-50);
       cursor: pointer;
       appearance: none;
+      -webkit-appearance: none;
     }
 
     label input:hover,
@@ -53,7 +54,7 @@ template.innerHTML = `
       background: white;
     }
 
-    label.open:focus-within input {
+    label.open input:focus {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
     }
@@ -71,9 +72,8 @@ template.innerHTML = `
       padding: 0;
       list-style: none;
       background: white;
-      border-bottom-left-radius: 1em;
-      border-bottom-right-radius: 1em;
-      font-size: 14px;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
       font-weight: 500;
       color: var(--color-neutral-800);
       overflow: scroll;
@@ -82,7 +82,7 @@ template.innerHTML = `
       border-top: none;
     }
 
-    label.open:focus-within ul {
+    label.open ul {
       display: block;
     }
 
@@ -110,30 +110,39 @@ template.innerHTML = `
     }
 
     @media (max-width: 1280px) {
+      label {
+        font-size: 15px;
+      }
+
       label:focus-within {
-        width: 18em;
+        width: 18rem;
       }
     }
 
     @media (max-width: 1024px) {
       label {
-        width: 12em;
+        width: 12rem;
       }
 
       label:focus-within {
-        width: 15em;
+        width: 15rem;
       }
     }
 
     @media (max-width: 768px) {
+      label {
+        font-size: 14px;
+      }
+
       label:focus-within {
-        width: 12em;
+        width: 12rem;
       }
     }
 
     @media (max-width: 640px) {
       label {
-        width: 6em;
+        font-size: 13px;
+        width: 10rem;
       }
     }
   </style>
@@ -211,12 +220,12 @@ customElements.define(
         }
       })
 
-      this.input.addEventListener('click', () => {
+      this.input.addEventListener('focus', () => {
         this.label.classList.toggle('open', this.results?.length)
       })
 
-      this.input.addEventListener('focus', () => {
-        this.label.classList.toggle('open', this.results?.length)
+      this.input.addEventListener('blur', () => {
+        setTimeout(() => this.label.classList.remove('open'), 100)
       })
 
       window.addEventListener('popstate', this.init.bind(this))
@@ -261,16 +270,19 @@ customElements.define(
         .map(
           (q) => `
             <li>
-            <a href="/?q=${q}">
+              <a href="/?q=${q}">
                 ${icon} ${q.replace(this.query, `<mark>${this.query}</mark>`)}
-                </a>
+              </a>
             </li>`
         )
         .join('')
 
       this.results = [...this.ul.querySelectorAll('a')]
 
-      this.label.classList.toggle('open', suggestions.length)
+      if (document.activeElement === this) {
+        this.label.classList.toggle('open', suggestions.length)
+      }
+
       delete this.selected
     }
   }

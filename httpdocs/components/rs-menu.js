@@ -24,6 +24,7 @@ template.innerHTML = `
     }
 
     article {
+      --about-width: 26rem;
       position: fixed;
       width: 100%;
       max-width: var(--about-width);
@@ -42,7 +43,7 @@ template.innerHTML = `
       font-size: 15px;
       font-weight: 400;
       line-height: 1.35;
-      padding: calc(2 * var(--gap));
+      padding: var(--gap);
     }
 
     article.hidden {
@@ -56,6 +57,10 @@ template.innerHTML = `
       padding: 0 0 0 15px;
       background: var(--color-neutral-200);
       color: var(--color-neutral-800);
+    }
+
+    article h1:not(:first-of-type) {
+      margin-top: calc(3 * var(--gap));
     }
 
     article a {
@@ -91,6 +96,13 @@ template.innerHTML = `
       margin-right: 8px;
       fill: white;
     }
+
+    @media (max-width: 640px) {
+      article {
+        --about-width: 100%;
+      }
+    }
+
   </style>
   <button>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">

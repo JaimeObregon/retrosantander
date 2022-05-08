@@ -109,7 +109,7 @@ customElements.define(
 
         this.zoom(image)
 
-        if (this.scale === 1) {
+        if (selected) {
           return
         }
 
@@ -183,9 +183,11 @@ customElements.define(
       const headerHeight = parseFloat(
         style.getPropertyValue('--header-height').match(/\d+/)[0]
       )
-      const detailsWidth = parseFloat(
-        style.getPropertyValue('--details-width').match(/\d+/)[0]
-      )
+
+      const detailsWidth =
+        parseFloat(
+          style.getPropertyValue('--details-width').match(/\d+px/)?.[0]
+        ) || 0
 
       const top = headerHeight + gap
       const left = detailsWidth + gap
@@ -312,9 +314,10 @@ customElements.define(
       this.container.style.transform = ''
       this.scale = 1
       app.panel = false
-      ;[...this.container.querySelectorAll('rs-image')].forEach((image) =>
+      ;[...this.container.querySelectorAll('rs-image')].forEach((image) => {
         image.classList.remove('selected')
-      )
+        image.areas = false
+      })
     }
 
     get selected() {
@@ -328,6 +331,11 @@ customElements.define(
 
     set activeLayer(id) {
       const image = this.container.querySelector('rs-image.selected')
+
+      if (!image) {
+        return
+      }
+
       image.activeLayer = id
     }
   }

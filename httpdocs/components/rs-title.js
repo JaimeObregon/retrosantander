@@ -46,7 +46,7 @@ template.innerHTML = `
 
     @media (max-width: 768px) {
       cite {
-        font-size: 17px;
+        font-size: 15px;
       }
     }
   </style>
