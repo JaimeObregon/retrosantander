@@ -233,12 +233,15 @@ customElements.define(
           const top = heights[column] + gap
           const left = column * (gap + width)
 
+          const height = image.offsetHeight
+
           image.dataset.column = column
           image.dataset.top = top
 
           image.style.top = `${top}px`
           image.style.left = `${left}px`
           image.style.width = `${width}px`
+          image.style.height = `${height}px`
 
           image.classList.remove('hidden')
         })
