@@ -149,7 +149,7 @@ template.innerHTML = `
   </style>
   <label>
     ${icon}
-    <input type="search" autofocus data-placeholder="Buscar…" />
+    <input type="search" data-placeholder="Buscar…" />
     <ul></ul>
   </label>
 `
