@@ -21,6 +21,7 @@ customElements.define(
 
   class extends HTMLElement {
     delay = 250
+    footer
 
     constructor() {
       super()

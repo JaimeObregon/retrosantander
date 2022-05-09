@@ -37,22 +37,18 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
 
     <style>
-      :root {
-        --gap: 18px;
-        --details-width: 350px;
+      html {
+        --gap: 20px;
+        --panel-width: 350px;
         --header-height: 55px;
+
+        /* Parte de la paleta de Tailwind */
+        /* Véase https://tailwindcss.com/docs/customizing-colors */
         --color-neutral-50: #fafafa;
         --color-neutral-100: #f5f5f5;
         --color-neutral-200: #e5e5e5;
@@ -65,18 +61,21 @@
         --color-neutral-900: #171717;
         --color-yellow-500: #eab308;
         --color-red-600: #dc2626;
-      }
 
-      html {
         margin: 0 var(--gap);
-        user-select: none;
-        scroll-behavior: smooth;
         font-family: 'Inter', sans-serif;
         font-weight: 300;
         background: var(--color-neutral-900);
         color: var(--color-neutral-200);
+        scroll-behavior: smooth;
+        user-select: none;
+        -webkit-text-size-adjust: 100%;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+      }
+
+      body {
+        margin: 0;
       }
 
       header {
@@ -90,16 +89,11 @@
         z-index: 1;
         box-sizing: border-box;
         align-items: center;
-        border-bottom: 1px solid var(--color-neutral-700);
+        border-bottom: 1px solid var(--color-neutral-800);
         box-shadow: 0 5px 5px #1c191750;
         background-color: #171717f0;
         backdrop-filter: blur(14px);
         -webkit-backdrop-filter: blur(14px);
-      }
-
-      header rs-logo {
-        flex-shrink: 0;
-        width: var(--details-width);
       }
 
       header rs-title {
@@ -115,11 +109,17 @@
         flex-shrink: 0;
       }
 
+      rs-help {
+        display: flex;
+        margin-top: var(--header-height);
+        min-height: calc(100vh - var(--header-height));
+      }
+
       @media (max-width: 1536px) {
       }
 
       @media (max-width: 1280px) {
-        :root {
+        html {
           --gap: 16px;
         }
 
@@ -129,21 +129,21 @@
       }
 
       @media (max-width: 1024px) {
-        :root {
+        html {
           --gap: 14px;
-          --details-width: 280px;
+          --panel-width: 280px;
         }
       }
 
       @media (max-width: 768px) {
-        :root {
-          --details-width: 100%;
+        html {
+          --panel-width: 100%;
           --header-height: 50px;
         }
       }
 
       @media (max-width: 640px) {
-        :root {
+        html {
           --header-height: 45px;
         }
       }
@@ -159,6 +159,7 @@
     </header>
 
     <rs-grid></rs-grid>
+
     <rs-panel></rs-panel>
     <rs-help></rs-help>
     <rs-loading></rs-loading>

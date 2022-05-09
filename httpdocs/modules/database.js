@@ -1,9 +1,15 @@
 import { labels } from '../modules/labels.js'
 
+// Umbral de confianza en la visión artificial.
+// Los objetos detectados por debajo de éste umbral serán ignorados.
 const confidenceThreshold = 80
 
+// Cuántas sugerencias de búsqueda mostrar al buscar.
+const maxSuggestions = 100
+
+// Tokeniza una cadena. Véase https://es.stackoverflow.com/a/62032.
+// `Manuel   González-Mesones` > `manuel gonzalez mesones`.
 const normalize = (string) => {
-  // https://es.stackoverflow.com/a/62032
   return string
     .toLowerCase()
     .normalize('NFD')
@@ -14,52 +20,68 @@ const normalize = (string) => {
     .normalize()
     .replace(/[^a-z0-9ñç ]/g, ' ')
     .replace(/\s+/g, ' ')
+    .trim()
 }
 
+// El CDIS a veces encierra los títulos de las imágenes entre corchetes,
+// entre comillas… Aquí tratamos de revertir los casos más habituales.
 const prettify = (title) => {
-  const first = title[0]
-  const last = title[title.length - 1]
+  let string = title.trim()
 
-  if ((first === '[' && last === ']') || (first === '"' && last === '"')) {
-    return title.slice(1, -1).trim()
+  let [first, last] = [string[0], string[string.length - 1]]
+
+  const period = last === '.' && string.slice(0, -1).indexOf('.') === -1
+  if (period) {
+    string = string.slice(0, -1)
+    first = string[0]
+    last = string[string.length - 1]
   }
 
-  return title.trim()
+  const betweenBrackets = first === '[' && last === ']'
+  const betweenQuotationMarks =
+    first === '"' && last === '"' && string.slice(1, -1).indexOf('"') === -1
+
+  return betweenBrackets || betweenQuotationMarks ? string.slice(1, -1) : string
 }
 
 const database = {
-  index: [],
+  records: [],
 
+  // Carga en `this.records` el fichero JSON con los datos.
   load: async (url) => {
     const response = await fetch(url)
     const json = await response.json()
 
-    database.index = json.map((item) => ({
+    database.records = json.map((item) => ({
       ...item,
       title: prettify(item.title),
       index: normalize(item.title),
     }))
   },
 
-  get length() {
-    return this.index.length
+  // Retorna el número de registros en la base de datos.
+  get count() {
+    return this.records.length
   },
 
+  // Devuelve el registro de una imagen a partir de su `id`.
   find: (id) => {
-    return database.index.find((item) => item.id === id)
+    return database.records.find((item) => item.id === id)
   },
 
+  // Cursa una búsqueda en la base de datos y devuelve los resultados de la misma
+  // y las sugerencias de búsqueda para el término empleado.
   search: (string) => {
     const query = normalize(string)
 
     if (!query.length) {
-      const results = database.index.sort(() => Math.random() - 0.5)
+      const results = database.records.sort(() => Math.random() - 0.5)
       const suggestions = []
       return { results, suggestions }
     }
 
     const regexp = new RegExp(query)
-    const results = database.index.filter((item) => item.index.match(regexp))
+    const results = database.records.filter((item) => item.index.match(regexp))
 
     const suggestions = results
       .flatMap((item) =>
@@ -71,27 +93,39 @@ const database = {
       .filter((value, index, word) => word.indexOf(value) === index)
       .sort((a, b) => a.localeCompare(b))
       .filter((word) => word !== query)
-      .slice(0, 100)
+      .slice(0, maxSuggestions)
 
     return { results, suggestions }
   },
 
-  parse(json) {
-    const gender = (value) => ({ Male: 'Hombre', Female: 'Mujer' }[value])
+  // Carga e interpreta un fichero JSON con los datos de visión artificial
+  // de una imagen.
+  async parse(url) {
+    const response = await fetch(url)
+    const json = await response.json()
+
+    const gender = (value) =>
+      ({
+        Male: 'Hombre',
+        Female: 'Mujer',
+      }[value])
 
     const faces = json.FaceDetails.filter(
       (face) => face.Confidence >= confidenceThreshold
     ).map((face, i) => ({
       type: 'face',
+      id: `face-${i}`,
       name: `${gender(face.Gender.Value)} ${i + 1}`,
       title: [
         `${gender(face.Gender.Value)} nº ${i + 1},`,
         `de entre ${face.AgeRange.Low} y ${face.AgeRange.High} años`,
       ].join(' '),
-      age: `Entre ${face.AgeRange.Low} y ${face.AgeRange.High} años`,
-      beard: face.Beard > confidenceThreshold,
+      top: face.BoundingBox.Top,
+      left: face.BoundingBox.Left,
+      width: face.BoundingBox.Width,
+      height: face.BoundingBox.Height,
       confidence: face.Confidence,
-      id: `face-${i}`,
+      age: `Entre ${face.AgeRange.Low} y ${face.AgeRange.High} años`,
       emotions: face.Emotions.map((emotion) => ({
         confidence: emotion.Confidence,
         name: {
@@ -105,20 +139,30 @@ const database = {
           ANGRY: 'Enfadado',
         }[emotion.Type],
       })).filter((emotion) => emotion.confidence > confidenceThreshold),
-      glasses: face.Eyeglasses > confidenceThreshold,
-      eyes: face.EyesOpen > confidenceThreshold,
-      gender:
-        face.Gender.Confidence > confidenceThreshold
-          ? gender(face.Gender.Value)
-          : undefined,
-      mouth: face.MouthOpen > confidenceThreshold,
-      mustache: face.Mustache > confidenceThreshold,
-      smile: face.Smile > confidenceThreshold,
-      sunglasses: face.Sunglasses > confidenceThreshold,
-      top: face.BoundingBox.Top,
-      left: face.BoundingBox.Left,
-      width: face.BoundingBox.Width,
-      height: face.BoundingBox.Height,
+      ...(face.Gender.Confidence > confidenceThreshold && {
+        gender: gender(face.Gender.Value),
+      }),
+      ...(face.Beard.Confidence > confidenceThreshold && {
+        beard: face.Beard.Value,
+      }),
+      ...(face.Eyeglasses.Confidence > confidenceThreshold && {
+        glasses: face.Eyeglasses.Value,
+      }),
+      ...(face.EyesOpen.Confidence > confidenceThreshold && {
+        eyes: face.EyesOpen.Value,
+      }),
+      ...(face.MouthOpen.Confidence > confidenceThreshold && {
+        mouth: face.MouthOpen.Value,
+      }),
+      ...(face.Mustache.Confidence > confidenceThreshold && {
+        mustache: face.Mustache.Value,
+      }),
+      ...(face.Smile.Confidence > confidenceThreshold && {
+        smile: face.Smile.Value,
+      }),
+      ...(face.Sunglasses.Confidence > confidenceThreshold && {
+        sunglasses: face.Sunglasses.Value,
+      }),
     }))
 
     const objects = json.Labels.filter(

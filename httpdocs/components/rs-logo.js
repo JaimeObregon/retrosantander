@@ -6,18 +6,20 @@ template.innerHTML = `
     a {
       display: block;
       line-height: var(--header-height);
-      text-align: center;
+      padding: 0 var(--gap);
+      color: inherit;
     }
 
     a svg {
-      height: 25px;
+      height: 30px;
       vertical-align: middle;
-      transition: transform 200ms ease;
-      fill: white;
+      transition: 200ms ease;
+      fill: currentColor;
     }
 
     a:hover svg {
-      transform: scale(1.05);
+      transform: scale(1.035);
+      color: white;
     }
   </style>
   <a href="/">

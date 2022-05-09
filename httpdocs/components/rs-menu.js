@@ -8,8 +8,13 @@ template.innerHTML = `
       margin: 0 var(--gap);
       border: none;
       background: none;
+      color: inherit;
+      transition: 250ms;
       cursor: pointer;
-      transition: transform 250ms;
+    }
+
+    button:hover {
+      color: white;
     }
 
     button.open {
@@ -19,12 +24,12 @@ template.innerHTML = `
     button svg {
       height: 25px;
       vertical-align: middle;
-      fill: white;
+      fill: currentColor;
       transition: transform 200ms ease;
     }
 
     article {
-      --about-width: 26rem;
+      --about-width: 28rem;
       position: fixed;
       width: 100%;
       max-width: var(--about-width);
@@ -34,7 +39,7 @@ template.innerHTML = `
       overflow: scroll;
       box-sizing: border-box;
       padding: var(--gap);
-      border-left: 1px solid var(--color-neutral-700);
+      border-left: 1px solid var(--color-neutral-800);
       box-shadow: -5px 0 5px #1c191750;
       background-color: #171717f0; /* --color-neutral-900 */
       backdrop-filter: blur(14px);
@@ -44,19 +49,19 @@ template.innerHTML = `
       font-weight: 400;
       line-height: 1.35;
       padding: var(--gap);
-      opacity: 1;
-    }
-
-    article.hidden {
       transform: translateX(var(--about-width));
       opacity: 0;
     }
 
+    article.open {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
     article h1 {
-      font-size: 21px;
-      width: calc(100% + 2* var(--gap));
-      margin: 0 0 0 -15px;
-      padding: 0 0 0 15px;
+      width: calc(100% + var(--gap));
+      margin: 0 0 0 calc(-1 * var(--gap));
+      padding: 0 0 0 var(--gap);
       background: var(--color-neutral-200);
       color: var(--color-neutral-800);
     }
@@ -111,7 +116,7 @@ template.innerHTML = `
       <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path>
     </svg>
   </button>
-  <article class="hidden">
+  <article>
     <!--
       Este proyecto es software libre y se distribuye bajo la licencia
       GNU AFFERO GENERAL PUBLIC LICENSE versión 3.
@@ -217,9 +222,7 @@ customElements.define(
       this.hamburger.addEventListener('click', () => (this.open = !this.open))
 
       document.addEventListener('click', (event) => {
-        if (event.target !== this) {
-          this.open = false
-        }
+        event.target !== this && (this.open = false)
       })
 
       document.addEventListener('keyup', (event) => {
@@ -233,7 +236,7 @@ customElements.define(
 
     set open(value) {
       this.hamburger.classList.toggle('open', value)
-      this.article.classList.toggle('hidden', !value)
+      this.article.classList.toggle('open', value)
     }
   }
 )

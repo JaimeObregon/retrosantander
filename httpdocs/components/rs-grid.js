@@ -115,9 +115,8 @@ customElements.define(
 
         image.classList.add('selected')
 
-        const response = await fetch(`/data/vision/${id}.json`)
-        const json = await response.json()
-        const { areas, faces, objects, tags } = database.parse(json)
+        const url = `/data/vision/${id}.json`
+        const { areas, faces, objects, tags } = await database.parse(url)
 
         const details = database.find(id)
 
@@ -186,7 +185,7 @@ customElements.define(
 
       const detailsWidth =
         parseFloat(
-          style.getPropertyValue('--details-width').match(/\d+px/)?.[0]
+          style.getPropertyValue('--panel-width').match(/\d+px/)?.[0]
         ) || 0
 
       const top = headerHeight + gap
@@ -222,7 +221,7 @@ customElements.define(
             .reduce((array, current) => {
               array[current.dataset.column] = Math.max(
                 array[current.dataset.column],
-                parseInt(current.dataset.top) + current.offsetHeight
+                parseInt(current.dataset.top) + current.offsetHeight + gap
               )
               return array
             }, Array(columns).fill(0))
@@ -230,10 +229,11 @@ customElements.define(
           const shortestColumn = heights.indexOf(Math.min(...heights))
           const column = i < columns ? i % columns : shortestColumn
 
-          const top = heights[column] + gap
+          const top = heights[column]
           const left = column * (gap + width)
 
-          const height = image.offsetHeight
+          const bounds = image.getBoundingClientRect()
+          const height = (width * bounds.height) / bounds.width
 
           image.dataset.column = column
           image.dataset.top = top

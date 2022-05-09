@@ -9,14 +9,14 @@ template.innerHTML = `
     aside {
       position: fixed;
       width: 100%;
-      max-width: var(--details-width);
+      max-width: var(--panel-width);
       height: calc(100% - var(--header-height));
       top: var(--header-height);
       left: 0;
       overflow: scroll;
       box-sizing: border-box;
       padding: var(--gap);
-      border-right: 1px solid var(--color-neutral-700);
+      border-right: 1px solid var(--color-neutral-800);
       box-shadow: 5px 0 5px #1c191750;
       background-color: #171717f0;
       backdrop-filter: blur(14px);
@@ -26,7 +26,7 @@ template.innerHTML = `
     }
 
     aside.hidden {
-      transform: translateX(calc(-1 * var(--details-width)));
+      transform: translateX(calc(-1 * var(--panel-width)));
       opacity: 0;
     }
 
@@ -356,15 +356,15 @@ customElements.define(
       })
     }
 
-    set contents(contents) {
+    set data(data) {
       const panel = this.shadowRoot.querySelector('aside')
 
-      if (!contents) {
+      if (!data) {
         panel.classList.add('hidden')
         return
       }
 
-      const { details, faces, objects, tags } = contents
+      const { details, faces, objects, tags } = data
 
       panel.querySelector('#date').innerText = details.date
       panel.querySelector('#collection').innerText = details.collection
@@ -381,7 +381,7 @@ customElements.define(
       Array('faces', 'objects', 'tags').forEach((key) => {
         this.shadowRoot
           .querySelector(`section#${key}`)
-          .classList.toggle('hidden', !contents[key].length)
+          .classList.toggle('hidden', !data[key].length)
       })
 
       panel.querySelector('section#faces h2 span').innerHTML = faces.length

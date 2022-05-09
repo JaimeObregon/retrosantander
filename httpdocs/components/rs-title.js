@@ -75,7 +75,7 @@ customElements.define(
     }
 
     set caption(caption) {
-      const count = database.length.toLocaleString()
+      const count = database.count.toLocaleString()
       const placeholder = `Explora ${count} imágenes históricas de Santander`
 
       const text = caption.trim().length ? caption.trim() : placeholder

@@ -88,7 +88,7 @@ template.innerHTML = `
 
     label ul li a {
       display: block;
-      padding: 10px var(--gap) 10px 35px;
+      padding: 8px var(--gap) 8px 35px;
       text-decoration: none;
       color: inherit;
     }
@@ -149,7 +149,7 @@ template.innerHTML = `
   </style>
   <label>
     ${icon}
-    <input type="search" data-placeholder="Buscar…" />
+    <input type="search" placeholder="Buscar…" />
     <ul></ul>
   </label>
 `
@@ -158,7 +158,6 @@ customElements.define(
   component,
 
   class extends HTMLElement {
-    delay = 350
     selected
     results
     label
@@ -178,7 +177,9 @@ customElements.define(
       this.ul = this.shadowRoot.querySelector('ul')
 
       document.addEventListener('keydown', (event) => {
-        this.input.focus()
+        if (event.key.length === 1 || event.key === 'Backspace') {
+          this.input.focus()
+        }
 
         const actions = {
           Escape: () => this.label.classList.remove('open'),
@@ -232,13 +233,10 @@ customElements.define(
         setTimeout(() => this.label.classList.remove('open'), 100)
       })
 
-      window.addEventListener('popstate', this.init.bind(this))
-    }
-
-    init() {
-      const url = new URL(document.location.href)
-      this.query = url.searchParams.get('q')
-      app.search()
+      window.addEventListener('popstate', () => {
+        const url = new URL(document.location.href)
+        this.query = url.searchParams.get('q')
+      })
     }
 
     get query() {

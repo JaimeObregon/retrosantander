@@ -6,29 +6,36 @@ const template = document.createElement('template')
 template.innerHTML = `
   <style>
     article {
-      max-width: 50rem;
-      margin: auto;
       font-size: 18px;
+      max-width: 42em;
+      margin: auto;
       line-height: 1.5;
-      padding: calc(var(--header-height) + var(--gap)) var(--gap);
     }
 
     article.hidden {
       display: none;
     }
 
+    article h1 {
+      margin: 0;
+    }
+
+    article abbr {
+      cursor: help;
+    }
+
     article li {
       margin: 0.5em 0;
     }
 
-    article li a {
+    article a {
       color: inherit;
       font-weight: 800;
     }
 
     @media (max-width: 640px) {
       article {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.35;
       }
     }
@@ -57,20 +64,21 @@ template.innerHTML = `
         <a href="/?q=valde"><q>valde</q></a
         >, carga fotografías de Valdecilla, Valderredible, Valdeajos…
       </li>
-      <li>
-        <a href="/?q=cervatos"><q>cervatos</q></a
-        >, para ver la Colegiata de Cervatos
-      </li>
-      <li>
-        Usa la imaginación: <a href="/?q=jóvenes"><q>jóvenes</q></a
+    </ul>
+    <p>
+      Aquí tienes algunas ideas para despertar la imaginación: <a href="/?q=jóvenes"><q>jóvenes</q></a
         >, <a href="/?q=desfile"><q>desfile</q></a
         >, <a href="/?q=racing"><q>racing</q></a
+        >, <a href="/?q=castelar"><q>castelar</q></a
         >, <a href="/?q=retrato"><q>retrato</q></a
         >, <a href="/?q=piquio"><q>piquío</q></a
         >, <a href="/?q=puerto"><q>puerto</q></a
+        >, <a href="/?q=accidente"><q>accidente</q></a
+        >, <a href="/?q=uimp"><q>uimp</q></a
+        >, <a href="/?q=inundación"><q>inundación</q></a
+        >, <a href="/?q=fiesta"><q>fiesta</q></a
         >…
-      </li>
-    </ul>
+    </p>
   </article>
 `
 
@@ -78,6 +86,8 @@ customElements.define(
   component,
 
   class extends HTMLElement {
+    article
+
     constructor() {
       super()
       const root = this.attachShadow({ mode: 'open' })
