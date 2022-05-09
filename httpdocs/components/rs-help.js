@@ -6,8 +6,12 @@ const template = document.createElement('template')
 template.innerHTML = `
   <style>
     article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       font-size: 18px;
       max-width: 42em;
+      min-height: calc(100vh - var(--header-height));
       margin: auto;
       line-height: 1.5;
     }
