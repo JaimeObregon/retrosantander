@@ -2,7 +2,6 @@ import { app } from '../modules/retrosantander.js'
 
 const component = 'rs-panel'
 const template = document.createElement('template')
-const containerHeight = 68
 const facesPerRow = 5
 
 template.innerHTML = `
@@ -190,7 +189,6 @@ template.innerHTML = `
 
     aside section#faces ul li {
       font-size: 0;
-      height: ${containerHeight}px;
       padding: var(--border-width);
       box-sizing: border-box;
     }
@@ -214,12 +212,26 @@ template.innerHTML = `
 
     @media (max-width: 768px) {
       aside {
+        font-size: 14px;
         top: auto;
         bottom: 0;
         height: 30vh;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
         box-shadow: 0 -5px 5px #1c191750;
+      }
+
+      aside section#details dl {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      aside section#details dl dt {
+        width: 25px;
+      }
+
+      aside section#details dl dd {
+        width: calc(50% - 25px);
       }
     }
   </style>
@@ -378,6 +390,7 @@ customElements.define(
       const url = `https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${details.id}`
 
       const containerWidth = panel.querySelector('ul').offsetWidth / facesPerRow
+      const containerHeight = containerWidth
 
       const { width, height } = app.selected.getBoundingClientRect()
       const aspectRatio = width / height
@@ -392,12 +405,11 @@ customElements.define(
 
           const facePadding = (containerWidth - realFaceWidth) / 2 - 5
 
-          console.log({ containerWidth, realFaceWidth, facePadding })
           const positionX = backgroundWidth * face.left - facePadding
           const positionY = backgroundHeight * face.top
 
           return `
-            <li>
+            <li style="height: ${containerHeight}px">
               <img
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                 data-id="${face.id}"

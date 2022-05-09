@@ -286,7 +286,7 @@ customElements.define(
     }
 
     zoom(element) {
-      if (this.scale > 1) {
+      if (this.selected) {
         this.restore()
         return
       }

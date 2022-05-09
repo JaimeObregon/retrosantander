@@ -47,7 +47,7 @@ template.innerHTML = `
     }
 
     figure div.face {
-      /*border-radius: 40%;*/
+      border-radius: 100%;
       border-color: var(--color-yellow-500);
     }
 
