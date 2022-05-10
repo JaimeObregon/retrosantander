@@ -34,7 +34,7 @@ En mi portátil, las imágenes del CDIS representan **solo el 3 % de la superfic
 | ---------------------------------------------------------------- | ------------------------------------------------------- |
 | ![Resultados de la búsqueda](/docs/assets/analisis-busqueda.jpg) | ![Ficha de una imagen](/docs/assets/analisis-ficha.jpg) |
 
-Contrapongamos esta equivocada decisión con la maquetación elegida por el Museo del Prado para su sitio web: el museo **luce las obras en el centro de atención**. Las exhibe en toda su grandeza. Se recrea en ellas e invita a seguir explorándolas. Todo lo demás es accesorio y queda oculto tras un interfaz de usuario reducido a la mínima expresión.
+Contrapongamos esta equivocada decisión con la maquetación elegida por el Museo del Prado para su sitio web: el museo **luce las obras en el centro de atención**. Las exhibe en toda su grandeza. Se recrea en ellas e invita a seguir explorándolas. Todo lo demás es accesorio y queda oculto tras una interfaz de usuario reducida a la mínima expresión.
 
 ![Portada del Museo del Prado](/docs/assets/museo.jpg)
 
@@ -112,7 +112,7 @@ Descartada la resignación, con este proyecto me he propuesto experimentar con u
 
 Al resultado lo he llamado Retrosantander y está visible —no sé por cuanto tiempo— en [retrosantander.com](https://retrosantander.com).
 
-Se trata de una prueba de concepto que he confeccionado a título personal para explorar mis ideas en torno a una nueva exploración efectiva exploración de esta base de datos multimedia.
+Se trata de una prueba de concepto que he confeccionado a título personal para explorar mis ideas en torno a una visualización más efectiva de esta base de datos fotográfica.
 
 Me he propuesto destinar tan solo un fin de semano a este reto, razón por la cual debe entenderse como una experimento con defectos y aristas sin pulir.
 
@@ -120,7 +120,7 @@ Tengo más ideas para este prototipo, que en esta ocasión han de quedarse en el
 
 # Obteniendo y estructurando la base de datos del CDIS
 
-A título de experimento personal, es posible descargar la base de datos del CDIS y reconstruirla para ponerla en valor con un interfaz de exploración alternativo.
+A título de experimento personal, es posible descargar la base de datos del CDIS y reconstruirla para ponerla en valor con una interfaz de exploración alternativa.
 
 Sería así.
 

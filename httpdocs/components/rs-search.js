@@ -1,4 +1,4 @@
-import { app } from '../modules/retrosantander.js'
+import { app, normalize } from '../modules/retrosantander.js'
 
 const component = 'rs-search'
 const template = document.createElement('template')
@@ -158,7 +158,7 @@ customElements.define(
   component,
 
   class extends HTMLElement {
-    selected
+    selection
     results
     label
     input
@@ -183,12 +183,10 @@ customElements.define(
 
         const actions = {
           Escape: () => this.label.classList.remove('open'),
-          Enter: () => this.results[this.selection]?.click(),
-          ArrowUp: () => --this.selection,
+          Enter: () => this.results[this.selected]?.click(),
+          ArrowUp: () => --this.selected,
           ArrowDown: () =>
-            this.selection === undefined
-              ? (this.selection = 0)
-              : ++this.selection,
+            this.selected === undefined ? (this.selected = 0) : ++this.selected,
         }
 
         if (!actions[event.key]) {
@@ -198,7 +196,7 @@ customElements.define(
         actions[event.key]()
 
         this.results.forEach((result, index) => {
-          index === this.selection &&
+          this.selected === index &&
             result.scrollIntoView({ behavior: 'smooth', block: 'center' })
         })
 
@@ -211,15 +209,13 @@ customElements.define(
           return
         }
 
-        this.selection = this.results
+        this.selected = this.results
           .map((result) => result.innerText)
           .indexOf(li.innerText)
       })
 
-      this.input.addEventListener('input', (event) => {
-        if (this.query.trim() !== event.target.value.trim()) {
-          this.query = this.input.value
-        }
+      this.input.addEventListener('input', () => {
+        this.query = this.input.value
       })
 
       this.input.addEventListener('focus', () => {
@@ -248,19 +244,15 @@ customElements.define(
       app.search()
     }
 
-    get selection() {
-      return this.selected
+    get selected() {
+      return this.selection
     }
 
-    set selection(value) {
-      value =
-        value < 0
-          ? 0
-          : value < this.results.length - 1
-          ? value
-          : this.results.length - 1
+    set selected(value) {
+      const last = this.results.length - 1
+      value = value < 0 ? 0 : Math.min(value, last)
 
-      this.selected = value
+      this.selection = value
 
       this.results.forEach((result, index) =>
         result.classList.toggle('selected', index === value)
@@ -268,12 +260,13 @@ customElements.define(
     }
 
     set suggestions(suggestions) {
+      const query = normalize(this.query)
       this.ul.innerHTML = suggestions
         .map(
           (q) => `
             <li>
               <a href="/?q=${q}">
-                ${icon} ${q.replace(this.query, `<mark>${this.query}</mark>`)}
+                ${icon} ${q.replace(query, `<mark>${query}</mark>`)}
               </a>
             </li>`
         )
@@ -285,7 +278,7 @@ customElements.define(
         this.label.classList.toggle('open', suggestions.length)
       }
 
-      delete this.selected
+      delete this.selection
     }
   }
 )

@@ -72,8 +72,8 @@ customElements.define(
   component,
 
   class extends HTMLElement {
-    img
     figure
+    img
     id
 
     constructor() {

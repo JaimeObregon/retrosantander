@@ -8,8 +8,6 @@ import '../components/rs-panel.js'
 import '../components/rs-help.js'
 import '../components/rs-loading.js'
 
-await database.load('/data/retrosantander.json')
-
 const debounceDelay = 350
 
 const help = document.querySelector('rs-help')
@@ -19,6 +17,7 @@ const panel = document.querySelector('rs-panel')
 const search = document.querySelector('rs-search')
 const loading = document.querySelector('rs-loading')
 
+// Escapa una cadena para interpolarla de manera segura en HTML
 const escape = (string) =>
   string.replace(
     /[&<>'"]/g,
@@ -32,12 +31,33 @@ const escape = (string) =>
       }[tag])
   )
 
+// Tokeniza una cadena. Véase https://es.stackoverflow.com/a/62032.
+// `Manuel   González-Mesones` > `manuel gonzalez mesones`.
+const normalize = (string) => {
+  return string
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(
+      /([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+/gi,
+      '$1'
+    )
+    .normalize()
+    .replace(/[^a-z0-9ñç ]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
 const app = {
   results: [],
 
   // Establece el título visible en la cabecera de sitio.
   set title(caption) {
     title.caption = caption
+  },
+
+  // Establece el título por defecto de la interfaz.
+  set placeholder(caption) {
+    title.placeholder = caption
   },
 
   // Devuelve el término de búsqueda actual.
@@ -81,6 +101,15 @@ const app = {
     const { results, suggestions } = database.search(this.query)
 
     search.suggestions = suggestions
+
+    const unchanged =
+      results.length === this.results.length &&
+      results.every((item, i) => item === this.results[i])
+
+    if (unchanged) {
+      return
+    }
+
     this.results = results
 
     clearTimeout(this.timeout)
@@ -103,9 +132,13 @@ const app = {
   },
 }
 
+await database.load('/data/retrosantander.json')
+
 // Inicializa la aplicación.
 const url = new URL(document.location.href)
+const count = database.count.toLocaleString()
 app.query = url.searchParams.get('q')
+app.placeholder = `Explora ${count} imágenes históricas de Santander`
 app.title = ''
 
-export { app, database, escape }
+export { app, database, escape, normalize }

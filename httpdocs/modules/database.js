@@ -1,3 +1,4 @@
+import { normalize } from './retrosantander.js'
 import { labels } from '../modules/labels.js'
 
 // Umbral de confianza en la visión artificial.
@@ -6,22 +7,6 @@ const confidenceThreshold = 80
 
 // Cuántas sugerencias de búsqueda mostrar al buscar.
 const maxSuggestions = 100
-
-// Tokeniza una cadena. Véase https://es.stackoverflow.com/a/62032.
-// `Manuel   González-Mesones` > `manuel gonzalez mesones`.
-const normalize = (string) => {
-  return string
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(
-      /([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+/gi,
-      '$1'
-    )
-    .normalize()
-    .replace(/[^a-z0-9ñç ]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
-}
 
 // El CDIS a veces encierra los títulos de las imágenes entre corchetes,
 // entre comillas… Aquí tratamos de revertir los casos más habituales.

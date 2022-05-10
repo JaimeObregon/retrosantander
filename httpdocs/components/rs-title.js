@@ -57,8 +57,9 @@ customElements.define(
   component,
 
   class extends HTMLElement {
-    cite
+    placeholder = 'Explora miles de imágenes históricas'
     delay = { deleting: 5, typing: 30 }
+    cite
 
     constructor() {
       super()
@@ -75,10 +76,7 @@ customElements.define(
     }
 
     set caption(caption) {
-      const count = database.count.toLocaleString()
-      const placeholder = `Explora ${count} imágenes históricas de Santander`
-
-      const text = caption.trim().length ? caption.trim() : placeholder
+      const text = caption.trim().length ? caption.trim() : this.placeholder
 
       if (this.cite.innerText === text) {
         return
