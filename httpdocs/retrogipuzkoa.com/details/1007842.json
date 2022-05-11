@@ -1,0 +1,184 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Architecture",
+      "Confidence": 97.91079711914062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 97.91079711914062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Church",
+      "Confidence": 92.03829956054688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 88.27057647705078,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9439494609832764,
+            "Height": 0.936124861240387,
+            "Left": 0.006304224021732807,
+            "Top": 0.03703870251774788
+          },
+          "Confidence": 88.27057647705078
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 88.27057647705078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Lighting",
+      "Confidence": 82.95438385009766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cathedral",
+      "Confidence": 73.64823150634766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Altar",
+      "Confidence": 70.52669525146484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 68.75037384033203,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.026556994765996933,
+            "Height": 0.044890716671943665,
+            "Left": 0.16829073429107666,
+            "Top": 0.7662377953529358
+          },
+          "Confidence": 68.75037384033203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.029899468645453453,
+            "Height": 0.07389354705810547,
+            "Left": 0.4580269455909729,
+            "Top": 0.7815773487091064
+          },
+          "Confidence": 68.60603332519531
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02945210598409176,
+            "Height": 0.06383977830410004,
+            "Left": 0.3912026882171631,
+            "Top": 0.7448558807373047
+          },
+          "Confidence": 49.008209228515625
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 68.75037384033203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bonfire",
+      "Confidence": 68.02941131591797,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.26203006505966187,
+            "Height": 0.21615402400493622,
+            "Left": 0.16944587230682373,
+            "Top": 0.7577558159828186
+          },
+          "Confidence": 68.02941131591797
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Flame"
+        },
+        {
+          "Name": "Fire"
+        }
+      ]
+    },
+    {
+      "Name": "Fire",
+      "Confidence": 68.02941131591797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Flame",
+      "Confidence": 68.02941131591797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fire"
+        }
+      ]
+    },
+    {
+      "Name": "Crypt",
+      "Confidence": 65.70671081542969,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

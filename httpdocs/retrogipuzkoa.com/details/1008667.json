@@ -1,0 +1,83 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 99.76951599121094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 99.62574005126953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arch",
+      "Confidence": 98.28743743896484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arched",
+      "Confidence": 98.28743743896484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arch Bridge",
+      "Confidence": 73.10334014892578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bridge"
+        },
+        {
+          "Name": "Arch"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Architecture"
+        }
+      ]
+    },
+    {
+      "Name": "Bridge",
+      "Confidence": 73.10334014892578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 70.70767211914062,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

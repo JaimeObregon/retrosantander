@@ -1,0 +1,130 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Painting",
+      "Confidence": 96.14037322998047,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9860400557518005,
+            "Height": 0.8772416114807129,
+            "Left": 0.004841647110879421,
+            "Top": 0.0827227383852005
+          },
+          "Confidence": 96.14037322998047
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 96.14037322998047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Armor",
+      "Confidence": 83.94437408447266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 78.78663635253906,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.21344447135925293,
+            "Height": 0.3032355010509491,
+            "Left": 0.6776283383369446,
+            "Top": 0.4670119881629944
+          },
+          "Confidence": 74.6519775390625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.17931969463825226,
+            "Height": 0.3121652603149414,
+            "Left": 0.20571069419384003,
+            "Top": 0.47078749537467957
+          },
+          "Confidence": 71.66422271728516
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 78.78663635253906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Statue",
+      "Confidence": 72.70252990722656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sculpture"
+        },
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Sculpture",
+      "Confidence": 72.70252990722656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 62.20587921142578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Crypt",
+      "Confidence": 59.41401672363281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rock",
+      "Confidence": 58.168067932128906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 55.82136535644531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 55.82136535644531,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

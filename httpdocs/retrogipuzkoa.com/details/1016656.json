@@ -1,0 +1,97 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 91.66425323486328,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.46125519275665283,
+            "Height": 0.7778743505477905,
+            "Left": 0.3780108094215393,
+            "Top": 0.20201219618320465
+          },
+          "Confidence": 91.66425323486328
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.30594417452812195,
+            "Height": 0.7632974982261658,
+            "Left": 0.6755333542823792,
+            "Top": 0.20434699952602386
+          },
+          "Confidence": 76.36600494384766
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 91.66425323486328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bottle",
+      "Confidence": 83.89337921142578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Alcohol",
+      "Confidence": 83.27156829833984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Beverage"
+        }
+      ]
+    },
+    {
+      "Name": "Beverage",
+      "Confidence": 83.27156829833984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Drink",
+      "Confidence": 83.27156829833984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Beer",
+      "Confidence": 77.25580596923828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Alcohol"
+        },
+        {
+          "Name": "Beverage"
+        }
+      ]
+    },
+    {
+      "Name": "Beer Bottle",
+      "Confidence": 62.95673370361328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Beer"
+        },
+        {
+          "Name": "Bottle"
+        },
+        {
+          "Name": "Alcohol"
+        },
+        {
+          "Name": "Beverage"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

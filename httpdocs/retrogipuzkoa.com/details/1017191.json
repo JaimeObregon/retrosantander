@@ -1,0 +1,204 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.18301391601562,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03932720422744751,
+            "Height": 0.1544141173362732,
+            "Left": 0.002923510270193219,
+            "Top": 0.8239632844924927
+          },
+          "Confidence": 98.18301391601562
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.18301391601562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Airport",
+      "Confidence": 97.1534652709961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Airfield",
+      "Confidence": 95.34458923339844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Airport"
+        }
+      ]
+    },
+    {
+      "Name": "Airplane",
+      "Confidence": 93.7182388305664,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8316589593887329,
+            "Height": 0.3733217120170593,
+            "Left": 0.11158987879753113,
+            "Top": 0.39483577013015747
+          },
+          "Confidence": 93.7182388305664
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Aircraft",
+      "Confidence": 93.7182388305664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 93.7182388305664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 93.7182388305664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Helicopter",
+      "Confidence": 81.02336883544922,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.05811264365911484,
+            "Height": 0.08066427707672119,
+            "Left": 0.9401329755783081,
+            "Top": 0.4986647665500641
+          },
+          "Confidence": 81.02336883544922
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Warplane",
+      "Confidence": 69.2273941040039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Airplane"
+        },
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Jet",
+      "Confidence": 63.79540252685547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Airplane"
+        },
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Landing",
+      "Confidence": 56.86930465698242,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Airplane"
+        },
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bomber",
+      "Confidence": 56.70700454711914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Warplane"
+        },
+        {
+          "Name": "Airplane"
+        },
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

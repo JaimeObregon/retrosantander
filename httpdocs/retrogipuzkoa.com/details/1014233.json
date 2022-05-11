@@ -1,0 +1,58 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Text",
+      "Confidence": 99.71798706054688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Page",
+      "Confidence": 99.17189025878906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Book",
+      "Confidence": 98.20027160644531,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9418371319770813,
+            "Height": 0.9709736108779907,
+            "Left": 0.008751717396080494,
+            "Top": 0.023011216893792152
+          },
+          "Confidence": 98.20027160644531
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Menu",
+      "Confidence": 96.79147338867188,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9666301608085632,
+            "Height": 0.9380127191543579,
+            "Left": 0.030674442648887634,
+            "Top": 0.04662271961569786
+          },
+          "Confidence": 96.79147338867188
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

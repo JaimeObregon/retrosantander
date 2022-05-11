@@ -1,0 +1,89 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Soil",
+      "Confidence": 99.72116088867188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Archaeology",
+      "Confidence": 97.6171875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tomb",
+      "Confidence": 83.8294448852539,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bulldozer",
+      "Confidence": 62.357337951660156,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.885437548160553,
+            "Height": 0.6779295802116394,
+            "Left": 0.04607732966542244,
+            "Top": 0.18585382401943207
+          },
+          "Confidence": 62.357337951660156
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Tractor"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 62.357337951660156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 62.357337951660156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Tractor",
+      "Confidence": 62.357337951660156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Tombstone",
+      "Confidence": 59.15934753417969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tomb"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

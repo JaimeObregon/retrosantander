@@ -1,0 +1,171 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Insect",
+      "Confidence": 97.45824432373047,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.22984303534030914,
+            "Height": 0.43680909276008606,
+            "Left": 0.049076147377491,
+            "Top": 0.42346081137657166
+          },
+          "Confidence": 80.88042449951172
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.22242774069309235,
+            "Height": 0.6502599716186523,
+            "Left": 0.3446941077709198,
+            "Top": 0.2980253994464874
+          },
+          "Confidence": 68.34929656982422
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Invertebrate"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Invertebrate",
+      "Confidence": 97.45824432373047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 97.45824432373047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Honey Bee",
+      "Confidence": 82.27667236328125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3697661757469177,
+            "Height": 0.42207422852516174,
+            "Left": 0.5858933925628662,
+            "Top": 0.3035459816455841
+          },
+          "Confidence": 82.27667236328125
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Bee"
+        },
+        {
+          "Name": "Insect"
+        },
+        {
+          "Name": "Invertebrate"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bee",
+      "Confidence": 82.27667236328125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Insect"
+        },
+        {
+          "Name": "Invertebrate"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cockroach",
+      "Confidence": 74.75694274902344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Insect"
+        },
+        {
+          "Name": "Invertebrate"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Spider",
+      "Confidence": 70.772216796875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7442812323570251,
+            "Height": 0.8040687441825867,
+            "Left": 0.10179240256547928,
+            "Top": 0.12449757009744644
+          },
+          "Confidence": 70.772216796875
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Invertebrate"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Arachnid",
+      "Confidence": 70.772216796875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Invertebrate"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 64.49905395507812,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2571864128112793,
+            "Height": 0.37467098236083984,
+            "Left": 0.6325949430465698,
+            "Top": 0.3091466426849365
+          },
+          "Confidence": 64.49905395507812
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

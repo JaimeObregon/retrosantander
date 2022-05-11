@@ -1,0 +1,280 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Soil",
+      "Confidence": 99.99015808105469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.68711853027344,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06870866566896439,
+            "Height": 0.19327284395694733,
+            "Left": 0.13099421560764313,
+            "Top": 0.4844270348548889
+          },
+          "Confidence": 99.68711853027344
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05767158418893814,
+            "Height": 0.18814228475093842,
+            "Left": 0.3420836627483368,
+            "Top": 0.39439618587493896
+          },
+          "Confidence": 97.05900573730469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06195421889424324,
+            "Height": 0.14688365161418915,
+            "Left": 0.7103102803230286,
+            "Top": 0.6422895193099976
+          },
+          "Confidence": 96.89479064941406
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07630562037229538,
+            "Height": 0.09547461569309235,
+            "Left": 0.1984347105026245,
+            "Top": 0.901785671710968
+          },
+          "Confidence": 96.7518310546875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04193832725286484,
+            "Height": 0.18350645899772644,
+            "Left": 0.555479109287262,
+            "Top": 0.6531781554222107
+          },
+          "Confidence": 96.25211334228516
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.046632423996925354,
+            "Height": 0.10806333273649216,
+            "Left": 0.19908872246742249,
+            "Top": 0.41884681582450867
+          },
+          "Confidence": 95.7925033569336
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.68711853027344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Archaeology",
+      "Confidence": 92.77367401123047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ground",
+      "Confidence": 81.56190490722656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Skateboard",
+      "Confidence": 75.18055725097656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04487015679478645,
+            "Height": 0.03334668278694153,
+            "Left": 0.36827975511550903,
+            "Top": 0.5705735087394714
+          },
+          "Confidence": 75.18055725097656
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 75.18055725097656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 75.18055725097656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Soccer Ball",
+      "Confidence": 59.379066467285156,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.05600542947649956,
+            "Height": 0.07568359375,
+            "Left": 0.828845739364624,
+            "Top": 0.6993685960769653
+          },
+          "Confidence": 59.379066467285156
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Ball"
+        },
+        {
+          "Name": "Soccer"
+        },
+        {
+          "Name": "Football"
+        },
+        {
+          "Name": "Team Sport"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 59.379066467285156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Team",
+      "Confidence": 59.379066467285156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "People"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Team Sport",
+      "Confidence": 59.379066467285156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Football",
+      "Confidence": 59.379066467285156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Team Sport"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Soccer",
+      "Confidence": 59.379066467285156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Football"
+        },
+        {
+          "Name": "Team Sport"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Ball",
+      "Confidence": 59.379066467285156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mining",
+      "Confidence": 58.282142639160156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

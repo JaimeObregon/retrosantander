@@ -1,0 +1,174 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Boat",
+      "Confidence": 99.9608383178711,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3401838541030884,
+            "Height": 0.4371573328971863,
+            "Left": 0.3856072425842285,
+            "Top": 0.1864626556634903
+          },
+          "Confidence": 99.9608383178711
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.9608383178711,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.9608383178711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 99.57937622070312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cruiser",
+      "Confidence": 91.75968933105469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Navy"
+        },
+        {
+          "Name": "Ship"
+        },
+        {
+          "Name": "Military"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Military",
+      "Confidence": 91.75968933105469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ship",
+      "Confidence": 91.75968933105469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Navy",
+      "Confidence": 91.75968933105469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 83.4223861694336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fog",
+      "Confidence": 79.58333587646484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Smoke",
+      "Confidence": 76.22924041748047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Steamer",
+      "Confidence": 70.46218872070312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 62.37742614746094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Battleship",
+      "Confidence": 57.49540710449219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Navy"
+        },
+        {
+          "Name": "Ship"
+        },
+        {
+          "Name": "Military"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Smog",
+      "Confidence": 57.05648422241211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fog"
+        },
+        {
+          "Name": "Smoke"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

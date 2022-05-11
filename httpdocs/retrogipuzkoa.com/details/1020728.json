@@ -1,0 +1,154 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Archaeology",
+      "Confidence": 93.39303588867188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 90.29977416992188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tomb",
+      "Confidence": 89.78619384765625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 87.40061950683594,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10106530040502548,
+            "Height": 0.17151853442192078,
+            "Left": 0.5270348191261292,
+            "Top": 0.45778149366378784
+          },
+          "Confidence": 87.40061950683594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.16924020648002625,
+            "Height": 0.3826627731323242,
+            "Left": 0.752990186214447,
+            "Top": 0.42007437348365784
+          },
+          "Confidence": 69.1262435913086
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0939108207821846,
+            "Height": 0.1812717318534851,
+            "Left": 0.38739994168281555,
+            "Top": 0.45494985580444336
+          },
+          "Confidence": 66.70609283447266
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 87.40061950683594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 83.97649383544922,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9546334147453308,
+            "Height": 0.9490463733673096,
+            "Left": 0.04255757853388786,
+            "Top": 0.044125258922576904
+          },
+          "Confidence": 83.97649383544922
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 83.97649383544922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 78.75560760498047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 78.75560760498047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Temple",
+      "Confidence": 75.4115982055664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tombstone",
+      "Confidence": 66.15381622314453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tomb"
+        }
+      ]
+    },
+    {
+      "Name": "Shrine",
+      "Confidence": 58.98476028442383,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Worship"
+        },
+        {
+          "Name": "Temple"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Worship",
+      "Confidence": 58.98476028442383,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,121 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Architecture",
+      "Confidence": 99.65988159179688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.65988159179688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Arch",
+      "Confidence": 97.91381072998047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arched",
+      "Confidence": 97.91381072998047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arch Bridge",
+      "Confidence": 96.42500305175781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bridge"
+        },
+        {
+          "Name": "Arch"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Architecture"
+        }
+      ]
+    },
+    {
+      "Name": "Bridge",
+      "Confidence": 96.42500305175781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Drawbridge",
+      "Confidence": 91.29499053955078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Arch Bridge"
+        },
+        {
+          "Name": "Bridge"
+        },
+        {
+          "Name": "Arch"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Architecture"
+        }
+      ]
+    },
+    {
+      "Name": "Gate",
+      "Confidence": 80.9063720703125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.41092649102211,
+            "Height": 0.3176444172859192,
+            "Left": 0.2750934958457947,
+            "Top": 0.46384239196777344
+          },
+          "Confidence": 80.9063720703125
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Wall",
+      "Confidence": 56.215476989746094,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

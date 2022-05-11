@@ -1,0 +1,254 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Architecture",
+      "Confidence": 99.7262191772461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.7262191772461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Church",
+      "Confidence": 98.54247283935547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Altar",
+      "Confidence": 96.09127044677734,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.900977611541748,
+            "Height": 0.868768036365509,
+            "Left": 0.05740286782383919,
+            "Top": 0.07598318159580231
+          },
+          "Confidence": 73.41899108886719
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Monastery",
+      "Confidence": 84.04759979248047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 84.04759979248047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Clock Tower",
+      "Confidence": 82.4526596069336,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.045882269740104675,
+            "Height": 0.10058652609586716,
+            "Left": 0.31180837750434875,
+            "Top": 0.5913383960723877
+          },
+          "Confidence": 82.4526596069336
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tower",
+      "Confidence": 82.4526596069336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Cathedral",
+      "Confidence": 72.61214447021484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Temple",
+      "Confidence": 71.05877685546875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 68.2708740234375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shrine",
+      "Confidence": 68.11654663085938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Worship"
+        },
+        {
+          "Name": "Temple"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Worship",
+      "Confidence": 68.11654663085938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mansion",
+      "Confidence": 60.90536880493164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "House"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "House",
+      "Confidence": 60.90536880493164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 60.90010070800781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apse",
+      "Confidence": 56.97458267211914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Interior Design",
+      "Confidence": 56.19199752807617,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Hall",
+      "Confidence": 56.01909637451172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

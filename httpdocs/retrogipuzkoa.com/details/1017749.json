@@ -1,0 +1,76 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Rock",
+      "Confidence": 99.64866638183594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Turtle",
+      "Confidence": 85.42261505126953,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.27417507767677307,
+            "Height": 0.1514836847782135,
+            "Left": 0.06049077957868576,
+            "Top": 0.7006374001502991
+          },
+          "Confidence": 85.42261505126953
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Reptile"
+        },
+        {
+          "Name": "Sea Life"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 85.42261505126953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sea Life",
+      "Confidence": 85.42261505126953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Reptile",
+      "Confidence": 85.42261505126953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Slate",
+      "Confidence": 65.71054077148438,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Coal",
+      "Confidence": 56.039405822753906,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

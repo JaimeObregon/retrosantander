@@ -1,0 +1,220 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.62236785888672,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08087627589702606,
+            "Height": 0.1227804645895958,
+            "Left": 0.4527387022972107,
+            "Top": 0.6675556302070618
+          },
+          "Confidence": 99.62236785888672
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.060840312391519547,
+            "Height": 0.11119984090328217,
+            "Left": 0.5314021706581116,
+            "Top": 0.6711517572402954
+          },
+          "Confidence": 98.19522094726562
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.060348931699991226,
+            "Height": 0.10511431843042374,
+            "Left": 0.39181217551231384,
+            "Top": 0.6801112294197083
+          },
+          "Confidence": 97.67662048339844
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.061301346868276596,
+            "Height": 0.11210990697145462,
+            "Left": 0.3332976996898651,
+            "Top": 0.6752181649208069
+          },
+          "Confidence": 97.42507934570312
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0700450912117958,
+            "Height": 0.11512172967195511,
+            "Left": 0.2146836370229721,
+            "Top": 0.6704872846603394
+          },
+          "Confidence": 96.13941192626953
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0806083232164383,
+            "Height": 0.19442503154277802,
+            "Left": 0.8618945479393005,
+            "Top": 0.6633056402206421
+          },
+          "Confidence": 93.42340087890625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05064821615815163,
+            "Height": 0.10633009672164917,
+            "Left": 0.3082926273345947,
+            "Top": 0.6773138642311096
+          },
+          "Confidence": 92.88818359375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.056271981447935104,
+            "Height": 0.061773575842380524,
+            "Left": 0.15986783802509308,
+            "Top": 0.6697666049003601
+          },
+          "Confidence": 90.65453338623047
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06363149732351303,
+            "Height": 0.16766946017742157,
+            "Left": 0.7992919087409973,
+            "Top": 0.6611876487731934
+          },
+          "Confidence": 82.37948608398438
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06888534128665924,
+            "Height": 0.03291786462068558,
+            "Left": 0.27554014325141907,
+            "Top": 0.9642943143844604
+          },
+          "Confidence": 76.52215576171875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.061905328184366226,
+            "Height": 0.04753953218460083,
+            "Left": 0.3961690068244934,
+            "Top": 0.9496203064918518
+          },
+          "Confidence": 68.12561798095703
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07126357406377792,
+            "Height": 0.16848187148571014,
+            "Left": 0.8315232396125793,
+            "Top": 0.6640326976776123
+          },
+          "Confidence": 57.38045883178711
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0706174224615097,
+            "Height": 0.04391297325491905,
+            "Left": 0.45735618472099304,
+            "Top": 0.9538841843605042
+          },
+          "Confidence": 46.000579833984375
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.62236785888672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 99.3858871459961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.3858871459961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Church",
+      "Confidence": 98.02188873291016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Altar",
+      "Confidence": 97.47053527832031,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9245263338088989,
+            "Height": 0.922874391078949,
+            "Left": 0.034528084099292755,
+            "Top": 0.04739047959446907
+          },
+          "Confidence": 75.31383514404297
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Apse",
+      "Confidence": 82.5030746459961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Cathedral",
+      "Confidence": 69.24425506591797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

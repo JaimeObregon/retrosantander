@@ -1,0 +1,85 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Sheep",
+      "Confidence": 99.456298828125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.4856574237346649,
+            "Height": 0.2717567980289459,
+            "Left": 0.4988512098789215,
+            "Top": 0.011037565767765045
+          },
+          "Confidence": 99.456298828125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.32445964217185974,
+            "Height": 0.2007657289505005,
+            "Left": 0.3897537589073181,
+            "Top": 0.09472283720970154
+          },
+          "Confidence": 98.29048919677734
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 99.456298828125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.456298828125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 89.90750122070312,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5290763974189758,
+            "Height": 0.6495057344436646,
+            "Left": 0.01107981987297535,
+            "Top": 0.10832664370536804
+          },
+          "Confidence": 89.90750122070312
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.42909425497055054,
+            "Height": 0.2937220633029938,
+            "Left": 0.08195681124925613,
+            "Top": 0.00046711970935575664
+          },
+          "Confidence": 77.3837890625
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 89.90750122070312,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

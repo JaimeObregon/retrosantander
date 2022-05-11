@@ -1,0 +1,176 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.44734191894531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.23458862304688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mountain",
+      "Confidence": 98.63309478759766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Peak",
+      "Confidence": 97.00777435302734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mountain Range"
+        },
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Mountain Range",
+      "Confidence": 97.00777435302734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 85.7142562866211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Slope",
+      "Confidence": 73.4593276977539,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ice",
+      "Confidence": 73.25634002685547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Scenery",
+      "Confidence": 69.84335327148438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Astronomy",
+      "Confidence": 64.56974792480469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rug",
+      "Confidence": 63.51918029785156,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9623105525970459,
+            "Height": 0.7208104133605957,
+            "Left": 0.006445526611059904,
+            "Top": 0.2764423191547394
+          },
+          "Confidence": 63.51918029785156
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Outer Space",
+      "Confidence": 61.91050338745117,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Astronomy"
+        }
+      ]
+    },
+    {
+      "Name": "Universe",
+      "Confidence": 61.91050338745117,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Astronomy"
+        }
+      ]
+    },
+    {
+      "Name": "Space",
+      "Confidence": 61.91050338745117,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Astronomy"
+        }
+      ]
+    },
+    {
+      "Name": "Landscape",
+      "Confidence": 61.40570068359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

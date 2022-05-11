@@ -1,0 +1,123 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 97.12946319580078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 96.80221557617188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 91.97944641113281,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5434185862541199,
+            "Height": 0.3316974937915802,
+            "Left": 0.2595994472503662,
+            "Top": 0.5915161967277527
+          },
+          "Confidence": 91.97944641113281
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012825199402868748,
+            "Height": 0.05323774740099907,
+            "Left": 0.22065338492393494,
+            "Top": 0.9280863404273987
+          },
+          "Confidence": 85.24540710449219
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.018142754212021828,
+            "Height": 0.034332774579524994,
+            "Left": 0.579028844833374,
+            "Top": 0.9616002440452576
+          },
+          "Confidence": 61.07157516479492
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 91.97944641113281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crowd",
+      "Confidence": 89.42822265625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 83.0087661743164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 80.1937255859375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Landscape",
+      "Confidence": 76.04686737060547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Field",
+      "Confidence": 68.33090209960938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Audience",
+      "Confidence": 56.27829360961914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Crowd"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

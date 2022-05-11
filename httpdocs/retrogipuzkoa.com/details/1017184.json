@@ -1,0 +1,175 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.72708129882812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.90238189697266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Storm",
+      "Confidence": 91.65185546875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 90.71467590332031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 89.69642639160156,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.014982095919549465,
+            "Height": 0.03449785336852074,
+            "Left": 0.8270097970962524,
+            "Top": 0.19053126871585846
+          },
+          "Confidence": 89.69642639160156
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.017071105539798737,
+            "Height": 0.08575598895549774,
+            "Left": 0.8472902774810791,
+            "Top": 0.13769350945949554
+          },
+          "Confidence": 74.55191802978516
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 89.69642639160156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Winter",
+      "Confidence": 81.87457275390625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Blizzard",
+      "Confidence": 73.51422119140625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Winter"
+        },
+        {
+          "Name": "Storm"
+        },
+        {
+          "Name": "Snow"
+        },
+        {
+          "Name": "Nature"
+        },
+        {
+          "Name": "Outdoors"
+        }
+      ]
+    },
+    {
+      "Name": "Weather",
+      "Confidence": 65.07284545898438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Land",
+      "Confidence": 64.15827941894531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Bear",
+      "Confidence": 63.83755874633789,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.29626041650772095,
+            "Height": 0.27942803502082825,
+            "Left": 0.23159517347812653,
+            "Top": 0.41058769822120667
+          },
+          "Confidence": 63.83755874633789
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 63.83755874633789,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 63.83755874633789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 63.83755874633789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

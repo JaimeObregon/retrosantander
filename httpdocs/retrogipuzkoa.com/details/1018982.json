@@ -1,0 +1,194 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.72118377685547,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1544717401266098,
+            "Height": 0.43248963356018066,
+            "Left": 0.41754063963890076,
+            "Top": 0.38377830386161804
+          },
+          "Confidence": 99.72118377685547
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.018879083916544914,
+            "Height": 0.08005085587501526,
+            "Left": 0.21846109628677368,
+            "Top": 0.5384584069252014
+          },
+          "Confidence": 43.43098068237305
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.72118377685547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 93.00228118896484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 93.00228118896484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Field",
+      "Confidence": 81.96815490722656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 73.32222747802734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Cricket",
+      "Confidence": 68.56682586669922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Shorts",
+      "Confidence": 66.11605072021484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 66.11605072021484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 66.11605072021484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Badminton",
+      "Confidence": 57.17594528198242,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Hurdle",
+      "Confidence": 56.3460693359375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Long Jump",
+      "Confidence": 55.91514205932617,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Volleyball",
+      "Confidence": 55.4285888671875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Team Sport"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Team",
+      "Confidence": 55.4285888671875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "People"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Team Sport",
+      "Confidence": 55.4285888671875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,41 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Cable",
+      "Confidence": 97.97369384765625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Power Lines",
+      "Confidence": 96.21912384033203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cable"
+        }
+      ]
+    },
+    {
+      "Name": "Electric Transmission Tower",
+      "Confidence": 95.27017211914062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Power Lines"
+        },
+        {
+          "Name": "Cable"
+        }
+      ]
+    },
+    {
+      "Name": "Utility Pole",
+      "Confidence": 75.5876693725586,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

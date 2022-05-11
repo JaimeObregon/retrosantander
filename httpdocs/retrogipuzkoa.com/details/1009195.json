@@ -1,0 +1,105 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Architecture",
+      "Confidence": 99.82379150390625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.82379150390625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Altar",
+      "Confidence": 98.88957214355469,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9781339168548584,
+            "Height": 0.891989529132843,
+            "Left": 0.004971632733941078,
+            "Top": 0.04738948866724968
+          },
+          "Confidence": 62.6889762878418
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Church",
+      "Confidence": 98.88957214355469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 90.09312438964844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09701403230428696,
+            "Height": 0.12169210612773895,
+            "Left": 0.24710622429847717,
+            "Top": 0.6576749682426453
+          },
+          "Confidence": 90.09312438964844
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.11344846338033676,
+            "Height": 0.11706575006246567,
+            "Left": 0.37107428908348083,
+            "Top": 0.6868109703063965
+          },
+          "Confidence": 88.7223129272461
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 90.09312438964844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apse",
+      "Confidence": 68.76609802246094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

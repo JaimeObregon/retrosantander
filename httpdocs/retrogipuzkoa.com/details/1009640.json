@@ -1,0 +1,57 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Animal",
+      "Confidence": 73.82157135009766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Snake",
+      "Confidence": 72.29478454589844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.570507824420929,
+            "Height": 0.4747667610645294,
+            "Left": 0.21359917521476746,
+            "Top": 0.25487223267555237
+          },
+          "Confidence": 72.29478454589844
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Reptile"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Reptile",
+      "Confidence": 72.29478454589844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Fossil",
+      "Confidence": 59.6570930480957,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 57.40593719482422,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,138 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bird",
+      "Confidence": 96.5655746459961,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.206679105758667,
+            "Height": 0.352187842130661,
+            "Left": 0.40036413073539734,
+            "Top": 0.33346039056777954
+          },
+          "Confidence": 77.76116943359375
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 96.5655746459961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Parrot",
+      "Confidence": 92.24308013916016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 86.1923599243164,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06969211250543594,
+            "Height": 0.12239604443311691,
+            "Left": 0.26707923412323,
+            "Top": 0.2413063645362854
+          },
+          "Confidence": 86.1923599243164
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 86.1923599243164,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cat",
+      "Confidence": 78.55830383300781,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.20335885882377625,
+            "Height": 0.3556416928768158,
+            "Left": 0.40209007263183594,
+            "Top": 0.3315886855125427
+          },
+          "Confidence": 78.55830383300781
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.24213047325611115,
+            "Height": 0.2887747585773468,
+            "Left": 0.29659533500671387,
+            "Top": 0.3240410387516022
+          },
+          "Confidence": 70.99786376953125
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 78.55830383300781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 78.55830383300781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cockatoo",
+      "Confidence": 77.40985870361328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Parrot"
+        },
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

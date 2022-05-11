@@ -1,0 +1,76 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Elephant",
+      "Confidence": 99.7850570678711,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5938624739646912,
+            "Height": 0.7324344515800476,
+            "Left": 0.10954926908016205,
+            "Top": 0.13878203928470612
+          },
+          "Confidence": 99.7850570678711
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.2500438094139099,
+            "Height": 0.33242905139923096,
+            "Left": 0.5603005886077881,
+            "Top": 0.4802815914154053
+          },
+          "Confidence": 99.28777313232422
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.23306097090244293,
+            "Height": 0.4771791398525238,
+            "Left": 0.060884978622198105,
+            "Top": 0.5127004384994507
+          },
+          "Confidence": 95.02229309082031
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 99.7850570678711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.7850570678711,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 99.7850570678711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

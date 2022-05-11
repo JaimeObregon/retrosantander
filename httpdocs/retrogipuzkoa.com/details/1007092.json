@@ -1,0 +1,127 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.09264373779297,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.4965897500514984,
+            "Height": 0.9201691746711731,
+            "Left": 0.03541543707251549,
+            "Top": 0.059562891721725464
+          },
+          "Confidence": 99.09264373779297
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.09264373779297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Guitar",
+      "Confidence": 96.17264556884766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Leisure Activities"
+        },
+        {
+          "Name": "Musical Instrument"
+        }
+      ]
+    },
+    {
+      "Name": "Leisure Activities",
+      "Confidence": 96.17264556884766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Musical Instrument",
+      "Confidence": 96.17264556884766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Musician",
+      "Confidence": 88.65316009521484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Musical Instrument"
+        }
+      ]
+    },
+    {
+      "Name": "Bass Guitar",
+      "Confidence": 82.87615203857422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Guitar"
+        },
+        {
+          "Name": "Leisure Activities"
+        },
+        {
+          "Name": "Musical Instrument"
+        }
+      ]
+    },
+    {
+      "Name": "Guitarist",
+      "Confidence": 77.83811950683594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Performer"
+        },
+        {
+          "Name": "Musician"
+        },
+        {
+          "Name": "Guitar"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Musical Instrument"
+        },
+        {
+          "Name": "Leisure Activities"
+        }
+      ]
+    },
+    {
+      "Name": "Performer",
+      "Confidence": 77.83811950683594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Lute",
+      "Confidence": 60.7053337097168,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Musical Instrument"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

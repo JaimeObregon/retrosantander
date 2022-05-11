@@ -1,4 +1,5 @@
 import { database } from './database.js'
+import { projects } from './projects.js'
 import '../components/rs-logo.js'
 import '../components/rs-title.js'
 import '../components/rs-search.js'
@@ -11,7 +12,9 @@ import '../components/rs-loading.js'
 const debounceDelay = 350
 
 const help = document.querySelector('rs-help')
+const logo = document.querySelector('rs-logo')
 const grid = document.querySelector('rs-grid')
+const menu = document.querySelector('rs-menu')
 const title = document.querySelector('rs-title')
 const panel = document.querySelector('rs-panel')
 const search = document.querySelector('rs-search')
@@ -132,13 +135,32 @@ const app = {
   },
 }
 
-await database.load('/data/retrosantander.json')
+const { hostname } = document.location
+const project = hostname === '127.0.0.1' ? 'retrogipuzkoa.com' : hostname
+
+if (!projects[project]) {
+  throw new Error(`No hay ningún projecto asociado a ${hostname}.`)
+}
+
+app.project = projects[project]
+
+logo.innerHTML = app.project.logo
+;(async () => {
+  const response = await fetch(app.project.about)
+  menu.innerHTML = await response.text()
+})()
+;(async () => {
+  const response = await fetch(app.project.help)
+  help.innerHTML = await response.text()
+})()
+
+await database.load(app.project.database)
 
 // Inicializa la aplicación.
 const url = new URL(document.location.href)
 const count = database.count.toLocaleString()
 app.query = url.searchParams.get('q')
-app.placeholder = `Explora ${count} imágenes históricas de Santander`
+app.placeholder = app.project.placeholder(count)
 app.title = ''
 
 export { app, database, escape, normalize }

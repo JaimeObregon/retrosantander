@@ -1,0 +1,210 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Boat",
+      "Confidence": 99.32759857177734,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9672596454620361,
+            "Height": 0.6596798896789551,
+            "Left": 0.016519753262400627,
+            "Top": 0.2035992443561554
+          },
+          "Confidence": 99.32759857177734
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.32759857177734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.32759857177734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ferry",
+      "Confidence": 93.74176025390625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Boat"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Watercraft",
+      "Confidence": 88.17059326171875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vessel",
+      "Confidence": 88.17059326171875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 85.19556427001953,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03225309029221535,
+            "Height": 0.06003353372216225,
+            "Left": 0.17362374067306519,
+            "Top": 0.5937373638153076
+          },
+          "Confidence": 85.19556427001953
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.021609218791127205,
+            "Height": 0.08561532944440842,
+            "Left": 0.04548834636807442,
+            "Top": 0.6312611699104309
+          },
+          "Confidence": 62.99431228637695
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 85.19556427001953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Barge",
+      "Confidence": 82.09937286376953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Watercraft"
+        },
+        {
+          "Name": "Boat"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Military",
+      "Confidence": 81.01018524169922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cruiser",
+      "Confidence": 66.01911926269531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Navy"
+        },
+        {
+          "Name": "Ship"
+        },
+        {
+          "Name": "Military"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Ship",
+      "Confidence": 66.01911926269531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Navy",
+      "Confidence": 66.01911926269531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Tugboat",
+      "Confidence": 63.5974006652832,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Boat"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Steamer",
+      "Confidence": 55.26065444946289,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,232 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.70291900634766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.00517272949219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 98.6622085571289,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04883135110139847,
+            "Height": 0.14905859529972076,
+            "Left": 0.6334224939346313,
+            "Top": 0.6162762641906738
+          },
+          "Confidence": 98.6622085571289
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06516115367412567,
+            "Height": 0.07363147288560867,
+            "Left": 0.28743454813957214,
+            "Top": 0.7236759066581726
+          },
+          "Confidence": 96.89445495605469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06396748870611191,
+            "Height": 0.09831494092941284,
+            "Left": 0.45334547758102417,
+            "Top": 0.7301083207130432
+          },
+          "Confidence": 95.28242492675781
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 98.6622085571289,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 97.92479705810547,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.42995280027389526,
+            "Height": 0.43281006813049316,
+            "Left": 0.25264739990234375,
+            "Top": 0.38861626386642456
+          },
+          "Confidence": 97.92479705810547
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 97.92479705810547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 97.92479705810547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 97.92479705810547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 85.78003692626953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Storm",
+      "Confidence": 84.05101013183594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Winter",
+      "Confidence": 79.69915771484375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 74.08767700195312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 73.51822662353516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 73.51822662353516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 73.51822662353516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Weather",
+      "Confidence": 59.3575439453125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Blizzard",
+      "Confidence": 57.199790954589844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Winter"
+        },
+        {
+          "Name": "Storm"
+        },
+        {
+          "Name": "Snow"
+        },
+        {
+          "Name": "Nature"
+        },
+        {
+          "Name": "Outdoors"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

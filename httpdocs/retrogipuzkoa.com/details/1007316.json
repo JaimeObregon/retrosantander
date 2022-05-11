@@ -1,0 +1,316 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.87067413330078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.26930236816406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 98.91370391845703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1711498349905014,
+            "Height": 0.2669551372528076,
+            "Left": 0.444996178150177,
+            "Top": 0.3970361053943634
+          },
+          "Confidence": 98.91370391845703
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.3803029954433441,
+            "Height": 0.3041854202747345,
+            "Left": 0.6061366200447083,
+            "Top": 0.48740217089653015
+          },
+          "Confidence": 98.48464965820312
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.23009759187698364,
+            "Height": 0.1339414417743683,
+            "Left": 0.7582751512527466,
+            "Top": 0.47341009974479675
+          },
+          "Confidence": 81.77748107910156
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.22747373580932617,
+            "Height": 0.14868110418319702,
+            "Left": 0.514167308807373,
+            "Top": 0.5381911993026733
+          },
+          "Confidence": 63.081851959228516
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.91370391845703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 95.46658325195312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 95.46658325195312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 95.46658325195312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 95.46658325195312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 85.85856628417969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shack",
+      "Confidence": 78.29174041748047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Hut"
+        },
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Hut",
+      "Confidence": 78.29174041748047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Dugout",
+      "Confidence": 66.17842102050781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Shack"
+        },
+        {
+          "Name": "Hut"
+        },
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Bench",
+      "Confidence": 65.87340545654297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 65.87340545654297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Street",
+      "Confidence": 61.01424026489258,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 61.01424026489258,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 61.01424026489258,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 61.01424026489258,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Sea",
+      "Confidence": 57.79672622680664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Water",
+      "Confidence": 57.79672622680664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ocean",
+      "Confidence": 57.79672622680664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Shop",
+      "Confidence": 57.444332122802734,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

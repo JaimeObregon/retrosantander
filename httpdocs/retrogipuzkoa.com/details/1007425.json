@@ -1,0 +1,72 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.48202514648438,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1403091698884964,
+            "Height": 0.5826940536499023,
+            "Left": 0.1084604412317276,
+            "Top": 0.3838091790676117
+          },
+          "Confidence": 98.48202514648438
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.22250516712665558,
+            "Height": 0.37367862462997437,
+            "Left": 0.2856411039829254,
+            "Top": 0.5753170847892761
+          },
+          "Confidence": 86.82380676269531
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09741360694169998,
+            "Height": 0.461173415184021,
+            "Left": 0.20186857879161835,
+            "Top": 0.45711255073547363
+          },
+          "Confidence": 60.1588134765625
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.48202514648438,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Art",
+      "Confidence": 63.07890701293945,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Photography",
+      "Confidence": 62.03776550292969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photo",
+      "Confidence": 62.03776550292969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

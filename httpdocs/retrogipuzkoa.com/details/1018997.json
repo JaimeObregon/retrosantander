@@ -1,0 +1,256 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.6926498413086,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08304474502801895,
+            "Height": 0.4409320056438446,
+            "Left": 0,
+            "Top": 0.27692610025405884
+          },
+          "Confidence": 99.6926498413086
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.2312944084405899,
+            "Height": 0.45313748717308044,
+            "Left": 0.2560163736343384,
+            "Top": 0.3439823389053345
+          },
+          "Confidence": 99.64512634277344
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.017087915912270546,
+            "Height": 0.07656088471412659,
+            "Left": 0.8972596526145935,
+            "Top": 0.40966928005218506
+          },
+          "Confidence": 89.98169708251953
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.6926498413086,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 88.29210662841797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 88.2123031616211,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 88.2123031616211,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shorts",
+      "Confidence": 86.33064270019531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 78.65582275390625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.013199119828641415,
+            "Height": 0.023717273026704788,
+            "Left": 0.7272020578384399,
+            "Top": 0.45641985535621643
+          },
+          "Confidence": 78.65582275390625
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 78.65582275390625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 75.20061492919922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 75.20061492919922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 73.44860076904297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sphere",
+      "Confidence": 72.54193878173828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Team Sport",
+      "Confidence": 69.5521011352539,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Team",
+      "Confidence": 69.5521011352539,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "People"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Grass",
+      "Confidence": 64.88468933105469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 64.88468933105469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 63.53498077392578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Volleyball",
+      "Confidence": 57.365379333496094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Team Sport"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Badminton",
+      "Confidence": 56.70160675048828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Field",
+      "Confidence": 56.590553283691406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Handball",
+      "Confidence": 55.339176177978516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sphere"
+        },
+        {
+          "Name": "Ball"
+        }
+      ]
+    },
+    {
+      "Name": "Ball",
+      "Confidence": 55.339176177978516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sundial",
+      "Confidence": 55.1953010559082,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

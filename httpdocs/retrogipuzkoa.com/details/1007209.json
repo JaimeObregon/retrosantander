@@ -1,0 +1,109 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Water",
+      "Confidence": 91.80768585205078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 90.4275131225586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fish",
+      "Confidence": 88.35238647460938,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.24335825443267822,
+            "Height": 0.23848392069339752,
+            "Left": 0.2893461585044861,
+            "Top": 0.4385245144367218
+          },
+          "Confidence": 86.9380874633789
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.21621565520763397,
+            "Height": 0.23386834561824799,
+            "Left": 0.5320725440979004,
+            "Top": 0.1663225293159485
+          },
+          "Confidence": 75.82628631591797
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Sea Life",
+      "Confidence": 74.67852020263672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Coho",
+      "Confidence": 68.51287841796875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fish"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Carp",
+      "Confidence": 67.45341491699219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fish"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Aquatic",
+      "Confidence": 61.46470260620117,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Aquarium",
+      "Confidence": 57.83250045776367,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sea Life"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

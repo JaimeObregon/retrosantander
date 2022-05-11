@@ -1,0 +1,133 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.2584457397461,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.045425307005643845,
+            "Height": 0.15888318419456482,
+            "Left": 0.317936509847641,
+            "Top": 0.5083233118057251
+          },
+          "Confidence": 99.2584457397461
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.2584457397461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Camping",
+      "Confidence": 95.13508605957031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Tent",
+      "Confidence": 92.60545349121094,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2984551787376404,
+            "Height": 0.25937947630882263,
+            "Left": 0.25816699862480164,
+            "Top": 0.5317537188529968
+          },
+          "Confidence": 92.60545349121094
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 85.31758880615234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 84.26347351074219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mountain Tent",
+      "Confidence": 73.29810333251953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Leisure Activities"
+        },
+        {
+          "Name": "Tent"
+        },
+        {
+          "Name": "Camping"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Leisure Activities",
+      "Confidence": 73.29810333251953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 59.24196243286133,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 59.24196243286133,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mesa",
+      "Confidence": 57.975624084472656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Mountain",
+      "Confidence": 56.02228546142578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

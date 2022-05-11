@@ -1,0 +1,233 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 98.91804504394531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.51190948486328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mountain",
+      "Confidence": 97.82113647460938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Landscape",
+      "Confidence": 94.88128662109375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Scenery",
+      "Confidence": 93.51982879638672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Wilderness",
+      "Confidence": 83.5715103149414,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Valley",
+      "Confidence": 77.91859436035156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Train",
+      "Confidence": 77.25552368164062,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2748727798461914,
+            "Height": 0.15529581904411316,
+            "Left": 0.6629801392555237,
+            "Top": 0.41134899854660034
+          },
+          "Confidence": 77.25552368164062
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 77.25552368164062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 77.25552368164062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Aerial View",
+      "Confidence": 72.29133605957031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Landscape"
+        },
+        {
+          "Name": "Scenery"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Peak",
+      "Confidence": 65.2304916381836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mountain Range"
+        },
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Mountain Range",
+      "Confidence": 65.2304916381836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 61.90843200683594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "River",
+      "Confidence": 60.98433303833008,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Water",
+      "Confidence": 60.98433303833008,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Panoramic",
+      "Confidence": 56.769317626953125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Landscape"
+        },
+        {
+          "Name": "Scenery"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

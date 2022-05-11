@@ -1,0 +1,316 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.41539001464844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10883670300245285,
+            "Height": 0.3135024905204773,
+            "Left": 0.0003600562922656536,
+            "Top": 0.677746057510376
+          },
+          "Confidence": 99.41539001464844
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07209616899490356,
+            "Height": 0.09688881039619446,
+            "Left": 0.23956792056560516,
+            "Top": 0.6756386160850525
+          },
+          "Confidence": 99.25159454345703
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.020662523806095123,
+            "Height": 0.044430915266275406,
+            "Left": 0.3831588923931122,
+            "Top": 0.6606532335281372
+          },
+          "Confidence": 89.2331771850586
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01719539612531662,
+            "Height": 0.04131244868040085,
+            "Left": 0.3702102601528168,
+            "Top": 0.6634753346443176
+          },
+          "Confidence": 73.10175323486328
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.017422784119844437,
+            "Height": 0.03990200161933899,
+            "Left": 0.3487212061882019,
+            "Top": 0.665372371673584
+          },
+          "Confidence": 72.83293914794922
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.020893529057502747,
+            "Height": 0.04236321523785591,
+            "Left": 0.46921688318252563,
+            "Top": 0.6646813750267029
+          },
+          "Confidence": 70.9073486328125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01837252639234066,
+            "Height": 0.04024079814553261,
+            "Left": 0.3414725065231323,
+            "Top": 0.6656818389892578
+          },
+          "Confidence": 64.47886657714844
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.022528816014528275,
+            "Height": 0.0445907860994339,
+            "Left": 0.5018864870071411,
+            "Top": 0.664436399936676
+          },
+          "Confidence": 60.645416259765625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.016721194609999657,
+            "Height": 0.03957594558596611,
+            "Left": 0.35909348726272583,
+            "Top": 0.6646001935005188
+          },
+          "Confidence": 44.919246673583984
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.41539001464844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pedestrian",
+      "Confidence": 99.25369262695312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Bus",
+      "Confidence": 94.93714141845703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.24939696490764618,
+            "Height": 0.19262181222438812,
+            "Left": 0.7480257153511047,
+            "Top": 0.5928711295127869
+          },
+          "Confidence": 94.93714141845703
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 94.93714141845703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 94.93714141845703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Street",
+      "Confidence": 89.75467681884766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 89.75467681884766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 89.75467681884766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Road",
+      "Confidence": 89.75467681884766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 89.75467681884766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 89.75467681884766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Car",
+      "Confidence": 68.67091369628906,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08883263915777206,
+            "Height": 0.0446213036775589,
+            "Left": 0.09552324563264847,
+            "Top": 0.6692606806755066
+          },
+          "Confidence": 68.67091369628906
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 68.67091369628906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Fire Hydrant",
+      "Confidence": 68.61795043945312,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03558412566781044,
+            "Height": 0.06140318885445595,
+            "Left": 0.7195392847061157,
+            "Top": 0.7034435868263245
+          },
+          "Confidence": 68.61795043945312
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Hydrant"
+        }
+      ]
+    },
+    {
+      "Name": "Hydrant",
+      "Confidence": 68.61795043945312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Metropolis",
+      "Confidence": 66.30247497558594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Downtown",
+      "Confidence": 65.27648162841797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 59.810157775878906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

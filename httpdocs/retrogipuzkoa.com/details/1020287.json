@@ -1,0 +1,70 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Armor",
+      "Confidence": 97.18099212646484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shield",
+      "Confidence": 95.4892349243164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Armor"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 69.23295593261719,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.20643556118011475,
+            "Height": 0.34415799379348755,
+            "Left": 0.12366848438978195,
+            "Top": 0.3359786868095398
+          },
+          "Confidence": 69.23295593261719
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 69.23295593261719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fire Hydrant",
+      "Confidence": 62.432891845703125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7765958309173584,
+            "Height": 0.5966721773147583,
+            "Left": 0.15319310128688812,
+            "Top": 0.15279576182365417
+          },
+          "Confidence": 62.432891845703125
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Hydrant"
+        }
+      ]
+    },
+    {
+      "Name": "Hydrant",
+      "Confidence": 62.432891845703125,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

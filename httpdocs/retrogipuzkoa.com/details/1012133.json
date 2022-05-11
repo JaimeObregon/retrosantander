@@ -1,0 +1,377 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Water",
+      "Confidence": 99.62702941894531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Boat",
+      "Confidence": 99.34249877929688,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5108932852745056,
+            "Height": 0.2981758117675781,
+            "Left": 0.0596209354698658,
+            "Top": 0.596402645111084
+          },
+          "Confidence": 99.34249877929688
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.34249877929688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.34249877929688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.81333923339844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 97.6070785522461,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.017658649012446404,
+            "Height": 0.07365210354328156,
+            "Left": 0.7189045548439026,
+            "Top": 0.5330910086631775
+          },
+          "Confidence": 97.6070785522461
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.021953918039798737,
+            "Height": 0.08650697022676468,
+            "Left": 0.7672208547592163,
+            "Top": 0.5312536358833313
+          },
+          "Confidence": 97.32022094726562
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.013183807954192162,
+            "Height": 0.061852000653743744,
+            "Left": 0.7483130693435669,
+            "Top": 0.5544050335884094
+          },
+          "Confidence": 94.30355834960938
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04829588904976845,
+            "Height": 0.17780503630638123,
+            "Left": 0.39978060126304626,
+            "Top": 0.6087351441383362
+          },
+          "Confidence": 91.95872497558594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08593771606683731,
+            "Height": 0.2074715942144394,
+            "Left": 0.8733856678009033,
+            "Top": 0.7820788025856018
+          },
+          "Confidence": 64.3927993774414
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.022769860923290253,
+            "Height": 0.06520835310220718,
+            "Left": 0.8042355179786682,
+            "Top": 0.5499679446220398
+          },
+          "Confidence": 62.63167190551758
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02161201275885105,
+            "Height": 0.0638575330376625,
+            "Left": 0.35852399468421936,
+            "Top": 0.7266644835472107
+          },
+          "Confidence": 54.90391540527344
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.6070785522461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Path",
+      "Confidence": 95.41463470458984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 95.16450500488281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Canal",
+      "Confidence": 95.13619995117188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 95.12373352050781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Watercraft",
+      "Confidence": 82.51322937011719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vessel",
+      "Confidence": 82.51322937011719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Car",
+      "Confidence": 81.7570571899414,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10490481555461884,
+            "Height": 0.3478614091873169,
+            "Left": 0.8933408260345459,
+            "Top": 0.5724478363990784
+          },
+          "Confidence": 81.7570571899414
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 81.7570571899414,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bridge",
+      "Confidence": 80.64306640625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Towpath",
+      "Confidence": 80.2623519897461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        },
+        {
+          "Name": "Canal"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Arch",
+      "Confidence": 75.91832733154297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arched",
+      "Confidence": 75.91832733154297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Barge",
+      "Confidence": 75.5556869506836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Watercraft"
+        },
+        {
+          "Name": "Boat"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 70.39669799804688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 62.8995475769043,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 62.8995475769043,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arch Bridge",
+      "Confidence": 60.051944732666016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bridge"
+        },
+        {
+          "Name": "Arch"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Architecture"
+        }
+      ]
+    },
+    {
+      "Name": "Drawbridge",
+      "Confidence": 57.64265060424805,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Arch Bridge"
+        },
+        {
+          "Name": "Bridge"
+        },
+        {
+          "Name": "Arch"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Architecture"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

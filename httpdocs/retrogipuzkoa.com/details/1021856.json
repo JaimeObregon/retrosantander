@@ -1,0 +1,98 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.84672546386719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 96.47991943359375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fog",
+      "Confidence": 94.60270690917969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Weather",
+      "Confidence": 93.71158599853516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Smoke",
+      "Confidence": 82.97500610351562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mist",
+      "Confidence": 68.40372467041016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Fog"
+        },
+        {
+          "Name": "Weather"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Mountain",
+      "Confidence": 67.73031616210938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Smog",
+      "Confidence": 58.88435745239258,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fog"
+        },
+        {
+          "Name": "Smoke"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 57.21400451660156,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

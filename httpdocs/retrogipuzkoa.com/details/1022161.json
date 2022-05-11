@@ -1,0 +1,76 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Sheep",
+      "Confidence": 99.81010437011719,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.28074511885643005,
+            "Height": 0.2746749222278595,
+            "Left": 0.4309000074863434,
+            "Top": 0.381366103887558
+          },
+          "Confidence": 99.81010437011719
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 99.81010437011719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.81010437011719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 87.11752319335938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 79.43400573730469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Field",
+      "Confidence": 69.01840209960938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 66.6204833984375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

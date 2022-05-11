@@ -1,0 +1,138 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 98.23005676269531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 81.84376525878906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 80.63770294189453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 69.11355590820312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 66.44373321533203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Ground",
+      "Confidence": 64.285888671875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 60.26213455200195,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.017358319833874702,
+            "Height": 0.061342623084783554,
+            "Left": 0.5070100426673889,
+            "Top": 0.6304972171783447
+          },
+          "Confidence": 60.26213455200195
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.014511982910335064,
+            "Height": 0.04907684773206711,
+            "Left": 0.48860621452331543,
+            "Top": 0.6384474039077759
+          },
+          "Confidence": 44.053611755371094
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 60.26213455200195,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 59.321128845214844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Bunker",
+      "Confidence": 59.13523483276367,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 56.27449035644531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Ruins",
+      "Confidence": 55.89679718017578,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

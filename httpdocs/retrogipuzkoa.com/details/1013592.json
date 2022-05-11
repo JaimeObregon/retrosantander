@@ -1,0 +1,86 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Poster",
+      "Confidence": 96.00836181640625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Advertisement",
+      "Confidence": 96.00836181640625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Flyer",
+      "Confidence": 92.64187622070312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Poster"
+        },
+        {
+          "Name": "Paper"
+        },
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Brochure",
+      "Confidence": 92.64187622070312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Poster"
+        },
+        {
+          "Name": "Paper"
+        },
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Paper",
+      "Confidence": 92.64187622070312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Text",
+      "Confidence": 89.82811737060547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Menu",
+      "Confidence": 83.32247161865234,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7564536929130554,
+            "Height": 0.8053755760192871,
+            "Left": 0.05234554782509804,
+            "Top": 0.010508112609386444
+          },
+          "Confidence": 83.32247161865234
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

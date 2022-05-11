@@ -1,0 +1,107 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Boat",
+      "Confidence": 93.85566711425781,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8536136746406555,
+            "Height": 0.8038887977600098,
+            "Left": 0.02141065150499344,
+            "Top": 0.07169973850250244
+          },
+          "Confidence": 93.85566711425781
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 93.85566711425781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 93.85566711425781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bus",
+      "Confidence": 89.1902084350586,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8777401447296143,
+            "Height": 0.7533776164054871,
+            "Left": 0.019474711269140244,
+            "Top": 0.13582269847393036
+          },
+          "Confidence": 66.412353515625
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Tour Bus",
+      "Confidence": 73.00193786621094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bus"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Train",
+      "Confidence": 63.008628845214844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8883726596832275,
+            "Height": 0.8018924593925476,
+            "Left": 0.011671045795083046,
+            "Top": 0.11303917318582535
+          },
+          "Confidence": 63.008628845214844
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

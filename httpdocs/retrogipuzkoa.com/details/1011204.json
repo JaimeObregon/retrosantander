@@ -1,0 +1,150 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Boat",
+      "Confidence": 98.4839096069336,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5175941586494446,
+            "Height": 0.4191211462020874,
+            "Left": 0.006183370016515255,
+            "Top": 0.10126511752605438
+          },
+          "Confidence": 98.4839096069336
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.49019137024879456,
+            "Height": 0.3716747462749481,
+            "Left": 0.4840954840183258,
+            "Top": 0.09301000833511353
+          },
+          "Confidence": 96.95716857910156
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.19564379751682281,
+            "Height": 0.06528470665216446,
+            "Left": 0.6309633851051331,
+            "Top": 0.42940160632133484
+          },
+          "Confidence": 93.71744537353516
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.34081366658210754,
+            "Height": 0.2079797238111496,
+            "Left": 0.014052487909793854,
+            "Top": 0.5428362488746643
+          },
+          "Confidence": 74.39791107177734
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 98.4839096069336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 98.4839096069336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Submarine",
+      "Confidence": 88.50668334960938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 87.48548126220703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03263876214623451,
+            "Height": 0.10625200718641281,
+            "Left": 0.23693853616714478,
+            "Top": 0.5468368530273438
+          },
+          "Confidence": 87.48548126220703
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.014175977557897568,
+            "Height": 0.0519457682967186,
+            "Left": 0.17730465531349182,
+            "Top": 0.2729216516017914
+          },
+          "Confidence": 74.1795883178711
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.022336404770612717,
+            "Height": 0.08151688426733017,
+            "Left": 0.3110099136829376,
+            "Top": 0.5462378859519958
+          },
+          "Confidence": 71.05863952636719
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.014873464591801167,
+            "Height": 0.07158730179071426,
+            "Left": 0.28314149379730225,
+            "Top": 0.5394487380981445
+          },
+          "Confidence": 66.1376724243164
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 87.48548126220703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tugboat",
+      "Confidence": 83.74171447753906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Boat"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

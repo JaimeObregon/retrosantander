@@ -1,0 +1,110 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Dome",
+      "Confidence": 99.9439697265625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 99.9439697265625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.9439697265625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.05302429199219,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06942295283079147,
+            "Height": 0.0999331846833229,
+            "Left": 0.6350491046905518,
+            "Top": 0.5715368986129761
+          },
+          "Confidence": 99.05302429199219
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04289402440190315,
+            "Height": 0.08236704766750336,
+            "Left": 0.8182083368301392,
+            "Top": 0.597224771976471
+          },
+          "Confidence": 96.9186782836914
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03206028416752815,
+            "Height": 0.06603693217039108,
+            "Left": 0.9200183153152466,
+            "Top": 0.5982109308242798
+          },
+          "Confidence": 95.49763488769531
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.041267190128564835,
+            "Height": 0.06706243008375168,
+            "Left": 0.8796827793121338,
+            "Top": 0.6322603821754456
+          },
+          "Confidence": 88.32014465332031
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.05302429199219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Planetarium",
+      "Confidence": 65.95117950439453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Observatory",
+      "Confidence": 59.260345458984375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

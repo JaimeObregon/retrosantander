@@ -1,0 +1,198 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 91.8770751953125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07926113903522491,
+            "Height": 0.1230519637465477,
+            "Left": 0.44552314281463623,
+            "Top": 0.42756420373916626
+          },
+          "Confidence": 91.8770751953125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.025662820786237717,
+            "Height": 0.07257059961557388,
+            "Left": 0.4757465422153473,
+            "Top": 0.0369177870452404
+          },
+          "Confidence": 56.89640426635742
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 91.8770751953125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rubble",
+      "Confidence": 89.2655029296875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Demolition",
+      "Confidence": 88.9099349975586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 85.57425689697266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 79.92593383789062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 75.95127868652344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tank",
+      "Confidence": 67.06694793701172,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2713749408721924,
+            "Height": 0.38816478848457336,
+            "Left": 0.5204368233680725,
+            "Top": 0.5469082593917847
+          },
+          "Confidence": 67.06694793701172
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Army"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Armored"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Transportation"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Military",
+      "Confidence": 67.06694793701172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Military Uniform",
+      "Confidence": 67.06694793701172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Armored",
+      "Confidence": 67.06694793701172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Army",
+      "Confidence": 67.06694793701172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Armored"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 67.06694793701172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 67.06694793701172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Car",
+      "Confidence": 63.791954040527344,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10788349062204361,
+            "Height": 0.18447382748126984,
+            "Left": 0.0026003920938819647,
+            "Top": 0.3495568037033081
+          },
+          "Confidence": 63.791954040527344
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 63.791954040527344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

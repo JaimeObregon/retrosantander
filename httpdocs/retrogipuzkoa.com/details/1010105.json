@@ -1,0 +1,195 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Musician",
+      "Confidence": 99.70753479003906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Musical Instrument"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.70753479003906,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2912940979003906,
+            "Height": 0.5247530341148376,
+            "Left": 0.21937112510204315,
+            "Top": 0.4305063486099243
+          },
+          "Confidence": 97.05398559570312
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Musical Instrument",
+      "Confidence": 99.70753479003906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.70753479003906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Performer",
+      "Confidence": 99.70288848876953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Pianist",
+      "Confidence": 99.16777801513672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Performer"
+        },
+        {
+          "Name": "Musician"
+        },
+        {
+          "Name": "Piano"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Musical Instrument"
+        },
+        {
+          "Name": "Leisure Activities"
+        }
+      ]
+    },
+    {
+      "Name": "Leisure Activities",
+      "Confidence": 99.16777801513672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Piano",
+      "Confidence": 99.16777801513672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Leisure Activities"
+        },
+        {
+          "Name": "Musical Instrument"
+        }
+      ]
+    },
+    {
+      "Name": "Gun",
+      "Confidence": 72.3759994506836,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.45859867334365845,
+            "Height": 0.4067518413066864,
+            "Left": 0.38150840997695923,
+            "Top": 0.33139142394065857
+          },
+          "Confidence": 72.3759994506836
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Weapon"
+        }
+      ]
+    },
+    {
+      "Name": "Weapon",
+      "Confidence": 72.3759994506836,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Weaponry",
+      "Confidence": 72.3759994506836,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Portrait",
+      "Confidence": 62.14169692993164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Face"
+        },
+        {
+          "Name": "Photography"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photography",
+      "Confidence": 62.14169692993164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Face",
+      "Confidence": 62.14169692993164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photo",
+      "Confidence": 62.14169692993164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Grand Piano",
+      "Confidence": 58.6584358215332,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Piano"
+        },
+        {
+          "Name": "Leisure Activities"
+        },
+        {
+          "Name": "Musical Instrument"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

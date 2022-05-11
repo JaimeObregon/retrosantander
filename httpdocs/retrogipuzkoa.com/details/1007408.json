@@ -1,0 +1,204 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Animal",
+      "Confidence": 91.44682312011719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sheep",
+      "Confidence": 88.80127716064453,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06613673269748688,
+            "Height": 0.1971682757139206,
+            "Left": 0.5665872693061829,
+            "Top": 0.44184207916259766
+          },
+          "Confidence": 88.80127716064453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.047777142375707626,
+            "Height": 0.09591960906982422,
+            "Left": 0.5330774784088135,
+            "Top": 0.4215780198574066
+          },
+          "Confidence": 70.75881958007812
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.13440509140491486,
+            "Height": 0.2703374922275543,
+            "Left": 0.6247694492340088,
+            "Top": 0.3573031723499298
+          },
+          "Confidence": 55.774112701416016
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 88.80127716064453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 85.11629486083984,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10716477781534195,
+            "Height": 0.22454287111759186,
+            "Left": 0.4467430114746094,
+            "Top": 0.5596229434013367
+          },
+          "Confidence": 85.11629486083984
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.13688525557518005,
+            "Height": 0.2598905563354492,
+            "Left": 0.6271602511405945,
+            "Top": 0.354030042886734
+          },
+          "Confidence": 75.3917236328125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04807910695672035,
+            "Height": 0.10169801861047745,
+            "Left": 0.5326384902000427,
+            "Top": 0.4189760088920593
+          },
+          "Confidence": 62.97385787963867
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Goat",
+      "Confidence": 84.89043426513672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 67.76075744628906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 65.13745880126953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 65.13745880126953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Herd",
+      "Confidence": 58.563087463378906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Zoo",
+      "Confidence": 57.652122497558594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mountain Goat",
+      "Confidence": 56.226837158203125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Goat"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 56.226837158203125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wilderness",
+      "Confidence": 55.753047943115234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 55.753047943115234,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,270 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Airplane",
+      "Confidence": 99.4634017944336,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.060628149658441544,
+            "Height": 0.04158056899905205,
+            "Left": 0.6145653128623962,
+            "Top": 0.5282257199287415
+          },
+          "Confidence": 99.4634017944336
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.058475643396377563,
+            "Height": 0.037219516932964325,
+            "Left": 0.5625266432762146,
+            "Top": 0.6006564497947693
+          },
+          "Confidence": 99.02272033691406
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04980061948299408,
+            "Height": 0.03438253328204155,
+            "Left": 0.5024503469467163,
+            "Top": 0.6983045339584351
+          },
+          "Confidence": 97.64559173583984
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04987632483243942,
+            "Height": 0.030529258772730827,
+            "Left": 0.4436536431312561,
+            "Top": 0.7555574178695679
+          },
+          "Confidence": 94.77726745605469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04614889621734619,
+            "Height": 0.03566361591219902,
+            "Left": 0.3722110390663147,
+            "Top": 0.5601153373718262
+          },
+          "Confidence": 88.23127746582031
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.041338738054037094,
+            "Height": 0.03355765715241432,
+            "Left": 0.3379557728767395,
+            "Top": 0.8258870840072632
+          },
+          "Confidence": 52.346988677978516
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Aircraft",
+      "Confidence": 99.4634017944336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.4634017944336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.4634017944336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 96.70972442626953,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.012710142880678177,
+            "Height": 0.01932741515338421,
+            "Left": 0.44047802686691284,
+            "Top": 0.5789117813110352
+          },
+          "Confidence": 96.70972442626953
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.041369788348674774,
+            "Height": 0.03279512748122215,
+            "Left": 0.33869898319244385,
+            "Top": 0.826427698135376
+          },
+          "Confidence": 87.63170623779297
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04509861022233963,
+            "Height": 0.03814326971769333,
+            "Left": 0.37225571274757385,
+            "Top": 0.560579240322113
+          },
+          "Confidence": 81.32156372070312
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.015266284346580505,
+            "Height": 0.024416694417595863,
+            "Left": 0.6020501255989075,
+            "Top": 0.7374905943870544
+          },
+          "Confidence": 71.25077056884766
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012941059656441212,
+            "Height": 0.02837550826370716,
+            "Left": 0.7823301553726196,
+            "Top": 0.4303182065486908
+          },
+          "Confidence": 67.97783660888672
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 96.70972442626953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Flying",
+      "Confidence": 96.40030670166016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 85.20851135253906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 84.39862823486328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Astronomy",
+      "Confidence": 68.49351501464844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outer Space",
+      "Confidence": 67.77046966552734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Astronomy"
+        }
+      ]
+    },
+    {
+      "Name": "Universe",
+      "Confidence": 67.77046966552734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Astronomy"
+        }
+      ]
+    },
+    {
+      "Name": "Space",
+      "Confidence": 67.77046966552734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Astronomy"
+        }
+      ]
+    },
+    {
+      "Name": "Night",
+      "Confidence": 63.39223098754883,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Smoke",
+      "Confidence": 60.9665641784668,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Moon",
+      "Confidence": 56.9575309753418,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outer Space"
+        },
+        {
+          "Name": "Night"
+        },
+        {
+          "Name": "Astronomy"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

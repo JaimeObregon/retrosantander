@@ -1,0 +1,149 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.10731506347656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.202146977186203,
+            "Height": 0.3961261808872223,
+            "Left": 0.7951934337615967,
+            "Top": 0.5989115238189697
+          },
+          "Confidence": 98.10731506347656
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.10731506347656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Clock Tower",
+      "Confidence": 85.79768371582031,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.13019220530986786,
+            "Height": 0.08643745630979538,
+            "Left": 0.3826916515827179,
+            "Top": 0.3564012348651886
+          },
+          "Confidence": 85.79768371582031
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.119607113301754,
+            "Height": 0.0859772264957428,
+            "Left": 0.5651130080223083,
+            "Top": 0.36335471272468567
+          },
+          "Confidence": 84.71681213378906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.2334185689687729,
+            "Height": 0.17163465917110443,
+            "Left": 0.43279680609703064,
+            "Top": 0.06310363858938217
+          },
+          "Confidence": 73.62240600585938
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 85.79768371582031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 85.79768371582031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tower",
+      "Confidence": 85.79768371582031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Photography",
+      "Confidence": 63.32518768310547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photo",
+      "Confidence": 63.32518768310547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Wall",
+      "Confidence": 61.95566177368164,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Text",
+      "Confidence": 61.397804260253906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Analog Clock",
+      "Confidence": 58.04274368286133,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clock"
+        }
+      ]
+    },
+    {
+      "Name": "Clock",
+      "Confidence": 58.04274368286133,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

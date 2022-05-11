@@ -1,0 +1,125 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Flock",
+      "Confidence": 93.72264099121094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 93.72264099121094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 90.89998626708984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Sheep",
+      "Confidence": 73.71245574951172,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5784878134727478,
+            "Height": 0.6851380467414856,
+            "Left": 0.10618487000465393,
+            "Top": 0.15737707912921906
+          },
+          "Confidence": 73.71245574951172
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.2248537242412567,
+            "Height": 0.5338230729103088,
+            "Left": 0.7135992646217346,
+            "Top": 0.24652647972106934
+          },
+          "Confidence": 70.47892761230469
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cow",
+      "Confidence": 64.27651977539062,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.6099759340286255,
+            "Height": 0.712404191493988,
+            "Left": 0.09503106772899628,
+            "Top": 0.15081991255283356
+          },
+          "Confidence": 64.27651977539062
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Cattle"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cattle",
+      "Confidence": 64.27651977539062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 60.16314697265625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04775653034448624,
+            "Height": 0.24081964790821075,
+            "Left": 0.027145005762577057,
+            "Top": 0.045331574976444244
+          },
+          "Confidence": 60.16314697265625
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 60.16314697265625,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

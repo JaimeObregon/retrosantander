@@ -1,0 +1,67 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Boat",
+      "Confidence": 96.55857849121094,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8757579922676086,
+            "Height": 0.8429889678955078,
+            "Left": 0.0194304920732975,
+            "Top": 0.03437523916363716
+          },
+          "Confidence": 96.55857849121094
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 96.55857849121094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 96.55857849121094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Mosquito Net",
+      "Confidence": 93.82625579833984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tent",
+      "Confidence": 61.33330535888672,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9083232283592224,
+            "Height": 0.5945023894309998,
+            "Left": 0,
+            "Top": 0.006398037075996399
+          },
+          "Confidence": 61.33330535888672
+        }
+      ],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

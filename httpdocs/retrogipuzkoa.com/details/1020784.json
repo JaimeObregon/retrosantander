@@ -1,0 +1,82 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Soil",
+      "Confidence": 97.57205200195312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rock",
+      "Confidence": 91.7336196899414,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mud",
+      "Confidence": 76.45741271972656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Archaeology",
+      "Confidence": 74.05403137207031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Turtle",
+      "Confidence": 70.25873565673828,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.44577738642692566,
+            "Height": 0.2921364903450012,
+            "Left": 0.26015767455101013,
+            "Top": 0.3345922827720642
+          },
+          "Confidence": 70.25873565673828
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Reptile"
+        },
+        {
+          "Name": "Sea Life"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 70.25873565673828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sea Life",
+      "Confidence": 70.25873565673828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Reptile",
+      "Confidence": 70.25873565673828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

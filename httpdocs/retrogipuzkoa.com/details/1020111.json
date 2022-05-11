@@ -1,0 +1,213 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.6611557006836,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.82696533203125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 95.12606811523438,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03350551798939705,
+            "Height": 0.041007641702890396,
+            "Left": 0.5122854113578796,
+            "Top": 0.5702985525131226
+          },
+          "Confidence": 95.12606811523438
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 95.12606811523438,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 95.12606811523438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 95.12606811523438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Land",
+      "Confidence": 92.32549285888672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 91.1799545288086,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Field",
+      "Confidence": 88.89656829833984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Agriculture",
+      "Confidence": 77.52303314208984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Field"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Slope",
+      "Confidence": 72.40908813476562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 69.75045013427734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 66.0376205444336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 66.0376205444336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 64.17646789550781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Mountain",
+      "Confidence": 62.042938232421875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 60.90061569213867,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.014823619276285172,
+            "Height": 0.046248890459537506,
+            "Left": 0.8603523373603821,
+            "Top": 0.6887136101722717
+          },
+          "Confidence": 60.90061569213867
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 60.90061569213867,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Grassland",
+      "Confidence": 55.417842864990234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Field"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

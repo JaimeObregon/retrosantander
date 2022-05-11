@@ -1,0 +1,346 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Vegetation",
+      "Confidence": 99.745361328125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 99.745361328125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Woodland",
+      "Confidence": 98.67652130126953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Land"
+        },
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Forest",
+      "Confidence": 98.67652130126953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Land"
+        },
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.67652130126953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 98.67652130126953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Land",
+      "Confidence": 98.67652130126953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 98.67652130126953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Bush",
+      "Confidence": 98.26686096191406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 97.04771423339844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.045486930757761,
+            "Height": 0.1574561893939972,
+            "Left": 0.5510303378105164,
+            "Top": 0.639438807964325
+          },
+          "Confidence": 97.04771423339844
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0426071435213089,
+            "Height": 0.15011830627918243,
+            "Left": 0.5906224846839905,
+            "Top": 0.6161611676216125
+          },
+          "Confidence": 96.2294692993164
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.04771423339844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Wilderness",
+      "Confidence": 96.87822723388672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Path",
+      "Confidence": 92.50712585449219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Trail",
+      "Confidence": 89.51459503173828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 85.105224609375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 82.64750671386719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Grove",
+      "Confidence": 76.7911605834961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Woodland"
+        },
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Land"
+        },
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Dog",
+      "Confidence": 64.81781005859375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08254734426736832,
+            "Height": 0.1168212890625,
+            "Left": 0.130806103348732,
+            "Top": 0.8773009777069092
+          },
+          "Confidence": 64.81781005859375
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 64.81781005859375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 64.81781005859375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Husky",
+      "Confidence": 64.71161651611328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Dog"
+        },
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Jungle",
+      "Confidence": 60.63532638549805,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Land"
+        },
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 60.5181999206543,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Hiking",
+      "Confidence": 59.823463439941406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

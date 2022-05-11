@@ -1,0 +1,165 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Animal",
+      "Confidence": 89.02426147460938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pig",
+      "Confidence": 87.75547790527344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 87.75547790527344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Zoo",
+      "Confidence": 76.60437774658203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Dog",
+      "Confidence": 69.30946350097656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2281465232372284,
+            "Height": 0.4276564419269562,
+            "Left": 0.5585328936576843,
+            "Top": 0.20402905344963074
+          },
+          "Confidence": 69.30946350097656
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 69.30946350097656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 69.30946350097656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 67.24153137207031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bear",
+      "Confidence": 66.79756164550781,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.26704129576683044,
+            "Height": 0.3605199456214905,
+            "Left": 0.19332106411457062,
+            "Top": 0.2720125615596771
+          },
+          "Confidence": 66.79756164550781
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Frisbee",
+      "Confidence": 58.692596435546875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Toy"
+        }
+      ]
+    },
+    {
+      "Name": "Toy",
+      "Confidence": 58.692596435546875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Hog",
+      "Confidence": 55.25065994262695,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pig"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

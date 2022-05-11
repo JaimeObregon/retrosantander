@@ -1,0 +1,102 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Painting",
+      "Confidence": 88.04593658447266,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9839137196540833,
+            "Height": 0.9824300408363342,
+            "Left": 0,
+            "Top": 0.014485623687505722
+          },
+          "Confidence": 88.04593658447266
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 88.04593658447266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 83.86461639404297,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.21341125667095184,
+            "Height": 0.20956924557685852,
+            "Left": 0.5479719042778015,
+            "Top": 0.7875686287879944
+          },
+          "Confidence": 83.86461639404297
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 83.86461639404297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 77.83059692382812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 71.36998748779297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arch",
+      "Confidence": 70.21204376220703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arched",
+      "Confidence": 70.21204376220703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 65.70814514160156,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

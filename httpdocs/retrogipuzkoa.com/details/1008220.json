@@ -1,0 +1,179 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.41932678222656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.026058049872517586,
+            "Height": 0.1031908318400383,
+            "Left": 0.19541046023368835,
+            "Top": 0.6972646117210388
+          },
+          "Confidence": 93.7498550415039
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.023569341748952866,
+            "Height": 0.12885460257530212,
+            "Left": 0.10730035603046417,
+            "Top": 0.6650828123092651
+          },
+          "Confidence": 85.09034729003906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.022222017869353294,
+            "Height": 0.09582418948411942,
+            "Left": 0.17734074592590332,
+            "Top": 0.6987078189849854
+          },
+          "Confidence": 72.89927673339844
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.025534646585583687,
+            "Height": 0.09139645844697952,
+            "Left": 0.25320348143577576,
+            "Top": 0.702349066734314
+          },
+          "Confidence": 71.95427703857422
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.062484901398420334,
+            "Height": 0.2121555209159851,
+            "Left": 0.2957703173160553,
+            "Top": 0.781765341758728
+          },
+          "Confidence": 67.1439437866211
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.031855493783950806,
+            "Height": 0.09553024917840958,
+            "Left": 0.22018441557884216,
+            "Top": 0.7011566162109375
+          },
+          "Confidence": 58.11940383911133
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.028267523273825645,
+            "Height": 0.12051911652088165,
+            "Left": 0.13456568121910095,
+            "Top": 0.6866872310638428
+          },
+          "Confidence": 55.46055603027344
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.41932678222656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crowd",
+      "Confidence": 98.16780853271484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Parade",
+      "Confidence": 93.15992736816406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Marching",
+      "Confidence": 76.47479248046875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Crowd"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 70.81114196777344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Audience",
+      "Confidence": 69.89463806152344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Crowd"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Mansion",
+      "Confidence": 57.91063690185547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "House"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 57.91063690185547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 57.91063690185547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "House",
+      "Confidence": 57.91063690185547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

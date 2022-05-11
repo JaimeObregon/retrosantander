@@ -1,0 +1,94 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.68599700927734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.86365509033203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 93.36144256591797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Neighborhood",
+      "Confidence": 87.66285705566406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 87.66285705566406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 87.66285705566406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Winter",
+      "Confidence": 80.84783172607422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Blizzard",
+      "Confidence": 76.81317901611328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Winter"
+        },
+        {
+          "Name": "Storm"
+        },
+        {
+          "Name": "Snow"
+        },
+        {
+          "Name": "Nature"
+        },
+        {
+          "Name": "Outdoors"
+        }
+      ]
+    },
+    {
+      "Name": "Storm",
+      "Confidence": 76.81317901611328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

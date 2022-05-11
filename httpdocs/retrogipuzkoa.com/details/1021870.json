@@ -1,0 +1,249 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Water",
+      "Confidence": 99.69701385498047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 99.6033935546875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.37712097167969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "River",
+      "Confidence": 98.14591217041016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 96.15242767333984,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.01763460971415043,
+            "Height": 0.04304799064993858,
+            "Left": 0.26990947127342224,
+            "Top": 0.2861764132976532
+          },
+          "Confidence": 96.15242767333984
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 96.15242767333984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Reservoir",
+      "Confidence": 80.85072326660156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Horse",
+      "Confidence": 78.31094360351562,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06910603493452072,
+            "Height": 0.08847592771053314,
+            "Left": 0.736946702003479,
+            "Top": 0.44312599301338196
+          },
+          "Confidence": 78.31094360351562
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0785975381731987,
+            "Height": 0.07910117506980896,
+            "Left": 0.589231014251709,
+            "Top": 0.38086000084877014
+          },
+          "Confidence": 70.33690643310547
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 78.31094360351562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 78.31094360351562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Elephant",
+      "Confidence": 75.6456527709961,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09644228965044022,
+            "Height": 0.09837973117828369,
+            "Left": 0.6828799843788147,
+            "Top": 0.4347507059574127
+          },
+          "Confidence": 75.6456527709961
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 75.6456527709961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 69.9338150024414,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 69.9338150024414,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Dog",
+      "Confidence": 63.125423431396484,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04850601777434349,
+            "Height": 0.051056910306215286,
+            "Left": 0.0009347079321742058,
+            "Top": 0.25913670659065247
+          },
+          "Confidence": 63.125423431396484
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 63.125423431396484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 63.125423431396484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Dam",
+      "Confidence": 57.27869415283203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "River"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

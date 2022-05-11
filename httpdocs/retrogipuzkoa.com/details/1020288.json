@@ -1,0 +1,70 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Armor",
+      "Confidence": 98.85081481933594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shield",
+      "Confidence": 97.1505126953125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Armor"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 93.97347259521484,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9689733386039734,
+            "Height": 0.7027335166931152,
+            "Left": 0.028264250606298447,
+            "Top": 0.035262901335954666
+          },
+          "Confidence": 93.97347259521484
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 93.97347259521484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 84.99339294433594,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.19983074069023132,
+            "Height": 0.33431461453437805,
+            "Left": 0.20150023698806763,
+            "Top": 0.260935515165329
+          },
+          "Confidence": 84.99339294433594
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 84.99339294433594,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

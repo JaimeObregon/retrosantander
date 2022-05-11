@@ -1,0 +1,104 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.79133605957031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.682373046875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ice",
+      "Confidence": 99.64254760742188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 98.2661361694336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Frost",
+      "Confidence": 96.37451934814453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Ice"
+        },
+        {
+          "Name": "Snow"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Crystal",
+      "Confidence": 77.83678436279297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 60.35335159301758,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 57.70042419433594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Snowflake",
+      "Confidence": 56.28820037841797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Land",
+      "Confidence": 55.25615310668945,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

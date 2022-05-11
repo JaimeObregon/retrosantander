@@ -1,0 +1,363 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 98.9236068725586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.59317779541016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 98.20571899414062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vegetation",
+      "Confidence": 96.11016845703125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 96.11016845703125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 95.66445922851562,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04052252694964409,
+            "Height": 0.18859723210334778,
+            "Left": 0.6154126524925232,
+            "Top": 0.4675748348236084
+          },
+          "Confidence": 95.66445922851562
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04163689911365509,
+            "Height": 0.09249278903007507,
+            "Left": 0.5884309411048889,
+            "Top": 0.5713208317756653
+          },
+          "Confidence": 44.682430267333984
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 95.66445922851562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "River",
+      "Confidence": 93.73731994628906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Woodland",
+      "Confidence": 92.34453582763672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Land"
+        },
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Forest",
+      "Confidence": 92.34453582763672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Land"
+        },
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Land",
+      "Confidence": 92.34453582763672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 92.34453582763672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Grove",
+      "Confidence": 88.23222351074219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Woodland"
+        },
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Land"
+        },
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Path",
+      "Confidence": 75.36585998535156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rainforest",
+      "Confidence": 68.21600341796875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Land"
+        },
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Grass",
+      "Confidence": 67.29680633544922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Street",
+      "Confidence": 66.08741760253906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 66.08741760253906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 66.08741760253906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 66.08741760253906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 66.08741760253906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Town",
+      "Confidence": 66.08741760253906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 58.833614349365234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Scenery",
+      "Confidence": 56.695228576660156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Landscape",
+      "Confidence": 55.70500564575195,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Park",
+      "Confidence": 55.22084045410156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Lawn"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Grass"
+        },
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Lawn",
+      "Confidence": 55.22084045410156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Grass"
+        },
+        {
+          "Name": "Plant"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

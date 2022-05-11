@@ -1,0 +1,41 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.64000701904297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Storm",
+      "Confidence": 95.33601379394531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Tornado",
+      "Confidence": 91.69204711914062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Storm"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 55.80804443359375,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

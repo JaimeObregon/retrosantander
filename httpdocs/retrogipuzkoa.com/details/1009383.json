@@ -1,0 +1,303 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.43038940429688,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07856018841266632,
+            "Height": 0.13539429008960724,
+            "Left": 0.2523099184036255,
+            "Top": 0.5800414681434631
+          },
+          "Confidence": 99.43038940429688
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05447554960846901,
+            "Height": 0.09406791627407074,
+            "Left": 0.42163676023483276,
+            "Top": 0.5653921365737915
+          },
+          "Confidence": 99.15583038330078
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.051375798881053925,
+            "Height": 0.10478440672159195,
+            "Left": 0.3697788119316101,
+            "Top": 0.5594495534896851
+          },
+          "Confidence": 98.89109802246094
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03733094036579132,
+            "Height": 0.06719263643026352,
+            "Left": 0.47113659977912903,
+            "Top": 0.5639626979827881
+          },
+          "Confidence": 97.3035659790039
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03238343447446823,
+            "Height": 0.07544941455125809,
+            "Left": 0.33944395184516907,
+            "Top": 0.5554134249687195
+          },
+          "Confidence": 86.75296020507812
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.43038940429688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pedestrian",
+      "Confidence": 97.91484832763672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 95.75440216064453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Path",
+      "Confidence": 94.89667510986328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 92.29739379882812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Street",
+      "Confidence": 89.30628967285156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 89.30628967285156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 89.30628967285156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 89.30628967285156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Town",
+      "Confidence": 89.30628967285156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Lighting",
+      "Confidence": 86.40535736083984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Walkway",
+      "Confidence": 78.21216583251953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Interior Design",
+      "Confidence": 75.4487533569336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 75.4487533569336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Home Decor",
+      "Confidence": 65.84947967529297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Window",
+      "Confidence": 62.92050552368164,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Corridor",
+      "Confidence": 60.284339904785156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 59.39060974121094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Alley",
+      "Confidence": 59.215023040771484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Street"
+        },
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Alleyway",
+      "Confidence": 59.215023040771484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Street"
+        },
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Walking",
+      "Confidence": 58.85280227661133,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Skylight",
+      "Confidence": 58.052738189697266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Window"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Sidewalk",
+      "Confidence": 57.491580963134766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Pavement",
+      "Confidence": 57.491580963134766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,154 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Architecture",
+      "Confidence": 99.39557647705078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.39557647705078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cathedral",
+      "Confidence": 95.74923706054688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Church",
+      "Confidence": 95.74923706054688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Apse",
+      "Confidence": 95.11273956298828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Altar",
+      "Confidence": 92.70254516601562,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9442349672317505,
+            "Height": 0.913825273513794,
+            "Left": 0.024914229288697243,
+            "Top": 0.06305039674043655
+          },
+          "Confidence": 92.70254516601562
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 82.83783721923828,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.016674377024173737,
+            "Height": 0.052685149013996124,
+            "Left": 0.5443922877311707,
+            "Top": 0.9398760199546814
+          },
+          "Confidence": 82.83783721923828
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.057013366371393204,
+            "Height": 0.045392028987407684,
+            "Left": 0.7062872052192688,
+            "Top": 0.9496992826461792
+          },
+          "Confidence": 79.52726745605469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0747717097401619,
+            "Height": 0.04190753772854805,
+            "Left": 0.61305832862854,
+            "Top": 0.9552923440933228
+          },
+          "Confidence": 67.81005096435547
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02719646319746971,
+            "Height": 0.03952101245522499,
+            "Left": 0.8724160194396973,
+            "Top": 0.9568774104118347
+          },
+          "Confidence": 53.17875289916992
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.028036873787641525,
+            "Height": 0.030465856194496155,
+            "Left": 0.12014869600534439,
+            "Top": 0.9657123684883118
+          },
+          "Confidence": 48.8018913269043
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 82.83783721923828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 69.9715347290039,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,160 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.79486846923828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 96.5871810913086,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.13049867749214172,
+            "Height": 0.1627391129732132,
+            "Left": 0.7014569044113159,
+            "Top": 0.6845366954803467
+          },
+          "Confidence": 96.5871810913086
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 96.5871810913086,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 96.33779907226562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 86.26287078857422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 86.26287078857422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Mountain",
+      "Confidence": 84.31368255615234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Sheep",
+      "Confidence": 80.34652709960938,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.13956040143966675,
+            "Height": 0.06773242354393005,
+            "Left": 0.42091038823127747,
+            "Top": 0.6488034725189209
+          },
+          "Confidence": 80.34652709960938
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 80.34652709960938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 80.34652709960938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Climbing",
+      "Confidence": 65.08448791503906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Rock Climbing",
+      "Confidence": 59.31037139892578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Climbing"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Cliff",
+      "Confidence": 55.05921173095703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

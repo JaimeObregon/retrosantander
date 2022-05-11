@@ -1,0 +1,157 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Lighting",
+      "Confidence": 97.61431121826172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Weapon",
+      "Confidence": 89.92510986328125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Weaponry",
+      "Confidence": 89.92510986328125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bicycle",
+      "Confidence": 82.01902770996094,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1559475064277649,
+            "Height": 0.23153792321681976,
+            "Left": 0.5816363096237183,
+            "Top": 0.694248616695404
+          },
+          "Confidence": 82.01902770996094
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 82.01902770996094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 82.01902770996094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bike",
+      "Confidence": 82.01902770996094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Home Decor",
+      "Confidence": 78.82228088378906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cannon",
+      "Confidence": 75.31734466552734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Weapon"
+        }
+      ]
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 71.98548889160156,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06991416215896606,
+            "Height": 0.16230328381061554,
+            "Left": 0.5800357460975647,
+            "Top": 0.7532229423522949
+          },
+          "Confidence": 71.98548889160156
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 71.98548889160156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Room",
+      "Confidence": 64.70419311523438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 64.70419311523438,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Spoke",
+      "Confidence": 57.035072326660156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Basement",
+      "Confidence": 55.561317443847656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

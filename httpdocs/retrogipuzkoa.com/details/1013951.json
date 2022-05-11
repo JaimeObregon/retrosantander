@@ -1,0 +1,42 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bird",
+      "Confidence": 96.18231201171875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.29971957206726074,
+            "Height": 0.22727318108081818,
+            "Left": 0.4491199254989624,
+            "Top": 0.33529528975486755
+          },
+          "Confidence": 96.18231201171875
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 96.18231201171875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 76.52375030517578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

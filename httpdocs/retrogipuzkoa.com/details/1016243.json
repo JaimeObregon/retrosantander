@@ -1,0 +1,110 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.83854675292969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 95.43891143798828,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.012006578966975212,
+            "Height": 0.04789965599775314,
+            "Left": 0.9413414597511292,
+            "Top": 0.6663894057273865
+          },
+          "Confidence": 95.43891143798828
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01394042931497097,
+            "Height": 0.03765012323856354,
+            "Left": 0.8422450423240662,
+            "Top": 0.5555218458175659
+          },
+          "Confidence": 80.0468978881836
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.017253059893846512,
+            "Height": 0.07131337374448776,
+            "Left": 0.20559296011924744,
+            "Top": 0.6178575158119202
+          },
+          "Confidence": 63.08797073364258
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 95.43891143798828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Earthquake",
+      "Confidence": 88.71870422363281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 69.99649810791016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 69.47896575927734,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.02555467002093792,
+            "Height": 0.03497856482863426,
+            "Left": 0.6332055926322937,
+            "Top": 0.38018032908439636
+          },
+          "Confidence": 69.47896575927734
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 69.47896575927734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 66.14447784423828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Landslide",
+      "Confidence": 56.7720832824707,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

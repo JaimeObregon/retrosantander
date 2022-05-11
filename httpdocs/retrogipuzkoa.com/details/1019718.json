@@ -1,0 +1,131 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Car",
+      "Confidence": 99.76541900634766,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.33950474858283997,
+            "Height": 0.2629201412200928,
+            "Left": 0.5569440722465515,
+            "Top": 0.6117641925811768
+          },
+          "Confidence": 99.76541900634766
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 99.76541900634766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.76541900634766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.76541900634766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Camping",
+      "Confidence": 95.7424087524414,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tent",
+      "Confidence": 92.81688690185547,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.23261140286922455,
+            "Height": 0.20679309964179993,
+            "Left": 0.15859004855155945,
+            "Top": 0.5356624126434326
+          },
+          "Confidence": 84.91572570800781
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Mountain Tent",
+      "Confidence": 60.754981994628906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Leisure Activities"
+        },
+        {
+          "Name": "Tent"
+        },
+        {
+          "Name": "Camping"
+        }
+      ]
+    },
+    {
+      "Name": "Leisure Activities",
+      "Confidence": 60.754981994628906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Caravan",
+      "Confidence": 58.46917724609375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Van"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Van",
+      "Confidence": 58.46917724609375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

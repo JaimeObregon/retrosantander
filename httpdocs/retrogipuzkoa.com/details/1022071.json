@@ -1,0 +1,118 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.08035278320312,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3588431477546692,
+            "Height": 0.7342694401741028,
+            "Left": 0.5509570837020874,
+            "Top": 0.1751004159450531
+          },
+          "Confidence": 91.88416290283203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.19531039893627167,
+            "Height": 0.9012688398361206,
+            "Left": 0.004127609543502331,
+            "Top": 0.0822639912366867
+          },
+          "Confidence": 86.91694641113281
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.08035278320312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 79.43400573730469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Military Uniform",
+      "Confidence": 77.10650634765625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Military",
+      "Confidence": 77.10650634765625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soldier",
+      "Confidence": 60.927337646484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 58.92326354980469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Army",
+      "Confidence": 57.09273910522461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Armored"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Armored",
+      "Confidence": 57.09273910522461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Weapon",
+      "Confidence": 55.5643196105957,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Weaponry",
+      "Confidence": 55.5643196105957,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

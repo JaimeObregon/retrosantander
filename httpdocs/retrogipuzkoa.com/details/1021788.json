@@ -1,0 +1,155 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Wall",
+      "Confidence": 95.29461669921875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 94.57154846191406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 94.57154846191406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Villa",
+      "Confidence": 92.607666015625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "House"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "House",
+      "Confidence": 92.607666015625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 91.39715576171875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Condo",
+      "Confidence": 78.65898895263672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 70.42989349365234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Home Decor",
+      "Confidence": 69.52608489990234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Window",
+      "Confidence": 64.98438262939453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 64.4561538696289,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Neighborhood",
+      "Confidence": 61.698829650878906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Door",
+      "Confidence": 57.55072784423828,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1420036256313324,
+            "Height": 0.30426499247550964,
+            "Left": 0.30697008967399597,
+            "Top": 0.5344160795211792
+          },
+          "Confidence": 57.55072784423828
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 56.103023529052734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 56.103023529052734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

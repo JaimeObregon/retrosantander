@@ -1,0 +1,147 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Architecture",
+      "Confidence": 94.3320083618164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 94.3320083618164,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 88.01919555664062,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3594401776790619,
+            "Height": 0.4732171297073364,
+            "Left": 0.35052746534347534,
+            "Top": 0.14793920516967773
+          },
+          "Confidence": 88.01919555664062
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1489221304655075,
+            "Height": 0.2848244607448578,
+            "Left": 0.621986448764801,
+            "Top": 0.24860572814941406
+          },
+          "Confidence": 73.5779037475586
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 88.01919555664062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Statue",
+      "Confidence": 87.97627258300781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sculpture"
+        },
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Sculpture",
+      "Confidence": 87.97627258300781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 87.97627258300781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tomb",
+      "Confidence": 85.19425201416016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Church",
+      "Confidence": 75.07682800292969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Tombstone",
+      "Confidence": 61.03914260864258,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tomb"
+        }
+      ]
+    },
+    {
+      "Name": "Altar",
+      "Confidence": 60.69846725463867,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9481831192970276,
+            "Height": 0.9505075812339783,
+            "Left": 0.024727821350097656,
+            "Top": 0.04334175959229469
+          },
+          "Confidence": 53.562679290771484
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Funeral",
+      "Confidence": 59.23584747314453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

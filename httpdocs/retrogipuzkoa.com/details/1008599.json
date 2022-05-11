@@ -1,0 +1,45 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Symbol",
+      "Confidence": 93.69039916992188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cross",
+      "Confidence": 93.2079849243164,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.4158969521522522,
+            "Height": 0.7522186636924744,
+            "Left": 0.11355946958065033,
+            "Top": 0.21093536913394928
+          },
+          "Confidence": 77.6706771850586
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Symbol"
+        }
+      ]
+    },
+    {
+      "Name": "Crucifix",
+      "Confidence": 78.60625457763672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cross"
+        },
+        {
+          "Name": "Symbol"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

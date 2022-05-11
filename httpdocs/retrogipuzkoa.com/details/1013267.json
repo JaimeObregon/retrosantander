@@ -1,0 +1,77 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Pig",
+      "Confidence": 98.50434112548828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 98.50434112548828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 98.50434112548828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Hog",
+      "Confidence": 86.55819702148438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pig"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bench",
+      "Confidence": 62.372989654541016,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7791023254394531,
+            "Height": 0.8689278364181519,
+            "Left": 0.11448471248149872,
+            "Top": 0.12836214900016785
+          },
+          "Confidence": 62.372989654541016
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 62.372989654541016,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

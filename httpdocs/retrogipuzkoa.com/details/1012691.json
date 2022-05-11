@@ -1,0 +1,86 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Furniture",
+      "Confidence": 96.20149230957031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cabinet",
+      "Confidence": 81.66973876953125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 70.3123779296875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 70.3123779296875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 67.9510269165039,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.05194886028766632,
+            "Height": 0.06362303346395493,
+            "Left": 0.246717631816864,
+            "Top": 0.17418372631072998
+          },
+          "Confidence": 67.9510269165039
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 67.9510269165039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 64.85051727294922,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8050445318222046,
+            "Height": 0.8728129863739014,
+            "Left": 0.05681628733873367,
+            "Top": 0.026990175247192383
+          },
+          "Confidence": 64.85051727294922
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 64.85051727294922,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

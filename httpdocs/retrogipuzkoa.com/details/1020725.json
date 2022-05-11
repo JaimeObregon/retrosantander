@@ -1,0 +1,110 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 96.0197525024414,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.16601960361003876,
+            "Height": 0.16046196222305298,
+            "Left": 0.2712959051132202,
+            "Top": 0.6293412446975708
+          },
+          "Confidence": 96.0197525024414
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.22925324738025665,
+            "Height": 0.4416189193725586,
+            "Left": 0.010255871340632439,
+            "Top": 0.3203628659248352
+          },
+          "Confidence": 79.21295166015625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08440764993429184,
+            "Height": 0.140899658203125,
+            "Left": 0.4122277796268463,
+            "Top": 0.6425172090530396
+          },
+          "Confidence": 73.10204315185547
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.13172857463359833,
+            "Height": 0.11613822728395462,
+            "Left": 0.49064087867736816,
+            "Top": 0.6554579734802246
+          },
+          "Confidence": 65.36642456054688
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 96.0197525024414,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crucifix",
+      "Confidence": 94.79045867919922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cross"
+        },
+        {
+          "Name": "Symbol"
+        }
+      ]
+    },
+    {
+      "Name": "Symbol",
+      "Confidence": 94.79045867919922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cross",
+      "Confidence": 94.79045867919922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Symbol"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 68.2069091796875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9154771566390991,
+            "Height": 0.9308095574378967,
+            "Left": 0.0261240191757679,
+            "Top": 0.012132289819419384
+          },
+          "Confidence": 68.2069091796875
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 68.2069091796875,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

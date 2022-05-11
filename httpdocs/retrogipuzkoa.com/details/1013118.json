@@ -1,0 +1,345 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Field",
+      "Confidence": 99.8094482421875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 98.04280853271484,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.01866026781499386,
+            "Height": 0.07630734145641327,
+            "Left": 0.6592180728912354,
+            "Top": 0.8638272285461426
+          },
+          "Confidence": 98.04280853271484
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.010621295310556889,
+            "Height": 0.04807982221245766,
+            "Left": 0.43121564388275146,
+            "Top": 0.6785939335823059
+          },
+          "Confidence": 89.18536376953125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.011066075414419174,
+            "Height": 0.04855388030409813,
+            "Left": 0.20946015417575836,
+            "Top": 0.6989157199859619
+          },
+          "Confidence": 84.44380187988281
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.021528277546167374,
+            "Height": 0.07955858111381531,
+            "Left": 0.7417137622833252,
+            "Top": 0.85491943359375
+          },
+          "Confidence": 80.3816146850586
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.008133737370371819,
+            "Height": 0.03843792527914047,
+            "Left": 0.4780479073524475,
+            "Top": 0.7318326830863953
+          },
+          "Confidence": 74.47282409667969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.008762720972299576,
+            "Height": 0.02616572193801403,
+            "Left": 0.5876093506813049,
+            "Top": 0.7126939296722412
+          },
+          "Confidence": 69.7125473022461
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01618299074470997,
+            "Height": 0.07128112018108368,
+            "Left": 0.8552843332290649,
+            "Top": 0.8797184228897095
+          },
+          "Confidence": 68.90906524658203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.008461668156087399,
+            "Height": 0.03337448835372925,
+            "Left": 0.33167213201522827,
+            "Top": 0.7419055700302124
+          },
+          "Confidence": 65.54259490966797
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.010044646449387074,
+            "Height": 0.03823629394173622,
+            "Left": 0.16207262873649597,
+            "Top": 0.7430155873298645
+          },
+          "Confidence": 60.613059997558594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.007835736498236656,
+            "Height": 0.027131201699376106,
+            "Left": 0.6226180195808411,
+            "Top": 0.6953122615814209
+          },
+          "Confidence": 57.26539611816406
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.04280853271484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 97.81103515625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Stadium",
+      "Confidence": 93.81258392333984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Arena"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arena",
+      "Confidence": 93.81258392333984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 91.77774810791016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Football Field",
+      "Confidence": 83.70384979248047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Football"
+        },
+        {
+          "Name": "Stadium"
+        },
+        {
+          "Name": "Field"
+        },
+        {
+          "Name": "Team Sport"
+        },
+        {
+          "Name": "Arena"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 83.70384979248047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Team Sport",
+      "Confidence": 83.70384979248047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Team",
+      "Confidence": 83.70384979248047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "People"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Football",
+      "Confidence": 83.70384979248047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Team Sport"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 83.70384979248047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Construction Crane",
+      "Confidence": 68.2346420288086,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.4873252511024475,
+            "Height": 0.5384107828140259,
+            "Left": 0.0018422177527099848,
+            "Top": 0
+          },
+          "Confidence": 68.2346420288086
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Airplane",
+      "Confidence": 62.43895721435547,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09231985360383987,
+            "Height": 0.10725448280572891,
+            "Left": 0.5023150444030762,
+            "Top": 0.6012620329856873
+          },
+          "Confidence": 62.43895721435547
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.3270716667175293,
+            "Height": 0.10093668103218079,
+            "Left": 0.4449653625488281,
+            "Top": 0.5881541967391968
+          },
+          "Confidence": 56.37554168701172
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 62.43895721435547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 62.43895721435547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Aircraft",
+      "Confidence": 62.43895721435547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

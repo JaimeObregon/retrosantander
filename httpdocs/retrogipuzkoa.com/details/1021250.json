@@ -1,0 +1,101 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.90666198730469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 95.73902893066406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fog",
+      "Confidence": 94.00443267822266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Weather",
+      "Confidence": 93.12322998046875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Smoke",
+      "Confidence": 89.00529479980469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 67.72012329101562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Smog",
+      "Confidence": 65.27448272705078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fog"
+        },
+        {
+          "Name": "Smoke"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 56.52202606201172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Mist",
+      "Confidence": 55.054115295410156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Fog"
+        },
+        {
+          "Name": "Weather"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Pollution",
+      "Confidence": 55.021610260009766,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

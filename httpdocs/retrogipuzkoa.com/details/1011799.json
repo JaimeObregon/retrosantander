@@ -1,0 +1,119 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bird",
+      "Confidence": 99.8290786743164,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1813531219959259,
+            "Height": 0.37568801641464233,
+            "Left": 0.14194989204406738,
+            "Top": 0.5131120681762695
+          },
+          "Confidence": 99.8290786743164
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1304572969675064,
+            "Height": 0.36856934428215027,
+            "Left": 0.689275324344635,
+            "Top": 0.473196417093277
+          },
+          "Confidence": 99.52059173583984
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.17452703416347504,
+            "Height": 0.3773980736732483,
+            "Left": 0.4722931385040283,
+            "Top": 0.48436668515205383
+          },
+          "Confidence": 99.40947723388672
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.16837447881698608,
+            "Height": 0.37095555663108826,
+            "Left": 0.529765784740448,
+            "Top": 0.4711313545703888
+          },
+          "Confidence": 78.89503479003906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.11550871282815933,
+            "Height": 0.4194257855415344,
+            "Left": 0.5960966348648071,
+            "Top": 0.40137508511543274
+          },
+          "Confidence": 66.60272216796875
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.8290786743164,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pigeon",
+      "Confidence": 94.53372192382812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Dove",
+      "Confidence": 93.14363861083984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pigeon"
+        },
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 60.282474517822266,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.043791867792606354,
+            "Height": 0.21364034712314606,
+            "Left": 0.9544537663459778,
+            "Top": 0.5930822491645813
+          },
+          "Confidence": 60.282474517822266
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 60.282474517822266,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

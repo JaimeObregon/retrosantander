@@ -1,0 +1,58 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Construction",
+      "Confidence": 91.87723541259766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Scaffolding",
+      "Confidence": 81.78180694580078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Construction"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 71.46797180175781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 71.46797180175781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bridge",
+      "Confidence": 67.15044403076172,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9623953104019165,
+            "Height": 0.7729578018188477,
+            "Left": 0.023963404819369316,
+            "Top": 0.021113933995366096
+          },
+          "Confidence": 67.15044403076172
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

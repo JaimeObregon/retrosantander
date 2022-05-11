@@ -1,0 +1,90 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Cat",
+      "Confidence": 92.77909851074219,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.526796281337738,
+            "Height": 0.31827032566070557,
+            "Left": 0.22932007908821106,
+            "Top": 0.531383216381073
+          },
+          "Confidence": 92.77909851074219
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 92.77909851074219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 92.77909851074219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 92.77909851074219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 73.78155517578125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 65.882080078125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Zoo",
+      "Confidence": 57.701499938964844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 57.500328063964844,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

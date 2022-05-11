@@ -1,0 +1,105 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.84512329101562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 97.95922088623047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Weather",
+      "Confidence": 97.91605377197266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Storm",
+      "Confidence": 95.9207534790039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Cumulus",
+      "Confidence": 86.7227554321289,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cloud"
+        },
+        {
+          "Name": "Weather"
+        },
+        {
+          "Name": "Sky"
+        },
+        {
+          "Name": "Nature"
+        },
+        {
+          "Name": "Outdoors"
+        }
+      ]
+    },
+    {
+      "Name": "Sky",
+      "Confidence": 86.7227554321289,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Cloud",
+      "Confidence": 86.7227554321289,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sky"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Thunderstorm",
+      "Confidence": 75.95130157470703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Storm"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

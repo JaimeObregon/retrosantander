@@ -1,0 +1,115 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Architecture",
+      "Confidence": 99.73566436767578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.73566436767578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Arch",
+      "Confidence": 98.43606567382812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arched",
+      "Confidence": 98.43606567382812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Door",
+      "Confidence": 87.88739776611328,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.250171959400177,
+            "Height": 0.6187195181846619,
+            "Left": 0.6391114592552185,
+            "Top": 0.3543604016304016
+          },
+          "Confidence": 87.88739776611328
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Arch Bridge",
+      "Confidence": 82.57048034667969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bridge"
+        },
+        {
+          "Name": "Arch"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Architecture"
+        }
+      ]
+    },
+    {
+      "Name": "Bridge",
+      "Confidence": 82.57048034667969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Drawbridge",
+      "Confidence": 56.593387603759766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Arch Bridge"
+        },
+        {
+          "Name": "Bridge"
+        },
+        {
+          "Name": "Arch"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Architecture"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

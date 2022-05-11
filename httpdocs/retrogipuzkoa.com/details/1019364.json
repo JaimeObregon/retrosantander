@@ -1,0 +1,142 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.49229431152344,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10715814679861069,
+            "Height": 0.14332103729248047,
+            "Left": 0.3003148138523102,
+            "Top": 0.604672372341156
+          },
+          "Confidence": 99.49229431152344
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05635139346122742,
+            "Height": 0.11177657544612885,
+            "Left": 0.7218208909034729,
+            "Top": 0.6234262585639954
+          },
+          "Confidence": 97.74630737304688
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04933440685272217,
+            "Height": 0.22103828191757202,
+            "Left": 0.0016628248849883676,
+            "Top": 0.6649782657623291
+          },
+          "Confidence": 95.82813262939453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01801059953868389,
+            "Height": 0.03572419658303261,
+            "Left": 0.41609886288642883,
+            "Top": 0.6009319424629211
+          },
+          "Confidence": 68.31063079833984
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04660239815711975,
+            "Height": 0.032687004655599594,
+            "Left": 0.8126490116119385,
+            "Top": 0.6023646593093872
+          },
+          "Confidence": 66.37714385986328
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.49229431152344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 96.72883605957031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 96.72883605957031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 95.6880874633789,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08312147855758667,
+            "Height": 0.10241688787937164,
+            "Left": 0.3910773694515228,
+            "Top": 0.37853720784187317
+          },
+          "Confidence": 95.6880874633789
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 95.6880874633789,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 61.55076599121094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Acrobatic",
+      "Confidence": 58.80168533325195,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Pole Vault",
+      "Confidence": 58.483192443847656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Acrobatic"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,313 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Harbor",
+      "Confidence": 98.6032485961914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pier"
+        },
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Waterfront",
+      "Confidence": 98.6032485961914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Water",
+      "Confidence": 98.6032485961914,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pier",
+      "Confidence": 98.6032485961914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Dock",
+      "Confidence": 98.6032485961914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Port",
+      "Confidence": 98.6032485961914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Boat",
+      "Confidence": 92.2292251586914,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.0928264930844307,
+            "Height": 0.07802784442901611,
+            "Left": 0.2374330461025238,
+            "Top": 0.6877812743186951
+          },
+          "Confidence": 92.2292251586914
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.11903739720582962,
+            "Height": 0.054986320436000824,
+            "Left": 0.01679893024265766,
+            "Top": 0.7308546900749207
+          },
+          "Confidence": 81.71525573730469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.18196620047092438,
+            "Height": 0.08652076125144958,
+            "Left": 0.8161877393722534,
+            "Top": 0.6496953368186951
+          },
+          "Confidence": 77.90260314941406
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1288517415523529,
+            "Height": 0.07603475451469421,
+            "Left": 0.6948806643486023,
+            "Top": 0.6588088870048523
+          },
+          "Confidence": 75.314453125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.22063802182674408,
+            "Height": 0.0982312336564064,
+            "Left": 0.4816140830516815,
+            "Top": 0.6488465070724487
+          },
+          "Confidence": 54.249935150146484
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 92.2292251586914,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 92.2292251586914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 90.88761138916016,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.015524666756391525,
+            "Height": 0.045257486402988434,
+            "Left": 0.5868421196937561,
+            "Top": 0.6878494024276733
+          },
+          "Confidence": 90.88761138916016
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.011440986767411232,
+            "Height": 0.04333471134305,
+            "Left": 0.39096805453300476,
+            "Top": 0.5942577123641968
+          },
+          "Confidence": 64.26211547851562
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 90.88761138916016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Steamer",
+      "Confidence": 88.6944580078125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Watercraft",
+      "Confidence": 87.87754821777344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vessel",
+      "Confidence": 87.87754821777344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Ferry",
+      "Confidence": 77.23747253417969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Boat"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Barge",
+      "Confidence": 74.75806427001953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Watercraft"
+        },
+        {
+          "Name": "Boat"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Marina",
+      "Confidence": 69.79291534423828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Military",
+      "Confidence": 59.629981994628906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cruiser",
+      "Confidence": 56.906089782714844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Navy"
+        },
+        {
+          "Name": "Ship"
+        },
+        {
+          "Name": "Military"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Ship",
+      "Confidence": 56.906089782714844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Navy",
+      "Confidence": 56.906089782714844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 55.490623474121094,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,105 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 99.48885345458984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 99.3135986328125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Altar",
+      "Confidence": 91.61996459960938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Church",
+      "Confidence": 91.61996459960938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Temple",
+      "Confidence": 90.6988754272461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Shrine",
+      "Confidence": 88.77955627441406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Worship"
+        },
+        {
+          "Name": "Temple"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Worship",
+      "Confidence": 88.77955627441406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Gate",
+      "Confidence": 70.8477554321289,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9350994229316711,
+            "Height": 0.5484415292739868,
+            "Left": 0.027581464499235153,
+            "Top": 0.4207937717437744
+          },
+          "Confidence": 70.8477554321289
+        }
+      ],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

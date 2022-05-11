@@ -1,0 +1,93 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Lizard",
+      "Confidence": 97.72400665283203,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.6673288345336914,
+            "Height": 0.4401392638683319,
+            "Left": 0.12392682582139969,
+            "Top": 0.47316768765449524
+          },
+          "Confidence": 97.72400665283203
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Reptile"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Reptile",
+      "Confidence": 97.72400665283203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 97.72400665283203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crocodile",
+      "Confidence": 95.93492889404297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Reptile"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Alligator",
+      "Confidence": 95.93492889404297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Reptile"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 89.64567565917969,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07966210693120956,
+            "Height": 0.22107340395450592,
+            "Left": 0.18670077621936798,
+            "Top": 0.13944067060947418
+          },
+          "Confidence": 89.64567565917969
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 89.64567565917969,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

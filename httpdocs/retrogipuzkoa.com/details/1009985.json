@@ -1,0 +1,268 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.58672332763672,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.15922105312347412,
+            "Height": 0.3459722101688385,
+            "Left": 0.7294749617576599,
+            "Top": 0.4405463635921478
+          },
+          "Confidence": 99.58672332763672
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.58672332763672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Military",
+      "Confidence": 88.44184112548828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Military Uniform",
+      "Confidence": 87.74605560302734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Army",
+      "Confidence": 83.33733367919922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Armored"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Armored",
+      "Confidence": 83.33733367919922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bunker",
+      "Confidence": 75.89913177490234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 75.89913177490234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 70.75482940673828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 70.75482940673828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 69.76824951171875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9972222447395325,
+            "Height": 0.8144606351852417,
+            "Left": 0,
+            "Top": 0.0036691767163574696
+          },
+          "Confidence": 69.76824951171875
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 69.76824951171875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soldier",
+      "Confidence": 62.97843933105469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Overcoat",
+      "Confidence": 59.37867736816406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Coat"
+        },
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Coat",
+      "Confidence": 59.37867736816406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 59.37867736816406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 59.37867736816406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tank",
+      "Confidence": 57.93310546875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Army"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Armored"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Transportation"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Bear",
+      "Confidence": 57.18581008911133,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.6447226405143738,
+            "Height": 0.282970666885376,
+            "Left": 0.08619655668735504,
+            "Top": 0.5551730990409851
+          },
+          "Confidence": 57.18581008911133
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 57.18581008911133,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 57.18581008911133,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 57.18581008911133,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Standing",
+      "Confidence": 56.234092712402344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

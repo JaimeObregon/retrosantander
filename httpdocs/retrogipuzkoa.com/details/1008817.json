@@ -1,0 +1,186 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.62940979003906,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10250729322433472,
+            "Height": 0.18813465535640717,
+            "Left": 0.4724876880645752,
+            "Top": 0.6436081528663635
+          },
+          "Confidence": 99.62940979003906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.13333584368228912,
+            "Height": 0.2041318714618683,
+            "Left": 0.26205456256866455,
+            "Top": 0.624869167804718
+          },
+          "Confidence": 99.22625732421875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.11224154382944107,
+            "Height": 0.2058936357498169,
+            "Left": 0.07335164397954941,
+            "Top": 0.6216729283332825
+          },
+          "Confidence": 98.9755630493164
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1141546294093132,
+            "Height": 0.1894604116678238,
+            "Left": 0.651517391204834,
+            "Top": 0.6504203677177429
+          },
+          "Confidence": 98.61750793457031
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09459057450294495,
+            "Height": 0.1717674881219864,
+            "Left": 0,
+            "Top": 0.6229065656661987
+          },
+          "Confidence": 98.28334045410156
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07158089429140091,
+            "Height": 0.16069313883781433,
+            "Left": 0.37607541680336,
+            "Top": 0.6314020156860352
+          },
+          "Confidence": 97.58453369140625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09391026198863983,
+            "Height": 0.1782769411802292,
+            "Left": 0.1617063283920288,
+            "Top": 0.6273463368415833
+          },
+          "Confidence": 93.15193176269531
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03855091333389282,
+            "Height": 0.03694736585021019,
+            "Left": 0.2066778838634491,
+            "Top": 0.3038471043109894
+          },
+          "Confidence": 86.4521255493164
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02761857584118843,
+            "Height": 0.029870016500353813,
+            "Left": 0.18016795814037323,
+            "Top": 0.3018925189971924
+          },
+          "Confidence": 74.53712463378906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06748628616333008,
+            "Height": 0.15194766223430634,
+            "Left": 0.19991329312324524,
+            "Top": 0.6363633275032043
+          },
+          "Confidence": 69.68024444580078
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.62940979003906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Stage",
+      "Confidence": 92.27569580078125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Military",
+      "Confidence": 86.60083770751953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crowd",
+      "Confidence": 84.87315368652344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Military Uniform",
+      "Confidence": 75.1098403930664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 66.49656677246094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 63.6266975402832,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Marching",
+      "Confidence": 57.86724853515625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Crowd"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Soldier",
+      "Confidence": 56.6744499206543,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,64 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Text",
+      "Confidence": 99.51554870605469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Document",
+      "Confidence": 95.41914367675781,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9867312908172607,
+            "Height": 0.9279513359069824,
+            "Left": 0.008507365360856056,
+            "Top": 0.046080149710178375
+          },
+          "Confidence": 95.41914367675781
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Letter",
+      "Confidence": 83.5606460571289,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Handwriting",
+      "Confidence": 68.85186004638672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 60.065250396728516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 55.099609375,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

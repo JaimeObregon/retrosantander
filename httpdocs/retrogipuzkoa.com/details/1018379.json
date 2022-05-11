@@ -1,0 +1,144 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.26892852783203,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04754938557744026,
+            "Height": 0.2030402272939682,
+            "Left": 0.6483646035194397,
+            "Top": 0.6982227563858032
+          },
+          "Confidence": 99.26892852783203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.046516500413417816,
+            "Height": 0.19233691692352295,
+            "Left": 0.6992162466049194,
+            "Top": 0.6956995129585266
+          },
+          "Confidence": 96.58165740966797
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03415216878056526,
+            "Height": 0.09141059964895248,
+            "Left": 0.603632390499115,
+            "Top": 0.7493975162506104
+          },
+          "Confidence": 89.10771942138672
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.26892852783203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 99.0699234008789,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.34716796875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 86.06782531738281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Winter",
+      "Confidence": 81.67432403564453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Drawing",
+      "Confidence": 68.16473388671875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 68.16473388671875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Storm",
+      "Confidence": 65.39117431640625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Sketch",
+      "Confidence": 64.87491607666016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Drawing"
+        },
+        {
+          "Name": "Art"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Blizzard",
+      "Confidence": 56.47148895263672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Winter"
+        },
+        {
+          "Name": "Storm"
+        },
+        {
+          "Name": "Snow"
+        },
+        {
+          "Name": "Nature"
+        },
+        {
+          "Name": "Outdoors"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

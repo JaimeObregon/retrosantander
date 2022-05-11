@@ -1,0 +1,112 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.79774475097656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 97.16512298583984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mountain",
+      "Confidence": 92.5413818359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Storm",
+      "Confidence": 88.40323638916016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 56.333473205566406,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9982455968856812,
+            "Height": 0.956059992313385,
+            "Left": 0,
+            "Top": 0.028076212853193283
+          },
+          "Confidence": 56.333473205566406
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 56.333473205566406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Panoramic",
+      "Confidence": 55.26665115356445,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Landscape"
+        },
+        {
+          "Name": "Scenery"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Scenery",
+      "Confidence": 55.26665115356445,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Landscape",
+      "Confidence": 55.26665115356445,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

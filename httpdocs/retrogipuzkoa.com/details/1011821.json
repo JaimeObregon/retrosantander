@@ -1,0 +1,142 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Market",
+      "Confidence": 99.17854309082031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bazaar",
+      "Confidence": 97.03369903564453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Market"
+        },
+        {
+          "Name": "Shop"
+        }
+      ]
+    },
+    {
+      "Name": "Shop",
+      "Confidence": 97.03369903564453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 94.41719055175781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 94.40628051757812,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.018457191064953804,
+            "Height": 0.07525285333395004,
+            "Left": 0.18320131301879883,
+            "Top": 0.9205726385116577
+          },
+          "Confidence": 94.40628051757812
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01871161162853241,
+            "Height": 0.07449598610401154,
+            "Left": 0.1410255879163742,
+            "Top": 0.9197207093238831
+          },
+          "Confidence": 91.32740783691406
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02611009031534195,
+            "Height": 0.14577606320381165,
+            "Left": 0.6173121333122253,
+            "Top": 0.8454225063323975
+          },
+          "Confidence": 89.8022689819336
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01565396413207054,
+            "Height": 0.07163398712873459,
+            "Left": 0.1675441861152649,
+            "Top": 0.9251680970191956
+          },
+          "Confidence": 88.52613830566406
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01381621789187193,
+            "Height": 0.06512684375047684,
+            "Left": 0.4934321343898773,
+            "Top": 0.8295239806175232
+          },
+          "Confidence": 79.03292083740234
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.016278745606541634,
+            "Height": 0.06125534698367119,
+            "Left": 0.17258818447589874,
+            "Top": 0.8706742525100708
+          },
+          "Confidence": 76.52240753173828
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01949077472090721,
+            "Height": 0.07806529849767685,
+            "Left": 0.6545617580413818,
+            "Top": 0.9169233441352844
+          },
+          "Confidence": 64.43577575683594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.014582503587007523,
+            "Height": 0.0764605849981308,
+            "Left": 0.12947076559066772,
+            "Top": 0.8987588286399841
+          },
+          "Confidence": 58.35281753540039
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 94.40628051757812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Factory",
+      "Confidence": 72.48950958251953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 65.50695037841797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,142 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Architecture",
+      "Confidence": 98.76603698730469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 98.76603698730469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Church",
+      "Confidence": 98.74285125732422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Altar",
+      "Confidence": 98.5105209350586,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 93.00582122802734,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.0560440868139267,
+            "Height": 0.4693703055381775,
+            "Left": 0.7277370095252991,
+            "Top": 0.02380816638469696
+          },
+          "Confidence": 93.00582122802734
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04949362203478813,
+            "Height": 0.263384073972702,
+            "Left": 0.6873981356620789,
+            "Top": 0.172015979886055
+          },
+          "Confidence": 92.43843078613281
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 93.00582122802734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Funeral",
+      "Confidence": 67.89257049560547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 64.00556945800781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Lighting",
+      "Confidence": 59.46630859375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shrine",
+      "Confidence": 58.87493896484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Worship"
+        },
+        {
+          "Name": "Temple"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Worship",
+      "Confidence": 58.87493896484375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Temple",
+      "Confidence": 58.87493896484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

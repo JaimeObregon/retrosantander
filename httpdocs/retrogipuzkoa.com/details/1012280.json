@@ -1,0 +1,77 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bear",
+      "Confidence": 92.27676391601562,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5909678936004639,
+            "Height": 0.610539972782135,
+            "Left": 0.24164246022701263,
+            "Top": 0.3229280412197113
+          },
+          "Confidence": 92.27676391601562
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 92.27676391601562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 92.27676391601562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 92.27676391601562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Polar Bear",
+      "Confidence": 91.41270446777344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bear"
+        },
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

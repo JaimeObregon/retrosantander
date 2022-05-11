@@ -1,0 +1,112 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Text",
+      "Confidence": 99.36483001708984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Page",
+      "Confidence": 98.466796875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Book",
+      "Confidence": 97.34161376953125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9713982343673706,
+            "Height": 0.9430651068687439,
+            "Left": 0.02352236956357956,
+            "Top": 0.042766690254211426
+          },
+          "Confidence": 97.34161376953125
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Letter",
+      "Confidence": 95.35554504394531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Paper",
+      "Confidence": 78.58721923828125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Alphabet",
+      "Confidence": 65.4759750366211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Poster",
+      "Confidence": 65.04654693603516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Advertisement",
+      "Confidence": 65.04654693603516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Flyer",
+      "Confidence": 55.18621063232422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Poster"
+        },
+        {
+          "Name": "Paper"
+        },
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Brochure",
+      "Confidence": 55.18621063232422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Poster"
+        },
+        {
+          "Name": "Paper"
+        },
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

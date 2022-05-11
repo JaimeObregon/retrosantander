@@ -1,0 +1,150 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.69812774658203,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06142422929406166,
+            "Height": 0.2474190592765808,
+            "Left": 0.2769528925418854,
+            "Top": 0.7367369532585144
+          },
+          "Confidence": 99.69812774658203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.057656604796648026,
+            "Height": 0.27055442333221436,
+            "Left": 0.21629682183265686,
+            "Top": 0.7219033241271973
+          },
+          "Confidence": 99.6225814819336
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.053280480206012726,
+            "Height": 0.2470526397228241,
+            "Left": 0.3378969728946686,
+            "Top": 0.7092729806900024
+          },
+          "Confidence": 99.40118408203125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.047034118324518204,
+            "Height": 0.24906328320503235,
+            "Left": 0.4045109748840332,
+            "Top": 0.6605971455574036
+          },
+          "Confidence": 98.86199951171875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05041118338704109,
+            "Height": 0.24051153659820557,
+            "Left": 0.6493086218833923,
+            "Top": 0.5775932669639587
+          },
+          "Confidence": 65.17070770263672
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.69812774658203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 99.63308715820312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.0826187133789,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 91.56941986083984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 80.232421875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9114943146705627,
+            "Height": 0.9436770677566528,
+            "Left": 0.004886934999376535,
+            "Top": 0.05354508385062218
+          },
+          "Confidence": 80.232421875
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 80.232421875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Igloo",
+      "Confidence": 77.62811279296875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Snow"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Ice",
+      "Confidence": 67.85761260986328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 56.63691711425781,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

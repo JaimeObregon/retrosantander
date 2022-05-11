@@ -1,0 +1,176 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Cat",
+      "Confidence": 89.48056030273438,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2726106345653534,
+            "Height": 0.2563028633594513,
+            "Left": 0.5503761768341064,
+            "Top": 0.6489749550819397
+          },
+          "Confidence": 89.48056030273438
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09088262915611267,
+            "Height": 0.2811264395713806,
+            "Left": 0.00020029503502883017,
+            "Top": 0.6164931654930115
+          },
+          "Confidence": 77.93013763427734
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 89.48056030273438,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 89.48056030273438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 89.48056030273438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Abyssinian",
+      "Confidence": 77.00824737548828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cat"
+        },
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Kit Fox",
+      "Confidence": 72.89851379394531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fox"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 72.89851379394531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Fox",
+      "Confidence": 72.89851379394531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 72.89851379394531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Zoo",
+      "Confidence": 71.6639175415039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Manx",
+      "Confidence": 55.1190185546875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cat"
+        },
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

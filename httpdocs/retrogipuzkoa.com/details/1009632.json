@@ -1,0 +1,177 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 97.59228515625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.16098365187644958,
+            "Height": 0.2210792452096939,
+            "Left": 0.6235330104827881,
+            "Top": 0.001621370785869658
+          },
+          "Confidence": 97.59228515625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.15255598723888397,
+            "Height": 0.15950743854045868,
+            "Left": 0.04536527767777443,
+            "Top": 0.0032983655110001564
+          },
+          "Confidence": 97.140380859375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1392509639263153,
+            "Height": 0.255840539932251,
+            "Left": 0.8341161608695984,
+            "Top": 0.0015762681141495705
+          },
+          "Confidence": 95.77208709716797
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.12827004492282867,
+            "Height": 0.06721417605876923,
+            "Left": 0.28556010127067566,
+            "Top": 0
+          },
+          "Confidence": 90.89678192138672
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06657008081674576,
+            "Height": 0.0758018046617508,
+            "Left": 0.5846899747848511,
+            "Top": 0.0005954944645054638
+          },
+          "Confidence": 76.24063873291016
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.59228515625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 91.60359954833984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fish",
+      "Confidence": 90.9641342163086,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Sturgeon",
+      "Confidence": 88.00106048583984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fish"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 72.44965362548828,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7291125655174255,
+            "Height": 0.2150578647851944,
+            "Left": 0.17058445513248444,
+            "Top": 0.31463611125946045
+          },
+          "Confidence": 72.44965362548828
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.20664452016353607,
+            "Height": 0.1830519735813141,
+            "Left": 0.10213902592658997,
+            "Top": 0.35255560278892517
+          },
+          "Confidence": 56.876949310302734
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Sea Life",
+      "Confidence": 58.650630950927734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Shoe",
+      "Confidence": 55.62832260131836,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06263235211372375,
+            "Height": 0.0495266392827034,
+            "Left": 0.584339439868927,
+            "Top": 0.02574549987912178
+          },
+          "Confidence": 55.62832260131836
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Footwear"
+        },
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 55.62832260131836,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Footwear",
+      "Confidence": 55.62832260131836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 55.62832260131836,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

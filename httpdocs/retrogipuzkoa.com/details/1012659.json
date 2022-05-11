@@ -1,0 +1,164 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 99.23499298095703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bridge",
+      "Confidence": 97.1883316040039,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9701666831970215,
+            "Height": 0.6726036071777344,
+            "Left": 0.012741249054670334,
+            "Top": 0.17101381719112396
+          },
+          "Confidence": 88.01718139648438
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 97.09609985351562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arch",
+      "Confidence": 91.75775909423828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arched",
+      "Confidence": 91.75775909423828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 89.92732238769531,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.026133326813578606,
+            "Height": 0.03735387325286865,
+            "Left": 0.5422208309173584,
+            "Top": 0.21163278818130493
+          },
+          "Confidence": 89.92732238769531
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 89.92732238769531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Arch Bridge",
+      "Confidence": 88.61546325683594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bridge"
+        },
+        {
+          "Name": "Arch"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Architecture"
+        }
+      ]
+    },
+    {
+      "Name": "Water",
+      "Confidence": 64.27781677246094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Waterfront",
+      "Confidence": 63.34221267700195,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 63.322052001953125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 60.63514709472656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Boat",
+      "Confidence": 57.699424743652344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Hangar",
+      "Confidence": 55.03803253173828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

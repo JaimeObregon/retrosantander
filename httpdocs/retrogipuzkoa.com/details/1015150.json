@@ -1,0 +1,313 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.22317504882812,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04480826482176781,
+            "Height": 0.15140721201896667,
+            "Left": 0.6490805745124817,
+            "Top": 0.5242371559143066
+          },
+          "Confidence": 99.22317504882812
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.051130328327417374,
+            "Height": 0.20666012167930603,
+            "Left": 0.3714113235473633,
+            "Top": 0.48833712935447693
+          },
+          "Confidence": 98.70333862304688
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.22317504882812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Dog",
+      "Confidence": 98.53709411621094,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06806421279907227,
+            "Height": 0.11150964349508286,
+            "Left": 0.23667629063129425,
+            "Top": 0.606103777885437
+          },
+          "Confidence": 98.53709411621094
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.055919766426086426,
+            "Height": 0.11696703732013702,
+            "Left": 0.35696977376937866,
+            "Top": 0.6229989528656006
+          },
+          "Confidence": 97.71943664550781
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07266642153263092,
+            "Height": 0.1208541989326477,
+            "Left": 0.5128343105316162,
+            "Top": 0.5758460164070129
+          },
+          "Confidence": 83.97215270996094
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.031499333679676056,
+            "Height": 0.10412005335092545,
+            "Left": 0.23169489204883575,
+            "Top": 0.6047897934913635
+          },
+          "Confidence": 79.9109878540039
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 98.53709411621094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 98.53709411621094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 98.53709411621094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 98.53709411621094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 96.6114730834961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 95.92153930664062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Field",
+      "Confidence": 87.88298034667969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Agriculture",
+      "Confidence": 87.75340270996094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Field"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 87.75340270996094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Land",
+      "Confidence": 80.47425842285156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Path",
+      "Confidence": 66.75125122070312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Walking",
+      "Confidence": 66.6912841796875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Cattle",
+      "Confidence": 65.36499786376953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bull",
+      "Confidence": 64.47498321533203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 59.75312042236328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 59.46221160888672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Grassland",
+      "Confidence": 59.03556442260742,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Field"
+        }
+      ]
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 58.95109558105469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 58.95109558105469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Trail",
+      "Confidence": 56.88377380371094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Slope",
+      "Confidence": 55.7608642578125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mountain",
+      "Confidence": 55.58395767211914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

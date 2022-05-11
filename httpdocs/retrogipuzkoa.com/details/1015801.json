@@ -1,0 +1,266 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.83966064453125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.59435272216797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Weather",
+      "Confidence": 98.03050231933594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 96.51905059814453,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.024055883288383484,
+            "Height": 0.12842874228954315,
+            "Left": 0.3176014721393585,
+            "Top": 0.512961745262146
+          },
+          "Confidence": 96.51905059814453
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 96.51905059814453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cumulus",
+      "Confidence": 90.53670501708984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cloud"
+        },
+        {
+          "Name": "Weather"
+        },
+        {
+          "Name": "Sky"
+        },
+        {
+          "Name": "Nature"
+        },
+        {
+          "Name": "Outdoors"
+        }
+      ]
+    },
+    {
+      "Name": "Cloud",
+      "Confidence": 90.53670501708984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sky"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Sky",
+      "Confidence": 90.53670501708984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Wilderness",
+      "Confidence": 88.66482543945312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 75.23268127441406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Herd",
+      "Confidence": 71.72628784179688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 71.72628784179688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Field",
+      "Confidence": 69.69762420654297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Grassland",
+      "Confidence": 62.35488510131836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Field"
+        }
+      ]
+    },
+    {
+      "Name": "Land",
+      "Confidence": 62.0383415222168,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Sheep",
+      "Confidence": 60.94562911987305,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08503910899162292,
+            "Height": 0.09095615148544312,
+            "Left": 0.34314465522766113,
+            "Top": 0.6961593627929688
+          },
+          "Confidence": 60.94562911987305
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 60.94562911987305,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Sunrise",
+      "Confidence": 58.05698776245117,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sky"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 57.7253303527832,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ice",
+      "Confidence": 56.76313781738281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 56.264827728271484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Flock",
+      "Confidence": 55.553314208984375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

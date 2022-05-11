@@ -1,0 +1,82 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Soil",
+      "Confidence": 98.29804992675781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Archaeology",
+      "Confidence": 84.96485900878906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rock",
+      "Confidence": 83.11276245117188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bear",
+      "Confidence": 72.0497817993164,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.44461503624916077,
+            "Height": 0.5011358261108398,
+            "Left": 0.20292289555072784,
+            "Top": 0.38099387288093567
+          },
+          "Confidence": 72.0497817993164
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 72.0497817993164,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 72.0497817993164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 72.0497817993164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Fossil",
+      "Confidence": 61.15668487548828,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

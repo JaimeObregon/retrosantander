@@ -1,0 +1,290 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.81645202636719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.72145080566406,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09681171923875809,
+            "Height": 0.3105632960796356,
+            "Left": 0.3783319890499115,
+            "Top": 0.5309105515480042
+          },
+          "Confidence": 99.72145080566406
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07935978472232819,
+            "Height": 0.2520264685153961,
+            "Left": 0.11759298294782639,
+            "Top": 0.50844806432724
+          },
+          "Confidence": 99.49992370605469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08730907738208771,
+            "Height": 0.27138251066207886,
+            "Left": 0.6607199311256409,
+            "Top": 0.3232792317867279
+          },
+          "Confidence": 99.458251953125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05177699401974678,
+            "Height": 0.21834741532802582,
+            "Left": 0.19208860397338867,
+            "Top": 0.556244432926178
+          },
+          "Confidence": 98.64845275878906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09684499353170395,
+            "Height": 0.2183496505022049,
+            "Left": 0.010045095346868038,
+            "Top": 0.5282137393951416
+          },
+          "Confidence": 98.27205657958984
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06536051630973816,
+            "Height": 0.1499813348054886,
+            "Left": 0.8244878053665161,
+            "Top": 0.4178827404975891
+          },
+          "Confidence": 98.16429901123047
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07827886939048767,
+            "Height": 0.18785838782787323,
+            "Left": 0.5778999328613281,
+            "Top": 0.3648501932621002
+          },
+          "Confidence": 93.3482894897461
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05009390786290169,
+            "Height": 0.17094384133815765,
+            "Left": 0.626949667930603,
+            "Top": 0.3753494620323181
+          },
+          "Confidence": 89.73272705078125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0729595497250557,
+            "Height": 0.12510061264038086,
+            "Left": 0.2948087751865387,
+            "Top": 0.5701558589935303
+          },
+          "Confidence": 88.30835723876953
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0848434716463089,
+            "Height": 0.16606386005878448,
+            "Left": 0.4841049909591675,
+            "Top": 0.3177511990070343
+          },
+          "Confidence": 84.83241271972656
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.053618527948856354,
+            "Height": 0.09974399954080582,
+            "Left": 0.24048574268817902,
+            "Top": 0.6047350168228149
+          },
+          "Confidence": 78.86519622802734
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.72145080566406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.38162231445312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 97.83605194091797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Agriculture",
+      "Confidence": 97.48097229003906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Field"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Field",
+      "Confidence": 97.48097229003906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 80.48358154296875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Harvest",
+      "Confidence": 73.11196899414062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Funeral",
+      "Confidence": 67.58375549316406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Military Uniform",
+      "Confidence": 67.00824737548828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Military",
+      "Confidence": 67.00824737548828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Farm",
+      "Confidence": 65.14968872070312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Farm Plow",
+      "Confidence": 62.10372543334961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Farm"
+        },
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Worker",
+      "Confidence": 61.80048751831055,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Yard",
+      "Confidence": 58.42903518676758,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

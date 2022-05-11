@@ -1,0 +1,79 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Document",
+      "Confidence": 99.71154022216797,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.971641480922699,
+            "Height": 0.9036518335342407,
+            "Left": 0.02564849518239498,
+            "Top": 0.06428741663694382
+          },
+          "Confidence": 99.71154022216797
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Text",
+      "Confidence": 99.71154022216797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Page",
+      "Confidence": 78.99998474121094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Plan",
+      "Confidence": 71.82112121582031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plot"
+        },
+        {
+          "Name": "Diagram"
+        }
+      ]
+    },
+    {
+      "Name": "Diagram",
+      "Confidence": 71.82112121582031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Plot",
+      "Confidence": 71.82112121582031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Paper",
+      "Confidence": 60.43818664550781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sheet Music",
+      "Confidence": 58.4713249206543,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

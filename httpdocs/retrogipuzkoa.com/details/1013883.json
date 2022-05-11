@@ -1,0 +1,93 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bird",
+      "Confidence": 99.87969970703125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3243054449558258,
+            "Height": 0.2945685386657715,
+            "Left": 0.14803393185138702,
+            "Top": 0.39333611726760864
+          },
+          "Confidence": 99.87969970703125
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.87969970703125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Anthus",
+      "Confidence": 95.97014617919922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Sparrow",
+      "Confidence": 85.20707702636719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Finch",
+      "Confidence": 80.0970230102539,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 63.28738784790039,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08654206991195679,
+            "Height": 0.5507540702819824,
+            "Left": 0,
+            "Top": 0.33432427048683167
+          },
+          "Confidence": 63.28738784790039
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 63.28738784790039,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

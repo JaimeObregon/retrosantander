@@ -1,0 +1,107 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Face",
+      "Confidence": 99.08573150634766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.08573150634766,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2779715955257416,
+            "Height": 0.28190848231315613,
+            "Left": 0.14123739302158356,
+            "Top": 0.44597992300987244
+          },
+          "Confidence": 72.30209350585938
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.08573150634766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Beard",
+      "Confidence": 85.10948181152344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Face"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Man",
+      "Confidence": 65.566650390625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Portrait",
+      "Confidence": 58.641727447509766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Face"
+        },
+        {
+          "Name": "Photography"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photography",
+      "Confidence": 58.641727447509766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photo",
+      "Confidence": 58.641727447509766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 55.12354278564453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

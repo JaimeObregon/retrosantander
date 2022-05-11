@@ -1,0 +1,239 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.25483703613281,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.036750875413417816,
+            "Height": 0.10307320207357407,
+            "Left": 0.7515225410461426,
+            "Top": 0.5540380477905273
+          },
+          "Confidence": 98.25483703613281
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03966599702835083,
+            "Height": 0.08431544899940491,
+            "Left": 0.503994345664978,
+            "Top": 0.551747739315033
+          },
+          "Confidence": 98.23880767822266
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0376577265560627,
+            "Height": 0.07888447493314743,
+            "Left": 0.5385511517524719,
+            "Top": 0.5693193674087524
+          },
+          "Confidence": 98.10091400146484
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03356152027845383,
+            "Height": 0.13752242922782898,
+            "Left": 0.6964668035507202,
+            "Top": 0.5005480647087097
+          },
+          "Confidence": 97.83244323730469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03435551002621651,
+            "Height": 0.08383335173130035,
+            "Left": 0.5968056321144104,
+            "Top": 0.5599128603935242
+          },
+          "Confidence": 97.43019104003906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03562343493103981,
+            "Height": 0.13848531246185303,
+            "Left": 0.6599517464637756,
+            "Top": 0.497872918844223
+          },
+          "Confidence": 94.63722229003906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.019237959757447243,
+            "Height": 0.08550514280796051,
+            "Left": 0.8181069493293762,
+            "Top": 0.5409353971481323
+          },
+          "Confidence": 92.84455871582031
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.029074791818857193,
+            "Height": 0.15782347321510315,
+            "Left": 0.6213565468788147,
+            "Top": 0.48240232467651367
+          },
+          "Confidence": 88.4400405883789
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.25483703613281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 96.71717071533203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rubble",
+      "Confidence": 87.36398315429688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 84.00933074951172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 72.64310455322266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 67.7687759399414,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 65.43795013427734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 65.43795013427734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Military Uniform",
+      "Confidence": 65.41035461425781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Military",
+      "Confidence": 65.41035461425781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Army",
+      "Confidence": 63.04372024536133,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Armored"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Armored",
+      "Confidence": 63.04372024536133,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 62.612247467041016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 62.05905532836914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 61.295814514160156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Demolition",
+      "Confidence": 58.41320037841797,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

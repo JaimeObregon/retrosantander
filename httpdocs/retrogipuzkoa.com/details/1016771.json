@@ -1,0 +1,76 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Castle",
+      "Confidence": 99.9184341430664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 99.9184341430664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.9184341430664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fort",
+      "Confidence": 98.96637725830078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Castle"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Ruins",
+      "Confidence": 57.56474685668945,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Moat",
+      "Confidence": 57.50406265258789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fort"
+        },
+        {
+          "Name": "Castle"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

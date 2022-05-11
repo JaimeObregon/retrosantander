@@ -1,0 +1,69 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.18333435058594,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10081899911165237,
+            "Height": 0.1505749225616455,
+            "Left": 0.3024154305458069,
+            "Top": 0.6427879929542542
+          },
+          "Confidence": 99.18333435058594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03470983728766441,
+            "Height": 0.08699410408735275,
+            "Left": 0.3816637396812439,
+            "Top": 0.6298151016235352
+          },
+          "Confidence": 93.86692810058594
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.18333435058594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 94.30310821533203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 68.75330352783203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 61.691043853759766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Museum",
+      "Confidence": 57.064300537109375,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

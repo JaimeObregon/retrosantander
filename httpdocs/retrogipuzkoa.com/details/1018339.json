@@ -1,0 +1,87 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Accipiter",
+      "Confidence": 98.78074645996094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 98.78074645996094,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.31366655230522156,
+            "Height": 0.31461256742477417,
+            "Left": 0.41114142537117004,
+            "Top": 0.2600521147251129
+          },
+          "Confidence": 90.31226348876953
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 98.78074645996094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Hawk",
+      "Confidence": 74.26905822753906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Buzzard",
+      "Confidence": 58.337005615234375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Hawk"
+        },
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Kite Bird",
+      "Confidence": 55.863380432128906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

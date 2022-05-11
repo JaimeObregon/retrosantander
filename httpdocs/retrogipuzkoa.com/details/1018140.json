@@ -1,0 +1,126 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.78899383544922,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.22339412569999695,
+            "Height": 0.7360503673553467,
+            "Left": 0.5949810743331909,
+            "Top": 0.22414778172969818
+          },
+          "Confidence": 99.78899383544922
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.18223541975021362,
+            "Height": 0.7201007604598999,
+            "Left": 0.41035500168800354,
+            "Top": 0.14891298115253448
+          },
+          "Confidence": 99.06391143798828
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.22893467545509338,
+            "Height": 0.350095272064209,
+            "Left": 0.11605662107467651,
+            "Top": 0.4448341131210327
+          },
+          "Confidence": 95.8504638671875
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.78899383544922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.21389770507812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Garden",
+      "Confidence": 97.92660522460938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        }
+      ]
+    },
+    {
+      "Name": "Worker",
+      "Confidence": 95.3914566040039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Gardener",
+      "Confidence": 94.896484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Gardening"
+        },
+        {
+          "Name": "Worker"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Garden"
+        },
+        {
+          "Name": "Outdoors"
+        }
+      ]
+    },
+    {
+      "Name": "Gardening",
+      "Confidence": 94.896484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Garden"
+        },
+        {
+          "Name": "Outdoors"
+        }
+      ]
+    },
+    {
+      "Name": "Vegetation",
+      "Confidence": 58.92321014404297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 58.92321014404297,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

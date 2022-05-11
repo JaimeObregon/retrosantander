@@ -1,0 +1,129 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Car",
+      "Confidence": 96.93643951416016,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8647405505180359,
+            "Height": 0.521976888179779,
+            "Left": 0.04849390313029289,
+            "Top": 0.4753057360649109
+          },
+          "Confidence": 65.26237487792969
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 96.93643951416016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 96.93643951416016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 96.93643951416016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sedan",
+      "Confidence": 86.25162506103516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Pickup Truck",
+      "Confidence": 79.93927764892578,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8805170655250549,
+            "Height": 0.5855699777603149,
+            "Left": 0.05141965672373772,
+            "Top": 0.411712646484375
+          },
+          "Confidence": 79.93927764892578
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Truck"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Truck",
+      "Confidence": 79.93927764892578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Antique Car",
+      "Confidence": 77.58453369140625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

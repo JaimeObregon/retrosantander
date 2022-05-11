@@ -1,0 +1,88 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.29759216308594,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09503821283578873,
+            "Height": 0.2943119406700134,
+            "Left": 0.9022069573402405,
+            "Top": 0.4498996138572693
+          },
+          "Confidence": 99.29759216308594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1424039900302887,
+            "Height": 0.23791879415512085,
+            "Left": 0.000291740259854123,
+            "Top": 0.5310357213020325
+          },
+          "Confidence": 92.75489044189453
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.29759216308594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 81.67186737060547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 81.67186737060547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Art",
+      "Confidence": 69.72342681884766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Statue",
+      "Confidence": 62.35444259643555,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sculpture"
+        },
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Sculpture",
+      "Confidence": 62.35444259643555,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Archaeology",
+      "Confidence": 59.028831481933594,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

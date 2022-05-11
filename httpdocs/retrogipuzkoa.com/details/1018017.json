@@ -1,0 +1,296 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Housing",
+      "Confidence": 98.466064453125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 98.466064453125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Monastery",
+      "Confidence": 91.2044906616211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 91.2044906616211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 89.29483795166016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Villa",
+      "Confidence": 89.10704040527344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "House"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "House",
+      "Confidence": 89.10704040527344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Car",
+      "Confidence": 78.35759735107422,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.165154367685318,
+            "Height": 0.10557368397712708,
+            "Left": 0.8321059346199036,
+            "Top": 0.6932712197303772
+          },
+          "Confidence": 78.35759735107422
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 78.35759735107422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 78.35759735107422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 78.35759735107422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 74.48825073242188,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03315440192818642,
+            "Height": 0.043462999165058136,
+            "Left": 0.32861199975013733,
+            "Top": 0.1517394632101059
+          },
+          "Confidence": 74.48825073242188
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 74.48825073242188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mansion",
+      "Confidence": 74.40721130371094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "House"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Cow",
+      "Confidence": 73.13723754882812,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.12897957861423492,
+            "Height": 0.06891307979822159,
+            "Left": 0.2211729735136032,
+            "Top": 0.6589334607124329
+          },
+          "Confidence": 73.13723754882812
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Cattle"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 73.13723754882812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cattle",
+      "Confidence": 73.13723754882812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 68.6484603881836,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ruins",
+      "Confidence": 68.24024200439453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 64.12684631347656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03026566095650196,
+            "Height": 0.04657086730003357,
+            "Left": 0.3314606249332428,
+            "Top": 0.1500617116689682
+          },
+          "Confidence": 64.12684631347656
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 64.12684631347656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Horse",
+      "Confidence": 63.50173568725586,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.13269364833831787,
+            "Height": 0.06907551735639572,
+            "Left": 0.22059552371501923,
+            "Top": 0.6581255197525024
+          },
+          "Confidence": 63.50173568725586
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Neighborhood",
+      "Confidence": 58.05064010620117,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

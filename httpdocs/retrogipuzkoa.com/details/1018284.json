@@ -1,0 +1,110 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Truck",
+      "Confidence": 99.58650207519531,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.6315969228744507,
+            "Height": 0.35415059328079224,
+            "Left": 0.20719650387763977,
+            "Top": 0.370901882648468
+          },
+          "Confidence": 99.58650207519531
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 99.58650207519531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 99.58650207519531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 96.2955322265625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03448154404759407,
+            "Height": 0.06070112809538841,
+            "Left": 0.5485671758651733,
+            "Top": 0.3919045329093933
+          },
+          "Confidence": 96.2955322265625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03196978569030762,
+            "Height": 0.044302962720394135,
+            "Left": 0.5905332565307617,
+            "Top": 0.40636223554611206
+          },
+          "Confidence": 94.94927215576172
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03904087096452713,
+            "Height": 0.06363248080015182,
+            "Left": 0.48275265097618103,
+            "Top": 0.3956507444381714
+          },
+          "Confidence": 94.36091613769531
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0582030713558197,
+            "Height": 0.11123970150947571,
+            "Left": 0.4173906147480011,
+            "Top": 0.5590919852256775
+          },
+          "Confidence": 41.85206985473633
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 96.2955322265625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tow Truck",
+      "Confidence": 64.69303131103516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Truck"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

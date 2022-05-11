@@ -1,0 +1,225 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 98.53074645996094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 98.15016174316406,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.0645068809390068,
+            "Height": 0.05368093401193619,
+            "Left": 0.8072971105575562,
+            "Top": 0.508278489112854
+          },
+          "Confidence": 98.15016174316406
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03291979432106018,
+            "Height": 0.02626592107117176,
+            "Left": 0.7025152444839478,
+            "Top": 0.4114938974380493
+          },
+          "Confidence": 83.95545196533203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06011299043893814,
+            "Height": 0.055701542645692825,
+            "Left": 0.9157631397247314,
+            "Top": 0.507100522518158
+          },
+          "Confidence": 83.52352142333984
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 98.15016174316406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 98.15016174316406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 98.15016174316406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 89.77235412597656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.018596448004245758,
+            "Height": 0.05760781839489937,
+            "Left": 0.9028881192207336,
+            "Top": 0.49254927039146423
+          },
+          "Confidence": 89.77235412597656
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 89.77235412597656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 83.63346862792969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 77.51268768310547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 77.51268768310547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Wood",
+      "Confidence": 75.4915542602539,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Condo",
+      "Confidence": 71.11223602294922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Landscape",
+      "Confidence": 71.09638977050781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 70.42989349365234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Neighborhood",
+      "Confidence": 66.99911499023438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Construction",
+      "Confidence": 60.369171142578125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 59.25392532348633,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 59.25392532348633,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Path",
+      "Confidence": 55.34562301635742,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Flood",
+      "Confidence": 55.1099967956543,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

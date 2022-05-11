@@ -1,0 +1,197 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Animal",
+      "Confidence": 93.18441772460938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 92.40985870361328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Deer",
+      "Confidence": 91.96588897705078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 91.96588897705078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Horse",
+      "Confidence": 91.33817291259766,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10919199883937836,
+            "Height": 0.2680332064628601,
+            "Left": 0.272151917219162,
+            "Top": 0.5786552429199219
+          },
+          "Confidence": 91.33817291259766
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0988229289650917,
+            "Height": 0.26560983061790466,
+            "Left": 0.3790613114833832,
+            "Top": 0.5454735159873962
+          },
+          "Confidence": 85.89636993408203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06339754164218903,
+            "Height": 0.08185402303934097,
+            "Left": 0.23350107669830322,
+            "Top": 0.6288440823554993
+          },
+          "Confidence": 82.76871490478516
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.13672389090061188,
+            "Height": 0.29133209586143494,
+            "Left": 0.5243778824806213,
+            "Top": 0.6405866146087646
+          },
+          "Confidence": 78.41322326660156
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Antelope",
+      "Confidence": 85.64329528808594,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.17568370699882507,
+            "Height": 0.27415940165519714,
+            "Left": 0.6918543577194214,
+            "Top": 0.6113467812538147
+          },
+          "Confidence": 85.64329528808594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10657519847154617,
+            "Height": 0.29311874508857727,
+            "Left": 0.27833276987075806,
+            "Top": 0.5512632727622986
+          },
+          "Confidence": 73.3746337890625
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Zoo",
+      "Confidence": 83.19221496582031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Impala",
+      "Confidence": 71.25743103027344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Antelope"
+        },
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Elk",
+      "Confidence": 59.980064392089844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Deer"
+        },
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 55.374271392822266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 55.374271392822266,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

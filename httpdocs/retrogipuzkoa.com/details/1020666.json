@@ -1,0 +1,111 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Architecture",
+      "Confidence": 99.49101257324219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.49101257324219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Door",
+      "Confidence": 97.87266540527344,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.27828267216682434,
+            "Height": 0.5592668056488037,
+            "Left": 0.2810037136077881,
+            "Top": 0.35229822993278503
+          },
+          "Confidence": 97.87266540527344
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Arch",
+      "Confidence": 97.43132019042969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arched",
+      "Confidence": 97.43132019042969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Wall",
+      "Confidence": 82.40406036376953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 68.3328628540039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Arch Bridge",
+      "Confidence": 68.08873748779297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bridge"
+        },
+        {
+          "Name": "Arch"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Architecture"
+        }
+      ]
+    },
+    {
+      "Name": "Bridge",
+      "Confidence": 68.08873748779297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Gate",
+      "Confidence": 60.90435791015625,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

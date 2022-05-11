@@ -1,0 +1,137 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Wolf",
+      "Confidence": 92.64509582519531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 92.64509582519531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 92.64509582519531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 87.7602767944336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Dog",
+      "Confidence": 87.42310333251953,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.25223666429519653,
+            "Height": 0.6744895577430725,
+            "Left": 0.4672735333442688,
+            "Top": 0.29063984751701355
+          },
+          "Confidence": 87.42310333251953
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.7204186320304871,
+            "Height": 0.6281919479370117,
+            "Left": 0.03151959925889969,
+            "Top": 0.32709628343582153
+          },
+          "Confidence": 65.06285095214844
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 87.42310333251953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Red Wolf",
+      "Confidence": 87.41338348388672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wolf"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Husky",
+      "Confidence": 87.15898895263672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Dog"
+        },
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

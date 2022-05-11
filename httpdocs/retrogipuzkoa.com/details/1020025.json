@@ -1,0 +1,163 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Pig",
+      "Confidence": 97.94625854492188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 97.94625854492188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 97.94625854492188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Hog",
+      "Confidence": 97.40873718261719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pig"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Boar",
+      "Confidence": 83.75334930419922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Hog"
+        },
+        {
+          "Name": "Pig"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 75.02716064453125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 67.30281829833984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 64.0480728149414,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Dog",
+      "Confidence": 61.67060852050781,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.22376355528831482,
+            "Height": 0.22065117955207825,
+            "Left": 0.27156928181648254,
+            "Top": 0.45596596598625183
+          },
+          "Confidence": 61.67060852050781
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 61.67060852050781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 61.67060852050781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 61.2288818359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 61.2288818359375,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

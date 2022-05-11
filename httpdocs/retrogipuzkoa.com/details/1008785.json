@@ -1,0 +1,139 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.40724182128906,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03342435136437416,
+            "Height": 0.14467740058898926,
+            "Left": 0.5255845189094543,
+            "Top": 0.7109984755516052
+          },
+          "Confidence": 99.40724182128906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03327872231602669,
+            "Height": 0.13757893443107605,
+            "Left": 0.5554537177085876,
+            "Top": 0.7301990985870361
+          },
+          "Confidence": 98.44439697265625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04310806095600128,
+            "Height": 0.18217070400714874,
+            "Left": 0.6069161891937256,
+            "Top": 0.7238360643386841
+          },
+          "Confidence": 97.7557144165039
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03080669231712818,
+            "Height": 0.15868154168128967,
+            "Left": 0.5907596349716187,
+            "Top": 0.7302225232124329
+          },
+          "Confidence": 96.15036010742188
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012233694083988667,
+            "Height": 0.030279457569122314,
+            "Left": 0.3404630124568939,
+            "Top": 0.6969444751739502
+          },
+          "Confidence": 51.032108306884766
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.40724182128906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 95.86831665039062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 93.00838470458984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Cable Car",
+      "Confidence": 79.97840881347656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Railway",
+      "Confidence": 77.90383911132812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Rail",
+      "Confidence": 77.90383911132812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Train Track",
+      "Confidence": 77.90383911132812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bridge",
+      "Confidence": 74.76045227050781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 74.76045227050781,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,90 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Weapon",
+      "Confidence": 93.77413940429688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Weaponry",
+      "Confidence": 93.77413940429688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bomb",
+      "Confidence": 89.09432220458984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Weapon"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 82.62313079833984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 82.62313079833984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shark",
+      "Confidence": 61.9272346496582,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5044931769371033,
+            "Height": 0.6138435006141663,
+            "Left": 0.1391691416501999,
+            "Top": 0.14751319587230682
+          },
+          "Confidence": 61.9272346496582
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Sea Life"
+        },
+        {
+          "Name": "Fish"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Fish",
+      "Confidence": 61.9272346496582,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Sea Life",
+      "Confidence": 61.9272346496582,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

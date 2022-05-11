@@ -1,0 +1,200 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Path",
+      "Confidence": 95.49641418457031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 92.80084228515625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.01579257845878601,
+            "Height": 0.07117614150047302,
+            "Left": 0.35188618302345276,
+            "Top": 0.6710249185562134
+          },
+          "Confidence": 92.80084228515625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04494671896100044,
+            "Height": 0.0684313029050827,
+            "Left": 0.5272549986839294,
+            "Top": 0.6523240208625793
+          },
+          "Confidence": 65.37958526611328
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 92.80084228515625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 91.59264373779297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 89.85118865966797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 88.06217193603516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 87.89244842529297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bus",
+      "Confidence": 83.9062728881836,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3899587392807007,
+            "Height": 0.42044153809547424,
+            "Left": 0.3876364827156067,
+            "Top": 0.5617445111274719
+          },
+          "Confidence": 83.9062728881836
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.21510711312294006,
+            "Height": 0.506277322769165,
+            "Left": 0.7812406420707703,
+            "Top": 0.4188162684440613
+          },
+          "Confidence": 55.482460021972656
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Train",
+      "Confidence": 83.37660217285156,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.20774514973163605,
+            "Height": 0.5362321734428406,
+            "Left": 0.7847692370414734,
+            "Top": 0.39043641090393066
+          },
+          "Confidence": 83.37660217285156
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Car",
+      "Confidence": 82.99557495117188,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3903163969516754,
+            "Height": 0.431240975856781,
+            "Left": 0.37612250447273254,
+            "Top": 0.5585567355155945
+          },
+          "Confidence": 82.99557495117188
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 82.99557495117188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Canal",
+      "Confidence": 79.42728424072266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 63.801448822021484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Towpath",
+      "Confidence": 60.22319030761719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        },
+        {
+          "Name": "Canal"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

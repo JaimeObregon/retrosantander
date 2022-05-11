@@ -1,0 +1,86 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.24481964111328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 97.48075103759766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cliff",
+      "Confidence": 94.59371948242188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 83.54074096679688,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.942288875579834,
+            "Height": 0.9357154369354248,
+            "Left": 0.04936673492193222,
+            "Top": 0.018618613481521606
+          },
+          "Confidence": 83.54074096679688
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 83.54074096679688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mountain",
+      "Confidence": 79.36265563964844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Slate",
+      "Confidence": 63.24789810180664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cave",
+      "Confidence": 57.61763381958008,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

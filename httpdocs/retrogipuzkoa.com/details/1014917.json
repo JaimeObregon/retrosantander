@@ -1,0 +1,166 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.82315826416016,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2002146989107132,
+            "Height": 0.5814141035079956,
+            "Left": 0.5256980657577515,
+            "Top": 0.32131850719451904
+          },
+          "Confidence": 98.82315826416016
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.22221331298351288,
+            "Height": 0.3020015060901642,
+            "Left": 0.309671014547348,
+            "Top": 0.17485488951206207
+          },
+          "Confidence": 95.26913452148438
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.82315826416016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 78.95494842529297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 78.71348571777344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Dog",
+      "Confidence": 60.140419006347656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.13030965626239777,
+            "Height": 0.19054724276065826,
+            "Left": 0.40050989389419556,
+            "Top": 0.7301143407821655
+          },
+          "Confidence": 60.140419006347656
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 60.140419006347656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 60.140419006347656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bull",
+      "Confidence": 58.814186096191406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cattle",
+      "Confidence": 56.854034423828125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Doctor",
+      "Confidence": 56.66074752807617,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 55.52676773071289,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 55.52676773071289,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 55.52676773071289,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

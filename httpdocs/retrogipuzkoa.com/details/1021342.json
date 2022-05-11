@@ -1,0 +1,146 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 98.97592163085938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 97.88650512695312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pollution",
+      "Confidence": 91.97853088378906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rubble",
+      "Confidence": 90.61263275146484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Smoke",
+      "Confidence": 88.20021057128906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fog",
+      "Confidence": 86.09091186523438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Sheep",
+      "Confidence": 74.48123168945312,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.0756690725684166,
+            "Height": 0.07643792033195496,
+            "Left": 0.2121531367301941,
+            "Top": 0.6719856262207031
+          },
+          "Confidence": 74.48123168945312
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 74.48123168945312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 74.48123168945312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Smog",
+      "Confidence": 73.99541473388672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fog"
+        },
+        {
+          "Name": "Smoke"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Cow",
+      "Confidence": 67.84586334228516,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.05920227989554405,
+            "Height": 0.06976071745157242,
+            "Left": 0.6179609894752502,
+            "Top": 0.6418783664703369
+          },
+          "Confidence": 67.84586334228516
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Cattle"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cattle",
+      "Confidence": 67.84586334228516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 61.28544616699219,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

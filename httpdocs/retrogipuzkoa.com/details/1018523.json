@@ -1,0 +1,85 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "River",
+      "Confidence": 99.88809204101562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 99.88809204101562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 99.88809204101562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.88809204101562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Dam",
+      "Confidence": 97.77998352050781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "River"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Bridge",
+      "Confidence": 95.17457580566406,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8912906050682068,
+            "Height": 0.6539593935012817,
+            "Left": 0.014753188006579876,
+            "Top": 0.25428321957588196
+          },
+          "Confidence": 95.17457580566406
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 95.17457580566406,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

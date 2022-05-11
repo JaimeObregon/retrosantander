@@ -1,0 +1,132 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Text",
+      "Confidence": 96.48085021972656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Page",
+      "Confidence": 95.66073608398438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Paper",
+      "Confidence": 68.38629913330078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Advertisement",
+      "Confidence": 65.29420471191406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 63.18928527832031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Passport",
+      "Confidence": 62.54823303222656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.956068754196167,
+            "Height": 0.8805677890777588,
+            "Left": 0.02657783403992653,
+            "Top": 0.038313936442136765
+          },
+          "Confidence": 62.54823303222656
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Id Cards"
+        },
+        {
+          "Name": "Document"
+        },
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Document",
+      "Confidence": 62.54823303222656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Id Cards",
+      "Confidence": 62.54823303222656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Document"
+        },
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Condo",
+      "Confidence": 58.99685287475586,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 58.99685287475586,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Poster",
+      "Confidence": 58.91658020019531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 56.27707290649414,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

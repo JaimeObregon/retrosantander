@@ -1,0 +1,171 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Zoo",
+      "Confidence": 99.972900390625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.972900390625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bench",
+      "Confidence": 97.24658966064453,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5861208438873291,
+            "Height": 0.22480778396129608,
+            "Left": 0.05950828641653061,
+            "Top": 0.7399707436561584
+          },
+          "Confidence": 97.24658966064453
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 97.24658966064453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 96.55062866210938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Lion",
+      "Confidence": 95.05662536621094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 95.05662536621094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cat",
+      "Confidence": 65.44493865966797,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3491614758968353,
+            "Height": 0.38841572403907776,
+            "Left": 0.5017284154891968,
+            "Top": 0.38079968094825745
+          },
+          "Confidence": 65.44493865966797
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 65.44493865966797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Dog",
+      "Confidence": 64.2146987915039,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.32792872190475464,
+            "Height": 0.3930110037326813,
+            "Left": 0.5147878527641296,
+            "Top": 0.38345959782600403
+          },
+          "Confidence": 64.2146987915039
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.22117412090301514,
+            "Height": 0.3733135759830475,
+            "Left": 0.1822715699672699,
+            "Top": 0.3984239995479584
+          },
+          "Confidence": 62.8716926574707
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 64.2146987915039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

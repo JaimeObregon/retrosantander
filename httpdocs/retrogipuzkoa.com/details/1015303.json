@@ -1,0 +1,88 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.75782012939453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Boat",
+      "Confidence": 98.98405456542969,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.17073112726211548,
+            "Height": 0.09172485023736954,
+            "Left": 0.7708415389060974,
+            "Top": 0.4449577033519745
+          },
+          "Confidence": 98.98405456542969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.035429514944553375,
+            "Height": 0.05321217328310013,
+            "Left": 0.962216854095459,
+            "Top": 0.490920752286911
+          },
+          "Confidence": 79.33489227294922
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1990053951740265,
+            "Height": 0.0571415014564991,
+            "Left": 0.3259700834751129,
+            "Top": 0.47194626927375793
+          },
+          "Confidence": 69.84918212890625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.15279757976531982,
+            "Height": 0.12439467757940292,
+            "Left": 0.002038253005594015,
+            "Top": 0.6473060846328735
+          },
+          "Confidence": 54.20564651489258
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 98.98405456542969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 98.98405456542969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Flood",
+      "Confidence": 98.4789810180664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

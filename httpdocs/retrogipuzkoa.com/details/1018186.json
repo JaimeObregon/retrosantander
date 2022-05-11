@@ -1,0 +1,91 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 91.34696960449219,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2544582188129425,
+            "Height": 0.22419515252113342,
+            "Left": 0.15814952552318573,
+            "Top": 0.002825218252837658
+          },
+          "Confidence": 79.79984283447266
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 91.34696960449219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Drawing",
+      "Confidence": 84.15147399902344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 84.15147399902344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rug",
+      "Confidence": 79.98358154296875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9425333142280579,
+            "Height": 0.952512800693512,
+            "Left": 0.044325120747089386,
+            "Top": 0.04128492996096611
+          },
+          "Confidence": 79.98358154296875
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 79.56659698486328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sketch",
+      "Confidence": 67.76692199707031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Drawing"
+        },
+        {
+          "Name": "Art"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 63.37392807006836,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

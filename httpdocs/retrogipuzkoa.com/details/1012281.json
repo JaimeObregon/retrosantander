@@ -1,0 +1,115 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Wildlife",
+      "Confidence": 95.31888580322266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 95.31888580322266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 94.70994567871094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bear",
+      "Confidence": 93.8750228881836,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.39964330196380615,
+            "Height": 0.6700870394706726,
+            "Left": 0.22513002157211304,
+            "Top": 0.16035935282707214
+          },
+          "Confidence": 93.8750228881836
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.24015824496746063,
+            "Height": 0.3201671540737152,
+            "Left": 0.24832458794116974,
+            "Top": 0.12951314449310303
+          },
+          "Confidence": 67.92880249023438
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Beaver",
+      "Confidence": 81.60266876220703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Rodent"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Rodent",
+      "Confidence": 81.60266876220703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Otter",
+      "Confidence": 56.01973342895508,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,85 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Cross",
+      "Confidence": 97.97047424316406,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.340699166059494,
+            "Height": 0.7532081604003906,
+            "Left": 0.15705540776252747,
+            "Top": 0.20055055618286133
+          },
+          "Confidence": 84.74410247802734
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Symbol"
+        }
+      ]
+    },
+    {
+      "Name": "Symbol",
+      "Confidence": 97.97047424316406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crucifix",
+      "Confidence": 92.84284210205078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cross"
+        },
+        {
+          "Name": "Symbol"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 87.67620086669922,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1792638897895813,
+            "Height": 0.40661922097206116,
+            "Left": 0.4158657193183899,
+            "Top": 0.26580119132995605
+          },
+          "Confidence": 87.67620086669922
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.2006741762161255,
+            "Height": 0.3640962243080139,
+            "Left": 0.21558846533298492,
+            "Top": 0.3470297157764435
+          },
+          "Confidence": 83.35250091552734
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.11355826258659363,
+            "Height": 0.22449222207069397,
+            "Left": 0.6532182693481445,
+            "Top": 0.5456153750419617
+          },
+          "Confidence": 75.55489349365234
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 87.67620086669922,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

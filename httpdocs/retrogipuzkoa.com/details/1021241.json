@@ -1,0 +1,44 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Furniture",
+      "Confidence": 98.98751831054688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Prison",
+      "Confidence": 95.24710845947266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bench",
+      "Confidence": 89.30351257324219,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.6029112935066223,
+            "Height": 0.39521193504333496,
+            "Left": 0.26186224818229675,
+            "Top": 0.592523992061615
+          },
+          "Confidence": 71.18889617919922
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Wall",
+      "Confidence": 75.75292205810547,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

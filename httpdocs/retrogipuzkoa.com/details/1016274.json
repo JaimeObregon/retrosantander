@@ -1,0 +1,142 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Slope",
+      "Confidence": 99.96846008300781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 99.76073455810547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.25106048583984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Wilderness",
+      "Confidence": 98.12724304199219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Mountain",
+      "Confidence": 98.06710815429688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Peak",
+      "Confidence": 85.9541015625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mountain Range"
+        },
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Mountain Range",
+      "Confidence": 85.9541015625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 82.17790222167969,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04961230605840683,
+            "Height": 0.044736091047525406,
+            "Left": 0.6972558498382568,
+            "Top": 0.5323261022567749
+          },
+          "Confidence": 82.17790222167969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05911314859986305,
+            "Height": 0.05736544355750084,
+            "Left": 0.7420933246612549,
+            "Top": 0.479666143655777
+          },
+          "Confidence": 65.74134063720703
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 82.17790222167969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 81.34357452392578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Land",
+      "Confidence": 55.33544158935547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

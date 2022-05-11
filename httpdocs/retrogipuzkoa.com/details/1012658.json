@@ -1,0 +1,152 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Transportation",
+      "Confidence": 89.30220794677734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 88.42431640625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Parliament",
+      "Confidence": 84.91669464111328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Boat",
+      "Confidence": 79.08687591552734,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.15022242069244385,
+            "Height": 0.04328199103474617,
+            "Left": 0.029099460691213608,
+            "Top": 0.7825811505317688
+          },
+          "Confidence": 79.08687591552734
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Cruiser",
+      "Confidence": 69.67259979248047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Navy"
+        },
+        {
+          "Name": "Ship"
+        },
+        {
+          "Name": "Military"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Military",
+      "Confidence": 69.67259979248047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ship",
+      "Confidence": 69.67259979248047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Navy",
+      "Confidence": 69.67259979248047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 68.74916076660156,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.02937297523021698,
+            "Height": 0.0879288911819458,
+            "Left": 0.10768615454435349,
+            "Top": 0.7036826014518738
+          },
+          "Confidence": 68.74916076660156
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 68.74916076660156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Postal Office",
+      "Confidence": 62.488189697265625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Office Building",
+      "Confidence": 61.09678268432617,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 61.09678268432617,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 58.824066162109375,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

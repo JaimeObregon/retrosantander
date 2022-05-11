@@ -1,0 +1,222 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.80323791503906,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2163342982530594,
+            "Height": 0.505974531173706,
+            "Left": 0.22026380896568298,
+            "Top": 0.4610689878463745
+          },
+          "Confidence": 99.80323791503906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.014211554080247879,
+            "Height": 0.060748390853405,
+            "Left": 0.9239925146102905,
+            "Top": 0.39839982986450195
+          },
+          "Confidence": 62.03785705566406
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.80323791503906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 97.187255859375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 96.80967712402344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 96.80967712402344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 95.60256958007812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 95.60256958007812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Team Sport",
+      "Confidence": 88.68383026123047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Team",
+      "Confidence": 88.68383026123047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "People"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Baseball",
+      "Confidence": 84.62405395507812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Team Sport"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Softball",
+      "Confidence": 84.62405395507812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Team Sport"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Athlete",
+      "Confidence": 77.28192901611328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Ballplayer",
+      "Confidence": 76.07234191894531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Athlete"
+        },
+        {
+          "Name": "Baseball"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Team Sport"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Team"
+        },
+        {
+          "Name": "People"
+        }
+      ]
+    },
+    {
+      "Name": "Shorts",
+      "Confidence": 73.33982849121094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Frisbee",
+      "Confidence": 56.58259582519531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Toy"
+        }
+      ]
+    },
+    {
+      "Name": "Toy",
+      "Confidence": 56.58259582519531,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

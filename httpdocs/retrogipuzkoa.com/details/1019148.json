@@ -1,0 +1,216 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.69857025146484,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.017244625836610794,
+            "Height": 0.07759404182434082,
+            "Left": 0.3903162181377411,
+            "Top": 0.6041953563690186
+          },
+          "Confidence": 88.36993408203125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.021872002631425858,
+            "Height": 0.03921092301607132,
+            "Left": 0.9422842860221863,
+            "Top": 0.6039212346076965
+          },
+          "Confidence": 83.70077514648438
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.026575643569231033,
+            "Height": 0.10256490111351013,
+            "Left": 0.0484309159219265,
+            "Top": 0.5763009190559387
+          },
+          "Confidence": 69.55473327636719
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.021077260375022888,
+            "Height": 0.08347569406032562,
+            "Left": 0.7070775628089905,
+            "Top": 0.600274920463562
+          },
+          "Confidence": 65.77088165283203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01998671144247055,
+            "Height": 0.07881678640842438,
+            "Left": 0.3677618205547333,
+            "Top": 0.6026298403739929
+          },
+          "Confidence": 61.825374603271484
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01578519120812416,
+            "Height": 0.0795447900891304,
+            "Left": 0.351457417011261,
+            "Top": 0.6027836799621582
+          },
+          "Confidence": 60.72815704345703
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1557362973690033,
+            "Height": 0.3550204336643219,
+            "Left": 0.13371114432811737,
+            "Top": 0.21565641462802887
+          },
+          "Confidence": 57.6948127746582
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01777472160756588,
+            "Height": 0.07797104865312576,
+            "Left": 0.7519261837005615,
+            "Top": 0.6090437173843384
+          },
+          "Confidence": 54.42775344848633
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.016374662518501282,
+            "Height": 0.0859164148569107,
+            "Left": 0.7370007634162903,
+            "Top": 0.6009840369224548
+          },
+          "Confidence": 48.988624572753906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.017983365803956985,
+            "Height": 0.046060461550951004,
+            "Left": 0.1839120090007782,
+            "Top": 0.5830544829368591
+          },
+          "Confidence": 45.423648834228516
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01848604902625084,
+            "Height": 0.07882563024759293,
+            "Left": 0.6485928893089294,
+            "Top": 0.608420729637146
+          },
+          "Confidence": 44.972007751464844
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.69857025146484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 98.6295166015625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 98.6295166015625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "High Jump",
+      "Confidence": 83.8420181274414,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 67.50067138671875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.01982293464243412,
+            "Height": 0.020118650048971176,
+            "Left": 0.9026153087615967,
+            "Top": 0.7221658229827881
+          },
+          "Confidence": 67.50067138671875
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 67.50067138671875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pole Vault",
+      "Confidence": 60.107967376708984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Acrobatic"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Acrobatic",
+      "Confidence": 60.107967376708984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Long Jump",
+      "Confidence": 58.17501449584961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,199 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 95.66143035888672,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5108169317245483,
+            "Height": 0.9659526944160461,
+            "Left": 0.47229936718940735,
+            "Top": 0.011365430429577827
+          },
+          "Confidence": 95.66143035888672
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.4195120334625244,
+            "Height": 0.7221218347549438,
+            "Left": 0.05096826329827309,
+            "Top": 0.012805970385670662
+          },
+          "Confidence": 91.93557739257812
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.16532562673091888,
+            "Height": 0.5939295291900635,
+            "Left": 0.002090313471853733,
+            "Top": 0.0817330926656723
+          },
+          "Confidence": 88.82174682617188
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 95.66143035888672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 84.35041809082031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 84.35041809082031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Beverage",
+      "Confidence": 80.60961151123047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Drink",
+      "Confidence": 80.60961151123047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Alcohol",
+      "Confidence": 77.74373626708984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Beverage"
+        }
+      ]
+    },
+    {
+      "Name": "Wine",
+      "Confidence": 75.31094360351562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Alcohol"
+        },
+        {
+          "Name": "Beverage"
+        }
+      ]
+    },
+    {
+      "Name": "Shoe",
+      "Confidence": 70.42860412597656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.15446949005126953,
+            "Height": 0.12819986045360565,
+            "Left": 0.00288603943772614,
+            "Top": 0.5550274848937988
+          },
+          "Confidence": 70.42860412597656
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Footwear"
+        },
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Footwear",
+      "Confidence": 70.42860412597656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Coat",
+      "Confidence": 69.60115051269531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Suit",
+      "Confidence": 69.20771026611328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Overcoat"
+        },
+        {
+          "Name": "Coat"
+        },
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Overcoat",
+      "Confidence": 69.20771026611328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Coat"
+        },
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Bottle",
+      "Confidence": 68.58441925048828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 63.75730895996094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 57.27101516723633,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Chair",
+      "Confidence": 56.76591491699219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 56.76591491699219,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

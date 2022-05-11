@@ -1,0 +1,108 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 97.65853881835938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 96.36251831054688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arch",
+      "Confidence": 88.88603210449219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arched",
+      "Confidence": 88.88603210449219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Wall",
+      "Confidence": 77.1861572265625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 75.26935577392578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 75.21918487548828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Gate",
+      "Confidence": 68.87267303466797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Monastery",
+      "Confidence": 67.78565979003906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Door",
+      "Confidence": 59.989444732666016,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.31085634231567383,
+            "Height": 0.27715742588043213,
+            "Left": 0.24603532254695892,
+            "Top": 0.5493389368057251
+          },
+          "Confidence": 59.989444732666016
+        }
+      ],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

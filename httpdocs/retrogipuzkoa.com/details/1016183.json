@@ -1,0 +1,293 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.70655059814453,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.052096184343099594,
+            "Height": 0.22803016006946564,
+            "Left": 0.5171501040458679,
+            "Top": 0.5538060069084167
+          },
+          "Confidence": 98.70655059814453
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.70655059814453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Dog",
+      "Confidence": 81.6767807006836,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04645460844039917,
+            "Height": 0.08846869319677353,
+            "Left": 0.6014895439147949,
+            "Top": 0.7523589134216309
+          },
+          "Confidence": 81.6767807006836
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 81.6767807006836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 81.6767807006836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 81.6767807006836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 81.6767807006836,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 79.0147705078125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vegetation",
+      "Confidence": 78.08833312988281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 78.08833312988281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 77.30687713623047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Road",
+      "Confidence": 74.43692016601562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 73.80065155029297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ground",
+      "Confidence": 70.45146942138672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 65.63105010986328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Land",
+      "Confidence": 63.937557220458984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 63.937557220458984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 60.68899917602539,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Photography",
+      "Confidence": 59.29345703125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photo",
+      "Confidence": 59.29345703125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Gravel",
+      "Confidence": 58.52061462402344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Road"
+        }
+      ]
+    },
+    {
+      "Name": "Dirt Road",
+      "Confidence": 58.52061462402344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Road"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 58.05723571777344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 58.05723571777344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Angler",
+      "Confidence": 58.03186798095703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fishing"
+        },
+        {
+          "Name": "Leisure Activities"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Leisure Activities",
+      "Confidence": 58.03186798095703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fishing",
+      "Confidence": 58.03186798095703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Arrow",
+      "Confidence": 58.00311279296875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Symbol"
+        }
+      ]
+    },
+    {
+      "Name": "Symbol",
+      "Confidence": 58.00311279296875,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

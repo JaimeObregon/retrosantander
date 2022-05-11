@@ -1,0 +1,102 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Insect",
+      "Confidence": 96.49678802490234,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1846674382686615,
+            "Height": 0.3904821276664734,
+            "Left": 0.1196378767490387,
+            "Top": 0.35254061222076416
+          },
+          "Confidence": 93.80609893798828
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1837199628353119,
+            "Height": 0.4708595871925354,
+            "Left": 0.4087812602519989,
+            "Top": 0.19955690205097198
+          },
+          "Confidence": 78.28536987304688
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Invertebrate"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Invertebrate",
+      "Confidence": 96.49678802490234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 96.49678802490234,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cockroach",
+      "Confidence": 73.76045989990234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Insect"
+        },
+        {
+          "Name": "Invertebrate"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cricket Insect",
+      "Confidence": 62.8456916809082,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Insect"
+        },
+        {
+          "Name": "Invertebrate"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Dung Beetle",
+      "Confidence": 57.168304443359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Insect"
+        },
+        {
+          "Name": "Invertebrate"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

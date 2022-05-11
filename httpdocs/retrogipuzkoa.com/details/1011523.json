@@ -1,0 +1,133 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.3985595703125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 98.76580047607422,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.020731287077069283,
+            "Height": 0.09030035138130188,
+            "Left": 0.781753420829773,
+            "Top": 0.4550812840461731
+          },
+          "Confidence": 98.76580047607422
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.022405898198485374,
+            "Height": 0.06598248332738876,
+            "Left": 0.8660653829574585,
+            "Top": 0.4778493344783783
+          },
+          "Confidence": 81.65608215332031
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.013847699388861656,
+            "Height": 0.06552596390247345,
+            "Left": 0.8499576449394226,
+            "Top": 0.47250252962112427
+          },
+          "Confidence": 73.69609832763672
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.030647037550807,
+            "Height": 0.09350569546222687,
+            "Left": 0.8125836253166199,
+            "Top": 0.45320698618888855
+          },
+          "Confidence": 69.0603256225586
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.042230118066072464,
+            "Height": 0.09408071637153625,
+            "Left": 0.9112553000450134,
+            "Top": 0.4437919557094574
+          },
+          "Confidence": 65.66815948486328
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.016291461884975433,
+            "Height": 0.07062315195798874,
+            "Left": 0.8424968719482422,
+            "Top": 0.46986788511276245
+          },
+          "Confidence": 62.16740417480469
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.76580047607422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 95.10782623291016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 94.31548309326172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Earthquake",
+      "Confidence": 78.55021667480469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Neighborhood",
+      "Confidence": 76.12567901611328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 72.52680206298828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 62.80516052246094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

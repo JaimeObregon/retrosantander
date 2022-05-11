@@ -1,0 +1,264 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 96.8784408569336,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.12447204440832138,
+            "Height": 0.29639947414398193,
+            "Left": 0.14623859524726868,
+            "Top": 0.3867258131504059
+          },
+          "Confidence": 96.8784408569336
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.15583132207393646,
+            "Height": 0.20237678289413452,
+            "Left": 0.15389318764209747,
+            "Top": 0.5783399939537048
+          },
+          "Confidence": 88.81169128417969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.19522373378276825,
+            "Height": 0.23592111468315125,
+            "Left": 0.31686684489250183,
+            "Top": 0.6541274785995483
+          },
+          "Confidence": 87.71575164794922
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0579783134162426,
+            "Height": 0.05758995935320854,
+            "Left": 0.3858042061328888,
+            "Top": 0.5808765292167664
+          },
+          "Confidence": 54.435386657714844
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 96.8784408569336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 96.46280670166016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 95.8406753540039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 94.38307189941406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shoreline",
+      "Confidence": 91.91069030761719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Sea",
+      "Confidence": 91.53311157226562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Ocean",
+      "Confidence": 91.53311157226562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Military",
+      "Confidence": 88.76107788085938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Military Uniform",
+      "Confidence": 86.97241973876953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 82.38761901855469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 82.38761901855469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Coast",
+      "Confidence": 81.62769317626953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Shoreline"
+        },
+        {
+          "Name": "Sea"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Soldier",
+      "Confidence": 73.2650146484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Army",
+      "Confidence": 69.95526885986328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Armored"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Armored",
+      "Confidence": 69.95526885986328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Land",
+      "Confidence": 69.1066665649414,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 62.474464416503906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Beach",
+      "Confidence": 61.491458892822266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Coast"
+        },
+        {
+          "Name": "Shoreline"
+        },
+        {
+          "Name": "Sea"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Pants",
+      "Confidence": 56.125091552734375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

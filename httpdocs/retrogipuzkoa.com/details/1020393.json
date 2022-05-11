@@ -1,0 +1,94 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Architecture",
+      "Confidence": 98.8453140258789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 98.8453140258789,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Arch",
+      "Confidence": 96.15082550048828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arched",
+      "Confidence": 96.15082550048828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Bridge",
+      "Confidence": 87.5786361694336,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9972066879272461,
+            "Height": 0.4408436119556427,
+            "Left": 0,
+            "Top": 0.5441017150878906
+          },
+          "Confidence": 87.5786361694336
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Bench",
+      "Confidence": 70.03187561035156,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7874101400375366,
+            "Height": 0.13998177647590637,
+            "Left": 0.0052895573899149895,
+            "Top": 0.13041681051254272
+          },
+          "Confidence": 59.098697662353516
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 70.03187561035156,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

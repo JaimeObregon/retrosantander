@@ -1,0 +1,145 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.59855651855469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.22454071044922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 91.26719665527344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 89.92872619628906,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08163674175739288,
+            "Height": 0.09983756393194199,
+            "Left": 0.5627016425132751,
+            "Top": 0.642065703868866
+          },
+          "Confidence": 89.92872619628906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09741556644439697,
+            "Height": 0.08935879170894623,
+            "Left": 0.722292423248291,
+            "Top": 0.5867119431495667
+          },
+          "Confidence": 80.78276062011719
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 89.92872619628906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mountain",
+      "Confidence": 79.6812973022461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Winter",
+      "Confidence": 73.7502670288086,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Peak",
+      "Confidence": 69.95989227294922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mountain Range"
+        },
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Mountain Range",
+      "Confidence": 69.95989227294922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Cliff",
+      "Confidence": 65.3077621459961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Avalanche",
+      "Confidence": 57.11627197265625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Snow"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

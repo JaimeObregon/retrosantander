@@ -1,0 +1,186 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Dog",
+      "Confidence": 95.11832427978516,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.24780972301959991,
+            "Height": 0.2731246054172516,
+            "Left": 0.21215710043907166,
+            "Top": 0.2891606390476227
+          },
+          "Confidence": 95.11832427978516
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.33666446805000305,
+            "Height": 0.2512274980545044,
+            "Left": 0.3635600209236145,
+            "Top": 0.3773626685142517
+          },
+          "Confidence": 79.56697082519531
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.3544684648513794,
+            "Height": 0.26191312074661255,
+            "Left": 0.02870110049843788,
+            "Top": 0.562801718711853
+          },
+          "Confidence": 72.54531860351562
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.2648335099220276,
+            "Height": 0.26010245084762573,
+            "Left": 0.1917361319065094,
+            "Top": 0.5638492703437805
+          },
+          "Confidence": 57.82950973510742
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 95.11832427978516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 95.11832427978516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 95.11832427978516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 95.11832427978516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Statue",
+      "Confidence": 86.0022201538086,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sculpture"
+        },
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Sculpture",
+      "Confidence": 86.0022201538086,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 86.0022201538086,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 85.81895446777344,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.16022279858589172,
+            "Height": 0.37592005729675293,
+            "Left": 0.8212907314300537,
+            "Top": 0
+          },
+          "Confidence": 72.89715576171875
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 85.81895446777344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Flooring",
+      "Confidence": 81.2183609008789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Floor",
+      "Confidence": 76.0788345336914,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 64.54582214355469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 64.19586944580078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 62.34687423706055,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

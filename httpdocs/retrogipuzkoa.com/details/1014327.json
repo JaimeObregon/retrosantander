@@ -1,0 +1,124 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.84673309326172,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.19953690469264984,
+            "Height": 0.3493020534515381,
+            "Left": 0.19570714235305786,
+            "Top": 0.6375463604927063
+          },
+          "Confidence": 99.84673309326172
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.12237099558115005,
+            "Height": 0.23245517909526825,
+            "Left": 0.7716058492660522,
+            "Top": 0.6200810074806213
+          },
+          "Confidence": 99.12349700927734
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.84673309326172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Truck",
+      "Confidence": 93.71818542480469,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8549285531044006,
+            "Height": 0.32293039560317993,
+            "Left": 0.027307702228426933,
+            "Top": 0.43952131271362305
+          },
+          "Confidence": 93.71818542480469
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 93.71818542480469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 93.71818542480469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 91.15779113769531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Construction Crane",
+      "Confidence": 83.3227310180664,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9406041502952576,
+            "Height": 0.7848633527755737,
+            "Left": 0.043561846017837524,
+            "Top": 0.04538220912218094
+          },
+          "Confidence": 83.3227310180664
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 64.99935150146484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 63.15174102783203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Factory",
+      "Confidence": 57.74299621582031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

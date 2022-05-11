@@ -1,0 +1,150 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Interior Design",
+      "Confidence": 100,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 100,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Room",
+      "Confidence": 99.85887145996094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Theater",
+      "Confidence": 97.50994873046875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Stage",
+      "Confidence": 96.97299194335938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cinema",
+      "Confidence": 87.15738677978516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Interior Design"
+        },
+        {
+          "Name": "Theater"
+        },
+        {
+          "Name": "Indoors"
+        },
+        {
+          "Name": "Room"
+        }
+      ]
+    },
+    {
+      "Name": "Auditorium",
+      "Confidence": 72.93045043945312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Hall"
+        },
+        {
+          "Name": "Theater"
+        },
+        {
+          "Name": "Indoors"
+        },
+        {
+          "Name": "Room"
+        }
+      ]
+    },
+    {
+      "Name": "Hall",
+      "Confidence": 72.93045043945312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 71.48371124267578,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03303220123052597,
+            "Height": 0.10691066831350327,
+            "Left": 0.19047747552394867,
+            "Top": 0.5654958486557007
+          },
+          "Confidence": 71.48371124267578
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 71.48371124267578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Lighting",
+      "Confidence": 68.59964752197266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bedroom",
+      "Confidence": 65.7777328491211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Room"
+        },
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Crowd",
+      "Confidence": 56.169288635253906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

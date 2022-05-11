@@ -1,0 +1,42 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Text",
+      "Confidence": 99.60832977294922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Menu",
+      "Confidence": 97.72318267822266,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.953312873840332,
+            "Height": 0.9243068695068359,
+            "Left": 0.04342580959200859,
+            "Top": 0.07393873482942581
+          },
+          "Confidence": 97.72318267822266
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Page",
+      "Confidence": 83.66740417480469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

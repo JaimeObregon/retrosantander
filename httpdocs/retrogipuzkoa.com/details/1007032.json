@@ -1,0 +1,45 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Sheep",
+      "Confidence": 99.86666870117188,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.35155361890792847,
+            "Height": 0.40278103947639465,
+            "Left": 0.1943327784538269,
+            "Top": 0.501746416091919
+          },
+          "Confidence": 94.20112609863281
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 99.86666870117188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.86666870117188,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,167 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Animal",
+      "Confidence": 93.44703674316406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 92.06944274902344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cat",
+      "Confidence": 90.50064849853516,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.277124285697937,
+            "Height": 0.4120822846889496,
+            "Left": 0.15878288447856903,
+            "Top": 0.5783398151397705
+          },
+          "Confidence": 90.50064849853516
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.2640303671360016,
+            "Height": 0.38162171840667725,
+            "Left": 0.014399558305740356,
+            "Top": 0.5478689670562744
+          },
+          "Confidence": 89.39154815673828
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 90.50064849853516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Black Cat",
+      "Confidence": 73.77726745605469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cat"
+        },
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Rat",
+      "Confidence": 71.66002655029297,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3708675503730774,
+            "Height": 0.4030035436153412,
+            "Left": 0.6273780465126038,
+            "Top": 0.5438432097434998
+          },
+          "Confidence": 71.66002655029297
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Rodent"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Rodent",
+      "Confidence": 71.66002655029297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Dog",
+      "Confidence": 60.73350143432617,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2893354594707489,
+            "Height": 0.3879440128803253,
+            "Left": 0.003982825204730034,
+            "Top": 0.5444685220718384
+          },
+          "Confidence": 60.73350143432617
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 60.73350143432617,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

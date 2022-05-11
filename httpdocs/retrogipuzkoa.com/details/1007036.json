@@ -1,0 +1,126 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Zoo",
+      "Confidence": 96.93374633789062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 96.93374633789062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 88.30924987792969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cat",
+      "Confidence": 76.0549087524414,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5158697962760925,
+            "Height": 0.40704262256622314,
+            "Left": 0.02099965326488018,
+            "Top": 0.5527278184890747
+          },
+          "Confidence": 76.0549087524414
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 76.0549087524414,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 69.61095428466797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Lesser Panda",
+      "Confidence": 56.60634231567383,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bear"
+        },
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bear",
+      "Confidence": 56.60634231567383,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 55.59065628051758,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

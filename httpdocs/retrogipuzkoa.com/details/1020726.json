@@ -1,0 +1,113 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 95.70445251464844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.16778945922851562,
+            "Height": 0.16786156594753265,
+            "Left": 0.28298693895339966,
+            "Top": 0.6594188213348389
+          },
+          "Confidence": 95.70445251464844
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.22894981503486633,
+            "Height": 0.44133514165878296,
+            "Left": 0.03185189887881279,
+            "Top": 0.3463062345981598
+          },
+          "Confidence": 75.78146362304688
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.4297010898590088,
+            "Height": 0.5989891290664673,
+            "Left": 0.3180295526981354,
+            "Top": 0.1056523397564888
+          },
+          "Confidence": 72.48741149902344
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 95.70445251464844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crucifix",
+      "Confidence": 94.47884368896484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cross"
+        },
+        {
+          "Name": "Symbol"
+        }
+      ]
+    },
+    {
+      "Name": "Cross",
+      "Confidence": 94.47884368896484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Symbol"
+        }
+      ]
+    },
+    {
+      "Name": "Symbol",
+      "Confidence": 94.47884368896484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Art",
+      "Confidence": 66.89727020263672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Helmet",
+      "Confidence": 62.274784088134766,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07958319038152695,
+            "Height": 0.053084202110767365,
+            "Left": 0.34745797514915466,
+            "Top": 0.6595635414123535
+          },
+          "Confidence": 62.274784088134766
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 62.274784088134766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 62.274784088134766,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

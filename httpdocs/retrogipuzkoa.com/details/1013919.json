@@ -1,0 +1,70 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Plant",
+      "Confidence": 90.48235321044922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Leaf",
+      "Confidence": 87.1802978515625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 82.47850799560547,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9741131067276001,
+            "Height": 0.9864956140518188,
+            "Left": 0.007411873899400234,
+            "Top": 0.011749963276088238
+          },
+          "Confidence": 82.47850799560547
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 82.47850799560547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ivy",
+      "Confidence": 67.76264190673828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Nest",
+      "Confidence": 66.51455688476562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird Nest",
+      "Confidence": 66.51455688476562,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

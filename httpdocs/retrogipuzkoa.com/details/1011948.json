@@ -1,0 +1,96 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Museum",
+      "Confidence": 99.26224517822266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Horse",
+      "Confidence": 84.21748352050781,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.36733701825141907,
+            "Height": 0.41507747769355774,
+            "Left": 0.3007408678531647,
+            "Top": 0.21398282051086426
+          },
+          "Confidence": 84.21748352050781
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 84.21748352050781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 84.21748352050781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 69.23772430419922,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10490380227565765,
+            "Height": 0.3822919428348541,
+            "Left": 0.19069641828536987,
+            "Top": 0.4424862563610077
+          },
+          "Confidence": 69.23772430419922
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 69.23772430419922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Dinosaur",
+      "Confidence": 67.68592834472656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Reptile"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Reptile",
+      "Confidence": 67.68592834472656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

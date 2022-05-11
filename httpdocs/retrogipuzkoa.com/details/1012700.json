@@ -1,0 +1,110 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Shop",
+      "Confidence": 98.35314178466797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Jewelry Store",
+      "Confidence": 79.5540771484375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Shop"
+        }
+      ]
+    },
+    {
+      "Name": "Cat",
+      "Confidence": 66.7472152709961,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.05878413841128349,
+            "Height": 0.07733112573623657,
+            "Left": 0.26508697867393494,
+            "Top": 0.4433842897415161
+          },
+          "Confidence": 66.7472152709961
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 66.7472152709961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 66.7472152709961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 66.7472152709961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Window Display",
+      "Confidence": 63.700626373291016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Shop"
+        }
+      ]
+    },
+    {
+      "Name": "Menu",
+      "Confidence": 58.20722579956055,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.781403660774231,
+            "Height": 0.7258525490760803,
+            "Left": 0.05428766459226608,
+            "Top": 0.1770082265138626
+          },
+          "Confidence": 58.20722579956055
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Text",
+      "Confidence": 58.20722579956055,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,88 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 96.89752197265625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5412803292274475,
+            "Height": 0.5251796245574951,
+            "Left": 0.32446181774139404,
+            "Top": 0.4309339225292206
+          },
+          "Confidence": 94.20650482177734
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.5537280440330505,
+            "Height": 0.5708830952644348,
+            "Left": 0.06275530159473419,
+            "Top": 0.2667929530143738
+          },
+          "Confidence": 78.39915466308594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.18925972282886505,
+            "Height": 0.3807132840156555,
+            "Left": 0.0016884385840967298,
+            "Top": 0.5785397291183472
+          },
+          "Confidence": 74.36512756347656
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 96.89752197265625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 86.8855209350586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 86.8855209350586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Coat",
+      "Confidence": 65.44007110595703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Photography",
+      "Confidence": 60.99142074584961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photo",
+      "Confidence": 60.99142074584961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

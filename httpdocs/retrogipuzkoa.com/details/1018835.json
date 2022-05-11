@@ -1,0 +1,258 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Field",
+      "Confidence": 98.88465118408203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 94.8845443725586,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.009438926354050636,
+            "Height": 0.04477448761463165,
+            "Left": 0.4152838885784149,
+            "Top": 0.4453256130218506
+          },
+          "Confidence": 89.67390441894531
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.007183837704360485,
+            "Height": 0.03994870185852051,
+            "Left": 0.43198952078819275,
+            "Top": 0.44914543628692627
+          },
+          "Confidence": 73.76475524902344
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.007346705533564091,
+            "Height": 0.04216975346207619,
+            "Left": 0.4280838668346405,
+            "Top": 0.44750022888183594
+          },
+          "Confidence": 61.45149612426758
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.007748894859105349,
+            "Height": 0.0370512381196022,
+            "Left": 0.6304652690887451,
+            "Top": 0.45718926191329956
+          },
+          "Confidence": 50.30061340332031
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.006545431446284056,
+            "Height": 0.037223346531391144,
+            "Left": 0.3875775933265686,
+            "Top": 0.445577472448349
+          },
+          "Confidence": 45.040550231933594
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 94.8845443725586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ground",
+      "Confidence": 94.45259094238281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 88.09719848632812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 86.5397720336914,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 80.66050720214844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 79.76371765136719,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.022997617721557617,
+            "Height": 0.06585011631250381,
+            "Left": 0.5862987041473389,
+            "Top": 0.718710720539093
+          },
+          "Confidence": 79.76371765136719
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.013387472368776798,
+            "Height": 0.023355238139629364,
+            "Left": 0.8716947436332703,
+            "Top": 0.5567207336425781
+          },
+          "Confidence": 69.79535675048828
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 79.76371765136719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 75.6932373046875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 75.6932373046875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 74.33145141601562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Grassland",
+      "Confidence": 74.31475830078125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Field"
+        }
+      ]
+    },
+    {
+      "Name": "Team",
+      "Confidence": 55.971378326416016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "People"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 55.225738525390625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Pasture",
+      "Confidence": 55.191036224365234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Farm"
+        },
+        {
+          "Name": "Field"
+        },
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 55.191036224365234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Farm",
+      "Confidence": 55.191036224365234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

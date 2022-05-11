@@ -1,0 +1,104 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Postal Office",
+      "Confidence": 99.92830657958984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 96.91765594482422,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1735990345478058,
+            "Height": 0.1181381493806839,
+            "Left": 0.8175240755081177,
+            "Top": 0.8143469095230103
+          },
+          "Confidence": 96.91765594482422
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 96.91765594482422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 96.91765594482422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 96.91765594482422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Gate",
+      "Confidence": 88.16555786132812,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.4024122953414917,
+            "Height": 0.5283441543579102,
+            "Left": 0.21607741713523865,
+            "Top": 0.4115748107433319
+          },
+          "Confidence": 88.16555786132812
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 86.48103332519531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Prison",
+      "Confidence": 71.71160888671875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 68.22727966308594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 62.04941177368164,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

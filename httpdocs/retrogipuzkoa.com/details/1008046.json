@@ -1,0 +1,86 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Car",
+      "Confidence": 78.43341827392578,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1807195246219635,
+            "Height": 0.16793085634708405,
+            "Left": 0.39333420991897583,
+            "Top": 0.425936222076416
+          },
+          "Confidence": 78.43341827392578
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 78.43341827392578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 78.43341827392578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 78.43341827392578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Leisure Activities",
+      "Confidence": 65.04182434082031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Adapter",
+      "Confidence": 61.9053955078125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Amplifier",
+      "Confidence": 57.59410858154297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Electronics"
+        }
+      ]
+    },
+    {
+      "Name": "Electronics",
+      "Confidence": 57.59410858154297,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

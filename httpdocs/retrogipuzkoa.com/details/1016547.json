@@ -1,0 +1,177 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Church",
+      "Confidence": 99.69916534423828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 99.69916534423828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.69916534423828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Altar",
+      "Confidence": 99.67292785644531,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9215314984321594,
+            "Height": 0.9313342571258545,
+            "Left": 0.027465568855404854,
+            "Top": 0.03011014126241207
+          },
+          "Confidence": 69.28729248046875
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 97.62185668945312,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.14571824669837952,
+            "Height": 0.17399099469184875,
+            "Left": 0.5748339891433716,
+            "Top": 0.4718693196773529
+          },
+          "Confidence": 97.62185668945312
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10698538273572922,
+            "Height": 0.08604125678539276,
+            "Left": 0.09161148220300674,
+            "Top": 0.4651094675064087
+          },
+          "Confidence": 96.57540130615234
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.23527589440345764,
+            "Height": 0.3008674085140228,
+            "Left": 0.2893734276294708,
+            "Top": 0.6136060953140259
+          },
+          "Confidence": 95.44728088378906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1412133276462555,
+            "Height": 0.10196158289909363,
+            "Left": 0.725172758102417,
+            "Top": 0.649028480052948
+          },
+          "Confidence": 93.35494232177734
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08954790234565735,
+            "Height": 0.1873704344034195,
+            "Left": 0.9076972603797913,
+            "Top": 0.4933401942253113
+          },
+          "Confidence": 89.42826080322266
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08932919800281525,
+            "Height": 0.17846529185771942,
+            "Left": 0.7006462216377258,
+            "Top": 0.48404037952423096
+          },
+          "Confidence": 88.04918670654297
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.22137922048568726,
+            "Height": 0.2670014500617981,
+            "Left": 0.5173383355140686,
+            "Top": 0.7146115303039551
+          },
+          "Confidence": 83.68560791015625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.12748835980892181,
+            "Height": 0.1361187845468521,
+            "Left": 0.24515001475811005,
+            "Top": 0.627334475517273
+          },
+          "Confidence": 71.23048400878906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10934826731681824,
+            "Height": 0.18562161922454834,
+            "Left": 0.8173484206199646,
+            "Top": 0.48761025071144104
+          },
+          "Confidence": 62.978633880615234
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.62185668945312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cathedral",
+      "Confidence": 70.02472686767578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Worship",
+      "Confidence": 56.68663787841797,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

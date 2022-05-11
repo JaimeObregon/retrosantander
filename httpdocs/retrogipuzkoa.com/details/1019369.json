@@ -1,0 +1,160 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.70568084716797,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10871398448944092,
+            "Height": 0.1459454447031021,
+            "Left": 0.3551621735095978,
+            "Top": 0.6747249960899353
+          },
+          "Confidence": 99.70568084716797
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04201751947402954,
+            "Height": 0.0835183635354042,
+            "Left": 0.792549729347229,
+            "Top": 0.6578519940376282
+          },
+          "Confidence": 99.07486724853516
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06082261726260185,
+            "Height": 0.12762011587619781,
+            "Left": 0.000029688757422263734,
+            "Top": 0.6848390102386475
+          },
+          "Confidence": 98.6989517211914
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0740775316953659,
+            "Height": 0.13972778618335724,
+            "Left": 0.09966662526130676,
+            "Top": 0.6840312480926514
+          },
+          "Confidence": 98.39134216308594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06416434794664383,
+            "Height": 0.1294785887002945,
+            "Left": 0.16516833007335663,
+            "Top": 0.6807015538215637
+          },
+          "Confidence": 98.1575698852539
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07227952033281326,
+            "Height": 0.12583982944488525,
+            "Left": 0.7081734538078308,
+            "Top": 0.6807261109352112
+          },
+          "Confidence": 97.3834228515625
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.70568084716797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 98.6863021850586,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.0688522458076477,
+            "Height": 0.10221035778522491,
+            "Left": 0.43396973609924316,
+            "Top": 0.4442468285560608
+          },
+          "Confidence": 98.6863021850586
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 98.6863021850586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 90.86402893066406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 81.00369262695312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 81.00369262695312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 75.53020477294922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 71.7127456665039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 68.44769287109375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 68.14373016357422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

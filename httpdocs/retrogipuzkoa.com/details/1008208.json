@@ -1,0 +1,246 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 96.33233642578125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8730462193489075,
+            "Height": 0.5261340737342834,
+            "Left": 0.0498584508895874,
+            "Top": 0.4532468616962433
+          },
+          "Confidence": 82.48416900634766
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.029705936089158058,
+            "Height": 0.028044262900948524,
+            "Left": 0.08638091385364532,
+            "Top": 0.9685947299003601
+          },
+          "Confidence": 52.49214172363281
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.028736714273691177,
+            "Height": 0.02804768830537796,
+            "Left": 0.19857953488826752,
+            "Top": 0.9687146544456482
+          },
+          "Confidence": 46.20489501953125
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 96.33233642578125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crowd",
+      "Confidence": 91.9350814819336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 88.99317169189453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 88.61080169677734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Parade",
+      "Confidence": 81.46797180175781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 78.47676086425781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 62.97004699707031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sea",
+      "Confidence": 60.67271041870117,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Ocean",
+      "Confidence": 60.67271041870117,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Coast",
+      "Confidence": 59.742401123046875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Shoreline"
+        },
+        {
+          "Name": "Sea"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Shoreline",
+      "Confidence": 59.742401123046875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 59.22755813598633,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 58.595245361328125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Protest",
+      "Confidence": 58.40815353393555,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Parade"
+        }
+      ]
+    },
+    {
+      "Name": "Beach",
+      "Confidence": 58.03270721435547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Coast"
+        },
+        {
+          "Name": "Shoreline"
+        },
+        {
+          "Name": "Sea"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Aerial View",
+      "Confidence": 57.503719329833984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Landscape"
+        },
+        {
+          "Name": "Scenery"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Scenery",
+      "Confidence": 57.503719329833984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Landscape",
+      "Confidence": 57.503719329833984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

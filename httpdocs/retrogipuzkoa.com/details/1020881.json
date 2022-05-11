@@ -1,0 +1,54 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Book",
+      "Confidence": 99.90428924560547,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9854623675346375,
+            "Height": 0.9957180619239807,
+            "Left": 0.007984041236341,
+            "Top": 0.0014650156954303384
+          },
+          "Confidence": 99.90428924560547
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Text",
+      "Confidence": 99.30138397216797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Page",
+      "Confidence": 99.29769134521484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Letter",
+      "Confidence": 88.16583251953125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Paper",
+      "Confidence": 76.48486328125,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

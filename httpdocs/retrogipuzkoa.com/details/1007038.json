@@ -1,0 +1,165 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Cat",
+      "Confidence": 94.8100357055664,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.26402321457862854,
+            "Height": 0.30139702558517456,
+            "Left": 0.600162923336029,
+            "Top": 0.44206055998802185
+          },
+          "Confidence": 94.8100357055664
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1269158273935318,
+            "Height": 0.3154894709587097,
+            "Left": 0.004951028618961573,
+            "Top": 0.4400029480457306
+          },
+          "Confidence": 68.06441497802734
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 94.8100357055664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 94.8100357055664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 94.8100357055664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Coyote",
+      "Confidence": 94.64102172851562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wolf",
+      "Confidence": 89.19588470458984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Zoo",
+      "Confidence": 86.07352447509766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Red Wolf",
+      "Confidence": 67.68763732910156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wolf"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 67.68763732910156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 65.38743591308594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 64.33806610107422,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1308497041463852,
+            "Height": 0.3046659231185913,
+            "Left": 0.0022869110107421875,
+            "Top": 0.4545058310031891
+          },
+          "Confidence": 64.33806610107422
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,48 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Gate",
+      "Confidence": 97.96286010742188,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8386587500572205,
+            "Height": 0.680045485496521,
+            "Left": 0.10701747238636017,
+            "Top": 0.16923503577709198
+          },
+          "Confidence": 97.96286010742188
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 76.01234436035156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 69.32437133789062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Zoo",
+      "Confidence": 58.464847564697266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,200 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Sheep",
+      "Confidence": 99.49236297607422,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.05913064628839493,
+            "Height": 0.06636527180671692,
+            "Left": 0.2930476665496826,
+            "Top": 0.2901572287082672
+          },
+          "Confidence": 99.49236297607422
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06945179402828217,
+            "Height": 0.04309889301657677,
+            "Left": 0.48669910430908203,
+            "Top": 0.3321707546710968
+          },
+          "Confidence": 99.13980102539062
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03870217874646187,
+            "Height": 0.04647867754101753,
+            "Left": 0.4546324610710144,
+            "Top": 0.2845180034637451
+          },
+          "Confidence": 98.82074737548828
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09477084130048752,
+            "Height": 0.08232464641332626,
+            "Left": 0.39544859528541565,
+            "Top": 0.3670155704021454
+          },
+          "Confidence": 88.00820922851562
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08162333071231842,
+            "Height": 0.06905090808868408,
+            "Left": 0.2685176432132721,
+            "Top": 0.43110930919647217
+          },
+          "Confidence": 81.67354583740234
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06048755347728729,
+            "Height": 0.0520881712436676,
+            "Left": 0.25250381231307983,
+            "Top": 0.40739527344703674
+          },
+          "Confidence": 71.45067596435547
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.49236297607422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 99.49236297607422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 92.7374496459961,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.022893108427524567,
+            "Height": 0.07034390419721603,
+            "Left": 0.5018665194511414,
+            "Top": 0.4339648187160492
+          },
+          "Confidence": 92.7374496459961
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0962371826171875,
+            "Height": 0.10238440334796906,
+            "Left": 0.25082528591156006,
+            "Top": 0.40160396695137024
+          },
+          "Confidence": 69.52294921875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0951204001903534,
+            "Height": 0.09591978788375854,
+            "Left": 0.3956044912338257,
+            "Top": 0.36367732286453247
+          },
+          "Confidence": 62.38422775268555
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 88.83917999267578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 78.14170837402344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Field",
+      "Confidence": 71.61524200439453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fence",
+      "Confidence": 62.41469955444336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ground",
+      "Confidence": 61.16975402832031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 61.00352096557617,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Flock",
+      "Confidence": 55.79874801635742,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Land",
+      "Confidence": 55.09748840332031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 55.02491760253906,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

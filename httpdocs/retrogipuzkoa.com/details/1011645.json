@@ -1,0 +1,187 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.60848236083984,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2925398647785187,
+            "Height": 0.3956601917743683,
+            "Left": 0.6128974556922913,
+            "Top": 0.4909226894378662
+          },
+          "Confidence": 99.60848236083984
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10776975750923157,
+            "Height": 0.15584224462509155,
+            "Left": 0.8896192908287048,
+            "Top": 0.48939675092697144
+          },
+          "Confidence": 97.87435913085938
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.17871588468551636,
+            "Height": 0.3701079785823822,
+            "Left": 0.09357525408267975,
+            "Top": 0.5251351594924927
+          },
+          "Confidence": 97.19996643066406
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.15342389047145844,
+            "Height": 0.1782410740852356,
+            "Left": 0.3590492606163025,
+            "Top": 0.48821166157722473
+          },
+          "Confidence": 96.35541534423828
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.14208777248859406,
+            "Height": 0.2792682945728302,
+            "Left": 0.8553012609481812,
+            "Top": 0.5649100542068481
+          },
+          "Confidence": 92.27339935302734
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.12341252714395523,
+            "Height": 0.2010294646024704,
+            "Left": 0.27988219261169434,
+            "Top": 0.42382851243019104
+          },
+          "Confidence": 90.04412078857422
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10022032260894775,
+            "Height": 0.1316140741109848,
+            "Left": 0.1807701587677002,
+            "Top": 0.500307023525238
+          },
+          "Confidence": 84.20295715332031
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09993837773799896,
+            "Height": 0.13092683255672455,
+            "Left": 0.07532565295696259,
+            "Top": 0.4911346435546875
+          },
+          "Confidence": 72.80621337890625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.12995149195194244,
+            "Height": 0.1568152755498886,
+            "Left": 0.48282402753829956,
+            "Top": 0.4889092743396759
+          },
+          "Confidence": 66.11515045166016
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.60848236083984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 97.277587890625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 97.277587890625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Church",
+      "Confidence": 96.25447082519531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Altar",
+      "Confidence": 94.9405288696289,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Interior Design",
+      "Confidence": 80.94181060791016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 80.94181060791016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Worship",
+      "Confidence": 70.51654815673828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 70.31427001953125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Crowd",
+      "Confidence": 62.692256927490234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

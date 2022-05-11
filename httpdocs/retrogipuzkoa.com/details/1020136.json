@@ -1,0 +1,99 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 99.45008087158203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 99.4488525390625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Apse",
+      "Confidence": 96.25323486328125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arch",
+      "Confidence": 92.86849975585938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arched",
+      "Confidence": 92.86849975585938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Crypt",
+      "Confidence": 91.5848388671875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Door",
+      "Confidence": 80.62547302246094,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.19216252863407135,
+            "Height": 0.30099916458129883,
+            "Left": 0.36953431367874146,
+            "Top": 0.5503905415534973
+          },
+          "Confidence": 80.62547302246094
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Vault Ceiling",
+      "Confidence": 59.57441711425781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Arch"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

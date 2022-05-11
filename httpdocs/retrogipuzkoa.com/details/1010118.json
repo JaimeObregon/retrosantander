@@ -1,0 +1,139 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Blizzard",
+      "Confidence": 99.99919891357422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Winter"
+        },
+        {
+          "Name": "Storm"
+        },
+        {
+          "Name": "Snow"
+        },
+        {
+          "Name": "Nature"
+        },
+        {
+          "Name": "Outdoors"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 99.99919891357422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.99919891357422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Storm",
+      "Confidence": 99.99919891357422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 99.99919891357422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Winter",
+      "Confidence": 99.99919891357422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 98.778076171875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07570051401853561,
+            "Height": 0.2278808206319809,
+            "Left": 0.25300678610801697,
+            "Top": 0.0019609287846833467
+          },
+          "Confidence": 98.778076171875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10068432986736298,
+            "Height": 0.3343563377857208,
+            "Left": 0.16312192380428314,
+            "Top": 0
+          },
+          "Confidence": 94.2067642211914
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.778076171875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Motorcycle",
+      "Confidence": 68.60826873779297,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.19675590097904205,
+            "Height": 0.2132481336593628,
+            "Left": 0.2871229946613312,
+            "Top": 0.3888753354549408
+          },
+          "Confidence": 68.60826873779297
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 68.60826873779297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 68.60826873779297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

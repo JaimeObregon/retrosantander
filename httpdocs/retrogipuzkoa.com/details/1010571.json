@@ -1,0 +1,67 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Boat",
+      "Confidence": 96.62614440917969,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.170286163687706,
+            "Height": 0.20514166355133057,
+            "Left": 0.4600445032119751,
+            "Top": 0.5245488882064819
+          },
+          "Confidence": 96.62614440917969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.2976222634315491,
+            "Height": 0.15231899917125702,
+            "Left": 0.0034448187798261642,
+            "Top": 0.47777196764945984
+          },
+          "Confidence": 53.03873825073242
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 96.62614440917969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 96.62614440917969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Submarine",
+      "Confidence": 95.79000854492188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

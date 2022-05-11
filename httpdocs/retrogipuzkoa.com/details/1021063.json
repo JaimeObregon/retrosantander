@@ -1,0 +1,51 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Text",
+      "Confidence": 98.05811309814453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Handwriting",
+      "Confidence": 86.59984588623047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Drawing",
+      "Confidence": 84.10924530029297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 84.10924530029297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Doodle",
+      "Confidence": 64.58757019042969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Drawing"
+        },
+        {
+          "Name": "Art"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

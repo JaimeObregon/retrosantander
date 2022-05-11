@@ -1,0 +1,208 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.53104400634766,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07620710879564285,
+            "Height": 0.10728652775287628,
+            "Left": 0.3157326877117157,
+            "Top": 0.7094159722328186
+          },
+          "Confidence": 98.53104400634766
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.053575653582811356,
+            "Height": 0.11815560609102249,
+            "Left": 0.6562190651893616,
+            "Top": 0.5517293810844421
+          },
+          "Confidence": 98.2098388671875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.052456729114055634,
+            "Height": 0.1192961037158966,
+            "Left": 0.7734175324440002,
+            "Top": 0.49812740087509155
+          },
+          "Confidence": 96.91016387939453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0816882848739624,
+            "Height": 0.15307927131652832,
+            "Left": 0.17150145769119263,
+            "Top": 0.6495786309242249
+          },
+          "Confidence": 96.8677978515625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0481383316218853,
+            "Height": 0.0931212306022644,
+            "Left": 0.7147508859634399,
+            "Top": 0.4908559024333954
+          },
+          "Confidence": 93.73823547363281
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06192873790860176,
+            "Height": 0.08301391452550888,
+            "Left": 0.2585694491863251,
+            "Top": 0.7156025171279907
+          },
+          "Confidence": 93.61442565917969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.047138411551713943,
+            "Height": 0.10807698220014572,
+            "Left": 0.5803316235542297,
+            "Top": 0.484134703874588
+          },
+          "Confidence": 93.49343872070312
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10535910725593567,
+            "Height": 0.14245793223381042,
+            "Left": 0.8489220142364502,
+            "Top": 0.8156460523605347
+          },
+          "Confidence": 92.6419448852539
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.046114735305309296,
+            "Height": 0.1258792281150818,
+            "Left": 0.9211044907569885,
+            "Top": 0.49813714623451233
+          },
+          "Confidence": 90.64839172363281
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08590053021907806,
+            "Height": 0.12211592495441437,
+            "Left": 0.4238743484020233,
+            "Top": 0.5328945517539978
+          },
+          "Confidence": 80.21983337402344
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.046740975230932236,
+            "Height": 0.11754428595304489,
+            "Left": 0.8565779328346252,
+            "Top": 0.5009059309959412
+          },
+          "Confidence": 78.45661926269531
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04603828489780426,
+            "Height": 0.09497648477554321,
+            "Left": 0.6309055685997009,
+            "Top": 0.4807722568511963
+          },
+          "Confidence": 61.22847366333008
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.53104400634766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pedestrian",
+      "Confidence": 97.61629486083984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Crowd",
+      "Confidence": 95.94338989257812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 71.741943359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 71.741943359375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Motorcycle",
+      "Confidence": 69.19761657714844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.11611859500408173,
+            "Height": 0.09591835737228394,
+            "Left": 0.4550657868385315,
+            "Top": 0.5750514268875122
+          },
+          "Confidence": 69.19761657714844
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 65.93820190429688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 61.97430419921875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Parade",
+      "Confidence": 59.55665969848633,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

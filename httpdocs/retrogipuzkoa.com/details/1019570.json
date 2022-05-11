@@ -1,0 +1,256 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.64125061035156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.38520812988281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 98.49905395507812,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 95.7578353881836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 90.82603454589844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Shack",
+      "Confidence": 89.2300033569336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Hut"
+        },
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Hut",
+      "Confidence": 89.2300033569336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Sheep",
+      "Confidence": 89.16102600097656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07944169640541077,
+            "Height": 0.08060768246650696,
+            "Left": 0.22763992846012115,
+            "Top": 0.5313829779624939
+          },
+          "Confidence": 89.16102600097656
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0560259111225605,
+            "Height": 0.0749104842543602,
+            "Left": 0.18626487255096436,
+            "Top": 0.5409600734710693
+          },
+          "Confidence": 82.9521713256836
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06305354833602905,
+            "Height": 0.07032662630081177,
+            "Left": 0.321550577878952,
+            "Top": 0.526971697807312
+          },
+          "Confidence": 61.42939758300781
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06012088805437088,
+            "Height": 0.09004400670528412,
+            "Left": 0.13076351583003998,
+            "Top": 0.5353555679321289
+          },
+          "Confidence": 53.709983825683594
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 89.16102600097656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 89.16102600097656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 88.59518432617188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Cow",
+      "Confidence": 78.9688720703125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08828596025705338,
+            "Height": 0.10829318314790726,
+            "Left": 0.04183642566204071,
+            "Top": 0.5393252372741699
+          },
+          "Confidence": 78.9688720703125
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Cattle"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cattle",
+      "Confidence": 78.9688720703125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 77.19499206542969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "House",
+      "Confidence": 71.86035919189453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 67.32173919677734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

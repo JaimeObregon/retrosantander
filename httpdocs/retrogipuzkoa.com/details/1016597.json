@@ -1,0 +1,97 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Mountain",
+      "Confidence": 99.80198669433594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 99.80198669433594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.80198669433594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 98.13270568847656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.033043671399354935,
+            "Height": 0.12028481811285019,
+            "Left": 0.19639673829078674,
+            "Top": 0.5909138321876526
+          },
+          "Confidence": 98.13270568847656
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02607705630362034,
+            "Height": 0.10687519609928131,
+            "Left": 0.255801796913147,
+            "Top": 0.6016554832458496
+          },
+          "Confidence": 94.61621856689453
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.13270568847656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Valley",
+      "Confidence": 93.76790618896484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Canyon",
+      "Confidence": 83.66487121582031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Valley"
+        },
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

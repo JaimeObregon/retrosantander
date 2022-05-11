@@ -1,0 +1,112 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Architecture",
+      "Confidence": 99.751220703125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.751220703125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 98.70227813720703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07048659771680832,
+            "Height": 0.11437736451625824,
+            "Left": 0.5024745464324951,
+            "Top": 0.7929642200469971
+          },
+          "Confidence": 98.70227813720703
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.70227813720703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apse",
+      "Confidence": 98.54280853271484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Church",
+      "Confidence": 95.83271789550781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Altar",
+      "Confidence": 95.16864013671875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9541805982589722,
+            "Height": 0.9201443791389465,
+            "Left": 0.026125339791178703,
+            "Top": 0.07016044855117798
+          },
+          "Confidence": 91.3886489868164
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Cathedral",
+      "Confidence": 56.602394104003906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

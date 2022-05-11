@@ -1,0 +1,208 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.52609252929688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.92125701904297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 95.13542938232422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Car",
+      "Confidence": 91.39185333251953,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.31557896733283997,
+            "Height": 0.23414532840251923,
+            "Left": 0.2581419348716736,
+            "Top": 0.5804587006568909
+          },
+          "Confidence": 91.39185333251953
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 91.39185333251953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 91.39185333251953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 91.39185333251953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Ice",
+      "Confidence": 81.30473327636719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Winter",
+      "Confidence": 79.71653747558594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Storm",
+      "Confidence": 79.20584869384766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Screen",
+      "Confidence": 64.26740264892578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Electronics"
+        }
+      ]
+    },
+    {
+      "Name": "Electronics",
+      "Confidence": 64.26740264892578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Monitor",
+      "Confidence": 63.84664535522461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Screen"
+        },
+        {
+          "Name": "Electronics"
+        }
+      ]
+    },
+    {
+      "Name": "Display",
+      "Confidence": 63.84664535522461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Screen"
+        },
+        {
+          "Name": "Electronics"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 61.55427169799805,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.18632955849170685,
+            "Height": 0.32393062114715576,
+            "Left": 0.08767016232013702,
+            "Top": 0.6004265546798706
+          },
+          "Confidence": 61.55427169799805
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 61.55427169799805,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Blizzard",
+      "Confidence": 59.774688720703125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Winter"
+        },
+        {
+          "Name": "Storm"
+        },
+        {
+          "Name": "Snow"
+        },
+        {
+          "Name": "Nature"
+        },
+        {
+          "Name": "Outdoors"
+        }
+      ]
+    },
+    {
+      "Name": "Weather",
+      "Confidence": 59.50875473022461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,224 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.88141632080078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.74098205566406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 99.68986511230469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 96.52375793457031,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.01838229037821293,
+            "Height": 0.07925456762313843,
+            "Left": 0.34554725885391235,
+            "Top": 0.451739102602005
+          },
+          "Confidence": 96.52375793457031
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02005634643137455,
+            "Height": 0.08198796212673187,
+            "Left": 0.09134775400161743,
+            "Top": 0.37832877039909363
+          },
+          "Confidence": 92.8375244140625
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 96.52375793457031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "River",
+      "Confidence": 96.41768646240234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Reservoir",
+      "Confidence": 93.34700775146484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Mountain",
+      "Confidence": 92.52824401855469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Boat",
+      "Confidence": 67.61656951904297,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04222262278199196,
+            "Height": 0.035109974443912506,
+            "Left": 0.300746351480484,
+            "Top": 0.5367781519889832
+          },
+          "Confidence": 67.61656951904297
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.051662832498550415,
+            "Height": 0.03428948298096657,
+            "Left": 0.4291311800479889,
+            "Top": 0.8200081586837769
+          },
+          "Confidence": 56.103912353515625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03419746086001396,
+            "Height": 0.06412423402070999,
+            "Left": 0.4839252531528473,
+            "Top": 0.8057318329811096
+          },
+          "Confidence": 51.1097412109375
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 67.61656951904297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 67.61656951904297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Crater",
+      "Confidence": 58.15656661987305,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Volcano"
+        },
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Volcano",
+      "Confidence": 58.15656661987305,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Sea",
+      "Confidence": 56.20087814331055,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Ocean",
+      "Confidence": 56.20087814331055,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

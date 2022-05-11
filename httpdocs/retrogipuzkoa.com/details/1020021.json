@@ -1,0 +1,314 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.14659881591797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 96.0854263305664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sea",
+      "Confidence": 89.11074829101562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Ocean",
+      "Confidence": 89.11074829101562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Water",
+      "Confidence": 89.11074829101562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 85.96985626220703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.019735129550099373,
+            "Height": 0.03026122972369194,
+            "Left": 0.10380303859710693,
+            "Top": 0.4001399278640747
+          },
+          "Confidence": 85.96985626220703
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.021368511021137238,
+            "Height": 0.029998503625392914,
+            "Left": 0.005050887353718281,
+            "Top": 0.34645628929138184
+          },
+          "Confidence": 54.01105499267578
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 85.96985626220703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 84.22107696533203,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.01621318608522415,
+            "Height": 0.01669854111969471,
+            "Left": 0.7234466075897217,
+            "Top": 0.4577852487564087
+          },
+          "Confidence": 84.22107696533203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.013547449372708797,
+            "Height": 0.01741909421980381,
+            "Left": 0.762457549571991,
+            "Top": 0.4573693573474884
+          },
+          "Confidence": 71.52660369873047
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.009792287833988667,
+            "Height": 0.02822977676987648,
+            "Left": 0.7504321336746216,
+            "Top": 0.3803752362728119
+          },
+          "Confidence": 70.04418182373047
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.011747553944587708,
+            "Height": 0.01944122277200222,
+            "Left": 0.6881697177886963,
+            "Top": 0.4595397114753723
+          },
+          "Confidence": 66.5070571899414
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 84.22107696533203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 82.330322265625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 82.330322265625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 82.330322265625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 82.330322265625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Shoreline",
+      "Confidence": 80.88282012939453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Field",
+      "Confidence": 76.02812194824219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vegetation",
+      "Confidence": 73.03531646728516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 73.03531646728516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Coast",
+      "Confidence": 72.70098114013672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Shoreline"
+        },
+        {
+          "Name": "Sea"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Beach",
+      "Confidence": 72.65555572509766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Coast"
+        },
+        {
+          "Name": "Shoreline"
+        },
+        {
+          "Name": "Sea"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Land",
+      "Confidence": 69.1066665649414,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 59.61558151245117,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Agriculture",
+      "Confidence": 57.7241325378418,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Field"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

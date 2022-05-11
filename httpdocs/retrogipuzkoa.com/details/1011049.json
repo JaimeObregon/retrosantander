@@ -1,0 +1,121 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Wall",
+      "Confidence": 99.11573791503906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 92.57862854003906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Door",
+      "Confidence": 90.99959564208984,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.32061174511909485,
+            "Height": 0.2504221200942993,
+            "Left": 0.2955772876739502,
+            "Top": 0.47630774974823
+          },
+          "Confidence": 90.99959564208984
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 86.85549926757812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Bunker",
+      "Confidence": 83.03148651123047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 77.92759704589844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Villa",
+      "Confidence": 75.31586456298828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "House"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "House",
+      "Confidence": 75.31586456298828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 59.59531784057617,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Concrete",
+      "Confidence": 58.56831359863281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rubble",
+      "Confidence": 58.446414947509766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Stone Wall",
+      "Confidence": 56.512454986572266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wall"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

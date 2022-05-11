@@ -1,0 +1,115 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.205078125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.263958215713501,
+            "Height": 0.5329403877258301,
+            "Left": 0.5275349020957947,
+            "Top": 0.30744415521621704
+          },
+          "Confidence": 99.205078125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.34314993023872375,
+            "Height": 0.812325656414032,
+            "Left": 0.05385810509324074,
+            "Top": 0.10173871368169785
+          },
+          "Confidence": 68.97026062011719
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.205078125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 83.24479675292969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Painting",
+      "Confidence": 76.80512237548828,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9541463255882263,
+            "Height": 0.997245192527771,
+            "Left": 0,
+            "Top": 0
+          },
+          "Confidence": 76.80512237548828
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 76.80512237548828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tuna",
+      "Confidence": 75.23636627197266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sea Life"
+        },
+        {
+          "Name": "Fish"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Fish",
+      "Confidence": 75.23636627197266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Sea Life",
+      "Confidence": 75.23636627197266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Hunting",
+      "Confidence": 56.000465393066406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

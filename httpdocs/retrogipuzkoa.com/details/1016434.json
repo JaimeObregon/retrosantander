@@ -1,0 +1,105 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Airplane",
+      "Confidence": 94.54955291748047,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.45316600799560547,
+            "Height": 0.2928912937641144,
+            "Left": 0.13361835479736328,
+            "Top": 0.40334904193878174
+          },
+          "Confidence": 94.54955291748047
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1233353465795517,
+            "Height": 0.09322496503591537,
+            "Left": 0.874910295009613,
+            "Top": 0.4417318105697632
+          },
+          "Confidence": 86.50988006591797
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Aircraft",
+      "Confidence": 94.54955291748047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 94.54955291748047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 94.54955291748047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Airfield",
+      "Confidence": 93.49991607666016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Airport"
+        }
+      ]
+    },
+    {
+      "Name": "Airport",
+      "Confidence": 93.49991607666016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Landing",
+      "Confidence": 58.1989860534668,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Airplane"
+        },
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

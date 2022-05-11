@@ -1,0 +1,235 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.13639068603516,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.17234796285629272,
+            "Height": 0.25740325450897217,
+            "Left": 0.0027597995940595865,
+            "Top": 0.7337861657142639
+          },
+          "Confidence": 99.13639068603516
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.031733568757772446,
+            "Height": 0.07777921855449677,
+            "Left": 0.6687949299812317,
+            "Top": 0.9194885492324829
+          },
+          "Confidence": 97.94310760498047
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.028433281928300858,
+            "Height": 0.09123922139406204,
+            "Left": 0.6282341480255127,
+            "Top": 0.9060285687446594
+          },
+          "Confidence": 97.05449676513672
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04081576317548752,
+            "Height": 0.10462776571512222,
+            "Left": 0.21285700798034668,
+            "Top": 0.8926399946212769
+          },
+          "Confidence": 87.79290771484375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02469942905008793,
+            "Height": 0.09422994405031204,
+            "Left": 0.54359370470047,
+            "Top": 0.8855028748512268
+          },
+          "Confidence": 65.75346374511719
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.006079958286136389,
+            "Height": 0.027528773993253708,
+            "Left": 0.5141726732254028,
+            "Top": 0.6035251617431641
+          },
+          "Confidence": 52.272552490234375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.010083490051329136,
+            "Height": 0.045592259615659714,
+            "Left": 0.3968302011489868,
+            "Top": 0.6929464936256409
+          },
+          "Confidence": 48.42726516723633
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.00918809324502945,
+            "Height": 0.03544345870614052,
+            "Left": 0.3875790536403656,
+            "Top": 0.6658687591552734
+          },
+          "Confidence": 41.664398193359375
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.13639068603516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 97.83710479736328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bridge",
+      "Confidence": 95.13009643554688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 93.90072631835938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Road",
+      "Confidence": 83.94034576416016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 81.56382751464844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Water",
+      "Confidence": 73.30791473388672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 72.78805541992188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Waterfront",
+      "Confidence": 68.49127960205078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Crowd",
+      "Confidence": 64.02886199951172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sea",
+      "Confidence": 58.86006164550781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Ocean",
+      "Confidence": 58.86006164550781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Freeway",
+      "Confidence": 57.04908752441406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Road"
+        }
+      ]
+    },
+    {
+      "Name": "City",
+      "Confidence": 56.50431442260742,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 56.50431442260742,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Town",
+      "Confidence": 56.50431442260742,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

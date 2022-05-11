@@ -1,0 +1,154 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.71157836914062,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2341659814119339,
+            "Height": 0.3544634282588959,
+            "Left": 0.43757688999176025,
+            "Top": 0.2503013610839844
+          },
+          "Confidence": 98.71157836914062
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.71157836914062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bicycle",
+      "Confidence": 97.29612731933594,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.34606868028640747,
+            "Height": 0.34777864813804626,
+            "Left": 0.0023222414311021566,
+            "Top": 0.3896844685077667
+          },
+          "Confidence": 97.29612731933594
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bike",
+      "Confidence": 97.29612731933594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 97.29612731933594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 97.29612731933594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 76.01160430908203,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.29895734786987305,
+            "Height": 0.20172612369060516,
+            "Left": 0.007085104938596487,
+            "Top": 0.5360241532325745
+          },
+          "Confidence": 76.01160430908203
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 76.01160430908203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Silhouette",
+      "Confidence": 71.13335418701172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cyclist",
+      "Confidence": 55.5285758972168,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bicycle"
+        },
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 55.5285758972168,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 55.5285758972168,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,191 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.32581329345703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.052742138504981995,
+            "Height": 0.212039977312088,
+            "Left": 0.40606656670570374,
+            "Top": 0.6850932240486145
+          },
+          "Confidence": 99.32581329345703
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03963922709226608,
+            "Height": 0.21171122789382935,
+            "Left": 0.6935804486274719,
+            "Top": 0.6780955791473389
+          },
+          "Confidence": 96.44324493408203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.042682796716690063,
+            "Height": 0.1579691469669342,
+            "Left": 0.8881037831306458,
+            "Top": 0.5564590692520142
+          },
+          "Confidence": 95.1894760131836
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03634507209062576,
+            "Height": 0.18815666437149048,
+            "Left": 0.44398823380470276,
+            "Top": 0.6641222834587097
+          },
+          "Confidence": 94.90006256103516
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.027709104120731354,
+            "Height": 0.0930248498916626,
+            "Left": 0.44484707713127136,
+            "Top": 0.5985010266304016
+          },
+          "Confidence": 72.80677032470703
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.039331428706645966,
+            "Height": 0.18961407244205475,
+            "Left": 0.34578555822372437,
+            "Top": 0.43560394644737244
+          },
+          "Confidence": 52.48252487182617
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.32581329345703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Airplane",
+      "Confidence": 96.98680877685547,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8600778579711914,
+            "Height": 0.6082771420478821,
+            "Left": 0.08421114087104797,
+            "Top": 0.2220941036939621
+          },
+          "Confidence": 96.98680877685547
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.4543358385562897,
+            "Height": 0.15088792145252228,
+            "Left": 0.1801784634590149,
+            "Top": 0.11200921982526779
+          },
+          "Confidence": 63.14670181274414
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Aircraft",
+      "Confidence": 96.98680877685547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 96.98680877685547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 96.98680877685547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Airport",
+      "Confidence": 95.57611083984375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Airfield",
+      "Confidence": 92.7197265625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Airport"
+        }
+      ]
+    },
+    {
+      "Name": "Airliner",
+      "Confidence": 65.25127410888672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Airplane"
+        },
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Biplane",
+      "Confidence": 55.093509674072266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Airplane"
+        },
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

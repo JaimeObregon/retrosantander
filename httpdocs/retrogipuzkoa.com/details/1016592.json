@@ -1,0 +1,125 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.8697738647461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.62610626220703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 98.31987762451172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 91.92791748046875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.01604592800140381,
+            "Height": 0.061984237283468246,
+            "Left": 0.4565383195877075,
+            "Top": 0.7181608080863953
+          },
+          "Confidence": 91.92791748046875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.012053586542606354,
+            "Height": 0.04635097458958626,
+            "Left": 0.4791823625564575,
+            "Top": 0.7366121411323547
+          },
+          "Confidence": 81.08171844482422
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 91.92791748046875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 88.5029067993164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Hill",
+      "Confidence": 86.09540557861328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 68.84754943847656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Field",
+      "Confidence": 65.50201416015625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Farm",
+      "Confidence": 58.82925033569336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

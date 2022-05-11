@@ -1,0 +1,77 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Passport",
+      "Confidence": 89.8263168334961,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9607698321342468,
+            "Height": 0.9619082808494568,
+            "Left": 0.02354525774717331,
+            "Top": 0.036337386816740036
+          },
+          "Confidence": 89.8263168334961
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Id Cards"
+        },
+        {
+          "Name": "Document"
+        },
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Document",
+      "Confidence": 89.8263168334961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Id Cards",
+      "Confidence": 89.8263168334961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Document"
+        },
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Text",
+      "Confidence": 89.8263168334961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rug",
+      "Confidence": 74.76858520507812,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9184768199920654,
+            "Height": 0.9982455968856812,
+            "Left": 0.02869056537747383,
+            "Top": 0
+          },
+          "Confidence": 74.76858520507812
+        }
+      ],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

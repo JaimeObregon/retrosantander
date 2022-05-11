@@ -1,0 +1,82 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 98.25239562988281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 98.20436096191406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Window",
+      "Confidence": 93.2711181640625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 90.0194320678711,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Room",
+      "Confidence": 85.36614227294922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Skylight",
+      "Confidence": 81.03221130371094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Window"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 72.11028289794922,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03303174301981926,
+            "Height": 0.10542488843202591,
+            "Left": 0.32327401638031006,
+            "Top": 0.6610719561576843
+          },
+          "Confidence": 72.11028289794922
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 72.11028289794922,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

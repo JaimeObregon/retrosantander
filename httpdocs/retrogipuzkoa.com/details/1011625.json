@@ -1,0 +1,193 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Crowd",
+      "Confidence": 98.99495697021484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 98.99495697021484,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9982455968856812,
+            "Height": 0.5078526139259338,
+            "Left": 0,
+            "Top": 0.4572300314903259
+          },
+          "Confidence": 97.86678314208984
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08087131381034851,
+            "Height": 0.17759349942207336,
+            "Left": 0.13813583552837372,
+            "Top": 0.8197038173675537
+          },
+          "Confidence": 96.34864807128906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03297741711139679,
+            "Height": 0.09081882983446121,
+            "Left": 0.05403931066393852,
+            "Top": 0.9058431386947632
+          },
+          "Confidence": 61.03361129760742
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.99495697021484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Marching",
+      "Confidence": 97.70728302001953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Crowd"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Audience",
+      "Confidence": 89.89433288574219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Crowd"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Parade",
+      "Confidence": 85.4785385131836,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 82.54940032958984,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.009744904935359955,
+            "Height": 0.020262330770492554,
+            "Left": 0.25075891613960266,
+            "Top": 0.10898510366678238
+          },
+          "Confidence": 82.54940032958984
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 82.54940032958984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 77.5355224609375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Military Uniform",
+      "Confidence": 67.3888168334961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Military",
+      "Confidence": 67.3888168334961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soldier",
+      "Confidence": 60.51218032836914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Army",
+      "Confidence": 59.524383544921875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Armored"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Armored",
+      "Confidence": 59.524383544921875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 56.20090103149414,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Symbol",
+      "Confidence": 55.00339126586914,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

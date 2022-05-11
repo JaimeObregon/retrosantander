@@ -1,0 +1,67 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Crucifix",
+      "Confidence": 97.44397735595703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cross"
+        },
+        {
+          "Name": "Symbol"
+        }
+      ]
+    },
+    {
+      "Name": "Cross",
+      "Confidence": 97.44397735595703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8354448676109314,
+            "Height": 0.9318220019340515,
+            "Left": 0.07466785609722137,
+            "Top": 0.013519875705242157
+          },
+          "Confidence": 87.62158203125
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Symbol"
+        }
+      ]
+    },
+    {
+      "Name": "Symbol",
+      "Confidence": 97.44397735595703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 87.93630981445312,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7052622437477112,
+            "Height": 0.6325726509094238,
+            "Left": 0.1924365758895874,
+            "Top": 0.022164568305015564
+          },
+          "Confidence": 87.93630981445312
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 87.93630981445312,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

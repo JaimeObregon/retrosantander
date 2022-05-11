@@ -1,0 +1,269 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Truck",
+      "Confidence": 98.83264923095703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.20921620726585388,
+            "Height": 0.1593487411737442,
+            "Left": 0.6190453171730042,
+            "Top": 0.31285253167152405
+          },
+          "Confidence": 98.83264923095703
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.521842896938324,
+            "Height": 0.5722527503967285,
+            "Left": 0.057137392461299896,
+            "Top": 0.2435392588376999
+          },
+          "Confidence": 77.04337310791016
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 98.83264923095703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 98.83264923095703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 98.72103881835938,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.019710125401616096,
+            "Height": 0.08253998309373856,
+            "Left": 0.882899820804596,
+            "Top": 0.3390732407569885
+          },
+          "Confidence": 98.72103881835938
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03232935816049576,
+            "Height": 0.13903318345546722,
+            "Left": 0.905180811882019,
+            "Top": 0.35504356026649475
+          },
+          "Confidence": 98.14515686035156
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02222086675465107,
+            "Height": 0.0645066350698471,
+            "Left": 0.9403427243232727,
+            "Top": 0.3645431399345398
+          },
+          "Confidence": 60.509483337402344
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.11960452049970627,
+            "Height": 0.49995478987693787,
+            "Left": 0.0188159067183733,
+            "Top": 0.2681844234466553
+          },
+          "Confidence": 60.27497863769531
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.018338173627853394,
+            "Height": 0.05561799928545952,
+            "Left": 0.9111972451210022,
+            "Top": 0.347491592168808
+          },
+          "Confidence": 55.032283782958984
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.72103881835938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 98.05194854736328,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.43086346983909607,
+            "Height": 0.5463789105415344,
+            "Left": 0.11610350757837296,
+            "Top": 0.2598123848438263
+          },
+          "Confidence": 95.9001693725586
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 98.05194854736328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Antique Car",
+      "Confidence": 93.76091003417969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bumper",
+      "Confidence": 88.76277923583984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Model T",
+      "Confidence": 77.78044891357422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Antique Car"
+        },
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 65.75236511230469,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.036092016845941544,
+            "Height": 0.06072818115353584,
+            "Left": 0.7063043713569641,
+            "Top": 0.40554219484329224
+          },
+          "Confidence": 65.75236511230469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05732523649930954,
+            "Height": 0.11320548504590988,
+            "Left": 0.26078498363494873,
+            "Top": 0.692405641078949
+          },
+          "Confidence": 56.03135299682617
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 65.75236511230469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Hot Rod",
+      "Confidence": 59.50160598754883,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Sedan",
+      "Confidence": 55.48483657836914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Car"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 55.24156951904297,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

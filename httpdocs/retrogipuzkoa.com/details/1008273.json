@@ -1,0 +1,423 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.16835021972656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 98.75041198730469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 96.67311096191406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 94.86637115478516,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04162522777915001,
+            "Height": 0.0878315195441246,
+            "Left": 0.47602972388267517,
+            "Top": 0.8291846513748169
+          },
+          "Confidence": 94.86637115478516
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03439556062221527,
+            "Height": 0.018955200910568237,
+            "Left": 0.39819422364234924,
+            "Top": 0.9784062504768372
+          },
+          "Confidence": 77.66824340820312
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.017036035656929016,
+            "Height": 0.03796064481139183,
+            "Left": 0.3549374043941498,
+            "Top": 0.8372626900672913
+          },
+          "Confidence": 70.04283142089844
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.020954761654138565,
+            "Height": 0.0503847636282444,
+            "Left": 0.5236913561820984,
+            "Top": 0.7968857884407043
+          },
+          "Confidence": 69.5289077758789
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.018436044454574585,
+            "Height": 0.032371338456869125,
+            "Left": 0.5349308848381042,
+            "Top": 0.7508097290992737
+          },
+          "Confidence": 67.2347640991211
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 94.86637115478516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Boat",
+      "Confidence": 94.71099853515625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.057540785521268845,
+            "Height": 0.0818202868103981,
+            "Left": 0.35253551602363586,
+            "Top": 0.7041797637939453
+          },
+          "Confidence": 94.71099853515625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03411758318543434,
+            "Height": 0.02308296412229538,
+            "Left": 0.5854046940803528,
+            "Top": 0.6596707701683044
+          },
+          "Confidence": 78.55659484863281
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.2187705636024475,
+            "Height": 0.2533826231956482,
+            "Left": 0.47226637601852417,
+            "Top": 0.3896259367465973
+          },
+          "Confidence": 58.34821319580078
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 94.71099853515625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 94.71099853515625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Sea",
+      "Confidence": 93.34088134765625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Ocean",
+      "Confidence": 93.34088134765625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Harbor",
+      "Confidence": 93.2544937133789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pier"
+        },
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Waterfront",
+      "Confidence": 93.2544937133789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Pier",
+      "Confidence": 93.2544937133789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Dock",
+      "Confidence": 93.2544937133789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Port",
+      "Confidence": 93.2544937133789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Shoreline",
+      "Confidence": 87.83905792236328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Land",
+      "Confidence": 84.97364044189453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Coast",
+      "Confidence": 76.69789123535156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Shoreline"
+        },
+        {
+          "Name": "Sea"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 70.80628967285156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 70.80628967285156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 70.80628967285156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 70.80628967285156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "River",
+      "Confidence": 70.36317443847656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Landscape",
+      "Confidence": 67.04547882080078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Flood",
+      "Confidence": 65.982421875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Scenery",
+      "Confidence": 62.36995315551758,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Statue",
+      "Confidence": 56.21429443359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sculpture"
+        },
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 56.21429443359375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sculpture",
+      "Confidence": 56.21429443359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

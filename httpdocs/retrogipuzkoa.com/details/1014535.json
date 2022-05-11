@@ -1,0 +1,150 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Architecture",
+      "Confidence": 99.63748168945312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.63748168945312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Altar",
+      "Confidence": 99.56922912597656,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8772612810134888,
+            "Height": 0.911323606967926,
+            "Left": 0.025913065299391747,
+            "Top": 0.05036244913935661
+          },
+          "Confidence": 91.38192749023438
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Church",
+      "Confidence": 99.56922912597656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Lighting",
+      "Confidence": 89.24822235107422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shrine",
+      "Confidence": 67.15290069580078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Worship"
+        },
+        {
+          "Name": "Temple"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Temple",
+      "Confidence": 67.15290069580078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Worship",
+      "Confidence": 67.15290069580078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crypt",
+      "Confidence": 61.50120544433594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fireplace",
+      "Confidence": 58.45973205566406,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3107348382472992,
+            "Height": 0.22046416997909546,
+            "Left": 0.2579706013202667,
+            "Top": 0.42006903886795044
+          },
+          "Confidence": 58.45973205566406
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 58.45973205566406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apse",
+      "Confidence": 56.17860794067383,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

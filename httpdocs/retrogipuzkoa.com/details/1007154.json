@@ -1,0 +1,385 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.37528991699219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.27877807617188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Field",
+      "Confidence": 99.1845703125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cow",
+      "Confidence": 98.64956665039062,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08647573739290237,
+            "Height": 0.11035551130771637,
+            "Left": 0.2418925166130066,
+            "Top": 0.6675041317939758
+          },
+          "Confidence": 98.64956665039062
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Cattle"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 98.64956665039062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cattle",
+      "Confidence": 98.64956665039062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 98.64956665039062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Grassland",
+      "Confidence": 98.56088256835938,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Field"
+        }
+      ]
+    },
+    {
+      "Name": "Sheep",
+      "Confidence": 96.30252838134766,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.07031410932540894,
+            "Height": 0.10165545344352722,
+            "Left": 0.5283547043800354,
+            "Top": 0.7449113726615906
+          },
+          "Confidence": 96.30252838134766
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 95.36233520507812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Farm",
+      "Confidence": 95.03719329833984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 95.03719329833984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 92.2482681274414,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.030128344893455505,
+            "Height": 0.12286623567342758,
+            "Left": 0.8506258726119995,
+            "Top": 0.7695351243019104
+          },
+          "Confidence": 92.2482681274414
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05385624244809151,
+            "Height": 0.08672276884317398,
+            "Left": 0.19697530567646027,
+            "Top": 0.6692644357681274
+          },
+          "Confidence": 75.11763763427734
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03556572273373604,
+            "Height": 0.1004813089966774,
+            "Left": 0.9167221188545227,
+            "Top": 0.8209418654441833
+          },
+          "Confidence": 61.66352081298828
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0263671875,
+            "Height": 0.09110607206821442,
+            "Left": 0.9114648699760437,
+            "Top": 0.8287650346755981
+          },
+          "Confidence": 48.32781982421875
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 92.2482681274414,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Grazing",
+      "Confidence": 87.69441223144531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Ranch"
+        },
+        {
+          "Name": "Meadow"
+        },
+        {
+          "Name": "Pasture"
+        },
+        {
+          "Name": "Farm"
+        },
+        {
+          "Name": "Grassland"
+        },
+        {
+          "Name": "Field"
+        },
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Pasture",
+      "Confidence": 87.69441223144531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Farm"
+        },
+        {
+          "Name": "Field"
+        },
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Ranch",
+      "Confidence": 87.69441223144531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Meadow"
+        },
+        {
+          "Name": "Pasture"
+        },
+        {
+          "Name": "Farm"
+        },
+        {
+          "Name": "Grassland"
+        },
+        {
+          "Name": "Field"
+        },
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Meadow",
+      "Confidence": 87.69441223144531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Farm"
+        },
+        {
+          "Name": "Grassland"
+        },
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Field"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Elephant",
+      "Confidence": 69.20208740234375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08292760699987411,
+            "Height": 0.163321852684021,
+            "Left": 0.6610026359558105,
+            "Top": 0.7095013856887817
+          },
+          "Confidence": 69.20208740234375
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 69.20208740234375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bull",
+      "Confidence": 69.12920379638672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,127 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Dog",
+      "Confidence": 99.49824523925781,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.29082438349723816,
+            "Height": 0.46576350927352905,
+            "Left": 0.3294188976287842,
+            "Top": 0.2590287923812866
+          },
+          "Confidence": 99.49824523925781
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 99.49824523925781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 99.49824523925781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.49824523925781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 99.49824523925781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 97.34754180908203,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.11225061118602753,
+            "Height": 0.27363112568855286,
+            "Left": 0.548069953918457,
+            "Top": 0
+          },
+          "Confidence": 97.34754180908203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.10448292642831802,
+            "Height": 0.25690320134162903,
+            "Left": 0.36537110805511475,
+            "Top": 0.0009188859257847071
+          },
+          "Confidence": 94.41516876220703
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09472988545894623,
+            "Height": 0.23139560222625732,
+            "Left": 0.6568474173545837,
+            "Top": 0.0336705707013607
+          },
+          "Confidence": 90.61521911621094
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.34754180908203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Goat",
+      "Confidence": 92.25126647949219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,83 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Altar",
+      "Confidence": 99.82160949707031,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9423795938491821,
+            "Height": 0.9343805909156799,
+            "Left": 0.010586844757199287,
+            "Top": 0.036749161779880524
+          },
+          "Confidence": 95.1974105834961
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 99.82160949707031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.82160949707031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Church",
+      "Confidence": 99.82160949707031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 65.97535705566406,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.0763886570930481,
+            "Height": 0.09812900424003601,
+            "Left": 0.28444990515708923,
+            "Top": 0.707533061504364
+          },
+          "Confidence": 65.97535705566406
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 65.97535705566406,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

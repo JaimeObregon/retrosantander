@@ -1,0 +1,146 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.50286865234375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.13062702119350433,
+            "Height": 0.2783191204071045,
+            "Left": 0.0002717509923968464,
+            "Top": 0.5154870748519897
+          },
+          "Confidence": 99.40838623046875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.054479073733091354,
+            "Height": 0.11211954802274704,
+            "Left": 0.355618417263031,
+            "Top": 0.5208559036254883
+          },
+          "Confidence": 98.72461700439453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.037181973457336426,
+            "Height": 0.04457451030611992,
+            "Left": 0.13165049254894257,
+            "Top": 0.5296462774276733
+          },
+          "Confidence": 97.33990478515625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.23516419529914856,
+            "Height": 0.129152312874794,
+            "Left": 0.23643645644187927,
+            "Top": 0.28068944811820984
+          },
+          "Confidence": 81.15823364257812
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03019779548048973,
+            "Height": 0.033915843814611435,
+            "Left": 0.5300269722938538,
+            "Top": 0.531107485294342
+          },
+          "Confidence": 64.85983276367188
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.50286865234375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 97.08929443359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 97.08929443359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Acrobatic",
+      "Confidence": 80.91386413574219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Pole Vault",
+      "Confidence": 74.18009185791016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Acrobatic"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "High Jump",
+      "Confidence": 72.44982147216797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Crowd",
+      "Confidence": 59.76285934448242,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Athlete",
+      "Confidence": 56.35970687866211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

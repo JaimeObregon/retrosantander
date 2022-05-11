@@ -1,0 +1,115 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.5384292602539,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.0329403318464756,
+            "Height": 0.14148032665252686,
+            "Left": 0.09706024080514908,
+            "Top": 0.49048247933387756
+          },
+          "Confidence": 99.5384292602539
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02691778913140297,
+            "Height": 0.13729925453662872,
+            "Left": 0.14811457693576813,
+            "Top": 0.49766287207603455
+          },
+          "Confidence": 99.53734588623047
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.150992751121521,
+            "Height": 0.3084407150745392,
+            "Left": 0.39166611433029175,
+            "Top": 0.1370314508676529
+          },
+          "Confidence": 97.81094360351562
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04340841621160507,
+            "Height": 0.10821416974067688,
+            "Left": 0.45363977551460266,
+            "Top": 0.06670702248811722
+          },
+          "Confidence": 87.11614227294922
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.142865851521492,
+            "Height": 0.18899382650852203,
+            "Left": 0.28284770250320435,
+            "Top": 0.11959272623062134
+          },
+          "Confidence": 53.5086669921875
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.5384292602539,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tomb",
+      "Confidence": 89.77134704589844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Statue",
+      "Confidence": 84.50391387939453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sculpture"
+        },
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Sculpture",
+      "Confidence": 84.50391387939453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 84.50391387939453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tombstone",
+      "Confidence": 65.7972640991211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tomb"
+        }
+      ]
+    },
+    {
+      "Name": "Monument",
+      "Confidence": 58.432376861572266,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

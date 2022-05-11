@@ -1,0 +1,90 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 94.94638061523438,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.20086926221847534,
+            "Height": 0.6319746971130371,
+            "Left": 0.792106032371521,
+            "Top": 0
+          },
+          "Confidence": 94.94638061523438
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.15948385000228882,
+            "Height": 0.29466477036476135,
+            "Left": 0.12332380563020706,
+            "Top": 0.002072166884317994
+          },
+          "Confidence": 91.66536712646484
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 94.94638061523438,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 80.93256378173828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Forge",
+      "Confidence": 79.42999267578125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 77.90496826171875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 75.71940612792969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 64.39311981201172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Tool",
+      "Confidence": 56.006019592285156,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,153 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 96.94062042236328,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3742072284221649,
+            "Height": 0.4541948139667511,
+            "Left": 0.31094810366630554,
+            "Top": 0.17880147695541382
+          },
+          "Confidence": 86.21586608886719
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 96.94062042236328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Performer",
+      "Confidence": 91.06775665283203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 87.44972229003906,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09707396477460861,
+            "Height": 0.07080046087503433,
+            "Left": 0.43200594186782837,
+            "Top": 0.5456050038337708
+          },
+          "Confidence": 87.44972229003906
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 87.44972229003906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Female",
+      "Confidence": 68.54853057861328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Portrait",
+      "Confidence": 61.716773986816406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Face"
+        },
+        {
+          "Name": "Photography"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photography",
+      "Confidence": 61.716773986816406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Face",
+      "Confidence": 61.716773986816406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photo",
+      "Confidence": 61.716773986816406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Magician",
+      "Confidence": 60.23786544799805,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Performer"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Juggling",
+      "Confidence": 55.87372970581055,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Waiter",
+      "Confidence": 55.766624450683594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

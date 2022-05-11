@@ -1,0 +1,108 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Book",
+      "Confidence": 99.9920883178711,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9691511392593384,
+            "Height": 0.9724205136299133,
+            "Left": 0.008003047667443752,
+            "Top": 0.006048665381968021
+          },
+          "Confidence": 99.9920883178711
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Text",
+      "Confidence": 97.6612777709961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Paper",
+      "Confidence": 95.93001556396484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Page",
+      "Confidence": 95.07335662841797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Poster",
+      "Confidence": 92.84927368164062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Advertisement",
+      "Confidence": 92.84927368164062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Flyer",
+      "Confidence": 87.54290008544922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Poster"
+        },
+        {
+          "Name": "Paper"
+        },
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Brochure",
+      "Confidence": 87.54290008544922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Poster"
+        },
+        {
+          "Name": "Paper"
+        },
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Letter",
+      "Confidence": 83.78824615478516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Word",
+      "Confidence": 72.5673828125,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

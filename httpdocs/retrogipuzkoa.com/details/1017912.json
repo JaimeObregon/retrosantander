@@ -1,0 +1,170 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.14126586914062,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.02012885920703411,
+            "Height": 0.0887005627155304,
+            "Left": 0.3512166440486908,
+            "Top": 0.38636329770088196
+          },
+          "Confidence": 99.14126586914062
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03521889075636864,
+            "Height": 0.10766693949699402,
+            "Left": 0.7407156825065613,
+            "Top": 0.4182693362236023
+          },
+          "Confidence": 97.97827911376953
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.027108604088425636,
+            "Height": 0.054335348308086395,
+            "Left": 0.41938501596450806,
+            "Top": 0.3047894239425659
+          },
+          "Confidence": 51.17303466796875
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.14126586914062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 97.81231689453125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Flood",
+      "Confidence": 94.04378509521484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Water",
+      "Confidence": 89.84819030761719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 89.01083374023438,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Path",
+      "Confidence": 88.93646240234375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Canal",
+      "Confidence": 61.44642639160156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Train",
+      "Confidence": 58.76239013671875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 58.76239013671875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 58.76239013671875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Terminal",
+      "Confidence": 56.19145584106445,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Train Station",
+      "Confidence": 55.87992477416992,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Train"
+        },
+        {
+          "Name": "Terminal"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Bus",
+      "Confidence": 55.44855499267578,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.19005030393600464,
+            "Height": 0.16881442070007324,
+            "Left": 0.7921413779258728,
+            "Top": 0.38012081384658813
+          },
+          "Confidence": 55.44855499267578
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

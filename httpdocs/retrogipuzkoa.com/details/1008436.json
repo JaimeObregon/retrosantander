@@ -1,0 +1,188 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Tower",
+      "Confidence": 99.84089660644531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 99.84089660644531,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.84089660644531,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Clock Tower",
+      "Confidence": 94.46837615966797,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.040289439260959625,
+            "Height": 0.03342022746801376,
+            "Left": 0.4229845702648163,
+            "Top": 0.24443793296813965
+          },
+          "Confidence": 81.76699829101562
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Bell Tower",
+      "Confidence": 92.49180603027344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 91.87333679199219,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.028567036613821983,
+            "Height": 0.05443800613284111,
+            "Left": 0.19788247346878052,
+            "Top": 0.6727962493896484
+          },
+          "Confidence": 91.87333679199219
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.023307811468839645,
+            "Height": 0.048649732023477554,
+            "Left": 0.1708761602640152,
+            "Top": 0.6754282116889954
+          },
+          "Confidence": 79.25543975830078
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02328038029372692,
+            "Height": 0.03545553609728813,
+            "Left": 0.10837570577859879,
+            "Top": 0.6868689656257629
+          },
+          "Confidence": 45.14471435546875
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 91.87333679199219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Spire",
+      "Confidence": 89.52957916259766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Steeple",
+      "Confidence": 89.52957916259766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tower"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 64.3024673461914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Church",
+      "Confidence": 60.508018493652344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Cathedral",
+      "Confidence": 55.15985870361328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Church"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

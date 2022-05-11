@@ -1,0 +1,276 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.84066009521484,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.12822650372982025,
+            "Height": 0.6132392287254333,
+            "Left": 0.8593111634254456,
+            "Top": 0.3355007767677307
+          },
+          "Confidence": 99.84066009521484
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.034472763538360596,
+            "Height": 0.15746180713176727,
+            "Left": 0.27507972717285156,
+            "Top": 0.331729918718338
+          },
+          "Confidence": 99.32228088378906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02438686415553093,
+            "Height": 0.10438594222068787,
+            "Left": 0.8001890778541565,
+            "Top": 0.34756994247436523
+          },
+          "Confidence": 99.1355209350586
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0371842235326767,
+            "Height": 0.15833419561386108,
+            "Left": 0.2142953723669052,
+            "Top": 0.3265518844127655
+          },
+          "Confidence": 98.90655517578125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.024753503501415253,
+            "Height": 0.14842844009399414,
+            "Left": 0.25827088952064514,
+            "Top": 0.3335752785205841
+          },
+          "Confidence": 98.61418914794922
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.040614183992147446,
+            "Height": 0.18010759353637695,
+            "Left": 0.48751771450042725,
+            "Top": 0.31921225786209106
+          },
+          "Confidence": 98.39734649658203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02156575582921505,
+            "Height": 0.10015252977609634,
+            "Left": 0.7543858289718628,
+            "Top": 0.3432326912879944
+          },
+          "Confidence": 96.96160888671875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.025512589141726494,
+            "Height": 0.13529103994369507,
+            "Left": 0.40448787808418274,
+            "Top": 0.34786102175712585
+          },
+          "Confidence": 92.8789291381836
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.019115354865789413,
+            "Height": 0.10313833504915237,
+            "Left": 0.7863354086875916,
+            "Top": 0.3444855213165283
+          },
+          "Confidence": 82.1983642578125
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02909192629158497,
+            "Height": 0.13794416189193726,
+            "Left": 0.42533573508262634,
+            "Top": 0.33911755681037903
+          },
+          "Confidence": 80.9319839477539
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.014733565039932728,
+            "Height": 0.1022835522890091,
+            "Left": 0.7807605862617493,
+            "Top": 0.34337934851646423
+          },
+          "Confidence": 75.00961303710938
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.011490242555737495,
+            "Height": 0.03854462504386902,
+            "Left": 0.0971059799194336,
+            "Top": 0.3499946594238281
+          },
+          "Confidence": 60.77373504638672
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.84066009521484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tarmac",
+      "Confidence": 75.8232192993164,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Asphalt",
+      "Confidence": 75.8232192993164,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 70.31495666503906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 69.80732727050781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 69.6540298461914,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fence",
+      "Confidence": 63.57076644897461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 61.68107604980469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Water",
+      "Confidence": 58.63035583496094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Field",
+      "Confidence": 57.763343811035156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Harbor",
+      "Confidence": 56.92713165283203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pier"
+        },
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Waterfront",
+      "Confidence": 56.92713165283203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Pier",
+      "Confidence": 56.92713165283203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Port",
+      "Confidence": 56.92713165283203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Dock",
+      "Confidence": 56.92713165283203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Waterfront"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Airfield",
+      "Confidence": 55.39441680908203,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Airport"
+        }
+      ]
+    },
+    {
+      "Name": "Airport",
+      "Confidence": 55.39441680908203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pedestrian",
+      "Confidence": 55.04065704345703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

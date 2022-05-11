@@ -115,7 +115,7 @@ customElements.define(
 
         image.classList.add('selected')
 
-        const url = `/data/vision/${id}.json`
+        const url = app.project.details(id)
         const { areas, faces, objects, tags } = await database.parse(url)
 
         const details = database.find(id)

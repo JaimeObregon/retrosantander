@@ -1,0 +1,238 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.78376007080078,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.09409147500991821,
+            "Height": 0.285442590713501,
+            "Left": 0.4810795783996582,
+            "Top": 0.6580355167388916
+          },
+          "Confidence": 99.78376007080078
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.11248361319303513,
+            "Height": 0.3050738573074341,
+            "Left": 0.6172403693199158,
+            "Top": 0.6476370692253113
+          },
+          "Confidence": 99.68851470947266
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0869954451918602,
+            "Height": 0.26606592535972595,
+            "Left": 0.5564996004104614,
+            "Top": 0.6776406764984131
+          },
+          "Confidence": 99.32068634033203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.13282416760921478,
+            "Height": 0.22315654158592224,
+            "Left": 0.7122536897659302,
+            "Top": 0.7332993745803833
+          },
+          "Confidence": 97.84744262695312
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.78376007080078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.10102844238281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 99.07311248779297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mountain",
+      "Confidence": 90.99334716796875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Pedestrian",
+      "Confidence": 86.82283782958984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Peak",
+      "Confidence": 70.65113830566406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mountain Range"
+        },
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Mountain Range",
+      "Confidence": 70.65113830566406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 70.57411193847656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Walking",
+      "Confidence": 68.07675170898438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 67.61186218261719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 67.61186218261719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 62.27909851074219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 61.896732330322266,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Hiking",
+      "Confidence": 60.974388122558594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 58.305789947509766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Piste",
+      "Confidence": 56.59693908691406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Snow"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Slope",
+      "Confidence": 55.04353713989258,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

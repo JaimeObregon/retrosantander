@@ -1,0 +1,80 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.69796752929688,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.16020554304122925,
+            "Height": 0.3973652124404907,
+            "Left": 0.3147161602973938,
+            "Top": 0.3594467341899872
+          },
+          "Confidence": 99.69796752929688
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.69796752929688,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rubble",
+      "Confidence": 93.31535339355469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Photography",
+      "Confidence": 70.815673828125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photo",
+      "Confidence": 70.815673828125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Portrait",
+      "Confidence": 56.47235107421875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Face"
+        },
+        {
+          "Name": "Photography"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Face",
+      "Confidence": 56.47235107421875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

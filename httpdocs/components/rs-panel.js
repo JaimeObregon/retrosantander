@@ -1,4 +1,6 @@
 import { app } from '../modules/retrosantander.js'
+import './rs-license-cdis.js'
+import './rs-license-cc-by-sa.js'
 
 const component = 'rs-panel'
 const template = document.createElement('template')
@@ -132,8 +134,6 @@ template.innerHTML = `
       display: flex;
       align-items: center;
       margin: 0;
-      overflow: hidden;
-      white-space: nowrap;
       text-overflow: ellipsis;
     }
 
@@ -149,36 +149,6 @@ template.innerHTML = `
 
     aside section#details abbr {
       cursor: help;
-    }
-
-    aside details {
-      font-size: 14px;
-      font-weight: 400;
-      margin: calc(2 * var(--gap)) 0 0 0;
-      padding: 0 22px 5px 22px;
-      border-radius: 5px;
-      background: var(--color-neutral-800);
-      hyphens: auto;
-    }
-
-    aside details summary {
-      padding: 10px 7px;
-      margin: 0 -22px -10px -22px;
-      font-size: 14px;
-      font-weight: 600;
-      border-radius: 5px;
-      hyphens: none;
-      cursor: pointer;
-      transition: background ease-in-out 150ms;
-      background: var(--color-neutral-800);
-    }
-
-    aside details summary:hover {
-      background: var(--color-neutral-700);
-    }
-
-    aside details p {
-      color: var(--color-neutral-300);
     }
 
     aside section#faces ul {
@@ -208,6 +178,11 @@ template.innerHTML = `
 
     aside section#faces ul li img.active {
       border-color: var(--color-yellow-500);
+    }
+
+    aside rs-license-cc-by-sa {
+      display: block;
+      margin-top: calc(2 * var(--gap));
     }
 
     @media (max-width: 768px) {
@@ -244,48 +219,7 @@ template.innerHTML = `
 
     <section id="details">
       <h2>Ficha técnica</h2>
-
-      <dl>
-        <dt title="Fecha">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-          </svg>
-        </dt>
-        <dd id="date"></dd>
-        <dt title="Colección o fondo">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
-          </svg>
-        </dt>
-        <dd id="collection"></dd>
-        <dt title="Fotógrafo">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-            <path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
-        </dt>
-        <dd id="author"></dd>
-        <dt title="Material">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-          </svg>
-        </dt>
-        <dd id="material"></dd>
-        <dt title="Procedimiento">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-          </svg>
-        </dt>
-        <dd id="procedure"></dd>
-        <dt title="Referencia">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-          </svg>
-        </dt>
-        <dd id="link">
-          <a href="" target="cdis"></a>
-        </dd>
-      </dl>
+      <dl></dl>
     </section>
 
     <section id="faces">
@@ -303,21 +237,7 @@ template.innerHTML = `
       <ul></ul>
     </section>
 
-    <details>
-      <summary>Derechos de esta imagen</summary>
-
-      <p>
-        Esta imagen es obra de su autor, y sus derechos pertenecen al Centro de
-        Documentación de la Imagen de Santander (CDIS), una entidad dependiente
-        del Ayuntamiento de Santander.
-      </p>
-
-      <p>
-        Por favor <a href="https://portal.ayto-santander.es/portalcdis/" target="cdis">contacta
-        con el CDIS</a> y adquiere la versión de alta resolución antes de hacer
-        una utilización comercial de esta imagen.
-      </p>
-    </details>
+    <footer></footer>
   </aside>
 `
 
@@ -333,7 +253,9 @@ customElements.define(
 
     connectedCallback() {
       this.aside = this.shadowRoot.querySelector('aside')
+      this.details = this.shadowRoot.querySelector('dl')
       this.button = this.aside.querySelector('button')
+      this.footer = this.shadowRoot.querySelector('footer')
 
       this.button.addEventListener('click', () => app.restore())
 
@@ -366,17 +288,7 @@ customElements.define(
 
       const { details, faces, objects, tags } = data
 
-      panel.querySelector('#date').innerText = details.date
-      panel.querySelector('#collection').innerText = details.collection
-      panel.querySelector('#author').innerText = details.author
-      panel.querySelector('#material').innerText = details.material
-      panel.querySelector('#procedure').innerText = details.procedure
-
-      const href = `http://portal.ayto-santander.es/portalcdis/Public/FotoView.do?id=${details.file}`
-      panel.querySelector('#link a').setAttribute('href', href)
-      panel.querySelector('#link a').innerHTML = `
-        Ver #${details.id} en el
-        <abbr title="Centro de Documentación de la Imagen de Santander">CDIS</abbr>`
+      this.details.innerHTML = app.project.panel(details)
 
       Array('faces', 'objects', 'tags').forEach((key) => {
         this.shadowRoot
@@ -387,7 +299,7 @@ customElements.define(
       panel.querySelector('section#faces h2 span').innerHTML = faces.length
       panel.querySelector('section#objects h2 span').innerHTML = objects.length
 
-      const url = `https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${details.id}`
+      const url = app.project.image(details.id)
 
       const containerWidth = panel.querySelector('ul').offsetWidth / facesPerRow
       const containerHeight = containerWidth
@@ -440,6 +352,12 @@ customElements.define(
               >${tag.name}</a></li>`
         )
         .join(', ')
+
+      if (details.license === 'cdis') {
+        this.footer.innerHTML = `<rs-license-cdis></rs-license-cdis>`
+      } else if (details.license === 'cc-by-sa') {
+        this.footer.innerHTML = `<rs-license-cc-by-sa></rs-license-cc-by-sa>`
+      }
 
       panel.classList.remove('hidden')
     }

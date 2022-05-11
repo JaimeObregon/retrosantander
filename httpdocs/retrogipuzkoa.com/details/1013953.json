@@ -1,0 +1,76 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bird",
+      "Confidence": 88.43896484375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.0618632510304451,
+            "Height": 0.06876584887504578,
+            "Left": 0.5266844630241394,
+            "Top": 0.3148055076599121
+          },
+          "Confidence": 88.43896484375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.16002753376960754,
+            "Height": 0.10302343219518661,
+            "Left": 0.587116003036499,
+            "Top": 0.3360936641693115
+          },
+          "Confidence": 73.01426696777344
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08757250010967255,
+            "Height": 0.11931318044662476,
+            "Left": 0.4119564890861511,
+            "Top": 0.32895582914352417
+          },
+          "Confidence": 70.40145874023438
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 88.43896484375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 73.90103912353516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Drawing",
+      "Confidence": 71.43264770507812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 71.43264770507812,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

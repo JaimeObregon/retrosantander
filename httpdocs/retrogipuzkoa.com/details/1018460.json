@@ -1,0 +1,90 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bus",
+      "Confidence": 91.64382934570312,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.17860406637191772,
+            "Height": 0.26768046617507935,
+            "Left": 0.6076598167419434,
+            "Top": 0.4266666769981384
+          },
+          "Confidence": 62.23762512207031
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 91.64382934570312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 91.64382934570312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Offroad",
+      "Confidence": 57.935882568359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 57.249534606933594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Gravel",
+      "Confidence": 55.56072235107422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Road"
+        }
+      ]
+    },
+    {
+      "Name": "Dirt Road",
+      "Confidence": 55.56072235107422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Road"
+        }
+      ]
+    },
+    {
+      "Name": "Path",
+      "Confidence": 55.43301773071289,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

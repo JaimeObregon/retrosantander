@@ -1,0 +1,193 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Water",
+      "Confidence": 99.66610717773438,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Boat",
+      "Confidence": 98.82646179199219,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.24055154621601105,
+            "Height": 0.3227652311325073,
+            "Left": 0,
+            "Top": 0.6102179288864136
+          },
+          "Confidence": 98.82646179199219
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.20272114872932434,
+            "Height": 0.09937585145235062,
+            "Left": 0.7955244779586792,
+            "Top": 0.6503154039382935
+          },
+          "Confidence": 89.6112060546875
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 98.82646179199219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 98.82646179199219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.46845245361328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Canal",
+      "Confidence": 93.67002868652344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Path",
+      "Confidence": 89.37635803222656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 81.90424346923828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 81.90424346923828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Castle",
+      "Confidence": 79.25274658203125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Towpath",
+      "Confidence": 74.81130981445312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        },
+        {
+          "Name": "Canal"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Fort",
+      "Confidence": 71.35526275634766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Castle"
+        },
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Waterfront",
+      "Confidence": 67.7998275756836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 59.80168151855469,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.008307099342346191,
+            "Height": 0.029296211898326874,
+            "Left": 0.6273427605628967,
+            "Top": 0.6257238984107971
+          },
+          "Confidence": 59.80168151855469
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 59.80168151855469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 58.36989974975586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ditch",
+      "Confidence": 55.369781494140625,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

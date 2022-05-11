@@ -1,0 +1,202 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.58285522460938,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1583957076072693,
+            "Height": 0.6186168193817139,
+            "Left": 0.7526332139968872,
+            "Top": 0.37865835428237915
+          },
+          "Confidence": 99.58285522460938
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08974037319421768,
+            "Height": 0.3674050271511078,
+            "Left": 0.04494106397032738,
+            "Top": 0.5258134007453918
+          },
+          "Confidence": 99.54141998291016
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.1367194801568985,
+            "Height": 0.41552817821502686,
+            "Left": 0.443953275680542,
+            "Top": 0.5221894979476929
+          },
+          "Confidence": 99.12890625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.11895982176065445,
+            "Height": 0.28298595547676086,
+            "Left": 0.22427421808242798,
+            "Top": 0.6185694932937622
+          },
+          "Confidence": 99.06688690185547
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.037324558943510056,
+            "Height": 0.239410862326622,
+            "Left": 0.024727992713451385,
+            "Top": 0.5799056887626648
+          },
+          "Confidence": 98.14364624023438
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.026983875781297684,
+            "Height": 0.16279318928718567,
+            "Left": 0.000034829190553864464,
+            "Top": 0.6375503540039062
+          },
+          "Confidence": 91.81373596191406
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.58285522460938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Leisure Activities",
+      "Confidence": 89.20443725585938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 88.68585968017578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Piano",
+      "Confidence": 84.88311004638672,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Leisure Activities"
+        },
+        {
+          "Name": "Musical Instrument"
+        }
+      ]
+    },
+    {
+      "Name": "Musical Instrument",
+      "Confidence": 84.88311004638672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 82.99981689453125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Market",
+      "Confidence": 72.83711242675781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Grand Piano",
+      "Confidence": 71.78723907470703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Piano"
+        },
+        {
+          "Name": "Leisure Activities"
+        },
+        {
+          "Name": "Musical Instrument"
+        }
+      ]
+    },
+    {
+      "Name": "Bazaar",
+      "Confidence": 70.225341796875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Market"
+        },
+        {
+          "Name": "Shop"
+        }
+      ]
+    },
+    {
+      "Name": "Shop",
+      "Confidence": 70.225341796875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 61.48305892944336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 61.48305892944336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Street",
+      "Confidence": 55.300846099853516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Road"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Road",
+      "Confidence": 55.300846099853516,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

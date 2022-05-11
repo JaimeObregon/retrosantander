@@ -1,0 +1,139 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 95.64595794677734,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1346239596605301,
+            "Height": 0.3689586818218231,
+            "Left": 0.7692907452583313,
+            "Top": 0.0023720369208604097
+          },
+          "Confidence": 95.64595794677734
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.056519731879234314,
+            "Height": 0.10215010493993759,
+            "Left": 0.7243664860725403,
+            "Top": 0.2627912759780884
+          },
+          "Confidence": 80.57759094238281
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02429959550499916,
+            "Height": 0.056539617478847504,
+            "Left": 0.7197073101997375,
+            "Top": 0.27290019392967224
+          },
+          "Confidence": 45.87566375732422
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 95.64595794677734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 94.57202911376953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mining",
+      "Confidence": 83.98738861083984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 78.81749725341797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Monastery",
+      "Confidence": 71.69766235351562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 71.69766235351562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 71.69766235351562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 71.69766235351562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 62.7310791015625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bunker",
+      "Confidence": 57.01815414428711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Wilderness",
+      "Confidence": 55.25706100463867,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

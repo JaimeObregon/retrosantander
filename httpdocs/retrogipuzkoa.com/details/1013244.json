@@ -1,0 +1,93 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Pig",
+      "Confidence": 99.13309478759766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 99.13309478759766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.13309478759766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Hog",
+      "Confidence": 99.05854797363281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pig"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Sheep",
+      "Confidence": 91.59368896484375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2716199457645416,
+            "Height": 0.28565463423728943,
+            "Left": 0.5213310122489929,
+            "Top": 0.5580110549926758
+          },
+          "Confidence": 91.59368896484375
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Boar",
+      "Confidence": 89.39260864257812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Hog"
+        },
+        {
+          "Name": "Pig"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

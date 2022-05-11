@@ -1,0 +1,127 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Clothing",
+      "Confidence": 99.98994445800781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 99.98994445800781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Skirt",
+      "Confidence": 99.78981018066406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Female",
+      "Confidence": 99.61929321289062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.61929321289062,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.20652037858963013,
+            "Height": 0.46483901143074036,
+            "Left": 0.7166804671287537,
+            "Top": 0.28028765320777893
+          },
+          "Confidence": 98.54242706298828
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.11317545920610428,
+            "Height": 0.40956228971481323,
+            "Left": 0.5927739143371582,
+            "Top": 0.32602569460868835
+          },
+          "Confidence": 95.8016357421875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.3041146397590637,
+            "Height": 0.4636799097061157,
+            "Left": 0.1622256636619568,
+            "Top": 0.2848256826400757
+          },
+          "Confidence": 91.54925537109375
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.61929321289062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Woman",
+      "Confidence": 97.17462158203125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Female"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Dress",
+      "Confidence": 69.77804565429688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Girl",
+      "Confidence": 60.82923126220703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Female"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Miniskirt",
+      "Confidence": 55.2917594909668,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Skirt"
+        },
+        {
+          "Name": "Clothing"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,91 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 89.53500366210938,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.258442759513855,
+            "Height": 0.34601178765296936,
+            "Left": 0.3173503279685974,
+            "Top": 0.5324683785438538
+          },
+          "Confidence": 89.53500366210938
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.12905409932136536,
+            "Height": 0.3313083350658417,
+            "Left": 0.4322182834148407,
+            "Top": 0.37884148955345154
+          },
+          "Confidence": 87.56768035888672
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 89.53500366210938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 83.90099334716797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 83.90099334716797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 74.31501007080078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bat",
+      "Confidence": 69.56285095214844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 65.4376220703125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rubble",
+      "Confidence": 56.795902252197266,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

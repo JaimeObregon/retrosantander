@@ -1,0 +1,52 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Machine",
+      "Confidence": 99.61817932128906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 94.21976470947266,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.0504288524389267,
+            "Height": 0.22870470583438873,
+            "Left": 0.25079503655433655,
+            "Top": 0.5058249235153198
+          },
+          "Confidence": 94.21976470947266
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Motor",
+      "Confidence": 76.82716369628906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Generator",
+      "Confidence": 59.09148025512695,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

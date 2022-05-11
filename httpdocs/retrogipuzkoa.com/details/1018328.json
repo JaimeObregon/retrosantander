@@ -1,0 +1,116 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Soil",
+      "Confidence": 96.23190307617188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 91.24185943603516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 85.02664947509766,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.02584788389503956,
+            "Height": 0.01645555905997753,
+            "Left": 0.5003420114517212,
+            "Top": 0.28828155994415283
+          },
+          "Confidence": 85.02664947509766
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02240704745054245,
+            "Height": 0.01630350761115551,
+            "Left": 0.4606437087059021,
+            "Top": 0.2603627145290375
+          },
+          "Confidence": 84.22570037841797
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.026090258732438087,
+            "Height": 0.012908614240586758,
+            "Left": 0.4040336608886719,
+            "Top": 0.30110591650009155
+          },
+          "Confidence": 72.74644470214844
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 85.02664947509766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 81.57791900634766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ground",
+      "Confidence": 57.139739990234375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Watercraft",
+      "Confidence": 55.054351806640625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 55.054351806640625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 55.054351806640625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vessel",
+      "Confidence": 55.054351806640625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

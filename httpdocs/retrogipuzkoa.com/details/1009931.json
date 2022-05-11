@@ -1,0 +1,230 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 97.49662780761719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 97.26403045654297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ground",
+      "Confidence": 90.97357177734375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cow",
+      "Confidence": 90.63157653808594,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.06383420526981354,
+            "Height": 0.09675242751836777,
+            "Left": 0.49002203345298767,
+            "Top": 0.5875111222267151
+          },
+          "Confidence": 90.63157653808594
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Cattle"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cattle",
+      "Confidence": 90.63157653808594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 90.63157653808594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 90.63157653808594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 89.98451232910156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 84.09159851074219,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.01783040352165699,
+            "Height": 0.038588933646678925,
+            "Left": 0.5285715460777283,
+            "Top": 0.4869857430458069
+          },
+          "Confidence": 84.09159851074219
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04038514196872711,
+            "Height": 0.08649802207946777,
+            "Left": 0.6061408519744873,
+            "Top": 0.5887634754180908
+          },
+          "Confidence": 81.81591033935547
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.057081468403339386,
+            "Height": 0.03793351724743843,
+            "Left": 0.5133410096168518,
+            "Top": 0.4532511234283447
+          },
+          "Confidence": 73.3846206665039
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Antelope",
+      "Confidence": 82.11565399169922,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08195745944976807,
+            "Height": 0.10728617757558823,
+            "Left": 0.20759664475917816,
+            "Top": 0.5743457674980164
+          },
+          "Confidence": 82.11565399169922
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 82.11565399169922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 72.79595184326172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Giraffe",
+      "Confidence": 65.60931396484375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08093251287937164,
+            "Height": 0.10318461060523987,
+            "Left": 0.2069413810968399,
+            "Top": 0.5771171450614929
+          },
+          "Confidence": 65.60931396484375
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Field",
+      "Confidence": 64.66106414794922,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Grassland",
+      "Confidence": 58.273963928222656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Field"
+        }
+      ]
+    },
+    {
+      "Name": "Land",
+      "Confidence": 56.28471374511719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

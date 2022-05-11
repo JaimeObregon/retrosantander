@@ -1,0 +1,191 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 93.29656219482422,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.49579671025276184,
+            "Height": 0.8520131707191467,
+            "Left": 0.33504465222358704,
+            "Top": 0.13453741371631622
+          },
+          "Confidence": 89.91272735595703
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 93.29656219482422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Suit",
+      "Confidence": 89.7154769897461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Overcoat"
+        },
+        {
+          "Name": "Coat"
+        },
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Overcoat",
+      "Confidence": 89.7154769897461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Coat"
+        },
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Coat",
+      "Confidence": 89.7154769897461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 89.7154769897461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 89.7154769897461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Smoke",
+      "Confidence": 78.60615539550781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Musician",
+      "Confidence": 74.96849060058594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Musical Instrument"
+        }
+      ]
+    },
+    {
+      "Name": "Musical Instrument",
+      "Confidence": 74.96849060058594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Face",
+      "Confidence": 69.9713363647461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Beverage",
+      "Confidence": 64.85558319091797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Drink",
+      "Confidence": 64.85558319091797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Smoking",
+      "Confidence": 62.98698043823242,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Smoke"
+        }
+      ]
+    },
+    {
+      "Name": "Alcohol",
+      "Confidence": 62.54023361206055,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Beverage"
+        }
+      ]
+    },
+    {
+      "Name": "Photography",
+      "Confidence": 60.693397521972656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photo",
+      "Confidence": 60.693397521972656,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Portrait",
+      "Confidence": 58.354217529296875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Face"
+        },
+        {
+          "Name": "Photography"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 57.329444885253906,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

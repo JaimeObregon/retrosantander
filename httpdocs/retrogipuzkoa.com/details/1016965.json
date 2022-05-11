@@ -1,0 +1,95 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Water",
+      "Confidence": 99.72772216796875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Swimming",
+      "Confidence": 99.25415802001953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.25415802001953,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.02953159250319004,
+            "Height": 0.10582265257835388,
+            "Left": 0.5062637329101562,
+            "Top": 0.5877643823623657
+          },
+          "Confidence": 68.1879653930664
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 99.25415802001953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.25415802001953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 99.25415802001953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 94.78861236572266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 90.00418090820312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Land",
+      "Confidence": 59.3735237121582,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

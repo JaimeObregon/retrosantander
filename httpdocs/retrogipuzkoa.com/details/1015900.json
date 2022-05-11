@@ -1,0 +1,81 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.2864990234375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1013876423239708,
+            "Height": 0.406983345746994,
+            "Left": 0.5716686248779297,
+            "Top": 0.41978809237480164
+          },
+          "Confidence": 99.2864990234375
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05319567397236824,
+            "Height": 0.22421623766422272,
+            "Left": 0.516757071018219,
+            "Top": 0.4307810664176941
+          },
+          "Confidence": 89.2176284790039
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.2864990234375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mining",
+      "Confidence": 87.42120361328125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 84.3861312866211,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tunnel",
+      "Confidence": 76.87388610839844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Trail",
+      "Confidence": 75.56297302246094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Path"
+        }
+      ]
+    },
+    {
+      "Name": "Path",
+      "Confidence": 75.56297302246094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ditch",
+      "Confidence": 63.864315032958984,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,231 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Car",
+      "Confidence": 97.30357360839844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.21781165897846222,
+            "Height": 0.1648043841123581,
+            "Left": 0.6308157444000244,
+            "Top": 0.6529026031494141
+          },
+          "Confidence": 97.30357360839844
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 97.30357360839844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 97.30357360839844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 97.30357360839844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 96.45390319824219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 94.78589630126953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 71.72509002685547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 71.20649719238281,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.009282483719289303,
+            "Height": 0.037688955664634705,
+            "Left": 0.938427209854126,
+            "Top": 0.758119523525238
+          },
+          "Confidence": 71.20649719238281
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 71.20649719238281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Ice",
+      "Confidence": 70.12036895751953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 70.11205291748047,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03138277679681778,
+            "Height": 0.04506727680563927,
+            "Left": 0.6875525116920471,
+            "Top": 0.7628553509712219
+          },
+          "Confidence": 70.11205291748047
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 70.11205291748047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Land",
+      "Confidence": 68.23019409179688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Vegetation",
+      "Confidence": 64.43894958496094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 64.43894958496094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Winter",
+      "Confidence": 57.438541412353516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Giraffe",
+      "Confidence": 57.27231216430664,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.02939811907708645,
+            "Height": 0.1273069977760315,
+            "Left": 0.4143624007701874,
+            "Top": 0.6233842372894287
+          },
+          "Confidence": 57.27231216430664
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 57.27231216430664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 57.27231216430664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 57.27231216430664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

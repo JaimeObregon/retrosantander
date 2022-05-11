@@ -1,0 +1,213 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 96.89318084716797,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8863522410392761,
+            "Height": 0.42457106709480286,
+            "Left": 0.05358889326453209,
+            "Top": 0.5379821062088013
+          },
+          "Confidence": 95.7680435180664
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01409772876650095,
+            "Height": 0.05778608098626137,
+            "Left": 0.8018085360527039,
+            "Top": 0.9272656440734863
+          },
+          "Confidence": 69.7434310913086
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.020618198439478874,
+            "Height": 0.07339686900377274,
+            "Left": 0.07766450941562653,
+            "Top": 0.9069271683692932
+          },
+          "Confidence": 51.84771728515625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.015036064200103283,
+            "Height": 0.04645093157887459,
+            "Left": 0.489725798368454,
+            "Top": 0.9382550120353699
+          },
+          "Confidence": 47.87165451049805
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 96.89318084716797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crowd",
+      "Confidence": 94.13128662109375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 86.47764587402344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Military",
+      "Confidence": 81.13146209716797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Field",
+      "Confidence": 80.3484878540039,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 79.83844757080078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Military Uniform",
+      "Confidence": 77.93238067626953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Soldier",
+      "Confidence": 76.45565795898438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 74.2614974975586,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Audience",
+      "Confidence": 73.89968872070312,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Crowd"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Armored",
+      "Confidence": 69.18376159667969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Army",
+      "Confidence": 68.73958587646484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Armored"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 59.46601486206055,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Parade",
+      "Confidence": 58.718563079833984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Marching",
+      "Confidence": 58.52679443359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Crowd"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Troop",
+      "Confidence": 57.75779342651367,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Army"
+        },
+        {
+          "Name": "People"
+        },
+        {
+          "Name": "Armored"
+        },
+        {
+          "Name": "Person"
+        },
+        {
+          "Name": "Military Uniform"
+        },
+        {
+          "Name": "Military"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

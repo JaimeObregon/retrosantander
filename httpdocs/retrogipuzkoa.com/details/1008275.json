@@ -1,0 +1,67 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Transportation",
+      "Confidence": 89.52556610107422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 89.04876708984375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 87.11162567138672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Gondola",
+      "Confidence": 83.86468505859375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Boat"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Boat",
+      "Confidence": 83.86468505859375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.15748009085655212,
+            "Height": 0.0780501514673233,
+            "Left": 0.839772641658783,
+            "Top": 0.20938843488693237
+          },
+          "Confidence": 83.00263214111328
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

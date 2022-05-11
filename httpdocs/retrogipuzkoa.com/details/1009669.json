@@ -1,0 +1,162 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Wheel",
+      "Confidence": 99.02508544921875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1004551574587822,
+            "Height": 0.11146925389766693,
+            "Left": 0.47303760051727295,
+            "Top": 0.571164608001709
+          },
+          "Confidence": 99.02508544921875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.09559880197048187,
+            "Height": 0.09649069607257843,
+            "Left": 0.3294673264026642,
+            "Top": 0.581961989402771
+          },
+          "Confidence": 97.84467315673828
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 99.02508544921875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 99.02018737792969,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.060739435255527496,
+            "Height": 0.1015348732471466,
+            "Left": 0.8071159720420837,
+            "Top": 0.550000786781311
+          },
+          "Confidence": 99.02018737792969
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04216219112277031,
+            "Height": 0.09101326763629913,
+            "Left": 0.7187309861183167,
+            "Top": 0.5558320879936218
+          },
+          "Confidence": 98.9492416381836
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05522056296467781,
+            "Height": 0.10028568655252457,
+            "Left": 0.7464435696601868,
+            "Top": 0.5499796271324158
+          },
+          "Confidence": 90.71228790283203
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.02018737792969,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 94.34226989746094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 94.11221313476562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Motorcycle",
+      "Confidence": 92.2588882446289,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3387593924999237,
+            "Height": 0.19195523858070374,
+            "Left": 0.29416561126708984,
+            "Top": 0.49092572927474976
+          },
+          "Confidence": 92.2588882446289
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Horse Cart",
+      "Confidence": 83.24658966064453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wagon"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Wagon",
+      "Confidence": 83.24658966064453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Buggy",
+      "Confidence": 59.13985824584961,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

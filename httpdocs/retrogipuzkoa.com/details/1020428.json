@@ -1,0 +1,126 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Wood",
+      "Confidence": 98.71192169189453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 80.9100341796875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 79.75083923339844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Demolition",
+      "Confidence": 74.81825256347656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 71.39683532714844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cross",
+      "Confidence": 70.02830505371094,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1294964700937271,
+            "Height": 0.29854363203048706,
+            "Left": 0.5345771908760071,
+            "Top": 0.16153572499752045
+          },
+          "Confidence": 70.02830505371094
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Symbol"
+        }
+      ]
+    },
+    {
+      "Name": "Symbol",
+      "Confidence": 70.02830505371094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "City",
+      "Confidence": 61.79106903076172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 61.79106903076172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Bench",
+      "Confidence": 61.19767379760742,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1447044014930725,
+            "Height": 0.16233913600444794,
+            "Left": 0.4938524663448334,
+            "Top": 0.45296618342399597
+          },
+          "Confidence": 61.19767379760742
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 61.19767379760742,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rubble",
+      "Confidence": 58.66172409057617,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 58.63172912597656,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

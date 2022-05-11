@@ -1,0 +1,140 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Cow",
+      "Confidence": 97.76217651367188,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.39795660972595215,
+            "Height": 0.30591434240341187,
+            "Left": 0.3269466459751129,
+            "Top": 0.6857520341873169
+          },
+          "Confidence": 97.76217651367188
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.2546367347240448,
+            "Height": 0.14751681685447693,
+            "Left": 0.33761879801750183,
+            "Top": 0.6010493636131287
+          },
+          "Confidence": 69.45854187011719
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Cattle"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cattle",
+      "Confidence": 97.76217651367188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 97.76217651367188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 97.76217651367188,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 97.34532165527344,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.25933825969696045,
+            "Height": 0.6405918002128601,
+            "Left": 0.0023021497763693333,
+            "Top": 0.06237250566482544
+          },
+          "Confidence": 97.34532165527344
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.2772587239742279,
+            "Height": 0.4829028248786926,
+            "Left": 0.12187550961971283,
+            "Top": 0.1690315455198288
+          },
+          "Confidence": 93.18003845214844
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.34532165527344,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Hog",
+      "Confidence": 82.6473388671875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pig"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pig",
+      "Confidence": 82.6473388671875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Zoo",
+      "Confidence": 55.9149055480957,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

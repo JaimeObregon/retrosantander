@@ -1,0 +1,182 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Horse",
+      "Confidence": 99.68154907226562,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5160021185874939,
+            "Height": 0.6249862909317017,
+            "Left": 0.11621026694774628,
+            "Top": 0.3568919599056244
+          },
+          "Confidence": 99.68154907226562
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.68154907226562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 99.68154907226562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 88.37501525878906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 88.37501525878906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 85.02154541015625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 79.7913589477539,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 66.277587890625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Turtle",
+      "Confidence": 62.40886688232422,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.22889511287212372,
+            "Height": 0.13578833639621735,
+            "Left": 0.7070751786231995,
+            "Top": 0.7317247986793518
+          },
+          "Confidence": 62.40886688232422
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Reptile"
+        },
+        {
+          "Name": "Sea Life"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Sea Life",
+      "Confidence": 62.40886688232422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Reptile",
+      "Confidence": 62.40886688232422,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Dress",
+      "Confidence": 57.80442428588867,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Clothing"
+        }
+      ]
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 57.80442428588867,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 57.80442428588867,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Path",
+      "Confidence": 57.3029899597168,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Spoke",
+      "Confidence": 56.631011962890625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 56.631011962890625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 55.0896110534668,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

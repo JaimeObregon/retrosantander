@@ -1,0 +1,96 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bird",
+      "Confidence": 99.17572784423828,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.31008589267730713,
+            "Height": 0.24164064228534698,
+            "Left": 0.43657055497169495,
+            "Top": 0.2983247935771942
+          },
+          "Confidence": 99.17572784423828
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.17572784423828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Beak",
+      "Confidence": 75.36385345458984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Nest",
+      "Confidence": 64.85917663574219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird Nest",
+      "Confidence": 64.85917663574219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Finch",
+      "Confidence": 57.33784866333008,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Sparrow",
+      "Confidence": 55.90301513671875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Anthus",
+      "Confidence": 55.1048583984375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

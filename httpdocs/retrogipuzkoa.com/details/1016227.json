@@ -1,0 +1,55 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Viaduct",
+      "Confidence": 99.93096923828125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bridge"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 99.93096923828125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bridge",
+      "Confidence": 99.93096923828125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8277415633201599,
+            "Height": 0.8461502194404602,
+            "Left": 0.017788803204894066,
+            "Top": 0.11430270224809647
+          },
+          "Confidence": 99.08218383789062
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 67.8351821899414,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,167 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Field",
+      "Confidence": 97.23602294921875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 96.24207305908203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 92.60871124267578,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.030935509130358696,
+            "Height": 0.04711221158504486,
+            "Left": 0.7176617980003357,
+            "Top": 0.8147439360618591
+          },
+          "Confidence": 92.60871124267578
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.3924389183521271,
+            "Height": 0.23142370581626892,
+            "Left": 0.21631509065628052,
+            "Top": 0.6596121191978455
+          },
+          "Confidence": 72.19038391113281
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.08161072432994843,
+            "Height": 0.17697589099407196,
+            "Left": 0.053667906671762466,
+            "Top": 0.8079830408096313
+          },
+          "Confidence": 68.16503143310547
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.4772292971611023,
+            "Height": 0.22945275902748108,
+            "Left": 0.1857200562953949,
+            "Top": 0.752667248249054
+          },
+          "Confidence": 67.17437744140625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01498996652662754,
+            "Height": 0.058376166969537735,
+            "Left": 0.14673148095607758,
+            "Top": 0.6688243746757507
+          },
+          "Confidence": 60.145729064941406
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 92.60871124267578,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Stadium",
+      "Confidence": 91.30592346191406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Arena"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arena",
+      "Confidence": 91.30592346191406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 80.7574691772461,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Crowd",
+      "Confidence": 80.43433380126953,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 71.52460479736328,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.009699021466076374,
+            "Height": 0.017532141879200935,
+            "Left": 0.5641091465950012,
+            "Top": 0.6908890604972839
+          },
+          "Confidence": 71.52460479736328
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.021219460293650627,
+            "Height": 0.02243512123823166,
+            "Left": 0.9605313539505005,
+            "Top": 0.30078110098838806
+          },
+          "Confidence": 65.31421661376953
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 71.52460479736328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Audience",
+      "Confidence": 62.56599044799805,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Crowd"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

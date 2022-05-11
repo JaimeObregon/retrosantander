@@ -1,0 +1,132 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Painting",
+      "Confidence": 95.54217529296875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9790629744529724,
+            "Height": 0.985297679901123,
+            "Left": 0,
+            "Top": 0.012947912327945232
+          },
+          "Confidence": 95.54217529296875
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 95.54217529296875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 74.86558532714844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 73.53077697753906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 64.80561828613281,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10634530335664749,
+            "Height": 0.08554751425981522,
+            "Left": 0.6964257955551147,
+            "Top": 0.6639891266822815
+          },
+          "Confidence": 64.80561828613281
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 64.80561828613281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Herd",
+      "Confidence": 63.4922981262207,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Arch",
+      "Confidence": 58.252140045166016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 58.252140045166016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 58.252140045166016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arched",
+      "Confidence": 58.252140045166016,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Flock",
+      "Confidence": 57.86814498901367,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

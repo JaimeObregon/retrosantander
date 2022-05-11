@@ -1,0 +1,164 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.7260513305664,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.1715015023946762,
+            "Height": 0.4317392408847809,
+            "Left": 0.23070308566093445,
+            "Top": 0.5200144052505493
+          },
+          "Confidence": 99.7260513305664
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.23215846717357635,
+            "Height": 0.28979209065437317,
+            "Left": 0.46776753664016724,
+            "Top": 0.7015179991722107
+          },
+          "Confidence": 99.65850067138672
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.7260513305664,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 77.35137176513672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Interior Design",
+      "Confidence": 76.73274230957031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 76.73274230957031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Chess",
+      "Confidence": 71.09124755859375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.35113316774368286,
+            "Height": 0.4703153371810913,
+            "Left": 0.2506135106086731,
+            "Top": 0.5197305679321289
+          },
+          "Confidence": 71.09124755859375
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Game"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Game",
+      "Confidence": 71.09124755859375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 63.19310760498047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 61.76475524902344,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Wood",
+      "Confidence": 58.54132080078125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tabletop",
+      "Confidence": 56.81584548950195,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 56.81584548950195,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Room",
+      "Confidence": 56.54496383666992,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    },
+    {
+      "Name": "Carpenter",
+      "Confidence": 56.07404708862305,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 55.118408203125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

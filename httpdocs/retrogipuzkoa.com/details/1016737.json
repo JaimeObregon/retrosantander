@@ -1,0 +1,111 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.91931915283203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mountain",
+      "Confidence": 99.90093994140625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 99.90093994140625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Volcano",
+      "Confidence": 84.6150894165039,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Water",
+      "Confidence": 84.5868911743164,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 65.41047668457031,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.05946596711874008,
+            "Height": 0.038753896951675415,
+            "Left": 0.5026101469993591,
+            "Top": 0.6237150430679321
+          },
+          "Confidence": 65.41047668457031
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 65.41047668457031,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Eruption",
+      "Confidence": 64.73554992675781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Volcano"
+        },
+        {
+          "Name": "Mountain"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Mesa",
+      "Confidence": 58.33823776245117,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

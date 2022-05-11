@@ -1,0 +1,76 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Soil",
+      "Confidence": 98.2066879272461,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tiger",
+      "Confidence": 87.63955688476562,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.4012967646121979,
+            "Height": 0.36524486541748047,
+            "Left": 0.3054894208908081,
+            "Top": 0.2806808650493622
+          },
+          "Confidence": 87.63955688476562
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 87.63955688476562,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 87.63955688476562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 87.63955688476562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Archaeology",
+      "Confidence": 79.20883178710938,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 58.83234786987305,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

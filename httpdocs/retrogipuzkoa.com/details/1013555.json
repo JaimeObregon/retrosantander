@@ -1,0 +1,68 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Text",
+      "Confidence": 99.86132049560547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Page",
+      "Confidence": 99.03776550292969,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Document",
+      "Confidence": 98.37167358398438,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.964146077632904,
+            "Height": 0.9175286293029785,
+            "Left": 0.023150352761149406,
+            "Top": 0.04247864708304405
+          },
+          "Confidence": 98.37167358398438
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Letter",
+      "Confidence": 96.0267562866211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Paper",
+      "Confidence": 66.03885650634766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Newspaper",
+      "Confidence": 64.27095031738281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

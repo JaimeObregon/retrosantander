@@ -1,0 +1,62 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Text",
+      "Confidence": 99.81675720214844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Document",
+      "Confidence": 99.54093933105469,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9347053170204163,
+            "Height": 0.9134451746940613,
+            "Left": 0.03523024171590805,
+            "Top": 0.043373871594667435
+          },
+          "Confidence": 99.54093933105469
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Handwriting",
+      "Confidence": 84.49938201904297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Letter",
+      "Confidence": 61.57248306274414,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Diary",
+      "Confidence": 58.07088851928711,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

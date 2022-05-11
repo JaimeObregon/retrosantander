@@ -1,0 +1,92 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Tomb",
+      "Confidence": 97.00836181640625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 88.78887176513672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Archaeology",
+      "Confidence": 86.00017547607422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Brick",
+      "Confidence": 78.91727447509766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tombstone",
+      "Confidence": 77.84429168701172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tomb"
+        }
+      ]
+    },
+    {
+      "Name": "Car",
+      "Confidence": 71.65589904785156,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2667092978954315,
+            "Height": 0.5458504557609558,
+            "Left": 0.4054715931415558,
+            "Top": 0.038209427148103714
+          },
+          "Confidence": 71.65589904785156
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 71.65589904785156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 71.65589904785156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 71.65589904785156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

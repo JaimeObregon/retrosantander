@@ -1,0 +1,176 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 87.88001251220703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.254628986120224,
+            "Height": 0.20672468841075897,
+            "Left": 0.5897218585014343,
+            "Top": 0.6659243106842041
+          },
+          "Confidence": 73.36529541015625
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 87.88001251220703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Clothing",
+      "Confidence": 84.57875061035156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Apparel",
+      "Confidence": 84.57875061035156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sunglasses",
+      "Confidence": 74.10365295410156,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.12777136266231537,
+            "Height": 0.07497631013393402,
+            "Left": 0.8420351147651672,
+            "Top": 0.3742165267467499
+          },
+          "Confidence": 74.10365295410156
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Accessories"
+        }
+      ]
+    },
+    {
+      "Name": "Accessories",
+      "Confidence": 74.10365295410156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Accessory",
+      "Confidence": 74.10365295410156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 71.28179168701172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Face",
+      "Confidence": 68.83860778808594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Dog",
+      "Confidence": 68.25511932373047,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2700556814670563,
+            "Height": 0.31361886858940125,
+            "Left": 0.6512071490287781,
+            "Top": 0.37428122758865356
+          },
+          "Confidence": 68.25511932373047
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 68.25511932373047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 68.25511932373047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 68.25511932373047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 68.25511932373047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Indoors",
+      "Confidence": 56.77589797973633,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Room",
+      "Confidence": 56.329429626464844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Indoors"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

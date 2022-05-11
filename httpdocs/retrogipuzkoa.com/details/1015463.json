@@ -1,0 +1,266 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.55665588378906,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.047577012330293655,
+            "Height": 0.19627317786216736,
+            "Left": 0.8294564485549927,
+            "Top": 0.6557562947273254
+          },
+          "Confidence": 98.55665588378906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02873278222978115,
+            "Height": 0.1310608685016632,
+            "Left": 0.22054879367351532,
+            "Top": 0.7118186354637146
+          },
+          "Confidence": 92.34516906738281
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.55665588378906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 96.52738952636719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 95.72110748291016,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Horse",
+      "Confidence": 94.05386352539062,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10954123735427856,
+            "Height": 0.12102635949850082,
+            "Left": 0.23006099462509155,
+            "Top": 0.7212393283843994
+          },
+          "Confidence": 94.05386352539062
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06791775673627853,
+            "Height": 0.13375896215438843,
+            "Left": 0.03001725673675537,
+            "Top": 0.7665477395057678
+          },
+          "Confidence": 75.135009765625
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 94.05386352539062,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 94.05386352539062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Dog",
+      "Confidence": 87.50106811523438,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.05204339325428009,
+            "Height": 0.11347907036542892,
+            "Left": 0.5011992454528809,
+            "Top": 0.6984986066818237
+          },
+          "Confidence": 87.50106811523438
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Pet"
+        },
+        {
+          "Name": "Canine"
+        },
+        {
+          "Name": "Animal"
+        },
+        {
+          "Name": "Mammal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 87.50106811523438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 87.50106811523438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 87.34093475341797,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 84.99800872802734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 84.99800872802734,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 79.9199447631836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Wood",
+      "Confidence": 71.04783630371094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Field",
+      "Confidence": 69.34119415283203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 58.742923736572266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Farm",
+      "Confidence": 56.2529411315918,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Cattle",
+      "Confidence": 55.740318298339844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 55.18059158325195,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

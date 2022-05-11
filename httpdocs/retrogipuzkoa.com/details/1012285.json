@@ -1,0 +1,71 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Rhino",
+      "Confidence": 97.92478942871094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 97.92478942871094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 97.92478942871094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 97.92478942871094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Horse",
+      "Confidence": 62.02750778198242,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.603178858757019,
+            "Height": 0.4629187285900116,
+            "Left": 0.239072784781456,
+            "Top": 0.37305837869644165
+          },
+          "Confidence": 62.02750778198242
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

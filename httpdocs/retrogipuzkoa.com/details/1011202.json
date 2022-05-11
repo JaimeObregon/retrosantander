@@ -1,0 +1,180 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Watercraft",
+      "Confidence": 96.82825469970703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vessel",
+      "Confidence": 96.82825469970703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 96.82825469970703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 96.82825469970703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Boat",
+      "Confidence": 96.41854858398438,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.455625981092453,
+            "Height": 0.6142323017120361,
+            "Left": 0.005264978390187025,
+            "Top": 0.11184900254011154
+          },
+          "Confidence": 96.41854858398438
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.3622947335243225,
+            "Height": 0.21172203123569489,
+            "Left": 0.6300837993621826,
+            "Top": 0.22998927533626556
+          },
+          "Confidence": 94.24290466308594
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07272199541330338,
+            "Height": 0.10342951864004135,
+            "Left": 0.5994086861610413,
+            "Top": 0.42594820261001587
+          },
+          "Confidence": 60.89202880859375
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 79.22949981689453,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03327438607811928,
+            "Height": 0.06147062033414841,
+            "Left": 0.3292232155799866,
+            "Top": 0.21073541045188904
+          },
+          "Confidence": 79.22949981689453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.02257947437465191,
+            "Height": 0.05006086081266403,
+            "Left": 0.31645268201828003,
+            "Top": 0.2315586656332016
+          },
+          "Confidence": 71.89493560791016
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 79.22949981689453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Dinghy",
+      "Confidence": 77.65111541748047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Watercraft"
+        },
+        {
+          "Name": "Boat"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Rowboat",
+      "Confidence": 68.65502166748047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Boat"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Barge",
+      "Confidence": 59.52849197387695,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Watercraft"
+        },
+        {
+          "Name": "Boat"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Military",
+      "Confidence": 57.018096923828125,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

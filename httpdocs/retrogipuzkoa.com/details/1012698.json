@@ -1,0 +1,106 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Museum",
+      "Confidence": 99.94456481933594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Dinosaur",
+      "Confidence": 99.3325424194336,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8535932302474976,
+            "Height": 0.7990117073059082,
+            "Left": 0.11954862624406815,
+            "Top": 0.06386624276638031
+          },
+          "Confidence": 99.3325424194336
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.4508459270000458,
+            "Height": 0.38315171003341675,
+            "Left": 0,
+            "Top": 0.5073729753494263
+          },
+          "Confidence": 98.84492492675781
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.914195716381073,
+            "Height": 0.5779027342796326,
+            "Left": 0.06351275742053986,
+            "Top": 0.3948557674884796
+          },
+          "Confidence": 94.03614807128906
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Reptile"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Reptile",
+      "Confidence": 99.3325424194336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.3325424194336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 78.3332290649414,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.17988136410713196,
+            "Height": 0.17510102689266205,
+            "Left": 0.12146890163421631,
+            "Top": 0.8185432553291321
+          },
+          "Confidence": 78.3332290649414
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06624873727560043,
+            "Height": 0.3514167368412018,
+            "Left": 0.7914074063301086,
+            "Top": 0.5296547412872314
+          },
+          "Confidence": 66.7015151977539
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 78.3332290649414,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Skeleton",
+      "Confidence": 74.46898651123047,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

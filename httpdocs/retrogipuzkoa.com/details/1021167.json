@@ -1,0 +1,83 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Insect",
+      "Confidence": 94.34605407714844,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.48721933364868164,
+            "Height": 0.30060911178588867,
+            "Left": 0.26876598596572876,
+            "Top": 0.3654564917087555
+          },
+          "Confidence": 94.34605407714844
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Invertebrate"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Invertebrate",
+      "Confidence": 94.34605407714844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 94.34605407714844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Drawing",
+      "Confidence": 60.31126403808594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 60.31126403808594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fossil",
+      "Confidence": 56.758522033691406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Cockroach",
+      "Confidence": 56.44667434692383,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Insect"
+        },
+        {
+          "Name": "Invertebrate"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

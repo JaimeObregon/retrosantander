@@ -1,0 +1,97 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bus",
+      "Confidence": 95.87841033935547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 95.87841033935547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 95.87841033935547,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Boat",
+      "Confidence": 94.63569641113281,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8245408535003662,
+            "Height": 0.7880104184150696,
+            "Left": 0.02710573934018612,
+            "Top": 0.03390192985534668
+          },
+          "Confidence": 94.63569641113281
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Tour Bus",
+      "Confidence": 86.42671203613281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bus"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Train",
+      "Confidence": 82.1362075805664,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8621326088905334,
+            "Height": 0.752971351146698,
+            "Left": 0.009607495740056038,
+            "Top": 0.09841331094503403
+          },
+          "Confidence": 82.1362075805664
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

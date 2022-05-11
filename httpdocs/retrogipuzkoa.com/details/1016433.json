@@ -1,0 +1,158 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 96.18473052978516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 94.74604034423828,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Airplane",
+      "Confidence": 94.1768569946289,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3351326882839203,
+            "Height": 0.14698800444602966,
+            "Left": 0.39577412605285645,
+            "Top": 0.551633894443512
+          },
+          "Confidence": 94.1768569946289
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.21220864355564117,
+            "Height": 0.09350118786096573,
+            "Left": 0.7588496804237366,
+            "Top": 0.5100335478782654
+          },
+          "Confidence": 92.0002212524414
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.2591369152069092,
+            "Height": 0.14256428182125092,
+            "Left": 0.02321612648665905,
+            "Top": 0.5155113935470581
+          },
+          "Confidence": 89.87532806396484
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 94.1768569946289,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 94.1768569946289,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Aircraft",
+      "Confidence": 94.1768569946289,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Airfield",
+      "Confidence": 88.49748229980469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Airport"
+        }
+      ]
+    },
+    {
+      "Name": "Airport",
+      "Confidence": 88.49748229980469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 78.88098907470703,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.011158297769725323,
+            "Height": 0.042772553861141205,
+            "Left": 0.8822723627090454,
+            "Top": 0.5709286332130432
+          },
+          "Confidence": 78.88098907470703
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 78.88098907470703,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Snow",
+      "Confidence": 76.70317840576172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Winter",
+      "Confidence": 68.54528045654297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Storm",
+      "Confidence": 58.70582580566406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

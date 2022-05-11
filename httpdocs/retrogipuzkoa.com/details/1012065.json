@@ -1,0 +1,177 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Animal",
+      "Confidence": 90.3176040649414,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 90.22514343261719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bison",
+      "Confidence": 88.90084838867188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 88.90084838867188,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Buffalo",
+      "Confidence": 87.99592590332031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Sheep",
+      "Confidence": 75.16779327392578,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2004360854625702,
+            "Height": 0.23471689224243164,
+            "Left": 0.028761351481080055,
+            "Top": 0.4107370674610138
+          },
+          "Confidence": 75.16779327392578
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cow",
+      "Confidence": 74.77729034423828,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2580072283744812,
+            "Height": 0.5403701663017273,
+            "Left": 0.23406928777694702,
+            "Top": 0.34811297059059143
+          },
+          "Confidence": 74.77729034423828
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Cattle"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Cattle",
+      "Confidence": 74.77729034423828,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bear",
+      "Confidence": 71.36344909667969,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.3120611906051636,
+            "Height": 0.4514993727207184,
+            "Left": 0.644277811050415,
+            "Top": 0.5302690267562866
+          },
+          "Confidence": 71.36344909667969
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Bull",
+      "Confidence": 69.17337036132812,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 56.47355270385742,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 55.84896469116211,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

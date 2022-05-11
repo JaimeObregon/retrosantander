@@ -1,0 +1,140 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 95.94920349121094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 94.59185028076172,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.05712060630321503,
+            "Height": 0.21898137032985687,
+            "Left": 0.20840762555599213,
+            "Top": 0.541676938533783
+          },
+          "Confidence": 94.59185028076172
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.042731501162052155,
+            "Height": 0.1849782019853592,
+            "Left": 0.180337056517601,
+            "Top": 0.5491272807121277
+          },
+          "Confidence": 92.22509765625
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.01832018420100212,
+            "Height": 0.03270326554775238,
+            "Left": 0.6405846476554871,
+            "Top": 0.6990907192230225
+          },
+          "Confidence": 70.32525634765625
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 94.59185028076172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Field",
+      "Confidence": 92.03820037841797,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mansion",
+      "Confidence": 76.35526275634766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "House"
+        },
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 76.35526275634766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "House",
+      "Confidence": 76.35526275634766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Housing"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "People",
+      "Confidence": 71.79004669189453,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 70.545654296875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Stadium",
+      "Confidence": 70.5325927734375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Arena"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Arena",
+      "Confidence": 70.5325927734375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

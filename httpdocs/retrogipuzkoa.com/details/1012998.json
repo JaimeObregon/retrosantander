@@ -1,0 +1,124 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.67876434326172,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.10607042908668518,
+            "Height": 0.5253673791885376,
+            "Left": 0.42478615045547485,
+            "Top": 0.3889938294887543
+          },
+          "Confidence": 99.67876434326172
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0864812508225441,
+            "Height": 0.4953908622264862,
+            "Left": 0.9050660133361816,
+            "Top": 0.368844598531723
+          },
+          "Confidence": 99.619873046875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.12010332196950912,
+            "Height": 0.45525437593460083,
+            "Left": 0.25130727887153625,
+            "Top": 0.44834989309310913
+          },
+          "Confidence": 99.18502807617188
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.67876434326172,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Torpedo",
+      "Confidence": 97.56754302978516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bomb"
+        },
+        {
+          "Name": "Weapon"
+        }
+      ]
+    },
+    {
+      "Name": "Bomb",
+      "Confidence": 97.56754302978516,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Weapon"
+        }
+      ]
+    },
+    {
+      "Name": "Weapon",
+      "Confidence": 97.56754302978516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Weaponry",
+      "Confidence": 97.56754302978516,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Skateboard",
+      "Confidence": 70.90789794921875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2636834681034088,
+            "Height": 0.23753991723060608,
+            "Left": 0.21642956137657166,
+            "Top": 0.31922224164009094
+          },
+          "Confidence": 70.90789794921875
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Sport"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sport",
+      "Confidence": 70.90789794921875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Sports",
+      "Confidence": 70.90789794921875,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,134 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 95.86768341064453,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.01813504472374916,
+            "Height": 0.0914907455444336,
+            "Left": 0.3392987847328186,
+            "Top": 0.4266376793384552
+          },
+          "Confidence": 95.86768341064453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.017034029588103294,
+            "Height": 0.0930580347776413,
+            "Left": 0.18843165040016174,
+            "Top": 0.7210031151771545
+          },
+          "Confidence": 94.54110717773438
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.029664237052202225,
+            "Height": 0.10721266269683838,
+            "Left": 0.15898992121219635,
+            "Top": 0.7116405367851257
+          },
+          "Confidence": 50.33761215209961
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 95.86768341064453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 90.78887176513672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 88.32554626464844,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Railway",
+      "Confidence": 87.72695922851562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Train Track",
+      "Confidence": 87.72695922851562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Rail",
+      "Confidence": 87.72695922851562,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Construction Crane",
+      "Confidence": 85.31077575683594,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.6093833446502686,
+            "Height": 0.9229699969291687,
+            "Left": 0.3706451952457428,
+            "Top": 0.048229921609163284
+          },
+          "Confidence": 85.31077575683594
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Train",
+      "Confidence": 83.08445739746094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Passenger Car",
+      "Confidence": 58.22066116333008,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,112 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Text",
+      "Confidence": 99.68286895751953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Newspaper",
+      "Confidence": 98.79524993896484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Label",
+      "Confidence": 95.5407485961914,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    },
+    {
+      "Name": "Flyer",
+      "Confidence": 85.86430358886719,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.8289913535118103,
+            "Height": 0.8542022109031677,
+            "Left": 0.030272619798779488,
+            "Top": 0.03148750215768814
+          },
+          "Confidence": 85.86430358886719
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Poster"
+        },
+        {
+          "Name": "Paper"
+        },
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Brochure",
+      "Confidence": 85.86430358886719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Poster"
+        },
+        {
+          "Name": "Paper"
+        },
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Poster",
+      "Confidence": 85.86430358886719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Advertisement"
+        }
+      ]
+    },
+    {
+      "Name": "Advertisement",
+      "Confidence": 85.86430358886719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Paper",
+      "Confidence": 85.86430358886719,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Word",
+      "Confidence": 76.38824462890625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Page",
+      "Confidence": 58.099769592285156,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Text"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

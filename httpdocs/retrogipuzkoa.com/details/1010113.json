@@ -1,0 +1,192 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 96.03445434570312,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2964862883090973,
+            "Height": 0.698021650314331,
+            "Left": 0.44831281900405884,
+            "Top": 0.2965553104877472
+          },
+          "Confidence": 96.03445434570312
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.13450653851032257,
+            "Height": 0.24518927931785583,
+            "Left": 0.0028293810319155455,
+            "Top": 0.7415441274642944
+          },
+          "Confidence": 68.92869567871094
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 96.03445434570312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 86.1536865234375,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2350657731294632,
+            "Height": 0.3282438814640045,
+            "Left": 0.40304815769195557,
+            "Top": 0.021922167390584946
+          },
+          "Confidence": 84.83521270751953
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 86.1536865234375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Chicken",
+      "Confidence": 85.72631072998047,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2378436177968979,
+            "Height": 0.3442732095718384,
+            "Left": 0.3955920934677124,
+            "Top": 0.016974370926618576
+          },
+          "Confidence": 85.72631072998047
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Poultry"
+        },
+        {
+          "Name": "Fowl"
+        },
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Fowl",
+      "Confidence": 85.72631072998047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Poultry",
+      "Confidence": 85.72631072998047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fowl"
+        },
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Pigeon",
+      "Confidence": 71.60317993164062,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Dove",
+      "Confidence": 67.26707458496094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Pigeon"
+        },
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Girl",
+      "Confidence": 60.9569206237793,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Female"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Female",
+      "Confidence": 60.9569206237793,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Drawing",
+      "Confidence": 55.090938568115234,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 55.090938568115234,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,142 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.10441589355469,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.08242776244878769,
+            "Height": 0.2368505299091339,
+            "Left": 0.7094671130180359,
+            "Top": 0.42636504769325256
+          },
+          "Confidence": 99.10441589355469
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07767350226640701,
+            "Height": 0.28710752725601196,
+            "Left": 0.23321610689163208,
+            "Top": 0.5656992197036743
+          },
+          "Confidence": 98.80962371826172
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.07814684510231018,
+            "Height": 0.22625844180583954,
+            "Left": 0.5269182324409485,
+            "Top": 0.5741584897041321
+          },
+          "Confidence": 98.2632827758789
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04887973889708519,
+            "Height": 0.2435830533504486,
+            "Left": 0.7891411781311035,
+            "Top": 0.3598669767379761
+          },
+          "Confidence": 98.01844024658203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03996025398373604,
+            "Height": 0.15134909749031067,
+            "Left": 0.3709404468536377,
+            "Top": 0.5722750425338745
+          },
+          "Confidence": 94.94334411621094
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.035656847059726715,
+            "Height": 0.14584939181804657,
+            "Left": 0.2899853587150574,
+            "Top": 0.5803940296173096
+          },
+          "Confidence": 74.08954620361328
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 99.10441589355469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Drawing",
+      "Confidence": 94.5493392944336,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 94.5493392944336,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sketch",
+      "Confidence": 81.507080078125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Drawing"
+        },
+        {
+          "Name": "Art"
+        },
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Soil",
+      "Confidence": 74.72127532958984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 60.380226135253906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Water",
+      "Confidence": 56.31943130493164,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 55.14045333862305,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 55.12852478027344,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

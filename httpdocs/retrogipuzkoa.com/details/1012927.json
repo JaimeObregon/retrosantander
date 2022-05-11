@@ -1,0 +1,192 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Flock",
+      "Confidence": 99.77079010009766,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.77079010009766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Bird",
+      "Confidence": 93.3021011352539,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.034592799842357635,
+            "Height": 0.021792462095618248,
+            "Left": 0.629478394985199,
+            "Top": 0.27066054940223694
+          },
+          "Confidence": 93.3021011352539
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.027885034680366516,
+            "Height": 0.017985664308071136,
+            "Left": 0.7600536942481995,
+            "Top": 0.41137412190437317
+          },
+          "Confidence": 91.58485412597656
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.034640341997146606,
+            "Height": 0.021892329677939415,
+            "Left": 0.4897819757461548,
+            "Top": 0.3085376024246216
+          },
+          "Confidence": 90.9227066040039
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03309733048081398,
+            "Height": 0.02204279601573944,
+            "Left": 0.691135048866272,
+            "Top": 0.33257490396499634
+          },
+          "Confidence": 89.92349243164062
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03787617012858391,
+            "Height": 0.022730480879545212,
+            "Left": 0.5605987906455994,
+            "Top": 0.2865946590900421
+          },
+          "Confidence": 88.30176544189453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03337927162647247,
+            "Height": 0.018806228414177895,
+            "Left": 0.7235761880874634,
+            "Top": 0.3763909935951233
+          },
+          "Confidence": 87.47227478027344
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.03196379169821739,
+            "Height": 0.020588576793670654,
+            "Left": 0.38100290298461914,
+            "Top": 0.33276623487472534
+          },
+          "Confidence": 64.80778503417969
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Flying",
+      "Confidence": 75.73924255371094,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Airplane",
+      "Confidence": 61.0483512878418,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.03127537667751312,
+            "Height": 0.02005154639482498,
+            "Left": 0.3811495006084442,
+            "Top": 0.3327065408229828
+          },
+          "Confidence": 61.0483512878418
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Aircraft"
+        },
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 61.0483512878418,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 61.0483512878418,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Aircraft",
+      "Confidence": 61.0483512878418,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 57.467369079589844,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 56.36016082763672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 55.701595306396484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 55.701595306396484,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

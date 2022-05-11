@@ -88,7 +88,7 @@ customElements.define(
       this.id = this.getAttribute('id')
 
       const details = database.find(this.id)
-      const src = `https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${this.id}`
+      const src = app.project.image(this.id)
 
       this.img.setAttribute('src', src)
       this.img.setAttribute('alt', escape(details.title))

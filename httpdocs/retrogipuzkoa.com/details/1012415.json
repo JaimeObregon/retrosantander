@@ -1,0 +1,389 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.00428009033203,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.036503612995147705,
+            "Height": 0.15127776563167572,
+            "Left": 0.09029985219240189,
+            "Top": 0.5982972979545593
+          },
+          "Confidence": 98.00428009033203
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.030694151297211647,
+            "Height": 0.11554388701915741,
+            "Left": 0.4282720685005188,
+            "Top": 0.49333590269088745
+          },
+          "Confidence": 94.73641967773438
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.019176067784428596,
+            "Height": 0.0676376223564148,
+            "Left": 0.6533422470092773,
+            "Top": 0.5900853276252747
+          },
+          "Confidence": 94.48173522949219
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.030122777447104454,
+            "Height": 0.19878683984279633,
+            "Left": 0.3522198498249054,
+            "Top": 0.4847520589828491
+          },
+          "Confidence": 93.77304077148438
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.0388452373445034,
+            "Height": 0.2284395396709442,
+            "Left": 0.474425345659256,
+            "Top": 0.5034394264221191
+          },
+          "Confidence": 92.80744171142578
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.026393957436084747,
+            "Height": 0.12347987294197083,
+            "Left": 0.45229631662368774,
+            "Top": 0.610170304775238
+          },
+          "Confidence": 68.28483581542969
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.00428009033203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Grove",
+      "Confidence": 94.79443359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Woodland"
+        },
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Land"
+        },
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Vegetation",
+      "Confidence": 94.79443359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 94.79443359375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Woodland",
+      "Confidence": 94.79443359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Land"
+        },
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Tree",
+      "Confidence": 94.79443359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Plant",
+      "Confidence": 94.79443359375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Land",
+      "Confidence": 94.79443359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Nature",
+      "Confidence": 94.79443359375,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Forest",
+      "Confidence": 94.79443359375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vegetation"
+        },
+        {
+          "Name": "Land"
+        },
+        {
+          "Name": "Tree"
+        },
+        {
+          "Name": "Plant"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 89.25374603271484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 89.25374603271484,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Downtown",
+      "Confidence": 78.29862976074219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "City",
+      "Confidence": 78.29862976074219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 78.29862976074219,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Town",
+      "Confidence": 78.29862976074219,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Monument",
+      "Confidence": 71.91893005371094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "People",
+      "Confidence": 67.23390197753906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Tomb",
+      "Confidence": 67.17169189453125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Photography",
+      "Confidence": 64.89842987060547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Photo",
+      "Confidence": 64.89842987060547,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Pedestrian",
+      "Confidence": 58.94807434082031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    },
+    {
+      "Name": "Statue",
+      "Confidence": 57.385520935058594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Sculpture"
+        },
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Art",
+      "Confidence": 57.385520935058594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sculpture",
+      "Confidence": 57.385520935058594,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Art"
+        }
+      ]
+    },
+    {
+      "Name": "Grass",
+      "Confidence": 56.35236740112305,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Park",
+      "Confidence": 56.29345703125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Lawn"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Grass"
+        },
+        {
+          "Name": "Plant"
+        }
+      ]
+    },
+    {
+      "Name": "Lawn",
+      "Confidence": 56.29345703125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Grass"
+        },
+        {
+          "Name": "Plant"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

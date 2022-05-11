@@ -1,0 +1,57 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Tunnel",
+      "Confidence": 89.6685562133789,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mining",
+      "Confidence": 87.52967834472656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Sheep",
+      "Confidence": 71.19635009765625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.44567573070526123,
+            "Height": 0.17532214522361755,
+            "Left": 0.31417417526245117,
+            "Top": 0.7564271688461304
+          },
+          "Confidence": 71.19635009765625
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 71.19635009765625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 71.19635009765625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

@@ -1,0 +1,319 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.03571319580078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Boat",
+      "Confidence": 98.66212463378906,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.22983504831790924,
+            "Height": 0.32316023111343384,
+            "Left": 0.0788503959774971,
+            "Top": 0.43646684288978577
+          },
+          "Confidence": 98.66212463378906
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 98.66212463378906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 98.66212463378906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.54998016357422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Night",
+      "Confidence": 86.35865783691406,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Astronomy",
+      "Confidence": 85.92762756347656,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outer Space",
+      "Confidence": 85.34721374511719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Astronomy"
+        }
+      ]
+    },
+    {
+      "Name": "Space",
+      "Confidence": 85.34721374511719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Astronomy"
+        }
+      ]
+    },
+    {
+      "Name": "Universe",
+      "Confidence": 85.34721374511719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Astronomy"
+        }
+      ]
+    },
+    {
+      "Name": "Sea",
+      "Confidence": 74.44832611083984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Ocean",
+      "Confidence": 74.44832611083984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Water",
+      "Confidence": 74.44832611083984,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Land",
+      "Confidence": 68.6443099975586,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 65.57634735107422,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Beach",
+      "Confidence": 60.16237258911133,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Coast"
+        },
+        {
+          "Name": "Shoreline"
+        },
+        {
+          "Name": "Sea"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Shoreline",
+      "Confidence": 60.16237258911133,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Water"
+        }
+      ]
+    },
+    {
+      "Name": "Coast",
+      "Confidence": 60.16237258911133,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Shoreline"
+        },
+        {
+          "Name": "Sea"
+        },
+        {
+          "Name": "Water"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Starry Sky",
+      "Confidence": 58.621761322021484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outer Space"
+        },
+        {
+          "Name": "Night"
+        },
+        {
+          "Name": "Astronomy"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Flare",
+      "Confidence": 56.47174835205078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Light"
+        }
+      ]
+    },
+    {
+      "Name": "Light",
+      "Confidence": 56.47174835205078,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Shelter",
+      "Confidence": 55.91047668457031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Rural"
+        },
+        {
+          "Name": "Building"
+        },
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Countryside",
+      "Confidence": 55.91047668457031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Rural",
+      "Confidence": 55.91047668457031,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Countryside"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 55.876216888427734,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

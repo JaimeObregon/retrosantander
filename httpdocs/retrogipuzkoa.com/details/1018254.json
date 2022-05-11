@@ -1,0 +1,59 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Tent",
+      "Confidence": 99.33374786376953,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7504765391349792,
+            "Height": 0.8201117515563965,
+            "Left": 0.19054913520812988,
+            "Top": 0.13387027382850647
+          },
+          "Confidence": 97.61166381835938
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.31914570927619934,
+            "Height": 0.4060457944869995,
+            "Left": 0.08719485253095627,
+            "Top": 0.1643405556678772
+          },
+          "Confidence": 90.00868225097656
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Camping",
+      "Confidence": 99.15557861328125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mountain Tent",
+      "Confidence": 97.01278686523438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Leisure Activities"
+        },
+        {
+          "Name": "Tent"
+        },
+        {
+          "Name": "Camping"
+        }
+      ]
+    },
+    {
+      "Name": "Leisure Activities",
+      "Confidence": 97.01278686523438,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

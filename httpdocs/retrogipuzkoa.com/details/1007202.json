@@ -1,0 +1,64 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bird",
+      "Confidence": 99.8826904296875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.2988072633743286,
+            "Height": 0.25844040513038635,
+            "Left": 0.29257720708847046,
+            "Top": 0.3938216269016266
+          },
+          "Confidence": 99.8826904296875
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.2809828817844391,
+            "Height": 0.3762016296386719,
+            "Left": 0.06494564563035965,
+            "Top": 0.5202534198760986
+          },
+          "Confidence": 99.46727752685547
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.8826904296875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Stork",
+      "Confidence": 98.54122924804688,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Bird"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Zoo",
+      "Confidence": 91.34095001220703,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

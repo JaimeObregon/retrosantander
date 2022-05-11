@@ -1,0 +1,97 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Lion",
+      "Confidence": 99.59063720703125,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.6427937746047974,
+            "Height": 0.501850426197052,
+            "Left": 0.13495363295078278,
+            "Top": 0.2016076296567917
+          },
+          "Confidence": 99.59063720703125
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Wildlife"
+        },
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.59063720703125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mammal",
+      "Confidence": 99.59063720703125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Wildlife",
+      "Confidence": 99.59063720703125,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Dog House",
+      "Confidence": 75.9570541381836,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Den"
+        }
+      ]
+    },
+    {
+      "Name": "Den",
+      "Confidence": 75.9570541381836,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Pet",
+      "Confidence": 62.191463470458984,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Canine",
+      "Confidence": 62.15201950073242,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Mammal"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

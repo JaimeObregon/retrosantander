@@ -1,0 +1,118 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 98.22703552246094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Flood",
+      "Confidence": 96.28907775878906,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Person",
+      "Confidence": 91.51367950439453,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.02138189971446991,
+            "Height": 0.12298919260501862,
+            "Left": 0.17469117045402527,
+            "Top": 0.3442845046520233
+          },
+          "Confidence": 91.51367950439453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.034257642924785614,
+            "Height": 0.12181351333856583,
+            "Left": 0.2582167088985443,
+            "Top": 0.18783946335315704
+          },
+          "Confidence": 81.80760955810547
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 91.51367950439453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Train",
+      "Confidence": 89.16802978515625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.5280791521072388,
+            "Height": 0.25859159231185913,
+            "Left": 0.23860856890678406,
+            "Top": 0.4540252983570099
+          },
+          "Confidence": 89.16802978515625
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 89.16802978515625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 89.16802978515625,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Car",
+      "Confidence": 67.7367935180664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 67.7367935180664,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

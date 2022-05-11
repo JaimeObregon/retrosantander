@@ -1,0 +1,57 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Cross",
+      "Confidence": 97.1103515625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.17917616665363312,
+            "Height": 0.4259357154369354,
+            "Left": 0.43255338072776794,
+            "Top": 0.23721885681152344
+          },
+          "Confidence": 90.4990234375
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Symbol"
+        }
+      ]
+    },
+    {
+      "Name": "Symbol",
+      "Confidence": 97.1103515625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Crucifix",
+      "Confidence": 82.44660186767578,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Cross"
+        },
+        {
+          "Name": "Symbol"
+        }
+      ]
+    },
+    {
+      "Name": "Building",
+      "Confidence": 71.30293273925781,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tomb",
+      "Confidence": 58.78767013549805,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

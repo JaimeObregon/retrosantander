@@ -1,0 +1,75 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Building",
+      "Confidence": 98.38885498046875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 97.96533966064453,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04309429973363876,
+            "Height": 0.17852450907230377,
+            "Left": 0.38312381505966187,
+            "Top": 0.21660615503787994
+          },
+          "Confidence": 97.96533966064453
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.06313115358352661,
+            "Height": 0.1268656849861145,
+            "Left": 0.11212661117315292,
+            "Top": 0.4091860353946686
+          },
+          "Confidence": 62.68518829345703
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 97.96533966064453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 87.14799499511719,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Lighting",
+      "Confidence": 81.69217681884766,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 58.40899658203125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Factory",
+      "Confidence": 58.20348358154297,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

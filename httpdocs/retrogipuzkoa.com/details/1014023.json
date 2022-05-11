@@ -1,0 +1,128 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.01052856445312,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 98.061767578125,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Astronomy",
+      "Confidence": 91.22779846191406,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Night",
+      "Confidence": 90.77399444580078,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Outer Space",
+      "Confidence": 90.6806411743164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Astronomy"
+        }
+      ]
+    },
+    {
+      "Name": "Space",
+      "Confidence": 90.6806411743164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Astronomy"
+        }
+      ]
+    },
+    {
+      "Name": "Universe",
+      "Confidence": 90.6806411743164,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Astronomy"
+        }
+      ]
+    },
+    {
+      "Name": "Moon",
+      "Confidence": 81.6214370727539,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outer Space"
+        },
+        {
+          "Name": "Night"
+        },
+        {
+          "Name": "Astronomy"
+        },
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Bonfire",
+      "Confidence": 59.99349594116211,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.31220272183418274,
+            "Height": 0.43128034472465515,
+            "Left": 0.05302025005221367,
+            "Top": 0.3903052508831024
+          },
+          "Confidence": 59.99349594116211
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Flame"
+        },
+        {
+          "Name": "Fire"
+        }
+      ]
+    },
+    {
+      "Name": "Fire",
+      "Confidence": 59.99349594116211,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Flame",
+      "Confidence": 59.99349594116211,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fire"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

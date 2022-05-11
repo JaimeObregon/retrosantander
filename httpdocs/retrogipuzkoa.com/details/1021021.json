@@ -1,0 +1,166 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Tire",
+      "Confidence": 99.30374908447266,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car",
+      "Confidence": 98.77925109863281,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.6603492498397827,
+            "Height": 0.6013726592063904,
+            "Left": 0.1610421985387802,
+            "Top": 0.354964017868042
+          },
+          "Confidence": 98.77925109863281
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Confidence": 98.77925109863281,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Vehicle",
+      "Confidence": 98.77925109863281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Automobile",
+      "Confidence": 98.77925109863281,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Vehicle"
+        },
+        {
+          "Name": "Transportation"
+        }
+      ]
+    },
+    {
+      "Name": "Wheel",
+      "Confidence": 97.6148681640625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.12175977230072021,
+            "Height": 0.11980684101581573,
+            "Left": 0.2385256290435791,
+            "Top": 0.8178261518478394
+          },
+          "Confidence": 95.82901000976562
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Machine",
+      "Confidence": 97.6148681640625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Car Wheel",
+      "Confidence": 95.57964324951172,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Tire"
+        },
+        {
+          "Name": "Wheel"
+        },
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Alloy Wheel",
+      "Confidence": 79.38851165771484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Spoke"
+        },
+        {
+          "Name": "Wheel"
+        },
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Spoke",
+      "Confidence": 79.38851165771484,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Machine"
+        }
+      ]
+    },
+    {
+      "Name": "Camping",
+      "Confidence": 74.42969512939453,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Tent",
+      "Confidence": 60.23039245605469,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mountain Tent",
+      "Confidence": 59.60298538208008,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Leisure Activities"
+        },
+        {
+          "Name": "Tent"
+        },
+        {
+          "Name": "Camping"
+        }
+      ]
+    },
+    {
+      "Name": "Leisure Activities",
+      "Confidence": 59.60298538208008,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

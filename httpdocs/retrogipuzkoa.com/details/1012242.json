@@ -1,0 +1,197 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Person",
+      "Confidence": 98.61671447753906,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.04186201095581055,
+            "Height": 0.1738741099834442,
+            "Left": 0.07091502845287323,
+            "Top": 0.5015826225280762
+          },
+          "Confidence": 98.61671447753906
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.056972891092300415,
+            "Height": 0.2253877818584442,
+            "Left": 0.6830267310142517,
+            "Top": 0.49146318435668945
+          },
+          "Confidence": 92.12752532958984
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.039905134588479996,
+            "Height": 0.1339845061302185,
+            "Left": 0.12962865829467773,
+            "Top": 0.5016422271728516
+          },
+          "Confidence": 89.88378143310547
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.04584711417555809,
+            "Height": 0.16595882177352905,
+            "Left": 0.014742586761713028,
+            "Top": 0.5091664791107178
+          },
+          "Confidence": 86.3503189086914
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.05406644195318222,
+            "Height": 0.21214497089385986,
+            "Left": 0.6580229997634888,
+            "Top": 0.501857578754425
+          },
+          "Confidence": 64.41368103027344
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.61671447753906,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 95.56043243408203,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Architecture",
+      "Confidence": 81.5277099609375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 72.9835433959961,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Factory",
+      "Confidence": 70.07637023925781,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Pillar",
+      "Confidence": 66.3511734008789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Column",
+      "Confidence": 66.3511734008789,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Architecture"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Downtown",
+      "Confidence": 65.12346649169922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "City"
+        },
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "City",
+      "Confidence": 65.12346649169922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 65.12346649169922,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Bridge",
+      "Confidence": 63.99467468261719,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.7448567748069763,
+            "Height": 0.2841954231262207,
+            "Left": 0.241465762257576,
+            "Top": 0.3122592270374298
+          },
+          "Confidence": 63.99467468261719
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Refinery",
+      "Confidence": 63.81376266479492,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Factory"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

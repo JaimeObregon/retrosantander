@@ -1,0 +1,97 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Nature",
+      "Confidence": 99.400634765625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Fog",
+      "Confidence": 95.07414245605469,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Outdoors",
+      "Confidence": 92.10227966308594,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Mist",
+      "Confidence": 71.82054901123047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Outdoors"
+        },
+        {
+          "Name": "Fog"
+        },
+        {
+          "Name": "Weather"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Weather",
+      "Confidence": 71.82054901123047,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Nature"
+        }
+      ]
+    },
+    {
+      "Name": "Home Decor",
+      "Confidence": 67.71514129638672,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "White Board",
+      "Confidence": 63.184478759765625,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Texture",
+      "Confidence": 62.1409797668457,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Smoke",
+      "Confidence": 61.542640686035156,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Smog",
+      "Confidence": 56.17152786254883,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Fog"
+        },
+        {
+          "Name": "Smoke"
+        },
+        {
+          "Name": "Nature"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

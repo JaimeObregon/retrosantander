@@ -1,0 +1,51 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Skeleton",
+      "Confidence": 99.7655029296875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Dinosaur",
+      "Confidence": 99.26190948486328,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.6781740188598633,
+            "Height": 0.9127705693244934,
+            "Left": 0.1408427208662033,
+            "Top": 0.07844708859920502
+          },
+          "Confidence": 99.26190948486328
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Reptile"
+        },
+        {
+          "Name": "Animal"
+        }
+      ]
+    },
+    {
+      "Name": "Animal",
+      "Confidence": 99.26190948486328,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Reptile",
+      "Confidence": 99.26190948486328,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Animal"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

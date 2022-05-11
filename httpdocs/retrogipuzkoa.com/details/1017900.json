@@ -1,0 +1,158 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Bench",
+      "Confidence": 99.43621826171875,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.34770989418029785,
+            "Height": 0.28167495131492615,
+            "Left": 0.45005059242248535,
+            "Top": 0.4850778579711914
+          },
+          "Confidence": 99.43621826171875
+        }
+      ],
+      "Parents": [
+        {
+          "Name": "Furniture"
+        }
+      ]
+    },
+    {
+      "Name": "Furniture",
+      "Confidence": 99.43621826171875,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Person",
+      "Confidence": 98.67174530029297,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.025837881490588188,
+            "Height": 0.1383378654718399,
+            "Left": 0.22271548211574554,
+            "Top": 0.28333258628845215
+          },
+          "Confidence": 98.67174530029297
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.034029748290777206,
+            "Height": 0.13489212095737457,
+            "Left": 0.16229550540447235,
+            "Top": 0.27868008613586426
+          },
+          "Confidence": 98.67074584960938
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.028806505724787712,
+            "Height": 0.12647004425525665,
+            "Left": 0.2776743173599243,
+            "Top": 0.28164219856262207
+          },
+          "Confidence": 92.34940338134766
+        },
+        {
+          "BoundingBox": {
+            "Width": 0.018851082772016525,
+            "Height": 0.1295088678598404,
+            "Left": 0.20386502146720886,
+            "Top": 0.27873852849006653
+          },
+          "Confidence": 65.8208999633789
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Human",
+      "Confidence": 98.67174530029297,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Urban",
+      "Confidence": 97.72361755371094,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Building",
+      "Confidence": 92.56810760498047,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Slum",
+      "Confidence": 86.36581420898438,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "City",
+      "Confidence": 63.80680465698242,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Town",
+      "Confidence": 63.80680465698242,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Urban"
+        },
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Ground",
+      "Confidence": 62.95142364501953,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Housing",
+      "Confidence": 61.60807418823242,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Building"
+        }
+      ]
+    },
+    {
+      "Name": "Paintball",
+      "Confidence": 55.36271286010742,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Person"
+        }
+      ]
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}

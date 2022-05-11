@@ -1,0 +1,44 @@
+{
+  "FaceDetails": [],
+  "Labels": [
+    {
+      "Name": "Book",
+      "Confidence": 99.00640869140625,
+      "Instances": [
+        {
+          "BoundingBox": {
+            "Width": 0.9315429925918579,
+            "Height": 0.9237856864929199,
+            "Left": 0.06670258939266205,
+            "Top": 0.0707511454820633
+          },
+          "Confidence": 99.00640869140625
+        }
+      ],
+      "Parents": []
+    },
+    {
+      "Name": "Money",
+      "Confidence": 84.7272720336914,
+      "Instances": [],
+      "Parents": []
+    },
+    {
+      "Name": "Coin",
+      "Confidence": 77.9300537109375,
+      "Instances": [],
+      "Parents": [
+        {
+          "Name": "Money"
+        }
+      ]
+    },
+    {
+      "Name": "Text",
+      "Confidence": 77.29258728027344,
+      "Instances": [],
+      "Parents": []
+    }
+  ],
+  "LabelModelVersion": "2.0"
+}
