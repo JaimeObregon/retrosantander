@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Retrosantander</title>
+
+    <meta
+      name="description"
+      content="Un experimento de Jaime Gómez-Obregón con los archivos fotográficos públicos."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="author" content="Jaime Gómez-Obregón" />
+
+    <meta property="og:title" content="Retrogipuzkoa" />
+    <meta
+      property="og:image"
+      content="https://retrogipuzkoa.com/assets/retrogipuzkoa.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Un experimento de Jaime Gómez-Obregón con los archivos fotográficos públicos."
+    />
+    <meta property="og:url" content="https://retrogipuzkoa.com" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@JaimeObregon" />
+    <meta name="twitter:creator" content="@JaimeObregon" />
+    <meta name="twitter:title" content="Retrosantander" />
+    <meta
+      name="twitter:description"
+      content="Un experimento de Jaime Gómez-Obregón con los archivos fotográficos públicos."
+    />
+    <meta
+      name="twitter:image"
+      content="https://retrosantander.com/assets/retrosantander.jpg"
+    />
+    <meta name="twitter:image:alt" content="Una fotografía antigua" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+
+    <style>
+      html {
+        --gap: 20px;
+        --panel-width: 350px;
+        --header-height: 55px;
+
+        /* Parte de la paleta de Tailwind */
+        /* Véase https://tailwindcss.com/docs/customizing-colors */
+        --color-neutral-50: #fafafa;
+        --color-neutral-100: #f5f5f5;
+        --color-neutral-200: #e5e5e5;
+        --color-neutral-300: #d4d4d4;
+        --color-neutral-400: #a3a3a3;
+        --color-neutral-500: #737373;
+        --color-neutral-600: #525252;
+        --color-neutral-700: #404040;
+        --color-neutral-800: #262626;
+        --color-neutral-900: #171717;
+        --color-yellow-500: #eab308;
+        --color-red-600: #dc2626;
+
+        margin: 0 var(--gap);
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        background: var(--color-neutral-900);
+        color: var(--color-neutral-200);
+        scroll-behavior: smooth;
+        user-select: none;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: var(--header-height);
+        z-index: 1;
+        box-sizing: border-box;
+        align-items: center;
+        border-bottom: 1px solid var(--color-neutral-800);
+        box-shadow: 0 5px 5px #1c191750;
+        background-color: #171717f0;
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+      }
+
+      header rs-title {
+        flex-grow: 1;
+        overflow: hidden;
+      }
+
+      header rs-search {
+        flex-shrink: 0;
+      }
+
+      header rs-menu {
+        flex-shrink: 0;
+      }
+
+      rs-help {
+        display: flex;
+        margin-top: var(--header-height);
+      }
+
+      @media (max-width: 1536px) {
+      }
+
+      @media (max-width: 1280px) {
+        html {
+          --gap: 16px;
+        }
+
+        header rs-logo {
+          display: none;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        html {
+          --gap: 14px;
+          --panel-width: 280px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        html {
+          --panel-width: 100%;
+          --header-height: 50px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        html {
+          --header-height: 45px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <rs-logo></rs-logo>
+      <rs-title></rs-title>
+      <rs-search></rs-search>
+      <rs-menu></rs-menu>
+    </header>
+
+    <rs-grid></rs-grid>
+
+    <rs-panel></rs-panel>
+    <rs-help></rs-help>
+    <rs-loading></rs-loading>
+
+    <script type="module" src="/modules/retrosantander.js"></script>
+  </body>
+</html>
