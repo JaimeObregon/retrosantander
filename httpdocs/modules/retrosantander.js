@@ -139,7 +139,7 @@ const { hostname } = document.location
 const project = hostname === '127.0.0.1' ? 'retrogipuzkoa.com' : hostname
 
 if (!projects[project]) {
-  throw new Error(`No hay ningún projecto asociado a ${hostname}.`)
+  throw new Error(`No hay ningún proyecto asociado a ${hostname}.`)
 }
 
 app.project = projects[project]

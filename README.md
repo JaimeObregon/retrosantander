@@ -8,15 +8,15 @@ Apliqué por primera vez estas ideas al fondo fotográfico que publicaba en su s
 
 [![Retrosantander](/docs/assets/retrosantander.jpg)](https://retrosantander.com)
 
-El proyecto sigue desplegado en [🔗 retrosantander.com](https://retrosantander.com), aunque por la razón expresada las fotografías ya no están disponibles. [🎦 Este vídeo](/docs/assets/retrosantander.mp4) resume los cómos y porqués de esta iniciativa con el patrimonio fotográfico municipal de la ciudad de Santander.
+El proyecto sigue desplegado en [retrosantander.com](https://retrosantander.com), aunque por la razón expresada las fotografías ya no están disponibles. [Este vídeo](https://twitter.com/JaimeObregon/status/1523590262760505345) resume los cómos y porqués de esta fracasada iniciativa personal con el patrimonio fotográfico municipal de mi ciudad.
 
-Para la posteridad queda [la autopsia del difunto portal del CDIS](docs/cdis.md).
+Para la posteridad queda [la detallada autopsia que hice](docs/cdis.md) del difunto portal del CDIS.
 
 # Retrogipuzkoa
 
 Descartada la resignación, decidí seguir el experimento con los fondos fotográficos de la Diputación Foral de Guipúzcoa, que publica estos materiales con licencias abiertas y tiene una visión moderna respecto de la difusión de este patrimonio.
 
-Así he podido continuar mi experimento en [retrogipuzkoa.com](https://retrogipuzkoa.com). Expliqué [en este hilo Twitter](https://twitter.com/JaimeObregon/status/1524494203614543876) mis razones.
+Así he podido continuar en [retrogipuzkoa.com](https://retrogipuzkoa.com) lo que inicié en Retrosantander. [En este hilo Twitter](https://twitter.com/JaimeObregon/status/1524494203614543876) he explicado mis razones.
 
 # Detalles técnicos
 
@@ -31,9 +31,7 @@ npm install
 PROJECT=retrogipuzkoa.com npm run dev
 ```
 
-La variable de entorno `$PROJECT` determina qué proyecto se servirá. Actualmente hay dos `retrogipuzkoa.com` y `retrosantander.com`.
-
-Se trata de un proyecto estático cuyo despliegue en producción es trivial.
+La variable de entorno `$PROJECT` determina qué proyecto se servirá. Actualmente hay dos `retrogipuzkoa.com` y el difunto `retrosantander.com`.
 
 # Licencia
 

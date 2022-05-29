@@ -13,11 +13,11 @@ const projects = {
     name: 'Retrosantander',
     database: '/retrosantander.com/cdis.json',
     placeholder: (count) => `Explora ${count} imágenes históricas de Santander`,
-    image: (id) =>
-      `https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${id}`,
-    details: (id) => `/retrogipuzkoa.com/details/${id}.json`,
-    about: '/retrogipuzkoa.com/about.html',
-    help: '/retrogipuzkoa.com/help.html',
+    image: (id) => '/retrosantander.com/unavailable.png',
+    // `https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${id}`,
+    details: (id) => `/retrosantander.com/details/${id}.json`,
+    about: '/retrosantander.com/about.html',
+    help: '/retrosantander.com/help.html',
     panel: (details) => `
       <dt title="Fecha">${calendar}</dt>
       <dd>${details.date}</dd>
