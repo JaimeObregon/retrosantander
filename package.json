@@ -17,7 +17,7 @@
     "singleQuote": true
   },
   "scripts": {
-    "dev": "live-server --entry-file=$PROJECT/index.html httpdocs",
+    "dev": "live-server --host=${PROJECT}.localhost --entry-file=${PROJECT}/index.html httpdocs",
     "build": "scripts/build.sh"
   },
   "devDependencies": {

@@ -9,15 +9,17 @@ import {
 } from './icons.js'
 
 const projects = {
-  'retrosantander.com': {
+  retrosantander: {
     name: 'Retrosantander',
-    database: '/retrosantander.com/cdis.json',
+    database: '/retrosantander/cdis.json',
     placeholder: (count) => `Explora ${count} imágenes históricas de Santander`,
-    image: (id) => '/retrosantander.com/unavailable.png',
-    // `https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${id}`,
-    details: (id) => `/retrosantander.com/details/${id}.json`,
-    about: '/retrosantander.com/about.html',
-    help: '/retrosantander.com/help.html',
+    image: () => {
+      //`https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${id}`,
+      return '/retrosantander/unavailable.png'
+    },
+    details: (id) => `/retrosantander/details/${id}.json`,
+    about: '/retrosantander/about.html',
+    help: '/retrosantander/help.html',
     panel: (details) => `
       <dt title="Fecha">${calendar}</dt>
       <dd>${details.date}</dd>
@@ -55,16 +57,16 @@ const projects = {
       </svg>
     `,
   },
-  'retrogipuzkoa.com': {
+  retrogipuzkoa: {
     name: 'Retrogipuzkoa',
-    database: '/retrogipuzkoa.com/jesus-elosegui.json',
+    database: '/retrogipuzkoa/jesus-elosegui.json',
     placeholder: (count) =>
       `Explora ${count} imágenes históricas de la Colección Jesús Elósegui`,
     image: (id) =>
       `http://www.guregipuzkoa.eus/wp-content/gallery/jesus-elosegui/${id}.jpg`,
-    details: (id) => `/retrogipuzkoa.com/details/${id}.json`,
-    about: '/retrogipuzkoa.com/about.html',
-    help: '/retrogipuzkoa.com/help.html',
+    details: (id) => `/retrogipuzkoa/details/${id}.json`,
+    about: '/retrogipuzkoa/about.html',
+    help: '/retrogipuzkoa/help.html',
     panel: (details) => `
       <dt title="Descripción">${annotation}</dt>
       <dd>${details.caption}</dd>

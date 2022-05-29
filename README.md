@@ -24,14 +24,20 @@ El repositorio es multiproyecto, y en la actualidad aloja tanto Retrogipuzkoa co
 
 La arquitectura tecnológica es deliberadamente minimalista y está basada en estándares W3C: _web components_, _shadow DOM_, HTML5, CSS y JavaScript (ES6). Parte del reto ha sido elaborar complementamente a medida todos los componentes, de forma que no hay dependencias externas, ni tampoco un _backend_ o una base de datos.
 
-Para arrancar el entorno de desarrollo basta instalar las dependencias y arrancar el servidor de desarrollo:
+El programa determina qué proyecto servir en función del nombre del _host_. Para desarrollar en local es preciso, por lo tanto, añadir las entradas necesarias a `/etc/hosts`. Por ejemplo:
+
+```
+127.0.0.1 retrosantander.localhost retrogipuzkoa.localhost
+```
+
+Para iniciar el entorno de desarrollo basta instalar las dependencias y arrancar el servidor de desarrollo:
 
 ```console
 npm install
-PROJECT=retrogipuzkoa.com npm run dev
+PROJECT=retrogipuzkoa npm run dev
 ```
 
-La variable de entorno `$PROJECT` determina qué proyecto se servirá. Actualmente hay dos `retrogipuzkoa.com` y el difunto `retrosantander.com`.
+La variable de entorno `$PROJECT` determina qué proyecto se servirá. Actualmente hay dos `retrogipuzkoa` y el difunto `retrosantander`.
 
 # Licencia
 

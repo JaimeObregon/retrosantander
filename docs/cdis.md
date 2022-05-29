@@ -1,6 +1,8 @@
 # Retrosantander
 
-⚠️ **A raíz de esta iniciativa el Ayuntamiento de Santander [ha retirado el portal del CDIS](https://twitter.com/JaimeObregon/status/1523955161151983616).**
+### ⚠️ **[ACTUALIZACIÓN] A raíz de esta iniciativa el Ayuntamiento de Santander [ha retirado el portal del CDIS](https://twitter.com/JaimeObregon/status/1523955161151983616).**
+
+---
 
 Un experimento personal con el portal del [Centro de Documentación de la Imagen de Santander](http://portal.ayto-santander.es/portalcdis/Index.do) (CDIS) y sus contenidos. Por [Jaime Gómez-Obregón](https://twitter.com/JaimeObregon).
 
