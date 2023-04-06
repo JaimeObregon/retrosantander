@@ -63,7 +63,7 @@ const projects = {
     placeholder: (count) =>
       `Explora ${count} imágenes históricas de la Colección Jesús Elósegui`,
     image: (id) =>
-      `http://www.guregipuzkoa.eus/wp-content/gallery/jesus-elosegui/${id}.jpg`,
+      `https://www.guregipuzkoa.eus/wp-content/gallery/jesus-elosegui/${id}.jpg`,
     details: (id) => `/retrogipuzkoa/details/${id}.json`,
     about: '/retrogipuzkoa/about.html',
     help: '/retrogipuzkoa/help.html',
