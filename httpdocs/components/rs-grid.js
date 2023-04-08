@@ -203,13 +203,18 @@ customElements.define(
 
       images.forEach((image) => {
         delete image.dataset.top
-        delete image.dataset.column
         image.style = ''
       })
 
       const columns = Math.round(
         this.container.offsetWidth / images[0].offsetWidth
       )
+
+      if (this.columns !== columns) {
+        images.forEach((image) => delete image.dataset.column)
+      }
+
+      this.columns = columns
 
       const width = (this.container.offsetWidth - gap * (columns - 1)) / columns
 
@@ -221,19 +226,19 @@ customElements.define(
             .reduce((array, current) => {
               array[current.dataset.column] = Math.max(
                 array[current.dataset.column],
-                parseInt(current.dataset.top) + current.offsetHeight + gap
+                Number(current.dataset.top) +
+                  current.getBoundingClientRect().height +
+                  gap
               )
               return array
             }, Array(columns).fill(0))
 
           const shortestColumn = heights.indexOf(Math.min(...heights))
-          const column = i < columns ? i % columns : shortestColumn
+          const column =
+            image.dataset.column ?? (i < columns ? i % columns : shortestColumn)
 
           const top = heights[column]
           const left = column * (gap + width)
-
-          const bounds = image.getBoundingClientRect()
-          const height = (width * bounds.height) / bounds.width
 
           image.dataset.column = column
           image.dataset.top = top
@@ -241,7 +246,6 @@ customElements.define(
           image.style.top = `${top}px`
           image.style.left = `${left}px`
           image.style.width = `${width}px`
-          image.style.height = `${height}px`
 
           image.classList.remove('hidden')
         })
