@@ -15,7 +15,7 @@ const projects = {
     placeholder: (count) => `Explora ${count} imágenes históricas de Santander`,
     image: () => {
       // `https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${id}`,
-      return 'unavailable.svg'
+      return '/retrosantander/unavailable.svg'
     },
     details: (id) => `/retrosantander/details/${id}.json`,
     about: '/retrosantander/about.html',
