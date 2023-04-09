@@ -10,7 +10,7 @@
  * legible y embellecerla.
  *
  * Ejemplo de uso:
- * curl https://portal.ayto-santander.es/portalcdis/Public/FotoView.do?id=1200 | php parser.php
+ * curl https://portal.ayto-santander.es/portalcdis/Public/FotoView.do?id=1200 | php parse.php
  *
  * [1] https://stedolan.github.io/jq/
  */
@@ -20,23 +20,23 @@ const REGEX_DETAILS = '/<li><strong>(?P<keys>.+?):<\/strong>\s*(?P<values>.*?)\s
 const REGEX_TAGS = '/<a href="\/portalcdis\/Prepare.+List.do;jsessionid=.{32}\?idcateg=\d+">(?P<tags>.*?)<\/a>/';
 
 const REGEX_IMAGE = [
-	'/<dd>\s+',
-		'<a href=".+" class="thickbox">',
-			'<img src="\/portalcdis\/image\/DownloadFile\.do\?id=(?P<id>\d+)&ima=\d" width=".*" height=".*" alt=".*" title=".*" \/>',
-		'<\/a>\s*',
-		'<ul>\s*',
-			'<li class="acciones">\s*',
+  '/<dd>\s+',
+    '<a href=".+" class="thickbox">',
+      '<img src="\/portalcdis\/image\/DownloadFile\.do\?id=(?P<id>\d+)&ima=\d" width=".*" height=".*" alt=".*" title=".*" \/>',
+    '<\/a>\s*',
+    '<ul>\s*',
+      '<li class="acciones">\s*',
         '<a href="\/portalcdis\/PrepareElegirResolucionView\.do;jsessionid=.{32}\?id=(?P<file>\d+)" .+?\/a>\s*?',
       '<\/li>',
-			'(?P<details>.*?)',
-		'<\/ul>\s+',
-	'<\/dd>\s+',
-	'(',
-		'<dd class="block">\s+',
-			'<ul>\s+',
-				'<li><strong>B.+squeda Im.+genes Relacionadas:<\/strong>\s+',
-				'<ul>(?P<tags>.*?)<\/ul>',
-	')?/m'
+      '(?P<details>.*?)',
+    '<\/ul>\s+',
+  '<\/dd>\s+',
+  '(',
+    '<dd class="block">\s+',
+      '<ul>\s+',
+        '<li><strong>B.+squeda Im.+genes Relacionadas:<\/strong>\s+',
+      '<ul>(?P<tags>.*?)<\/ul>',
+  ')?/m'
 ];
 
 $contents = stream_get_contents(STDIN);
@@ -57,8 +57,8 @@ if (!empty($matches['tags'])) {
 }
 
 $result = [
-	'id' => $matches['id'],
-	'file' => $matches['file'],
+  'id' => $matches['id'],
+  'file' => $matches['file'],
   'title' => $details['Título'],
   'author' => $details['Fotógrafo'],
   'date' => $details['Fecha'],
@@ -66,5 +66,6 @@ $result = [
   'procedure' => $details['Procedimiento'],
   'material' => $details['Soporte'],
 ];
+
 
 echo json_encode($result);
