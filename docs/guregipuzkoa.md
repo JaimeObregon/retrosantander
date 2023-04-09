@@ -48,10 +48,7 @@ Para descargar sucesivamente todas las fotografías del portal:
 
 Siendo el primer argumento la ruta al fichero `sitemap.xml` y el segundo el directorio en el que se guardarán las fotografías descargadas.
 
-La descarga puede llevar más de 30 horas (el servidor de la Diputación es lento y no soporta conexiones _keep-alive_), lo que hace necesario poder interrumpir la tarea y retomarla en un punto arbitrario. Esto se hace mediante un tercer parámetro, que si se pasa representa el primer `id` del _sitemap_ a descargar. Por ejemplo, para descargar desde el `id` 123456, inclusive, y sucesivos:
+La descarga puede llevar más de 30 horas, pues el servidor de la Diputación es lento y no soporta conexiones _keep-alive_. El _script_ omite la descarga de aquellas fotografías que ya existan en el directorio de destino, de modo que es seguro interrumpir la descarga y retomarla sin más que correr nuevamente el _script_.
 
-```bash
-./fetch_photos.sh downloads/sitemap.txt downloads/fotografias 123456
-```
+Cualquier error durante la descarga se escribe en `stderr`. Para reintentar la descarga de las rutas fallidas basta correr de nuevo el _script_.
 
-Durante la descarga el _script_ irá escribiendo por `stderr` el nombre de las rutas que no pueda descargar y su `id`. Con esta información es trivial reintentar manualmente aquellas que puedan fallar por errores (recuperables) de red.
