@@ -19,7 +19,7 @@ Para descargar las fotografías del archivo primero es necesario obtener una lis
 2. Descárguense y concaténense todos los _sitemaps_:
 
    ```console
-   curl https://www.guregipuzkoa.eus/sitemap/sitemap-image\[1-4\].xml > sitemap.txt
+   curl https://www.guregipuzkoa.eus/sitemap/sitemap-image\[1-4\].xml > downloads/sitemap.txt
    ```
 
    Esto resulta en un fichero `sitemap.txt` de unos 100 MB.
@@ -27,11 +27,31 @@ Para descargar las fotografías del archivo primero es necesario obtener una lis
 3. Procésese este fichero con el _script_ `parse_sitemap.mjs`:
 
    ```console
-   node parse_sitemap.mjs sitemap.txt
+   node parse_sitemap.mjs downloads/sitemap.txt
    ```
 
    El posprocesado con `jq` embellece la salida y proporciona funcionalidad opcional adicional. Por ejemplo, para extractar todas las referencias a la colección Jesús Elosegui:
 
    ```console
-   node parse_sitemap.mjs sitemap.txt | jq 'map(select(.image|test("wp-content/gallery/jesus-elosegui/")))'
+   node parse_sitemap.mjs downlaods/sitemap.txt | jq 'map(select(.image|test("wp-content/gallery/jesus-elosegui/")))'
    ```
+
+# Descarga de las fotografías
+
+El proceso anterior devuelve una estructura JSON de 159173 elementos. Cada elemento tiene una propiedad `id` de la forma `https://www.guregipuzkoa.eus/photo/[n]/`, donde `[n]` es un identificador unívoco. Cada elemento tiene también una propiedad `image` que es la URL de la fotografía.
+
+Para descargar sucesivamente todas las fotografías del portal:
+
+```bash
+./fetch_photos.sh downloads/sitemap.txt downloads/fotografias
+```
+
+Siendo el primer argumento la ruta al fichero `sitemap.xml` y el segundo el directorio en el que se guardarán las fotografías descargadas.
+
+La descarga puede llevar más de 30 horas (el servidor de la Diputación es lento y no soporta conexiones _keep-alive_), lo que hace necesario poder interrumpir la tarea y retomarla en un punto arbitrario. Esto se hace mediante un tercer parámetro, que si se pasa representa el primer `id` del _sitemap_ a descargar. Por ejemplo, para descargar desde el `id` 123456, inclusive, y sucesivos:
+
+```bash
+./fetch_photos.sh downloads/sitemap.txt downloads/fotografias 123456
+```
+
+Durante la descarga el _script_ irá escribiendo por `stderr` el nombre de las rutas que no pueda descargar y su `id`. Con esta información es trivial reintentar manualmente aquellas que puedan fallar por errores (recuperables) de red.
