@@ -1,4 +1,4 @@
-# Retrosantander
+# El portal del CDIS
 
 ### ⚠️ **[ACTUALIZACIÓN] A raíz de esta iniciativa el Ayuntamiento de Santander [ha retirado el portal del CDIS](https://twitter.com/JaimeObregon/status/1523955161151983616).**
 
@@ -128,7 +128,7 @@ A título de experimento personal, es posible descargar la base de datos del CDI
 
 Sería así.
 
-### 1. Descargar todas las páginas de resultados
+## 1. Descargar todas las páginas de resultados
 
 Nos apalancamos en el filtro de rango temporal para provocar una búsqueda que devuelva todo el catálogo. Consignamos para ello un filtro entre los años `0` y `2050`, e iteramos por todas las páginas resultantes.
 
@@ -144,7 +144,7 @@ curl --output "pages/page_#1.html" \
 "goto=[1-793]"
 ```
 
-### 2. Extraer la dirección de todas las fichas
+## 2. Extraer la dirección de todas las fichas
 
 Aplicando un `grep` de una expresión regular a cada una de las páginas de resultados obtenidas en el paso anterior conseguimos la relación de todas las fichas de imágenes del CDIS. Exportamos el conjunto en un fichero de parámetros con el que alimentaremos `curl` en el paso siguiente.
 
@@ -159,7 +159,7 @@ grep --no-filename --only-matching \
     > images.txt
 ```
 
-### 3. Descargar todas las fichas
+## 3. Descargar todas las fichas
 
 Ahora podemos descargar iterativamente todas las fichas del CDIS…
 
@@ -167,7 +167,7 @@ Ahora podemos descargar iterativamente todas las fichas del CDIS…
 mkdir images && curl -K images.txt
 ```
 
-### 4. Extraer la dirección de todas las imágenes
+## 4. Extraer la dirección de todas las imágenes
 
 …Y obtener de cada una la dirección URL de su imagen, en dos formatos: con la enorme marca de agua estándar del CDIS, y en «modo exposición», que añade una marca mucho más sutil.
 
@@ -186,7 +186,7 @@ grep --no-filename --only-matching \
     done > jpeg.txt
 ```
 
-### 5. Descargar todas las fotos
+## 5. Descargar todas las fotos
 
 La descarga de las imágenes se hace con cURL, introduciendo la sucesión de URL y ficheros de salida con el fichero de texto creado en al paso anterior.
 
@@ -194,7 +194,7 @@ La descarga de las imágenes se hace con cURL, introduciendo la sucesión de URL
 mkdir jpeg && curl -K jpeg.txt
 ```
 
-### 6. Interpretar las fichas y crear el repositorio JSON
+## 6. Interpretar las fichas y crear el repositorio JSON
 
 He escrito un intérprete, [`parser.php`](/scripts/parser.php), que mediante expresiones regulares procesa las páginas HTML del CDIS y devuelve los resultados estructurados. Pasamos su salida a `jq` para obtener la base de datos reconstruida en [`cdis.json`](/httpdocs/retrosantander.com/cdis.json).
 
@@ -204,7 +204,7 @@ for file in images/image_*.html;
 | jq --slurp > cdis.json
 ```
 
-### 7. Eliminar la marca de agua
+## 7. Eliminar la marca de agua
 
 Obtenidas dos versiones de cada imagen, cada una con una marca de agua diferente, es posible combinarlas en una tercera sin marca de agua alguna. Un método para ello es recortar el 10 % inferior de la primera versión con el 90 % superior de la segunda y unir ambos recortes. Esto se puede automatizar para todo el fondo del CDIS.
 

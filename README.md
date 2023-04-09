@@ -26,6 +26,8 @@ Retrogipuzkoa captó la atención de la Diputación Foral de Gipuzkoa, que me ha
 
 Nace así una nueva versión de GureGipuzkoa, resultado de conectar todas las colecciones del portal de la Diputación con la herramienta que he ido construyendo y refinando para explorar estos archivos fotográficos.
 
+Aparte he escrito la documentación [sobre el _scraping_ a guregipuzkoa.eus](/docs/guregipuzkoa.md).
+
 # Características y limitaciones
 
 1. **Búsqueda instantánea**. A diferencia de la mayoría de los archivos, las búsquedas no se cursan en el servidor sino directamente en el navegador del usuario. Para este fin se envía el índice completo de las colecciones fotográficas al navegador del usuario. Así se pueden obtener resultados instantáneos de las búsquedas al tiempo que se teclea. Esto impone la limitación de que no se pueda buscar en todas las colecciones simultáneamente.
@@ -84,6 +86,41 @@ Con cada _push_ a la rama _main_ se lanza el despliegue de todos los proyectos e
 Todos los sitios en Netlify son idénticos y están conectados a este mismo repositorio. Cada uno tiene una variable de entorno `PROJECT` asignada al proyecto correspondiente; esto es, `retrosantander`, `retrogipuzkoa` o `guregipuzkoa`.
 
 Adicionalmente, la aplicación sabe qué proyecto servir por el nombre del _host_ desde el que es servida. Por ejemplo, cuando el nombre del _host_ es `retrogipuzkoa.com`, `retrogipuzkoa.localhost` o `retrogipuzkoa`, se sirve el archivo fotográfico y las personalizaciones correspondientes a `Retrogipuzkoa`. Esto se discierne en `app.js`.
+
+# Alojamiento de los archivos
+
+- **Retrosantander**. No tengo permiso del CDIS del Ayuntamiento de Santander para servir el archivo fotográfico del CDIS. Por esta razón Retrosantander solicita los archivos directamente al servidor web del CDIS. Cuando el Ayuntamiento [ha retirado](https://twitter.com/JaimeObregon/status/1523955161151983616) este servidor y todo el archivo, Retrosantander ha dejado de poder brindarte acceso a él.
+
+- **Retrogipuzkoa**. La colección fotográfica explorable desde Retrogipuzkoa es servida directamente por el portal guregipuzkoa.eus, operado por la Diputación Foral de Gipuzkoa.
+
+- **GureGipuzkoa**. He obtenido permiso de la Diputación para copiar y distribuir el archivo fotográfico del portal guregipuzkoa.eus, que es distribuido por la Diputación con licencia Creative Commons. Yo he descargado (_scraping_) y copiado en Amazon S3 este archivo (fotografías y metadatos), y mi portal guregipuzkoa.com lo sirve desde ahí y no desde guregipuzkoa.eus como sucede en Retrogipuzkoa.
+
+# Almacenamiento y visión artificial
+
+Utilizo Amazon Web Services (AWS) para almacenar y servir (Amazon S3) el archivo fotográfico de GureGipuzkoa y como servicio de visión artificial (Amazon Rekognition).
+
+En este repositorio incluyo el _script_ necesario para descargar las fotografías y metadatos del portal guregipuzkoa.eus (_scraping_), optimizar el tamaño de las fotografías convirtiéndolas al formato WEBP, cargarlas a Amazon S3 y aplicar sobre ellas los comandos proporcionados por Amazon Rekognition y obtener y procesar sus respuestas.
+
+Las operaciones sobre los servicios AWS requieren de una cuenta de AWS y [un fichero local](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/loading-node-credentials-shared.html) con las credenciales y configuración del usuario de AWS.
+
+En una instalación macOS:
+
+- `~/.aws/config`
+
+  ```ini
+  [default]
+  region = us-east-1
+  ```
+
+- `~/.aws/credentiales`
+
+  ```ini
+  [default]
+  aws_access_key_id = <YOUR_ACCESS_KEY_ID>
+  aws_secret_access_key = <YOUR_SECRET_ACCESS_KEY>
+  ```
+
+El _script_ toma las credenciales y configuración de estos ficheros locales privados, de tal manera que así no hay riesgo de incorporarlas accidentalmente al repositorio ni necesidad de establecerlas en variables de entorno.
 
 # Licencia
 
