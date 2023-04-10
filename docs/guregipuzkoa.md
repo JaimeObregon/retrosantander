@@ -48,7 +48,7 @@ Para descargar sucesivamente todas las fotografías del portal:
 
 Siendo el primer argumento la ruta al fichero `sitemap.xml` y el segundo el directorio en el que se guardarán las fotografías descargadas.
 
-La descarga puede llevar más de 30 horas, pues el servidor de la Diputación es lento y no soporta conexiones _keep-alive_. El _script_ omite la descarga de aquellas fotografías que ya existan en el directorio de destino, de modo que es seguro interrumpir la descarga y retomarla sin más que correr nuevamente el _script_.
+La descarga puede llevar más de 30 horas, pues el _host_ WordPress de la Diputación tiene una respuesta lenta. El _script_ omite la descarga de aquellas fotografías que ya existan en el directorio de destino, de modo que es seguro interrumpir la descarga y retomarla sin más que correr nuevamente el _script_.
 
 Cualquier error durante la descarga se escribe en `stderr`. Para reintentar la descarga de las rutas fallidas basta correr de nuevo el _script_.
 
