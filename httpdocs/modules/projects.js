@@ -17,7 +17,8 @@ const projects = {
       // `https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${id}`,
       return '/retrosantander/unavailable.svg'
     },
-    details: (id) => `/retrosantander/details/${id}.json`,
+    details: (id) =>
+      `https://retrosantander.s3.eu-south-2.amazonaws.com/metadata/${id}.json`,
     about: '/retrosantander/about.html',
     help: '/retrosantander/help.html',
     panel: (details) => `
@@ -63,8 +64,10 @@ const projects = {
     placeholder: (count) =>
       `Explora ${count} imágenes históricas de la Colección Jesús Elósegui`,
     image: (id) =>
-      `https://www.guregipuzkoa.eus/wp-content/gallery/jesus-elosegui/${id}.jpg`,
-    details: (id) => `/retrogipuzkoa/details/${id}.json`,
+      // `https://www.guregipuzkoa.eus/wp-content/gallery/jesus-elosegui/${id}.jpg`,
+      `https://retrogipuzkoa.s3.eu-south-2.amazonaws.com/jpeg/${id}.jpg`,
+    details: (id) =>
+      `https://retrogipuzkoa.s3.eu-south-2.amazonaws.com/metadata/${id}.json`,
     about: '/retrogipuzkoa/about.html',
     help: '/retrogipuzkoa/help.html',
     panel: (details) => `
