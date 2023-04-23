@@ -67,7 +67,7 @@ const projects = {
       // `https://www.guregipuzkoa.eus/wp-content/gallery/jesus-elosegui/${id}.jpg`,
       `https://retrogipuzkoa.s3.eu-south-2.amazonaws.com/jpeg/${id}.jpg`,
     details: (id) =>
-      `https://retrogipuzkoa.s3.eu-south-2.amazonaws.com/metadata/${id}.json`,
+      `https://retrogipuzkoa.s3.eu-south-2.amazonaws.com/rekognition/${id}.json`,
     about: '/retrogipuzkoa/about.html',
     help: '/retrogipuzkoa/help.html',
     panel: (details) => `
