@@ -18,7 +18,7 @@ const projects = {
       return '/retrosantander/unavailable.svg'
     },
     details: (id) =>
-      `https://retrosantander.s3.eu-south-2.amazonaws.com/metadata/${id}.json`,
+      `https://retrosantander.s3.eu-south-2.amazonaws.com/rekognition/${id}.json`,
     about: '/retrosantander/about.html',
     help: '/retrosantander/help.html',
     panel: (details) => `
