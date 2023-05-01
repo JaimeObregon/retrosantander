@@ -27,7 +27,6 @@ const project = {
         const main = document.querySelector('main')
         main.innerHTML = `<rs-grid index="${index}"></rs-grid>`
 
-        app.$grid = main.querySelector('rs-grid')
         app.title = groups.query
       },
     },
