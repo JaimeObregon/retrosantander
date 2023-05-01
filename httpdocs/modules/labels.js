@@ -1,3 +1,5 @@
+// No traduzco todas; solo las que se utilizan:
+// jq '.Labels[].Name' *.json | sort | uniq
 const labels = {
   Aardvark: 'Oso hormiguero',
   Abies: 'Pinos',
