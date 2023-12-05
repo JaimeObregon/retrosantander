@@ -211,12 +211,12 @@ Obtenidas dos versiones de cada imagen, cada una con una marca de agua diferente
 ![Eliminación de la marca de agua](assets/marca-de-agua.gif)
 
 ```bash
-mkdir merged
-for id in `jq --raw-output '.[].id' cdis.json`; do
-    convert \
-        jpeg/${id}_b.jpeg \
-        \( jpeg/${id}_a.jpeg -gravity south -crop 0x10%+0+0 \) \
-        -composite merged/${id}.jpeg;
+mkdir watermark_removed
+for FILE in watermark_small/*; do
+    id=$(basename "$FILE")
+    convert ${FILE} \
+        \( watermark_large/${id} -gravity south -crop 0x10%+0+0 \) \
+        -composite watermark_removed/${id};
 done
 ```
 
