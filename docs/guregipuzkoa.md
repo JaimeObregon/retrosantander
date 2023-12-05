@@ -44,7 +44,7 @@ Para descargar las fotografías del archivo primero es necesario obtener una lis
    El posprocesado con `jq` embellece la salida y proporciona funcionalidad opcional adicional. Por ejemplo, para extractar todas las referencias a la colección Jesús Elosegui:
 
    ```console
-   ./parse_sitemap.mjs downlaods/sitemap.txt | jq 'map(select(.image|test("wp-content/gallery/jesus-elosegui/")))'
+   ./parse_sitemap.mjs downloads/sitemap.txt | jq 'map(select(.image|test("wp-content/gallery/jesus-elosegui/")))'
    ```
 
 # 2. Descarga de las fotografías
@@ -137,7 +137,7 @@ Las respuestas JSON así descargadas ocupan 738 MB.
 
 ## La función lambda de transcodificación
 
-He desplegado una función en Amazon Lambda. Se activa mediante un disparador (_trigger_) cuando se deposita un objecto en la ruta `/images` del _bucket_ `guregipuzkoa-temp`. Por ejemplo, porque lo deposita `upload.mjs`, como se verá después. Esta función lambda hace lo siguiente:
+He desplegado una función en Amazon Lambda. Se activa mediante un disparador (_trigger_) cuando se deposita un objeto en la ruta `/images` del _bucket_ `guregipuzkoa-temp`. Por ejemplo, porque lo deposita `upload.mjs`, como se verá después. Esta función lambda hace lo siguiente:
 
 1. Toma la imagen subida al _bucket_ `guregipuzkoa_temp` y la transcodifica a formato AVIF, optimizándola en tamaño y recortándola si es preciso para reducir sus tiempos de descarga, y la deposita en la ruta adecuada del _bucket_ `guregipuzkoa`.
 
