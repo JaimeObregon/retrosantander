@@ -49,7 +49,7 @@ Para descargar las fotografías del archivo primero es necesario obtener una lis
 
 # 2. Descarga de las fotografías
 
-El proceso anterior devuelve una estructura JSON de unos 159000 elementos. Cada elemento tiene una propiedad `id` de la forma `https://www.guregipuzkoa.eus/photo/[n]/`, donde `[n]` es un identificador unívoco. Cada elemento tiene también una propiedad `image` que es la URL de la fotografía.
+El proceso anterior devuelve una estructura JSON de unos 159000 elementos. Cada elemento tiene una propiedad `id` con la forma `https://www.guregipuzkoa.eus/photo/[n]/`, donde `[n]` es un identificador unívoco. Cada elemento tiene también una propiedad `image` que es la URL de la fotografía.
 
 Para descargar sucesivamente todas las fotografías del portal:
 
