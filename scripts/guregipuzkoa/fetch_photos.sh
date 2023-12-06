@@ -4,7 +4,7 @@
 SITEMAP=$1
 OUTPUT_DIRECTORY=$2
 
-node parse_sitemap.mjs $SITEMAP | jq --raw-output '.[]|[.image, .id] | @tsv' |
+./parse_sitemap.mjs $SITEMAP | jq --raw-output '.[]|[.image, .id] | @tsv' |
   while IFS=$'\t' read -r URL OUTPUT; do
     ID=$(echo $OUTPUT | sed -e "s/https:\/\/www.guregipuzkoa.eus\/photo//" -e "s/\///g")
     OUTPUT="$OUTPUT_DIRECTORY/$ID"
