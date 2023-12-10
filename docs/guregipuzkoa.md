@@ -135,9 +135,7 @@ Las respuestas JSON así descargadas ocupan 738 MB.
 
 # 7. Carga en S3 y transcodificación
 
-## La función lambda de transcodificación
-
-He desplegado una función en Amazon Lambda. Se activa mediante un disparador (_trigger_) cuando se deposita un objeto en la ruta `/images` del _bucket_ `guregipuzkoa-temp`. Por ejemplo, porque lo deposita `upload.mjs`, como se verá después. Esta función lambda hace lo siguiente:
+He desplegado una función en Amazon Lambda que transcodifica las imágenes al formato optimizado AVIF. Se activa mediante un disparador (_trigger_) cuando se deposita un objeto en la ruta `/images` del _bucket_ `guregipuzkoa-temp`. Por ejemplo, porque lo deposita `upload.mjs`, como se verá después. Esta función lambda hace lo siguiente:
 
 1. Toma la imagen subida al _bucket_ `guregipuzkoa_temp` y la transcodifica a formato AVIF, optimizándola en tamaño y recortándola si es preciso para reducir sus tiempos de descarga, y la deposita en la ruta adecuada del _bucket_ `guregipuzkoa`.
 
@@ -147,9 +145,7 @@ He desplegado una función en Amazon Lambda. Se activa mediante un disparador (_
 
 Hacemos la transcodificación en AWS porque puede ser lenta y conllevar, para algunas fotografías, incluso más de 45 segundos.
 
-## El _script_ de subida a S3
-
-Se invoca así:
+Por otro lado, el _script_ de subida a S3 se invoca así:
 
 ```bash
 ./parse_sitemap.mjs sitemap.txt | ./upload.mjs
