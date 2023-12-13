@@ -196,11 +196,11 @@ mkdir jpeg && curl -K jpeg.txt
 
 ## 6. Interpretar las fichas y crear el repositorio JSON
 
-He escrito un intérprete, [`parser.php`](/scripts/parser.php), que mediante expresiones regulares procesa las páginas HTML del CDIS y devuelve los resultados estructurados. Pasamos su salida a `jq` para obtener la base de datos reconstruida en [`cdis.json`](/httpdocs/retrosantander.com/cdis.json).
+He escrito un intérprete, [`parse.php`](/scripts/retrosantander/parse.php), que mediante expresiones regulares procesa las páginas HTML del CDIS y devuelve los resultados estructurados. Pasamos su salida a `jq` para obtener la base de datos reconstruida en `cdis.json`.
 
 ```bash
 for file in images/image_*.html;
-    do cat $file | php parser.php; done \
+    do cat $file | php parse.php; done \
 | jq --slurp > cdis.json
 ```
 
