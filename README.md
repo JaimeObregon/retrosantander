@@ -97,7 +97,7 @@ Con cada _push_ a la rama _main_ se lanza el despliegue de todos los proyectos e
 
 Todos los sitios en Netlify son idénticos y están conectados a este mismo repositorio. Cada uno tiene una variable de entorno `PROJECT` asignada al proyecto correspondiente; esto es, `retrosantander`, `retrogipuzkoa` o `guregipuzkoa`.
 
-Adicionalmente, la aplicación sabe qué proyecto servir por el nombre del _host_ desde el que es servida. Por ejemplo, cuando el nombre del _host_ es `retrogipuzkoa.com` o `retrogipuzkoa.local`, se sirve el archivo fotográfico y las personalizaciones correspondientes a `Retrogipuzkoa`. Esto se discierne en `app.js`.
+Adicionalmente, la aplicación sabe qué proyecto servir por el nombre del _host_ desde el que es servida. Por ejemplo, cuando el nombre del _host_ es `retrogipuzkoa.com` o `retrogipuzkoa.local`, se sirve el archivo fotográfico y las personalizaciones correspondientes a `Retrogipuzkoa`. Esto se discierne en el navegador del usuario en tiempo de ejecución.
 
 # Alojamiento de los archivos
 

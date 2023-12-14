@@ -77,7 +77,7 @@ Este _script_ devolverá por _stdout_ cuáles son:
 
 ```bash
 for FILE in *; do
-  SIZE=($(identify -format '%w %h %i\n' "$FILE" 2> /dev/null))
+  SIZE=($(identify -regard-warnings -format '%w %h %i\n' "$FILE" 2> /dev/null))
   if [ $? != 0 ] ; then
     echo "$FILE contiene errores."
   else
@@ -104,10 +104,29 @@ done
 [Es interesante](https://twitter.com/JaimeObregon/status/1646082167787618304) extraer los metadatos Exif del archivo fotográfico. La utilidad `exiftool` permite exportar estos metadatos en forma JSON:
 
 ```bash
-for f in *; do exiftool -json -unknown -duplicates "$f" > ../exif/$f; done
+for FILE in *; do
+  OUTPUT="../../exif/${FILE%.jpeg}.json"
+  if [[ ! -f "$OUTPUT" ]]; then
+    exiftool -json -unknown -duplicates "$FILE" > "$OUTPUT"
+  else
+    echo "$OUTPUT ya existe, omitiendo…"
+  fi
+done
 ```
 
-Los ficheros JSON así extraídos ocupan 697 MB.
+Los ficheros JSON así extraídos ocupan unos 700 MB. Conviene comprimirlos con gzip para reducir los costes de alojamiento y transferencia en S3:
+
+```bash
+for FILE in *.json; do
+  cp "$FILE" "$FILE.tmp" && gzip "$FILE.tmp" && mv "$FILE.tmp.gz" "$FILE"
+done
+```
+
+Subamos los metadatos EXIF comprimidos a S3, tomando la necesaria precaución de establecer, como metadatos, las cabeceras que advertirán al cliente de la compresión y tipo de los ficheros:
+
+```bash
+aws s3 sync exif s3://guregipuzkoa/exif/ --metadata Content-Encoding=gzip,Content-Type=application/json
+```
 
 # 6. Descarga de los metadatos de GureGipuzkoa
 
@@ -135,23 +154,23 @@ Las respuestas JSON así descargadas ocupan 738 MB.
 
 # 7. Carga en S3 y transcodificación
 
-He desplegado una función en Amazon Lambda que transcodifica las imágenes al formato optimizado AVIF. Se activa mediante un disparador (_trigger_) cuando se deposita un objeto en la ruta `/images` del _bucket_ `guregipuzkoa-temp`. Por ejemplo, porque lo deposita `upload.mjs`, como se verá después. Esta función lambda hace lo siguiente:
+He desplegado una función en Amazon Lambda que transcodifica las imágenes al formato optimizado AVIF. Se activa automáticamente mediante un disparador (_trigger_) que [he configurado](https://docs.aws.amazon.com/AmazonS3/latest/userguide/enable-event-notifications.html) en el _bucket_ `guregipuzkoa-temp` y que aplica la función cuando se deposita un objeto en la ruta `/images` de dicho _bucket_. Esta función lambda hace lo siguiente:
 
-1. Toma la imagen subida al _bucket_ `guregipuzkoa_temp` y la transcodifica a formato AVIF, optimizándola en tamaño y recortándola si es preciso para reducir sus tiempos de descarga, y la deposita en la ruta adecuada del _bucket_ `guregipuzkoa`.
+1. Toma la imagen subida al _bucket_ `guregipuzkoa_temp` y la transcodifica a formato AVIF, optimizándola en tamaño y recortándola si es preciso para reducir sus tiempos de descarga, y la deposita en la ruta adecuada del _bucket_ `guregipuzkoa` (`/optimized/`).
 
-1. Copia la imagen original a la ruta adecuada del _bucket_ de destino `guregipuzkoa`, para su conservación.
+1. Copia la imagen original a la ruta adecuada del _bucket_ de destino `guregipuzkoa` (`/originals/images/`), para su conservación.
 
 1. Elimina la imagen original del _bucket_ `guregipuzkoa-temp`.
 
 Hacemos la transcodificación en AWS porque puede ser lenta y conllevar, para algunas fotografías, incluso más de 45 segundos.
 
-Por otro lado, el _script_ de subida a S3 se invoca así:
+El _script_ `upload.mjs` realiza la subida al bucket `guregipuzkoa-temp` de S3, lo que provoca la aplicación de la función lambda sobre cada fichero subido y, por lo tanto, su transcodificación automática. Se invoca así:
 
 ```bash
 ./parse_sitemap.mjs sitemap.txt | ./upload.mjs
 ```
 
-Este _script_ `upload.mjs` lista todos los objetos almacenados en la ruta `/originals/images/` del _bucket_ `guregipuzkoa` y los compara con los `id` obtenidos del _sitemap_ que recibe por `stdin`, cargando a la ruta `/images` de `guregipuzkoa-temp` aquellos faltantes, para que se dispare la función lambda que los toma de allí y los transcodifica y guarda en `/originals/images/` y en `/optimized/`, ambas en el _bucket_ `guregipuzkoa`.
+Este _script_ lista todos los objetos almacenados en la ruta `/originals/images/` del _bucket_ `guregipuzkoa` y los compara con los `id` obtenidos del _sitemap_ que recibe por `stdin`, cargando a la ruta `/images` de `guregipuzkoa-temp` aquellos faltantes, para que se dispare así la función lambda que los toma de allí, guarda transcodificados en la ruta `/optimized/` del _bucket_ `guregipuzkoa`, y mueve después el fichero cargado original a la ruta `/originals/images/`, de este mismo _bucket_.
 
 Este _script_ tiene dos defectos:
 
