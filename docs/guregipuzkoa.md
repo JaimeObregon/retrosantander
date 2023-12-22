@@ -15,6 +15,8 @@ A continuación documento el proceso de _scraping_ y manipulación de las fotogr
 7. Carga en S3 y transcodificación
 8. Reconocimiento visual y generación y carga de la ficha de cada imagen
 
+La aplicación web está alojada en Netlify, pero el archivo fotográfico y todos sus metadatos se sirven desde Amazon S3. Para este fin he creado el _bucket_ `guregipuzkoa` en la región `eu-south-2` (Zaragoza), que tiene una menor latencia desde España.
+
 # 1. Obtención de todas las URL del portal
 
 Para descargar las fotografías del archivo primero es necesario obtener una lista con todas sus URL:
@@ -184,6 +186,44 @@ Este _script_ tiene dos defectos:
    ./parse_sitemap.mjs sitemap.txt | jq 'map(select(.image|test(".png$")))' | ./upload.mjs
    ```
 
+Al final del proceso solo quedan en `s3://guregipuzkoa-temp/images/` los ficheros que la función lambda no ha podido transcodificar, que son en torno a un centenar. Un vistazo a los _logs_ de la función lambda en AWS CloudWatch muestra, básicamente, dos razones: `Error: VipsJpeg: Premature end of input file` y `Task timed out`.
+
+Me los bajo:
+
+```console
+aws s3 sync s3://guregipuzkoa-temp guregipuzkoa-temp
+```
+
+```console
+mkdir recompressed
+cd images
+mogrify -resize '2000>' -path ../recompressed *
+```
+
 # 8. Reconocimiento visual y generación y carga de la ficha de cada imagen
 
-[TBD]
+- La lista de etiquetas reconocidas por Rekognition pueden descargarse desde [Detecting objects and concepts](https://docs.aws.amazon.com/rekognition/latest/dg/labels.html). Las versiones 2 y 3 las he descargado y guardado en [`private/guregipuzkoa/varios``](private/guregipuzkoa/varios) Esporádicamente Amazon actualiza el listado.
+
+- El _bucket_ `guregipuzkoa` está en la región `eu-south-2` (España). Rekognition es más barato en `eu-west-1`, así que copiamos el archivo fotográfico a un nuevo _bucket_ temporal creado en esta región:
+
+```console
+aws s3 sync s3://guregipuzkoa/originals/images/ s3://guregipuzkoa-rekognition/images/ --source-region eu-south-2 --region eu-west-1
+```
+
+- Decido reprocesar con Rekognition la colección de Jesús Elósegui, porque el modelo de visión artificial de Amazon ha sido actualizado y proporcionará ahora resultados mejores. También porque solo son ~30 € más, e implicaría hacer un renombrado complejo de los ficheros de retrogipuzkoa.
+
+- Paso Rekognition, pero solo si no ha sido pasado antes. Corro estos dos scripts en paralelo:
+
+```bash
+find originals/images -type f | xargs -n 1 -P 8 -I {} ./process_image.sh {}
+```
+
+Este paso cuesta unos 300 €.
+
+Borramos los ficheros vacíos o con un solo caracter:
+
+```bash
+find . -type f -size "1c" -delete
+```
+
+Hay 17597 ficheros para los cuales no he pedido --attributes "ALL" :(
