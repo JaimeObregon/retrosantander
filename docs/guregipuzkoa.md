@@ -4,16 +4,7 @@
 
 Para elaborar [guregipuzkoa.com](https://guregipuzkoa.com) he necesitado acceder a este archivo. Aunque cuento con autorización de la Diputación, me ha parecido más rápido y directo hacer _scraping_ de los contenidos del portal oficial que solicitar las credenciales de acceso al portal.
 
-A continuación documento el proceso de _scraping_ y manipulación de las fotografías y metadatos contenidos en guregipuzkoa.eus a que he llegado haciendo ingeniería inversa del portal. Este proceso comprende los siguientes pasos:
-
-1. Obtención de todas las URL del portal
-2. Descarga de las fotografías
-3. Filtrado de fotografías corruptas e inválidas
-4. Asignación de extensiones
-5. Extracción de los metadatos Exif
-6. Descarga de los metadatos de GureGipuzkoa
-7. Carga en S3 y transcodificación
-8. Reconocimiento visual y generación y carga de la ficha de cada imagen
+A continuación documento el proceso de _scraping_ y manipulación de las fotografías y metadatos contenidos en guregipuzkoa.eus a que he llegado haciendo ingeniería inversa del portal. Este proceso comprende los pasos que se describen en este documento.
 
 La aplicación web está alojada en Netlify, pero el archivo fotográfico y todos sus metadatos se sirven desde Amazon S3. Para este fin he creado el _bucket_ `guregipuzkoa` en la región `eu-south-2` (Zaragoza), que tiene una menor latencia desde España.
 
@@ -30,7 +21,7 @@ Para descargar las fotografías del archivo primero es necesario obtener una lis
 2. Descárguense y concaténense todos los _sitemaps_:
 
    ```console
-   curl https://www.guregipuzkoa.eus/sitemap/sitemap-image\[1-4\].xml > downloads/sitemap.txt
+   curl https://www.guregipuzkoa.eus/sitemap/sitemap-image\[1-4\].xml > sitemap.txt
    ```
 
    Esto resulta en un fichero `sitemap.txt` de unos 100 MB.
@@ -38,16 +29,10 @@ Para descargar las fotografías del archivo primero es necesario obtener una lis
 3. Procésese este fichero con el _script_ `parse_sitemap.mjs`:
 
    ```console
-   ./parse_sitemap.mjs downloads/sitemap.txt
+   ./parse_sitemap.mjs sitemap.txt
    ```
 
    Este _script_ excluye de la salida algunos objetos cuyas fotografías están corruptas o no tienen las dimensiones suficientes, tal como se explica más adelante.
-
-   El posprocesado con `jq` embellece la salida y proporciona funcionalidad opcional adicional. Por ejemplo, para extractar todas las referencias a la colección Jesús Elosegui:
-
-   ```console
-   ./parse_sitemap.mjs downloads/sitemap.txt | jq 'map(select(.image|test("wp-content/gallery/jesus-elosegui/")))'
-   ```
 
 # 2. Descarga de las fotografías
 
@@ -56,62 +41,61 @@ El proceso anterior devuelve una estructura JSON de unos 159000 elementos. Cada 
 Para descargar sucesivamente todas las fotografías del portal:
 
 ```bash
-./fetch_photos.sh downloads/sitemap.txt downloads/fotografias
+mkdir originals
+./fetch_photos.sh sitemap.txt originals
 ```
 
 Siendo el primer argumento la ruta al fichero `sitemap.xml` y el segundo el directorio en el que se guardarán las fotografías descargadas.
 
-La descarga puede llevar más de 30 horas.
-
 El _script_ omite la descarga de aquellas fotografías que ya existan en el directorio de destino, de modo que es seguro interrumpir la descarga y retomarla sin más que correr nuevamente el _script_.
+
+También asigna la extensión `.jpeg` a todos los ficheros descargados. Esto se revisa —y, cuando es necesario, corrige— en el paso siguiente.
 
 Cualquier error durante la descarga se escribe en `stderr`. Para reintentar la descarga de las rutas fallidas basta correr de nuevo el _script_.
 
-El archivo fotográfico así descargado ocupa 120 GB.
+La descarga puede llevar más de 30 horas y el archivo fotográfico así descargado ocupa 120 GB.
 
-# 3. Filtrado de fotografías corruptas e inválidas
+# 3. Asignación de extensión
+
+No podemos confiar en las extensiones de los ficheros citados en el _sitemap_, porque refieren indistintamente `jpg`, `JPG` o `jpeg`. O porque un par de fotografías están en formato PNG pero tienen extensión `jpg`. O porque, sencillamente, no es prudente asumir que las extensiones coincidan siempre con el formato del archivo. Así que el paso anterior descarga asigna a todos los ficheros la extensión `.jpeg` y ahora es preciso comprobarla y renombrar los ficheros que sean de otro tipo:
+
+```bash
+for i in *; do
+  EXTENSION=$(file --extension $i | awk '{split($2,a,"/"); print a[1]}')
+  printf "\r\033[K$i…"
+  rename --verbose --remove-extension --append ".$EXTENSION" "$i"
+done
+```
+
+Y convertimos a formato JPEG las dos imágenes que están en otro formato:
+
+```bash
+convert 154344.png 154344.jpeg && rm 154344.png
+convert 154387.png 154387.jpeg && rm 154387.png
+```
+
+# 4. Filtrado de fotografías corruptas e inválidas
 
 Algunas fotografías del portal oficial están [corruptas](https://www.guregipuzkoa.eus/photo/104194/) o [incompletas](https://www.guregipuzkoa.eus/photo/153281). Otras tienen [una resolución demasiado baja](https://www.guregipuzkoa.eus/photo/45861/) como para ser utilizadas.
 
 Se hace preciso detectar estas imágenes para luego incorporarlas manualmente a la lista de los `id` en `parse_sitemap.mjs` que son ignorados al procesar el _sitemap_.
 
-Este _script_ devolverá por _stdout_ cuáles son:
-
-```bash
-for FILE in *; do
-  SIZE=($(identify -regard-warnings -format '%w %h %i\n' "$FILE" 2> /dev/null))
-  if [ $? != 0 ] ; then
-    echo "$FILE contiene errores."
-  else
-    (( $SIZE[1] < 128 || $SIZE[2] < 128 )) && echo "$FILE tiene unas dimensiones insuficientes."
-  fi
-done
-```
-
-Tómense las así devueltas e incorpórense a la lista de exclusión en `parse_sitemap.mjs`.
-
-# 4. Asignación de extensiones
-
-No podemos confiar en las extensiones de los ficheros citados en el _sitemap_, porque refieren indistintamente `jpg`, `JPG` o `jpeg`. O porque algunas fotografías están en formato PNG y tienen extensión `jpg`. O porque, sencillamente, no confío en que las extensiones coincidan siempre con el formato del archivo. Así que el paso anterior descarga ficheros sin extensión. Y es preciso proporcionársela ahora:
-
-```bash
-for i in *; do
-  EXTENSION=$(file --extension $i | sed -E "s/^[0-9]+: ([a-z]+).*/\\1/g")
-  rename "s/$/.$EXTENSION/" $i;
-done
-```
+El _script_ `check_images.sh`devolverá por _stdout_ cuáles son. Tómense e incorpórense a la lista de exclusión en `parse_sitemap.mjs`.
 
 # 5. Extracción de los metadatos Exif
 
 [Es interesante](https://twitter.com/JaimeObregon/status/1646082167787618304) extraer los metadatos Exif del archivo fotográfico. La utilidad `exiftool` permite exportar estos metadatos en forma JSON:
 
 ```bash
+CLEAR_LINE="\r\033[K"
+
 for FILE in *; do
   OUTPUT="../../exif/${FILE%.jpeg}.json"
-  if [[ ! -f "$OUTPUT" ]]; then
+  if [[ ! -s "$OUTPUT" ]]; then
+    printf "\nExtrayendo metadatos de ${FILE} a ${OUTPUT}…\n"
     exiftool -json -unknown -duplicates "$FILE" > "$OUTPUT"
   else
-    echo "$OUTPUT ya existe, omitiendo…"
+    printf "${CLEAR_LINE}${OUTPUT} ya existe, omitiendo…"
   fi
 done
 ```
@@ -122,12 +106,6 @@ Los ficheros JSON así extraídos ocupan unos 700 MB. Conviene comprimirlos con 
 for FILE in *.json; do
   cp "$FILE" "$FILE.tmp" && gzip "$FILE.tmp" && mv "$FILE.tmp.gz" "$FILE"
 done
-```
-
-Subamos los metadatos EXIF comprimidos a S3, tomando la necesaria precaución de establecer, como metadatos, las cabeceras que advertirán al cliente de la compresión y tipo de los ficheros:
-
-```bash
-aws s3 sync exif s3://guregipuzkoa/exif/ --metadata Content-Encoding=gzip,Content-Type=application/json
 ```
 
 # 6. Descarga de los metadatos de GureGipuzkoa
@@ -149,7 +127,8 @@ Si alguno de los `id` facilitados no corresponde con ninguna fotografía, el ser
 Para descargar todos los metadatos, pásese el _sitemap_ interpretado por `stdin` a `fetch_metadata.mjs`. Este _script_ descargará los metadatos de las fotografías referenciadas en el _sitemap_ y los guardará como ficheros JSON en la ruta que reciba como primer parámetro:
 
 ```bash
-./parse_sitemap.mjs downloads/sitemap.txt | ./fetch_metadata.mjs downloads/metadata
+mkdir json
+./parse_sitemap.mjs sitemap.txt | ./fetch_metadata.mjs json
 ```
 
 Las respuestas JSON así descargadas ocupan 738 MB.
@@ -200,30 +179,146 @@ cd images
 mogrify -resize '2000>' -path ../recompressed *
 ```
 
-# 8. Reconocimiento visual y generación y carga de la ficha de cada imagen
+# 8. Procesado con visión artificial
 
-- La lista de etiquetas reconocidas por Rekognition pueden descargarse desde [Detecting objects and concepts](https://docs.aws.amazon.com/rekognition/latest/dg/labels.html). Las versiones 2 y 3 las he descargado y guardado en [`private/guregipuzkoa/varios``](private/guregipuzkoa/varios) Esporádicamente Amazon actualiza el listado.
+Proceso cada imagen con las API `detect-faces` y `detect-lables` de AWS Rekognition.
 
-- El _bucket_ `guregipuzkoa` está en la región `eu-south-2` (España). Rekognition es más barato en `eu-west-1`, así que copiamos el archivo fotográfico a un nuevo _bucket_ temporal creado en esta región:
+En 2022 ya procesé de esta manera, para Retrogipuzkoa, la colección de Jesús Elósegui. Podría reaprovechar ese trabajo y ahorrar así unos 30 euros en costes de AWS, pero decido reprocesarla porque el modelo de visión artificial de Amazon ha sido actualizado en este tiempo y proporciona ahora resultados mejores. También porque ello me evitará hacer un renombrado complejo de los ficheros de Retrogipuzkoa para adaptarlos a la nueva nomenclatura que he adoptado en GureGipuzkoa.
+
+El _bucket_ `guregipuzkoa` está en la región `eu-south-2` (España). Rekognition es más barato en `eu-west-1`, así que copiamos el archivo fotográfico a un nuevo _bucket_ temporal creado en esta región:
 
 ```console
 aws s3 sync s3://guregipuzkoa/originals/images/ s3://guregipuzkoa-rekognition/images/ --source-region eu-south-2 --region eu-west-1
 ```
 
-- Decido reprocesar con Rekognition la colección de Jesús Elósegui, porque el modelo de visión artificial de Amazon ha sido actualizado y proporcionará ahora resultados mejores. También porque solo son ~30 € más, e implicaría hacer un renombrado complejo de los ficheros de retrogipuzkoa.
+El _script_ `process_image.sh` recibe como primer parámetro el nombre de una imagen, la busca en S3 y salva en el sistema de ficheros local dos ficheros JSON con los resultados de aplicar `detect-faces` y `detect-labels` sobre ella. El _script_ salta aquellas imágenes para las que ya existen los resultados JSON porque ya han sido procesadas.
 
-- Paso Rekognition, pero solo si no ha sido pasado antes. Corro estos dos scripts en paralelo:
+Corro el _script_ en paralelo para maximizar la eficiencia del proceso:
 
 ```bash
 find originals/images -type f | xargs -n 1 -P 8 -I {} ./process_image.sh {}
 ```
 
-Este paso cuesta unos 300 €.
+Este proceso conlleva varios días y cuesta unos 350 euros.
 
-Borramos los ficheros vacíos o con un solo caracter:
+La lista de etiquetas reconocidas por Rekognition pueden descargarse desde [Detecting objects and concepts](https://docs.aws.amazon.com/rekognition/latest/dg/labels.html). Las versiones 2 y 3 las he descargado y guardado en [`private/guregipuzkoa/varios``](private/guregipuzkoa/varios) Esporádicamente Amazon actualiza el listado.
+
+Finalizado el proceso, borramos los ficheros vacíos o con un solo caracter:
 
 ```bash
 find . -type f -size "1c" -delete
 ```
 
-Hay 17597 ficheros para los cuales no he pedido --attributes "ALL" :(
+- borrar luego los que no contengan JSON válido o estén vacíos.
+
+# 9. [generación y carga de la ficha de cada imagen]
+
+---
+
+## find . -type f -exec bash -c 'if [ ! -s "$0" ] || ! jq empty "$0" > /dev/null 2>&1; then echo "$0"; fi' {} \;
+
+---
+
+- las imágenes repetidas en el sitemap (sort -n)
+- las imágenes duplicadas (md5sum?) -> no había
+
+---
+
+parse_sitemap.mjs ../sitemap.txt > /tmp/sitemap.json
+
+```bash
+jq -c '.[]' /tmp/sitemap.json | while IFS= read -r json; do
+  id=$(jq -r '.id' <<< "$json" | sed -n 's|.*/photo/\([0-9]*\)/.*|\1|p')
+  printf '%s' "$json" > "summaries/$id.json"
+done
+```
+
+Genera los ficheros de metadatos, combinando los metadatos Exif, los resultados de la visión artificial y los metadatos originales extraídos del portal de GureGipuzkoa.
+
+```bash
+for FILE in details/*.json; do
+  BASENAME="${FILE##*/}"
+  ID="${BASENAME%.*}"
+
+  FACES="rekognition/faces/${ID}.json"
+  LABELS="rekognition/labels/${ID}.json"
+  DETAILS="details/${ID}.json"
+  SUMMARY="summaries/${ID}.json"
+  EXIF="exif/${ID}.json"
+
+  jq \
+    --slurpfile summary $SUMMARY \
+    --slurpfile exif $EXIF \
+    --slurpfile details $DETAILS \
+    --slurpfile faces $FACES \
+    --slurpfile labels $LABELS \
+    --null-input \
+    --compact-output \
+    '{
+      summary: $summary[0],
+      exif: $exif[0][0],
+      details: $details[0],
+      faces: $faces[0],
+      labels: $labels[0]
+    }' \
+    > "metadata/${ID}.json"
+done
+```
+
+Luego comprimirlos todos con gzip y quitarles la extensión.
+Después:
+
+```bash
+aws s3 sync metadata s3://guregipuzkoa/metadata/ --content-encoding 'gzip'
+```
+
+---
+
+Ahora hay que generar los índices. Para ello creamos tres ficheros temporales:
+
+```bash
+find details -type f -name '*.json' | while IFS= read -r file; do
+    base_name=$(basename "$file" .json)
+    author=$(jq --raw-output ".image_data.author" "$file")
+    municipio=$(jq --raw-output ".image_data.municipio" "$file")
+    photographer=$(jq --raw-output ".image_data.photographer" "$file")
+
+    echo "$base_name;$author" >> authors
+    echo "$base_name;$municipio" >> municipios
+    echo "$base_name;$photographer" >> photographers
+done
+```
+
+Generamos los índices así:
+
+```bash
+# Dependen de author
+grep 'BeasaingoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'OnatikoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'HondarribikoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'pasaiakoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'UrnietakoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'ZaldibiakoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'ZestoakoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'gurezarautz' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'ArantzaCuestaEzeiza' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'Kutxa_Fototeka' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+
+grep 'Etxaniz Apaolaza, Jabier' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep -E "Jone Larrañaga|Larrañaga, Jone" photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'Elosegi Aldasoro, Luis Mari' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'Elosegi Ansola, Polikarpo' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+
+# Dependen de photographer y luego, además, hay que filtrar por author
+grep 'Ojanguren, Indalecio' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: GipuzkoaKultura
+grep 'Elósegui Irazusta, Jesús' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: ARANZADI
+grep 'San Martin, Juan' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: GipuzkoaKultura
+grep '???niessen???' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: ARANZADI
+grep 'Koch Arruti, Sigfrido' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: GipuzkoaKultura
+grep 'Arlanzón, Andrés' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: OnatikoUdala
+grep 'Ugalde, Mari Paz' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: AntzuolakoUdala
+```
+
+---
+
+## convert 60857.jpeg -quality 65 -resize '2000x1500>' avif/60857.avif

@@ -65,7 +65,6 @@ stdin.on('end', async () => {
 
   let i = 0
   for (const id of idsToUpload) {
-    // ! FIXME: Hay algunos ficheros con extensión 'png'.
     const extension = 'jpeg'
 
     const filename = `${id}.${extension}`
@@ -87,9 +86,6 @@ stdin.on('end', async () => {
 
       await s3.send(command)
     } catch (exception) {
-      // ! FIXME: Mostrará una traza por `stdout` con los que no tengan 'jpeg',
-      // ! FIXME: porque no los encontrará en el sistema de ficheros. Pero solo
-      // ! FIXME: son dos. En la documentación explico cómo procesarlos a parte.
       console.log(exception)
     }
   }
