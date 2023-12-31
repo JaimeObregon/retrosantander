@@ -15,7 +15,7 @@ if (args.length !== 1) {
   process.exit(1)
 }
 
-// Algunas imágenes de guregipuzkoa.es no son válidas por diferentes razones y
+// Algunas imágenes de guregipuzkoa.eus no son válidas por diferentes razones y
 // decidimos excluirlas aquí del _sitemap_, para que no participen del resto de
 // pasos del proceso.
 const excludeIds = [
@@ -210,7 +210,7 @@ const excludeIds = [
   'https://www.guregipuzkoa.eus/photo/137825/', // 115×127
   'https://www.guregipuzkoa.eus/photo/142533/', // 115×127
 
-  // Imágenes demasiado grandes:
+  // Imágenes panorámicas que son demasiado grandes:
   'https://www.guregipuzkoa.eus/photo/141326/', // 11680×1788
   'https://www.guregipuzkoa.eus/photo/151391/', // 11756×1593
 ]

@@ -2,23 +2,23 @@
 
 [guregipuzkoa.eus](https://guregipuzkoa.eus) es el portal que aloja el archivo fotográfico de la Diputación Foral de Gipuzkoa. Es un desarrollo sobre WordPress que sustituyó hacia 2011 a uno previo, más completo y ambicioso.
 
-Para elaborar [guregipuzkoa.com](https://guregipuzkoa.com) he necesitado acceder a este archivo. Aunque cuento con autorización de la Diputación, me ha parecido más rápido y directo hacer _scraping_ de los contenidos del portal oficial que solicitar las credenciales de acceso al portal.
+Para elaborar [guregipuzkoa.com](https://guregipuzkoa.com) he necesitado acceder a este archivo. Aunque cuento con autorización de la Diputación, me ha parecido más rápido y directo hacer _scraping_ de los contenidos del portal oficial que solicitar las credenciales de acceso como administrador.
 
 A continuación documento el proceso de _scraping_ y manipulación de las fotografías y metadatos contenidos en guregipuzkoa.eus a que he llegado haciendo ingeniería inversa del portal. Este proceso comprende los pasos que se describen en este documento.
 
-La aplicación web está alojada en Netlify, pero el archivo fotográfico y todos sus metadatos se sirven desde Amazon S3. Para este fin he creado el _bucket_ `guregipuzkoa` en la región `eu-south-2` (Zaragoza), que tiene una menor latencia desde España.
+Mi proyecto guregipuzkoa.com está alojado en Netlify, pero el archivo fotográfico y todos sus metadatos se sirven desde Amazon S3. Para este fin he creado el _bucket_ `guregipuzkoa` en la región `eu-south-2` (Zaragoza), que tiene una menor latencia desde España.
 
 # 1. Obtención de todas las URL del portal
 
-Para descargar las fotografías del archivo primero es necesario obtener una lista con todas sus URL:
+Para descargar las fotografías del archivo primero es necesario obtener una lista con todas sus URL. Para ello:
 
-1. Accédase al _sitemap_ del portal:
+1. Accedo al _sitemap_ del portal:
 
    [https://www.guregipuzkoa.eus/sitemap-index.xml](https://www.guregipuzkoa.eus/sitemap-index.xml)
 
-   Enlaza a cuatro _sitemaps_ parciales. Son ficheros con XML mal formado, y por lo tanto no podemos procesarlos con herramientas para XML. Usaremos expresiones regulares.
+   Este recurso enlaza a cuatro _sitemaps_ parciales. Son ficheros con XML mal formado, y por lo tanto no podemos procesarlos con herramientas para XML. Usaremos expresiones regulares.
 
-2. Descárguense y concaténense todos los _sitemaps_:
+2. Descargo y concateno todos los _sitemaps_:
 
    ```console
    curl https://www.guregipuzkoa.eus/sitemap/sitemap-image\[1-4\].xml > sitemap.txt
@@ -26,28 +26,28 @@ Para descargar las fotografías del archivo primero es necesario obtener una lis
 
    Esto resulta en un fichero `sitemap.txt` de unos 100 MB.
 
-3. Procésese este fichero con el _script_ `parse_sitemap.mjs`:
+3. Proceso este fichero con el _script_ `parse_sitemap.mjs`:
 
    ```console
    ./parse_sitemap.mjs sitemap.txt
    ```
 
-   Este _script_ excluye de la salida algunos objetos cuyas fotografías están corruptas o no tienen las dimensiones suficientes, tal como se explica más adelante.
+   Este _script_ excluye de la salida algunos objetos cuyas fotografías están corrompidas o no tienen unas dimensiones adecuadas, tal como se explica más adelante.
 
 # 2. Descarga de las fotografías
 
-El proceso anterior devuelve una estructura JSON de unos 159000 elementos. Cada elemento tiene una propiedad `id` con la forma `https://www.guregipuzkoa.eus/photo/[n]/`, donde `[n]` es un identificador unívoco. Cada elemento tiene también una propiedad `image` que es la URL de la fotografía.
+El proceso anterior devuelve una estructura JSON de unos 159000 elementos. Cada elemento tiene una propiedad `id` con la forma `https://www.guregipuzkoa.eus/photo/[n]/`, donde he comprobado que `[n]` es un identificador unívoco. Cada elemento tiene también una propiedad `image` que es la URL de la fotografía.
 
 Para descargar sucesivamente todas las fotografías del portal:
 
-```bash
+```console
 mkdir originals
 ./fetch_photos.sh sitemap.txt originals
 ```
 
 Siendo el primer argumento la ruta al fichero `sitemap.xml` y el segundo el directorio en el que se guardarán las fotografías descargadas.
 
-El _script_ omite la descarga de aquellas fotografías que ya existan en el directorio de destino, de modo que es seguro interrumpir la descarga y retomarla sin más que correr nuevamente el _script_.
+El _script_ omite la descarga de aquellas que ya existan en el directorio de destino, de modo que es seguro interrumpir la descarga y retomarla sin más que correr nuevamente el _script_.
 
 También asigna la extensión `.jpeg` a todos los ficheros descargados. Esto se revisa —y, cuando es necesario, corrige— en el paso siguiente.
 
@@ -57,7 +57,7 @@ La descarga puede llevar más de 30 horas y el archivo fotográfico así descarg
 
 # 3. Asignación de extensión
 
-No podemos confiar en las extensiones de los ficheros citados en el _sitemap_, porque refieren indistintamente `jpg`, `JPG` o `jpeg`. O porque un par de fotografías están en formato PNG pero tienen extensión `jpg`. O porque, sencillamente, no es prudente asumir que las extensiones coincidan siempre con el formato del archivo. Así que el paso anterior descarga asigna a todos los ficheros la extensión `.jpeg` y ahora es preciso comprobarla y renombrar los ficheros que sean de otro tipo:
+No podemos confiar en las extensiones de los ficheros citados en el _sitemap_, porque refieren indistintamente `jpg`, `JPG` o `jpeg`. O porque un par de fotografías están en formato PNG pero tienen extensión `jpg`. O porque, sencillamente, no es prudente asumir que las extensiones concuerden siempre con el formato del archivo. Así que el paso anterior descarga asigna a todos los ficheros la extensión `.jpeg` y ahora es preciso comprobar cada uno y renombrar aquellos que sean de otro tipo:
 
 ```bash
 for i in *; do
@@ -67,20 +67,20 @@ for i in *; do
 done
 ```
 
-Y convertimos a formato JPEG las dos imágenes que están en otro formato:
+Esto devuelve solo dos ficheros con extensión incorrecta, que son dos imágenes en formato PNG. Los convertimos manualmente a formato JPEG:
 
 ```bash
-convert 154344.png 154344.jpeg && rm 154344.png
-convert 154387.png 154387.jpeg && rm 154387.png
+mv 154344.jpeg 154344.png && convert 154344.png 154344.jpeg && rm 154344.png
+mv 154387.jpeg 154387.png && convert 154387.png 154387.jpeg && rm 154387.png
 ```
 
 # 4. Filtrado de fotografías corruptas e inválidas
 
-Algunas fotografías del portal oficial están [corruptas](https://www.guregipuzkoa.eus/photo/104194/) o [incompletas](https://www.guregipuzkoa.eus/photo/153281). Otras tienen [una resolución demasiado baja](https://www.guregipuzkoa.eus/photo/45861/) como para ser utilizadas.
+Algunas fotografías del portal oficial están [corruptas](https://www.guregipuzkoa.eus/photo/104194/) o [incompletas](https://www.guregipuzkoa.eus/photo/153281). Otras son panorámicas o tienen [una resolución demasiado baja](https://www.guregipuzkoa.eus/photo/45861/) como para ser utilizadas.
 
-Se hace preciso detectar estas imágenes para luego incorporarlas manualmente a la lista de los `id` en `parse_sitemap.mjs` que son ignorados al procesar el _sitemap_.
+Se hace preciso detectar estas imágenes para luego incorporarlas manualmente a la lista de los `id` en `parse_sitemap.mjs` que son ignorados al procesar el _sitemap_. Estas imágenes, menos de doscientas, quedarán así excluidas del nuevo portal.
 
-El _script_ `check_images.sh`devolverá por _stdout_ cuáles son. Tómense e incorpórense a la lista de exclusión en `parse_sitemap.mjs`.
+El _script_ `check_images.sh`devolverá por _stdout_ cuáles son. Las incorporamos manualmente a la lista de exclusión en `parse_sitemap.mjs` y las eliminamos del sistema de ficheros.
 
 # 5. Extracción de los metadatos Exif
 
@@ -100,13 +100,7 @@ for FILE in *; do
 done
 ```
 
-Los ficheros JSON así extraídos ocupan unos 700 MB. Conviene comprimirlos con gzip para reducir los costes de alojamiento y transferencia en S3:
-
-```bash
-for FILE in *.json; do
-  cp "$FILE" "$FILE.tmp" && gzip "$FILE.tmp" && mv "$FILE.tmp.gz" "$FILE"
-done
-```
+Los ficheros JSON así generados ocupan unos 700 MB.
 
 # 6. Descarga de los metadatos de GureGipuzkoa
 
@@ -124,7 +118,7 @@ https://www.guregipuzkoa.eus/nextgen-pro-lightbox-gallery/www.guregipuzkoa.eus/?
 
 Si alguno de los `id` facilitados no corresponde con ninguna fotografía, el servidor devuelve una respuesta con contenidos que no están vacíos.
 
-Para descargar todos los metadatos, pásese el _sitemap_ interpretado por `stdin` a `fetch_metadata.mjs`. Este _script_ descargará los metadatos de las fotografías referenciadas en el _sitemap_ y los guardará como ficheros JSON en la ruta que reciba como primer parámetro:
+Para descargar todos los metadatos, paso el _sitemap_ interpretado por `stdin` a `fetch_metadata.mjs`. Este _script_ descarga los metadatos de las fotografías referenciadas en el _sitemap_ y los guardará como ficheros JSON en la ruta que reciba como primer parámetro:
 
 ```bash
 mkdir json
@@ -137,7 +131,7 @@ Las respuestas JSON así descargadas ocupan 738 MB.
 
 He desplegado una función en Amazon Lambda que transcodifica las imágenes al formato optimizado AVIF. Se activa automáticamente mediante un disparador (_trigger_) que [he configurado](https://docs.aws.amazon.com/AmazonS3/latest/userguide/enable-event-notifications.html) en el _bucket_ `guregipuzkoa-temp` y que aplica la función cuando se deposita un objeto en la ruta `/images` de dicho _bucket_. Esta función lambda hace lo siguiente:
 
-1. Toma la imagen subida al _bucket_ `guregipuzkoa_temp` y la transcodifica a formato AVIF, optimizándola en tamaño y recortándola si es preciso para reducir sus tiempos de descarga, y la deposita en la ruta adecuada del _bucket_ `guregipuzkoa` (`/optimized/`).
+1. Toma la imagen subida al _bucket_ `guregipuzkoa-temp` y la transcodifica a formato AVIF, optimizándola en tamaño y recortándola si es preciso para reducir sus tiempos de descarga, y la deposita en la ruta adecuada del _bucket_ `guregipuzkoa` (`/optimized/`).
 
 1. Copia la imagen original a la ruta adecuada del _bucket_ de destino `guregipuzkoa` (`/originals/images/`), para su conservación.
 
@@ -153,39 +147,28 @@ El _script_ `upload.mjs` realiza la subida al bucket `guregipuzkoa-temp` de S3, 
 
 Este _script_ lista todos los objetos almacenados en la ruta `/originals/images/` del _bucket_ `guregipuzkoa` y los compara con los `id` obtenidos del _sitemap_ que recibe por `stdin`, cargando a la ruta `/images` de `guregipuzkoa-temp` aquellos faltantes, para que se dispare así la función lambda que los toma de allí, guarda transcodificados en la ruta `/optimized/` del _bucket_ `guregipuzkoa`, y mueve después el fichero cargado original a la ruta `/originals/images/`, de este mismo _bucket_.
 
-Este _script_ tiene dos defectos:
-
-1. La ruta del directorio contenedor de los ficheros a subir está _hardcoded_ en el código.
-
-1. Asume incorrectamente que todos los ficheros tienen extensión `.jpeg`, lo cual es correcto para todos los ficheros de GureGipuzkoa (véase el epígrafe correspondiente a la asignación de extensiones de esta documentación) **salvo para dos**.
-
-   Para cargarlos, súbanse primero y antes que nada:
-
-   ```bash
-   ./parse_sitemap.mjs sitemap.txt | jq 'map(select(.image|test(".png$")))' | ./upload.mjs
-   ```
-
 Al final del proceso solo quedan en `s3://guregipuzkoa-temp/images/` los ficheros que la función lambda no ha podido transcodificar, que son en torno a un centenar. Un vistazo a los _logs_ de la función lambda en AWS CloudWatch muestra, básicamente, dos razones: `Error: VipsJpeg: Premature end of input file` y `Task timed out`.
 
-Me los bajo:
+Decido descargarlos para ver cuáles son:
 
-```console
+````console
 aws s3 sync s3://guregipuzkoa-temp guregipuzkoa-temp
-```
+
+Y convertirlos yo en local:
 
 ```console
-mkdir recompressed
-cd images
-mogrify -resize '2000>' -path ../recompressed *
-```
+convert xxx.jpeg -quality 65 -resize '2000x1500>' optimized/xxx.avif
+````
+
+Para subirlos manualmente después.
 
 # 8. Procesado con visión artificial
 
 Proceso cada imagen con las API `detect-faces` y `detect-lables` de AWS Rekognition.
 
-En 2022 ya procesé de esta manera, para Retrogipuzkoa, la colección de Jesús Elósegui. Podría reaprovechar ese trabajo y ahorrar así unos 30 euros en costes de AWS, pero decido reprocesarla porque el modelo de visión artificial de Amazon ha sido actualizado en este tiempo y proporciona ahora resultados mejores. También porque ello me evitará hacer un renombrado complejo de los ficheros de Retrogipuzkoa para adaptarlos a la nueva nomenclatura que he adoptado en GureGipuzkoa.
+En 2022 ya procesé de esta manera, para Retrogipuzkoa.com, la colección de Jesús Elósegui. Podría reaprovechar ese trabajo y ahorrar así unos 30 euros en costes de AWS, pero decido reprocesarla porque el modelo de visión artificial de Amazon ha sido actualizado en este tiempo y proporciona ahora resultados mejores. También porque ello me evitará hacer un renombrado complejo de los ficheros de Retrogipuzkoa para adaptarlos a la nueva nomenclatura que he adoptado en GureGipuzkoa.
 
-El _bucket_ `guregipuzkoa` está en la región `eu-south-2` (España). Rekognition es más barato en `eu-west-1`, así que copiamos el archivo fotográfico a un nuevo _bucket_ temporal creado en esta región:
+El _bucket_ `guregipuzkoa` está en la región `eu-south-2` (España). Rekognition es más barato en `eu-west-1`, así que copio el archivo fotográfico a un nuevo _bucket_ temporal creado en esta región:
 
 ```console
 aws s3 sync s3://guregipuzkoa/originals/images/ s3://guregipuzkoa-rekognition/images/ --source-region eu-south-2 --region eu-west-1
@@ -201,41 +184,44 @@ find originals/images -type f | xargs -n 1 -P 8 -I {} ./process_image.sh {}
 
 Este proceso conlleva varios días y cuesta unos 350 euros.
 
-La lista de etiquetas reconocidas por Rekognition pueden descargarse desde [Detecting objects and concepts](https://docs.aws.amazon.com/rekognition/latest/dg/labels.html). Las versiones 2 y 3 las he descargado y guardado en [`private/guregipuzkoa/varios``](private/guregipuzkoa/varios) Esporádicamente Amazon actualiza el listado.
+La lista de etiquetas reconocidas por Rekognition pueden descargarse desde [Detecting objects and concepts](https://docs.aws.amazon.com/rekognition/latest/dg/labels.html). Las versiones 2 y 3 las he descargado y guardado en [`private/guregipuzkoa/varios`](private/guregipuzkoa/varios) Esporádicamente Amazon actualiza el listado.
 
-Finalizado el proceso, borramos los ficheros vacíos o con un solo caracter:
+Finalizado el proceso, busco ficheros vacíos, demasiado pequeños o que no contengan JSON válido, y los reproceso.
 
-```bash
-find . -type f -size "1c" -delete
-```
+# 9. Construcción de los ficheros de metadatos
 
-- borrar luego los que no contengan JSON válido o estén vacíos.
-
-# 9. [generación y carga de la ficha de cada imagen]
-
----
-
-## find . -type f -exec bash -c 'if [ ! -s "$0" ] || ! jq empty "$0" > /dev/null 2>&1; then echo "$0"; fi' {} \;
-
----
-
-- las imágenes repetidas en el sitemap (sort -n)
-- las imágenes duplicadas (md5sum?) -> no había
-
----
-
-parse_sitemap.mjs ../sitemap.txt > /tmp/sitemap.json
+Extraigo a un directorio `summaries`, para cada fotografía del archivo, sus metadatos contenidos en el _sitemap_:
 
 ```bash
-jq -c '.[]' /tmp/sitemap.json | while IFS= read -r json; do
+parse_sitemap.mjs ../sitemap.txt > sitemap.json
+
+mkdir summaries
+
+jq -c '.[]' sitemap.json | while IFS= read -r json; do
   id=$(jq -r '.id' <<< "$json" | sed -n 's|.*/photo/\([0-9]*\)/.*|\1|p')
   printf '%s' "$json" > "summaries/$id.json"
 done
 ```
 
-Genera los ficheros de metadatos, combinando los metadatos Exif, los resultados de la visión artificial y los metadatos originales extraídos del portal de GureGipuzkoa.
+Ahora tengo, para cada imagen, cinco ficheros JSON:
+
+- `exif`, con los metadatos EXIF
+- `details`, con los detalles descargados del portal oficial
+- `summary`, con los detalles obtenidos del _sitemap_
+- `faces`, generado por la visión artificial
+- `labels`, generados por la visión artificial
+
+Cada uno de estos cinco directorios contiene tantos ficheros JSON como fotografías hay en el archivo. En caso de duda, puedo comprobar que todos los ficheros de cualquiera de estos directorios contiene JSON válido:
+
+```console
+find . -type f -exec bash -c 'if [ ! -s "$0" ] || ! jq empty "$0" > /dev/null 2>&1; then echo "$0"; fi' {} \;
+```
+
+Genero ahora un único fichero de metadatos por cada fotografía, combinando los cinco ficheros JSON existentes para cada una en una única estructura JSON que salvo en el directorio `metadata`:
 
 ```bash
+mkdir metadata
+
 for FILE in details/*.json; do
   BASENAME="${FILE##*/}"
   ID="${BASENAME%.*}"
@@ -265,14 +251,31 @@ for FILE in details/*.json; do
 done
 ```
 
-Luego comprimirlos todos con gzip y quitarles la extensión.
-Después:
+Luego comprimo todos estos ficheros con gzip y les quito la extensión `.gz`:
+
+```console
+find . -type f -print0 | xargs -0 gzip
+find . -type f -name '*.json.gz' -exec rename 's/\.gz$//' {} +
+```
+
+Después los subo a S3, con la precaución de informar de la compresión:
 
 ```bash
 aws s3 sync metadata s3://guregipuzkoa/metadata/ --content-encoding 'gzip'
 ```
 
+# 10. Construcción de los índices
+
 ---
+
+```console
+parse_sitemap.mjs ../sitemap.txt | jq '.[] | select(.image | test("/playant/")) | .id' | cut -d "/" -f 5
+```
+
+---
+
+- las imágenes repetidas en el sitemap (sort -n)
+- las imágenes duplicadas (md5sum?) -> no había
 
 Ahora hay que generar los índices. Para ello creamos tres ficheros temporales:
 
@@ -318,7 +321,3 @@ grep 'Koch Arruti, Sigfrido' photographers | cut -d ';' -f 1 | ../../../scripts/
 grep 'Arlanzón, Andrés' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: OnatikoUdala
 grep 'Ugalde, Mari Paz' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: AntzuolakoUdala
 ```
-
----
-
-## convert 60857.jpeg -quality 65 -resize '2000x1500>' avif/60857.avif
