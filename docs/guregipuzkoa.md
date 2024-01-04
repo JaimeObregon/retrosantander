@@ -266,6 +266,10 @@ aws s3 sync metadata s3://guregipuzkoa/metadata/ --content-encoding 'gzip'
 
 # 10. Construcción de los índices
 
+```console
+find metadata -type f -print0 | xargs -0 ../../../scripts/guregipuzkoa/index.mjs
+```
+
 ---
 
 ```console
