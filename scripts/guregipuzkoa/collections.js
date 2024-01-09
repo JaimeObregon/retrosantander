@@ -229,7 +229,7 @@ const photographers = [
   },
   {
     value: 'Patxi Goikoetxea',
-    name: 'Goikoetxea, Patxi',
+    name: 'Goikoetxea Alkorta, Patxi',
   },
   {
     value: 'Bittor Bolinaga',
@@ -849,7 +849,7 @@ const photographers = [
   },
   {
     value: 'jm pemán',
-    name: null,
+    name: 'Pemán, Jesus Mari',
   },
   {
     value: 'Zubimendi Fernandez, Nerea',
@@ -945,7 +945,7 @@ const photographers = [
   },
   {
     value: 'Pemán',
-    name: 'Pemán',
+    name: 'Pemán, Jesus Mari',
   },
   {
     value: 'Marcos Sodupe',
@@ -961,7 +961,7 @@ const photographers = [
   },
   {
     value: 'Juan Antonio Saez',
-    name: 'Juan Antonio Saez',
+    name: 'Sáez, Juan Antonio',
   },
   {
     value: 'José Latova Fernández',
@@ -977,7 +977,7 @@ const photographers = [
   },
   {
     value: 'Esteban Fuentes Pecotxe',
-    name: 'Esteban Fuentes Pecotxe',
+    name: 'Fuentes Pecotxe, Esteban',
   },
   {
     value: 'Bravo, Tomás',
@@ -1033,7 +1033,7 @@ const photographers = [
   },
   {
     value: 'Elosegi, Jesus',
-    name: 'Elosegi, Jesus',
+    name: 'Elósegui Irazusta, Jesús',
   },
   {
     value: 'Ataungo udala',
@@ -1541,7 +1541,7 @@ const photographers = [
   },
   {
     value: 'Jone Larrañaga',
-    name: 'Jone Larrañaga',
+    name: 'Larrañaga, Jone',
   },
   {
     value: 'Hernández',
@@ -1705,27 +1705,27 @@ const photographers = [
   },
   {
     value: 'Jose Luis Perez Herreros',
-    name: 'Jose Luis Perez Herreros',
+    name: 'Perez Herreros, José Luis',
   },
   {
     value: 'Hilario Vaquero Gonzalez',
-    name: 'Hilario Vaquero Gonzalez',
+    name: 'Vaquero González, Hilario',
   },
   {
     value: 'Felix Sukia',
-    name: 'Felix Sukia',
+    name: 'Sukia, Felix',
   },
   {
     value: 'Asurabarrena, Fatima',
-    name: 'Asurabarrena, Fatima',
+    name: 'Asurabarrena, Fátima',
   },
   {
     value: 'aitor',
-    name: 'aitor',
+    name: null,
   },
   {
     value: 'Zarauzko Udalaren Argazki Artxiboa',
-    name: 'Zarauzko Udalaren Argazki Artxiboa',
+    name: null,
   },
   {
     value: 'Yaben, Marisol',
@@ -1941,23 +1941,23 @@ const photographers = [
   },
   {
     value: 'Ana Rosa Castander',
-    name: 'Ana Rosa Castander',
+    name: 'Castander Santana, Ana Rosa',
   },
   {
     value: 'Amaia Agirre Zubeldia',
-    name: 'Amaia Agirre Zubeldia',
+    name: 'Agirre Zubeldia, Amaia',
   },
   {
     value: 'Agustin Azkona Katxo',
-    name: 'Agustin Azkona Katxo',
+    name: 'Azkona Katxo, Agustin',
   },
   {
     value: 'rafa espada',
-    name: 'rafa espada',
+    name: 'Espada Rafa',
   },
   {
     value: 'luistxo eta marije',
-    name: 'luistxo eta marije',
+    name: null,
   },
   {
     value: 'luisazurutuza',
@@ -1965,19 +1965,19 @@ const photographers = [
   },
   {
     value: 'jlastras',
-    name: 'jlastras',
+    name: null,
   },
   {
     value: 'flyschcom',
-    name: 'flyschcom',
+    name: null,
   },
   {
     value: 'Zarauzko udaleko kultura departamentua',
-    name: 'Zarauzko udaleko kultura departamentua',
+    name: null,
   },
   {
     value: 'Zarauzko Udala',
-    name: 'Zarauzko Udala',
+    name: null,
   },
   {
     value: 'Vazquez, Adolfo',
@@ -1985,11 +1985,11 @@ const photographers = [
   },
   {
     value: 'Txilibutxof',
-    name: 'Txilibutxof',
+    name: null,
   },
   {
     value: 'Tomas',
-    name: 'Tomas',
+    name: null,
   },
   {
     value: 'Sardon, Juantxo',
@@ -1997,7 +1997,7 @@ const photographers = [
   },
   {
     value: 'Rodrigo, Oscar',
-    name: 'Rodrigo, Oscar',
+    name: 'Rodrigo, Óscar',
   },
   {
     value: 'Rey, Unai',
@@ -2005,7 +2005,7 @@ const photographers = [
   },
   {
     value: 'Peio',
-    name: 'Peio',
+    name: null,
   },
   {
     value: 'Patxi Franco',
@@ -2017,11 +2017,11 @@ const photographers = [
   },
   {
     value: 'Morrosko',
-    name: 'Morrosko',
+    name: null,
   },
   {
     value: 'Mirene',
-    name: 'Mirene',
+    name: null,
   },
   {
     value: 'Mercedes López',
@@ -2029,35 +2029,35 @@ const photographers = [
   },
   {
     value: 'Llavori, Juan Ramon',
-    name: 'Llavori, Juan Ramon',
+    name: 'Llavori, Juan Ramón',
   },
   {
     value: 'Karmelo',
-    name: 'Karmelo',
+    name: null,
   },
   {
     value: 'Julen',
-    name: 'Julen',
+    name: null,
   },
   {
     value: 'Juan Mari Ibarzabal Alberdi',
-    name: 'Juan Mari Ibarzabal Alberdi',
+    name: 'Ibarzabal Alberdi, Juan María',
   },
   {
     value: 'Juan Luis Elizaran',
-    name: 'Juan Luis Elizaran',
+    name: 'Elizaran, Juan Luis',
   },
   {
     value: 'Juan Jose Armendariz',
-    name: 'Juan Jose Armendariz',
+    name: 'Armendariz, Juan José',
   },
   {
     value: 'Juan Antonio Merino',
-    name: 'Juan Antonio Merino',
+    name: 'Merino, Juan Antonio',
   },
   {
     value: 'Jose Luis Perez',
-    name: 'Jose Luis Perez',
+    name: 'Perez, José Luis',
   },
   {
     value: 'Jose Antonio Mujika Alustiza',
@@ -2269,7 +2269,7 @@ const photographers = [
   },
   {
     value: 'Juanjo Armendariz',
-    name: 'Armendáriz, Juanjo',
+    name: 'Armendáriz, Juan José',
   },
   {
     value: 'Juan Joxe Agirre Landa',
@@ -2309,7 +2309,7 @@ const photographers = [
   },
   {
     value: 'Ibarzabal, Juan Mª',
-    name: 'Ibarzabal, Juan María',
+    name: 'Ibarzabal Alberdi, Juan María',
   },
   {
     value: 'Heliodoro Etxeberria',
@@ -2337,27 +2337,27 @@ const photographers = [
   },
   {
     value: 'Esteban Fuentes',
-    name: 'Esteban Fuentes',
+    name: 'Fuentes Pecotxe, Esteban',
   },
   {
     value: 'Enara Rodrigitz',
-    name: 'Enara Rodrigitz',
+    name: 'Rodrigitz, Enara',
   },
   {
     value: 'Elena Aranegui',
-    name: 'Elena Aranegui',
+    name: 'Aranegui, Elena',
   },
   {
     value: 'Eibarko La Salle Irratia',
-    name: 'Eibarko La Salle Irratia',
+    name: null,
   },
   {
     value: 'Diario Vasco',
-    name: 'Diario Vasco',
+    name: null,
   },
   {
     value: 'Delboy, Marcel (Bordeaux)',
-    name: 'Delboy, Marcel (Bordeaux)',
+    name: 'Delboy, Marcel',
   },
   {
     value: 'Dávila, Bizente',
@@ -2365,15 +2365,15 @@ const photographers = [
   },
   {
     value: 'Dávila, B.',
-    name: 'Dávila, B.',
+    name: 'Dávila, Bizente',
   },
   {
     value: 'David Aprea',
-    name: 'David Aprea',
+    name: 'Aprea, David',
   },
   {
     value: 'Carlos Madrazo',
-    name: 'Carlos Madrazo',
+    name: 'Madrazo, Carlos',
   },
   {
     value: 'Bessan, M.',
@@ -2381,11 +2381,11 @@ const photographers = [
   },
   {
     value: 'Beatriz Ruiz',
-    name: 'Beatriz Ruiz',
+    name: 'Ruiz, Beatriz',
   },
   {
     value: 'Beatriz Manjón Askasibar',
-    name: 'Beatriz Manjón Askasibar',
+    name: 'Manjón Askasibar, Beatriz',
   },
   {
     value: 'Bausac y Sobº',
@@ -2397,15 +2397,15 @@ const photographers = [
   },
   {
     value: 'Antton Rebollar',
-    name: 'Antton Rebollar',
+    name: 'Rebollar, Antton',
   },
   {
     value: 'Alberto Villar',
-    name: 'Alberto Villar',
+    name: 'Villar, Alberto',
   },
   {
     value: 'Agencia Keystone',
-    name: 'Agencia Keystone',
+    name: null,
   },
   {
     value: 'Aduriz, Karmele',
@@ -2433,31 +2433,31 @@ const photographers = [
   },
   {
     value: 'Zarauzko udaleko kultura deparmtamentua',
-    name: 'Zarauzko udaleko kultura deparmtamentua',
+    name: null,
   },
   {
     value: 'Zarauzko udaleko kultur departamentua',
-    name: 'Zarauzko udaleko kultur departamentua',
+    name: null,
   },
   {
     value: 'Zarauzko udalaren kultura departamentua',
-    name: 'Zarauzko udalaren kultura departamentua',
+    name: null,
   },
   {
     value: 'Zarauzko kultura',
-    name: 'Zarauzko kultura',
+    name: null,
   },
   {
     value: 'Zarauzko Udaleko Kultur Departamentua',
-    name: 'Zarauzko Udaleko Kultur Departamentua',
+    name: null,
   },
   {
     value: 'Zarautz Kirol Elkartea  ZAST saskibaloiko atala',
-    name: 'Zarautz Kirol Elkartea  ZAST saskibaloiko atala',
+    name: null,
   },
   {
     value: 'Zarauko udala kultura departamentua',
-    name: 'Zarauko udala kultura departamentua',
+    name: null,
   },
   {
     value: 'Villatte, A. (Tarbes)',
@@ -2485,7 +2485,7 @@ const photographers = [
   },
   {
     value: 'Rosa Santos',
-    name: 'Rosa Santos',
+    name: 'Santos, Rosa',
   },
   {
     value: 'Regillaga Otaño, Ekaitz',
@@ -2621,7 +2621,7 @@ const photographers = [
   },
   {
     value: 'LUISA ZURUTUZA',
-    name: 'LUISA ZURUTUZA',
+    name: 'Zurutuza, Luisa',
   },
   {
     value: 'Korte Unanue, Iñigo',
@@ -2629,11 +2629,11 @@ const photographers = [
   },
   {
     value: 'Kezka Dantza Taldea Eibar',
-    name: 'Kezka Dantza Taldea Eibar',
+    name: null,
   },
   {
     value: 'Karmele Zoilo',
-    name: 'Karmele Zoilo',
+    name: 'Zoilo, Karmele',
   },
   {
     value: 'Juan Manuel Serna Portugal',
@@ -2645,27 +2645,27 @@ const photographers = [
   },
   {
     value: 'Jordi Rojas',
-    name: 'Jordi Rojas',
+    name: 'Rojas, Jordi',
   },
   {
     value: 'Jordi Diaz',
-    name: 'Jordi Diaz',
+    name: 'Díaz, Jordi',
   },
   {
     value: 'Jon Larrañaga',
-    name: 'Jon Larrañaga',
+    name: 'Larrañaga, Jon',
   },
   {
     value: 'Jesus Mari Pemán',
-    name: 'Jesus Mari Pemán',
+    name: 'Pemán, Jesus Mari',
   },
   {
     value: 'Jesus Gil Hernandez',
-    name: 'Jesus Gil Hernandez',
+    name: 'Gil Hernández, Jesús',
   },
   {
     value: 'Javier Bengoa',
-    name: 'Javier Bengoa',
+    name: 'Bengoa, Javier',
   },
   {
     value: 'JakeAndreu',
@@ -2965,7 +2965,7 @@ const photographers = [
   },
   {
     value: 'jm peman',
-    name: null,
+    name: 'Pemán, Jesus Mari',
   },
   {
     value: 'imanol lasa',
@@ -3101,11 +3101,11 @@ const photographers = [
   },
   {
     value: 'Roisin, L. (Barcelona)',
-    name: 'Roisin, L.',
+    name: 'Roisin, Lucien',
   },
   {
     value: 'Roisin, L.',
-    name: 'Roisin, L.',
+    name: 'Roisin, Lucien',
   },
   {
     value: 'Roig de Lluis, L.',
@@ -3133,7 +3133,7 @@ const photographers = [
   },
   {
     value: 'Portela',
-    name: 'Portela',
+    name: null,
   },
   {
     value: 'Pliego, Emilio',
@@ -3161,7 +3161,7 @@ const photographers = [
   },
   {
     value: 'Patxi Goikortxea',
-    name: 'Goikortxea, Patxi',
+    name: 'Goikoetxea Alkorta, Patxi',
   },
   {
     value: 'Patxi Goiekoetxea',
@@ -3177,7 +3177,7 @@ const photographers = [
   },
   {
     value: 'PEMAN',
-    name: null,
+    name: 'Pemán, Jesus Mari',
   },
   {
     value: 'Ouvrard',
@@ -3385,7 +3385,7 @@ const photographers = [
   },
   {
     value: 'Koldo Ibañez',
-    name: 'Ibáñez. Koldo',
+    name: 'Ibáñez, Koldo',
   },
   {
     value: 'Koldo Camacho Alconada',
@@ -3437,7 +3437,7 @@ const photographers = [
   },
   {
     value: 'Jesús Elósegui Irazusta',
-    name: 'Jesús Elósegui Irazusta',
+    name: 'Elósegui Irazusta, Jesús',
   },
   {
     value: 'Jaume Porschista',
@@ -3485,7 +3485,7 @@ const photographers = [
   },
   {
     value: 'Indalezio Ojanguren',
-    name: 'Indalezio Ojanguren',
+    name: 'Ojanguren, Indalecio',
   },
   {
     value: 'Iñaki Gonzalez',
@@ -3493,7 +3493,7 @@ const photographers = [
   },
   {
     value: 'Iban Bolinaga',
-    name: 'Iban Bolinaga',
+    name: 'Bolinaga, Iban',
   },
   {
     value: 'I.C. Uriarte',
@@ -3681,7 +3681,7 @@ const photographers = [
   },
   {
     value: 'Emilio Albizu',
-    name: 'Emilio Albizu',
+    name: 'Albizu, Emilio',
   },
   {
     value: 'Elcé',
@@ -3789,7 +3789,7 @@ const photographers = [
   },
   {
     value: 'Badihardugu Euskara Elkartea',
-    name: 'Badihardugu Euskara Elkartea',
+    name: null,
   },
   {
     value: 'Asis García',
@@ -3821,7 +3821,7 @@ const photographers = [
   },
   {
     value: 'Andoni Lizarralde 2',
-    name: 'Andoni Lizarralde 2',
+    name: 'Lizarralde, Andoni',
   },
   {
     value: 'Ana Zabala',
@@ -3829,7 +3829,7 @@ const photographers = [
   },
   {
     value: 'Ana Rosa Castander Santana',
-    name: 'Ana Rosa Castander Santana',
+    name: 'Castander Santana, Ana Rosa',
   },
   {
     value: 'Amaia Otazo',
@@ -4051,7 +4051,7 @@ const authors = [
   },
   {
     value: 'markelolano',
-    name: 'markelolano',
+    name: 'Markel Olano',
   },
   {
     value: 'realjab',
@@ -4263,7 +4263,7 @@ const authors = [
   },
   {
     value: 'jlelizaran',
-    name: 'jlelizaran',
+    name: 'Elizaran, Juan Luis',
   },
   {
     value: 'borthuzai',
@@ -4439,7 +4439,7 @@ const authors = [
   },
   {
     value: 'joseluisechezarreta',
-    name: 'José Luis Echezarreta',
+    name: 'Echezarreta, José Luis',
   },
   {
     value: 'jasonegar',

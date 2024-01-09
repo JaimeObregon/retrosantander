@@ -96,7 +96,6 @@ args.forEach((input) => {
   //   indices.push(`???/over_75`)
   // }
 
-  // ! En scripts, renombrar todos los mjs a js ???
   // ! photographers/elosegi_jesus tiene muchísimos menos que collections/jesus_elosegui.json
 
   if (municipio) {
