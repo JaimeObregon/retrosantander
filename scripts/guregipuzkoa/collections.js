@@ -408,7 +408,7 @@ const photographers = [
     name: null,
   },
   {
-    value: 'López, Candi',
+    value: 'López, Candy',
     name: 'López, Candi',
   },
   {
@@ -4561,7 +4561,7 @@ const authors = [
 
 // Municipios. Los he revisado todos, tratando de normalizar los nombres (de
 // «Tel Abib» o «Biena» a «Tel Aviv» y «Viena»…). También he añadido la clave
-// «parent» a cada uno.
+// «parents» a cada uno.
 const locations = [
   {
     value: 'DONOSTIA-SAN SEBASTIAN',

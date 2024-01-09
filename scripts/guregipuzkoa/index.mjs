@@ -1,49 +1,14 @@
 #!/usr/bin/env node
 
 import fs from 'fs'
+import { decode, slugize } from '../../httpdocs/modules/strings.js'
 import {
   photographers,
   authors,
   locations,
   folders,
   collections,
-} from './collections.mjs'
-
-// Escapa una cadena para interpolarla de manera segura en HTML
-const escape = (string) =>
-  string.replace(
-    /[&<>'"]/g,
-    (tag) =>
-      ({
-        '&': '&amp;',
-        '<': '&lt;',
-        '>': '&gt;',
-        "'": '&#39;',
-        '"': '&quot;',
-      }[tag])
-  )
-
-// Tokeniza una cadena. Véase https://es.stackoverflow.com/a/62032.
-// `Manuel   González-Mesones` > `manuel gonzalez mesones`.
-// `Camión en Oñati` > `camion en oñati`.
-const normalize = (string) => {
-  return string
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(
-      /([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+/gi,
-      '$1'
-    )
-    .normalize()
-    .replace(/[^a-z0-9ñç ]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
-}
-
-// Devuelve el _slug_ de una cadena.
-// `Ayuntamiento de Donostia/San Sebastián` > `ayuntamiento_de_donostia_san_sebastian`
-// `Leintz-Gatzaga` > `leintz_gatzaga`
-const slugize = (string) => normalize(string).replaceAll(' ', '_')
+} from './collections.js'
 
 // Fechas que aparecen en los metadatos de GureGipuzkoa y que no son válidas
 // Pero que podemos —más o menos— arreglar.
@@ -88,7 +53,7 @@ const dates = [
 
 const minConfidence = 80
 
-// La fotografía se popularizó a partir de 1839.
+// La fotografía se popularizó a partir de 1839. Antes, no puede haber nada.
 const dateRegex = /^(18[3-9]\d|19\d{2}|20[0-1]\d|202[0-3])(-\d{2}-\d{2})?$/
 
 const args = process.argv.slice(2)
@@ -98,8 +63,10 @@ if (args.length < 1) {
   process.exit(1)
 }
 
-args.forEach((file) => {
-  const contents = fs.readFileSync(file).toString()
+const _indices = {}
+
+args.forEach((input) => {
+  const contents = fs.readFileSync(input).toString()
   const json = JSON.parse(contents)
 
   const indices = []
@@ -129,8 +96,8 @@ args.forEach((file) => {
   //   indices.push(`???/over_75`)
   // }
 
-  // poder combinar filtros? "faces/3 + collections/oñatiko_udala + decades/2000" ???
-  // recortar instances de 'faces' y 'labels' ???
+  // ! En scripts, renombrar todos los mjs a js ???
+  // ! photographers/elosegi_jesus tiene muchísimos menos que collections/jesus_elosegui.json
 
   if (municipio) {
     const found = locations.find(({ value }) => value === municipio)
@@ -138,9 +105,11 @@ args.forEach((file) => {
       throw new Error(`El lugar "${municipio}" no está en el catálogo.`)
     }
 
-    const slug = slugize(found.name)
+    const places = [found.name, ...found.parents]
+      .map(slugize)
+      .map((slug) => `places/${slug}`)
 
-    indices.push(`places/${slug}`)
+    indices.push(...places)
   }
 
   if (fecha) {
@@ -149,11 +118,13 @@ args.forEach((file) => {
     const date = found?.date ?? fecha
     const year = date.substring(0, 4)
     const decade = found?.decade ?? `${year.substring(0, 3)}0`
+    const century = Math.ceil(year / 100)
 
     const valid = dateRegex.test(date)
     if (valid) {
       indices.push(`years/${year}`)
       indices.push(`decades/${decade}`)
+      indices.push(`centuries/${century}`)
     }
   }
 
@@ -215,9 +186,83 @@ args.forEach((file) => {
   }
 
   if (!indices.length) {
-    throw new Error(`Fotografía en ningún índice: "${file}".`)
+    throw new Error(`Fotografía en ningún índice: "${input}".`)
   }
 
-  console.log(indices)
-  // indices.forEach((index) => console.log(index))
+  json.indices = indices
+
+  const output = input.replace('metadata', 'metadata2')
+
+  if (!fs.existsSync(output) || fs.statSync(output).size === 0) {
+    fs.writeFileSync(output, JSON.stringify(json))
+  }
+
+  indices.forEach((index) => {
+    const id = parseInt(input.match(/metadata\/(\d+)\.json/)[1])
+
+    let title = json.summary.title
+    let caption = json.summary.caption
+
+    const pattern = new RegExp(`^[ "']*[0-9]+(\.(jpe?g|png)?[ "']*)?$`, 'i')
+    if (pattern.test(title)) {
+      title = ''
+    }
+
+    title = title.replaceAll('\n', ' ')
+    caption = caption.replaceAll('\n', ' ')
+
+    title = title.replaceAll(/\s+/g, ' ')
+    caption = caption.replaceAll(/\s+/g, ' ')
+
+    // Caracteres de control que hay en los datos originales.
+    title = title.replaceAll(/[\u0000-\u001F\u007F-\u009F]/g, '')
+    caption = caption.replaceAll(/[\u0000-\u001F\u007F-\u009F]/g, '')
+
+    if (title === caption && title.length) {
+      caption = ''
+    }
+
+    title = title.length <= 2 ? '' : title
+    caption = caption.length <= 3 ? '' : caption
+
+    // Hay cosas como "&amp;amp;"…
+    while (decode(title) !== title) {
+      title = decode(title)
+    }
+
+    while (decode(caption) !== caption) {
+      caption = decode(caption)
+    }
+
+    title = title.trim()
+    caption = caption.trim()
+
+    const record = [
+      id,
+      // `""` es más corto que `null`, por lo que los índices ocupan menos.
+      title || '',
+      caption || '',
+
+      // tokenizar aquí ??? cambiar "\n" por " ", eliminar tokens repetidos ???
+      // photographer || null,
+      // municipio || null,
+      // author || null,
+      // tags,
+      // labels,
+    ]
+
+    _indices[index] = _indices[index] ? [..._indices[index], record] : [record]
+  })
+})
+
+Object.entries(_indices).forEach(([index, records]) => {
+  const output = `indices/${index}.json`
+
+  const contents = fs.existsSync(output)
+    ? fs.readFileSync(output).toString()
+    : null
+  const json = contents ? [...JSON.parse(contents), ...records] : records
+
+  const string = JSON.stringify(json)
+  fs.writeFileSync(output, string)
 })
