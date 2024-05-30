@@ -109,7 +109,7 @@ const app = {
       results.length === this.results.length &&
       results.every((item, i) => item === this.results[i])
 
-    if (unchanged) {
+    if (results.length > 0 && unchanged) {
       return
     }
 
