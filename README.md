@@ -1,16 +1,16 @@
 # Explora los archivos fotográficos públicos
 
-Retrosantander es un proyecto personal de [Jaime Gómez-Obregón](https://twitter.com/JaimeObregon) con los archivos fotográficos históricos de varias instituciones. El objetivo es aplicar los nuevos algoritmos de visión artificial y las capacidades de las modernas interfaces de usuario web para explorar formas innovadoras de poner estos archivos a disposición de la ciudadanía.
+Retrosantander es un proyecto personal de [Jaime Gómez-Obregón](https://x.com/JaimeObregon) con los archivos fotográficos históricos de varias instituciones. El objetivo es aplicar los nuevos algoritmos de visión artificial y las capacidades de las modernas interfaces de usuario web para explorar formas innovadoras de poner estos archivos a disposición de la ciudadanía.
 
 En [esta conferencia](https://www.youtube.com/watch?v=Wj88WEDOqgw) para la Asociación de Archiveros de Andalucía (Sevilla, marzo de 2023) y [esta exposición](https://www.youtube.com/watch?v=plGYaH_U4oI) para su homóloga vasca (Vitoria, noviembre del mismo año) comparto mi visión y peripecia en este proyecto.
 
 # Retrosantander
 
-Apliqué por primera vez estas ideas al fondo fotográfico del **Centro de Documentación de la Imagen de Santander (CDIS)**, entidad dependiente del Ayuntamiento de Santander. [La reacción](https://twitter.com/JaimeObregon/status/1523955161151983616) del Ayuntamiento fue retirar de internet el archivo fotográfico del CDIS y clausurar su sitio web. Esto supuso el final de Retrosantander, a los pocos días de haber nacido.
+Apliqué por primera vez estas ideas al fondo fotográfico del **Centro de Documentación de la Imagen de Santander (CDIS)**, entidad dependiente del Ayuntamiento de Santander. [La reacción](https://x.com/JaimeObregon/status/1523955161151983616) del Ayuntamiento fue retirar de internet el archivo fotográfico del CDIS y clausurar su sitio web. Esto supuso el final de Retrosantander, a los pocos días de haber nacido.
 
 [![Retrosantander](/docs/assets/retrosantander.jpg)](https://retrosantander.com)
 
-Mi proyecto sigue desplegado en [retrosantander.com](https://retrosantander.com), aunque por la razón expresada las fotografías ya no están disponibles. [Este vídeo](https://twitter.com/JaimeObregon/status/1523590262760505345) resume los cómos y porqués de esta frustrada iniciativa personal con el patrimonio fotográfico municipal de mi ciudad.
+Mi proyecto sigue desplegado en [retrosantander.com](https://retrosantander.com), aunque por la razón expresada las fotografías ya no están disponibles. [Este vídeo](https://x.com/JaimeObregon/status/1523590262760505345) resume los cómos y porqués de esta frustrada iniciativa personal con el patrimonio fotográfico municipal de mi ciudad.
 
 Para la posteridad queda [la detallada autopsia que hice](docs/cdis.md) del difunto portal del CDIS.
 
@@ -18,7 +18,7 @@ Para la posteridad queda [la detallada autopsia que hice](docs/cdis.md) del difu
 
 Descartada la resignación, decidí seguir el experimento con el Fondo Fotográfico Jesús Elósegui, digitalizado entre 2002 y 2006 por la Sociedad de Ciencias Aranzadi y publicado con licencia abierta por la Diputación Foral de Gipuzkoa.
 
-Así he podido continuar en [retrogipuzkoa.com](https://retrogipuzkoa.com) lo que inicié en Retrosantander. [En este hilo Twitter](https://twitter.com/JaimeObregon/status/1524494203614543876) he explicado mis razones.
+Así he podido continuar en [retrogipuzkoa.com](https://retrogipuzkoa.com) lo que inicié en Retrosantander. [En este hilo de X (antes Twitter)](https://x.com/JaimeObregon/status/1524494203614543876) he explicado mis razones.
 
 # GureGipuzkoa
 
@@ -26,7 +26,7 @@ Retrogipuzkoa captó la atención de la Diputación Foral de Gipuzkoa, que me ha
 
 Nace así una nueva versión de GureGipuzkoa, [guregipuzkoa.com](https://guregipuzkoa.com), resultado de conectar todas las colecciones del portal de la Diputación con la herramienta que he ido construyendo y refinando para explorar estos archivos fotográficos.
 
-⚠ Nótese que, al menos durante el desarrollo, el portal preexistente de la Diputación está en el dominio [guregipuzkoa.eus](https://guregipuzkoa.eus) y mi nuevo desarrollo basado en Retrosantander está desplegado en [guregipuzkoa.com](https://guregipuzkoa.com). Supongo que durante 2024 desaparecerá el portal antiguo y ambos dominios apuntarán al proyecto renovado.
+⚠ Nótese que, al menos durante el desarrollo, el portal preexistente de la Diputación está en el dominio [guregipuzkoa.eus](https://guregipuzkoa.eus) y mi nuevo desarrollo basado en Retrosantander está desplegado en [guregipuzkoa.com](https://guregipuzkoa.com). Supongo que durante 2025 desaparecerá el portal antiguo y ambos dominios apuntarán al proyecto renovado.
 
 Aparte he escrito la documentación [sobre el _scraping_ a guregipuzkoa.eus](/docs/guregipuzkoa.md).
 
@@ -36,7 +36,7 @@ Hasta la retirada del archivo del CDIS por parte del Ayuntamiento de Santander, 
 
 # Adaptación a otros archivos
 
-[Puedes contratarme](https://twitter.com/JaimeObregon) si deseas que sea yo mismo quien, como autor original de este _software_, adapte el programa a tu archivo fotográfico.
+[Puedes contratarme](https://x.com/JaimeObregon) si deseas que sea yo mismo quien, como autor original de este _software_, adapte el programa a tu archivo fotográfico.
 
 # Características y limitaciones
 
@@ -62,7 +62,7 @@ Este repositorio es multiproyecto, y en la actualidad aloja tres proyectos:
 
 1. **Retrogipuzkoa**, desplegado en [retrogipuzkoa.com](https://retrogipuzkoa.com), y que proporciona acceso a la colección fotográfica de Jesús Elósegui.
 
-1. **GureGipuzkoa**, desplegado en [guregipuzkoa.com](https://guregipuzkoa.com) y actualmente en desarrollo. No confundir con guregipuzkoa.eus, que es el portal original de la Diputación Foral de Gipuzkoa que guregipuzkoa.com pretende superar.
+1. **GureGipuzkoa**, desplegado en [guregipuzkoa.com](https://guregipuzkoa.com) y en desarrollo durante 2024. No confundir con guregipuzkoa.eus, que es el portal original de la Diputación Foral de Gipuzkoa que guregipuzkoa.com pretende superar.
 
 La arquitectura de la aplicación, por lo tanto, sirve a múltiples archivos fotográficos desde una misma base de código común y extensible.
 
@@ -75,17 +75,15 @@ El programa determina qué proyecto servir en función del nombre del _host_. Pa
 Para iniciar el entorno de desarrollo basta instalar las dependencias y arrancar el servidor web invocando el script de `package.json` correspondiente al proyecto que se desea servir:
 
 ```console
-npm install
-npm run retrogipuzkoa
+yarn
+yarn run guregipuzkoa
 ```
-
-Internamente, la variable de entorno `$PROJECT` determina qué proyecto se servirá.
 
 El _stack_ tecnológico es deliberadamente minimalista y está basada en estándares W3C: _web components_, _shadow DOM_, HTML5, CSS y JavaScript (ES6). Parte del reto ha sido elaborar complementamente a medida todos los componentes, de forma que no hay dependencias externas, ni tampoco un _backend_ o una base de datos.
 
 # Integración con VS Code
 
-El directorio `.vscode` aporta configuración para Visual Studio Code, incluyendo la definición de las tareas para arrancar los proyectos. Una de las tareas corre automáticamente al abrir el IDE, arrancando el servidor web de desarrollo con un proyecto.
+El directorio `.vscode` aporta configuración para Visual Studio Code, incluyendo la definición de las tareas para arrancar el servidor web de desarrollo con un proyecto desde el IDE.
 
 # Estilo de código
 
@@ -101,7 +99,7 @@ Adicionalmente, la aplicación sabe qué proyecto servir por el nombre del _host
 
 # Alojamiento de los archivos
 
-- **Retrosantander**. No tengo permiso del CDIS del Ayuntamiento de Santander para redifundir el archivo fotográfico del CDIS. Por esta razón Retrosantander solicita los archivos directamente al servidor web del CDIS. Cuando el Ayuntamiento [ha retirado](https://twitter.com/JaimeObregon/status/1523955161151983616) este servidor y todo el archivo, Retrosantander ha dejado de poder brindarte acceso a él.
+- **Retrosantander**. No tengo permiso del CDIS del Ayuntamiento de Santander para redifundir el archivo fotográfico del CDIS. Por esta razón Retrosantander solicita los archivos directamente al servidor web del CDIS. Cuando el Ayuntamiento [ha retirado](https://x.com/JaimeObregon/status/1523955161151983616) este servidor y todo el archivo, Retrosantander ha dejado de poder brindarte acceso a él.
 
 - **Retrogipuzkoa** y **GureGipuzkoa**. He obtenido permiso de la Diputación para copiar y distribuir el archivo fotográfico del portal guregipuzkoa.eus, que es distribuido por la Diputación con licencia Creative Commons. Yo he descargado (_scraping_) y copiado en Amazon S3 este archivo (fotografías y metadatos), y mis proyectos retrogipuzkoa.com y guregipuzkoa.com lo sirven desde ahí.
 

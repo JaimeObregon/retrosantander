@@ -1,7 +1,3 @@
-; Para los formatos que Prettier no formatea sin «plugins», como bash, SVG, PHP…
-; o para el caso en que Prettier no esté instalado o funcionando, proporcionemos
-; aquí al menos unas directrices básicas universales al editor de código.
-
 root = true
 
 [*]
@@ -11,7 +7,3 @@ end_of_line = lf
 charset = utf-8
 insert_final_newline = true
 trim_trailing_whitespace = true
-
-[*.md]
-; En Markdown, para forzar un salto de línea se insertan dos espacios al final.
-trim_trailing_whitespace = false
