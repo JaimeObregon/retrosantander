@@ -58,6 +58,7 @@ const app = {
       }
 
       this.$grid = document.querySelector('rs-grid')
+
       this.$grid.restore()
       this.results.length ? this.$grid.appendItems() : this.$grid.clear()
       this.title = ''

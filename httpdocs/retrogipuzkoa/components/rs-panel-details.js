@@ -6,22 +6,22 @@ class PanelDetails extends MyElement {
     svg {
       width: 20px;
       vertical-align: middle;
-      stroke: currentColor;
-      stroke-width: 2px;
       fill: none;
+      stroke: currentcolor;
+      stroke-width: 2px;
     }
 
     dl {
       display: grid;
-      grid-template-columns: 25px auto;
       grid-template-rows: auto;
+      grid-template-columns: 25px auto;
       row-gap: calc(var(--gap) / 3);
       margin: 0;
     }
 
     dl dd {
-      grid-column-start: 2;
       display: flex;
+      grid-column-start: 2;
       align-items: center;
       margin: 0;
       text-overflow: ellipsis;
