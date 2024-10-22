@@ -28,27 +28,26 @@ class Search extends MyElement {
 
     label svg {
       position: absolute;
-      width: 1em;
       left: 0.65em;
-      fill: var(--color-text-pale);
+      width: 1em;
       pointer-events: none;
+      fill: var(--color-text-pale);
     }
 
     label input {
+      width: 100%;
+      padding: 0.35em 0.25em 0.35em 2.25em;
       font-size: inherit;
       font-weight: 500;
-      width: 100%;
-      border: none;
-      border-radius: 1rem;
-      padding: 0.35em 0.25em 0.35em 2.25em;
-      outline: none;
-      background: var(--color-highlight-inverted);
-      transition: background 350ms ease;
-      border: 1px solid var(--color-line);
-      box-shadow: 0 0 0 1px var(--color-neutral-50);
-      cursor: pointer;
       appearance: none;
-      -webkit-appearance: none;
+      cursor: pointer;
+      background: var(--color-highlight-inverted);
+      border: none;
+      border: 1px solid var(--color-line);
+      border-radius: 1rem;
+      outline: none;
+      box-shadow: 0 0 0 1px var(--color-neutral-50);
+      transition: background 350ms ease;
     }
 
     label input:hover,
@@ -57,31 +56,32 @@ class Search extends MyElement {
     }
 
     label.open input:focus {
-      border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
     }
 
     label ul {
-      display: none;
       position: absolute;
-      z-index: 1;
       top: 29px;
       left: 0;
+      z-index: 1;
+      box-sizing: border-box;
+      display: none;
       width: 100%;
       max-height: 70vh;
-      box-sizing: border-box;
-      margin: 0;
       padding: 0;
-      list-style: none;
-      background: white;
-      border-bottom-left-radius: 1rem;
-      border-bottom-right-radius: 1rem;
+      margin: 0;
+      overflow: scroll;
       font-weight: 500;
       color: var(--color-neutral-800);
-      overflow: scroll;
-      /*box-shadow: 0 1px 0 1px var(--color-backdrop);*/
+      list-style: none;
+      background: white;
+
+      /* box-shadow: 0 1px 0 1px var(--color-backdrop); */
       border: 1px solid var(--color-line);
       border-top: none;
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
     }
 
     label.open ul {
@@ -106,13 +106,13 @@ class Search extends MyElement {
 
     label ul li a mark {
       font-weight: 700;
-      background: inherit;
       text-decoration: underline;
-      text-decoration-style: dotted;
       text-decoration-thickness: 2px;
+      text-decoration-style: dotted;
+      background: inherit;
     }
 
-    @media (max-width: 1280px) {
+    @media (width <= 1280px) {
       label {
         font-size: 15px;
       }

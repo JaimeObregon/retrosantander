@@ -11,40 +11,39 @@ class Panel extends MyElement {
   static styles = css`
     aside {
       position: fixed;
+      top: var(--header-height);
+      left: 0;
+      box-sizing: border-box;
       width: 100%;
       max-width: var(--panel-width);
       height: calc(100% - var(--header-height));
-      top: var(--header-height);
-      left: 0;
-      overflow: scroll;
-      box-sizing: border-box;
       padding: var(--gap);
-      border-right: 1px solid var(--color-line);
-      box-shadow: 5px 0 5px #1c191750;
+      overflow: scroll;
       background-color: rgba(var(--color-panel-components), 0.941);
       backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      transition: 350ms;
+      border-right: 1px solid var(--color-line);
+      box-shadow: 5px 0 5px #1c191750;
       opacity: 1;
+      transition: 350ms;
     }
 
     aside.hidden {
-      transform: translateX(calc(-1 * var(--panel-width)));
       opacity: 0;
+      transform: translateX(calc(-1 * var(--panel-width)));
     }
 
     aside button {
       position: absolute;
-      width: 4em;
-      height: 4em;
       top: 0.25em;
       right: 0.25em;
+      width: 4em;
+      height: 4em;
       padding: 0;
-      border-radius: 100%;
-      border: none;
-      background: transparent;
-      transition: background ease-in-out 150ms;
       cursor: pointer;
+      background: transparent;
+      border: none;
+      border-radius: 100%;
+      transition: background ease-in-out 150ms;
     }
 
     aside button:hover {
@@ -71,31 +70,31 @@ class Panel extends MyElement {
     }
 
     aside h2 {
+      margin: 0 0 10px;
       font-size: 11px;
-      margin: 0 0 10px 0;
       font-weight: 500;
+      color: var(--color-neutral-400);
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: var(--color-neutral-400);
     }
 
     aside ul {
-      margin: 0;
       padding: 0;
+      margin: 0;
       line-height: 1.5;
       list-style: none;
     }
 
     aside section ul li {
-      width: calc(100% / ${facesPerRow});
       display: inline;
+      width: calc(100% / ${facesPerRow});
     }
 
     aside a {
       color: inherit;
       text-decoration: underline;
-      text-decoration-style: dotted;
       text-decoration-thickness: 2px;
+      text-decoration-style: dotted;
     }
 
     aside a:hover {
@@ -149,12 +148,12 @@ class Panel extends MyElement {
       margin-top: calc(2 * var(--gap));
     }
 
-    @media (max-width: 768px) {
+    @media (width <= 768px) {
       aside {
-        font-size: 14px;
         top: auto;
         bottom: 0;
         height: 30vh;
+        font-size: 14px;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
         box-shadow: 0 -5px 5px #1c191750;
@@ -275,12 +274,12 @@ class Panel extends MyElement {
 
     this.aside.querySelector('section#faces h2').innerHTML = i18n.get(
       faces.length > 1 ? 'panel.faces.many' : 'panel.faces.one',
-      { count: faces.length }
+      { count: faces.length },
     )
 
     this.aside.querySelector('section#objects h2').innerHTML = i18n.get(
       objects.length > 1 ? 'panel.objects.many' : 'panel.objects.one',
-      { count: objects.length }
+      { count: objects.length },
     )
   }
 

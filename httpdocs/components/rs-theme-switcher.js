@@ -10,17 +10,17 @@ class ThemeSwitcher extends MyElement {
 
   static styles = css`
     button {
-      background: none;
-      border: none;
-      padding: 0;
       display: block;
       width: 100%;
       aspect-ratio: 1;
-      border-radius: 50%;
-      cursor: pointer;
+      padding: 0;
       touch-action: manipulation;
-      -webkit-tap-highlight-color: transparent;
+      cursor: pointer;
+      background: none;
+      border: none;
+      border-radius: 50%;
       outline-offset: 5px;
+      -webkit-tap-highlight-color: transparent;
     }
 
     button svg {
@@ -40,7 +40,8 @@ class ThemeSwitcher extends MyElement {
     button svg g {
       stroke: var(--color-text-pale);
       stroke-width: 2px;
-      transition: transform var(--delay-x-large) var(--ease-elastic-4),
+      transition:
+        transform var(--delay-x-large) var(--ease-elastic-4),
         opacity var(--delay-x-large) var(--ease-3);
     }
 

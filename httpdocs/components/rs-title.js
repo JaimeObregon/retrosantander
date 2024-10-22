@@ -9,42 +9,42 @@ class Title extends MyElement {
     }
 
     cite {
+      box-sizing: border-box;
       display: block;
+      max-width: 100%;
       margin: 0 auto;
+      overflow: hidden;
       font-size: 20px;
       font-style: normal;
       font-weight: 600;
+      color: var(--color-accent);
       text-align: center;
       text-overflow: '_';
-      overflow: hidden;
       white-space: nowrap;
-      box-sizing: border-box;
-      max-width: 100%;
       transition: width linear;
-      color: var(--color-accent);
     }
 
     cite.static {
       text-overflow: ellipsis;
     }
 
-    @media (max-width: 1536px) {
+    @media (width <= 1536px) {
     }
 
-    @media (max-width: 1280px) {
+    @media (width <= 1280px) {
       cite {
-        text-align: left;
         margin: 0;
+        text-align: left;
       }
     }
 
-    @media (max-width: 1024px) {
+    @media (width <= 1024px) {
       cite {
         font-size: 18px;
       }
     }
 
-    @media (max-width: 768px) {
+    @media (width <= 768px) {
       cite {
         font-size: 15px;
       }
