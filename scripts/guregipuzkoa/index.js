@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+// ! No tener que hacer esto tan feo: find indices/{centuries,decades,faces,folders,labels,photographers,places,users,years,collections} -type f -name "*.json" -delete
+
 import fs from 'fs'
 import { decode, slugize } from '../../httpdocs/modules/strings.js'
 import {
@@ -78,11 +80,11 @@ args.forEach((input) => {
   const tags = json.details.image_data.tags.map(({ name }) => name)
 
   const labels = json.labels.Labels.filter(
-    ({ Confidence }) => Confidence > minConfidence
+    ({ Confidence }) => Confidence > minConfidence,
   ).map(({ Name }) => Name)
 
   const faces = json.faces.FaceDetails.filter(
-    ({ Confidence }) => Confidence > minConfidence
+    ({ Confidence }) => Confidence > minConfidence,
   )
 
   // author,
@@ -95,8 +97,6 @@ args.forEach((input) => {
   // if (count > 75) {
   //   indices.push(`???/over_75`)
   // }
-
-  // ! photographers/elosegi_jesus tiene muchísimos menos que collections/jesus_elosegui.json
 
   if (municipio) {
     const found = locations.find(({ value }) => value === municipio)
@@ -132,7 +132,7 @@ args.forEach((input) => {
       ...labels.map((label) => {
         const slug = slugize(label)
         return `labels/${slug}`
-      })
+      }),
     )
   }
 
@@ -144,7 +144,7 @@ args.forEach((input) => {
       (collection) =>
         (!collection.folder || collection.folder === folder) &&
         (!collection.author || collection.author === author) &&
-        (!collection.photographer || collection.photographer === photographer)
+        (!collection.photographer || collection.photographer === photographer),
     )
     .map(({ name }) => `collections/${slugize(name)}`)
 
@@ -197,7 +197,13 @@ args.forEach((input) => {
   }
 
   indices.forEach((index) => {
-    const id = parseInt(input.match(/metadata\/(\d+)\.json/)[1])
+    const string = input.match(/metadata\/(\d+)\.json/)?.[1]
+
+    if (!string) {
+      return
+    }
+
+    const id = parseInt(string)
 
     let title = json.summary.title
     let caption = json.summary.caption
