@@ -7,9 +7,9 @@ class NotFound extends MyElement {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      font-size: 18px;
       min-height: 100vh;
       margin: auto;
+      font-size: 18px;
       text-align: center;
     }
 
@@ -18,11 +18,11 @@ class NotFound extends MyElement {
     }
 
     article a {
-      color: inherit;
       font-weight: bold;
+      color: inherit;
     }
 
-    @media (max-width: 640px) {
+    @media (width <= 640px) {
       article {
         font-size: 15px;
       }

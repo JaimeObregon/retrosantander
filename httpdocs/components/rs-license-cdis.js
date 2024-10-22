@@ -35,8 +35,8 @@ class LicenseCDIS extends MyElement {
     details a {
       color: inherit;
       text-decoration: underline;
-      text-decoration-style: dotted;
       text-decoration-thickness: 2px;
+      text-decoration-style: dotted;
     }
 
     details a:hover {

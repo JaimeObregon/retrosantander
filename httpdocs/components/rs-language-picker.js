@@ -15,8 +15,8 @@ class LanguagePicker extends MyElement {
     }
 
     label {
-      cursor: pointer;
       padding: 0 var(--space-small);
+      cursor: pointer;
     }
 
     label.selected {
@@ -60,7 +60,7 @@ class LanguagePicker extends MyElement {
             />
             ${language}
           </label>
-        `
+        `,
       )
       .join('')
 

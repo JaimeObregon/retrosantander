@@ -9,10 +9,10 @@ class Help extends MyElement {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      font-size: 18px;
       max-width: 42em;
       min-height: calc(100vh - var(--header-height));
       margin: auto;
+      font-size: 18px;
       line-height: 1.5;
     }
 
@@ -25,7 +25,7 @@ class Help extends MyElement {
       color: var(--color-highlight);
     }
 
-    @media (max-width: 640px) {
+    @media (width <= 640px) {
       article {
         font-size: 15px;
         line-height: 1.35;
@@ -59,7 +59,7 @@ class Help extends MyElement {
     const query = escape(app.query)
     this.article.querySelector('h1').innerHTML = i18n.get(
       'search.zero_results',
-      { query }
+      { query },
     )
 
     const url = `help.${app.language}.html`
@@ -76,7 +76,7 @@ class Help extends MyElement {
     const query = escape(app.query)
     this.article.querySelector('h1').innerHTML = i18n.get(
       'search.zero_results',
-      { query }
+      { query },
     )
     this.article.classList.toggle('hidden', value)
   }

@@ -59,11 +59,11 @@ class Menu extends MyElement {
     }
 
     article.open {
-      transform: translateX(0);
       opacity: 1;
+      transform: translateX(0);
     }
 
-    @media (max-width: 640px) {
+    @media (width <= 640px) {
       article {
         --about-width: 100%;
       }

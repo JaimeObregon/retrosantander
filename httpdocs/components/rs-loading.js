@@ -4,8 +4,8 @@ class Loading extends MyElement {
   static styles = css`
     footer {
       position: fixed;
-      left: 0;
       bottom: 0;
+      left: 0;
       width: 0;
       height: 8px;
       background: var(--color-neutral-300);

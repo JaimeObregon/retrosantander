@@ -9,8 +9,8 @@ class LicenseCCBYSA extends MyElement {
     p a {
       color: inherit;
       text-decoration: underline;
-      text-decoration-style: dotted;
       text-decoration-thickness: 2px;
+      text-decoration-style: dotted;
     }
 
     p a:hover {

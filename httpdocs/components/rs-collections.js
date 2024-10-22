@@ -4,9 +4,9 @@ import { app } from '../modules/app.js'
 class Collections extends MyElement {
   static styles = css`
     main {
-      display: flex;
       position: relative;
       top: calc(var(--header-height) + var(--gap));
+      display: flex;
       height: calc(100vh - var(--header-height) - 2 * var(--gap));
       overflow: scroll;
     }
@@ -14,24 +14,24 @@ class Collections extends MyElement {
     main section,
     main nav,
     main article {
-      width: 50%;
       flex-shrink: 0;
+      width: 50%;
       overflow: scroll;
     }
 
     main section {
-      padding-right: 3em;
       box-sizing: border-box;
-      font-weight: 400;
+      padding-right: 3em;
       font-size: 19px;
+      font-weight: 400;
     }
 
     main article {
-      background: var(--color-panel);
-      padding: 3em;
       box-sizing: border-box;
-      font-weight: 400;
+      padding: 3em;
       font-size: 19px;
+      font-weight: 400;
+      background: var(--color-panel);
     }
 
     main article p {
@@ -39,10 +39,10 @@ class Collections extends MyElement {
     }
 
     main article a {
-      text-decoration: underline;
-      text-decoration-style: dotted;
-      text-decoration-thickness: 2px;
       color: inherit;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-decoration-style: dotted;
     }
 
     main article img {

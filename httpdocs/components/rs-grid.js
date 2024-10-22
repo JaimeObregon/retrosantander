@@ -40,19 +40,19 @@ class Grid extends MyElement {
       border: none;
     }
 
-    @media (max-width: 1280px) {
+    @media (width <= 1280px) {
       main rs-image {
         width: calc(100% / 3);
       }
     }
 
-    @media (max-width: 768px) {
+    @media (width <= 768px) {
       main rs-image {
         width: 50%;
       }
     }
 
-    @media (max-width: 640px) {
+    @media (width <= 640px) {
       main rs-image {
         width: 100%;
       }
@@ -180,7 +180,7 @@ class Grid extends MyElement {
 
     const interval = setInterval(() => {
       this.pending = [...this.container.querySelectorAll('rs-image')].filter(
-        (image) => !image.complete
+        (image) => !image.complete,
       ).length
 
       this.loading = 1 - this.pending / images.length
@@ -222,7 +222,7 @@ class Grid extends MyElement {
     })
 
     const columns = Math.round(
-      this.container.offsetWidth / images[0].offsetWidth
+      this.container.offsetWidth / images[0].offsetWidth,
     )
 
     if (this.columns !== columns) {
@@ -243,7 +243,7 @@ class Grid extends MyElement {
               array[current.dataset.column],
               Number(current.dataset.top) +
                 current.getBoundingClientRect().height +
-                gap
+                gap,
             )
             return array
           }, Array(columns).fill(0))
@@ -322,7 +322,7 @@ class Grid extends MyElement {
 
     const scale = Math.max(
       Math.min(viewportWidth / width, viewportHeight / height),
-      1
+      1,
     )
 
     const x = bounds.left

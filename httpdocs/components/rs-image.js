@@ -23,17 +23,17 @@ class Image extends MyElement {
 
     figure img {
       width: 100%;
-      border-radius: 4px;
       cursor: pointer;
+      border-radius: 4px;
     }
 
     figure div {
       position: absolute;
+      cursor: pointer;
       border: 1px solid;
       border-radius: 3px;
-      transition: ease-out 350ms;
       opacity: 0;
-      cursor: pointer;
+      transition: ease-out 350ms;
     }
 
     :host(.selected) figure:hover div,
@@ -47,8 +47,8 @@ class Image extends MyElement {
     }
 
     figure div.face {
-      border-radius: 100%;
       border-color: var(--color-yellow-500);
+      border-radius: 100%;
     }
 
     figure div.object {
@@ -122,7 +122,7 @@ class Image extends MyElement {
             left: ${area.left}%;
             width: ${area.width}%;
             height: ${area.height}%
-          "></div>`
+          "></div>`,
       )
       .join('')
   }
