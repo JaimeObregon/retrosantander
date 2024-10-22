@@ -1,5 +1,5 @@
-import { normalize } from './retrosantander.js'
-import { labels } from '../modules/labels.js'
+import { normalize } from './strings.js'
+import { labels } from './labels.js'
 
 // Umbral de confianza en la visión artificial.
 // Los objetos detectados por debajo de éste umbral serán ignorados.
@@ -37,11 +37,15 @@ const database = {
     const response = await fetch(url)
     const json = await response.json()
 
-    database.records = json.map((item) => ({
-      ...item,
-      title: prettify(item.title),
-      index: normalize(item.title),
-    }))
+    database.records = json.map(
+      ([id, title, tags, caption = '', file = null]) => ({
+        id,
+        title: prettify(title),
+        index: normalize([title, caption].join(' ')),
+        tags,
+        ...(file && { file }),
+      })
+    )
   },
 
   // Retorna el número de registros en la base de datos.
@@ -51,7 +55,7 @@ const database = {
 
   // Devuelve el registro de una imagen a partir de su `id`.
   find: (id) => {
-    return database.records.find((item) => item.id === id)
+    return database.records.find((record) => record.id === id)
   },
 
   // Cursa una búsqueda en la base de datos y devuelve los resultados de la misma
@@ -66,7 +70,9 @@ const database = {
     }
 
     const regexp = new RegExp(query)
-    const results = database.records.filter((item) => item.index.match(regexp))
+    const results = database.records.filter((record) =>
+      record.index.match(regexp)
+    )
 
     const suggestions = results
       .flatMap((item) =>
@@ -83,11 +89,13 @@ const database = {
     return { results, suggestions }
   },
 
-  // Carga e interpreta un fichero JSON con los datos de visión artificial
-  // de una imagen.
+  // Carga e interpreta un fichero JSON con los metadatos de una imagen.
   async parse(url) {
     const response = await fetch(url)
+
     const json = await response.json()
+
+    const { rekognition, exif, details } = json
 
     const gender = (value) =>
       ({
@@ -95,7 +103,7 @@ const database = {
         Female: 'Mujer',
       }[value])
 
-    const faces = json.FaceDetails.filter(
+    const faces = rekognition.FaceDetails.filter(
       (face) => face.Confidence >= confidenceThreshold
     ).map((face, i) => ({
       type: 'face',
@@ -150,7 +158,7 @@ const database = {
       }),
     }))
 
-    const objects = json.Labels.filter(
+    const objects = rekognition.Labels.filter(
       (object) => object.Instances.length
     ).reduce(
       (accumulator, object) => [
@@ -172,7 +180,7 @@ const database = {
       []
     )
 
-    const tags = json.Labels.filter((label) => !label.Instances.length)
+    const tags = rekognition.Labels.filter((label) => !label.Instances.length)
       .filter((label) => label.Confidence > confidenceThreshold)
       .map((label) => ({
         name: labels[label.Name],
@@ -192,7 +200,8 @@ const database = {
       area: 10000 * area.width * area.height,
     }))
 
-    return { faces, objects, tags, areas }
+    // Por un error que cometí al generar los índices he de devolver `exif[0]` en vez de `exif`…
+    return { faces, objects, tags, areas, details, exif: exif[0] }
   },
 }
 

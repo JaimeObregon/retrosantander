@@ -26,10 +26,10 @@ Para descargar las fotografías del archivo primero es necesario obtener una lis
 
    Esto resulta en un fichero `sitemap.txt` de unos 100 MB.
 
-3. Proceso este fichero con el _script_ `parse_sitemap.mjs`:
+3. Proceso este fichero con el _script_ `parse_sitemap.js`:
 
    ```console
-   ./parse_sitemap.mjs sitemap.txt
+   ./parse_sitemap.js sitemap.txt
    ```
 
    Este _script_ excluye de la salida algunos objetos cuyas fotografías están corrompidas o no tienen unas dimensiones adecuadas, tal como se explica más adelante.
@@ -78,13 +78,13 @@ mv 154387.jpeg 154387.png && convert 154387.png 154387.jpeg && rm 154387.png
 
 Algunas fotografías del portal oficial están [corruptas](https://www.guregipuzkoa.eus/photo/104194/) o [incompletas](https://www.guregipuzkoa.eus/photo/153281). Otras son panorámicas o tienen [una resolución demasiado baja](https://www.guregipuzkoa.eus/photo/45861/) como para ser utilizadas.
 
-Se hace preciso detectar estas imágenes para luego incorporarlas manualmente a la lista de los `id` en `parse_sitemap.mjs` que son ignorados al procesar el _sitemap_. Estas imágenes, menos de doscientas, quedarán así excluidas del nuevo portal.
+Se hace preciso detectar estas imágenes para luego incorporarlas manualmente a la lista de los `id` en `parse_sitemap.js` que son ignorados al procesar el _sitemap_. Estas imágenes, menos de doscientas, quedarán así excluidas del nuevo portal.
 
-El _script_ `check_images.sh`devolverá por _stdout_ cuáles son. Las incorporamos manualmente a la lista de exclusión en `parse_sitemap.mjs` y las eliminamos del sistema de ficheros.
+El _script_ `check_images.sh`devolverá por _stdout_ cuáles son. Las incorporamos manualmente a la lista de exclusión en `parse_sitemap.js` y las eliminamos del sistema de ficheros.
 
 # 5. Extracción de los metadatos Exif
 
-[Es interesante](https://twitter.com/JaimeObregon/status/1646082167787618304) extraer los metadatos Exif del archivo fotográfico. La utilidad `exiftool` permite exportar estos metadatos en forma JSON:
+[Es interesante](https://x.com/JaimeObregon/status/1646082167787618304) extraer los metadatos Exif del archivo fotográfico. La utilidad `exiftool` permite exportar estos metadatos en forma JSON:
 
 ```bash
 CLEAR_LINE="\r\033[K"
@@ -118,11 +118,11 @@ https://www.guregipuzkoa.eus/nextgen-pro-lightbox-gallery/www.guregipuzkoa.eus/?
 
 Si alguno de los `id` facilitados no corresponde con ninguna fotografía, el servidor devuelve una respuesta con contenidos que no están vacíos.
 
-Para descargar todos los metadatos, paso el _sitemap_ interpretado por `stdin` a `fetch_metadata.mjs`. Este _script_ descarga los metadatos de las fotografías referenciadas en el _sitemap_ y los guardará como ficheros JSON en la ruta que reciba como primer parámetro:
+Para descargar todos los metadatos, paso el _sitemap_ interpretado por `stdin` a `fetch_metadata.js`. Este _script_ descarga los metadatos de las fotografías referenciadas en el _sitemap_ y los guardará como ficheros JSON en la ruta que reciba como primer parámetro:
 
 ```bash
 mkdir json
-./parse_sitemap.mjs sitemap.txt | ./fetch_metadata.mjs json
+./parse_sitemap.js sitemap.txt | ./fetch_metadata.js json
 ```
 
 Las respuestas JSON así descargadas ocupan 738 MB.
@@ -139,10 +139,10 @@ He desplegado una función en Amazon Lambda que transcodifica las imágenes al f
 
 Hacemos la transcodificación en AWS porque puede ser lenta y conllevar, para algunas fotografías, incluso más de 45 segundos.
 
-El _script_ `upload.mjs` realiza la subida al bucket `guregipuzkoa-temp` de S3, lo que provoca la aplicación de la función lambda sobre cada fichero subido y, por lo tanto, su transcodificación automática. Se invoca así:
+El _script_ `upload.js` realiza la subida al bucket `guregipuzkoa-temp` de S3, lo que provoca la aplicación de la función lambda sobre cada fichero subido y, por lo tanto, su transcodificación automática. Se invoca así:
 
 ```bash
-./parse_sitemap.mjs sitemap.txt | ./upload.mjs
+./parse_sitemap.js sitemap.txt | ./upload.js
 ```
 
 Este _script_ lista todos los objetos almacenados en la ruta `/originals/images/` del _bucket_ `guregipuzkoa` y los compara con los `id` obtenidos del _sitemap_ que recibe por `stdin`, cargando a la ruta `/images` de `guregipuzkoa-temp` aquellos faltantes, para que se dispare así la función lambda que los toma de allí, guarda transcodificados en la ruta `/optimized/` del _bucket_ `guregipuzkoa`, y mueve después el fichero cargado original a la ruta `/originals/images/`, de este mismo _bucket_.
@@ -193,7 +193,7 @@ Finalizado el proceso, busco ficheros vacíos, demasiado pequeños o que no cont
 Extraigo a un directorio `summaries`, para cada fotografía del archivo, sus metadatos contenidos en el _sitemap_:
 
 ```bash
-parse_sitemap.mjs ../sitemap.txt > sitemap.json
+parse_sitemap.js ../sitemap.txt > sitemap.json
 
 mkdir summaries
 
@@ -267,13 +267,17 @@ aws s3 sync metadata s3://guregipuzkoa/metadata/ --content-encoding 'gzip'
 # 10. Construcción de los índices
 
 ```console
-find metadata -type f -print0 | xargs -0 ../../../scripts/guregipuzkoa/index.mjs
+find indices/{centuries,decades,faces,folders,labels,photographers,places,users,years,collections} -type f -name "*.json" -delete
+```
+
+```console
+find metadata -type f -print0 | xargs -0 ../../../scripts/guregipuzkoa/index.js
 ```
 
 ---
 
 ```console
-parse_sitemap.mjs ../sitemap.txt | jq '.[] | select(.image | test("/playant/")) | .id' | cut -d "/" -f 5
+parse_sitemap.js ../sitemap.txt | jq '.[] | select(.image | test("/playant/")) | .id' | cut -d "/" -f 5
 ```
 
 ---

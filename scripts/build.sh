@@ -3,15 +3,15 @@
 
 yarn || exit 1
 
-cp -aR httpdocs build
-cp "httpdocs/$PROJECT/index.html" build/index.html
+cp -aR httpdocs httpdocs/build
+cp "httpdocs/$PROJECT/index.html" httpdocs/build/index.html
 
 esbuild \
-  httpdocs/modules/app.js \
+  httpdocs/modules/index.js \
   "httpdocs/assets/styles/themes/$PROJECT.css" \
   --format=esm \
   --bundle \
   --minify \
   --legal-comments=none \
   --external:"/assets/fonts/*" \
-  --outdir=build \
+  --outdir=httpdocs/build \

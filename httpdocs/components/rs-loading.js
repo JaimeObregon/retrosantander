@@ -1,8 +1,7 @@
-const component = 'rs-loading'
-const template = document.createElement('template')
+import { MyElement, html, css } from '../modules/element.js'
 
-template.innerHTML = `
-  <style>
+class Loading extends MyElement {
+  static styles = css`
     footer {
       position: fixed;
       left: 0;
@@ -12,31 +11,23 @@ template.innerHTML = `
       background: var(--color-neutral-300);
       transition: width ease-in 100ms;
     }
-  </style>
-  <footer></footer>
-`
+  `
 
-customElements.define(
-  component,
+  static html = html`<footer></footer>`
 
-  class extends HTMLElement {
-    delay = 250
-    footer
+  delay = 250
 
-    constructor() {
-      super()
-      const root = this.attachShadow({ mode: 'open' })
-      root.append(template.content.cloneNode(true))
-    }
+  footer
 
-    connectedCallback() {
-      this.footer = this.shadowRoot.querySelector('footer')
-    }
-
-    set progress(value) {
-      this.footer.classList.remove('hidden')
-      this.footer.style.width = `${100 * value}%`
-      value === 1 && setTimeout(() => (this.progress = 0), this.delay)
-    }
+  connectedCallback() {
+    this.footer = this.shadowRoot.querySelector('footer')
   }
-)
+
+  set progress(value) {
+    this.footer.classList.remove('hidden')
+    this.footer.style.width = `${100 * value}%`
+    value === 1 && setTimeout(() => (this.progress = 0), this.delay)
+  }
+}
+
+export { Loading }

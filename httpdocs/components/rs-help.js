@@ -1,10 +1,10 @@
-import { app, escape } from '../modules/retrosantander.js'
+import { MyElement, html, css } from '../modules/element.js'
+import { escape } from '../modules/strings.js'
+import { i18n } from '../modules/i18n.js'
+import { app } from '../modules/app.js'
 
-const component = 'rs-help'
-const template = document.createElement('template')
-
-template.innerHTML = `
-  <style>
+class Help extends MyElement {
+  static styles = css`
     article {
       display: flex;
       flex-direction: column;
@@ -22,6 +22,7 @@ template.innerHTML = `
 
     article h1 {
       margin: 0;
+      color: var(--color-highlight);
     }
 
     @media (max-width: 640px) {
@@ -30,33 +31,55 @@ template.innerHTML = `
         line-height: 1.35;
       }
     }
-  </style>
-  <article class="hidden">
-    <h1>No hay imágenes sobre <q></q></h1>
+  `
 
-    <slot></slot>
-  </article>
-`
+  static html = html`
+    <article class="hidden">
+      <h1></h1>
+      <slot></slot>
+    </article>
+  `
 
-customElements.define(
-  component,
+  article
 
-  class extends HTMLElement {
-    article
+  constructor() {
+    super()
 
-    constructor() {
-      super()
-      const root = this.attachShadow({ mode: 'open' })
-      root.append(template.content.cloneNode(true))
-    }
-
-    connectedCallback() {
-      this.article = this.shadowRoot.querySelector('article')
-    }
-
-    set hidden(value) {
-      this.article.querySelector('q').innerHTML = escape(app.query)
-      this.article.classList.toggle('hidden', value)
-    }
+    i18n.push({
+      'search.zero_results': {
+        es: 'No hay imágenes sobre <q>${query}</q>',
+        eu: 'Ez dago <q>${query}</q>-ri buruzko argazkirik',
+        en: 'There are no photographs about <q>${query}</q>',
+        fr: "Il n'y a pas de photos sur <q>${query}</q>",
+      },
+    })
   }
-)
+
+  async onLanguagechange() {
+    const query = escape(app.query)
+    this.article.querySelector('h1').innerHTML = i18n.get(
+      'search.zero_results',
+      { query }
+    )
+
+    const url = `help.${app.language}.html`
+    const response = await fetch(url)
+    app.$help.innerHTML = await response.text()
+  }
+
+  connectedCallback() {
+    this.article = this.shadowRoot.querySelector('article')
+    window.addEventListener('languagechange', this.onLanguagechange.bind(this))
+  }
+
+  set hidden(value) {
+    const query = escape(app.query)
+    this.article.querySelector('h1').innerHTML = i18n.get(
+      'search.zero_results',
+      { query }
+    )
+    this.article.classList.toggle('hidden', value)
+  }
+}
+
+export { Help }

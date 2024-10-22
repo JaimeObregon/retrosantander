@@ -1,8 +1,7 @@
-const component = 'rs-license-cdis'
-const template = document.createElement('template')
+import { MyElement, html, css } from '../modules/element.js'
 
-template.innerHTML = `
-  <style>
+class LicenseCDIS extends MyElement {
+  static styles = css`
     details {
       font-size: 14px;
       font-weight: 400;
@@ -43,32 +42,28 @@ template.innerHTML = `
     details a:hover {
       text-decoration-style: solid;
     }
-  </style>
-  <details>
-    <summary>Derechos de esta imagen</summary>
+  `
 
-    <p>
-      Esta imagen es obra de su autor, y sus derechos pertenecen al Centro de
-      Documentación de la Imagen de Santander (CDIS), una entidad dependiente
-      del Ayuntamiento de Santander.
-    </p>
+  static html = html`
+    <details>
+      <summary>Derechos de esta imagen</summary>
 
-    <p>
-      Por favor <a href="https://portal.ayto-santander.es/portalcdis/">contacta
-      con el CDIS</a> y adquiere la versión de alta resolución antes de hacer
-      una utilización comercial de esta imagen.
-    </p>
-  </details>
-`
+      <p>
+        Esta imagen es obra de su autor, y sus derechos pertenecen al Centro de
+        Documentación de la Imagen de Santander (CDIS), una entidad dependiente
+        del Ayuntamiento de Santander.
+      </p>
 
-customElements.define(
-  component,
+      <p>
+        Por favor
+        <a href="https://portal.ayto-santander.es/portalcdis/"
+          >contacta con el CDIS</a
+        >
+        y adquiere la versión de alta resolución antes de hacer una utilización
+        comercial de esta imagen.
+      </p>
+    </details>
+  `
+}
 
-  class extends HTMLElement {
-    constructor() {
-      super()
-      const root = this.attachShadow({ mode: 'open' })
-      root.append(template.content.cloneNode(true))
-    }
-  }
-)
+export { LicenseCDIS }

@@ -1,10 +1,7 @@
-import { app } from '../modules/retrosantander.js'
+import { MyElement, html, css } from '../modules/element.js'
 
-const component = 'rs-logo'
-const template = document.createElement('template')
-
-template.innerHTML = `
-  <style>
+class Logo extends MyElement {
+  static styles = css`
     a {
       display: block;
       line-height: var(--header-height);
@@ -13,7 +10,7 @@ template.innerHTML = `
     }
 
     a ::slotted(svg) {
-      height: 30px;
+      height: 40px;
       vertical-align: middle;
       transition: 200ms ease;
       fill: currentColor;
@@ -24,20 +21,13 @@ template.innerHTML = `
       transform: scale(1.035);
       color: white;
     }
-  </style>
-  <a href="/">
-    <slot></slot>
-  </a>
-`
+  `
 
-customElements.define(
-  component,
+  static html = html`
+    <a href="/">
+      <slot></slot>
+    </a>
+  `
+}
 
-  class extends HTMLElement {
-    constructor() {
-      super()
-      const root = this.attachShadow({ mode: 'open' })
-      root.append(template.content.cloneNode(true))
-    }
-  }
-)
+export { Logo }

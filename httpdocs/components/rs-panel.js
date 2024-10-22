@@ -1,13 +1,14 @@
-import { app } from '../modules/retrosantander.js'
-import './rs-license-cdis.js'
-import './rs-license-cc-by-sa.js'
+import { MyElement, html, css } from '../modules/element.js'
+import { i18n } from '../modules/i18n.js'
+import { app } from '../modules/app.js'
 
-const component = 'rs-panel'
-const template = document.createElement('template')
+import { LicenseCDIS } from './rs-license-cdis.js'
+import { LicenseCCBYSA } from './rs-license-cc-by-sa.js'
+
 const facesPerRow = 5
 
-template.innerHTML = `
-  <style>
+class Panel extends MyElement {
+  static styles = css`
     aside {
       position: fixed;
       width: 100%;
@@ -18,9 +19,9 @@ template.innerHTML = `
       overflow: scroll;
       box-sizing: border-box;
       padding: var(--gap);
-      border-right: 1px solid var(--color-neutral-800);
+      border-right: 1px solid var(--color-line);
       box-shadow: 5px 0 5px #1c191750;
-      background-color: #171717f0;
+      background-color: rgba(var(--color-panel-components), 0.941);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       transition: 350ms;
@@ -36,8 +37,8 @@ template.innerHTML = `
       position: absolute;
       width: 4em;
       height: 4em;
-      top: .25em;
-      right: .25em;
+      top: 0.25em;
+      right: 0.25em;
       padding: 0;
       border-radius: 100%;
       border: none;
@@ -113,44 +114,6 @@ template.innerHTML = `
       margin-top: calc(2 * var(--gap));
     }
 
-    aside section#details svg {
-      width: 20px;
-      vertical-align: middle;
-      stroke: currentColor;
-      stroke-width: 2px;
-      fill: none;
-    }
-
-    aside section#details dl {
-      display: grid;
-      grid-template-columns: 25px auto;
-      grid-template-rows: auto;
-      row-gap: calc(var(--gap) / 3);
-      margin: 0;
-    }
-
-    aside section#details dl dd {
-      grid-column-start: 2;
-      display: flex;
-      align-items: center;
-      margin: 0;
-      text-overflow: ellipsis;
-    }
-
-    aside section#details dl dt svg path {
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    aside section#details dl dt,
-    aside section#details dl dd {
-      vertical-align: middle;
-    }
-
-    aside section#details abbr {
-      cursor: help;
-    }
-
     aside section#faces ul {
       --border-width: 3px;
       display: flex;
@@ -209,119 +172,203 @@ template.innerHTML = `
         width: calc(50% - 25px);
       }
     }
-  </style>
-  <aside class="hidden">
-    <button>
-      <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24">
-        <path d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </button>
+  `
 
-    <section id="details">
-      <h2>Ficha técnica</h2>
-      <dl></dl>
-    </section>
+  static html = html`
+    <aside class="hidden">
+      <button>
+        <svg viewBox="0 0 24 24">
+          <path d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
 
-    <section id="faces">
-      <h2><span></span> Personas detectadas</h2>
-      <ul></ul>
-    </section>
+      <rs-panel-details>
+        <h2></h2>
+        <dl></dl>
+      </rs-panel-details>
 
-    <section id="objects">
-      <h2><span></span> Objetos detectados</h2>
-      <ul></ul>
-    </section>
+      <section id="exif">
+        <h2></h2>
+        <dl></dl>
+      </section>
 
-    <section id="tags">
-      <h2>Etiquetas automáticas</h2>
-      <ul></ul>
-    </section>
+      <section id="faces">
+        <h2></h2>
+        <ul></ul>
+      </section>
 
-    <footer></footer>
-  </aside>
-`
+      <section id="objects">
+        <h2></h2>
+        <ul></ul>
+      </section>
 
-customElements.define(
-  component,
+      <section id="tags">
+        <h2></h2>
+        <ul></ul>
+      </section>
 
-  class extends HTMLElement {
-    constructor() {
-      super()
-      const root = this.attachShadow({ mode: 'open' })
-      root.append(template.content.cloneNode(true))
+      <footer></footer>
+    </aside>
+  `
+
+  constructor() {
+    super()
+
+    i18n.push({
+      'panel.faces.many': {
+        es: '${count} personas',
+        eu: '${count} gizakiak',
+        en: '${count} people',
+        fr: '${count} personnes',
+      },
+      'panel.faces.one': {
+        es: 'Una persona',
+        eu: 'Gizaki bat',
+        en: 'One person',
+        fr: 'Une personne',
+      },
+      'panel.objects.many': {
+        es: '${count} objetos',
+        eu: '${count} gauzak',
+        en: '${count} objects',
+        fr: '${count} objets',
+      },
+      'panel.objects.one': {
+        es: 'Un objeto',
+        eu: 'Gauza bat',
+        en: 'One object',
+        fr: 'Un objet',
+      },
+      'panel.details': {
+        es: 'Ficha técnica',
+        eu: 'Fitxa teknikoa',
+        en: 'Data sheet',
+        fr: 'Fiche technique',
+      },
+      'panel.tags': {
+        es: 'Etiquetas automáticas',
+        eu: 'Etiketa automatikoak',
+        en: 'Automatic tags',
+        fr: 'Étiquettes automatiques',
+      },
+      'panel.exif': {
+        es: 'Metadatos Exif',
+        eu: 'Exif metadatuak',
+        en: 'Exif metadata',
+        fr: 'Métadonnées EXIF',
+      },
+    })
+  }
+
+  onLanguagechange() {
+    this.aside.querySelector('section#tags h2').innerHTML =
+      i18n.get('panel.tags')
+    this.aside.querySelector('section#exif h2').innerHTML =
+      i18n.get('panel.exif')
+
+    if (!this.metadata) {
+      return
     }
 
-    connectedCallback() {
-      this.aside = this.shadowRoot.querySelector('aside')
-      this.details = this.shadowRoot.querySelector('dl')
-      this.button = this.aside.querySelector('button')
-      this.footer = this.shadowRoot.querySelector('footer')
+    const { faces, objects } = this.metadata
 
-      this.button.addEventListener('click', () => app.restore())
+    this.aside.querySelector('section#faces h2').innerHTML = i18n.get(
+      faces.length > 1 ? 'panel.faces.many' : 'panel.faces.one',
+      { count: faces.length }
+    )
 
-      this.aside.addEventListener('mouseover', (event) => {
-        if (event.target.dataset.id) {
-          app.activeLayer = event.target.dataset.id
-        }
-      })
+    this.aside.querySelector('section#objects h2').innerHTML = i18n.get(
+      objects.length > 1 ? 'panel.objects.many' : 'panel.objects.one',
+      { count: objects.length }
+    )
+  }
 
-      this.aside.addEventListener('mouseout', (event) => {
-        if (event.target.dataset.id) {
-          app.activeLayer = false
-        }
-      })
+  async connectedCallback() {
+    this.aside = this.shadowRoot.querySelector('aside')
+    this.details = this.shadowRoot.querySelector('rs-panel-details')
+    this.button = this.aside.querySelector('button')
+    this.footer = this.shadowRoot.querySelector('footer')
+
+    const { PanelDetails } = await import(
+      `../${app.project.folder}/components/rs-panel-details.js`
+    )
+
+    customElements.define('rs-panel-details', PanelDetails)
+    customElements.define('rs-license-cdis', LicenseCDIS)
+    customElements.define('rs-license-cc-by-sa', LicenseCCBYSA)
+
+    this.sounds = {
+      open: new Audio('/assets/sounds/activate.mp3'),
+      close: new Audio('/assets/sounds/deactivate.mp3'),
     }
 
-    set activeLayer(id) {
-      this.aside.querySelectorAll('section *[data-id]').forEach((element) => {
-        element.classList.toggle('active', element.dataset.id === id)
-      })
-    }
+    this.button.addEventListener('click', () => app.$grid.restore())
 
-    set data(data) {
-      const panel = this.shadowRoot.querySelector('aside')
-
-      if (!data) {
-        panel.classList.add('hidden')
-        return
+    this.aside.addEventListener('mouseover', (event) => {
+      if (event.target.dataset.id) {
+        app.$grid.activeLayer = event.target.dataset.id
       }
+    })
 
-      const { details, faces, objects, tags } = data
+    this.aside.addEventListener('mouseout', (event) => {
+      if (event.target.dataset.id) {
+        app.$grid.activeLayer = false
+      }
+    })
 
-      this.details.innerHTML = app.project.panel(details)
+    window.addEventListener('languagechange', this.onLanguagechange.bind(this))
+  }
 
-      Array('faces', 'objects', 'tags').forEach((key) => {
-        this.shadowRoot
-          .querySelector(`section#${key}`)
-          .classList.toggle('hidden', !data[key].length)
-      })
+  set activeLayer(id) {
+    this.aside.querySelectorAll('section *[data-id]').forEach((element) => {
+      element.classList.toggle('active', element.dataset.id === id)
+    })
+  }
 
-      panel.querySelector('section#faces h2 span').innerHTML = faces.length
-      panel.querySelector('section#objects h2 span').innerHTML = objects.length
+  set data(data) {
+    const panel = this.shadowRoot.querySelector('aside')
 
-      const url = app.project.image(details.id)
+    if (!data) {
+      !panel.classList.contains('hidden') && this.sounds.close.play()
+      panel.classList.add('hidden')
+      return
+    }
 
-      const containerWidth = panel.querySelector('ul').offsetWidth / facesPerRow
-      const containerHeight = containerWidth
+    this.metadata = data
 
-      const { width, height } = app.selected.getBoundingClientRect()
-      const aspectRatio = width / height
+    const { faces, objects, tags, details, exif } = data
 
-      panel.querySelector('section#faces ul').innerHTML = faces
-        .map((face) => {
-          const backgroundHeight = containerHeight / face.height
-          const backgroundWidth = backgroundHeight * aspectRatio
+    this.details.data = data
 
-          const realFaceWidth =
-            (containerHeight * aspectRatio * face.width) / face.height
+    Array('faces', 'objects', 'tags').forEach((key) => {
+      this.shadowRoot
+        .querySelector(`section#${key}`)
+        .classList.toggle('hidden', !data[key].length)
+    })
 
-          const facePadding = (containerWidth - realFaceWidth) / 2 - 5
+    const url = app.project.image(details.id)
 
-          const positionX = backgroundWidth * face.left - facePadding
-          const positionY = backgroundHeight * face.top
+    const containerWidth = panel.querySelector('ul').offsetWidth / facesPerRow
+    const containerHeight = containerWidth
 
-          return `
-            <li style="height: ${containerHeight}px">
+    const { width, height } = app.$grid.selected.getBoundingClientRect()
+    const aspectRatio = width / height
+
+    panel.querySelector('section#faces ul').innerHTML = faces
+      .map((face) => {
+        const backgroundHeight = containerHeight / face.height
+        const backgroundWidth = backgroundHeight * aspectRatio
+
+        const realFaceWidth =
+          (containerHeight * aspectRatio * face.width) / face.height
+
+        const facePadding = (containerWidth - realFaceWidth) / 2 - 5
+
+        const positionX = backgroundWidth * face.left - facePadding
+        const positionY = backgroundHeight * face.top
+
+        return `
+            <li style="width: ${containerHeight}px; height: ${containerHeight}px">
               <img
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                 data-id="${face.id}"
@@ -336,30 +383,36 @@ customElements.define(
               />
             </li>
           `
-        })
-        .join('')
+      })
+      .join('')
 
-      panel.querySelector('section#objects ul').innerHTML = objects
-        .map((object) => `<li data-id="${object.id}">${object.name}</li>`)
-        .join(', ')
+    panel.querySelector('section#objects ul').innerHTML = objects
+      .map((object) => `<li data-id="${object.id}">${object.name}</li>`)
+      .join(', ')
 
-      panel.querySelector('section#tags ul').innerHTML = tags
-        .map(
-          (tag) => `
+    panel.querySelector('section#exif dl').innerHTML = Object.entries(exif)
+      .map(([key, value]) => `<dt>${key}</dt><dd>${value}</dd>`)
+      .join('')
+
+    panel.querySelector('section#tags ul').innerHTML = tags
+      .map(
+        (tag) => `
             <li><a
                 href="/?q=${tag.name}"
                 title="«${tag.label}» (Confianza: ${tag.confidence} %)"
               >${tag.name}</a></li>`
-        )
-        .join(', ')
+      )
+      .join(', ')
 
-      if (details.license === 'cdis') {
-        this.footer.innerHTML = `<rs-license-cdis></rs-license-cdis>`
-      } else if (details.license === 'cc-by-sa') {
-        this.footer.innerHTML = `<rs-license-cc-by-sa></rs-license-cc-by-sa>`
-      }
-
-      panel.classList.remove('hidden')
+    if (details.license === 'cdis') {
+      this.footer.innerHTML = `<rs-license-cdis></rs-license-cdis>`
+    } else if (details.license === 'cc-by-sa') {
+      this.footer.innerHTML = `<rs-license-cc-by-sa></rs-license-cc-by-sa>`
     }
+
+    panel.classList.contains('hidden') && this.sounds.open.play()
+    panel.classList.remove('hidden')
   }
-)
+}
+
+export { Panel }

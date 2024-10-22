@@ -1,3 +1,4 @@
+// Identidad que utilizo solo para que VS Code coloree la sintaxis.
 // Véase https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#raw_strings
 const identity = (strings, ...values) => {
   return String.raw({ raw: strings }, ...values)
@@ -12,24 +13,19 @@ class MyElement extends HTMLElement {
 
     const shadowRoot = this.attachShadow({ mode: 'open' })
 
-    try {
+    // @ts-ignore
+    const styles = this.constructor.styles
+    // @ts-ignore
+    const html = this.constructor.html
+
+    if (styles) {
       const stylesheet = new CSSStyleSheet()
-      stylesheet.replace(this.constructor.styles)
-      shadowRoot.adoptedStyleSheets = [
-        ...document.adoptedStyleSheets,
-        stylesheet,
-      ]
-      shadowRoot.innerHTML = this.constructor.html
-    } catch {
-      // Para Safari. Véase https://caniuse.com/?search=adoptedStyleSheets
-      const styles = document.head.querySelector('style')?.innerHTML
-      shadowRoot.innerHTML = html`
-        <style>
-          ${styles}
-          ${this.constructor.styles}
-        </style>
-        ${this.constructor.html}
-      `
+      stylesheet.replaceSync(styles)
+      shadowRoot.adoptedStyleSheets = [stylesheet]
+    }
+
+    if (html) {
+      shadowRoot.innerHTML = html
     }
   }
 }

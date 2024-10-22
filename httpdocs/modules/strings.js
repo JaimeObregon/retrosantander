@@ -7,10 +7,33 @@ const escape = (string) =>
         '&': '&amp;',
         '<': '&lt;',
         '>': '&gt;',
-        "'": '&#39;',
+        "'": '&#apos;',
         '"': '&quot;',
       }[tag])
   )
+
+// He comprobado que estas son las únicas entidades que aparecen en los metadatos del CDIS y de GureGipuzkoa.
+const decode = (string) => {
+  return string.replace(
+    /&amp;|&lt;|&gt;|&#39;|&quot;|&apos;|&ordm;|&aacute;|&eacute;|&iacute;|&iquest;|&ntilde;|&oacute;/g,
+    (match) =>
+      ({
+        '&amp;': '&',
+        '&lt;': '<',
+        '&gt;': '>',
+        '&#39;': "'",
+        '&quot;': '"',
+        '&apos;': "'",
+        '&ordm;': 'º',
+        '&aacute;': 'á',
+        '&eacute;': 'é',
+        '&iacute;': 'í',
+        '&iquest;': '¿',
+        '&ntilde;': 'ñ',
+        '&oacute;': 'ó',
+      }[match])
+  )
+}
 
 // Tokeniza una cadena. Véase https://es.stackoverflow.com/a/62032.
 // `Manuel   González-Mesones` > `manuel gonzalez mesones`.
@@ -34,4 +57,4 @@ const normalize = (string) => {
 // `Leintz-Gatzaga` > `leintz_gatzaga`
 const slugize = (string) => normalize(string).replaceAll(' ', '_')
 
-export { escape, normalize, slugize }
+export { escape, decode, normalize, slugize }
