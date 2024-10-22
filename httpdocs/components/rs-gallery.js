@@ -81,9 +81,11 @@ class Gallery extends MyElement {
 
     document.addEventListener('keydown', (event) => {
       if (event.key === 'ArrowLeft') {
-        this.previous() && event.preventDefault()
+        this.previous()
+        event.preventDefault()
       } else if (event.key === 'ArrowRight') {
-        this.next() && event.preventDefault()
+        this.next()
+        event.preventDefault()
       }
     })
 

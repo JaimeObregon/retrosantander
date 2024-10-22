@@ -12,7 +12,12 @@ const i18n = {
 
   setLanguage: () => {
     const preferred = [
-      ...new Set(navigator.languages.map((locale) => locale.match(/^../)[0])),
+      ...new Set(
+        navigator.languages
+          .map((locale) => locale.match(/^../))
+          .filter((match) => match !== null)
+          .map((match) => match[0]),
+      ),
     ]
 
     const matched =
@@ -29,7 +34,7 @@ const i18n = {
 
   push: (translations) => {
     Object.entries(translations).forEach(
-      ([key, translations]) => (app.translations[key] = translations)
+      ([key, translations]) => (app.translations[key] = translations),
     )
   },
 

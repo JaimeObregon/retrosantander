@@ -73,17 +73,20 @@ class ThemeSwitcher extends MyElement {
       transition: transform var(--delay-medium) var(--ease-out-5);
     }
 
+    /* stylelint-disable-next-line no-duplicate-selectors */
     :host([theme='dark']) svg circle#sun {
       transition-timing-function: var(--ease-3);
       transition-duration: var(--delay-medium);
       transform: scale(1.75);
     }
 
+    /* stylelint-disable-next-line no-duplicate-selectors */
     :host([theme='dark']) svg g {
       transition-duration: var(--delay-small);
       transform: rotate(-25deg);
     }
 
+    /* stylelint-disable-next-line no-duplicate-selectors */
     :host([theme='dark']) svg mask#moon circle {
       transition-delay: var(--delay-medium);
       transition-duration: var(--delay-x-large);
@@ -136,6 +139,7 @@ class ThemeSwitcher extends MyElement {
     const system = window.matchMedia(this.mediaQueryString).matches
       ? 'dark'
       : 'light'
+    // @ts-ignore
     this.theme = stored ?? system
 
     this.changeMediaHandler = (event) => {
@@ -154,7 +158,13 @@ class ThemeSwitcher extends MyElement {
 
   set theme(value) {
     localStorage.setItem(this.storageKey, value)
-    document.querySelector('html').dataset.theme = value
+
+    const html = document.querySelector('html')
+    if (!(html instanceof HTMLHtmlElement)) {
+      return
+    }
+
+    html.dataset.theme = value
     this.setAttribute('theme', value)
     this.dark = value === 'dark'
   }
@@ -162,21 +172,23 @@ class ThemeSwitcher extends MyElement {
   clickHandler(event) {
     this.theme = this.theme === 'light' ? 'dark' : 'light'
 
-    const audio = this.sounds[this.theme]
-    audio.play()
+    if (this.sounds) {
+      const audio = this.sounds[this.theme]
+      audio.play()
+    }
 
     event.stopPropagation()
   }
 
   connectedCallback() {
-    this.button = this.shadowRoot.querySelector('button')
+    this.button = this.shadowRoot?.querySelector('button')
 
     this.sounds = {
       dark: new Audio('/assets/sounds/activate.mp3'),
       light: new Audio('/assets/sounds/deactivate.mp3'),
     }
 
-    this.button.addEventListener('click', this.clickHandler.bind(this))
+    this.button?.addEventListener('click', this.clickHandler.bind(this))
   }
 
   disconnectedCallback() {

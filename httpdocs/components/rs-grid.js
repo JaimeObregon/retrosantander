@@ -78,11 +78,15 @@ class Grid extends MyElement {
   padding
 
   async connectedCallback() {
-    this.container = this.shadowRoot.querySelector('main')
+    this.container = this.shadowRoot?.querySelector('main')
     this.$loading = document.querySelector('rs-loading')
     this.$panel = document.querySelector('rs-panel')
 
-    this.hr = this.shadowRoot.querySelector('hr')
+    this.hr = this.shadowRoot?.querySelector('hr')
+
+    if (!this.hr) {
+      return
+    }
 
     const help = `help.${app.language}.html`
     const response = await fetch(help)
@@ -170,6 +174,7 @@ class Grid extends MyElement {
 
     const start = page * this.itemsPerPage
     const end = (1 + page) * this.itemsPerPage
+
     const images = app.results.slice(start, end).map((result) => result.id)
 
     if (!images.length) {
@@ -196,13 +201,18 @@ class Grid extends MyElement {
 
   arrange() {
     const div = document.createElement('div')
-    div.style = 'width: var(--gap); height: var(--panel-width);'
+    div.setAttribute('style', 'width: var(--gap); height: var(--panel-width);')
 
     document.body.appendChild(div)
     const { width: gap, height: detailsWidth } = div.getBoundingClientRect()
     document.body.removeChild(div)
 
     const header = document.querySelector('header')
+
+    if (!header) {
+      return
+    }
+
     const headerHeight = header.getBoundingClientRect().height
 
     const top = headerHeight + gap
@@ -273,6 +283,11 @@ class Grid extends MyElement {
       .reduce((max, current) => (max = Math.max(max, current)), 0)
 
     this.container.style.height = `${bottommost + gap}px`
+
+    if (!this.hr) {
+      return
+    }
+
     this.hr.style.top = `${bottommost + gap}px`
 
     this.ready = true
@@ -281,6 +296,11 @@ class Grid extends MyElement {
   clear() {
     this.container.innerHTML = ''
     this.container.style.height = 0
+
+    if (!this.hr) {
+      return
+    }
+
     this.hr.style.top = ''
   }
 

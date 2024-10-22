@@ -6,8 +6,6 @@ const app = {
 
   debounceDelay: 350,
 
-  results: [],
-
   // Establece el título visible en la cabecera de sitio.
   set title(caption) {
     this.$title.caption = caption
@@ -32,6 +30,8 @@ const app = {
   search() {
     const { results, suggestions } = database.search(this.query)
 
+    this.results = this.results ?? []
+
     this.$search.suggestions = suggestions
 
     const unchanged =
@@ -48,7 +48,7 @@ const app = {
     this.timeout = setTimeout(() => {
       const url = new URL(document.location.href)
       if (app.query !== url.searchParams.get('q')) {
-        history.pushState(null, null, app.query ? `/?q=${app.query}` : '/')
+        history.pushState(null, '', app.query ? `/?q=${app.query}` : '/')
       }
 
       this.$grid = document.querySelector('rs-grid')

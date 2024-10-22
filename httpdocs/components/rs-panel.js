@@ -339,16 +339,22 @@ class Panel extends MyElement {
   }
 
   set activeLayer(id) {
-    this.aside.querySelectorAll('section *[data-id]').forEach((element) => {
-      element.classList.toggle('active', element.dataset.id === id)
+    this.aside?.querySelectorAll('section *[data-id]').forEach((element) => {
+      if (element instanceof HTMLElement) {
+        element.classList.toggle('active', element.dataset.id === id)
+      }
     })
   }
 
   set data(data) {
     const panel = this.shadowRoot?.querySelector('aside')
 
+    if (!panel) {
+      return
+    }
+
     if (!data) {
-      !panel.classList.contains('hidden') && this.sounds.close.play()
+      !panel.classList.contains('hidden') && this.sounds?.close.play()
       panel.classList.add('hidden')
       return
     }
@@ -357,23 +363,41 @@ class Panel extends MyElement {
 
     const { faces, objects, tags, details, exif } = data
 
-    this.details.data = data
+    if (!this.details) {
+      return
+    }
+
+    this.details['data'] = data
 
     Array('faces', 'objects', 'tags').forEach((key) => {
-      this.shadowRoot
-        .querySelector(`section#${key}`)
-        .classList.toggle('hidden', !data[key].length)
+      const section = this.shadowRoot?.querySelector(`section#${key}`)
+      if (!section) {
+        return
+      }
+      section.classList.toggle('hidden', !data[key].length)
     })
 
     const url = app.project.image(details.id)
 
-    const containerWidth = panel.querySelector('ul').offsetWidth / facesPerRow
+    const ul = panel.querySelector('ul')
+
+    if (!ul) {
+      return
+    }
+
+    const containerWidth = ul.offsetWidth / facesPerRow
     const containerHeight = containerWidth
 
     const { width, height } = app.$grid.selected.getBoundingClientRect()
     const aspectRatio = width / height
 
-    panel.querySelector('section#faces ul').innerHTML = faces
+    const facesList = panel.querySelector('section#faces ul')
+
+    if (!facesList) {
+      return
+    }
+
+    facesList.innerHTML = faces
       .map((face) => {
         const backgroundHeight = containerHeight / face.height
         const backgroundWidth = backgroundHeight * aspectRatio
@@ -405,15 +429,23 @@ class Panel extends MyElement {
       })
       .join('')
 
-    panel.querySelector('section#objects ul').innerHTML = objects
+    const objectsList = panel.querySelector('section#objects ul')
+    const exifList = panel.querySelector('section#exif dl')
+    const tagsList = panel.querySelector('section#tags ul')
+
+    if (!objectsList || !exifList || !tagsList) {
+      return
+    }
+
+    objectsList.innerHTML = objects
       .map((object) => `<li data-id="${object.id}">${object.name}</li>`)
       .join(', ')
 
-    panel.querySelector('section#exif dl').innerHTML = Object.entries(exif)
+    exifList.innerHTML = Object.entries(exif)
       .map(([key, value]) => `<dt>${key}</dt><dd>${value}</dd>`)
       .join('')
 
-    panel.querySelector('section#tags ul').innerHTML = tags
+    tagsList.innerHTML = tags
       .map(
         (tag) => `
             <li><a
@@ -423,13 +455,17 @@ class Panel extends MyElement {
       )
       .join(', ')
 
+    if (!this.footer) {
+      return
+    }
+
     if (details.license === 'cdis') {
       this.footer.innerHTML = `<rs-license-cdis></rs-license-cdis>`
     } else if (details.license === 'cc-by-sa') {
       this.footer.innerHTML = `<rs-license-cc-by-sa></rs-license-cc-by-sa>`
     }
 
-    panel.classList.contains('hidden') && this.sounds.open.play()
+    panel.classList.contains('hidden') && this.sounds?.open.play()
     panel.classList.remove('hidden')
   }
 }

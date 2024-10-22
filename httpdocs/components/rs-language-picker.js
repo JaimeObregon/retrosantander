@@ -73,13 +73,23 @@ class LanguagePicker extends MyElement {
     this.form.addEventListener('change', () => {
       this.sound?.play()
 
+      if (!this.form) {
+        return
+      }
+
       const labels = [...this.form.querySelectorAll('label')]
       labels.forEach((label) => {
         const checked = label.querySelector('input:checked')
         label.classList.toggle('selected', Boolean(checked))
       })
 
-      const value = this.form.querySelector('input:checked').value
+      const input = this.form.querySelector('input:checked')
+
+      if (!(input instanceof HTMLInputElement)) {
+        return
+      }
+
+      const value = input.value
       app.language = value
       localStorage.setItem(storageKey, value)
 

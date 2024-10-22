@@ -30,21 +30,19 @@ const prettify = (title) => {
 }
 
 const database = {
-  records: [],
-
   // Carga en `this.records` el fichero JSON con los datos.
   load: async (url) => {
     const response = await fetch(url)
     const json = await response.json()
 
     database.records = json.map(
-      ([id, title, tags, caption = '', file = null]) => ({
+      ([id, title, tags, caption = '', file = {}]) => ({
         id,
         title: prettify(title),
         index: normalize([title, caption].join(' ')),
         tags,
         ...(file && { file }),
-      })
+      }),
     )
   },
 
@@ -71,7 +69,7 @@ const database = {
 
     const regexp = new RegExp(query)
     const results = database.records.filter((record) =>
-      record.index.match(regexp)
+      record.index.match(regexp),
     )
 
     const suggestions = results
@@ -79,7 +77,7 @@ const database = {
         item.index
           .split(' ')
           .filter((word) => word.match(new RegExp(`^${query}`)))
-          .filter((word) => word.length)
+          .filter((word) => word.length),
       )
       .filter((value, index, word) => word.indexOf(value) === index)
       .sort((a, b) => a.localeCompare(b))
@@ -101,10 +99,10 @@ const database = {
       ({
         Male: 'Hombre',
         Female: 'Mujer',
-      }[value])
+      })[value]
 
     const faces = rekognition.FaceDetails.filter(
-      (face) => face.Confidence >= confidenceThreshold
+      (face) => face.Confidence >= confidenceThreshold,
     ).map((face, i) => ({
       type: 'face',
       id: `face-${i}`,
@@ -159,12 +157,12 @@ const database = {
     }))
 
     const objects = rekognition.Labels.filter(
-      (object) => object.Instances.length
+      (object) => object.Instances.length,
     ).reduce(
       (accumulator, object) => [
         ...accumulator,
         ...object.Instances.filter(
-          (instance) => instance.Confidence >= confidenceThreshold
+          (instance) => instance.Confidence >= confidenceThreshold,
         ).map((instance, i) => ({
           type: 'object',
           id: `object-${accumulator.length + i}`,
@@ -177,7 +175,7 @@ const database = {
           height: instance.BoundingBox.Height,
         })),
       ],
-      []
+      [],
     )
 
     const tags = rekognition.Labels.filter((label) => !label.Instances.length)
