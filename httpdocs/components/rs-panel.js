@@ -261,10 +261,17 @@ class Panel extends MyElement {
   }
 
   onLanguagechange() {
-    this.aside.querySelector('section#tags h2').innerHTML =
-      i18n.get('panel.tags')
-    this.aside.querySelector('section#exif h2').innerHTML =
-      i18n.get('panel.exif')
+    const tagsHeading = this.aside?.querySelector('section#tags h2')
+    const exifHeading = this.aside?.querySelector('section#exif h2')
+    const facesHeading = this.aside?.querySelector('section#faces h2')
+    const objectsHeading = this.aside?.querySelector('section#objects h2')
+
+    if (!tagsHeading || !exifHeading || !facesHeading || !objectsHeading) {
+      return
+    }
+
+    tagsHeading.innerHTML = i18n.get('panel.tags')
+    exifHeading.innerHTML = i18n.get('panel.exif')
 
     if (!this.metadata) {
       return
@@ -272,22 +279,26 @@ class Panel extends MyElement {
 
     const { faces, objects } = this.metadata
 
-    this.aside.querySelector('section#faces h2').innerHTML = i18n.get(
+    faces.innerHTML = i18n.get(
       faces.length > 1 ? 'panel.faces.many' : 'panel.faces.one',
       { count: faces.length },
     )
 
-    this.aside.querySelector('section#objects h2').innerHTML = i18n.get(
+    objectsHeading.innerHTML = i18n.get(
       objects.length > 1 ? 'panel.objects.many' : 'panel.objects.one',
       { count: objects.length },
     )
   }
 
   async connectedCallback() {
-    this.aside = this.shadowRoot.querySelector('aside')
-    this.details = this.shadowRoot.querySelector('rs-panel-details')
-    this.button = this.aside.querySelector('button')
-    this.footer = this.shadowRoot.querySelector('footer')
+    this.aside = this.shadowRoot?.querySelector('aside')
+    this.details = this.shadowRoot?.querySelector('rs-panel-details')
+    this.button = this.aside?.querySelector('button')
+    this.footer = this.shadowRoot?.querySelector('footer')
+
+    if (!this.aside || !this.details || !this.button || !this.footer) {
+      return
+    }
 
     const { PanelDetails } = await import(
       `../${app.project.folder}/components/rs-panel-details.js`

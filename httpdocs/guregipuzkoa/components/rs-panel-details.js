@@ -78,13 +78,15 @@ class PanelDetails extends MyElement {
   set data(data) {
     const { details } = data
 
-    this.innerHTML = Object.entries(details).map(
-      ([key, value]) => `<span slot="${key}">${value}</span>`
+    const slots = Object.entries(details).map(
+      ([key, value]) => `<span slot="${key}">${value}</span>`,
     )
 
-    const a = this.shadowRoot.querySelector('a')
+    this.innerHTML = slots.join('')
+
+    const a = this.shadowRoot?.querySelector('a')
     const url = `http://portal.ayto-santander.es/portalcdis/Public/FotoView.do?id=${details.id}`
-    a.setAttribute('href', url)
+    a?.setAttribute('href', url)
   }
 }
 

@@ -184,9 +184,9 @@ class Search extends MyElement {
   }
 
   connectedCallback() {
-    this.label = this.shadowRoot.querySelector('label')
-    this.input = this.shadowRoot.querySelector('input')
-    this.ul = this.shadowRoot.querySelector('ul')
+    this.label = this.shadowRoot?.querySelector('label')
+    this.input = this.shadowRoot?.querySelector('input')
+    this.ul = this.shadowRoot?.querySelector('ul')
 
     document.addEventListener('keydown', (event) => {
       if (event.key.length === 1 || event.key === 'Backspace') {

@@ -35,7 +35,7 @@ class LanguagePicker extends MyElement {
   static html = html`<form></form>`
 
   connectedCallback() {
-    this.form = this.shadowRoot.querySelector('form')
+    this.form = this.shadowRoot?.querySelector('form')
 
     this.sound = new Audio('/assets/sounds/activate.mp3')
 

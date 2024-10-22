@@ -106,8 +106,8 @@ class Collections extends MyElement {
   nav
 
   connectedCallback() {
-    this.nav = this.shadowRoot.querySelector('nav')
-    this.article = this.shadowRoot.querySelector('article')
+    this.nav = this.shadowRoot?.querySelector('nav')
+    this.article = this.shadowRoot?.querySelector('article')
 
     this.nav.innerHTML = app.project.collections
       .map(
