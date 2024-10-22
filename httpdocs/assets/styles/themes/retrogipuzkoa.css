@@ -1,8 +1,9 @@
-@import url(../typography.css);
-@import url(../system.css);
+@import url('../typography.css');
+@import url('../system.css');
 
 :root {
   /* Parte de la paleta de Tailwind */
+
   /* Véase https://tailwindcss.com/docs/customizing-colors */
   --color-neutral-50: #fafafa;
   --color-neutral-100: #f5f5f5;
@@ -16,7 +17,6 @@
   --color-neutral-900: #171717;
   --color-yellow-500: #eab308;
   --color-red-600: #dc2626;
-
   --gap: var(--space-x-small);
   --panel-width: 22em;
   --header-height: var(--space-x-large);
@@ -42,11 +42,11 @@ html {
   margin: 0 var(--space-medium);
   font-family: 'Inter var', sans-serif;
   font-weight: 300;
-  background: var(--color-background);
   color: var(--color-text);
-  scroll-behavior: smooth;
   user-select: none;
-  -webkit-text-size-adjust: 100%;
+  background: var(--color-background);
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -56,21 +56,20 @@ body {
 }
 
 header {
-  display: flex;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: var(--header-height);
   z-index: 1;
   box-sizing: border-box;
+  display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--color-line);
-  box-shadow: 0 5px 5px #1c191750;
+  width: 100%;
+  height: var(--header-height);
   background-color: #171717f0;
   backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--color-line);
+  box-shadow: 0 5px 5px #1c191750;
 }
 
 header rs-title {
@@ -91,10 +90,10 @@ rs-help {
   margin-top: var(--header-height);
 }
 
-@media (max-width: 1536px) {
+@media (width <= 1536px) {
 }
 
-@media (max-width: 1280px) {
+@media (width <= 1280px) {
   html {
     --gap: 8px;
   }
@@ -104,21 +103,21 @@ rs-help {
   }
 }
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
   html {
     --gap: 6px;
     --panel-width: 280px;
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   html {
     --panel-width: 100%;
     --header-height: 50px;
   }
 }
 
-@media (max-width: 640px) {
+@media (width <= 640px) {
   html {
     --header-height: 45px;
   }

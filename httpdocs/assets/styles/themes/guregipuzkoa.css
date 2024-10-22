@@ -1,5 +1,5 @@
-@import url(../typography.css);
-@import url(../system.css);
+@import url('../typography.css');
+@import url('../system.css');
 
 :root {
   --type-base: calc(0.75em + 0.5vw);
@@ -10,8 +10,8 @@
   font-size: 16px;
   font-variant-numeric: oldstyle-nums;
   line-height: var(--line-height-normal);
-  color-scheme: dark light;
   color: var(--color-text);
+  color-scheme: dark light;
   cursor: default;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,8 +25,8 @@
   --color-panel-components: 255, 255, 255;
   --color-heading: #0d1a26;
   --color-link: #c71585;
-  --color-highlight: #222222;
-  --color-highlight-inverted: #ffffff;
+  --color-highlight: #222;
+  --color-highlight-inverted: #fff;
   --color-text: #274059;
   --color-text-pale: #707f8d;
   --color-line: #e3dedc;
@@ -41,9 +41,9 @@
     --color-background: #0d2630;
     --color-panel: #19313c;
     --color-panel-components: 25, 49, 60;
-    --color-heading: #ffffff;
+    --color-heading: #fff;
     --color-link: #ccec88;
-    --color-highlight: #ffffff;
+    --color-highlight: #fff;
     --color-highlight-inverted: #0a1e26;
     --color-text: #dfdfdf;
     --color-text-pale: #999;
@@ -64,12 +64,11 @@ body {
 body {
   /* max-width: var(--line-width-wide); */
   margin: auto;
-  text-align: justify;
   hyphens: auto;
-  -webkit-hyphens: auto;
+  text-align: justify;
 }
 
-/******************************************************************************/
+/*****************************************************************************  */
 
 html {
   --gap: 20px;
@@ -80,8 +79,9 @@ html {
   font-family: 'Inter var', sans-serif;
   font-weight: 300;
   scroll-behavior: smooth;
+
   /* user-select: none; */
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -91,21 +91,19 @@ body {
 }
 
 header {
-  display: flex;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: var(--header-height);
   z-index: 1;
   box-sizing: border-box;
+  display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--color-line);
-  box-shadow: 0 5px 5px #1c191750;
+  width: 100%;
+  height: var(--header-height);
   background-color: rgba(var(--color-panel-components), 0.85);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-line);
+  box-shadow: 0 5px 5px #1c191750;
 }
 
 header rs-title {
@@ -126,10 +124,10 @@ rs-help {
   margin-top: var(--header-height);
 }
 
-@media (max-width: 1536px) {
+@media (width <= 1536px) {
 }
 
-@media (max-width: 1280px) {
+@media (width <= 1280px) {
   html {
     --gap: 16px;
   }
@@ -139,31 +137,31 @@ rs-help {
   }
 }
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
   html {
     --gap: 14px;
     --panel-width: 280px;
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   html {
     --panel-width: 100%;
     --header-height: 50px;
   }
 }
 
-@media (max-width: 640px) {
+@media (width <= 640px) {
   html {
     --header-height: 45px;
   }
 }
 
-/******************************************************************************/
+/*****************************************************************************  */
 
 ::selection {
-  background-color: var(--color-highlight);
   color: var(--color-highlight-inverted);
+  background-color: var(--color-highlight);
 }
 
 strong {
@@ -182,15 +180,15 @@ a:hover {
 }
 
 a[href^='http'] {
-  text-decoration: inherit;
   color: inherit;
+  text-decoration: inherit;
 }
 
 a[href^='http']::after {
-  content: '°';
   position: relative;
   top: -0.2em;
   color: var(--color-accent);
+  content: '°';
 }
 
 a[href^='http']:hover {
@@ -217,15 +215,15 @@ span[title] {
 }
 
 ins {
-  text-decoration: none;
   color: var(--color-highlight);
+  text-decoration: none;
 }
 
 del {
+  color: var(--color-text-pale);
   text-decoration: underline;
   text-underline-offset: -30%;
   text-decoration-skip-ink: none;
-  color: var(--color-text-pale);
 }
 
 del strong {
@@ -272,8 +270,8 @@ span.dfn::after {
 
 hr {
   margin-top: var(--space-xx-large);
-  border: none;
   overflow: visible;
+  border: none;
 }
 
 figure {
@@ -292,8 +290,8 @@ h1 {
 }
 
 h2 {
-  font-size: var(--type-large);
   margin: var(--space-large) 0 0 0;
+  font-size: var(--type-large);
   line-height: var(--line-height-condensed);
   color: var(--color-heading);
 }
@@ -303,15 +301,15 @@ blockquote footer {
 }
 
 blockquote footer b {
-  font-weight: inherit;
   font-style: normal;
+  font-weight: inherit;
   font-variant: small-caps;
 }
 
 ol,
 ul {
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 :is(ol, ul) li {
@@ -325,22 +323,22 @@ ol {
 
 ol li::before {
   position: absolute;
-  content: counter(number);
   top: -0.125em;
   left: 0;
+  font-family: Numbered;
   font-size: var(--type-large);
-  font-family: 'Numbered';
-  letter-spacing: 0;
-  counter-increment: number;
   font-style: normal;
+  letter-spacing: 0;
+  content: counter(number);
+  counter-increment: number;
 }
 
 ul li::before {
   position: absolute;
-  content: '–';
   top: -0.15em;
   left: 0;
   font-size: var(--type-large);
+  content: '–';
 }
 
 code {
