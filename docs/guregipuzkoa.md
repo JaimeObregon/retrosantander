@@ -184,7 +184,7 @@ find originals/images -type f | xargs -n 1 -P 8 -I {} ./process_image.sh {}
 
 Este proceso conlleva varios días y cuesta unos 350 euros.
 
-La lista de etiquetas reconocidas por Rekognition pueden descargarse desde [Detecting objects and concepts](https://docs.aws.amazon.com/rekognition/latest/dg/labels.html). Las versiones 2 y 3 las he descargado y guardado en [`private/guregipuzkoa/varios`](private/guregipuzkoa/varios) Esporádicamente Amazon actualiza el listado.
+La lista de etiquetas reconocidas por Rekognition pueden descargarse desde [Detecting objects and concepts](https://docs.aws.amazon.com/rekognition/latest/dg/labels.html). Las versiones 2 y 3 las he descargado y guardado en [`private/guregipuzkoa/varios`](/private/guregipuzkoa/varios) Esporádicamente Amazon actualiza el listado.
 
 Finalizado el proceso, busco ficheros vacíos, demasiado pequeños o que no contengan JSON válido, y los reproceso.
 

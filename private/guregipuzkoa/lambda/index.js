@@ -38,8 +38,11 @@ const handler = async (event) => {
   const buffer = []
 
   const contents = await new Promise((resolve, reject) => {
+    // @ts-ignore
     stream.on('data', (chunk) => buffer.push(chunk))
+    // @ts-ignore
     stream.on('end', () => resolve(Buffer.concat(buffer)))
+    // @ts-ignore
     stream.on('error', (err) => reject(err))
   })
 
