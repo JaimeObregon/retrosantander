@@ -16,9 +16,9 @@ class Search extends MyElement {
     label {
       position: relative;
       display: flex;
-      font-size: 16px;
-      width: 15em;
       align-items: center;
+      width: 15em;
+      font-size: 16px;
       transition: width 350ms ease;
     }
 
@@ -91,13 +91,13 @@ class Search extends MyElement {
     label ul li a {
       display: block;
       padding: 8px var(--gap) 8px 35px;
-      text-decoration: none;
       color: inherit;
+      text-decoration: none;
     }
 
     label ul li a.selected {
-      background: var(--color-background);
       color: var(--color-accent);
+      background: var(--color-background);
     }
 
     label ul li a svg {
@@ -122,7 +122,7 @@ class Search extends MyElement {
       }
     }
 
-    @media (max-width: 1024px) {
+    @media (width <= 1024px) {
       label {
         width: 12rem;
       }
@@ -132,10 +132,10 @@ class Search extends MyElement {
       }
     }
 
-    @media (max-width: 768px) {
+    @media (width <= 768px) {
       label {
-        font-size: 14px;
         width: 8rem;
+        font-size: 14px;
       }
 
       label:focus-within {
@@ -143,10 +143,10 @@ class Search extends MyElement {
       }
     }
 
-    @media (max-width: 640px) {
+    @media (width <= 640px) {
       label {
-        font-size: 13px;
         width: 2rem;
+        font-size: 13px;
       }
     }
   `
@@ -269,7 +269,7 @@ class Search extends MyElement {
     this.selection = value
 
     this.results.forEach((result, index) =>
-      result.classList.toggle('selected', index === value)
+      result.classList.toggle('selected', index === value),
     )
   }
 
@@ -282,7 +282,7 @@ class Search extends MyElement {
             <a href="/?q=${q}">
               ${icon} ${q.replace(query, `<mark>${query}</mark>`)}
             </a>
-          </li>`
+          </li>`,
       )
       .join('')
 

@@ -7,18 +7,7 @@
   --bleed: var(--space-x-large);
   --padding: var(--space-xx-large);
 
-  font-size: 16px;
-  font-variant-numeric: oldstyle-nums;
-  line-height: var(--line-height-normal);
-  color: var(--color-text);
-  color-scheme: dark light;
-  cursor: default;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Inspirado en basecamp.com */
-:root {
+  /* Inspirado en basecamp.com */
   --color-accent: #c71585;
   --color-background: #fbf7f0;
   --color-panel: white;
@@ -32,6 +21,15 @@
   --color-line: #e3dedc;
   --color-warning: #fdba74;
   --color-backdrop: #000000d9;
+
+  font-size: 16px;
+  font-variant-numeric: oldstyle-nums;
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  color-scheme: dark light;
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Inspirado en Smashing Magazine */
@@ -54,18 +52,14 @@
 }
 
 body {
+  /* max-width: var(--line-width-wide); */
   margin: 0;
   font-family: var(--font-serif);
   font-size: var(--type-base);
-  letter-spacing: 0.025em;
-  background: var(--color-background);
-}
-
-body {
-  /* max-width: var(--line-width-wide); */
-  margin: auto;
   hyphens: auto;
   text-align: justify;
+  letter-spacing: 0.025em;
+  background: var(--color-background);
 }
 
 /*****************************************************************************  */
@@ -84,10 +78,6 @@ html {
   text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  margin: 0;
 }
 
 header {
@@ -122,9 +112,6 @@ header rs-menu {
 rs-help {
   display: flex;
   margin-top: var(--header-height);
-}
-
-@media (width <= 1536px) {
 }
 
 @media (width <= 1280px) {
@@ -325,7 +312,7 @@ ol li::before {
   position: absolute;
   top: -0.125em;
   left: 0;
-  font-family: Numbered;
+  font-family: Numbered, sans-serif;
   font-size: var(--type-large);
   font-style: normal;
   letter-spacing: 0;

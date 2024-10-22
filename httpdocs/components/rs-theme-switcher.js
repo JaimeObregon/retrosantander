@@ -73,14 +73,14 @@ class ThemeSwitcher extends MyElement {
     }
 
     :host([theme='dark']) svg circle#sun {
-      transform: scale(1.75);
       transition-timing-function: var(--ease-3);
       transition-duration: var(--delay-medium);
+      transform: scale(1.75);
     }
 
     :host([theme='dark']) svg g {
-      transform: rotate(-25deg);
       transition-duration: var(--delay-small);
+      transform: rotate(-25deg);
     }
 
     :host([theme='dark']) svg mask#moon circle {

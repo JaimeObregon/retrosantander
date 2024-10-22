@@ -19,17 +19,19 @@ class Grid extends MyElement {
       position: absolute;
       display: block;
       width: 25%;
-      transition: opacity ease-out 150ms, transform ease-out 350ms 350ms;
+      transition:
+        opacity ease-out 150ms,
+        transform ease-out 350ms 350ms;
     }
 
     main rs-image:not(.selected):hover {
-      transform: scale(1.0125);
       transition: transform ease-out 75ms;
+      transform: scale(1.0125);
     }
 
     main rs-image.hidden {
-      opacity: 0;
       pointer-events: none;
+      opacity: 0;
     }
 
     hr {

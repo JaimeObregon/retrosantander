@@ -11,40 +11,40 @@ class Gallery extends MyElement {
   static styles = css`
     div {
       position: absolute;
-      width: 100%;
-      height: 100vh;
       top: 0;
       left: 0;
+      width: 100%;
+      height: 100vh;
       background-size: cover;
       transition: opacity ${crossFadeDuration}ms;
     }
 
     nav {
       position: absolute;
-      display: flex;
-      justify-content: center;
       bottom: var(--gap);
       left: 0;
+      display: flex;
+      justify-content: center;
       width: 100%;
     }
 
     nav button {
       width: 1em;
       height: 1em;
-      border-radius: 100%;
       margin: 0 5px;
-      border: 1px solid var(--color-backdrop);
-      background: none;
       cursor: pointer;
+      background: none;
+      border: 1px solid var(--color-backdrop);
+      border-radius: 100%;
       transition: 350ms ease;
     }
 
     nav button:hover,
     nav button.active {
-      transform: scale(125%);
-      transition: 150ms ease;
       background: var(--color-accent);
       border-color: var(--color-line);
+      transition: 150ms ease;
+      transform: scale(125%);
     }
   `
 
@@ -137,7 +137,7 @@ class Gallery extends MyElement {
 
     const buttons = this.nav.querySelectorAll('button')
     buttons.forEach((button, i) =>
-      button.classList.toggle('active', i === index)
+      button.classList.toggle('active', i === index),
     )
 
     this.index = index

@@ -55,9 +55,9 @@ class Panel extends MyElement {
       display: block;
       width: 25px;
       margin: auto;
-      stroke: currentColor;
-      stroke-width: 2px;
       color: var(--color-neutral-500);
+      stroke: currentcolor;
+      stroke-width: 2px;
       transition: color ease-in-out 150ms;
     }
 
@@ -116,14 +116,15 @@ class Panel extends MyElement {
 
     aside section#faces ul {
       --border-width: 3px;
+
       display: flex;
       flex-wrap: wrap;
     }
 
     aside section#faces ul li {
-      font-size: 0;
-      padding: var(--border-width);
       box-sizing: border-box;
+      padding: var(--border-width);
+      font-size: 0;
     }
 
     aside section#objects ul li.active {
@@ -131,12 +132,12 @@ class Panel extends MyElement {
     }
 
     aside section#faces ul li img {
+      box-sizing: border-box;
       width: 100%;
       height: 100%;
-      box-sizing: border-box;
+      background-repeat: no-repeat;
       border: var(--border-width) solid transparent;
       border-radius: 100%;
-      background-repeat: no-repeat;
     }
 
     aside section#faces ul li img.active {
@@ -400,7 +401,7 @@ class Panel extends MyElement {
             <li><a
                 href="/?q=${tag.name}"
                 title="«${tag.label}» (Confianza: ${tag.confidence} %)"
-              >${tag.name}</a></li>`
+              >${tag.name}</a></li>`,
       )
       .join(', ')
 

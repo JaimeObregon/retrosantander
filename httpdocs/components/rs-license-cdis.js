@@ -3,25 +3,25 @@ import { MyElement, html, css } from '../modules/element.js'
 class LicenseCDIS extends MyElement {
   static styles = css`
     details {
+      padding: 0 22px 5px;
+      margin: calc(2 * var(--gap)) 0 0;
       font-size: 14px;
       font-weight: 400;
-      margin: calc(2 * var(--gap)) 0 0 0;
-      padding: 0 22px 5px 22px;
-      border-radius: 5px;
-      background: var(--color-neutral-800);
       hyphens: auto;
+      background: var(--color-neutral-800);
+      border-radius: 5px;
     }
 
     details summary {
       padding: 10px 7px;
-      margin: 0 -22px -10px -22px;
+      margin: 0 -22px -10px;
       font-size: 14px;
       font-weight: 600;
-      border-radius: 5px;
       hyphens: none;
       cursor: pointer;
-      transition: background ease-in-out 150ms;
       background: var(--color-neutral-800);
+      border-radius: 5px;
+      transition: background ease-in-out 150ms;
     }
 
     details summary:hover {

@@ -54,41 +54,41 @@ class Collections extends MyElement {
       flex-direction: column;
       align-items: flex-end;
       width: 50%;
+      padding: 0 0 calc(100vh - var(--header-height) - 2 * var(--gap) - 3em);
       font-size: 23px;
       font-weight: 600;
       text-align: right;
-      padding: 0 0 calc(100vh - var(--header-height) - 2 * var(--gap) - 3em) 0;
     }
 
     main nav a {
       position: relative;
+      padding: 1em 2em 1em 1em;
+      color: var(--color-link);
       text-decoration: none;
       background: var(--color-neutral-900);
-      color: var(--color-link);
-      padding: 1em 2em 1em 1em;
     }
 
-    main nav a:before {
-      content: '';
-      transform-origin: 0 0;
-      height: 100%;
-      width: 100%;
-      background: inherit;
+    main nav a::before {
       position: absolute;
       top: 0;
       left: 0;
       z-index: -1;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: inherit;
       transform: skewX(-15deg);
+      transform-origin: 0 0;
     }
 
     main nav a.active {
-      background: var(--color-panel);
       color: var(--color-accent);
+      background: var(--color-panel);
     }
 
     main nav a:hover {
-      background: var(--color-accent);
       color: var(--color-highlight-inverted);
+      background: var(--color-accent);
     }
   `
 
@@ -114,7 +114,7 @@ class Collections extends MyElement {
         (collection) => `
           <a href="/${collection.slug}">
             ${collection.title.es}
-          </a>`
+          </a>`,
       )
       .join('')
 

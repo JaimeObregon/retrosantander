@@ -9,11 +9,13 @@ class Menu extends MyElement {
     button {
       padding: 0;
       margin: 0 var(--gap);
-      border: none;
-      background: none;
       color: inherit;
-      transition: transform 250ms, color 250ms;
       cursor: pointer;
+      background: none;
+      border: none;
+      transition:
+        transform 250ms,
+        color 250ms;
     }
 
     button:hover {
@@ -27,31 +29,31 @@ class Menu extends MyElement {
     button svg {
       height: 25px;
       vertical-align: middle;
-      fill: currentColor;
+      fill: currentcolor;
       transition: transform 200ms ease;
     }
 
     article {
       --about-width: 28rem;
+
       position: fixed;
+      top: var(--header-height);
+      right: 0;
+      box-sizing: border-box;
       width: 100%;
       max-width: var(--about-width);
       height: calc(100vh - var(--header-height));
-      top: var(--header-height);
-      right: 0;
-      overflow: scroll;
-      box-sizing: border-box;
       padding: var(--gap);
-      border-left: 1px solid var(--color-line);
-      box-shadow: -5px 0 5px #1c191750;
-      background-color: rgba(var(--color-panel-components), 0.941);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
+      overflow: scroll;
       font-size: 15px;
       font-weight: 400;
-      padding: var(--gap);
-      transform: translateX(var(--about-width));
+      background-color: rgba(var(--color-panel-components), 0.941);
+      backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+      border-left: 1px solid var(--color-line);
+      box-shadow: -5px 0 5px #1c191750;
       opacity: 0;
+      transform: translateX(var(--about-width));
     }
 
     article[ready] {
