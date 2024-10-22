@@ -18,7 +18,7 @@ if (args.length !== 1) {
 
 const folder = process.argv[2]
 
-const stdin = process.openStdin()
+const stdin = process.stdin
 
 const chunks = []
 
@@ -69,6 +69,7 @@ stdin.on('end', async () => {
     const response = await fetch(url)
     const json = await response.json()
 
+    // @ts-ignore
     Object.entries(json.responses).forEach(([id, response]) => {
       const filename = `${folder}/${id}.json`
       const string = JSON.stringify(response)

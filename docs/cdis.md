@@ -1,10 +1,10 @@
 # El portal del CDIS
 
-### ⚠️ **[ACTUALIZACIÓN] A raíz de esta iniciativa el Ayuntamiento de Santander [ha retirado el portal del CDIS](https://twitter.com/JaimeObregon/status/1523955161151983616).**
+### ⚠️ **[ACTUALIZACIÓN] A raíz de esta iniciativa el Ayuntamiento de Santander [ha retirado el portal del CDIS](https://x.com/JaimeObregon/status/1523955161151983616).**
 
 ---
 
-Un experimento personal con el portal del [Centro de Documentación de la Imagen de Santander](http://portal.ayto-santander.es/portalcdis/Index.do) (CDIS) y sus contenidos. Por [Jaime Gómez-Obregón](https://twitter.com/JaimeObregon).
+Un experimento personal con el portal del [Centro de Documentación de la Imagen de Santander](http://portal.ayto-santander.es/portalcdis/Index.do) (CDIS) y sus contenidos. Por [Jaime Gómez-Obregón](https://x.com/JaimeObregon).
 
 [![Retrosantander](assets/retrosantander.jpg)](https://retrosantander.com)
 
@@ -108,7 +108,7 @@ Voy a ser muy claro aquí.
 
 No es la única razón, pero sucede porque **no existe una verdadera competencia entre los contratistas de las administraciones públicas**. Cada ayuntamiento, cada consejería, cada organismo tiene su elenco de proveedores de confianza. Es un coto cerrado al que se accede —en el mejor de los casos— por relaciones interpersonales y cabildeo. Y, en el peor, mediante [contrapartidas y favores](https://www.elfaradio.com/2014/01/28/me-regalaron-un-plasma-tras-la-adjudicacion-de-una-feria/). Un recinto amurallado con «ofertas de acompañamiento», pliegos «a medida», contratos «dirigidos» y requerimientos técnicos injustificados que —¡sorpresa!— solo los contratistas del elenco satisfacen.
 
-Otra razón es el kafkiano modelo público de desarrollo de servicios digitales, que excluye a los proveedores competentes y recompensa [la excelencia en _redactar ofertas_](https://twitter.com/JaimeObregon/status/1405122543850332164). [El resultado](https://twitter.com/JaimeObregon/status/1395427017026416641) es [conocido por todos](https://twitter.com/JaimeObregon/status/1390381096731295746).
+Otra razón es el kafkiano modelo público de desarrollo de servicios digitales, que excluye a los proveedores competentes y recompensa [la excelencia en _redactar ofertas_](https://x.com/JaimeObregon/status/1405122543850332164). [El resultado](https://x.com/JaimeObregon/status/1395427017026416641) es [conocido por todos](https://x.com/JaimeObregon/status/1390381096731295746).
 
 # El reto
 
@@ -228,4 +228,4 @@ Esto significa que puedes utilizar este programa para usos personales o comercia
 
 Para esto último debes mantener en tu sitio web, en un lugar discreto pero visible, una mención a Jaime Gómez-Obregón como autor original y un enlace a `https://github.com/JaimeObregon/retrosantander/`.
 
-Si deseas que sea yo mismo quien adapte este programa al archivo fotográfico de tu entidad, quizá puedas contratarme: [https://twitter.com/JaimeObregon](https://twitter.com/JaimeObregon).
+Si deseas que sea yo mismo quien adapte este programa al archivo fotográfico de tu entidad, quizá puedas contratarme: [https://x.com/JaimeObregon](https://x.com/JaimeObregon).

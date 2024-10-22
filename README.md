@@ -6,7 +6,7 @@ En [esta conferencia](https://www.youtube.com/watch?v=Wj88WEDOqgw) para la Asoci
 
 # Retrosantander
 
-Apliqué por primera vez estas ideas al fondo fotográfico del **Centro de Documentación de la Imagen de Santander (CDIS)**, entidad dependiente del Ayuntamiento de Santander. [La reacción](https://x.com/JaimeObregon/status/1523955161151983616) del Ayuntamiento fue retirar de internet el archivo fotográfico del CDIS y clausurar su sitio web. Esto supuso el final de Retrosantander, a los pocos días de haber nacido.
+Apliqué por primera vez estas ideas al fondo fotográfico del **Centro de Documentación de la Imagen de Santander (CDIS)**, entidad dependiente del Ayuntamiento de Santander. [La reacción](https://x.com/JaimeObregon/status/1523955161151983616) del Ayuntamiento fue retirar de internet el archivo fotográfico del CDIS y clausurar su sitio web. Esto supuso el final de Retrosantander, a los pocos días de haber nacido. Dos años después, el Ayuntamiento no ha repuesto el portal del CDIS.
 
 [![Retrosantander](/docs/assets/retrosantander.jpg)](https://retrosantander.com)
 
@@ -62,7 +62,7 @@ Este repositorio es multiproyecto, y en la actualidad aloja tres proyectos:
 
 1. **Retrogipuzkoa**, desplegado en [retrogipuzkoa.com](https://retrogipuzkoa.com), y que proporciona acceso a la colección fotográfica de Jesús Elósegui.
 
-1. **GureGipuzkoa**, desplegado en [guregipuzkoa.com](https://guregipuzkoa.com) y en desarrollo durante 2024. No confundir con guregipuzkoa.eus, que es el portal original de la Diputación Foral de Gipuzkoa que guregipuzkoa.com pretende superar.
+1. **GureGipuzkoa**, desplegado en [guregipuzkoa.com](https://guregipuzkoa.com) y en desarrollo durante 2023 y 2024. No confundir con guregipuzkoa.eus, que es el portal original de la Diputación Foral de Gipuzkoa que guregipuzkoa.com pretende superar.
 
 La arquitectura de la aplicación, por lo tanto, sirve a múltiples archivos fotográficos desde una misma base de código común y extensible.
 
@@ -72,10 +72,9 @@ El programa determina qué proyecto servir en función del nombre del _host_. Pa
 127.0.0.1 retrosantander.local retrogipuzkoa.local guregipuzkoa.local
 ```
 
-Para iniciar el entorno de desarrollo basta instalar las dependencias y arrancar el servidor web invocando el script de `package.json` correspondiente al proyecto que se desea servir:
+Para iniciar el entorno de desarrollo basta instalar las dependencias (`yarn install`) y arrancar el servidor web invocando el script de `package.json` correspondiente al proyecto que se desea servir:
 
 ```console
-yarn
 yarn run guregipuzkoa
 ```
 
@@ -87,7 +86,7 @@ El directorio `.vscode` aporta configuración para Visual Studio Code, incluyend
 
 # Estilo de código
 
-El código se adhiere al formato establecido por [Prettier](https://prettier.io) con los mínimos ajustes configurados en la clave `prettier` del fichero `package.json`.
+El código se adhiere al formato establecido por [Prettier](https://prettier.io) con los mínimos ajustes configurados en la clave `prettier` del fichero `package.json`. Las definiciones CSS siguen las reglas de [stylelint](https://stylelint.io/), con las extensiones definidas en la clave `stylelint` del fichero `package.json`.
 
 # Despliegue
 

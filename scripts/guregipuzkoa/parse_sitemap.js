@@ -229,7 +229,7 @@ const pattern = new RegExp(
   ]
     .map((chunk) => chunk.source)
     .join(''),
-  'gs'
+  'gs',
 )
 
 const file = process.argv[2]
@@ -242,7 +242,7 @@ const matches = contents
   .matchAll(pattern)
 
 const results = [...matches]
-  .filter((match) => !excludeIds.includes(match.groups.id))
+  .filter((match) => match.groups && !excludeIds.includes(match.groups.id))
   .map((match) => match.groups)
 const string = JSON.stringify(results)
 

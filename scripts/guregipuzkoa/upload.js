@@ -33,6 +33,7 @@ do {
 
   response = await s3.send(command)
 
+  // @ts-ignore
   const _objects = response.Contents.map(({ Key: key, Size: size }) => ({
     key,
     size,
@@ -42,14 +43,17 @@ do {
 
   process.stdout.write(`\r[${i++}] Encontrados ${objects.length} objetos…`)
 
+  // @ts-ignore
   token = response.NextContinuationToken
+
+  // @ts-ignore
 } while (response.IsTruncated)
 
 const existingIds = objects.map(
-  ({ key }) => key.match(/originals\/images\/(.+)\.\w+$/)[1]
+  ({ key }) => key.match(/originals\/images\/(.+)\.\w+$/)[1],
 )
 
-const stdin = process.openStdin()
+const stdin = process.stdin
 
 const chunks = []
 
@@ -72,7 +76,7 @@ stdin.on('end', async () => {
     const route = `../../temp/guregipuzkoa/originals/images/${filename}`
 
     process.stdout.write(
-      `\r[${++i}/${idsToUpload.length}] Subiendo ${route} a ${arn}…`
+      `\r[${++i}/${idsToUpload.length}] Subiendo ${route} a ${arn}…`,
     )
 
     try {
