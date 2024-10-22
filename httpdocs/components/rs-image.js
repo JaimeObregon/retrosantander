@@ -75,12 +75,16 @@ class Image extends MyElement {
   id
 
   connectedCallback() {
-    this.img = this.shadowRoot.querySelector('img')
-    this.figure = this.shadowRoot.querySelector('figure')
+    this.img = this.shadowRoot?.querySelector('img')
+    this.figure = this.shadowRoot?.querySelector('figure')
     this.id = this.getAttribute('id')
 
     const details = database.find(this.id)
     const src = app.project.image(this.id)
+
+    if (!details) {
+      return
+    }
 
     this.img.setAttribute('src', src)
     this.img.setAttribute('alt', escape(details.title))
@@ -128,7 +132,7 @@ class Image extends MyElement {
   }
 
   get complete() {
-    return this.shadowRoot.querySelector('img').complete
+    return this.shadowRoot?.querySelector('img')?.complete
   }
 
   get activeLayer() {

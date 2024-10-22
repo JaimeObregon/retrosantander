@@ -316,12 +316,20 @@ class Panel extends MyElement {
     this.button.addEventListener('click', () => app.$grid.restore())
 
     this.aside.addEventListener('mouseover', (event) => {
+      if (!(event.target instanceof HTMLElement)) {
+        return
+      }
+
       if (event.target.dataset.id) {
         app.$grid.activeLayer = event.target.dataset.id
       }
     })
 
     this.aside.addEventListener('mouseout', (event) => {
+      if (!(event.target instanceof HTMLElement)) {
+        return
+      }
+
       if (event.target.dataset.id) {
         app.$grid.activeLayer = false
       }
@@ -337,7 +345,7 @@ class Panel extends MyElement {
   }
 
   set data(data) {
-    const panel = this.shadowRoot.querySelector('aside')
+    const panel = this.shadowRoot?.querySelector('aside')
 
     if (!data) {
       !panel.classList.contains('hidden') && this.sounds.close.play()

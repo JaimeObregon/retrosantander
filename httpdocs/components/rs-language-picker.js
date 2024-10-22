@@ -37,12 +37,16 @@ class LanguagePicker extends MyElement {
   connectedCallback() {
     this.form = this.shadowRoot?.querySelector('form')
 
+    if (!this.form) {
+      return
+    }
+
     this.sound = new Audio('/assets/sounds/activate.mp3')
 
     const { languages } = app.project
 
     if (languages.length < 2) {
-      this.form.setAttribute('hidden', true)
+      this.form.setAttribute('hidden', '')
     }
 
     this.form.innerHTML = languages
@@ -67,7 +71,7 @@ class LanguagePicker extends MyElement {
     this.form.addEventListener('click', (event) => event.stopPropagation())
 
     this.form.addEventListener('change', () => {
-      this.sound.play()
+      this.sound?.play()
 
       const labels = [...this.form.querySelectorAll('label')]
       labels.forEach((label) => {

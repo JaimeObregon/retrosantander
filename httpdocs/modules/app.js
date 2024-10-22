@@ -2,12 +2,6 @@ import { database } from './database.js'
 import { i18n } from './i18n.js'
 
 const app = {
-  $title: document.querySelector('rs-title'),
-  $search: document.querySelector('rs-search'),
-  $menu: document.querySelector('rs-menu'),
-  $help: document.querySelector('rs-help'),
-  $grid: document.querySelector('rs-grid'),
-
   translations: {},
 
   debounceDelay: 350,
@@ -83,6 +77,12 @@ const app = {
     }
   },
 }
+
+app.$title = document.querySelector('rs-title')
+app.$search = document.querySelector('rs-search')
+app.$menu = document.querySelector('rs-menu')
+app.$grid = document.querySelector('rs-grid')
+app.$help = document.querySelector('rs-help')
 
 const { hostname } = document.location
 

@@ -8,8 +8,16 @@ class Map extends MyElement {
   connectedCallback() {
     const svg = this.querySelector('svg')
 
+    if (!svg) {
+      return
+    }
+
     svg.addEventListener('click', (event) => {
-      const location = event.target.closest('g').dataset.title
+      if (!(event.target instanceof Element)) {
+        return
+      }
+
+      const location = event.target.closest('g')?.dataset.title
       if (!location) {
         return
       }
@@ -22,11 +30,14 @@ class Map extends MyElement {
     })
 
     svg.addEventListener('mouseover', (event) => {
-      if (event.target.nodeName !== 'path') {
+      if (
+        !(event.target instanceof Element) ||
+        event.target.nodeName !== 'path'
+      ) {
         return
       }
 
-      app.title = event.target.closest('g').dataset.title
+      app.title = event.target.closest('g')?.dataset.title
     })
 
     svg.addEventListener('mouseout', () => {

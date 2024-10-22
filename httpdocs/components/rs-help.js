@@ -68,7 +68,7 @@ class Help extends MyElement {
   }
 
   connectedCallback() {
-    this.article = this.shadowRoot.querySelector('article')
+    this.article = this.shadowRoot?.querySelector('article')
     window.addEventListener('languagechange', this.onLanguagechange.bind(this))
   }
 

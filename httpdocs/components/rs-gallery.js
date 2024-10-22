@@ -62,9 +62,9 @@ class Gallery extends MyElement {
   nav
 
   connectedCallback() {
-    this.front = this.shadowRoot.querySelector('div#front')
-    this.back = this.shadowRoot.querySelector('div#back')
-    this.nav = this.shadowRoot.querySelector('nav')
+    this.front = this.shadowRoot?.querySelector('div#front')
+    this.back = this.shadowRoot?.querySelector('div#back')
+    this.nav = this.shadowRoot?.querySelector('nav')
 
     console.log(app.project.galleries)
 

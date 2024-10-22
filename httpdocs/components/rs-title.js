@@ -28,9 +28,6 @@ class Title extends MyElement {
       text-overflow: ellipsis;
     }
 
-    @media (width <= 1536px) {
-    }
-
     @media (width <= 1280px) {
       cite {
         margin: 0;
@@ -72,7 +69,7 @@ class Title extends MyElement {
   }
 
   connectedCallback() {
-    this.cite = this.shadowRoot.querySelector('cite')
+    this.cite = this.shadowRoot?.querySelector('cite')
 
     window.addEventListener('languagechange', this.onLanguagechange.bind(this))
   }

@@ -20,7 +20,7 @@ class Loading extends MyElement {
   footer
 
   connectedCallback() {
-    this.footer = this.shadowRoot.querySelector('footer')
+    this.footer = this.shadowRoot?.querySelector('footer')
   }
 
   set progress(value) {

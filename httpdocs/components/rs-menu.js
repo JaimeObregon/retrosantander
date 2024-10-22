@@ -49,7 +49,6 @@ class Menu extends MyElement {
       font-weight: 400;
       background-color: rgba(var(--color-panel-components), 0.941);
       backdrop-filter: blur(14px);
-      backdrop-filter: blur(14px);
       border-left: 1px solid var(--color-line);
       box-shadow: -5px 0 5px #1c191750;
       opacity: 0;
@@ -100,8 +99,8 @@ class Menu extends MyElement {
   }
 
   connectedCallback() {
-    this.hamburger = this.shadowRoot.querySelector('button')
-    this.article = this.shadowRoot.querySelector('article')
+    this.hamburger = this.shadowRoot?.querySelector('button')
+    this.article = this.shadowRoot?.querySelector('article')
 
     this.sounds = {
       open: new Audio('/assets/sounds/activate.mp3'),
@@ -135,8 +134,11 @@ class Menu extends MyElement {
     }
 
     const sound = value ? 'open' : 'close'
-    const audio = this.sounds[sound]
-    audio.play()
+
+    if (this.sounds) {
+      const audio = this.sounds[sound]
+      audio.play()
+    }
 
     this.hamburger.classList.toggle('open', value)
     this.article.classList.toggle('open', value)
