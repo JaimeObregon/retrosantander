@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
 /**
- * Véase la documentación en `/docs/guregipuzkoa.md`.
+ * Parece que este _script_ no se utiliza en el proceso técnico que detallo en
+ * `/docs/guregipuzkoa.md`. Parece que lo escribí para realizar alguna
+ * comprobación. O bien lo descarté por innecesario.
  */
 import fs from 'fs'
 import { decode } from 'html-entities'
@@ -32,7 +34,7 @@ const pattern = new RegExp(
   ]
     .map((chunk) => chunk.source)
     .join(''),
-  'gs'
+  'gs',
 )
 
 const args = process.argv.slice(2)

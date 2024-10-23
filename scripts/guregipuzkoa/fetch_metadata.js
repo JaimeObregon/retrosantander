@@ -18,13 +18,11 @@ if (args.length !== 1) {
 
 const folder = process.argv[2]
 
-const stdin = process.stdin
-
 const chunks = []
 
-stdin.on('data', (chunk) => chunks.push(chunk))
+process.stdin.on('data', (chunk) => chunks.push(chunk))
 
-stdin.on('end', async () => {
+process.stdin.on('end', async () => {
   const string = chunks.join('')
   const images = JSON.parse(string)
 

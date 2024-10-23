@@ -69,7 +69,7 @@ done
 
 Esto devuelve solo dos ficheros con extensión incorrecta, que son dos imágenes en formato PNG. Los convertimos manualmente a formato JPEG:
 
-```bash
+```console
 mv 154344.jpeg 154344.png && convert 154344.png 154344.jpeg && rm 154344.png
 mv 154387.jpeg 154387.png && convert 154387.png 154387.jpeg && rm 154387.png
 ```
@@ -118,9 +118,9 @@ https://www.guregipuzkoa.eus/nextgen-pro-lightbox-gallery/www.guregipuzkoa.eus/?
 
 Si alguno de los `id` facilitados no corresponde con ninguna fotografía, el servidor devuelve una respuesta con contenidos que no están vacíos.
 
-Para descargar todos los metadatos, paso el _sitemap_ interpretado por `stdin` a `fetch_metadata.js`. Este _script_ descarga los metadatos de las fotografías referenciadas en el _sitemap_ y los guardará como ficheros JSON en la ruta que reciba como primer parámetro:
+Para descargar todos los metadatos, paso por `stdin` el _sitemap_ interpretado a `fetch_metadata.js`. Este _script_ descarga los metadatos de las fotografías referenciadas en el _sitemap_ y los guardará como ficheros JSON en la ruta que reciba como primer parámetro:
 
-```bash
+```console
 mkdir json
 ./parse_sitemap.js sitemap.txt | ./fetch_metadata.js json
 ```
@@ -141,7 +141,7 @@ Hacemos la transcodificación en AWS porque puede ser lenta y conllevar, para al
 
 El _script_ `upload.js` realiza la subida al bucket `guregipuzkoa-temp` de S3, lo que provoca la aplicación de la función lambda sobre cada fichero subido y, por lo tanto, su transcodificación automática. Se invoca así:
 
-```bash
+```console
 ./parse_sitemap.js sitemap.txt | ./upload.js
 ```
 
@@ -179,7 +179,7 @@ El _script_ `process_image.sh` recibe como primer parámetro el nombre de una im
 
 Corro el _script_ en paralelo para maximizar la eficiencia del proceso:
 
-```bash
+```console
 find originals/images -type f | xargs -n 1 -P 8 -I {} ./process_image.sh {}
 ```
 
@@ -189,36 +189,108 @@ La lista de etiquetas reconocidas por Rekognition pueden descargarse desde [Dete
 
 Finalizado el proceso, busco ficheros vacíos, demasiado pequeños o que no contengan JSON válido, y los reproceso.
 
-# 9. Construcción de los ficheros de metadatos
+# 9. Extracción de los metadatos del _sitemap_
 
-Extraigo a un directorio `summaries`, para cada fotografía del archivo, sus metadatos contenidos en el _sitemap_:
+Para cada fotografía del archivo extraigo a un directorio `summaries`, sus metadatos contenidos en el _sitemap_:
+
+```console
+mkdir summaries
+parse_sitemap.js ../sitemap.txt > sitemap.json
+```
 
 ```bash
-parse_sitemap.js ../sitemap.txt > sitemap.json
-
-mkdir summaries
-
 jq -c '.[]' sitemap.json | while IFS= read -r json; do
   id=$(jq -r '.id' <<< "$json" | sed -n 's|.*/photo/\([0-9]*\)/.*|\1|p')
   printf '%s' "$json" > "summaries/$id.json"
 done
 ```
 
-Ahora tengo, para cada imagen, cinco ficheros JSON:
+# 10. Construcción de los índices
+
+Previamente a la construcción de los índices creo tres ficheros temporales que apoyarán los pasos siguientes:
+
+```bash
+find details -type f -name '*.json' | while IFS= read -r file; do
+  base_name=$(basename "$file" .json)
+  author=$(jq --raw-output ".image_data.author" "$file")
+  municipio=$(jq --raw-output ".image_data.municipio" "$file")
+  photographer=$(jq --raw-output ".image_data.photographer" "$file")
+
+  echo "$base_name;$author" >> authors
+  echo "$base_name;$municipio" >> municipios
+  echo "$base_name;$photographer" >> photographers
+done
+```
+
+---
+
+```console
+find indices/{centuries,decades,faces,folders,labels,photographers,places,users,years,collections} -type f -name "*.json" -delete
+```
+
+```console
+find metadata -type f -print0 | xargs -0 ../../../scripts/guregipuzkoa/index.js
+```
+
+---
+
+```console
+parse_sitemap.js ../sitemap.txt | jq '.[] | select(.image | test("/playant/")) | .id' | cut -d "/" -f 5
+```
+
+---
+
+- las imágenes repetidas en el sitemap (sort -n)
+- las imágenes duplicadas (md5sum?) -> no había
+
+````
+
+Generamos los índices así:
+
+```console
+# Dependen de author
+grep 'BeasaingoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'OnatikoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'HondarribikoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'pasaiakoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'UrnietakoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'ZaldibiakoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'ZestoakoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'gurezarautz' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'ArantzaCuestaEzeiza' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'Kutxa_Fototeka' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+
+grep 'Etxaniz Apaolaza, Jabier' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep -E "Jone Larrañaga|Larrañaga, Jone" photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'Elosegi Aldasoro, Luis Mari' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+grep 'Elosegi Ansola, Polikarpo' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
+
+# Dependen de photographer y luego, además, hay que filtrar por author
+grep 'Ojanguren, Indalecio' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: GipuzkoaKultura
+grep 'Elósegui Irazusta, Jesús' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: ARANZADI
+grep 'San Martin, Juan' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: GipuzkoaKultura
+grep '???niessen???' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: ARANZADI
+grep 'Koch Arruti, Sigfrido' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: GipuzkoaKultura
+grep 'Arlanzón, Andrés' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: OnatikoUdala
+grep 'Ugalde, Mari Paz' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: AntzuolakoUdala
+````
+
+# 11. Agregación de todos los metadatos en un único fichero
+
+Llegados a este punto, he generado cuatro directorios con tantos ficheros JSON como imágenes hay en el archivo:
 
 - `exif`, con los metadatos EXIF
 - `details`, con los detalles descargados del portal oficial
-- `summary`, con los detalles obtenidos del _sitemap_
-- `faces`, generado por la visión artificial
-- `labels`, generados por la visión artificial
+- `rekognition`, generado por la visión artificial
+- `summaries`, con los detalles obtenidos del _sitemap_
 
-Cada uno de estos cinco directorios contiene tantos ficheros JSON como fotografías hay en el archivo. En caso de duda, puedo comprobar que todos los ficheros de cualquiera de estos directorios contiene JSON válido:
+Puedo comprobar que todos los ficheros de cualquiera de estos directorios contiene JSON válido:
 
 ```console
 find . -type f -exec bash -c 'if [ ! -s "$0" ] || ! jq empty "$0" > /dev/null 2>&1; then echo "$0"; fi' {} \;
 ```
 
-Genero ahora un único fichero de metadatos por cada fotografía, combinando los cinco ficheros JSON existentes para cada una en una única estructura JSON que salvo en el directorio `metadata`:
+Genero ahora un único fichero de metadatos por cada fotografía, combinando en una única estructura JSON que salvo en el directorio `metadata` todos los ficheros JSON generados:
 
 ```bash
 mkdir metadata
@@ -261,72 +333,6 @@ find . -type f -name '*.json.gz' -exec rename 's/\.gz$//' {} +
 
 Después los subo a S3, con la precaución de informar de la compresión:
 
-```bash
+```console
 aws s3 sync metadata s3://guregipuzkoa/metadata/ --content-encoding 'gzip'
-```
-
-# 10. Construcción de los índices
-
-```console
-find indices/{centuries,decades,faces,folders,labels,photographers,places,users,years,collections} -type f -name "*.json" -delete
-```
-
-```console
-find metadata -type f -print0 | xargs -0 ../../../scripts/guregipuzkoa/index.js
-```
-
----
-
-```console
-parse_sitemap.js ../sitemap.txt | jq '.[] | select(.image | test("/playant/")) | .id' | cut -d "/" -f 5
-```
-
----
-
-- las imágenes repetidas en el sitemap (sort -n)
-- las imágenes duplicadas (md5sum?) -> no había
-
-Ahora hay que generar los índices. Para ello creamos tres ficheros temporales:
-
-```bash
-find details -type f -name '*.json' | while IFS= read -r file; do
-    base_name=$(basename "$file" .json)
-    author=$(jq --raw-output ".image_data.author" "$file")
-    municipio=$(jq --raw-output ".image_data.municipio" "$file")
-    photographer=$(jq --raw-output ".image_data.photographer" "$file")
-
-    echo "$base_name;$author" >> authors
-    echo "$base_name;$municipio" >> municipios
-    echo "$base_name;$photographer" >> photographers
-done
-```
-
-Generamos los índices así:
-
-```bash
-# Dependen de author
-grep 'BeasaingoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'OnatikoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'HondarribikoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'pasaiakoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'UrnietakoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'ZaldibiakoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'ZestoakoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'gurezarautz' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'ArantzaCuestaEzeiza' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'Kutxa_Fototeka' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-
-grep 'Etxaniz Apaolaza, Jabier' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep -E "Jone Larrañaga|Larrañaga, Jone" photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'Elosegi Aldasoro, Luis Mari' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'Elosegi Ansola, Polikarpo' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-
-# Dependen de photographer y luego, además, hay que filtrar por author
-grep 'Ojanguren, Indalecio' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: GipuzkoaKultura
-grep 'Elósegui Irazusta, Jesús' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: ARANZADI
-grep 'San Martin, Juan' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: GipuzkoaKultura
-grep '???niessen???' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: ARANZADI
-grep 'Koch Arruti, Sigfrido' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: GipuzkoaKultura
-grep 'Arlanzón, Andrés' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: OnatikoUdala
-grep 'Ugalde, Mari Paz' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: AntzuolakoUdala
 ```

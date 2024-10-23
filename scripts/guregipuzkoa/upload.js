@@ -53,13 +53,11 @@ const existingIds = objects.map(
   ({ key }) => key.match(/originals\/images\/(.+)\.\w+$/)[1],
 )
 
-const stdin = process.stdin
-
 const chunks = []
 
-stdin.on('data', (chunk) => chunks.push(chunk))
+process.stdin.on('data', (chunk) => chunks.push(chunk))
 
-stdin.on('end', async () => {
+process.stdin.on('end', async () => {
   const string = chunks.join('')
   const images = JSON.parse(string)
 

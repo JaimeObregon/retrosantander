@@ -6824,7 +6824,7 @@ const folders = [
 ]
 
 // Estas son las colecciones existentes en guregipuzkoa.eus y los criterios que
-// satisfacen las fotografías de cada una de ellas. S
+// satisfacen las fotografías de cada una de ellas.
 const collections = [
   {
     author: 'BeasaingoUdala',

@@ -55,7 +55,7 @@ const dates = [
 
 const minConfidence = 80
 
-// La fotografía se popularizó a partir de 1839. Antes, no puede haber nada.
+// La fotografía se popularizó a partir de 1839. No puede haber nada anterior.
 const dateRegex = /^(18[3-9]\d|19\d{2}|20[0-1]\d|202[0-3])(-\d{2}-\d{2})?$/
 
 const args = process.argv.slice(2)
