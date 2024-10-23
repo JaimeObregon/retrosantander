@@ -151,14 +151,15 @@ Al final del proceso solo quedan en `s3://guregipuzkoa-temp/images/` los fichero
 
 Decido descargarlos para ver cuáles son:
 
-````console
+```console
 aws s3 sync s3://guregipuzkoa-temp guregipuzkoa-temp
+```
 
 Y convertirlos yo en local:
 
 ```console
 convert xxx.jpeg -quality 65 -resize '2000x1500>' optimized/xxx.avif
-````
+```
 
 Para subirlos manualmente después.
 

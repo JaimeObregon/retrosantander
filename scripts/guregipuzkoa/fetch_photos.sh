@@ -5,7 +5,7 @@ SITEMAP=$1
 OUTPUT_PATH=$2
 SCRIPT_PATH=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
 
-"$SCRIPT_PATH/parse_sitemap.mjs" "$SITEMAP" | jq --raw-output '.[]|[.image, .id] | @tsv' |
+"$SCRIPT_PATH/parse_sitemap.js" "$SITEMAP" | jq --raw-output '.[]|[.image, .id] | @tsv' |
   while IFS=$'\t' read -r URL OUTPUT; do
     ID=${OUTPUT//https:\/\/www.guregipuzkoa.eus\/photo/}
     ID=${ID//\//}

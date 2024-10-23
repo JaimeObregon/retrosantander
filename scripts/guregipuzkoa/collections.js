@@ -1,4 +1,4 @@
-// Estas estructuras de datos son utilizadas por index.mjs para construir los
+// Estas estructuras de datos son utilizadas por index.js para construir los
 // índices, así como para asignar a cada fotografía los índices en que aparece.
 
 // Lista de fotógrafos. Tomo el criterio de que sean personas físicas, razón por
