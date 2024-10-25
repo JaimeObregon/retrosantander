@@ -205,79 +205,9 @@ jq -c '.[]' sitemap.json | while IFS= read -r json; do
 done
 ```
 
-# 10. Construcción de los índices
+# 10. Agregación de todos los metadatos en un único fichero
 
-Previamente a la construcción de los índices creo tres ficheros temporales que apoyarán los pasos siguientes:
-
-```bash
-find details -type f -name '*.json' | while IFS= read -r file; do
-  base_name=$(basename "$file" .json)
-  author=$(jq --raw-output ".image_data.author" "$file")
-  municipio=$(jq --raw-output ".image_data.municipio" "$file")
-  photographer=$(jq --raw-output ".image_data.photographer" "$file")
-
-  echo "$base_name;$author" >> authors
-  echo "$base_name;$municipio" >> municipios
-  echo "$base_name;$photographer" >> photographers
-done
-```
-
----
-
-```console
-find indices/{centuries,decades,faces,folders,labels,photographers,places,users,years,collections} -type f -name "*.json" -delete
-```
-
-```console
-find metadata -type f -print0 | xargs -0 ../../../scripts/guregipuzkoa/index.js
-```
-
----
-
-```console
-parse_sitemap.js ../sitemap.txt | jq '.[] | select(.image | test("/playant/")) | .id' | cut -d "/" -f 5
-```
-
----
-
-- las imágenes repetidas en el sitemap (sort -n)
-- las imágenes duplicadas (md5sum?) -> no había
-
-````
-
-Generamos los índices así:
-
-```console
-# Dependen de author
-grep 'BeasaingoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'OnatikoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'HondarribikoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'pasaiakoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'UrnietakoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'ZaldibiakoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'ZestoakoUdala' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'gurezarautz' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'ArantzaCuestaEzeiza' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'Kutxa_Fototeka' authors | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-
-grep 'Etxaniz Apaolaza, Jabier' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep -E "Jone Larrañaga|Larrañaga, Jone" photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'Elosegi Aldasoro, Luis Mari' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-grep 'Elosegi Ansola, Polikarpo' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh
-
-# Dependen de photographer y luego, además, hay que filtrar por author
-grep 'Ojanguren, Indalecio' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: GipuzkoaKultura
-grep 'Elósegui Irazusta, Jesús' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: ARANZADI
-grep 'San Martin, Juan' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: GipuzkoaKultura
-grep '???niessen???' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: ARANZADI
-grep 'Koch Arruti, Sigfrido' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: GipuzkoaKultura
-grep 'Arlanzón, Andrés' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: OnatikoUdala
-grep 'Ugalde, Mari Paz' photographers | cut -d ';' -f 1 | ../../../scripts/guregipuzkoa/build_index.sh # author: AntzuolakoUdala
-````
-
-# 11. Agregación de todos los metadatos en un único fichero
-
-Llegados a este punto, he generado cuatro directorios con tantos ficheros JSON como imágenes hay en el archivo:
+Llegado este punto, he generado cuatro directorios con tantos ficheros JSON como imágenes hay en el archivo:
 
 - `exif`, con los metadatos EXIF
 - `details`, con los detalles descargados del portal oficial
@@ -290,10 +220,10 @@ Puedo comprobar que todos los ficheros de cualquiera de estos directorios contie
 find . -type f -exec bash -c 'if [ ! -s "$0" ] || ! jq empty "$0" > /dev/null 2>&1; then echo "$0"; fi' {} \;
 ```
 
-Genero ahora un único fichero de metadatos por cada fotografía, combinando en una única estructura JSON que salvo en el directorio `metadata` todos los ficheros JSON generados:
+Genero ahora un único fichero de metadatos por cada fotografía, combinando todos los ficheros JSON generados en una única estructura JSON, que salvo en el directorio `metadata_temp`:
 
 ```bash
-mkdir metadata
+mkdir metadata_temp
 
 for FILE in details/*.json; do
   BASENAME="${FILE##*/}"
@@ -320,8 +250,17 @@ for FILE in details/*.json; do
       faces: $faces[0],
       labels: $labels[0]
     }' \
-    > "metadata/${ID}.json"
+    > "metadata_temp/${ID}.json"
 done
+```
+
+# 11. Construcción de los índices
+
+Vamos a crear los índices en el directorio `indices`, y a crear en `metadata` nuevas versiones de los ficheros en `metadata_temp` a las que añadiremos información acerca de en qué índices aparece cada imagen.
+
+```console
+mkdir indices metadata
+find metadata_temp -type f -print0 | xargs -0 ../../../scripts/guregipuzkoa/index.js
 ```
 
 Luego comprimo todos estos ficheros con gzip y les quito la extensión `.gz`:
@@ -331,8 +270,24 @@ find . -type f -print0 | xargs -0 gzip
 find . -type f -name '*.json.gz' -exec rename 's/\.gz$//' {} +
 ```
 
-Después los subo a S3, con la precaución de informar de la compresión:
+Finalmente los subo a S3, con la precaución de informar de la compresión:
 
 ```console
 aws s3 sync metadata s3://guregipuzkoa/metadata/ --content-encoding 'gzip'
+```
+
+# 12. Generación del índice de índices
+
+Una vez generado cada índice, generamos el índice de índices pasando a `indices.js` el directorio donde descansan los índices creados en el paso anterior:
+
+```console
+indices.js indices | jq --compact-output '.' > indices/indices.json
+```
+
+Y, como antes, lo subimos a S3:
+
+```console
+find indices -type f -print0 | xargs -0 gzip
+find indices -type f -name '*.json.gz' -exec rename 's/\.gz$//' {} +
+aws s3 sync indices s3://guregipuzkoa/indices/ --content-encoding 'gzip'
 ```

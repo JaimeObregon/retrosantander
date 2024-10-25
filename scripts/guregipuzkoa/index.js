@@ -1,16 +1,23 @@
 #!/usr/bin/env node
 
-// ! No tener que hacer esto tan feo: find indices/{centuries,decades,faces,folders,labels,photographers,places,users,years,collections} -type f -name "*.json" -delete
+// Este _script_ hace dos cosas: Por un lado, genera en el directorio `indices`
+// los índices JSON, organizados en subdirectorios. Por otro, crea en el
+// directorio `metadata2` versiones nuevas de los ficheros JSON del directorio
+// `metadata` que recibe por `stdin`, a las que añade una clave `indices` con
+// la lista de índices en aparece la imagen.
 
 import fs from 'fs'
+import path from 'path'
 import { decode, slugize } from '../../httpdocs/modules/strings.js'
 import {
-  photographers,
   authors,
-  locations,
-  folders,
   collections,
+  folders,
+  locations,
+  photographers,
 } from './collections.js'
+
+const output_directory = 'indices'
 
 // Fechas que aparecen en los metadatos de GureGipuzkoa y que no son válidas
 // Pero que podemos —más o menos— arreglar.
@@ -77,7 +84,9 @@ args.forEach((input) => {
 
   const { photographer, municipio, fecha, author } = json.details.image_data
 
-  const tags = json.details.image_data.tags.map(({ name }) => name)
+  // No genero índices para las etiquetas de GureGipuzkoa porque no confío
+  // en ellas como criterio taxonómico…
+  // const tags = json.details.image_data.tags.map(({ name }) => name)
 
   const labels = json.labels.Labels.filter(
     ({ Confidence }) => Confidence > minConfidence,
@@ -87,16 +96,10 @@ args.forEach((input) => {
     ({ Confidence }) => Confidence > minConfidence,
   )
 
-  // author,
-  // tags,
-
-  // "Make": "NIKON CORPORATION",
-  // "Model": "NIKON D70",
-
-  // con faces, como con decades:
-  // if (count > 75) {
-  //   indices.push(`???/over_75`)
-  // }
+  // Podría generar índices en función de los metadatos EXIF, pero tampoco
+  // parece muy útil, más allá de la curiosidad:
+  // - .exif.make === "NIKON CORPORATION",
+  // - .exif.model === "NIKON D70",
 
   if (municipio) {
     const found = locations.find(({ value }) => value === municipio)
@@ -190,14 +193,14 @@ args.forEach((input) => {
 
   json.indices = indices
 
-  const output = input.replace('metadata', 'metadata2')
+  const output = input.replace('metadata_temp', 'metadata')
 
   if (!fs.existsSync(output) || fs.statSync(output).size === 0) {
     fs.writeFileSync(output, JSON.stringify(json))
   }
 
   indices.forEach((index) => {
-    const string = input.match(/metadata\/(\d+)\.json/)?.[1]
+    const string = input.match(/metadata_temp\/(\d+)\.json/)?.[1]
 
     if (!string) {
       return
@@ -247,13 +250,6 @@ args.forEach((input) => {
       // `""` es más corto que `null`, por lo que los índices ocupan menos.
       title || '',
       caption || '',
-
-      // tokenizar aquí ??? cambiar "\n" por " ", eliminar tokens repetidos ???
-      // photographer || null,
-      // municipio || null,
-      // author || null,
-      // tags,
-      // labels,
     ]
 
     _indices[index] = _indices[index] ? [..._indices[index], record] : [record]
@@ -261,12 +257,19 @@ args.forEach((input) => {
 })
 
 Object.entries(_indices).forEach(([index, records]) => {
-  const output = `indices/${index}.json`
+  const output = `${output_directory}/${index}.json`
 
   const contents = fs.existsSync(output)
     ? fs.readFileSync(output).toString()
     : null
+
   const json = contents ? [...JSON.parse(contents), ...records] : records
+
+  const folder = path.dirname(index).split(path.sep).pop()
+
+  fs.mkdirSync(`${output_directory}/${folder}`, {
+    recursive: true,
+  })
 
   const string = JSON.stringify(json)
   fs.writeFileSync(output, string)

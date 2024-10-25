@@ -1,5 +1,6 @@
-// Estas estructuras de datos son utilizadas por index.js para construir los
+// Estas estructuras de datos son utilizadas por `index.js` para construir los
 // índices, así como para asignar a cada fotografía los índices en que aparece.
+// También por `indices.js` para generar el índice de índices.
 
 // Lista de fotógrafos. Tomo el criterio de que sean personas físicas, razón por
 // la cual asigno a `null` aquellos fotógrafos que son colectivos, alias u otros
