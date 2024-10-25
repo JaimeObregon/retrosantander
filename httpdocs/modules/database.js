@@ -198,8 +198,7 @@ const database = {
       area: 10000 * area.width * area.height,
     }))
 
-    // Por un error que cometí al generar los índices he de devolver `exif[0]` en vez de `exif`…
-    return { faces, objects, tags, areas, details, exif: exif[0] }
+    return { faces, objects, tags, areas, details, exif }
   },
 }
 
