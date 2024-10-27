@@ -1,5 +1,6 @@
-import { link, annotation } from '../../modules/icons.js'
-import { MyElement, html, css } from '../../modules/element.js'
+import { app } from '../../modules/app.js'
+import { MyElement, css, html } from '../../modules/element.js'
+import { annotation, link } from '../../modules/icons.js'
 
 class PanelDetails extends MyElement {
   static styles = css`
@@ -17,24 +18,24 @@ class PanelDetails extends MyElement {
       grid-template-columns: 25px auto;
       row-gap: calc(var(--gap) / 3);
       margin: 0;
-    }
 
-    dl dd {
-      display: flex;
-      grid-column-start: 2;
-      align-items: center;
-      margin: 0;
-      text-overflow: ellipsis;
-    }
+      dd {
+        display: flex;
+        grid-column-start: 2;
+        align-items: center;
+        margin: 0;
+        text-overflow: ellipsis;
+      }
 
-    dl dt svg path {
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
+      dt svg path {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
 
-    dl dt,
-    dl dd {
-      vertical-align: middle;
+      dt,
+      dd {
+        vertical-align: middle;
+      }
     }
 
     abbr {
@@ -48,7 +49,7 @@ class PanelDetails extends MyElement {
       <dd><slot name="caption"></slot></dd>
       <dt title="Referencia">${link}</dt>
       <dd id="link">
-        <a> Ver #<slot name="id"></slot> en Gure Gipuzkoa </a>
+        <a>Ver #<slot name="id"></slot> en Gure Gipuzkoa</a>
       </dd>
     </dl>
   `
@@ -65,8 +66,8 @@ class PanelDetails extends MyElement {
     this.innerHTML = slots.join('')
 
     const a = this.shadowRoot?.querySelector('a')
-    const url = `https://www.guregipuzkoa.eus/photo/${details.file}`
-    a?.setAttribute('href', url)
+    const href = app.project.external(details.id)
+    a?.setAttribute('href', href)
   }
 }
 

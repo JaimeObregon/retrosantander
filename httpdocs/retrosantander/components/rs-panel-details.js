@@ -1,12 +1,13 @@
+import { app } from '../../modules/app.js'
+import { MyElement, css, html } from '../../modules/element.js'
 import {
-  calendar,
-  documentDuplicate,
-  camera,
-  photo,
   beaker,
+  calendar,
+  camera,
+  documentDuplicate,
   link,
+  photo,
 } from '../../modules/icons.js'
-import { MyElement, html, css } from '../../modules/element.js'
 
 class PanelDetails extends MyElement {
   static styles = css`
@@ -24,24 +25,24 @@ class PanelDetails extends MyElement {
       grid-template-columns: 25px auto;
       row-gap: calc(var(--gap) / 3);
       margin: 0;
-    }
 
-    dl dd {
-      display: flex;
-      grid-column-start: 2;
-      align-items: center;
-      margin: 0;
-      text-overflow: ellipsis;
-    }
+      dd {
+        display: flex;
+        grid-column-start: 2;
+        align-items: center;
+        margin: 0;
+        text-overflow: ellipsis;
+      }
 
-    dl dt svg path {
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
+      dt svg path {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
 
-    dl dt,
-    dl dd {
-      vertical-align: middle;
+      dt,
+      dd {
+        vertical-align: middle;
+      }
     }
 
     abbr {
@@ -85,8 +86,8 @@ class PanelDetails extends MyElement {
     this.innerHTML = slots.join('')
 
     const a = this.shadowRoot?.querySelector('a')
-    const url = `http://portal.ayto-santander.es/portalcdis/Public/FotoView.do?id=${details.id}`
-    a?.setAttribute('href', url)
+    const href = app.project.external(details.id)
+    a?.setAttribute('href', href)
   }
 }
 

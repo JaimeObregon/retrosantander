@@ -15,6 +15,7 @@ const project = {
     `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/metadata/${id}.json`,
   index: (folder, id) =>
     `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/indices/${folder}/${id}.json`,
+  external: (id) => `https://www.guregipuzkoa.eus/photo/${id}`,
   galleries: `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/galleries.json`,
   collections: [
     {

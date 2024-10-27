@@ -1,12 +1,6 @@
-import {
-  calendar,
-  documentDuplicate,
-  camera,
-  photo,
-  beaker,
-  link,
-} from '../../modules/icons.js'
-import { MyElement, html, css } from '../../modules/element.js'
+import { app } from '../../modules/app.js'
+import { MyElement, css, html } from '../../modules/element.js'
+import { annotation, link } from '../../modules/icons.js'
 
 class PanelDetails extends MyElement {
   static styles = css`
@@ -24,24 +18,24 @@ class PanelDetails extends MyElement {
       grid-template-columns: 25px auto;
       row-gap: calc(var(--gap) / 3);
       margin: 0;
-    }
 
-    dl dd {
-      display: flex;
-      grid-column-start: 2;
-      align-items: center;
-      margin: 0;
-      text-overflow: ellipsis;
-    }
+      dd {
+        display: flex;
+        grid-column-start: 2;
+        align-items: center;
+        margin: 0;
+        text-overflow: ellipsis;
+      }
 
-    dl dt svg path {
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
+      dt svg path {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
 
-    dl dt,
-    dl dd {
-      vertical-align: middle;
+      dt,
+      dd {
+        vertical-align: middle;
+      }
     }
 
     abbr {
@@ -51,24 +45,11 @@ class PanelDetails extends MyElement {
 
   static html = html`
     <dl>
-      <dt title="Fecha">${calendar}</dt>
-      <dd><slot name="date"></slot></dd>
-      <dt title="Colección o fondo">${documentDuplicate}</dt>
-      <dd><slot name="collection"></slot></dd>
-      <dt title="Fotógrafo">${camera}</dt>
-      <dd><slot name="author"></slot></dd>
-      <dt title="Material">${photo}</dt>
-      <dd><slot name="material"></slot></dd>
-      <dt title="Procedimiento">${beaker}</dt>
-      <dd><slot name="procedure"></slot></dd>
+      <dt title="Descripción">${annotation}</dt>
+      <dd><slot name="caption"></slot></dd>
       <dt title="Referencia">${link}</dt>
       <dd id="link">
-        <a>
-          Ver #<slot name="id"></slot> en el
-          <abbr title="Centro de Documentación de la Imagen de Santander"
-            >CDIS</abbr
-          >
-        </a>
+        <a>Ver #<slot name="id"></slot> en Gure Gipuzkoa</a>
       </dd>
     </dl>
   `
@@ -85,8 +66,8 @@ class PanelDetails extends MyElement {
     this.innerHTML = slots.join('')
 
     const a = this.shadowRoot?.querySelector('a')
-    const url = `http://portal.ayto-santander.es/portalcdis/Public/FotoView.do?id=${details.id}`
-    a?.setAttribute('href', url)
+    const href = app.project.external(details.id)
+    a?.setAttribute('href', href)
   }
 }
 

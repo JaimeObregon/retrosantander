@@ -11,6 +11,7 @@ const project = {
   metadata: (id) =>
     `https://retrogipuzkoa.s3.eu-south-2.amazonaws.com/metadata/${id}.json`,
   index: `https://retrogipuzkoa.s3.eu-south-2.amazonaws.com/indices/jesus_elosegui.json`,
+  external: (id) => `https://www.guregipuzkoa.eus/photo/${id}`,
   collections: ['jesus_elosegui'],
   routes: [
     {
