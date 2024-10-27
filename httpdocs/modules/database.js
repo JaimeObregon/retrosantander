@@ -53,7 +53,7 @@ const database = {
 
   // Devuelve el registro de una imagen a partir de su `id`.
   find: (id) => {
-    return database.records.find((record) => record.id === id)
+    return database.records.find((record) => record.id == id)
   },
 
   // Cursa una búsqueda en la base de datos y devuelve los resultados de la misma
@@ -93,7 +93,7 @@ const database = {
 
     const json = await response.json()
 
-    const { rekognition, exif, details } = json
+    const { exif, details } = json
 
     const gender = (value) =>
       ({
@@ -101,7 +101,7 @@ const database = {
         Female: 'Mujer',
       })[value]
 
-    const faces = rekognition.FaceDetails.filter(
+    const faces = json.faces.FaceDetails.filter(
       (face) => face.Confidence >= confidenceThreshold,
     ).map((face, i) => ({
       type: 'face',
@@ -156,7 +156,7 @@ const database = {
       }),
     }))
 
-    const objects = rekognition.Labels.filter(
+    const objects = json.labels.Labels.filter(
       (object) => object.Instances.length,
     ).reduce(
       (accumulator, object) => [
@@ -178,7 +178,7 @@ const database = {
       [],
     )
 
-    const tags = rekognition.Labels.filter((label) => !label.Instances.length)
+    const tags = json.labels.Labels.filter((label) => !label.Instances.length)
       .filter((label) => label.Confidence > confidenceThreshold)
       .map((label) => ({
         name: labels[label.Name],

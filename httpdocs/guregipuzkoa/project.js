@@ -15,32 +15,7 @@ const project = {
     `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/metadata/${id}.json`,
   index: (folder, id) =>
     `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/indices/${folder}/${id}.json`,
-  galleries: [
-    {
-      id: 'baserriak',
-      images: ['10567', '11911', '2191', '12191', '14191', '28191', '27111'],
-    },
-    {
-      id: 'erretratuak',
-      images: ['10567', '11911', '2191', '12191', '14191', '28191', '27111'],
-    },
-    {
-      id: 'lana',
-      images: ['10567', '11911', '2191', '12191', '14191', '28191', '27111'],
-    },
-    {
-      id: 'natura',
-      images: ['10567', '11911', '2191', '12191', '14191', '28191', '27111'],
-    },
-    {
-      id: 'kirolak',
-      images: ['119112', '132316', '132723', '1018403', '1015024', '1011420'],
-    },
-    {
-      id: 'bazterrak',
-      images: ['119112', '132316', '132723', '1018403', '1015024', '1021414'],
-    },
-  ],
+  galleries: `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/galleries.json`,
   collections: [
     {
       id: 'beasaingo_udala',

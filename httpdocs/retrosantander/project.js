@@ -12,11 +12,8 @@ const project = {
     'assets/images/unavailable.svg',
   metadata: (id) =>
     `https://retrosantander.s3.eu-south-2.amazonaws.com/metadata/${id}.json`,
-  index: (id) =>
-    `https://retrosantander.s3.eu-south-2.amazonaws.com/indices/${id}.json`,
-  galleries: [],
+  index: `https://retrosantander.s3.eu-south-2.amazonaws.com/indices/cdis.json`,
   collections: ['cdis'],
-  locations: [],
   routes: [
     {
       pattern: /^\/(\?q=(?<query>.+))?$/,

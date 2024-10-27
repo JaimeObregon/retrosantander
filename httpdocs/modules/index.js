@@ -53,7 +53,7 @@ document.addEventListener('click', (event) => {
   const link = event
     .composedPath()
     .find(
-      (element) => element instanceof HTMLElement && element.nodeName === 'A'
+      (element) => element instanceof HTMLElement && element.nodeName === 'A',
     )
 
   if (!(link instanceof HTMLAnchorElement)) {

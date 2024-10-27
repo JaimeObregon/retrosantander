@@ -61,15 +61,17 @@ class Gallery extends MyElement {
   back
   nav
 
-  connectedCallback() {
+  async connectedCallback() {
     this.front = this.shadowRoot?.querySelector('div#front')
     this.back = this.shadowRoot?.querySelector('div#back')
     this.nav = this.shadowRoot?.querySelector('nav')
 
-    console.log(app.project.galleries)
+    const response = await fetch(app.project.galleries)
+    const galleries = await response.json()
 
     const id = 'baserriak'
-    this.gallery = app.project.galleries.find((gallery) => gallery.id === id)
+
+    this.gallery = galleries.find((gallery) => gallery.id === id)
 
     this.nav.innerHTML = this.gallery.images
       .map(() => `<button></button>`)

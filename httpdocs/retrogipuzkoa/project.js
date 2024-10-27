@@ -10,11 +10,8 @@ const project = {
     `https://retrogipuzkoa.s3.eu-south-2.amazonaws.com/jpeg/${id}.jpg`,
   metadata: (id) =>
     `https://retrogipuzkoa.s3.eu-south-2.amazonaws.com/metadata/${id}.json`,
-  index: (id) =>
-    `https://retrogipuzkoa.s3.eu-south-2.amazonaws.com/indices/${id}.json`,
-  galleries: [],
+  index: `https://retrogipuzkoa.s3.eu-south-2.amazonaws.com/indices/jesus_elosegui.json`,
   collections: ['jesus_elosegui'],
-  locations: [],
   routes: [
     {
       pattern: /^\/(\?q=(?<query>.+))?$/,

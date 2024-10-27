@@ -276,6 +276,13 @@ Finalmente los subo a S3, con la precaución de informar de la compresión:
 aws s3 sync metadata s3://guregipuzkoa/metadata/ --content-encoding 'gzip'
 ```
 
+Nótese que para añadir o cambiar un índice hay que:
+
+- Crear o modificar el fichero del índice
+- Modificar los ficheros de metadatos de las imágenes que aparezcan en el índice
+- Regenerar el índice de índices (paso siguiente)
+- Subir los cambios a S3
+
 # 12. Generación del índice de índices
 
 Una vez generado cada índice, generamos el índice de índices pasando a `indices.js` el directorio donde descansan los índices creados en el paso anterior:
@@ -291,3 +298,9 @@ find indices -type f -print0 | xargs -0 gzip
 find indices -type f -name '*.json.gz' -exec rename 's/\.gz$//' {} +
 aws s3 sync indices s3://guregipuzkoa/indices/ --content-encoding 'gzip'
 ```
+
+# 13. Creación de galerías de imágenes seleccionadas
+
+El fichero `galleries.json` se construye manualmente y describe qué galerías de imágenes seleccionadas se muestran en el sitio web.
+
+Basta editarlo a voluntad, comprimirlo con gzip y subirlo a S3.
