@@ -50,14 +50,14 @@ class LicenseCDIS extends MyElement {
 
       <p>
         Esta imagen es obra de su autor, y sus derechos pertenecen al Centro de
-        Documentación de la Imagen de Santander (CDIS), una entidad dependiente
-        del Ayuntamiento de Santander.
+        Documentación de la Imagen de Santander (<abbr>CDIS</abbr>), una entidad
+        dependiente del Ayuntamiento de Santander.
       </p>
 
       <p>
         Por favor
         <a href="https://portal.ayto-santander.es/portalcdis/"
-          >contacta con el CDIS</a
+          >contacta con el <abbr>CDIS</abbr></a
         >
         y adquiere la versión de alta resolución antes de hacer una utilización
         comercial de esta imagen.

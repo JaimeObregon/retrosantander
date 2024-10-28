@@ -1,10 +1,6 @@
-import { MyElement, html, css } from '../modules/element.js'
 import { app } from '../modules/app.js'
 import { database } from '../modules/database.js'
-
-import { Panel } from './rs-panel.js'
-import { Image } from './rs-image.js'
-import { Loading } from './rs-loading.js'
+import { MyElement, css, html } from '../modules/element.js'
 
 class Grid extends MyElement {
   static styles = css`
@@ -201,7 +197,10 @@ class Grid extends MyElement {
 
   arrange() {
     const div = document.createElement('div')
-    div.setAttribute('style', 'width: var(--gap); height: var(--panel-width);')
+    div.setAttribute(
+      'style',
+      'width: var(--image-gap); height: var(--panel-width);',
+    )
 
     document.body.appendChild(div)
     const { width: gap, height: detailsWidth } = div.getBoundingClientRect()
