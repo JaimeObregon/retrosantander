@@ -171,22 +171,11 @@ class ThemeSwitcher extends MyElement {
 
   clickHandler(event) {
     this.theme = this.theme === 'light' ? 'dark' : 'light'
-
-    if (this.sounds) {
-      const audio = this.sounds[this.theme]
-      audio.play()
-    }
-
     event.stopPropagation()
   }
 
   connectedCallback() {
     this.button = this.shadowRoot?.querySelector('button')
-
-    this.sounds = {
-      dark: new Audio('/assets/sounds/activate.mp3'),
-      light: new Audio('/assets/sounds/deactivate.mp3'),
-    }
 
     this.button?.addEventListener('click', this.clickHandler.bind(this))
   }

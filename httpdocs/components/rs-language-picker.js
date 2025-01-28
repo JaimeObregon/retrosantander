@@ -41,8 +41,6 @@ class LanguagePicker extends MyElement {
       return
     }
 
-    this.sound = new Audio('/assets/sounds/activate.mp3')
-
     const { languages } = app.project
 
     if (languages.length < 2) {
@@ -71,8 +69,6 @@ class LanguagePicker extends MyElement {
     this.form.addEventListener('click', (event) => event.stopPropagation())
 
     this.form.addEventListener('change', () => {
-      this.sound?.play()
-
       if (!this.form) {
         return
       }

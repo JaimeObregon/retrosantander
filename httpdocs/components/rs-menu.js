@@ -103,11 +103,6 @@ class Menu extends MyElement {
     this.hamburger = this.shadowRoot?.querySelector('button')
     this.article = this.shadowRoot?.querySelector('article')
 
-    this.sounds = {
-      open: new Audio('/assets/sounds/activate.mp3'),
-      close: new Audio('/assets/sounds/deactivate.mp3'),
-    }
-
     setTimeout(() => this.article.setAttribute('ready', true), 350)
 
     this.hamburger.addEventListener('click', () => (this.open = !this.open))
@@ -132,13 +127,6 @@ class Menu extends MyElement {
   set open(value) {
     if (this.open === value) {
       return
-    }
-
-    const sound = value ? 'open' : 'close'
-
-    if (this.sounds) {
-      const audio = this.sounds[sound]
-      audio.play()
     }
 
     this.hamburger.classList.toggle('open', value)

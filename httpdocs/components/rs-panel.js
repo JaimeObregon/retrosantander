@@ -309,11 +309,6 @@ class Panel extends MyElement {
     customElements.define('rs-license-cdis', LicenseCDIS)
     customElements.define('rs-license-cc-by-sa', LicenseCCBYSA)
 
-    this.sounds = {
-      open: new Audio('/assets/sounds/activate.mp3'),
-      close: new Audio('/assets/sounds/deactivate.mp3'),
-    }
-
     this.button.addEventListener('click', () => app.$grid.restore())
 
     this.aside.addEventListener('mouseover', (event) => {
@@ -355,7 +350,6 @@ class Panel extends MyElement {
     }
 
     if (!data) {
-      !panel.classList.contains('hidden') && this.sounds?.close.play()
       panel.classList.add('hidden')
       return
     }
@@ -466,7 +460,6 @@ class Panel extends MyElement {
       this.footer.innerHTML = `<rs-license-cc-by-sa></rs-license-cc-by-sa>`
     }
 
-    panel.classList.contains('hidden') && this.sounds?.open.play()
     panel.classList.remove('hidden')
   }
 }
