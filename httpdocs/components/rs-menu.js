@@ -48,7 +48,7 @@ class Menu extends MyElement {
       overflow: scroll;
       font-size: 15px;
       font-weight: 400;
-      background-color: rgba(var(--color-panel-components), 0.941);
+      background-color: var(--color-panel);
       backdrop-filter: blur(14px);
       border-left: 1px solid var(--color-line);
       box-shadow: -5px 0 5px #1c191750;

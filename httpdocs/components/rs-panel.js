@@ -20,7 +20,7 @@ class Panel extends MyElement {
       height: calc(100% - var(--header-height));
       padding: var(--gap);
       overflow: scroll;
-      background-color: rgba(var(--color-panel-components), 0.941);
+      background-color: var(--color-panel);
       backdrop-filter: blur(14px);
       border-right: 1px solid var(--color-line);
       box-shadow: 5px 0 5px #1c191750;

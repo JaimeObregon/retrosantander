@@ -1,41 +1,34 @@
 @import url('../typography.css');
 @import url('../system.css');
 
-:root {
+html {
   --type-base: calc(0.75em + 0.5vw);
+  --gap: 20px;
+  --image-gap: 4px;
+  --panel-width: 22em;
+  --header-height: 64px;
 
-  /* Inspirado en basecamp.com */
-  --color-accent: #c71585;
-  --color-background: #fbf7f0;
-  --color-panel: white;
-  --color-panel-components: 255, 255, 255;
-  --color-heading: #0d1a26;
-  --color-link: #c71585;
-  --color-highlight: #222;
-  --color-highlight-inverted: #fff;
-  --color-text: #274059;
-  --color-text-pale: #707f8d;
-  --color-line: #e3dedc;
-  --color-warning: #fdba74;
-  --color-backdrop: #000000d9;
-
+  margin: 0 var(--image-gap);
+  font-family: 'Inter var', sans-serif;
   font-size: 16px;
+  font-weight: 300;
   font-variant-numeric: oldstyle-nums;
   line-height: var(--line-height-normal);
   color: var(--color-text);
   color-scheme: dark light;
   cursor: default;
+  user-select: none;
+  background: var(--color-background);
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-/* Inspirado en Smashing Magazine */
-@media screen {
-  :root[data-theme='dark'] {
+  /* Inspirado en Smashing Magazine */
+  &[data-theme='dark'] {
     --color-accent: #ccec88;
     --color-background: #0d2630;
-    --color-panel: #19313c;
-    --color-panel-components: 25, 49, 60;
+    --color-panel: #19313cd9;
     --color-heading: #fff;
     --color-link: #ccec88;
     --color-highlight: #fff;
@@ -46,26 +39,27 @@
     --color-warning: #7f1d1d;
     --color-backdrop: #0d2630f2;
   }
+
+  /* Inspirado en basecamp.com */
+  &[data-theme='light'] {
+    --color-accent: #c71585;
+    --color-background: #fbf7f0;
+    --color-panel: #ffffffd9;
+    --color-heading: #0d1a26;
+    --color-link: #c71585;
+    --color-highlight: #222;
+    --color-highlight-inverted: #fff;
+    --color-text: #274059;
+    --color-text-pale: #707f8d;
+    --color-line: #e3dedc;
+    --color-warning: #fdba74;
+    --color-backdrop: #000000d9;
+  }
 }
 
 ::selection {
   color: var(--color-highlight-inverted);
   background-color: var(--color-highlight);
-}
-
-html {
-  --gap: 20px;
-  --image-gap: 4px;
-  --panel-width: 22em;
-  --header-height: 64px;
-
-  margin: 0 var(--image-gap);
-  font-family: 'Inter var', sans-serif;
-  font-weight: 300;
-  scroll-behavior: smooth;
-  text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -88,7 +82,7 @@ header {
   align-items: center;
   width: 100%;
   height: var(--header-height);
-  background-color: rgba(var(--color-panel-components), 0.85);
+  background-color: var(--color-panel);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-line);
   box-shadow: 0 5px 5px #1c191750;

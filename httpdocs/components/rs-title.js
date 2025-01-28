@@ -22,6 +22,7 @@ class Title extends MyElement {
       text-align: center;
       text-overflow: '_';
       white-space: nowrap;
+      user-select: text;
       transition: width linear;
     }
 
