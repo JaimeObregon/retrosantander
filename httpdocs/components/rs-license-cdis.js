@@ -1,4 +1,5 @@
-import { MyElement, html, css } from '../modules/element.js'
+import { MyElement } from '../modules/element.js'
+import { css, html } from '../modules/strings.js'
 
 class LicenseCDIS extends MyElement {
   static styles = css`

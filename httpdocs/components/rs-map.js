@@ -1,6 +1,6 @@
-import { MyElement, html, css } from '../modules/element.js'
-import { slugize } from '../modules/strings.js'
 import { app } from '../modules/app.js'
+import { MyElement } from '../modules/element.js'
+import { html, slugize } from '../modules/strings.js'
 
 class Map extends MyElement {
   static html = html`<slot></slot>`

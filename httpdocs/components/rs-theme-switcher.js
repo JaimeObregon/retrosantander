@@ -1,5 +1,5 @@
-import { MyElement, html, css } from '../modules/element.js'
-import { app } from '../modules/app.js'
+import { MyElement } from '../modules/element.js'
+import { css, html } from '../modules/strings.js'
 
 class ThemeSwitcher extends MyElement {
   // Ha de coincidir lo definido en el `<script>` en `index.html`

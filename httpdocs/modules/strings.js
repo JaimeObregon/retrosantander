@@ -1,3 +1,7 @@
+// Solo para que prettier formatee la sintaxis.
+const html = String.raw
+const css = String.raw
+
 // Escapa una cadena para interpolarla de manera segura en HTML
 const escape = (string) =>
   string.replace(
@@ -9,7 +13,7 @@ const escape = (string) =>
         '>': '&gt;',
         "'": '&#apos;',
         '"': '&quot;',
-      }[tag])
+      })[tag],
   )
 
 // He comprobado que estas son las únicas entidades que aparecen en los metadatos del CDIS y de GureGipuzkoa.
@@ -31,20 +35,20 @@ const decode = (string) => {
         '&iquest;': '¿',
         '&ntilde;': 'ñ',
         '&oacute;': 'ó',
-      }[match])
+      })[match],
   )
 }
 
 // Tokeniza una cadena. Véase https://es.stackoverflow.com/a/62032.
-// `Manuel   González-Mesones` > `manuel gonzalez mesones`.
-// `Camión en Oñati` > `camion en oñati`.
+// `Manuel   González-Mesones` → `manuel gonzalez mesones`.
+// `Camión en Oñati` → `camion en oñati`.
 const normalize = (string) => {
   return string
     .toLowerCase()
     .normalize('NFD')
     .replace(
       /([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+/gi,
-      '$1'
+      '$1',
     )
     .normalize()
     .replace(/[^a-z0-9ñç ]/g, ' ')
@@ -53,8 +57,8 @@ const normalize = (string) => {
 }
 
 // Devuelve el _slug_ de una cadena.
-// `Ayuntamiento de Donostia/San Sebastián` > `ayuntamiento_de_donostia_san_sebastian`
-// `Leintz-Gatzaga` > `leintz_gatzaga`
+// `Ayuntamiento de Donostia/San Sebastián` → `ayuntamiento_de_donostia_san_sebastian`
+// `Leintz-Gatzaga` → `leintz_gatzaga`
 const slugize = (string) => normalize(string).replaceAll(' ', '_')
 
-export { escape, decode, normalize, slugize }
+export { css, decode, escape, html, normalize, slugize }

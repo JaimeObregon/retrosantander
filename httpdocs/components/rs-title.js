@@ -1,6 +1,7 @@
-import { MyElement, html, css } from '../modules/element.js'
-import { i18n } from '../modules/i18n.js'
 import { app } from '../modules/app.js'
+import { MyElement } from '../modules/element.js'
+import { i18n } from '../modules/i18n.js'
+import { css, html } from '../modules/strings.js'
 
 class Title extends MyElement {
   static styles = css`

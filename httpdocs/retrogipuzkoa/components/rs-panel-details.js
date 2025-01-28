@@ -1,6 +1,7 @@
 import { app } from '../../modules/app.js'
-import { MyElement, css, html } from '../../modules/element.js'
+import { MyElement } from '../../modules/element.js'
 import { annotation, link } from '../../modules/icons.js'
+import { css, html } from '../../modules/strings.js'
 
 class PanelDetails extends MyElement {
   static styles = css`

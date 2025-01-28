@@ -1,7 +1,7 @@
-import { MyElement, html, css } from '../modules/element.js'
 import { app } from '../modules/app.js'
+import { MyElement } from '../modules/element.js'
 import { i18n } from '../modules/i18n.js'
-import { normalize } from '../modules/strings.js'
+import { css, html, normalize } from '../modules/strings.js'
 
 const icon = html`
   <svg viewBox="0 0 16 16">

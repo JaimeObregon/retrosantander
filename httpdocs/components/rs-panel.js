@@ -1,9 +1,10 @@
-import { MyElement, html, css } from '../modules/element.js'
-import { i18n } from '../modules/i18n.js'
 import { app } from '../modules/app.js'
+import { MyElement } from '../modules/element.js'
+import { i18n } from '../modules/i18n.js'
+import { css, html } from '../modules/strings.js'
 
-import { LicenseCDIS } from './rs-license-cdis.js'
 import { LicenseCCBYSA } from './rs-license-cc-by-sa.js'
+import { LicenseCDIS } from './rs-license-cdis.js'
 
 const facesPerRow = 5
 

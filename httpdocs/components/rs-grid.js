@@ -1,6 +1,7 @@
+import { css, html } from '../modules/strings.js'
 import { app } from '../modules/app.js'
 import { database } from '../modules/database.js'
-import { MyElement, css, html } from '../modules/element.js'
+import { MyElement } from '../modules/element.js'
 
 class Grid extends MyElement {
   static styles = css`

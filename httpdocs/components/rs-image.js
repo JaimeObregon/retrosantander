@@ -1,7 +1,7 @@
-import { MyElement, html, css } from '../modules/element.js'
 import { app } from '../modules/app.js'
-import { escape } from '../modules/strings.js'
 import { database } from '../modules/database.js'
+import { MyElement } from '../modules/element.js'
+import { css, escape, html } from '../modules/strings.js'
 
 class Image extends MyElement {
   static styles = css`

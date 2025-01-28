@@ -15,17 +15,16 @@ const project = {
   index: `https://retrosantander.s3.eu-south-2.amazonaws.com/indices/cdis.json`,
   external: (id) =>
     `http://portal.ayto-santander.es/portalcdis/Public/FotoView.do?id=${id}`,
-  collections: ['cdis'],
   routes: [
     {
       pattern: /^\/(\?q=(?<query>.+))?$/,
       exec: (app, groups) => {
-        const collection = project.collections[0]
-        const index = project.index(collection)
-
         const main = document.querySelector('main')
-        main.innerHTML = `<rs-grid index="${index}"></rs-grid>`
+        if (!main) {
+          return
+        }
 
+        main.innerHTML = `<rs-grid index="${project.index}"></rs-grid>`
         app.title = groups.query
       },
     },

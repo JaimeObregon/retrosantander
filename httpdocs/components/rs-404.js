@@ -1,5 +1,6 @@
+import { MyElement } from '../modules/element.js'
 import { faceFrown } from '../modules/icons.js'
-import { MyElement, html, css } from '../modules/element.js'
+import { css, html } from '../modules/strings.js'
 
 class NotFound extends MyElement {
   static styles = css`

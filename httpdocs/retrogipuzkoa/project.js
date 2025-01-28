@@ -12,17 +12,16 @@ const project = {
     `https://retrogipuzkoa.s3.eu-south-2.amazonaws.com/metadata/${id}.json`,
   index: `https://retrogipuzkoa.s3.eu-south-2.amazonaws.com/indices/jesus_elosegui.json`,
   external: (id) => `https://www.guregipuzkoa.eus/photo/${id}`,
-  collections: ['jesus_elosegui'],
   routes: [
     {
       pattern: /^\/(\?q=(?<query>.+))?$/,
       exec: (app, groups) => {
-        const collection = project.collections[0]
-        const index = project.index(collection)
-
         const main = document.querySelector('main')
-        main.innerHTML = `<rs-grid index="${index}"></rs-grid>`
+        if (!main) {
+          return
+        }
 
+        main.innerHTML = `<rs-grid index="${project.index}"></rs-grid>`
         app.title = groups.query
       },
     },

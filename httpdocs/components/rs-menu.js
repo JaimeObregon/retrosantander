@@ -1,6 +1,7 @@
-import { MyElement, html, css } from '../modules/element.js'
-import { councilLogo } from '../modules/icons.js'
 import { app } from '../modules/app.js'
+import { MyElement } from '../modules/element.js'
+import { councilLogo } from '../modules/icons.js'
+import { css, html } from '../modules/strings.js'
 
 import { LanguagePicker } from './rs-language-picker.js'
 

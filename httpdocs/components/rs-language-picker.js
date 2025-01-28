@@ -1,7 +1,7 @@
 import { app } from '../modules/app.js'
-import { i18n } from '../modules/i18n.js'
-import { storageKey } from '../modules/i18n.js'
-import { MyElement, html, css } from '../modules/element.js'
+import { MyElement } from '../modules/element.js'
+import { i18n, storageKey } from '../modules/i18n.js'
+import { css, html } from '../modules/strings.js'
 
 class LanguagePicker extends MyElement {
   static styles = css`

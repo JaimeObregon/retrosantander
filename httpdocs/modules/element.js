@@ -1,12 +1,3 @@
-// Identidad que utilizo solo para que VS Code coloree la sintaxis.
-// Véase https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#raw_strings
-const identity = (strings, ...values) => {
-  return String.raw({ raw: strings }, ...values)
-}
-
-const html = identity
-const css = identity
-
 class MyElement extends HTMLElement {
   constructor() {
     super()
@@ -30,4 +21,4 @@ class MyElement extends HTMLElement {
   }
 }
 
-export { MyElement, html, css }
+export { MyElement }
