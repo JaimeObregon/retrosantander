@@ -82,7 +82,7 @@ El _stack_ tecnológico es deliberadamente minimalista y está basada en estánd
 
 # Integración con VS Code
 
-El directorio `.vscode` aporta configuración para Visual Studio Code, incluyendo la definición de las tareas para arrancar el servidor web de desarrollo con un proyecto desde el IDE.
+El directorio `.vscode` aporta la definición de las tareas para arrancar desde Visual Studio Code el servidor web de desarrollo con un proyecto.
 
 # Estilo de código
 

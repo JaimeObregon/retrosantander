@@ -70,7 +70,7 @@ class Gallery extends MyElement {
     const response = await fetch(app.project.galleries)
     const galleries = await response.json()
 
-    const id = 'baserriak'
+    const id = this.getAttribute('gallery')
 
     this.gallery = galleries.find((gallery) => gallery.id === id)
 
