@@ -2,7 +2,6 @@ const project = {
   name: 'Retrogipuzkoa',
   folder: 'retrogipuzkoa',
   languages: ['es'],
-  themes: ['dark'],
   title: {
     es: 'Explora 15 210 imágenes históricas de la Colección Jesús Elósegui',
   },

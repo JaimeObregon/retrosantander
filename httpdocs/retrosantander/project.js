@@ -2,7 +2,6 @@ const project = {
   name: 'Retrosantander',
   folder: 'retrosantander',
   languages: ['es'],
-  themes: ['dark'],
   title: {
     es: 'Explora 9506 imágenes históricas de Santander',
   },

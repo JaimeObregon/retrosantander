@@ -2,7 +2,6 @@ const project = {
   name: 'GureGipuzkoa',
   folder: 'guregipuzkoa',
   languages: ['eu', 'es', 'fr', 'en'],
-  themes: ['dark', 'light'],
   title: {
     es: 'Explora 159 013 fotografías históricas de Guipúzcoa',
     eu: 'Arakatu Gipuzkoako 159.013 argazki historiko',
