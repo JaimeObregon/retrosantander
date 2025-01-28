@@ -11,9 +11,11 @@ class Help extends MyElement {
       justify-content: center;
       max-width: 42em;
       min-height: calc(100vh - var(--header-height));
+      padding: 0 var(--gap);
       margin: auto;
       font-size: 18px;
       line-height: 1.5;
+      user-select: text;
     }
 
     article.hidden {

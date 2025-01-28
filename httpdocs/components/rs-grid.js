@@ -7,7 +7,7 @@ class Grid extends MyElement {
   static styles = css`
     main {
       position: relative;
-      top: calc(var(--header-height) + var(--gap));
+      top: calc(var(--header-height) + var(--image-gap));
       width: 100%;
       transition: transform 750ms ease;
     }
