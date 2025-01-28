@@ -21,9 +21,9 @@ class Panel extends MyElement {
       padding: var(--gap);
       overflow: scroll;
       background-color: var(--color-panel);
-      backdrop-filter: blur(14px);
+      backdrop-filter: blur(var(--panel-blur));
       border-right: 1px solid var(--color-line);
-      box-shadow: 5px 0 5px #1c191750;
+      box-shadow: 5px 0 5px var(--color-box-shadow);
       opacity: 1;
       transition: 350ms;
     }
@@ -157,7 +157,7 @@ class Panel extends MyElement {
         font-size: 14px;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
-        box-shadow: 0 -5px 5px #1c191750;
+        box-shadow: 0 -5px 5px var(--color-box-shadow);
       }
 
       aside section#details dl {

@@ -28,6 +28,11 @@ html {
   --color-text-pale: var(--color-neutral-400);
   --color-line: var(--color-neutral-700);
   --color-warning: var(--color-yellow-500);
+  --color-box-shadow: color-mix(
+    in srgb,
+    var(--color-neutral-900) 35%,
+    transparent
+  );
   --color-backdrop: color-mix(
     in srgb,
     var(--color-neutral-900) 90%,
@@ -39,6 +44,7 @@ html {
   --image-gap: 4px;
   --panel-width: 22em;
   --header-height: 64px;
+  --panel-blur: 14px;
 
   margin: 0 var(--image-gap);
   font-family: var(--font-sans);
@@ -72,19 +78,16 @@ header {
   width: 100%;
   height: var(--header-height);
   background-color: var(--color-panel);
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(var(--panel-blur));
   border-bottom: 1px solid var(--color-line);
-  box-shadow: 0 5px 5px #1c191750;
+  box-shadow: 0 5px 5px var(--color-box-shadow);
 
   rs-title {
     flex-grow: 1;
     overflow: hidden;
   }
 
-  rs-search {
-    flex-shrink: 0;
-  }
-
+  rs-search,
   rs-menu {
     flex-shrink: 0;
   }

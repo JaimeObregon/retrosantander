@@ -7,14 +7,18 @@ html {
   --image-gap: 4px;
   --panel-width: 22em;
   --header-height: 64px;
+  --panel-blur: 10px;
 
   margin: 0 var(--image-gap);
-  font-family: var(--font-sans);
-  font-size: 16px;
+  font-family: var(--font-serif);
+  font-size: var(--type-base);
   font-weight: 300;
   font-variant-numeric: oldstyle-nums;
+  hyphens: auto;
   line-height: var(--line-height-normal);
   color: var(--color-text);
+  text-align: justify;
+  letter-spacing: 0.025em;
   color-scheme: dark light;
   cursor: default;
   user-select: none;
@@ -37,6 +41,7 @@ html {
     --color-text-pale: #999;
     --color-line: #244654;
     --color-warning: #7f1d1d;
+    --color-box-shadow: #1c191750;
     --color-backdrop: #0d2630f2;
   }
 
@@ -53,6 +58,7 @@ html {
     --color-text-pale: #707f8d;
     --color-line: #e3dedc;
     --color-warning: #fdba74;
+    --color-box-shadow: #1c191750;
     --color-backdrop: #000000d9;
   }
 }
@@ -64,12 +70,6 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font-serif);
-  font-size: var(--type-base);
-  hyphens: auto;
-  text-align: justify;
-  letter-spacing: 0.025em;
-  background: var(--color-background);
 }
 
 header {
@@ -83,9 +83,9 @@ header {
   width: 100%;
   height: var(--header-height);
   background-color: var(--color-panel);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--panel-blur));
   border-bottom: 1px solid var(--color-line);
-  box-shadow: 0 5px 5px #1c191750;
+  box-shadow: 0 5px 5px var(--color-box-shadow);
 
   rs-title {
     flex-grow: 1;
@@ -123,18 +123,18 @@ a {
   &[href^='http'] {
     color: inherit;
     text-decoration: inherit;
-  }
 
-  &[href^='http']::after {
-    position: relative;
-    top: -0.2em;
-    color: var(--color-accent);
-    content: '°';
-  }
+    &:hover {
+      text-decoration: none;
+      background: var(--color-highlight-inverted);
+    }
 
-  &[href^='http']:hover {
-    text-decoration: none;
-    background: var(--color-highlight-inverted);
+    &::after {
+      position: relative;
+      top: -0.2em;
+      color: var(--color-accent);
+      content: '°';
+    }
   }
 
   strong {
