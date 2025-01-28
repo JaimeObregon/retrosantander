@@ -1,21 +1,19 @@
-import { app } from './app.js'
-
-import { Logo } from '../components/rs-logo.js'
-import { Title } from '../components/rs-title.js'
-import { Search } from '../components/rs-search.js'
-import { Menu } from '../components/rs-menu.js'
+import { NotFound } from '../components/rs-404.js'
+import { Collections } from '../components/rs-collections.js'
+import { Gallery } from '../components/rs-gallery.js'
 import { Grid } from '../components/rs-grid.js'
 import { Help } from '../components/rs-help.js'
-import { Gallery } from '../components/rs-gallery.js'
-import { Panel } from '../components/rs-panel.js'
 import { Image } from '../components/rs-image.js'
 import { Loading } from '../components/rs-loading.js'
-import { NotFound } from '../components/rs-404.js'
-
+import { Logo } from '../components/rs-logo.js'
+import { Menu } from '../components/rs-menu.js'
+import { Panel } from '../components/rs-panel.js'
+import { Search } from '../components/rs-search.js'
 import { ThemeSwitcher } from '../components/rs-theme-switcher.js'
-import { Collections } from '../components/rs-collections.js'
+import { Title } from '../components/rs-title.js'
+import { app } from './app.js'
 
-const { location } = document
+const { location } = window
 
 const route = location.href.replace(location.origin, '')
 
