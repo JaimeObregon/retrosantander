@@ -9,7 +9,7 @@ html {
   --header-height: 64px;
 
   margin: 0 var(--image-gap);
-  font-family: 'Inter var', sans-serif;
+  font-family: var(--font-sans);
   font-size: 16px;
   font-weight: 300;
   font-variant-numeric: oldstyle-nums;
@@ -18,7 +18,7 @@ html {
   color-scheme: dark light;
   cursor: default;
   user-select: none;
-  background: var(--color-background);
+  background-color: var(--color-background);
   scroll-behavior: smooth;
   text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
