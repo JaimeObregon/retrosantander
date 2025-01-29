@@ -63,6 +63,11 @@ body {
   margin: 0;
 }
 
+::selection {
+  color: var(--color-highlight-inverted);
+  background-color: var(--color-highlight);
+}
+
 @media (width <= 1280px) {
   html {
     --gap: 12px;

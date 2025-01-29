@@ -9,6 +9,7 @@ class Menu extends MyElement {
   static styles = css`
     :host {
       flex-shrink: 0;
+      user-select: text;
     }
 
     button {

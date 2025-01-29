@@ -11,6 +11,11 @@ class Title extends MyElement {
       overflow: hidden;
     }
 
+    ::selection {
+      color: var(--color-highlight-inverted);
+      background-color: var(--color-highlight);
+    }
+
     cite {
       box-sizing: border-box;
       display: block;

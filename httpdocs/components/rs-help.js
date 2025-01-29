@@ -10,6 +10,11 @@ class Help extends MyElement {
       margin-top: var(--header-height);
     }
 
+    ::selection {
+      color: var(--color-highlight-inverted);
+      background-color: var(--color-highlight);
+    }
+
     article {
       display: flex;
       flex-direction: column;

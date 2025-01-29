@@ -1,4 +1,4 @@
-// Solo para que prettier formatee la sintaxis.
+// Solo para que Prettier formatee la sintaxis.
 const html = String.raw
 const css = String.raw
 
@@ -56,7 +56,7 @@ const normalize = (string) => {
     .trim()
 }
 
-// Devuelve el _slug_ de una cadena.
+// Devuelve el «slug» de una cadena.
 // `Ayuntamiento de Donostia/San Sebastián` → `ayuntamiento_de_donostia_san_sebastian`
 // `Leintz-Gatzaga` → `leintz_gatzaga`
 const slugize = (string) => normalize(string).replaceAll(' ', '_')
