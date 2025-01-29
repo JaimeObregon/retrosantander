@@ -81,31 +81,12 @@ header {
   backdrop-filter: blur(var(--panel-blur));
   border-bottom: 1px solid var(--color-line);
   box-shadow: 0 5px 5px var(--color-box-shadow);
-
-  rs-title {
-    flex-grow: 1;
-    overflow: hidden;
-  }
-
-  rs-search,
-  rs-menu {
-    flex-shrink: 0;
-  }
-}
-
-rs-help {
-  display: flex;
-  margin-top: var(--header-height);
 }
 
 @media (width <= 1280px) {
   html {
     --gap: 12px;
     --header-height: 58px;
-  }
-
-  header rs-logo {
-    display: none;
   }
 }
 

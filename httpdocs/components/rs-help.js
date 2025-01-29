@@ -5,6 +5,11 @@ import { css, escape, html } from '../modules/strings.js'
 
 class Help extends MyElement {
   static styles = css`
+    :host {
+      display: flex;
+      margin-top: var(--header-height);
+    }
+
     article {
       display: flex;
       flex-direction: column;

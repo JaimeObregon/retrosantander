@@ -6,7 +6,9 @@ import { css, html } from '../modules/strings.js'
 class Title extends MyElement {
   static styles = css`
     :host {
+      flex-grow: 1;
       margin: 0 var(--gap);
+      overflow: hidden;
     }
 
     cite {

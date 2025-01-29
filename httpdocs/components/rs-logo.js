@@ -3,6 +3,12 @@ import { css, html } from '../modules/strings.js'
 
 class Logo extends MyElement {
   static styles = css`
+    @media (width <= 1280px) {
+      :host {
+        display: none;
+      }
+    }
+
     a {
       display: block;
       padding: 0 var(--gap);

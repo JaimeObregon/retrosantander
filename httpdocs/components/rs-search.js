@@ -13,6 +13,10 @@ const icon = html`
 
 class Search extends MyElement {
   static styles = css`
+    :host {
+      flex-shrink: 0;
+    }
+
     label {
       position: relative;
       display: flex;

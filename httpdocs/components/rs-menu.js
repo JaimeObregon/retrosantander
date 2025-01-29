@@ -7,6 +7,10 @@ import { LanguagePicker } from './rs-language-picker.js'
 
 class Menu extends MyElement {
   static styles = css`
+    :host {
+      flex-shrink: 0;
+    }
+
     button {
       padding: 0;
       margin: 0 var(--gap);
