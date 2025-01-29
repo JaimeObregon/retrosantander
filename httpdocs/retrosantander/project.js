@@ -14,6 +14,7 @@ const project = {
   index: `https://retrosantander.s3.eu-south-2.amazonaws.com/indices/cdis.json`,
   external: (id) =>
     `http://portal.ayto-santander.es/portalcdis/Public/FotoView.do?id=${id}`,
+  hosts: ['retrosantander.com'],
   routes: [
     {
       pattern: /^\/(\?q=(?<query>.+))?$/,

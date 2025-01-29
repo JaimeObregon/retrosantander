@@ -14,30 +14,24 @@ import { ThemeSwitcher } from '../components/rs-theme-switcher.js'
 import { Title } from '../components/rs-title.js'
 import { app } from './app.js'
 
+customElements.define('rs-404', NotFound)
+customElements.define('rs-collections', Collections)
+customElements.define('rs-gallery', Gallery)
+customElements.define('rs-grid', Grid)
+customElements.define('rs-header', Header)
+customElements.define('rs-help', Help)
+customElements.define('rs-image', Image)
+customElements.define('rs-loading', Loading)
+customElements.define('rs-logo', Logo)
+customElements.define('rs-menu', Menu)
+customElements.define('rs-panel', Panel)
+customElements.define('rs-search', Search)
+customElements.define('rs-theme-switcher', ThemeSwitcher)
+customElements.define('rs-title', Title)
+
 const { location } = window
 
 const route = location.href.replace(location.origin, '')
-
-customElements.define('rs-header', Header)
-customElements.define('rs-logo', Logo)
-customElements.define('rs-title', Title)
-customElements.define('rs-search', Search)
-customElements.define('rs-menu', Menu)
-customElements.define('rs-grid', Grid)
-customElements.define('rs-help', Help)
-customElements.define('rs-gallery', Gallery)
-customElements.define('rs-collections', Collections)
-customElements.define('rs-theme-switcher', ThemeSwitcher)
-customElements.define('rs-panel', Panel)
-customElements.define('rs-image', Image)
-customElements.define('rs-loading', Loading)
-customElements.define('rs-404', NotFound)
-
-// ! No muy convencido de esto…
-await Promise.all([
-  customElements.whenDefined('rs-grid'),
-  customElements.whenDefined('rs-search'),
-])
 
 app.dispatch(route)
 
@@ -82,16 +76,9 @@ document.addEventListener('click', (event) => {
   }
 })
 
-const production = [
-  'retrogipuzkoa.com',
-  'retrosantander.com',
-  'guregipuzkoa.com',
-  'guregipuzkoa.eus',
-].includes(window.location.hostname)
+const production = app.project.hosts.includes(window.location.hostname)
 
-const environment = production ? 'production' : 'development'
-
-if (environment !== 'production') {
+if (!production) {
   const source = new EventSource('/esbuild')
   source.addEventListener('change', () => window.location.reload())
 }
