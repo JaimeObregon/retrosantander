@@ -2,6 +2,27 @@ import { database } from './database.js'
 import { i18n } from './i18n.js'
 
 const app = {
+  init() {
+    this.$title = document.querySelector('rs-title')
+    this.$search = document.querySelector('rs-search')
+    this.$menu = document.querySelector('rs-menu')
+    this.$grid = document.querySelector('rs-grid')
+    this.$help = document.querySelector('rs-help')
+
+    this.language = i18n.setLanguage()
+
+    const { location } = window
+    const route = location.href.replace(location.origin, '')
+    app.dispatch(route)
+
+    const languagechangeEvent = new Event('languagechange')
+    window.dispatchEvent(languagechangeEvent)
+  },
+
+  get production() {
+    return this.project.hosts.includes(window.location.hostname)
+  },
+
   translations: {},
 
   debounceDelay: 350,
@@ -78,20 +99,5 @@ const app = {
     }
   },
 }
-
-app.$title = document.querySelector('rs-title')
-app.$search = document.querySelector('rs-search')
-app.$menu = document.querySelector('rs-menu')
-app.$grid = document.querySelector('rs-grid')
-app.$help = document.querySelector('rs-help')
-
-const { hostname } = document.location
-
-const folder = hostname.replace(/\.\w+$/, '')
-
-const { project } = await import(`../${folder}/project.js`)
-
-app.project = project
-app.language = i18n.setLanguage()
 
 export { app }

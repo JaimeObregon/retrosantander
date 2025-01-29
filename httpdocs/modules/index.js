@@ -14,6 +14,10 @@ import { ThemeSwitcher } from '../components/rs-theme-switcher.js'
 import { Title } from '../components/rs-title.js'
 import { app } from './app.js'
 
+const folder = document.location.hostname.replace(/\.\w+$/, '')
+const { project } = await import(`../${folder}/project.js`)
+app.project = project
+
 customElements.define('rs-404', NotFound)
 customElements.define('rs-collections', Collections)
 customElements.define('rs-gallery', Gallery)
@@ -25,20 +29,14 @@ customElements.define('rs-loading', Loading)
 customElements.define('rs-logo', Logo)
 customElements.define('rs-menu', Menu)
 customElements.define('rs-panel', Panel)
+customElements.define('rs-title', Title)
 customElements.define('rs-search', Search)
 customElements.define('rs-theme-switcher', ThemeSwitcher)
-customElements.define('rs-title', Title)
 
-const { location } = window
-
-const route = location.href.replace(location.origin, '')
-
-app.dispatch(route)
-
-const event = new Event('languagechange')
-window.dispatchEvent(event)
+app.init()
 
 window.addEventListener('popstate', () => {
+  const { location } = window
   const route = location.href.replace(location.origin, '')
   app.dispatch(route)
 })
@@ -76,9 +74,7 @@ document.addEventListener('click', (event) => {
   }
 })
 
-const production = app.project.hosts.includes(window.location.hostname)
-
-if (!production) {
+if (!app.production) {
   const source = new EventSource('/esbuild')
   source.addEventListener('change', () => window.location.reload())
 }
