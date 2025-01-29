@@ -16,12 +16,7 @@ const project = {
     {
       pattern: /^\/(\?q=(?<query>.+))?$/,
       exec: (app, groups) => {
-        const main = document.querySelector('main')
-        if (!main) {
-          return
-        }
-
-        main.innerHTML = `<rs-grid index="${project.index}"></rs-grid>`
+        app.$main.innerHTML = `<rs-grid index="${project.index}"></rs-grid>`
         app.title = groups.query
       },
     },

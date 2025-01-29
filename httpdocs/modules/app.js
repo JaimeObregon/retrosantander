@@ -8,6 +8,7 @@ const app = {
     this.$menu = document.querySelector('rs-menu')
     this.$grid = document.querySelector('rs-grid')
     this.$help = document.querySelector('rs-help')
+    this.$main = document.querySelector('main')
 
     this.language = i18n.setLanguage()
 
@@ -27,7 +28,7 @@ const app = {
 
   debounceDelay: 350,
 
-  // Establece el título visible en la cabecera de sitio.
+  // Establece el título visible en la cabecera del sitio.
   set title(caption) {
     this.$title.caption = caption
   },
@@ -84,19 +85,14 @@ const app = {
   dispatch(route) {
     const rule = this.project.routes.find(({ pattern }) => route.match(pattern))
 
-    const ruleExist = Boolean(rule)
-    let ruleError
-
-    if (ruleExist) {
+    if (rule) {
       const groups = route.match(rule.pattern).groups || {}
-      const result = rule.exec(this, groups)
-      ruleError = result === false
+      if (rule.exec(this, groups) !== false) {
+        return
+      }
     }
 
-    if (!ruleExist || ruleError) {
-      const element = document.createElement('rs-404')
-      document.body.append(element)
-    }
+    app.$main.innerHTML = '<rs-404></rs-404>'
   },
 }
 
