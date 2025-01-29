@@ -2,6 +2,7 @@ import { NotFound } from '../components/rs-404.js'
 import { Collections } from '../components/rs-collections.js'
 import { Gallery } from '../components/rs-gallery.js'
 import { Grid } from '../components/rs-grid.js'
+import { Header } from '../components/rs-header.js'
 import { Help } from '../components/rs-help.js'
 import { Image } from '../components/rs-image.js'
 import { Loading } from '../components/rs-loading.js'
@@ -17,6 +18,7 @@ const { location } = window
 
 const route = location.href.replace(location.origin, '')
 
+customElements.define('rs-header', Header)
 customElements.define('rs-logo', Logo)
 customElements.define('rs-title', Title)
 customElements.define('rs-search', Search)

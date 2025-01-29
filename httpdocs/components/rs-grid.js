@@ -207,7 +207,7 @@ class Grid extends MyElement {
     const { width: gap, height: detailsWidth } = div.getBoundingClientRect()
     document.body.removeChild(div)
 
-    const header = document.querySelector('header')
+    const header = document.querySelector('rs-header')
 
     if (!header) {
       return
