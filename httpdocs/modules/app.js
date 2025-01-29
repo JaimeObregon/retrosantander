@@ -73,7 +73,8 @@ const app = {
     }
 
     if (!ruleExist || ruleError) {
-      document.body.innerHTML += '<rs-404></rs-404>'
+      const element = document.createElement('rs-404')
+      document.body.append(element)
     }
   },
 }

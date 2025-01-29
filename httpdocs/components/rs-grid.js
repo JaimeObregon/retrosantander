@@ -179,7 +179,7 @@ class Grid extends MyElement {
     }
 
     this.container.innerHTML += images
-      .map((id, i) => `<rs-image id="${id}" class="hidden"></rs-image>`)
+      .map((id) => `<rs-image id="${id}" class="hidden"></rs-image>`)
       .join('')
 
     const interval = setInterval(() => {
