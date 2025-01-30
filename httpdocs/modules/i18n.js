@@ -10,6 +10,8 @@ const i18n = {
     fr: 'Français',
   },
 
+  translations: {},
+
   setLanguage: () => {
     const preferred = [
       ...new Set(
@@ -34,7 +36,7 @@ const i18n = {
 
   push: (translations) => {
     Object.entries(translations).forEach(
-      ([key, translations]) => (app.translations[key] = translations),
+      ([key, translations]) => (i18n.translations[key] = translations),
     )
   },
 
@@ -43,13 +45,13 @@ const i18n = {
     const { language } = app
 
     if (!entries.length) {
-      return app.translations[token][language]
+      return i18n.translations[token][language]
     }
 
     return entries.reduce((phrase, [key, value]) => {
       const pattern = new RegExp(`\\\${${key}}`, 'g')
       return phrase.replaceAll(pattern, value)
-    }, app.translations[token][language])
+    }, i18n.translations[token][language])
   },
 }
 

@@ -158,7 +158,7 @@ class Search extends MyElement {
   static html = html`
     <label>
       ${icon}
-      <input type="search" />
+      <input type="search" name="q" />
       <ul></ul>
     </label>
   `
@@ -281,12 +281,13 @@ class Search extends MyElement {
     const query = normalize(this.query)
     this.ul.innerHTML = suggestions
       .map(
-        (q) => `
+        (q) => html`
           <li>
             <a href="/?q=${q}">
               ${icon} ${q.replace(query, `<mark>${query}</mark>`)}
             </a>
-          </li>`,
+          </li>
+        `,
       )
       .join('')
 

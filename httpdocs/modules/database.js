@@ -1,12 +1,6 @@
+import { app } from './app.js'
 import { labels } from './labels.js'
 import { normalize, prettify } from './strings.js'
-
-// Umbral de confianza en la visión artificial.
-// Los objetos detectados por debajo de éste umbral serán ignorados.
-const confidenceThreshold = 80
-
-// Cuántas sugerencias de búsqueda mostrar al buscar.
-const maxSuggestions = 100
 
 const database = {
   // Carga en `this.records` el fichero JSON con los datos.
@@ -61,13 +55,15 @@ const database = {
       .filter((value, index, word) => word.indexOf(value) === index)
       .sort((a, b) => a.localeCompare(b))
       .filter((word) => word !== query)
-      .slice(0, maxSuggestions)
+      .slice(0, app.project.maxSuggestions)
 
     return { results, suggestions }
   },
 
   // Carga e interpreta un fichero JSON con los metadatos de una imagen.
   async parse(url) {
+    const { confidenceThreshold } = app.project
+
     const response = await fetch(url)
 
     const json = await response.json()

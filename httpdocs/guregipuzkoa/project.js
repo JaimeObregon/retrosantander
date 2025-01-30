@@ -1,22 +1,39 @@
 const project = {
   name: 'GureGipuzkoa',
+
   folder: 'guregipuzkoa',
+
   languages: ['eu', 'es', 'fr', 'en'],
+
   title: {
     es: 'Explora 159 013 fotografías históricas de Guipúzcoa',
     eu: 'Arakatu Gipuzkoako 159.013 argazki historiko',
     en: 'Explore 159,013 historic photographs of Gipuzkoa',
     fr: 'Explorez 159 013 photographies historiques de Guipuscoa',
   },
+
   image: (id) =>
     `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/optimized/${id}.avif`,
+
   metadata: (id) =>
     `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/metadata/${id}.json`,
+
   index: (folder, id) =>
     `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/indices/${folder}/${id}.json`,
+
   external: (id) => `https://www.guregipuzkoa.eus/photo/${id}`,
+
   galleries: `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/galleries.json`,
+
   hosts: ['guregipuzkoa.com', 'guregipuzkoa.eus'],
+
+  // Cuántas sugerencias de búsqueda mostrar al buscar
+  maxSuggestions: 100,
+
+  // Umbral de confianza en la visión artificial
+  // Los objetos detectados por debajo de éste umbral serán ignorados
+  confidenceThreshold: 80,
+
   collections: [
     {
       id: 'beasaingo_udala',
@@ -244,6 +261,7 @@ const project = {
       },
     },
   ],
+
   locations: [
     {
       title: 'Abaltzisketa',
@@ -610,6 +628,7 @@ const project = {
       id: 'partzuergo_nagusia',
     },
   ],
+
   routes: [
     {
       pattern: /^\/$/,

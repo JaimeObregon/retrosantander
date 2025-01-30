@@ -1,6 +1,8 @@
 import { database } from './database.js'
 import { i18n } from './i18n.js'
 
+const debounceDelay = 350
+
 const app = {
   init() {
     this.$title = document.querySelector('rs-title')
@@ -23,10 +25,6 @@ const app = {
   get production() {
     return this.project.hosts.includes(window.location.hostname)
   },
-
-  translations: {},
-
-  debounceDelay: 350,
 
   // Establece el título visible en la cabecera del sitio
   set title(caption) {
@@ -74,7 +72,7 @@ const app = {
       this.results.length ? this.$grid.appendItems() : this.$grid.clear()
       this.title = ''
       this.$help.hidden = Boolean(this.results.length)
-    }, this.debounceDelay)
+    }, debounceDelay)
   },
 
   dispatch(route) {
