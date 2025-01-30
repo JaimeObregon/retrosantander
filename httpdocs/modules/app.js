@@ -1,7 +1,5 @@
 import { i18n } from './i18n.js'
 
-const debounceDelay = 350
-
 const app = {
   results: [],
 
@@ -34,46 +32,12 @@ const app = {
 
   // Devuelve el término de la búsqueda actual.
   get query() {
-    return this.$search.query ?? ''
+    return this.$search.query
   },
 
   // Lanza una búsqueda.
   set query(query) {
     this.$search.query = query
-  },
-
-  // Lanza una búsqueda del término existente en `this.query`
-  search() {
-    const { results, suggestions } = database.search(this.query)
-
-    this.results = this.results ?? []
-
-    this.$search.suggestions = suggestions
-
-    const unchanged =
-      results.length === this.results.length &&
-      results.every((item, i) => item === this.results[i])
-
-    if (results.length && unchanged) {
-      return
-    }
-
-    this.results = results
-
-    clearTimeout(this.timeout)
-    this.timeout = setTimeout(() => {
-      const url = new URL(document.location.href)
-      if (app.query !== url.searchParams.get('q')) {
-        history.pushState(null, '', app.query ? `/?q=${app.query}` : '/')
-      }
-
-      this.$grid = document.querySelector('rs-grid')
-
-      this.$grid.restore()
-      this.results.length ? this.$grid.appendItems() : this.$grid.clear()
-      this.title = ''
-      this.$help.hidden = Boolean(this.results.length)
-    }, debounceDelay)
   },
 
   dispatch(route) {

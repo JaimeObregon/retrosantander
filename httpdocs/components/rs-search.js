@@ -1,7 +1,10 @@
 import { app } from '../modules/app.js'
+import { database } from '../modules/database.js'
 import { MyElement } from '../modules/element.js'
 import { i18n } from '../modules/i18n.js'
 import { css, html, normalize } from '../modules/strings.js'
+
+const debounceDelay = 350
 
 const icon = html`
   <svg viewBox="0 0 16 16">
@@ -249,13 +252,43 @@ class Search extends MyElement {
     window.addEventListener('languagechange', this.onLanguagechange.bind(this))
   }
 
+  // Devuelve el término de la búsqueda actual
   get query() {
     return this.value
   }
 
+  // Lanza una búsqueda del término existente en `this.query`
   set query(value) {
     this.value = this.input.value = value ?? ''
-    app.search()
+
+    const { results, suggestions } = database.search(this.value)
+
+    app.results = app.results ?? []
+
+    this.suggestions = suggestions
+
+    const unchanged =
+      results.length === this.results.length &&
+      results.every((item, i) => item === this.results[i])
+
+    if (results.length && unchanged) {
+      return
+    }
+
+    app.results = results
+
+    clearTimeout(this.timeout)
+    this.timeout = setTimeout(() => {
+      const url = new URL(document.location.href)
+      if (app.query !== url.searchParams.get('q')) {
+        // history.pushState(null, '', app.query ? `/?q=${app.query}` : '/')
+      }
+
+      app.$grid.restore()
+      app.results.length ? app.$grid.appendItems() : app.$grid.clear()
+      this.title = ''
+      app.$help.hidden = Boolean(this.results.length)
+    }, debounceDelay)
   }
 
   get selected() {
