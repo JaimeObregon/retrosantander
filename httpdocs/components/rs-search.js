@@ -167,21 +167,8 @@ class Search extends MyElement {
   results
   label
   input
-  value
+  value = ''
   ul
-
-  constructor() {
-    super()
-
-    i18n.push({
-      'search.placeholder': {
-        es: 'Buscar…',
-        eu: 'Bilatu…',
-        en: 'Search…',
-        fr: 'Rechercher…',
-      },
-    })
-  }
 
   onLanguagechange() {
     this.input.setAttribute('placeholder', i18n.get('search.placeholder'))
@@ -191,6 +178,15 @@ class Search extends MyElement {
     this.label = this.shadowRoot?.querySelector('label')
     this.input = this.shadowRoot?.querySelector('input')
     this.ul = this.shadowRoot?.querySelector('ul')
+
+    i18n.push({
+      'search.placeholder': {
+        es: 'Buscar…',
+        eu: 'Bilatu…',
+        en: 'Search…',
+        fr: 'Rechercher…',
+      },
+    })
 
     document.addEventListener('keydown', (event) => {
       if (event.key.length === 1 || event.key === 'Backspace') {

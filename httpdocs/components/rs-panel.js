@@ -212,9 +212,37 @@ class Panel extends MyElement {
     </aside>
   `
 
-  constructor() {
-    super()
+  onLanguagechange() {
+    const tagsHeading = this.aside?.querySelector('section#tags h2')
+    const exifHeading = this.aside?.querySelector('section#exif h2')
+    const facesHeading = this.aside?.querySelector('section#faces h2')
+    const objectsHeading = this.aside?.querySelector('section#objects h2')
 
+    if (!tagsHeading || !exifHeading || !facesHeading || !objectsHeading) {
+      return
+    }
+
+    tagsHeading.innerHTML = i18n.get('panel.tags')
+    exifHeading.innerHTML = i18n.get('panel.exif')
+
+    if (!this.metadata) {
+      return
+    }
+
+    const { faces, objects } = this.metadata
+
+    faces.innerHTML = i18n.get(
+      faces.length > 1 ? 'panel.faces.many' : 'panel.faces.one',
+      { count: faces.length },
+    )
+
+    objectsHeading.innerHTML = i18n.get(
+      objects.length > 1 ? 'panel.objects.many' : 'panel.objects.one',
+      { count: objects.length },
+    )
+  }
+
+  async connectedCallback() {
     i18n.push({
       'panel.faces.many': {
         es: '${count} personas',
@@ -259,39 +287,7 @@ class Panel extends MyElement {
         fr: 'Métadonnées EXIF',
       },
     })
-  }
 
-  onLanguagechange() {
-    const tagsHeading = this.aside?.querySelector('section#tags h2')
-    const exifHeading = this.aside?.querySelector('section#exif h2')
-    const facesHeading = this.aside?.querySelector('section#faces h2')
-    const objectsHeading = this.aside?.querySelector('section#objects h2')
-
-    if (!tagsHeading || !exifHeading || !facesHeading || !objectsHeading) {
-      return
-    }
-
-    tagsHeading.innerHTML = i18n.get('panel.tags')
-    exifHeading.innerHTML = i18n.get('panel.exif')
-
-    if (!this.metadata) {
-      return
-    }
-
-    const { faces, objects } = this.metadata
-
-    faces.innerHTML = i18n.get(
-      faces.length > 1 ? 'panel.faces.many' : 'panel.faces.one',
-      { count: faces.length },
-    )
-
-    objectsHeading.innerHTML = i18n.get(
-      objects.length > 1 ? 'panel.objects.many' : 'panel.objects.one',
-      { count: objects.length },
-    )
-  }
-
-  async connectedCallback() {
     this.aside = this.shadowRoot?.querySelector('aside')
     this.details = this.shadowRoot?.querySelector('rs-panel-details')
     this.button = this.aside?.querySelector('button')
