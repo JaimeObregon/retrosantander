@@ -21,11 +21,11 @@ const project = {
 
   hosts: ['retrogipuzkoa.com'],
 
-  // Cuántas sugerencias de búsqueda mostrar al buscar
+  // Cuántas sugerencias de búsqueda mostrar al buscar.
   maxSuggestions: 100,
 
-  // Umbral de confianza en la visión artificial
-  // Los objetos detectados por debajo de éste umbral serán ignorados
+  // Umbral de confianza en la visión artificial.
+  // Los objetos detectados por debajo de éste umbral serán ignorados.
   confidenceThreshold: 80,
 
   routes: [

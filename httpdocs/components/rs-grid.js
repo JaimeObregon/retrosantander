@@ -102,15 +102,10 @@ class Grid extends MyElement {
     })
 
     this.container.addEventListener('click', async (event) => {
-      const id = event.target.getAttribute('id')
-      if (!id) {
-        return
-      }
-
-      const image = event.target
-
       const selected = this.container.querySelector('rs-image.selected')
       selected && (selected.areas = false)
+
+      const image = event.target
 
       this.zoom(image)
 
@@ -120,10 +115,8 @@ class Grid extends MyElement {
 
       image.classList.add('selected')
 
-      const url = app.project.metadata(id)
-
       const { areas, faces, objects, tags, exif, details } =
-        await database.parse(url)
+        await image.getMetadata()
 
       image.areas = areas
       this.panel = { faces, objects, tags, details, exif }

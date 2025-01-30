@@ -1,6 +1,7 @@
 import { app } from '../modules/app.js'
 import { database } from '../modules/database.js'
 import { MyElement } from '../modules/element.js'
+import { labels } from '../modules/labels.js'
 import { css, escape, html } from '../modules/strings.js'
 
 class Image extends MyElement {
@@ -116,17 +117,20 @@ class Image extends MyElement {
     this.figure.innerHTML += areas
       .sort((a, b) => (a.area < b.area ? 1 : -1))
       .map(
-        (area) => `<div
-          class="${area.type}"
-          data-id="${area.id}"
-          data-name="${area.id}"
-          data-title="${area.title}"
-          style="
+        (area) => html`
+          <div
+            class="${area.type}"
+            data-id="${area.id}"
+            data-name="${area.id}"
+            data-title="${area.title}"
+            style="
             top: ${area.top}%;
             left: ${area.left}%;
             width: ${area.width}%;
             height: ${area.height}%
-          "></div>`,
+          "
+          ></div>
+        `,
       )
       .join('')
   }
@@ -143,6 +147,124 @@ class Image extends MyElement {
     this.figure.classList.toggle('active', id)
     const divs = [...this.figure.querySelectorAll('div')]
     divs.map((div) => div.classList.toggle('active', div.dataset.id === id))
+  }
+
+  // Carga e interpreta el fichero JSON con los metadatos de una imagen.
+  async getMetadata() {
+    const url = app.project.metadata(this.id)
+
+    const response = await fetch(url)
+
+    const json = await response.json()
+
+    const { exif, details } = json
+
+    const gender = (value) =>
+      ({
+        Male: 'Hombre',
+        Female: 'Mujer',
+      })[value]
+
+    const { confidenceThreshold } = app.project
+
+    const faces = json.faces.FaceDetails.filter(
+      (face) => face.Confidence >= confidenceThreshold,
+    ).map((face, i) => ({
+      type: 'face',
+      id: `face-${i}`,
+      name: `${gender(face.Gender.Value)} ${i + 1}`,
+      title: [
+        `${gender(face.Gender.Value)} nº ${i + 1},`,
+        `de entre ${face.AgeRange.Low} y ${face.AgeRange.High} años`,
+      ].join(' '),
+      top: face.BoundingBox.Top,
+      left: face.BoundingBox.Left,
+      width: face.BoundingBox.Width,
+      height: face.BoundingBox.Height,
+      confidence: face.Confidence,
+      age: `Entre ${face.AgeRange.Low} y ${face.AgeRange.High} años`,
+      emotions: face.Emotions.map((emotion) => ({
+        confidence: emotion.Confidence,
+        name: {
+          CALM: 'Tranquilo',
+          SURPRISED: 'Sorprendido',
+          FEAR: 'Asustado',
+          SAD: 'Triste',
+          DISGUSTED: 'Disgustado',
+          CONFUSED: 'Confundido',
+          HAPPY: 'Contento',
+          ANGRY: 'Enfadado',
+        }[emotion.Type],
+      })).filter((emotion) => emotion.confidence > confidenceThreshold),
+      ...(face.Gender.Confidence > confidenceThreshold && {
+        gender: gender(face.Gender.Value),
+      }),
+      ...(face.Beard.Confidence > confidenceThreshold && {
+        beard: face.Beard.Value,
+      }),
+      ...(face.Eyeglasses.Confidence > confidenceThreshold && {
+        glasses: face.Eyeglasses.Value,
+      }),
+      ...(face.EyesOpen.Confidence > confidenceThreshold && {
+        eyes: face.EyesOpen.Value,
+      }),
+      ...(face.MouthOpen.Confidence > confidenceThreshold && {
+        mouth: face.MouthOpen.Value,
+      }),
+      ...(face.Mustache.Confidence > confidenceThreshold && {
+        mustache: face.Mustache.Value,
+      }),
+      ...(face.Smile.Confidence > confidenceThreshold && {
+        smile: face.Smile.Value,
+      }),
+      ...(face.Sunglasses.Confidence > confidenceThreshold && {
+        sunglasses: face.Sunglasses.Value,
+      }),
+    }))
+
+    const objects = json.labels.Labels.filter(
+      (object) => object.Instances.length,
+    ).reduce(
+      (accumulator, object) => [
+        ...accumulator,
+        ...object.Instances.filter(
+          (instance) => instance.Confidence >= confidenceThreshold,
+        ).map((instance, i) => ({
+          type: 'object',
+          id: `object-${accumulator.length + i}`,
+          name: `${labels[object.Name]} ${i + 1}`,
+          title: labels[object.Name],
+          confidence: instance.Confidence,
+          top: instance.BoundingBox.Top,
+          left: instance.BoundingBox.Left,
+          width: instance.BoundingBox.Width,
+          height: instance.BoundingBox.Height,
+        })),
+      ],
+      [],
+    )
+
+    const tags = json.labels.Labels.filter((label) => !label.Instances.length)
+      .filter((label) => label.Confidence > confidenceThreshold)
+      .map((label) => ({
+        name: labels[label.Name],
+        label: label.Name,
+        confidence: label.Confidence,
+      }))
+
+    const areas = [...faces, ...objects].map((area) => ({
+      id: area.id,
+      title: area.title,
+      type: area.type,
+      confidence: area.confidence,
+      top: 100 * area.top,
+      left: 100 * area.left,
+      width: 100 * area.width,
+      height: 100 * area.height,
+      area: 10000 * area.width * area.height,
+    }))
+
+    return { faces, objects, tags, areas, details, exif }
   }
 }
 

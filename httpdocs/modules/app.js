@@ -1,9 +1,10 @@
-import { database } from './database.js'
 import { i18n } from './i18n.js'
 
 const debounceDelay = 350
 
 const app = {
+  results: [],
+
   init() {
     this.$title = document.querySelector('rs-title')
     this.$search = document.querySelector('rs-search')
@@ -26,17 +27,17 @@ const app = {
     return this.project.hosts.includes(window.location.hostname)
   },
 
-  // Establece el título visible en la cabecera del sitio
+  // Establece el título visible en la cabecera del sitio.
   set title(caption) {
     this.$title.caption = caption
   },
 
-  // Devuelve el término de la búsqueda actual
+  // Devuelve el término de la búsqueda actual.
   get query() {
     return this.$search.query ?? ''
   },
 
-  // Consigna un término en el buscador
+  // Lanza una búsqueda.
   set query(query) {
     this.$search.query = query
   },
