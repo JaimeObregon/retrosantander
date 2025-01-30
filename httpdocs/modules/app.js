@@ -28,27 +28,22 @@ const app = {
 
   debounceDelay: 350,
 
-  // Establece el título visible en la cabecera del sitio.
+  // Establece el título visible en la cabecera del sitio
   set title(caption) {
     this.$title.caption = caption
   },
 
-  // Establece el título por defecto de la interfaz.
-  set placeholder(caption) {
-    this.$title.placeholder = caption
-  },
-
-  // Devuelve el término de búsqueda actual.
+  // Devuelve el término de búsqueda actual
   get query() {
     return this.$search.query ?? ''
   },
 
-  // Consigna un término en el buscador.
+  // Consigna un término en el buscador
   set query(query) {
     this.$search.query = query
   },
 
-  // Lanza una búsqueda del término existente en `this.query`.
+  // Lanza una búsqueda del término existente en `this.query`
   search() {
     const { results, suggestions } = database.search(this.query)
 

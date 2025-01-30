@@ -8,9 +8,9 @@ class Loading extends MyElement {
       bottom: 0;
       left: 0;
       width: 0;
-      height: 8px;
-      background: var(--color-neutral-300);
-      transition: width ease-in 100ms;
+      height: var(--space-small);
+      background: var(--color-text);
+      transition: width var(--ease-in-1) var(--delay-small);
     }
   `
 

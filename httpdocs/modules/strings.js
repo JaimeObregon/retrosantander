@@ -61,4 +61,25 @@ const normalize = (string) => {
 // `Leintz-Gatzaga` → `leintz_gatzaga`
 const slugize = (string) => normalize(string).replaceAll(' ', '_')
 
-export { css, decode, escape, html, normalize, slugize }
+// El CDIS a veces encierra los títulos de las imágenes entre corchetes,
+// entre comillas… Aquí tratamos de revertir los casos más habituales.
+const prettify = (title) => {
+  let string = title.trim()
+
+  let [first, last] = [string[0], string[string.length - 1]]
+
+  const period = last === '.' && string.slice(0, -1).indexOf('.') === -1
+  if (period) {
+    string = string.slice(0, -1)
+    first = string[0]
+    last = string[string.length - 1]
+  }
+
+  const betweenBrackets = first === '[' && last === ']'
+  const betweenQuotationMarks =
+    first === '"' && last === '"' && string.slice(1, -1).indexOf('"') === -1
+
+  return betweenBrackets || betweenQuotationMarks ? string.slice(1, -1) : string
+}
+
+export { css, decode, escape, html, normalize, prettify, slugize }
