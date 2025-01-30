@@ -22,7 +22,7 @@ const app = {
     window.dispatchEvent(languagechangeEvent)
   },
 
-  get production() {
+  get isProduction() {
     return this.project.hosts.includes(window.location.hostname)
   },
 
@@ -31,7 +31,7 @@ const app = {
     this.$title.caption = caption
   },
 
-  // Devuelve el término de búsqueda actual
+  // Devuelve el término de la búsqueda actual
   get query() {
     return this.$search.query ?? ''
   },

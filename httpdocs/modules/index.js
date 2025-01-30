@@ -74,7 +74,7 @@ document.addEventListener('click', (event) => {
   }
 })
 
-if (!app.production) {
+if (!app.isProduction) {
   const source = new EventSource('/esbuild')
   source.addEventListener('change', () => window.location.reload())
 }

@@ -80,7 +80,6 @@ class Grid extends MyElement {
     this.$panel = document.querySelector('rs-panel')
 
     this.hr = this.shadowRoot?.querySelector('hr')
-
     if (!this.hr) {
       return
     }

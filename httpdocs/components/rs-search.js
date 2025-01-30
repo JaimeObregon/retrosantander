@@ -158,7 +158,7 @@ class Search extends MyElement {
   static html = html`
     <label>
       ${icon}
-      <input type="search" name="q" />
+      <input type="search" name="q" autocomplete="off" />
       <ul></ul>
     </label>
   `
