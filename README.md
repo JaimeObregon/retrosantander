@@ -18,7 +18,7 @@ Para la posteridad queda [la detallada autopsia que hice](docs/cdis.md) del difu
 
 Descartada la resignación, decidí seguir el experimento con el Fondo Fotográfico Jesús Elósegui, digitalizado entre 2002 y 2006 por la Sociedad de Ciencias Aranzadi y publicado con licencia abierta por la Diputación Foral de Gipuzkoa.
 
-Así he podido continuar en [retrogipuzkoa.com](https://retrogipuzkoa.com) lo que inicié en Retrosantander. [En este hilo de X (antes Twitter)](https://x.com/JaimeObregon/status/1524494203614543876) he explicado mis razones.
+Así he podido continuar en [retrogipuzkoa.com](https://retrogipuzkoa.com) lo que inicié en Retrosantander. [En este hilo de 𝐗 (antes Twitter)](https://x.com/JaimeObregon/status/1524494203614543876) he explicado mis razones.
 
 # GureGipuzkoa
 
