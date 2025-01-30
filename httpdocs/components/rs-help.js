@@ -53,19 +53,6 @@ class Help extends MyElement {
 
   article
 
-  constructor() {
-    super()
-
-    i18n.push({
-      'search.zero_results': {
-        es: 'No hay imágenes sobre <q>${query}</q>',
-        eu: 'Ez dago <q>${query}</q>-ri buruzko argazkirik',
-        en: 'There are no photographs about <q>${query}</q>',
-        fr: "Il n'y a pas de photos sur <q>${query}</q>",
-      },
-    })
-  }
-
   async onLanguagechange() {
     const query = escape(app.query)
     this.article.querySelector('h1').innerHTML = i18n.get(
@@ -81,6 +68,15 @@ class Help extends MyElement {
   }
 
   connectedCallback() {
+    i18n.push({
+      'search.zero_results': {
+        es: 'No hay imágenes sobre <q>${query}</q>',
+        eu: 'Ez dago <q>${query}</q>-ri buruzko argazkirik',
+        en: 'There are no photographs about <q>${query}</q>',
+        fr: "Il n'y a pas de photos sur <q>${query}</q>",
+      },
+    })
+
     this.article = this.shadowRoot?.querySelector('article')
     window.addEventListener('languagechange', this.onLanguagechange.bind(this))
   }

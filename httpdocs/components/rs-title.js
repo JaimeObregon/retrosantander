@@ -63,22 +63,17 @@ class Title extends MyElement {
   delay = { deleting: 5, typing: 30 }
   cite
 
-  constructor() {
-    super()
-
-    i18n.push({
-      'title.default': app.project.title,
-    })
-  }
-
   onLanguagechange() {
     this.default = i18n.get('title.default')
-
     this.caption = this.default
   }
 
   connectedCallback() {
     this.cite = this.shadowRoot?.querySelector('cite')
+
+    i18n.push({
+      'title.default': app.project.title,
+    })
 
     window.addEventListener('languagechange', this.onLanguagechange.bind(this))
   }
