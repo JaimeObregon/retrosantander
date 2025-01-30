@@ -63,13 +63,17 @@ html {
   }
 }
 
+body {
+  margin: 0;
+}
+
+main {
+  margin-top: var(--header-height);
+}
+
 ::selection {
   color: var(--color-highlight-inverted);
   background-color: var(--color-highlight);
-}
-
-body {
-  margin: 0;
 }
 
 strong {

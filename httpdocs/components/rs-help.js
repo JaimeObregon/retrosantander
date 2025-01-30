@@ -7,7 +7,6 @@ class Help extends MyElement {
   static styles = css`
     :host {
       display: flex;
-      margin-top: var(--header-height);
     }
 
     ::selection {
@@ -75,7 +74,9 @@ class Help extends MyElement {
     )
 
     const url = `help.${app.language}.html`
+
     const response = await fetch(url)
+
     app.$help.innerHTML = await response.text()
   }
 
