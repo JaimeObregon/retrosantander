@@ -6,7 +6,7 @@ const project = {
   languages: ['es'],
 
   title: {
-    es: 'Explora 15 210 imágenes históricas de la Colección Jesús Elósegui',
+    es: 'Explora 15\u202F210 imágenes históricas de la Colección Jesús Elósegui',
   },
 
   image: (id) =>

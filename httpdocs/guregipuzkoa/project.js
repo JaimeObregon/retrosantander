@@ -6,10 +6,10 @@ const project = {
   languages: ['eu', 'es', 'fr', 'en'],
 
   title: {
-    es: 'Explora 159 013 fotografías históricas de Guipúzcoa',
+    es: 'Explora 159\u202F013 fotografías históricas de Guipúzcoa',
     eu: 'Arakatu Gipuzkoako 159.013 argazki historiko',
     en: 'Explore 159,013 historic photographs of Gipuzkoa',
-    fr: 'Explorez 159 013 photographies historiques de Guipuscoa',
+    fr: 'Explorez 159\u202F013 photographies historiques de Guipuscoa',
   },
 
   image: (id) =>
