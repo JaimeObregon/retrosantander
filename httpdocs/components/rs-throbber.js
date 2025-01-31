@@ -3,7 +3,7 @@ import { css, html } from '../modules/strings.js'
 
 const delay = 250
 
-class Loading extends MyElement {
+class Throbber extends MyElement {
   static styles = css`
     footer {
       position: fixed;
@@ -38,4 +38,4 @@ class Loading extends MyElement {
   }
 }
 
-export { Loading }
+export { Throbber }

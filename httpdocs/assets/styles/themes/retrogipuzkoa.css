@@ -1,5 +1,6 @@
 @import url('../typography.css');
 @import url('../system.css');
+@import url('../shared.css');
 
 html {
   /* De https://tailwindcss.com/docs/customizing-colors */
@@ -16,7 +17,7 @@ html {
   --color-yellow-500: #eab308;
   --color-red-600: #dc2626;
 
-  /* Retrogipuzkoa */
+  /* Retrosantander */
   --color-accent: var(--color-neutral-50);
   --color-background: var(--color-neutral-900);
   --color-panel: color-mix(in srgb, var(--color-neutral-900) 90%, transparent);
@@ -45,55 +46,4 @@ html {
   --panel-width: 22em;
   --header-height: 64px;
   --panel-blur: 14px;
-
-  margin: 0 var(--image-gap);
-  font-family: var(--font-sans);
-  font-weight: 300;
-  color: var(--color-text);
-  cursor: default;
-  user-select: none;
-  background: var(--color-background);
-  scroll-behavior: smooth;
-  text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  margin: 0;
-}
-
-main {
-  margin-top: var(--header-height);
-}
-
-::selection {
-  color: var(--color-highlight-inverted);
-  background-color: var(--color-highlight);
-}
-
-@media (width <= 1280px) {
-  html {
-    --gap: 12px;
-    --header-height: 58px;
-  }
-}
-
-@media (width <= 1024px) {
-  html {
-    --panel-width: 20em;
-    --header-height: 48px;
-  }
-}
-
-@media (width <= 768px) {
-  html {
-    --panel-width: 100%;
-  }
-}
-
-@media (width <= 640px) {
-  html {
-    --header-height: 42px;
-  }
 }

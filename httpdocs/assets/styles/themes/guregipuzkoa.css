@@ -1,5 +1,6 @@
 @import url('../typography.css');
 @import url('../system.css');
+@import url('../shared.css');
 
 html {
   --type-base: calc(0.75em + 0.5vw);
@@ -8,25 +9,6 @@ html {
   --panel-width: 22em;
   --header-height: 64px;
   --panel-blur: 10px;
-
-  margin: 0 var(--image-gap);
-  font-family: var(--font-serif);
-  font-size: var(--type-base);
-  font-weight: 300;
-  font-variant-numeric: oldstyle-nums;
-  hyphens: auto;
-  line-height: var(--line-height-normal);
-  color: var(--color-text);
-  text-align: justify;
-  letter-spacing: 0.025em;
-  color-scheme: dark light;
-  cursor: default;
-  user-select: none;
-  background-color: var(--color-background);
-  scroll-behavior: smooth;
-  text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 
   /* Inspirado en Smashing Magazine */
   &[data-theme='dark'] {
@@ -61,19 +43,15 @@ html {
     --color-box-shadow: #1c191750;
     --color-backdrop: #000000d9;
   }
-}
 
-body {
-  margin: 0;
-}
-
-main {
-  margin-top: var(--header-height);
-}
-
-::selection {
-  color: var(--color-highlight-inverted);
-  background-color: var(--color-highlight);
+  font-family: var(--font-serif);
+  font-size: var(--type-base);
+  font-variant-numeric: oldstyle-nums;
+  hyphens: auto;
+  line-height: var(--line-height-normal);
+  text-align: justify;
+  letter-spacing: 0.025em;
+  color-scheme: dark light;
 }
 
 strong {
@@ -162,30 +140,4 @@ ul li::before {
   left: 0;
   font-size: var(--type-large);
   content: '–';
-}
-
-@media (width <= 1280px) {
-  html {
-    --gap: 12px;
-    --header-height: 58px;
-  }
-}
-
-@media (width <= 1024px) {
-  html {
-    --panel-width: 20em;
-    --header-height: 48px;
-  }
-}
-
-@media (width <= 768px) {
-  html {
-    --panel-width: 100%;
-  }
-}
-
-@media (width <= 640px) {
-  html {
-    --header-height: 42px;
-  }
 }
