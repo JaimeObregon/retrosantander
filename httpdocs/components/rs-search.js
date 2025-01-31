@@ -287,7 +287,7 @@ class Search extends MyElement {
       app.$grid.restore()
       app.results.length ? app.$grid.appendItems() : app.$grid.clear()
       this.title = ''
-      app.$help.hidden = Boolean(this.results.length)
+      app.$help.hidden = Boolean(app.results.length)
     }, debounceDelay)
   }
 

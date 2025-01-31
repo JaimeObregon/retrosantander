@@ -164,6 +164,7 @@ class Grid extends MyElement {
     const start = page * this.itemsPerPage
     const end = (1 + page) * this.itemsPerPage
 
+    // @ts-ignore
     const images = app.results.slice(start, end).map((result) => result.id)
 
     if (!images.length) {
