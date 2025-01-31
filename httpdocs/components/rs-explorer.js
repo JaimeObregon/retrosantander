@@ -1,9 +1,13 @@
-import { css, html } from '../modules/strings.js'
+import { Help } from './rs-help.js'
+import { Image } from './rs-image.js'
+import { Panel } from './rs-panel.js'
+import { Throbber } from './rs-throbber.js'
 import { app } from '../modules/app.js'
 import { database } from '../modules/database.js'
 import { MyElement } from '../modules/element.js'
+import { css, html } from '../modules/strings.js'
 
-class Grid extends MyElement {
+class Explorer extends MyElement {
   static styles = css`
     main {
       position: relative;
@@ -59,12 +63,13 @@ class Grid extends MyElement {
   `
 
   static html = html`
+    <rs-panel></rs-panel>
+    <rs-help></rs-help>
+    <rs-throbber></rs-throbber>
     <main></main>
     <hr />
   `
 
-  $loading
-  $panel
   container
   pending = 0
   ready = false
@@ -75,19 +80,25 @@ class Grid extends MyElement {
   padding
 
   async connectedCallback() {
-    this.container = this.shadowRoot?.querySelector('main')
-    this.$loading = document.querySelector('rs-loading')
-    this.$panel = document.querySelector('rs-panel')
+    customElements.define('rs-help', Help)
+    customElements.define('rs-image', Image)
+    customElements.define('rs-throbber', Throbber)
+    customElements.define('rs-panel', Panel)
 
+    this.container = this.shadowRoot?.querySelector('main')
+    this.throbber = this.shadowRoot?.querySelector('rs-throbber')
+    this.panel = this.shadowRoot?.querySelector('rs-panel')
+    this.help = this.shadowRoot?.querySelector('rs-help')
     this.hr = this.shadowRoot?.querySelector('hr')
-    if (!this.hr) {
+
+    if (!this.hr || !this.help) {
       return
     }
 
     const help = `help.${app.language}.html`
     const response = await fetch(help)
 
-    app.$help.innerHTML = await response.text()
+    this.help.innerHTML = await response.text()
 
     const observer = new IntersectionObserver(this.onIntersect.bind(this), {
       rootMargin: '0px',
@@ -119,7 +130,7 @@ class Grid extends MyElement {
         await image.getMetadata()
 
       image.areas = areas
-      this.panel = { faces, objects, tags, details, exif }
+      this.panelData = { faces, objects, tags, details, exif }
     })
 
     document.addEventListener('keyup', (event) => {
@@ -127,6 +138,7 @@ class Grid extends MyElement {
     })
 
     window.addEventListener('resize', this.arrange.bind(this))
+    window.addEventListener('searchcomplete', this.onSearchcomplete.bind(this))
   }
 
   async attributeChangedCallback(name, previous, current) {
@@ -142,6 +154,20 @@ class Grid extends MyElement {
 
   static get observedAttributes() {
     return ['index']
+  }
+
+  onSearchcomplete(event) {
+    this.results = event.detail.results
+
+    this.restore()
+
+    this.results.length ? this.appendItems() : this.clear()
+
+    if (!this.help) {
+      return
+    }
+
+    this.help.hidden = Boolean(this.results.length)
   }
 
   onIntersect(intersections) {
@@ -165,7 +191,7 @@ class Grid extends MyElement {
     const end = (1 + page) * this.itemsPerPage
 
     // @ts-ignore
-    const images = app.results.slice(start, end).map((result) => result.id)
+    const images = this.results.slice(start, end).map((result) => result.id)
 
     if (!images.length) {
       return
@@ -180,7 +206,7 @@ class Grid extends MyElement {
         (image) => !image.complete,
       ).length
 
-      this.loading = 1 - this.pending / images.length
+      this.progress = 1 - this.pending / images.length
 
       if (!this.pending) {
         clearInterval(interval)
@@ -350,7 +376,7 @@ class Grid extends MyElement {
   restore() {
     this.container.style.transform = ''
     this.scale = 1
-    this.panel = false
+    this.panelData = false
     ;[...this.container.querySelectorAll('rs-image')].forEach((image) => {
       image.classList.remove('selected')
       image.areas = false
@@ -375,7 +401,7 @@ class Grid extends MyElement {
     }
 
     image.activeLayer = layer
-    this.$panel.activeLayer = layer
+    this.panel.activeLayer = layer
 
     const id = this.selected.getAttribute('id')
     app.title = layer ? this.activeLayer : database.find(id).title
@@ -384,14 +410,14 @@ class Grid extends MyElement {
   // Muestra (`progress` > 0) u oculta (`progress` < 0) el indicador de carga.
   // `progress` es un valor entre cero y uno, ambos inclusive, que determina
   // el porcentaje de progreso.
-  set loading(progress) {
-    this.$loading.progress = progress
+  set progress(progress) {
+    this.throbber.progress = progress
   }
 
   // Abre o cierra, en función de `data`, el panel lateral con los datos de una imagen.
-  set panel(data) {
-    this.$panel.data = data
+  set panelData(data) {
+    this.panel.data = data
   }
 }
 
-export { Grid }
+export { Explorer }

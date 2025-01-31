@@ -284,10 +284,9 @@ class Search extends MyElement {
         // history.pushState(null, '', app.query ? `/?q=${app.query}` : '/')
       }
 
-      app.$grid.restore()
-      app.results.length ? app.$grid.appendItems() : app.$grid.clear()
-      this.title = ''
-      app.$help.hidden = Boolean(app.results.length)
+      const detail = { results }
+      const event = new CustomEvent('searchcomplete', { detail })
+      window.dispatchEvent(event)
     }, debounceDelay)
   }
 

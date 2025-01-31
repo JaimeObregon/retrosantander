@@ -4,12 +4,8 @@ const app = {
   results: [],
 
   init() {
-    this.$title = document.querySelector('rs-title')
-    this.$search = document.querySelector('rs-search')
-    this.$menu = document.querySelector('rs-menu')
-    this.$grid = document.querySelector('rs-grid')
-    this.$help = document.querySelector('rs-help')
-    this.$main = document.querySelector('main')
+    this.header = document.querySelector('rs-header')
+    this.main = document.querySelector('main')
 
     this.language = i18n.setLanguage()
 
@@ -27,17 +23,17 @@ const app = {
 
   // Establece el título visible en la cabecera del sitio.
   set title(caption) {
-    this.$title.caption = caption
+    this.header.title.caption = caption
   },
 
   // Devuelve el término de la búsqueda actual.
   get query() {
-    return this.$search.query
+    return this.header.search.query
   },
 
   // Lanza una búsqueda.
   set query(query) {
-    this.$search.query = query
+    this.header.search.query = query
   },
 
   dispatch(route) {
@@ -50,7 +46,7 @@ const app = {
       }
     }
 
-    app.$main.innerHTML = '<rs-404></rs-404>'
+    app.main.innerHTML = '<rs-404></rs-404>'
   },
 }
 

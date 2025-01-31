@@ -21,6 +21,16 @@ class Header extends MyElement {
   `
 
   static html = html`<slot></slot>`
+
+  title
+  search
+  menu
+
+  connectedCallback() {
+    this.title = this.querySelector('rs-title')
+    this.search = this.querySelector('rs-search')
+    this.menu = this.querySelector('rs-menu')
+  }
 }
 
 export { Header }

@@ -35,7 +35,7 @@ const project = {
     {
       pattern: /^\/(\?q=(?<query>.+))?$/,
       exec: (app, groups) => {
-        app.$main.innerHTML = `<rs-grid index="${project.index}"></rs-grid>`
+        app.main.innerHTML = `<rs-explorer index="${project.index}"></rs-explorer>`
         app.title = groups.query
       },
     },

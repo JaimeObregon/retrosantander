@@ -293,6 +293,8 @@ class Panel extends MyElement {
     this.button = this.aside?.querySelector('button')
     this.footer = this.shadowRoot?.querySelector('footer')
 
+    this.explorer = this.getRootNode().host
+
     if (!this.aside || !this.details || !this.button || !this.footer) {
       return
     }
@@ -305,7 +307,7 @@ class Panel extends MyElement {
     customElements.define('rs-license-cdis', LicenseCDIS)
     customElements.define('rs-license-cc-by-sa', LicenseCCBYSA)
 
-    this.button.addEventListener('click', () => app.$grid.restore())
+    this.button.addEventListener('click', () => this.explorer.restore())
 
     this.aside.addEventListener('mouseover', (event) => {
       if (!(event.target instanceof HTMLElement)) {
@@ -313,7 +315,7 @@ class Panel extends MyElement {
       }
 
       if (event.target.dataset.id) {
-        app.$grid.activeLayer = event.target.dataset.id
+        this.explorer.activeLayer = event.target.dataset.id
       }
     })
 
@@ -323,7 +325,7 @@ class Panel extends MyElement {
       }
 
       if (event.target.dataset.id) {
-        app.$grid.activeLayer = false
+        this.explorer.activeLayer = false
       }
     })
 
@@ -379,7 +381,7 @@ class Panel extends MyElement {
     const containerWidth = ul.offsetWidth / facesPerRow
     const containerHeight = containerWidth
 
-    const { width, height } = app.$grid.selected.getBoundingClientRect()
+    const { width, height } = this.explorer.selected.getBoundingClientRect()
     const aspectRatio = width / height
 
     const facesList = panel.querySelector('section#faces ul')

@@ -64,7 +64,7 @@ class Help extends MyElement {
 
     const response = await fetch(url)
 
-    app.$help.innerHTML = await response.text()
+    this.innerHTML = await response.text()
   }
 
   connectedCallback() {

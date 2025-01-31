@@ -76,6 +76,7 @@ class Image extends MyElement {
   id
 
   connectedCallback() {
+    this.explorer = this.getRootNode().host
     this.img = this.shadowRoot?.querySelector('img')
     this.figure = this.shadowRoot?.querySelector('figure')
     this.id = this.getAttribute('id')
@@ -96,13 +97,13 @@ class Image extends MyElement {
         return
       }
 
-      app.$grid.activeLayer = event.target.dataset.id
+      this.explorer.activeLayer = event.target.dataset.id
     })
 
     this.figure.addEventListener('mouseout', (event) => {
       const isDiv = event.target instanceof HTMLDivElement
       if (isDiv) {
-        app.$grid.activeLayer = false
+        this.explorer.activeLayer = false
       }
     })
   }

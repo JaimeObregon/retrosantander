@@ -647,7 +647,7 @@ const project = {
         const response = await fetch('map.html')
         const contents = await response.text()
 
-        app.$main.innerHTML = `<rs-map>${contents}</rs-map>`
+        app.main.innerHTML = `<rs-map>${contents}</rs-map>`
       },
     },
     {
@@ -663,7 +663,7 @@ const project = {
           return false
         }
 
-        app.$main.innerHTML = `<rs-grid index="${location.index}"></rs-grid>`
+        app.main.innerHTML = `<rs-explorer index="${location.index}"></rs-explorer>`
       },
     },
     {
@@ -672,7 +672,7 @@ const project = {
         const response = await fetch('collections.html')
         const contents = await response.text()
 
-        app.$main.innerHTML = `<rs-collections>${contents}</rs-collections>`
+        app.main.innerHTML = `<rs-collections>${contents}</rs-collections>`
       },
     },
     {
