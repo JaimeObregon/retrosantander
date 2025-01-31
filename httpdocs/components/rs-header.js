@@ -1,3 +1,7 @@
+import { Logo } from '../components/rs-logo.js'
+import { Menu } from '../components/rs-menu.js'
+import { Search } from '../components/rs-search.js'
+import { Title } from '../components/rs-title.js'
 import { MyElement } from '../modules/element.js'
 import { css, html } from '../modules/strings.js'
 
@@ -30,6 +34,11 @@ class Header extends MyElement {
     this.title = this.querySelector('rs-title')
     this.search = this.querySelector('rs-search')
     this.menu = this.querySelector('rs-menu')
+
+    customElements.define('rs-menu', Menu)
+    customElements.define('rs-title', Title)
+    customElements.define('rs-logo', Logo)
+    customElements.define('rs-search', Search)
   }
 }
 

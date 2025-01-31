@@ -3,11 +3,6 @@ import { Collections } from '../components/rs-collections.js'
 import { Explorer } from '../components/rs-explorer.js'
 import { Gallery } from '../components/rs-gallery.js'
 import { Header } from '../components/rs-header.js'
-import { Logo } from '../components/rs-logo.js'
-import { Menu } from '../components/rs-menu.js'
-import { Search } from '../components/rs-search.js'
-import { ThemeSwitcher } from '../components/rs-theme-switcher.js'
-import { Title } from '../components/rs-title.js'
 import { app } from './app.js'
 
 const folder = document.location.hostname.replace(/\.\w+$/, '')
@@ -19,11 +14,6 @@ customElements.define('rs-collections', Collections)
 customElements.define('rs-gallery', Gallery)
 customElements.define('rs-explorer', Explorer)
 customElements.define('rs-header', Header)
-customElements.define('rs-logo', Logo)
-customElements.define('rs-menu', Menu)
-customElements.define('rs-title', Title)
-customElements.define('rs-search', Search)
-customElements.define('rs-theme-switcher', ThemeSwitcher)
 
 app.init()
 

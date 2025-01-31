@@ -1,5 +1,6 @@
 import { app } from '../modules/app.js'
 import { MyElement } from '../modules/element.js'
+import { ThemeSwitcher } from '../components/rs-theme-switcher.js'
 import { css, html } from '../modules/strings.js'
 
 import { LanguagePicker } from './rs-language-picker.js'
@@ -106,6 +107,8 @@ class Menu extends MyElement {
   connectedCallback() {
     this.hamburger = this.shadowRoot?.querySelector('button')
     this.article = this.shadowRoot?.querySelector('article')
+
+    customElements.define('rs-theme-switcher', ThemeSwitcher)
 
     setTimeout(() => this.article.setAttribute('ready', true), 350)
 
