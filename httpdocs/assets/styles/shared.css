@@ -1,10 +1,15 @@
+::selection {
+  color: var(--color-highlight-inverted);
+  background-color: var(--color-highlight);
+}
+
 html {
   margin: 0 var(--image-gap);
   font-family: var(--font-sans);
+  font-size: var(--type-base);
   font-weight: 300;
   color: var(--color-text);
   cursor: default;
-  user-select: none;
   background-color: var(--color-background);
   scroll-behavior: smooth;
   text-size-adjust: 100%;
@@ -27,15 +32,26 @@ html {
 
 body {
   margin: 0;
+  line-height: var(--line-height-normal);
 }
 
 main {
   margin-top: var(--header-height);
 }
 
-::selection {
-  color: var(--color-highlight-inverted);
-  background-color: var(--color-highlight);
+h1 {
+  margin: 0;
+  font-size: var(--type-xx-large);
+  color: var(--color-highlight);
+}
+
+abbr {
+  cursor: help;
+}
+
+a {
+  font-weight: 800;
+  color: inherit;
 }
 
 @media (width <= 1280px) {
