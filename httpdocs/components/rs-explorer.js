@@ -102,10 +102,14 @@ class Explorer extends MyElement {
       return
     }
 
-    const help = `help.${app.language}.html`
-    const response = await fetch(help)
+    const url = `notice.${app.language}.html`
 
-    this.help.innerHTML = await response.text()
+    const response = await fetch(url)
+    const text = await response.text()
+
+    this.innerHTML = html`<rs-notice class="hidden">${text}</rs-notice>`
+
+    this.notice = this.querySelector('rs-notice')
 
     const observer = new IntersectionObserver(this.onIntersect.bind(this), {
       rootMargin: '0px',
@@ -174,7 +178,8 @@ class Explorer extends MyElement {
       return
     }
 
-    this.help.hidden = Boolean(this.results.length)
+    const hidden = Boolean(this.results.length)
+    this.notice.classList.toggle('hidden', hidden)
   }
 
   onIntersect(intersections) {
