@@ -1,4 +1,4 @@
-import { Help } from './rs-help.js'
+import { Notice } from './rs-notice.js'
 import { Image } from './rs-image.js'
 import { Panel } from './rs-panel.js'
 import { Throbber } from './rs-throbber.js'
@@ -9,10 +9,18 @@ import { css, html } from '../modules/strings.js'
 
 class Explorer extends MyElement {
   static styles = css`
+    :host {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - var(--header-height));
+    }
+
     main {
       position: relative;
-      top: var(--image-gap);
       width: 100%;
+      margin: var(--image-gap) 0;
       transition: transform 750ms ease;
     }
 
@@ -64,8 +72,8 @@ class Explorer extends MyElement {
 
   static html = html`
     <rs-panel></rs-panel>
-    <rs-help></rs-help>
     <rs-throbber></rs-throbber>
+    <slot></slot>
     <main></main>
     <hr />
   `
@@ -80,7 +88,7 @@ class Explorer extends MyElement {
   padding
 
   async connectedCallback() {
-    customElements.define('rs-help', Help)
+    customElements.define('rs-notice', Notice)
     customElements.define('rs-image', Image)
     customElements.define('rs-throbber', Throbber)
     customElements.define('rs-panel', Panel)
@@ -88,10 +96,9 @@ class Explorer extends MyElement {
     this.container = this.shadowRoot?.querySelector('main')
     this.throbber = this.shadowRoot?.querySelector('rs-throbber')
     this.panel = this.shadowRoot?.querySelector('rs-panel')
-    this.help = this.shadowRoot?.querySelector('rs-help')
     this.hr = this.shadowRoot?.querySelector('hr')
 
-    if (!this.hr || !this.help) {
+    if (!this.hr) {
       return
     }
 
@@ -163,7 +170,7 @@ class Explorer extends MyElement {
 
     this.results.length ? this.appendItems() : this.clear()
 
-    if (!this.help) {
+    if (!this.notice) {
       return
     }
 
