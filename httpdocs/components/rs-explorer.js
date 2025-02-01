@@ -10,6 +10,7 @@ import { css, html } from '../modules/strings.js'
 class Explorer extends MyElement {
   static styles = css`
     :host {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -19,9 +20,15 @@ class Explorer extends MyElement {
 
     main {
       position: relative;
+      flex-grow: 1;
       width: 100%;
       margin: var(--image-gap) 0;
       transition: transform 750ms ease;
+
+      &:empty {
+        /* Para que <rs-notice> aparezca verticalmente centrado */
+        flex-grow: 0;
+      }
     }
 
     main rs-image {
@@ -313,13 +320,13 @@ class Explorer extends MyElement {
       .map((image) => image.getBoundingClientRect().bottom - offset)
       .reduce((max, current) => (max = Math.max(max, current)), 0)
 
-    this.container.style.height = `${bottommost + gap}px`
+    this.container.style.height = `${bottommost}px`
 
     if (!this.hr) {
       return
     }
 
-    this.hr.style.top = `${bottommost + gap}px`
+    this.hr.style.top = `${bottommost}px`
 
     this.ready = true
   }

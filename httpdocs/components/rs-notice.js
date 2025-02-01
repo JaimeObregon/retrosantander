@@ -6,7 +6,7 @@ class Notice extends MyElement {
   static styles = css`
     :host {
       max-width: 70ch;
-      margin: 0 var(--gap);
+      margin: var(--gap);
     }
 
     :host(.hidden) {

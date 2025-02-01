@@ -228,4 +228,4 @@ Esto significa que puedes utilizar este programa para usos personales o comercia
 
 Para esto último debes mantener en tu sitio web, en un lugar discreto pero visible, una mención a Jaime Gómez-Obregón como autor original y un enlace a `https://github.com/JaimeObregon/retrosantander/`.
 
-Si deseas que sea yo mismo quien adapte este programa al archivo fotográfico de tu entidad, quizá puedas contratarme: [https://x.com/JaimeObregon](https://x.com/JaimeObregon).
+Si deseas que sea yo mismo quien adapte este programa al archivo fotográfico de tu entidad, puedes contratarme: [https://x.com/JaimeObregon](https://x.com/JaimeObregon).
