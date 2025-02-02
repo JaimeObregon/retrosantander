@@ -1,13 +1,5 @@
 import { app } from '../../modules/app.js'
 import { MyElement } from '../../modules/element.js'
-import {
-  beaker,
-  calendar,
-  camera,
-  documentDuplicate,
-  link,
-  photo,
-} from '../../modules/icons.js'
 import { css, html } from '../../modules/strings.js'
 
 class PanelDetails extends MyElement {
@@ -53,17 +45,39 @@ class PanelDetails extends MyElement {
 
   static html = html`
     <dl>
-      <dt title="Fecha">${calendar}</dt>
-      <dd><slot name="date"></slot></dd>
-      <dt title="Colección o fondo">${documentDuplicate}</dt>
-      <dd><slot name="collection"></slot></dd>
-      <dt title="Fotógrafo">${camera}</dt>
-      <dd><slot name="author"></slot></dd>
-      <dt title="Material">${photo}</dt>
-      <dd><slot name="material"></slot></dd>
-      <dt title="Procedimiento">${beaker}</dt>
-      <dd><slot name="procedure"></slot></dd>
-      <dt title="Referencia">${link}</dt>
+      <dt title="Fecha">
+        <rs-icon name="calendar"></rs-icon>
+      </dt>
+      <dd>
+        <slot name="date"></slot>
+      </dd>
+      <dt title="Colección o fondo">
+        <rs-icon name="documentDuplicate"></rs-icon>
+      </dt>
+      <dd>
+        <slot name="collection"></slot>
+      </dd>
+      <dt title="Fotógrafo">
+        <rs-icon name="camera"></rs-icon>
+      </dt>
+      <dd>
+        <slot name="author"></slot>
+      </dd>
+      <dt title="Material">
+        <rs-icon name="photo"></rs-icon>
+      </dt>
+      <dd>
+        <slot name="material"></slot>
+      </dd>
+      <dt title="Procedimiento">
+        <rs-icon name="beaker"></rs-icon>
+      </dt>
+      <dd>
+        <slot name="procedure"></slot>
+      </dd>
+      <dt title="Referencia">
+        <rs-icon name="link"></rs-icon>
+      </dt>
       <dd id="link">
         <a>
           Ver #<slot name="id"></slot> en el
@@ -74,8 +88,6 @@ class PanelDetails extends MyElement {
       </dd>
     </dl>
   `
-
-  connectedCallback() {}
 
   set data(data) {
     const { details } = data

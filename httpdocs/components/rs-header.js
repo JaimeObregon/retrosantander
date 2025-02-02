@@ -1,4 +1,3 @@
-import { Logo } from '../components/rs-logo.js'
 import { Menu } from '../components/rs-menu.js'
 import { Search } from '../components/rs-search.js'
 import { Title } from '../components/rs-title.js'
@@ -37,7 +36,6 @@ class Header extends MyElement {
 
     customElements.define('rs-menu', Menu)
     customElements.define('rs-title', Title)
-    customElements.define('rs-logo', Logo)
     customElements.define('rs-search', Search)
   }
 }

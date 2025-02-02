@@ -1,3 +1,6 @@
+import { Logo } from './components/rs-logo.js'
+import { PanelDetails } from './components/rs-panel-details.js'
+
 const project = {
   name: 'Retrogipuzkoa',
 
@@ -27,6 +30,11 @@ const project = {
   // Umbral de confianza en la visión artificial.
   // Los objetos detectados por debajo de éste umbral serán ignorados.
   confidenceThreshold: 80,
+
+  init: () => {
+    customElements.define('rs-logo', Logo)
+    customElements.define('rs-panel-details', PanelDetails)
+  },
 
   routes: [
     {

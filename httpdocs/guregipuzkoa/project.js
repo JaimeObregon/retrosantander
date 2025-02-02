@@ -1,3 +1,6 @@
+import { Logo } from './components/rs-logo.js'
+import { PanelDetails } from './components/rs-panel-details.js'
+
 const project = {
   name: 'GureGipuzkoa',
 
@@ -628,6 +631,11 @@ const project = {
       id: 'partzuergo_nagusia',
     },
   ],
+
+  init: () => {
+    customElements.define('rs-logo', Logo)
+    customElements.define('rs-panel-details', PanelDetails)
+  },
 
   routes: [
     {

@@ -1,6 +1,5 @@
 import { app } from '../../modules/app.js'
 import { MyElement } from '../../modules/element.js'
-import { annotation, link } from '../../modules/icons.js'
 import { css, html } from '../../modules/strings.js'
 
 class PanelDetails extends MyElement {
@@ -46,16 +45,20 @@ class PanelDetails extends MyElement {
 
   static html = html`
     <dl>
-      <dt title="Descripción">${annotation}</dt>
-      <dd><slot name="caption"></slot></dd>
-      <dt title="Referencia">${link}</dt>
+      <dt title="Descripción">
+        <rs-icon name="chatBubbleBottomCenterText"></rs-icon>
+      </dt>
+      <dd>
+        <slot name="caption"></slot>
+      </dd>
+      <dt title="Referencia">
+        <rs-icon name="link"></rs-icon>
+      </dt>
       <dd id="link">
         <a>Ver #<slot name="id"></slot> en Gure Gipuzkoa</a>
       </dd>
     </dl>
   `
-
-  connectedCallback() {}
 
   set data(data) {
     const { details } = data

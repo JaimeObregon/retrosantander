@@ -97,10 +97,7 @@ class Menu extends MyElement {
     const response = await fetch(url)
     const html = await response.text()
 
-    app.header.menu.innerHTML = `
-    <img src="/guregipuzkoa/logo_diputacion_otro.svg" />
-    ${html}
-    `
+    app.header.menu.innerHTML = html
   }
 
   connectedCallback() {
