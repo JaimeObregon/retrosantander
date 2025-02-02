@@ -35,6 +35,21 @@ body {
   line-height: var(--line-height-normal);
 }
 
+rs-header > a {
+  flex-shrink: 0;
+  height: 40px;
+  padding: 0 var(--gap);
+  line-height: var(--header-height);
+  color: inherit;
+  transition: var(--delay-medium) var(--ease-1);
+
+  &:hover {
+    color: var(--color-highlight);
+    background-color: inherit;
+    transform: scale(1.035);
+  }
+}
+
 main {
   margin-top: var(--header-height);
 }
@@ -73,6 +88,10 @@ a {
   html {
     --gap: 12px;
     --header-height: 58px;
+  }
+
+  rs-header > a {
+    display: none;
   }
 }
 

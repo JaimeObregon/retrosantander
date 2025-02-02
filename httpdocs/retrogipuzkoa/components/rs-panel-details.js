@@ -52,7 +52,7 @@ class PanelDetails extends MyElement {
         <slot name="caption"></slot>
       </dd>
       <dt title="Referencia">
-        <rs-icon name="link"></rs-icon>
+        <rs-icon name="arrowTopRightOnSquare"></rs-icon>
       </dt>
       <dd id="link">
         <a>Ver #<slot name="id"></slot> en Gure Gipuzkoa</a>

@@ -76,7 +76,7 @@ class PanelDetails extends MyElement {
         <slot name="procedure"></slot>
       </dd>
       <dt title="Referencia">
-        <rs-icon name="link"></rs-icon>
+        <rs-icon name="arrowTopRightOnSquare"></rs-icon>
       </dt>
       <dd id="link">
         <a>

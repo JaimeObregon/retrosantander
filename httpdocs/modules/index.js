@@ -3,7 +3,7 @@ import { Collections } from '../components/rs-collections.js'
 import { Explorer } from '../components/rs-explorer.js'
 import { Gallery } from '../components/rs-gallery.js'
 import { Header } from '../components/rs-header.js'
-import { Icon } from '../components/rs-icons.js'
+import { Icon } from '../components/rs-icon.js'
 import { app } from './app.js'
 
 const folder = document.location.hostname.replace(/\.\w+$/, '')

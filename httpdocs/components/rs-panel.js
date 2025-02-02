@@ -298,11 +298,6 @@ class Panel extends MyElement {
       return
     }
 
-    const { PanelDetails } = await import(
-      `../${app.project.folder}/components/rs-panel-details.js`
-    )
-
-    customElements.define('rs-panel-details', PanelDetails)
     customElements.define('rs-license-cdis', LicenseCDIS)
     customElements.define('rs-license-cc-by-sa', LicenseCCBYSA)
 
