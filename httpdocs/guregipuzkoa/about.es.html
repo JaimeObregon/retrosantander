@@ -15,156 +15,79 @@ https://github.com/JaimeObregon/retrosantander/.
 Si deseas que sea yo mismo quien adapte este programa al archivo
 fotográfico de tu entidad, puedes contratarme: https://x.com/JaimeObregon.
 -->
-<style>
-  rs-menu article {
-    line-height: 1.5;
-  }
+<rs-theme-switcher></rs-theme-switcher>
+<rs-language-picker></rs-language-picker>
+<nav>
+  <a href="/">Portada</a>
+  <a href="/bildumak">Colecciones</a>
+  <a href="/mapa">Mapa</a>
+</nav>
 
-  rs-menu article h1 {
-    width: calc(100% + var(--gap));
-    margin: 0 0 0 calc(-1 * var(--gap));
-    padding: 0 0 0 var(--gap);
-    background: var(--color-text);
-    color: var(--color-highlight-inverted);
-  }
+<h1>Retrogipuzkoa es un experimento</h1>
 
-  rs-menu article h1:not(:first-of-type) {
-    margin-top: calc(3 * var(--gap));
-  }
+<p>
+  Un experimento personal de <strong>Jaime Gómez-Obregón</strong> con las más de
+  18.000 imágenes del Fondo Fotográfico Jesús Elósegui, digitalizado entre 2002
+  y 2006 por la
+  <a href="https://www.aranzadi.eus">Sociedad de Ciencias Aranzadi</a> y
+  publicado con licencia abierta por la Diputación Foral de Guipúzcoa en
+  <a href="https://guregipuzkoa.net">guregipuzkoa.net</a>.
+</p>
 
-  rs-menu article a {
-    color: inherit;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-thickness: 2px;
-  }
+<p>
+  Con ello pretendo explorar
+  <strong>otras formas de poner en valor un archivo fotográfico</strong>
+  público, aplicando ideas como la visión artificial o las interfaces de usuario
+  modernas.
+</p>
 
-  rs-menu article a:hover {
-    text-decoration-style: solid;
-  }
+<p>
+  Retrogipuzkoa también es una demostración de cómo
+  <strong>la difusión abierta</strong> de las bases de datos públicas permite a
+  la ciudadanía construir iniciativas nuevas y compartirlas con todos.
+</p>
 
-  rs-menu article strong {
-    font-weight: 700;
-  }
+<h1>Un tributo a Jesús Elósegui</h1>
 
-  rs-menu article ul {
-    font-size: 15px;
-    list-style: none;
-    padding: 0;
-    margin: calc(2 * var(--gap)) 0 0 0;
-  }
+<p>
+  <strong>Jesús Elósegui Irazusta</strong>, (Tolosa, 1907 - 1979) fue un
+  arqueólogo y fotógrafo guipuzcoano muy vinculado a la Sociedad de Ciencias
+  Aranzadi, donde compaginó su función científica con su minuciosa labor como
+  fotógrafo.
+</p>
 
-  rs-menu article ul li {
-    display: flex;
-    align-items: center;
-    margin: calc(var(--gap) / 3) 0;
-  }
+<h1>Retrogipuzkoa es software libre</h1>
 
-  rs-menu article ul li svg {
-    height: 16px;
-    margin-right: 8px;
-    fill: white;
-  }
+<p>
+  El código fuente de Retrogipuzkoa
+  <strong>está disponible en GitHub</strong>
+  con licencia también abierta.
+</p>
 
-  article rs-theme-switcher {
-    display: inline-block;
-  }
+<ul>
+  <li>
+    <rs-icon name="arrowTopRightOnSquare"></rs-icon>
+    <a
+      href="https://www.guregipuzkoa.eus/es/colecciones/coleccion-jesus-elosegui/"
+      >Colección Jesús Elósegui Irazusta en Gure Gipuzkoa</a
+    >
+  </li>
+  <li>
+    <rs-icon name="wikipedia"></rs-icon>
+    <a href="https://es.wikipedia.org/wiki/Jes%C3%BAs_El%C3%B3segui"
+      >Jesús Elósegui en Wikipedia</a
+    >
+  </li>
+  <li>
+    <rs-icon name="github"></rs-icon>
+    <a href="https://github.com/JaimeObregon/retrosantander/">
+      Retrogipuzkoa en GitHub
+    </a>
+  </li>
+  <li>
+    <rs-icon name="x"></rs-icon>
+    <a href="https://x.com/jaimeobregon">Jaime Gómez-Obregón en 𝐗</a>
+  </li>
+</ul>
 
-  article nav {
-    display: flex;
-    height: 8em;
-    margin-bottom: var(--gap);
-  }
-
-  article nav a {
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    align-self: center;
-    color: inherit;
-    text-decoration: none;
-  }
-
-  svg {
-    fill: var(--color-text);
-  }
-</style>
-<article>
-  <rs-logo name="diputacionBilingue"></rs-logo>
-  <rs-logo name="guregipuzkoa"></rs-logo>
-
-  <rs-theme-switcher></rs-theme-switcher>
-  <rs-language-picker></rs-language-picker>
-  <nav>
-    <a href="/">Portada</a>
-    <a href="/bildumak">Colecciones</a>
-    <a href="/mapa">Mapa</a>
-  </nav>
-
-  <h1>Retrogipuzkoa es un experimento</h1>
-
-  <p>
-    Un experimento personal de <strong>Jaime Gómez-Obregón</strong> con las más
-    de 18.000 imágenes del Fondo Fotográfico Jesús Elósegui, digitalizado entre
-    2002 y 2006 por la
-    <a href="https://www.aranzadi.eus">Sociedad de Ciencias Aranzadi</a> y
-    publicado con licencia abierta por la Diputación Foral de Guipúzcoa en
-    <a href="https://guregipuzkoa.net">guregipuzkoa.net</a>.
-  </p>
-
-  <p>
-    Con ello pretendo explorar
-    <strong>otras formas de poner en valor un archivo fotográfico</strong>
-    público, aplicando ideas como la visión artificial o las interfaces de
-    usuario modernas.
-  </p>
-
-  <p>
-    Retrogipuzkoa también es una demostración de cómo
-    <strong>la difusión abierta</strong> de las bases de datos públicas permite
-    a la ciudadanía construir iniciativas nuevas y compartirlas con todos.
-  </p>
-
-  <h1>Un tributo a Jesús Elósegui</h1>
-
-  <p>
-    <strong>Jesús Elósegui Irazusta</strong>, (Tolosa, 1907 - 1979) fue un
-    arqueólogo y fotógrafo guipuzcoano muy vinculado a la Sociedad de Ciencias
-    Aranzadi, donde compaginó su función científica con su minuciosa labor como
-    fotógrafo.
-  </p>
-
-  <h1>Retrogipuzkoa es software libre</h1>
-
-  <p>
-    El código fuente de Retrogipuzkoa
-    <strong>está disponible en GitHub</strong>
-    con licencia también abierta.
-  </p>
-
-  <ul>
-    <li>
-      <rs-icon name="arrowTopRightOnSquare"></rs-icon>
-      <a
-        href="https://www.guregipuzkoa.eus/es/colecciones/coleccion-jesus-elosegui/"
-        >Colección Jesús Elósegui Irazusta en Gure Gipuzkoa</a
-      >
-    </li>
-    <li>
-      <rs-icon name="wikipedia"></rs-icon>
-      <a href="https://es.wikipedia.org/wiki/Jes%C3%BAs_El%C3%B3segui"
-        >Jesús Elósegui en Wikipedia</a
-      >
-    </li>
-    <li>
-      <rs-icon name="github"></rs-icon>
-      <a href="https://github.com/JaimeObregon/retrosantander/">
-        Retrogipuzkoa en GitHub
-      </a>
-    </li>
-    <li>
-      <rs-icon name="x"></rs-icon>
-      <a href="https://x.com/jaimeobregon">Jaime Gómez-Obregón en 𝐗</a>
-    </li>
-  </ul>
-</article>
+<rs-logo name="diputacionBilingue"></rs-logo>
