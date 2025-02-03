@@ -9,6 +9,10 @@ const facesPerRow = 5
 
 class Panel extends MyElement {
   static styles = css`
+    :host {
+      z-index: 1;
+    }
+
     aside {
       position: fixed;
       top: var(--header-height);
@@ -292,6 +296,7 @@ class Panel extends MyElement {
     this.button = this.aside?.querySelector('button')
     this.footer = this.shadowRoot?.querySelector('footer')
 
+    // @ts-ignore
     this.explorer = this.getRootNode().host
 
     if (!this.aside || !this.details || !this.button || !this.footer) {
