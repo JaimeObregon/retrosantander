@@ -39,14 +39,12 @@ class Menu extends MyElement {
     }
 
     article {
-      --about-width: 28rem;
-
       position: fixed;
       top: var(--header-height);
       right: 0;
       box-sizing: border-box;
       width: 100%;
-      max-width: var(--about-width);
+      max-width: var(--menu-width);
       height: calc(100vh - var(--header-height));
       padding: var(--gap);
       overflow: scroll;
@@ -57,7 +55,7 @@ class Menu extends MyElement {
       border-left: 1px solid var(--color-line);
       box-shadow: -5px 0 5px var(--color-box-shadow);
       opacity: 0;
-      transform: translateX(var(--about-width));
+      transform: translateX(var(--menu-width));
     }
 
     article[ready] {
@@ -71,7 +69,7 @@ class Menu extends MyElement {
 
     @media (width <= 640px) {
       article {
-        --about-width: 100%;
+        --menu-width: 100%;
       }
     }
   `
