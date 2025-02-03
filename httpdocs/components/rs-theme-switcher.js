@@ -1,10 +1,8 @@
 import { MyElement } from '../modules/element.js'
 import { css, html } from '../modules/strings.js'
+import { app } from '../modules/app.js'
 
 class ThemeSwitcher extends MyElement {
-  // Ha de coincidir lo definido en el `<script>` en `index.html`
-  storageKey = 'theme'
-
   // Ha de coincidir lo definido en el `<script>` en `index.html`
   mediaQueryString = '(prefers-color-scheme: dark)'
 
@@ -135,7 +133,8 @@ class ThemeSwitcher extends MyElement {
   constructor() {
     super()
 
-    const stored = localStorage.getItem(this.storageKey)
+    const storageKey = app.storageKeys.theme
+    const stored = localStorage.getItem(storageKey)
     const system = window.matchMedia(this.mediaQueryString).matches
       ? 'dark'
       : 'light'
@@ -157,7 +156,8 @@ class ThemeSwitcher extends MyElement {
   }
 
   set theme(value) {
-    localStorage.setItem(this.storageKey, value)
+    const storageKey = app.storageKeys.theme
+    localStorage.setItem(storageKey, value)
 
     const html = document.querySelector('html')
     if (!(html instanceof HTMLHtmlElement)) {

@@ -3,6 +3,11 @@ import { i18n } from './i18n.js'
 const app = {
   results: [],
 
+  storageKeys: {
+    language: 'language',
+    theme: 'theme',
+  },
+
   init() {
     this.header = document.querySelector('rs-header')
     this.main = document.querySelector('main')

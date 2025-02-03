@@ -1,6 +1,6 @@
 import { app } from '../modules/app.js'
 import { MyElement } from '../modules/element.js'
-import { i18n, storageKey } from '../modules/i18n.js'
+import { i18n } from '../modules/i18n.js'
 import { css, html } from '../modules/strings.js'
 
 class LanguagePicker extends MyElement {
@@ -84,6 +84,8 @@ class LanguagePicker extends MyElement {
       if (!(input instanceof HTMLInputElement)) {
         return
       }
+
+      const storageKey = app.storageKeys.language
 
       const value = input.value
       app.language = value

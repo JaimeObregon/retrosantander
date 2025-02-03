@@ -1,7 +1,5 @@
 import { app } from './app.js'
 
-const storageKey = 'language'
-
 const i18n = {
   languages: {
     es: 'Castellano',
@@ -13,6 +11,8 @@ const i18n = {
   translations: {},
 
   setLanguage: () => {
+    const storageKey = app.storageKeys.language
+
     const preferred = [
       ...new Set(
         navigator.languages
@@ -55,4 +55,4 @@ const i18n = {
   },
 }
 
-export { i18n, storageKey }
+export { i18n }
