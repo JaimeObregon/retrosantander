@@ -99,6 +99,11 @@ const logos = {
 
 class Icon extends MyElement {
   static styles = css`
+    :host {
+      display: flex;
+      width: 1em;
+    }
+
     svg {
       &.icon {
         fill: none;
