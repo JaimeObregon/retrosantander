@@ -137,8 +137,7 @@ class ThemeSwitcher extends MyElement {
 
     const system = window.matchMedia(mediaQuery).matches ? 'dark' : 'light'
 
-    // @ts-ignore
-    this.theme = stored ?? system
+    this.theme = stored === 'light' || stored === 'dark' ? stored : system
 
     this.changeMediaHandler = (event) => {
       const dark = event.matches
@@ -158,12 +157,7 @@ class ThemeSwitcher extends MyElement {
     const storageKey = app.storageKeys.theme
     localStorage.setItem(storageKey, value)
 
-    const html = document.querySelector('html')
-    if (!(html instanceof HTMLHtmlElement)) {
-      return
-    }
-
-    html.dataset.theme = value
+    document.documentElement.dataset.theme = value
     this.setAttribute('theme', value)
     this.dark = value === 'dark'
   }
@@ -175,7 +169,6 @@ class ThemeSwitcher extends MyElement {
 
   connectedCallback() {
     this.button = this.shadowRoot?.querySelector('button')
-
     this.button?.addEventListener('click', this.clickHandler.bind(this))
   }
 

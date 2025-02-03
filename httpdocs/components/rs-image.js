@@ -76,10 +76,12 @@ class Image extends MyElement {
   id
 
   connectedCallback() {
-    this.explorer = this.getRootNode().host
     this.img = this.shadowRoot?.querySelector('img')
     this.figure = this.shadowRoot?.querySelector('figure')
     this.id = this.getAttribute('id')
+
+    // @ts-ignore
+    this.explorer = this.getRootNode().host
 
     const details = database.find(this.id)
     const src = app.project.image(this.id)

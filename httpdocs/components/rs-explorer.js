@@ -209,7 +209,6 @@ class Explorer extends MyElement {
     const start = page * this.itemsPerPage
     const end = (1 + page) * this.itemsPerPage
 
-    // @ts-ignore
     const images = this.results.slice(start, end).map((result) => result.id)
 
     if (!images.length) {
@@ -420,6 +419,8 @@ class Explorer extends MyElement {
     }
 
     image.activeLayer = layer
+
+    // @ts-ignore
     this.panel.activeLayer = layer
 
     const id = this.selected.getAttribute('id')
@@ -430,11 +431,13 @@ class Explorer extends MyElement {
   // `progress` es un valor entre cero y uno, ambos inclusive, que determina
   // el porcentaje de progreso.
   set progress(progress) {
+    // @ts-ignore
     this.throbber.progress = progress
   }
 
   // Abre o cierra, en función de `data`, el panel lateral con los datos de una imagen.
   set panelData(data) {
+    // @ts-ignore
     this.panel.data = data
   }
 }
