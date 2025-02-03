@@ -2,10 +2,9 @@ import { MyElement } from '../modules/element.js'
 import { css, html } from '../modules/strings.js'
 import { app } from '../modules/app.js'
 
-class ThemeSwitcher extends MyElement {
-  // Ha de coincidir lo definido en el `<script>` en `index.html`
-  mediaQueryString = '(prefers-color-scheme: dark)'
+const mediaQuery = '(prefers-color-scheme: dark)'
 
+class ThemeSwitcher extends MyElement {
   static styles = css`
     button {
       display: block;
@@ -135,9 +134,9 @@ class ThemeSwitcher extends MyElement {
 
     const storageKey = app.storageKeys.theme
     const stored = localStorage.getItem(storageKey)
-    const system = window.matchMedia(this.mediaQueryString).matches
-      ? 'dark'
-      : 'light'
+
+    const system = window.matchMedia(mediaQuery).matches ? 'dark' : 'light'
+
     // @ts-ignore
     this.theme = stored ?? system
 
@@ -147,7 +146,7 @@ class ThemeSwitcher extends MyElement {
     }
 
     window
-      .matchMedia(this.mediaQueryString)
+      .matchMedia(mediaQuery)
       .addEventListener('change', this.changeMediaHandler)
   }
 
@@ -182,7 +181,7 @@ class ThemeSwitcher extends MyElement {
 
   disconnectedCallback() {
     window
-      .matchMedia(this.mediaQueryString)
+      .matchMedia(mediaQuery)
       .removeEventListener('change', this.changeMediaHandler)
   }
 }
