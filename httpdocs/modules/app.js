@@ -18,8 +18,6 @@ const app = {
     const route = location.href.replace(location.origin, '')
     app.dispatch(route)
 
-    app.project.init()
-
     const languagechangeEvent = new Event('languagechange')
     window.dispatchEvent(languagechangeEvent)
   },
