@@ -67,7 +67,7 @@ class Image extends MyElement {
 
   static html = html`
     <figure>
-      <img loading="lazy" />
+      <img />
     </figure>
   `
 
