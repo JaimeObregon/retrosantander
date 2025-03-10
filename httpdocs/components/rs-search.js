@@ -329,4 +329,8 @@ class Search extends MyElement {
   }
 }
 
+if (!customElements.get('rs-search')) {
+  customElements.define('rs-search', Search)
+}
+
 export { Search }

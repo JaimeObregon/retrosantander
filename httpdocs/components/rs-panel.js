@@ -461,4 +461,8 @@ class Panel extends MyElement {
   }
 }
 
+if (!customElements.get('rs-panel')) {
+  customElements.define('rs-panel', Panel)
+}
+
 export { Panel }

@@ -135,4 +135,8 @@ class Menu extends MyElement {
   }
 }
 
+if (!customElements.get('rs-menu')) {
+  customElements.define('rs-menu', Menu)
+}
+
 export { Menu }

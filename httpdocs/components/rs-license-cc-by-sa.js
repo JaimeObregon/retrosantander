@@ -28,4 +28,8 @@ class LicenseCCBYSA extends MyElement {
   `
 }
 
+if (!customElements.get('rs-license-cc-by-sa')) {
+  customElements.define('rs-license-cc-by-sa', LicenseCCBYSA)
+}
+
 export { LicenseCCBYSA }

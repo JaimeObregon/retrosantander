@@ -104,4 +104,8 @@ class PanelDetails extends MyElement {
   }
 }
 
+if (!customElements.get('rs-panel-details')) {
+  customElements.define('rs-panel-details', PanelDetails)
+}
+
 export { PanelDetails }

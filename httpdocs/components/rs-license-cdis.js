@@ -67,4 +67,8 @@ class LicenseCDIS extends MyElement {
   `
 }
 
+if (!customElements.get('rs-license-cdis')) {
+  customElements.define('rs-license-cdis', LicenseCDIS)
+}
+
 export { LicenseCDIS }

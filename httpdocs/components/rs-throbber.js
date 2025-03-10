@@ -38,4 +38,8 @@ class Throbber extends MyElement {
   }
 }
 
+if (!customElements.get('rs-throbber')) {
+  customElements.define('rs-throbber', Throbber)
+}
+
 export { Throbber }

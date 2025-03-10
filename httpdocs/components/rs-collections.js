@@ -148,4 +148,8 @@ class Collections extends MyElement {
   }
 }
 
+if (!customElements.get('rs-collections')) {
+  customElements.define('rs-collections', Collections)
+}
+
 export { Collections }

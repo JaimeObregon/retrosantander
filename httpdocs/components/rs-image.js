@@ -271,4 +271,8 @@ class Image extends MyElement {
   }
 }
 
+if (!customElements.get('rs-image')) {
+  customElements.define('rs-image', Image)
+}
+
 export { Image }

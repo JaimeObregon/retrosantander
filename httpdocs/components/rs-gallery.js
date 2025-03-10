@@ -149,4 +149,8 @@ class Gallery extends MyElement {
   }
 }
 
+if (!customElements.get('rs-gallery')) {
+  customElements.define('rs-gallery', Gallery)
+}
+
 export { Gallery }

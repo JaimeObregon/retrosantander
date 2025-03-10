@@ -27,4 +27,8 @@ class Notice extends MyElement {
   }
 }
 
+if (!customElements.get('rs-notice')) {
+  customElements.define('rs-notice', Notice)
+}
+
 export { Notice }

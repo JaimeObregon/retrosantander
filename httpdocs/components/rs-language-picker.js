@@ -97,4 +97,8 @@ class LanguagePicker extends MyElement {
   }
 }
 
+if (!customElements.get('rs-language-picker')) {
+  customElements.define('rs-language-picker', LanguagePicker)
+}
+
 export { LanguagePicker }

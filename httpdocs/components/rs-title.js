@@ -110,4 +110,8 @@ class Title extends MyElement {
   }
 }
 
+if (!customElements.get('rs-title')) {
+  customElements.define('rs-title', Title)
+}
+
 export { Title }

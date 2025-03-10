@@ -24,4 +24,8 @@ class Logo extends MyElement {
   }
 }
 
+if (!customElements.get('rs-logo')) {
+  customElements.define('rs-logo', Logo)
+}
+
 export { Logo }

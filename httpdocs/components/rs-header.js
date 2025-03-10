@@ -40,4 +40,8 @@ class Header extends MyElement {
   }
 }
 
+if (!customElements.get('rs-header')) {
+  customElements.define('rs-header', Header)
+}
+
 export { Header }

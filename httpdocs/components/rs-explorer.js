@@ -442,4 +442,8 @@ class Explorer extends MyElement {
   }
 }
 
+if (!customElements.get('rs-explorer')) {
+  customElements.define('rs-explorer', Explorer)
+}
+
 export { Explorer }

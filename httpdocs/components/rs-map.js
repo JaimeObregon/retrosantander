@@ -46,4 +46,8 @@ class Map extends MyElement {
   }
 }
 
+if (!customElements.get('rs-map')) {
+  customElements.define('rs-map', Map)
+}
+
 export { Map }

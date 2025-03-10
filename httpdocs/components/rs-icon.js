@@ -133,4 +133,8 @@ class Icon extends MyElement {
   }
 }
 
+if (!customElements.get('rs-icon')) {
+  customElements.define('rs-icon', Icon)
+}
+
 export { Icon }

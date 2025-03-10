@@ -29,4 +29,8 @@ class NotFound extends MyElement {
   `
 }
 
+if (!customElements.get('rs-404')) {
+  customElements.define('rs-404', NotFound)
+}
+
 export { NotFound }

@@ -179,4 +179,8 @@ class ThemeSwitcher extends MyElement {
   }
 }
 
+if (!customElements.get('rs-theme-switcher')) {
+  customElements.define('rs-theme-switcher', ThemeSwitcher)
+}
+
 export { ThemeSwitcher }
