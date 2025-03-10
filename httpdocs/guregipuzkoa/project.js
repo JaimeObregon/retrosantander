@@ -632,10 +632,6 @@ const project = {
     },
   ],
 
-  init: () => {
-    customElements.define('rs-panel-details', PanelDetails)
-  },
-
   routes: [
     {
       pattern: /^\/$/,

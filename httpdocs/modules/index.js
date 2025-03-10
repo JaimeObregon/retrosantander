@@ -1,23 +1,18 @@
-import { NotFound } from '../components/rs-404.js'
-import { Collections } from '../components/rs-collections.js'
-import { Explorer } from '../components/rs-explorer.js'
-import { Gallery } from '../components/rs-gallery.js'
-import { Header } from '../components/rs-header.js'
-import { Icon } from '../components/rs-icon.js'
-import { Logo } from '../components/rs-logo.js'
 import { app } from './app.js'
 
 const folder = document.location.hostname.replace(/\.\w+$/, '')
 const { project } = await import(`../${folder}/project.js`)
 app.project = project
 
-customElements.define('rs-404', NotFound)
-customElements.define('rs-collections', Collections)
-customElements.define('rs-logo', Logo)
-customElements.define('rs-gallery', Gallery)
-customElements.define('rs-explorer', Explorer)
-customElements.define('rs-header', Header)
-customElements.define('rs-icon', Icon)
+await Promise.all([
+  import('../components/rs-404.js'),
+  import('../components/rs-collections.js'),
+  import('../components/rs-explorer.js'),
+  import('../components/rs-gallery.js'),
+  import('../components/rs-header.js'),
+  import('../components/rs-icon.js'),
+  import('../components/rs-logo.js'),
+])
 
 app.init()
 

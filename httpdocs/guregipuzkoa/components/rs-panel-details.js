@@ -60,8 +60,6 @@ class PanelDetails extends MyElement {
     </dl>
   `
 
-  connectedCallback() {}
-
   set data(data) {
     const { details } = data
 

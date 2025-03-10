@@ -34,10 +34,6 @@ const project = {
   // Los objetos detectados por debajo de éste umbral serán ignorados.
   confidenceThreshold: 80,
 
-  init: () => {
-    customElements.define('rs-panel-details', PanelDetails)
-  },
-
   routes: [
     {
       pattern: /^\/(\?q=(?<query>.+))?$/,
