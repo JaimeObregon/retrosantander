@@ -1,5 +1,5 @@
 import { html } from '../modules/strings.js'
-import { PanelDetails } from './components/rs-panel-details.js'
+import './components/rs-panel-details.js'
 
 const project = {
   name: 'Retrosantander',

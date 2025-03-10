@@ -1,9 +1,8 @@
+import '../components/rs-theme-switcher.js'
 import { app } from '../modules/app.js'
 import { MyElement } from '../modules/element.js'
-import { ThemeSwitcher } from '../components/rs-theme-switcher.js'
 import { css, html } from '../modules/strings.js'
-
-import { LanguagePicker } from './rs-language-picker.js'
+import './rs-language-picker.js'
 
 class Menu extends MyElement {
   static styles = css`
@@ -102,8 +101,6 @@ class Menu extends MyElement {
     this.hamburger = this.shadowRoot?.querySelector('button')
     this.article = this.shadowRoot?.querySelector('article')
 
-    customElements.define('rs-theme-switcher', ThemeSwitcher)
-
     setTimeout(() => this.article.setAttribute('ready', true), 350)
 
     this.hamburger.addEventListener('click', () => (this.open = !this.open))
@@ -115,8 +112,6 @@ class Menu extends MyElement {
     document.addEventListener('keyup', (event) => {
       event.key === 'Escape' && (this.open = false)
     })
-
-    customElements.define('rs-language-picker', LanguagePicker)
 
     window.addEventListener('languagechange', this.onLanguagechange.bind(this))
   }

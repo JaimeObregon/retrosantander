@@ -2,8 +2,8 @@ import { app } from '../modules/app.js'
 import { MyElement } from '../modules/element.js'
 import { i18n } from '../modules/i18n.js'
 import { css, html } from '../modules/strings.js'
-import { LicenseCCBYSA } from './rs-license-cc-by-sa.js'
-import { LicenseCDIS } from './rs-license-cdis.js'
+import './rs-license-cc-by-sa.js'
+import './rs-license-cdis.js'
 
 const facesPerRow = 5
 
@@ -302,9 +302,6 @@ class Panel extends MyElement {
     if (!this.aside || !this.details || !this.button || !this.footer) {
       return
     }
-
-    customElements.define('rs-license-cdis', LicenseCDIS)
-    customElements.define('rs-license-cc-by-sa', LicenseCCBYSA)
 
     this.button.addEventListener('click', () => this.explorer.restore())
 

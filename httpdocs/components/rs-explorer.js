@@ -1,11 +1,11 @@
-import { Notice } from './rs-notice.js'
-import { Image } from './rs-image.js'
-import { Panel } from './rs-panel.js'
-import { Throbber } from './rs-throbber.js'
 import { app } from '../modules/app.js'
 import { database } from '../modules/database.js'
 import { MyElement } from '../modules/element.js'
 import { css, html } from '../modules/strings.js'
+import './rs-image.js'
+import './rs-notice.js'
+import './rs-panel.js'
+import './rs-throbber.js'
 
 class Explorer extends MyElement {
   static styles = css`
@@ -95,11 +95,6 @@ class Explorer extends MyElement {
   padding
 
   async connectedCallback() {
-    customElements.define('rs-notice', Notice)
-    customElements.define('rs-image', Image)
-    customElements.define('rs-throbber', Throbber)
-    customElements.define('rs-panel', Panel)
-
     this.container = this.shadowRoot?.querySelector('main')
     this.throbber = this.shadowRoot?.querySelector('rs-throbber')
     this.panel = this.shadowRoot?.querySelector('rs-panel')
