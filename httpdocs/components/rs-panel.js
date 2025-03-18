@@ -24,10 +24,10 @@ class Panel extends MyElement {
       padding: var(--gap);
       overflow: scroll;
       background-color: var(--color-panel);
-      backdrop-filter: blur(var(--panel-blur));
       border-right: 1px solid var(--color-line);
       box-shadow: 5px 0 5px var(--color-box-shadow);
       opacity: 1;
+      backdrop-filter: blur(var(--panel-blur));
       transition: 350ms;
     }
 
@@ -152,6 +152,7 @@ class Panel extends MyElement {
       padding: var(--space-medium);
       margin: calc(2 * var(--gap)) 0 0;
       font-size: 14px;
+      line-height: var(--line-height-condensed);
       hyphens: auto;
       background: var(--color-neutral-800);
       border-radius: 5px;
