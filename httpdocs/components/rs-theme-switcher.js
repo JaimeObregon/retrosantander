@@ -13,80 +13,76 @@ class ThemeSwitcher extends MyElement {
       padding: 0;
       touch-action: manipulation;
       cursor: pointer;
+      outline-offset: 5px;
       background: none;
       border: none;
       border-radius: 50%;
-      outline-offset: 5px;
       -webkit-tap-highlight-color: transparent;
+
+      &:is(:hover, :focus-visible) svg {
+        :is(mask#moon, circle#sun) {
+          fill: var(--color-text);
+        }
+
+        g {
+          stroke: var(--color-text);
+        }
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+        stroke-linecap: round;
+
+        :is(mask#moon, circle#sun, g) {
+          transform-origin: center center;
+        }
+
+        :is(mask#moon, circle#sun) {
+          fill: var(--color-text-pale);
+        }
+
+        circle#sun {
+          transition: transform var(--delay-x-large) var(--ease-elastic-3);
+        }
+
+        mask#moon circle {
+          transition: transform var(--delay-medium) var(--ease-out-5);
+        }
+
+        g {
+          stroke: var(--color-text-pale);
+          stroke-width: 2px;
+          transition:
+            transform var(--delay-x-large) var(--ease-elastic-4),
+            opacity var(--delay-x-large) var(--ease-3);
+        }
+      }
     }
 
-    button svg {
-      width: 100%;
-      height: 100%;
-      stroke-linecap: round;
-    }
+    :host([theme='dark']) svg {
+      circle#sun {
+        transform: scale(1.75);
+      }
 
-    button svg :is(mask#moon, circle#sun, g) {
-      transform-origin: center center;
-    }
+      g {
+        opacity: 0;
+        transform: rotate(-25deg);
+        transition-duration: var(--delay-small);
+      }
 
-    button svg :is(mask#moon, circle#sun) {
-      fill: var(--color-text-pale);
-    }
+      mask#moon circle {
+        transform: translate(-7px);
+        transition-delay: var(--delay-medium);
+        transition-duration: var(--delay-x-large);
+      }
 
-    button svg g {
-      stroke: var(--color-text-pale);
-      stroke-width: 2px;
-      transition:
-        transform var(--delay-x-large) var(--ease-elastic-4),
-        opacity var(--delay-x-large) var(--ease-3);
-    }
-
-    button:is(:hover, :focus-visible) svg :is(mask#moon, circle#sun) {
-      fill: var(--color-text);
-    }
-
-    button:is(:hover, :focus-visible) svg g {
-      stroke: var(--color-text);
-    }
-
-    :host([theme='dark']) svg circle#sun {
-      transform: scale(1.75);
-    }
-
-    :host([theme='dark']) svg g {
-      opacity: 0;
-    }
-
-    :host([theme='dark']) svg mask#moon circle {
-      transform: translate(-7px);
-    }
-
-    button svg circle#sun {
-      transition: transform var(--delay-x-large) var(--ease-elastic-3);
-    }
-
-    button svg mask#moon circle {
-      transition: transform var(--delay-medium) var(--ease-out-5);
-    }
-
-    /* stylelint-disable-next-line no-duplicate-selectors */
-    :host([theme='dark']) svg circle#sun {
-      transition-timing-function: var(--ease-3);
-      transition-duration: var(--delay-medium);
-      transform: scale(1.75);
-    }
-
-    /* stylelint-disable-next-line no-duplicate-selectors */
-    :host([theme='dark']) svg g {
-      transition-duration: var(--delay-small);
-      transform: rotate(-25deg);
-    }
-
-    /* stylelint-disable-next-line no-duplicate-selectors */
-    :host([theme='dark']) svg mask#moon circle {
-      transition-delay: var(--delay-medium);
-      transition-duration: var(--delay-x-large);
+      /* stylelint-disable-next-line no-duplicate-selectors */
+      circle#sun {
+        transform: scale(1.75);
+        transition-timing-function: var(--ease-3);
+        transition-duration: var(--delay-medium);
+      }
     }
 
     @supports (cx: 1) {
@@ -96,7 +92,7 @@ class ThemeSwitcher extends MyElement {
 
       :host([theme='dark']) svg mask#moon circle {
         transform: translate(0);
-        cx: 17;
+        cx: 17px;
       }
     }
 
@@ -150,7 +146,7 @@ class ThemeSwitcher extends MyElement {
   }
 
   get theme() {
-    return this.dark ? 'dark' : 'light'
+    return this.isDark ? 'dark' : 'light'
   }
 
   set theme(value) {
@@ -159,7 +155,7 @@ class ThemeSwitcher extends MyElement {
 
     document.documentElement.dataset.theme = value
     this.setAttribute('theme', value)
-    this.dark = value === 'dark'
+    this.isDark = value === 'dark'
   }
 
   clickHandler(event) {
