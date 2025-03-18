@@ -17,6 +17,11 @@ class Logo extends MyElement {
 
   connectedCallback() {
     const name = this.getAttribute('name')
+
+    if (!name) {
+      return
+    }
+
     const html = app.project.logos[name]
     if (html && this.shadowRoot) {
       this.shadowRoot.innerHTML = html
