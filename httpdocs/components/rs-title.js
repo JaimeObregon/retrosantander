@@ -22,12 +22,12 @@ class Title extends MyElement {
       max-width: 100%;
       margin: 0 auto;
       overflow: hidden;
+      text-overflow: '_';
       font-size: 20px;
       font-style: normal;
       font-weight: 600;
       color: var(--color-accent);
       text-align: center;
-      text-overflow: '_';
       white-space: nowrap;
       transition: width linear;
     }
@@ -61,6 +61,11 @@ class Title extends MyElement {
   default
   delay = { deleting: 5, typing: 30 }
   cite
+
+  delay = {
+    deleting: 5,
+    typing: 30,
+  }
 
   onLanguagechange() {
     this.default = i18n.get('title.default')

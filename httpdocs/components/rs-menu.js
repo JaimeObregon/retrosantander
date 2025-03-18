@@ -1,8 +1,8 @@
-import '../components/rs-theme-switcher.js'
 import { app } from '../modules/app.js'
 import { MyElement } from '../modules/element.js'
 import { css, html } from '../modules/strings.js'
 import './rs-language-picker.js'
+import './rs-theme-switcher.js'
 
 class Menu extends MyElement {
   static styles = css`
