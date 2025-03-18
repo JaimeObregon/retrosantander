@@ -147,9 +147,14 @@ class Panel extends MyElement {
       border-color: var(--color-yellow-500);
     }
 
-    aside rs-license-cc-by-sa {
+    aside .license {
       display: block;
-      margin-top: calc(2 * var(--gap));
+      padding: var(--space-medium);
+      margin: calc(2 * var(--gap)) 0 0;
+      font-size: 14px;
+      hyphens: auto;
+      background: var(--color-neutral-800);
+      border-radius: 5px;
     }
 
     @media (width <= 768px) {
@@ -448,10 +453,12 @@ class Panel extends MyElement {
       return
     }
 
-    if (details.license === 'cdis') {
-      this.footer.innerHTML = `<rs-license-cdis></rs-license-cdis>`
-    } else if (details.license === 'cc-by-sa') {
-      this.footer.innerHTML = `<rs-license-cc-by-sa></rs-license-cc-by-sa>`
+    const { license } = details
+
+    if (license) {
+      this.footer.innerHTML = html`
+        <rs-license-${license} class="license"></rs-license-${license}>
+      `
     }
 
     panel.classList.remove('hidden')

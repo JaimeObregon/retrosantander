@@ -59,7 +59,7 @@ class Title extends MyElement {
   static html = html`<cite></cite>`
 
   default
-  delay = { deleting: 5, typing: 30 }
+
   cite
 
   delay = {

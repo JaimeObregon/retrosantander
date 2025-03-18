@@ -1,31 +1,19 @@
 import { MyElement } from '../modules/element.js'
-import { css, html } from '../modules/strings.js'
+import { html } from '../modules/strings.js'
 
 class LicenseCCBYSA extends MyElement {
-  static styles = css`
-    p {
-      font-size: 16px;
-    }
+  static html = `<slot></slot>`
 
-    p a {
-      color: inherit;
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
-      text-decoration-style: dotted;
-    }
-
-    p a:hover {
-      text-decoration-style: solid;
-    }
-  `
-  static html = html`
-    <p>
+  connectedCallback() {
+    this.innerHTML = html`
       Con licencia
       <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es"
-        >CC-BY-SA</a
+        ><abbr title="Creative Commons Attribution Share-Alike"
+          >CC-BY-SA</abbr
+        ></a
       >.
-    </p>
-  `
+    `
+  }
 }
 
 if (!customElements.get('rs-license-cc-by-sa')) {
