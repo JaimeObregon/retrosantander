@@ -104,12 +104,7 @@ class Explorer extends MyElement {
       return
     }
 
-    const url = `notice.${app.language}.html`
-
-    const response = await fetch(url)
-    const text = await response.text()
-
-    this.innerHTML = html`<rs-notice class="hidden">${text}</rs-notice>`
+    this.innerHTML = html`<rs-notice class="hidden"></rs-notice>`
 
     this.notice = this.querySelector('rs-notice')
 
@@ -170,18 +165,9 @@ class Explorer extends MyElement {
   }
 
   onSearchcomplete(event) {
-    this.results = event.detail.results
-
     this.restore()
-
+    this.results = event.detail.results
     this.results.length ? this.appendItems() : this.clear()
-
-    if (!this.notice) {
-      return
-    }
-
-    const hidden = Boolean(this.results.length)
-    this.notice.classList.toggle('hidden', hidden)
   }
 
   onIntersect(intersections) {
