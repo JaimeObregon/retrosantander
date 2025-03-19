@@ -1,5 +1,7 @@
 import { app } from './app.js'
 
+const storageKey = 'language'
+
 const i18n = {
   languages: {
     es: 'Castellano',
@@ -10,27 +12,42 @@ const i18n = {
 
   translations: {},
 
-  setLanguage: () => {
-    const storageKey = app.storageKeys.language
+  setLanguage: (language) => {
+    if (!language) {
+      const preferred = [
+        ...new Set(
+          navigator.languages
+            .map((locale) => locale.match(/^../))
+            .filter((match) => match !== null)
+            .map((match) => match[0]),
+        ),
+      ]
 
-    const preferred = [
-      ...new Set(
-        navigator.languages
-          .map((locale) => locale.match(/^../))
-          .filter((match) => match !== null)
-          .map((match) => match[0]),
-      ),
-    ]
+      const matched = preferred.find((locale) =>
+        app.project.languages.includes(locale),
+      )
 
-    const matched =
-      preferred.find((language) => app.project.languages.includes(language)) ??
-      app.languages[0]
+      const stored = i18n.getLanguage()
 
-    const stored = localStorage.getItem(storageKey)
-    const language = stored ?? matched
+      const defaultLanguage = app.project.languages[0]
+
+      const language = stored ?? matched ?? defaultLanguage
+      i18n.setLanguage(language)
+
+      return
+    }
 
     localStorage.setItem(storageKey, language)
 
+    const event = new Event('languagechange')
+    window.dispatchEvent(event)
+
+    return language
+  },
+
+  getLanguage() {
+    const stored = localStorage.getItem(storageKey)
+    const language = stored ?? i18n.setLanguage()
     return language
   },
 
@@ -42,7 +59,7 @@ const i18n = {
 
   get: (token, replacements = {}) => {
     const entries = Object.entries(replacements)
-    const { language } = app
+    const language = i18n.getLanguage()
 
     if (!entries.length) {
       return i18n.translations[token][language]

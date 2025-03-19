@@ -3,23 +3,15 @@ import { i18n } from './i18n.js'
 const app = {
   results: [],
 
-  storageKeys: {
-    language: 'language',
-    theme: 'theme',
-  },
-
   init() {
     this.header = document.querySelector('rs-header')
     this.main = document.querySelector('main')
 
-    this.language = i18n.setLanguage()
+    i18n.setLanguage()
 
     const { location } = window
     const route = location.href.replace(location.origin, '')
     app.dispatch(route)
-
-    const languagechangeEvent = new Event('languagechange')
-    window.dispatchEvent(languagechangeEvent)
   },
 
   get isProduction() {

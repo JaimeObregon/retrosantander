@@ -48,11 +48,11 @@ class Search extends MyElement {
       font-weight: 500;
       appearance: none;
       cursor: pointer;
+      outline: none;
       background: var(--color-highlight-inverted);
       border: none;
       border: 1px solid var(--color-line);
       border-radius: 1rem;
-      outline: none;
       box-shadow: 0 0 0 1px var(--color-neutral-50);
       transition: background 350ms ease;
     }

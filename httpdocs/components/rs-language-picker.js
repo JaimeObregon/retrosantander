@@ -43,24 +43,19 @@ class LanguagePicker extends MyElement {
 
     const { languages } = app.project
 
-    if (languages.length < 2) {
-      this.form.setAttribute('hidden', '')
-    }
+    const language = i18n.getLanguage()
 
     this.form.innerHTML = languages
       .map(
-        (language) => html`
-          <label
-            ${language === app.language ? 'class="selected"' : ''}
-            title="${i18n.languages[language]}"
-          >
+        (locale) => html`
+          <label>
             <input
               name="language"
               type="radio"
-              value="${language}"
-              ${language === app.language ? 'checked' : ''}
+              value="${locale}"
+              ${locale === language ? 'checked' : ''}
             />
-            ${language}
+            ${i18n.languages[locale]}
           </label>
         `,
       )
@@ -72,27 +67,12 @@ class LanguagePicker extends MyElement {
       if (!this.form) {
         return
       }
-
-      const labels = [...this.form.querySelectorAll('label')]
-      labels.forEach((label) => {
-        const checked = label.querySelector('input:checked')
-        label.classList.toggle('selected', Boolean(checked))
-      })
-
       const input = this.form.querySelector('input:checked')
 
-      if (!(input instanceof HTMLInputElement)) {
-        return
+      if (input instanceof HTMLInputElement) {
+        const language = input.value
+        i18n.setLanguage(language)
       }
-
-      const storageKey = app.storageKeys.language
-
-      const value = input.value
-      app.language = value
-      localStorage.setItem(storageKey, value)
-
-      const event = new Event('languagechange')
-      window.dispatchEvent(event)
     })
   }
 }

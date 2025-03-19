@@ -41,8 +41,8 @@ class Explorer extends MyElement {
     }
 
     main rs-image:not(.selected):hover {
-      transition: transform ease-out 75ms;
       transform: scale(1.0125);
+      transition: transform ease-out 75ms;
     }
 
     main rs-image.hidden {

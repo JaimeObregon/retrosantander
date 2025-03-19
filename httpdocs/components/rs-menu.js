@@ -1,5 +1,6 @@
 import { app } from '../modules/app.js'
 import { MyElement } from '../modules/element.js'
+import { i18n } from '../modules/i18n.js'
 import { css, html } from '../modules/strings.js'
 import './rs-language-picker.js'
 import './rs-theme-switcher.js'
@@ -90,7 +91,9 @@ class Menu extends MyElement {
   article
 
   async onLanguagechange() {
-    const url = `about.${app.language}.html`
+    const language = i18n.getLanguage()
+
+    const url = `about.${language}.html`
     const response = await fetch(url)
     const html = await response.text()
 

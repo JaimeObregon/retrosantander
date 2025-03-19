@@ -1,4 +1,5 @@
 import { app } from './app.js'
+import { i18n } from './i18n.js'
 
 const folder = document.location.hostname.replace(/\.\w+$/, '')
 const { project } = await import(`../${folder}/project.js`)
@@ -23,7 +24,8 @@ window.addEventListener('popstate', () => {
 })
 
 window.addEventListener('languagechange', () => {
-  document.documentElement.lang = app.language
+  const language = i18n.getLanguage()
+  document.documentElement.lang = language
 })
 
 document.addEventListener('click', (event) => {

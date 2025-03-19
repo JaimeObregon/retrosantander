@@ -1,5 +1,5 @@
-import { app } from '../modules/app.js'
 import { MyElement } from '../modules/element.js'
+import { i18n } from '../modules/i18n.js'
 import { css } from '../modules/strings.js'
 
 class Notice extends MyElement {
@@ -17,7 +17,9 @@ class Notice extends MyElement {
   static html = `<slot></slot>`
 
   async loadNotice() {
-    const url = `notice.${app.language}.html`
+    const language = i18n.getLanguage()
+
+    const url = `notice.${language}.html`
     const response = await fetch(url)
     this.innerHTML = await response.text()
   }
