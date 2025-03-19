@@ -50,10 +50,10 @@ class Menu extends MyElement {
       font-size: 15px;
       font-weight: 400;
       background-color: var(--color-panel);
-      backdrop-filter: blur(var(--panel-blur));
       border-left: 1px solid var(--color-line);
       box-shadow: -5px 0 5px var(--color-box-shadow);
       opacity: 0;
+      backdrop-filter: blur(var(--panel-blur));
       transform: translateX(var(--menu-width));
     }
 

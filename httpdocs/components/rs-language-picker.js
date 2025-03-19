@@ -12,27 +12,27 @@ class LanguagePicker extends MyElement {
     form {
       display: flex;
       gap: var(--space-small);
-    }
 
-    label {
-      padding: 0 var(--space-small);
-      cursor: pointer;
-    }
+      label {
+        padding: 0 var(--space-small);
+        cursor: pointer;
 
-    label.selected {
-      color: var(--color-accent);
-    }
+        &:has(input[checked]) {
+          color: var(--color-accent);
+        }
 
-    label:hover {
-      text-decoration: underline;
-    }
+        &:hover {
+          text-decoration: underline;
+        }
 
-    input {
-      display: none;
+        input {
+          display: none;
+        }
+      }
     }
   `
 
-  static html = html`<form></form>`
+  static html = `<form></form>`
 
   connectedCallback() {
     this.form = this.shadowRoot?.querySelector('form')
