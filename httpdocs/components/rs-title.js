@@ -17,7 +17,7 @@ class Title extends MyElement {
       max-width: 100%;
       margin: 0 auto;
       overflow: hidden;
-      text-overflow: '_';
+      text-overflow: ellipsis;
       font-size: var(--type-large);
       font-style: normal;
       font-weight: 600;
@@ -25,10 +25,6 @@ class Title extends MyElement {
       text-align: center;
       white-space: nowrap;
       transition: width linear;
-
-      &.fixed {
-        text-overflow: ellipsis;
-      }
     }
 
     @media (width <= 1280px) {
@@ -92,14 +88,12 @@ class Title extends MyElement {
 
     this.cite.style.width = '0ch'
     this.cite.style.transitionDuration = `${duration}ms`
-    this.cite.classList.remove('fixed')
 
     setTimeout(() => {
       const duration = text.length * this.speeds.typing
       this.cite.innerText = text
       this.cite.style.width = `${text.length}ch`
       this.cite.style.transitionDuration = `${duration}ms`
-      setTimeout(() => this.cite.classList.add('fixed'), duration)
     }, duration)
   }
 }
