@@ -15,8 +15,6 @@ await Promise.all([
   import('../components/rs-logo.js'),
 ])
 
-app.init()
-
 window.addEventListener('popstate', () => {
   const { location } = window
   const route = location.href.replace(location.origin, '')
@@ -27,6 +25,8 @@ window.addEventListener('languagechange', () => {
   const language = i18n.getLanguage()
   document.documentElement.lang = language
 })
+
+app.init()
 
 document.addEventListener('click', (event) => {
   const link = event

@@ -12,43 +12,40 @@ const i18n = {
 
   translations: {},
 
-  setLanguage: (language) => {
-    if (!language) {
-      const preferred = [
-        ...new Set(
-          navigator.languages
-            .map((locale) => locale.match(/^../))
-            .filter((match) => match !== null)
-            .map((match) => match[0]),
-        ),
-      ]
+  getPreferredLanguage() {
+    const preferred = [
+      ...new Set(
+        navigator.languages
+          .map((locale) => locale.match(/^../))
+          .filter((match) => match !== null)
+          .map((match) => match[0]),
+      ),
+    ]
 
-      const matched = preferred.find((locale) =>
-        app.project.languages.includes(locale),
-      )
+    const matched = preferred.find((locale) =>
+      app.project.languages.includes(locale),
+    )
 
-      const stored = i18n.getLanguage()
+    const defaultLanguage = app.project.languages[0]
 
-      const defaultLanguage = app.project.languages[0]
+    return matched ?? defaultLanguage
+  },
 
-      const language = stored ?? matched ?? defaultLanguage
-      i18n.setLanguage(language)
-
-      return
-    }
+  setLanguage: (locale) => {
+    const stored = i18n.getLanguage()
+    const preferred = i18n.getPreferredLanguage()
+    const language = locale ?? stored ?? preferred
 
     localStorage.setItem(storageKey, language)
 
     const event = new Event('languagechange')
     window.dispatchEvent(event)
-
-    return language
   },
 
   getLanguage() {
+    const preferred = i18n.getPreferredLanguage()
     const stored = localStorage.getItem(storageKey)
-    const language = stored ?? i18n.setLanguage()
-    return language
+    return stored ?? preferred
   },
 
   push: (translations) => {
