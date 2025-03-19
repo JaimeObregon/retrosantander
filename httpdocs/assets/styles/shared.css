@@ -116,7 +116,7 @@ rs-menu {
 }
 
 @media (width <= 1280px) {
-  html {
+  :root {
     --gap: 12px;
     --header-height: 58px;
   }
@@ -127,20 +127,20 @@ rs-menu {
 }
 
 @media (width <= 1024px) {
-  html {
+  :root {
     --panel-width: 20em;
     --header-height: 48px;
   }
 }
 
 @media (width <= 768px) {
-  html {
+  :root {
     --panel-width: 100%;
   }
 }
 
 @media (width <= 640px) {
-  html {
+  :root {
     --header-height: 42px;
   }
 }

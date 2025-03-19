@@ -12,6 +12,7 @@ class Menu extends MyElement {
     }
 
     button {
+      display: block;
       padding: 0;
       margin: 0 var(--gap);
       color: inherit;
@@ -32,7 +33,7 @@ class Menu extends MyElement {
     }
 
     button svg {
-      height: 25px;
+      height: calc(var(--header-height) - 2 * var(--gap));
       vertical-align: middle;
       fill: currentcolor;
       transition: transform 200ms ease;

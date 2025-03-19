@@ -11,11 +11,6 @@ class Title extends MyElement {
       overflow: hidden;
     }
 
-    ::selection {
-      color: var(--color-highlight-inverted);
-      background-color: var(--color-highlight);
-    }
-
     cite {
       box-sizing: border-box;
       display: block;
@@ -30,10 +25,10 @@ class Title extends MyElement {
       text-align: center;
       white-space: nowrap;
       transition: width linear;
-    }
 
-    cite.static {
-      text-overflow: ellipsis;
+      &.static {
+        text-overflow: ellipsis;
+      }
     }
 
     @media (width <= 1280px) {
@@ -62,7 +57,7 @@ class Title extends MyElement {
 
   cite
 
-  delay = {
+  speeds = {
     deleting: 5,
     typing: 30,
   }
@@ -99,14 +94,14 @@ class Title extends MyElement {
       return
     }
 
-    const duration = this.cite.innerText.length * this.delay.deleting
+    const duration = this.cite.innerText.length * this.speeds.deleting
 
     this.cite.style.width = '0ch'
     this.cite.style.transitionDuration = `${duration}ms`
     this.cite.classList.remove('static')
 
     setTimeout(() => {
-      const duration = text.length * this.delay.typing
+      const duration = text.length * this.speeds.typing
       this.cite.innerText = text
       this.cite.style.width = `${text.length}ch`
       this.cite.style.transitionDuration = `${duration}ms`
