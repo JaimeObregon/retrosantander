@@ -33,7 +33,7 @@ class Menu extends MyElement {
     }
 
     button svg {
-      height: calc(var(--header-height) - 2 * var(--gap));
+      height: calc(var(--header-height) - var(--space-large));
       vertical-align: middle;
       fill: currentcolor;
       transition: transform 200ms ease;

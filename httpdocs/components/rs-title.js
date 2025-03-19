@@ -18,7 +18,7 @@ class Title extends MyElement {
       margin: 0 auto;
       overflow: hidden;
       text-overflow: '_';
-      font-size: 20px;
+      font-size: var(--type-large);
       font-style: normal;
       font-weight: 600;
       color: var(--color-accent);
@@ -26,7 +26,7 @@ class Title extends MyElement {
       white-space: nowrap;
       transition: width linear;
 
-      &.static {
+      &.fixed {
         text-overflow: ellipsis;
       }
     }
@@ -40,13 +40,7 @@ class Title extends MyElement {
 
     @media (width <= 1024px) {
       cite {
-        font-size: 18px;
-      }
-    }
-
-    @media (width <= 768px) {
-      cite {
-        font-size: 15px;
+        font-size: var(--type-medium);
       }
     }
   `
@@ -98,14 +92,14 @@ class Title extends MyElement {
 
     this.cite.style.width = '0ch'
     this.cite.style.transitionDuration = `${duration}ms`
-    this.cite.classList.remove('static')
+    this.cite.classList.remove('fixed')
 
     setTimeout(() => {
       const duration = text.length * this.speeds.typing
       this.cite.innerText = text
       this.cite.style.width = `${text.length}ch`
       this.cite.style.transitionDuration = `${duration}ms`
-      setTimeout(() => this.cite.classList.add('static'), duration)
+      setTimeout(() => this.cite.classList.add('fixed'), duration)
     }, duration)
   }
 }
