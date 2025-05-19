@@ -1,5 +1,10 @@
 #!/usr/bin/env node
 
+// ! Esta función fue desarrollada con Node 18, que en 2025 ha llegado al final
+// ! de su ciclo de vida, y AWS ha dejado de soportarla. Es por ello que, en
+// ! abril de 2025, cambio el _runtime_ de AWS a Node 22, aunque esta función no
+// ! ha sido probada con esa versión.
+
 /**
  * Véase la documentación en `/docs/guregipuzkoa.md`.
  * Véas la API de `sharp` en https://sharp.pixelplumbing.com
