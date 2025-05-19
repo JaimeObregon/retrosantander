@@ -1,7 +1,7 @@
 import { app } from '../modules/app.js'
 import { MyElement } from '../modules/element.js'
 import { i18n } from '../modules/i18n.js'
-import { css, html } from '../modules/strings.js'
+import { css } from '../modules/strings.js'
 
 class Title extends MyElement {
   static styles = css`
@@ -18,9 +18,9 @@ class Title extends MyElement {
       margin: 0 auto;
       overflow: hidden;
       text-overflow: ellipsis;
-      font-size: var(--type-large);
+      font-family: var(--font-mono);
+      font-size: var(--type-small);
       font-style: normal;
-      font-weight: 600;
       color: var(--color-accent);
       text-align: center;
       white-space: nowrap;
@@ -36,24 +36,26 @@ class Title extends MyElement {
 
     @media (width <= 1024px) {
       cite {
-        font-size: var(--type-medium);
+        font-size: var(--type-x-small);
       }
     }
   `
 
-  static html = html`<cite></cite>`
+  static html = `<cite></cite>`
 
   default
-
   cite
-
   speeds = {
-    deleting: 5,
-    typing: 30,
+    deleting: 2,
+    typing: 8,
   }
 
   onLanguagechange() {
     this.default = i18n.get('title.default')
+    this.caption = this.default
+  }
+
+  onSearchcomplete() {
     this.caption = this.default
   }
 
@@ -65,19 +67,10 @@ class Title extends MyElement {
     })
 
     window.addEventListener('languagechange', this.onLanguagechange.bind(this))
-  }
-
-  get caption() {
-    return this.cite.innerText.trim()
+    window.addEventListener('searchcomplete', this.onSearchcomplete.bind(this))
   }
 
   set caption(caption) {
-    // TODO Revisar esto:
-    if (!caption) {
-      return
-    }
-    // END TODO
-
     const text = caption.trim().length ? caption.trim() : this.default
 
     if (this.cite.innerText === text) {

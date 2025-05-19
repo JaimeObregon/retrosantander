@@ -117,7 +117,13 @@ class Explorer extends MyElement {
 
     this.container.addEventListener('mouseover', (event) => {
       const id = event.target.getAttribute('id')
-      app.title = id ? database.find(id).title : ''
+      if (id) {
+        app.title = database.find(id).title
+      }
+    })
+
+    this.container.addEventListener('mouseout', () => {
+      app.title = ''
     })
 
     this.container.addEventListener('click', async (event) => {
