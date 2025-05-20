@@ -108,9 +108,9 @@ class Icon extends MyElement {
       &.icon {
         fill: none;
         stroke: currentcolor;
+        stroke-width: 2px;
         stroke-linecap: round;
         stroke-linejoin: round;
-        stroke-width: 2px;
       }
 
       &.logo {
