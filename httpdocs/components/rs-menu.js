@@ -14,29 +14,26 @@ class Menu extends MyElement {
     button {
       display: block;
       padding: 0;
-      margin: 0 var(--gap);
+      margin: 0 var(--space-medium);
       color: inherit;
       cursor: pointer;
       background: none;
       border: none;
-      transition:
-        transform 250ms,
-        color 250ms;
-    }
+      transition: var(--delay-medium);
 
-    button:hover {
-      color: var(--color-accent);
-    }
+      &:hover {
+        color: var(--color-accent);
+      }
 
-    button.open {
-      transform: rotate(90deg);
-    }
+      &.open {
+        transform: rotate(90deg);
+      }
 
-    button svg {
-      height: calc(var(--header-height) - var(--space-large));
-      vertical-align: middle;
-      fill: currentcolor;
-      transition: transform 200ms ease;
+      svg {
+        height: calc(var(--header-height) - var(--space-large));
+        vertical-align: middle;
+        fill: currentcolor;
+      }
     }
 
     article {
@@ -47,10 +44,11 @@ class Menu extends MyElement {
       width: 100%;
       max-width: var(--menu-width);
       height: calc(100vh - var(--header-height));
-      padding: var(--gap);
+      padding: var(--space-large);
       overflow: scroll;
-      font-size: 15px;
+      font-size: var(--type-small);
       font-weight: 400;
+      line-height: var(--line-height-condensed);
       background-color: var(--color-panel);
       border-left: 1px solid var(--color-line);
       box-shadow: -5px 0 5px var(--color-box-shadow);

@@ -7,7 +7,7 @@ class Title extends MyElement {
   static styles = css`
     :host {
       flex-grow: 1;
-      margin: 0 var(--gap);
+      margin: 0 var(--space-medium);
       overflow: hidden;
     }
 

@@ -11,7 +11,7 @@ class NotFound extends MyElement {
     }
 
     svg {
-      padding: var(--gap) 0;
+      padding: var(--space-medium) 0;
       fill: none;
       stroke: currentcolor;
     }
