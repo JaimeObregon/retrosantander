@@ -55,15 +55,12 @@ class Menu extends MyElement {
       opacity: 0;
       backdrop-filter: blur(var(--panel-blur));
       transform: translateX(var(--menu-width));
-    }
+      transition: var(--delay-large);
 
-    article[ready] {
-      transition: 350ms;
-    }
-
-    article.open {
-      opacity: 1;
-      transform: translateX(0);
+      &.open {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
 
     @media (width <= 640px) {
@@ -102,8 +99,6 @@ class Menu extends MyElement {
   connectedCallback() {
     this.hamburger = this.shadowRoot?.querySelector('button')
     this.article = this.shadowRoot?.querySelector('article')
-
-    setTimeout(() => this.article.setAttribute('ready', true), 350)
 
     this.hamburger.addEventListener('click', () => (this.open = !this.open))
 
