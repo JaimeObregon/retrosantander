@@ -257,10 +257,10 @@ class Search extends MyElement {
       this.label.classList.remove('open')
     })
 
-    // window.addEventListener('popstate', () => {
-    //   const url = new URL(document.location.href)
-    //   this.query = url.searchParams.get('q')
-    // })
+    window.addEventListener('popstate', () => {
+      const url = new URL(document.location.href)
+      this.query = url.searchParams.get('q')
+    })
 
     window.addEventListener('languagechange', this.onLanguagechange.bind(this))
   }
@@ -294,7 +294,7 @@ class Search extends MyElement {
     this.timeout = setTimeout(() => {
       const url = new URL(document.location.href)
       if (app.query !== url.searchParams.get('q')) {
-        // history.pushState(null, '', app.query ? `/?q=${app.query}` : '/')
+        history.pushState(null, '', app.query ? `/?q=${app.query}` : '/')
       }
 
       const detail = { results }
