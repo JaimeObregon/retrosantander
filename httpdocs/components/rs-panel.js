@@ -21,7 +21,7 @@ class Panel extends MyElement {
       width: 100%;
       max-width: var(--panel-width);
       height: calc(100% - var(--header-height));
-      padding: var(--gap);
+      padding: var(--space-medium);
       overflow: scroll;
       background-color: var(--color-panel);
       border-right: 1px solid var(--color-line);
@@ -37,10 +37,10 @@ class Panel extends MyElement {
 
       button {
         position: absolute;
-        top: 0.25em;
-        right: 0.25em;
-        width: 4em;
-        height: 4em;
+        top: var(--space-x-small);
+        right: var(--space-x-small);
+        width: var(--space-x-large);
+        height: var(--space-x-large);
         padding: 0;
         cursor: pointer;
         background: transparent;
@@ -54,9 +54,9 @@ class Panel extends MyElement {
 
         svg {
           display: block;
-          width: 25px;
+          width: var(--space-large);
           margin: auto;
-          color: var(--color-neutral-500);
+          color: var(--color-text-pale);
           stroke: currentcolor;
           stroke-width: 2px;
           transition: color ease-in-out var(--delay-small);
@@ -68,7 +68,7 @@ class Panel extends MyElement {
         }
 
         &:hover svg {
-          color: var(--color-neutral-400);
+          color: var(--color-text);
         }
       }
 
@@ -124,7 +124,7 @@ class Panel extends MyElement {
               border-radius: 100%;
 
               &.active {
-                border-color: var(--color-yellow-500);
+                border-color: var(--color-image-face);
               }
             }
           }
@@ -132,7 +132,7 @@ class Panel extends MyElement {
 
         &#objects ul {
           li.active {
-            color: var(--color-red-600);
+            color: var(--color-image-object);
           }
         }
       }
@@ -151,8 +151,8 @@ class Panel extends MyElement {
       .license {
         display: block;
         padding: var(--space-medium);
-        margin: calc(2 * var(--gap)) 0 0;
-        font-size: 14px;
+        margin: var(--space-medium) 0 0 0;
+        font-size: var(--type-x-small);
         line-height: var(--line-height-condensed);
         hyphens: auto;
         background: var(--color-neutral-800);
