@@ -28,14 +28,8 @@ class Search extends MyElement {
       position: relative;
       display: flex;
       align-items: center;
-      width: var(--width-closed);
       font-size: var(--type-small);
       font-weight: 400;
-      transition: var(--delay-large) ease;
-
-      &:focus-within {
-        width: var(--width-open);
-      }
 
       svg {
         position: absolute;
@@ -46,7 +40,7 @@ class Search extends MyElement {
       }
 
       input {
-        width: 100%;
+        width: var(--width-closed);
         height: var(--space-large);
         padding: 0 var(--space-medium) 0 var(--space-large);
         font-size: inherit;
@@ -57,7 +51,13 @@ class Search extends MyElement {
         background: var(--color-search-background);
         border: 1px solid var(--color-line);
         border-radius: 1em;
-        transition: background var(--delay-large) ease;
+        transition:
+          background var(--delay-large) ease,
+          width var(--delay-large) ease;
+
+        &:focus {
+          width: var(--width-open);
+        }
 
         &::placeholder {
           font-weight: 400;
@@ -137,43 +137,44 @@ class Search extends MyElement {
     }
 
     @media (width <= 1280px) {
-      label {
-        &:focus-within {
-          width: 18rem;
-        }
+      :host {
+        --width-open: 18em;
       }
     }
 
     @media (width <= 1024px) {
-      label {
-        width: 12rem;
-
-        &:focus-within {
-          width: 15rem;
-        }
+      :host {
+        --width-open: 15em;
       }
     }
 
     @media (width <= 768px) {
-      label {
-        width: 8rem;
-
-        &:focus-within {
-          width: 12rem;
-        }
+      :host {
+        --width-open: 12em;
       }
     }
 
     @media (width <= 640px) {
-      label {
-        width: 2rem;
+      :host {
+        --width-closed: var(--space-large);
+      }
+
+      label:not(:focus-within) {
+        input {
+          padding: 0;
+          color: transparent;
+
+          &::placeholder {
+            visibility: hidden;
+          }
+        }
       }
     }
   `
 
   static html = html`
     <label>
-      ${icon} <input type="search" name="q" autocomplete="off" />
+      ${icon} <input type="text" name="q" autocomplete="off" />
       <ul></ul>
     </label>
   `
