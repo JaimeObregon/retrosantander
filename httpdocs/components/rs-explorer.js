@@ -139,7 +139,9 @@ class Explorer extends MyElement {
         await image.getMetadata()
 
       image.areas = areas
-      this.panelData = { faces, objects, tags, details, exif }
+
+      // @ts-ignore
+      this.panel.data = { faces, objects, tags, details, exif }
     })
 
     document.addEventListener('keyup', (event) => {
@@ -206,7 +208,8 @@ class Explorer extends MyElement {
         (image) => !image.complete,
       ).length
 
-      this.progress = 1 - this.pending / images.length
+      // @ts-ignore
+      this.throbber.progress = 1 - this.pending / images.length
 
       if (!this.pending) {
         clearInterval(interval)
@@ -272,9 +275,7 @@ class Explorer extends MyElement {
           .reduce((array, current) => {
             array[current.dataset.column] = Math.max(
               array[current.dataset.column],
-              Number(current.dataset.top) +
-                current.getBoundingClientRect().height +
-                gap,
+              Number(current.dataset.top) + current.offsetHeight + gap,
             )
             return array
           }, Array(columns).fill(0))
@@ -379,7 +380,9 @@ class Explorer extends MyElement {
   restore() {
     this.container.style.transform = ''
     this.scale = 1
-    this.panelData = false
+
+    // @ts-ignore
+    this.panel.data = false
     ;[...this.container.querySelectorAll('rs-image')].forEach((image) => {
       image.classList.remove('selected')
       image.areas = false
@@ -410,20 +413,6 @@ class Explorer extends MyElement {
 
     const id = this.selected.getAttribute('id')
     app.title = layer ? this.activeLayer : database.find(id).title
-  }
-
-  // Muestra (`progress` > 0) u oculta (`progress` < 0) el indicador de carga.
-  // `progress` es un valor entre cero y uno, ambos inclusive, que determina
-  // el porcentaje de progreso.
-  set progress(progress) {
-    // @ts-ignore
-    this.throbber.progress = progress
-  }
-
-  // Abre o cierra, en función de `data`, el panel lateral con los datos de una imagen.
-  set panelData(data) {
-    // @ts-ignore
-    this.panel.data = data
   }
 }
 

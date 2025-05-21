@@ -21,11 +21,11 @@ class Image extends MyElement {
       margin: 0;
       overflow: hidden;
       font-size: 0;
+      border-radius: 4px;
 
       img {
         width: 100%;
         cursor: pointer;
-        border-radius: 4px;
         transition: ease-out var(--delay-large);
       }
 
@@ -33,7 +33,7 @@ class Image extends MyElement {
         position: absolute;
         cursor: pointer;
         border: 1px solid;
-        border-radius: 3px;
+        border-radius: 4px;
         opacity: 0;
         transition: ease-out var(--delay-large);
 
@@ -43,19 +43,27 @@ class Image extends MyElement {
         }
 
         &.face {
-          border-color: var(--color-yellow-500);
+          border-color: var(--color-image-face);
           border-radius: 100%;
 
           &.active {
-            background: #eab30870;
+            background: color-mix(
+              in srgb,
+              var(--color-image-face) 50%,
+              transparent
+            );
           }
         }
 
         &.object {
-          border-color: var(--color-accent);
+          border-color: var(--color-image-object);
 
           &.active {
-            background: #dc262670;
+            background: color-mix(
+              in srgb,
+              var(--color-image-object) 50%,
+              transparent
+            );
           }
         }
       }
@@ -121,25 +129,20 @@ class Image extends MyElement {
       return
     }
 
-    this.figure.innerHTML += areas
+    areas
       .sort((a, b) => (a.area < b.area ? 1 : -1))
-      .map(
-        (area) => html`
-          <div
-            class="${area.type}"
-            data-id="${area.id}"
-            data-name="${area.id}"
-            data-title="${area.title}"
-            style="
-            top: ${area.top}%;
-            left: ${area.left}%;
-            width: ${area.width}%;
-            height: ${area.height}%
-          "
-          ></div>
-        `,
-      )
-      .join('')
+      .forEach((area) => {
+        const div = document.createElement('div')
+        div.className = area.type
+        div.dataset.id = area.id
+        div.dataset.name = area.id
+        div.dataset.title = area.title
+        div.style.top = `${area.top}%`
+        div.style.left = `${area.left}%`
+        div.style.width = `${area.width}%`
+        div.style.height = `${area.height}%`
+        this.figure.append(div)
+      })
   }
 
   get complete() {
