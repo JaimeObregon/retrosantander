@@ -44,7 +44,6 @@ class Search extends MyElement {
         height: var(--space-large);
         padding: 0 var(--space-medium) 0 var(--space-large);
         font-size: inherit;
-        font-weight: 700;
         appearance: none;
         cursor: pointer;
         outline: none;
@@ -60,7 +59,6 @@ class Search extends MyElement {
         }
 
         &::placeholder {
-          font-weight: 400;
           color: var(--color-search-placeholder);
           opacity: 1;
         }
