@@ -6,7 +6,7 @@ class Logo extends MyElement {
   static styles = css`
     svg {
       display: block;
-      width: 100%;
+      width: auto;
       height: 100%;
       fill: currentcolor;
       fill-rule: evenodd;

@@ -33,6 +33,10 @@ html {
 body {
   margin: 0;
   line-height: var(--line-height-normal);
+
+  &:not(:has(rs-explorer)) rs-search {
+    display: none;
+  }
 }
 
 main {

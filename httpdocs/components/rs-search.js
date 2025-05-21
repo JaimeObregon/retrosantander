@@ -62,6 +62,7 @@ class Search extends MyElement {
         &::placeholder {
           font-weight: 400;
           color: var(--color-search-placeholder);
+          opacity: 1;
         }
 
         &:hover,
@@ -165,7 +166,7 @@ class Search extends MyElement {
           color: transparent;
 
           &::placeholder {
-            visibility: hidden;
+            opacity: 0;
           }
         }
       }
