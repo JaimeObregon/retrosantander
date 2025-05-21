@@ -16,6 +16,8 @@ class Explorer extends MyElement {
       align-items: center;
       justify-content: center;
       min-height: calc(100vh - var(--header-height));
+
+      --columns: 4;
     }
 
     main {
@@ -23,31 +25,24 @@ class Explorer extends MyElement {
       flex-grow: 1;
       width: 100%;
       margin: var(--image-gap) 0;
-      transition: transform 750ms ease;
+      transition: transform var(--delay-x-large) ease;
 
       &:empty {
         /* Para que <rs-notice> aparezca verticalmente centrado */
         flex-grow: 0;
       }
-    }
 
-    main rs-image {
-      position: absolute;
-      display: block;
-      width: 25%;
-      transition:
-        opacity ease-out 150ms,
-        transform ease-out 350ms 350ms;
-    }
+      rs-image {
+        position: absolute;
+        display: block;
+        width: calc(100% / var(--columns));
+        transition: opacity ease-out var(--delay-small);
 
-    main rs-image:not(.selected):hover {
-      transform: scale(1.0125);
-      transition: transform ease-out 75ms;
-    }
-
-    main rs-image.hidden {
-      pointer-events: none;
-      opacity: 0;
+        &.hidden {
+          pointer-events: none;
+          opacity: 0;
+        }
+      }
     }
 
     hr {
@@ -59,20 +54,20 @@ class Explorer extends MyElement {
     }
 
     @media (width <= 1280px) {
-      main rs-image {
-        width: calc(100% / 3);
+      :host {
+        --columns: 3;
       }
     }
 
     @media (width <= 768px) {
-      main rs-image {
-        width: 50%;
+      :host {
+        --columns: 2;
       }
     }
 
     @media (width <= 640px) {
-      main rs-image {
-        width: 100%;
+      :host {
+        --columns: 1;
       }
     }
   `
@@ -291,12 +286,15 @@ class Explorer extends MyElement {
         const top = heights[column]
         const left = column * (gap + width)
 
+        const height = image.offsetHeight
+
         image.dataset.column = column
         image.dataset.top = top
 
         image.style.top = `${top}px`
         image.style.left = `${left}px`
         image.style.width = `${width}px`
+        image.style.height = `${height}px`
 
         image.classList.remove('hidden')
       })

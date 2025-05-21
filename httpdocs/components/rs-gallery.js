@@ -37,14 +37,14 @@ class Gallery extends MyElement {
       background: none;
       border: 1px solid var(--color-backdrop);
       border-radius: 100%;
-      transition: 350ms ease;
+      transition: var(--delay-large) ease;
     }
 
     nav button:hover,
     nav button.active {
       background: var(--color-accent);
       border-color: var(--color-line);
-      transition: 150ms ease;
+      transition: var(--delay-small) ease;
       transform: scale(125%);
     }
   `

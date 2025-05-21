@@ -19,57 +19,61 @@ class Image extends MyElement {
     figure {
       position: relative;
       margin: 0;
+      overflow: hidden;
       font-size: 0;
+
+      img {
+        width: 100%;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: ease-out var(--delay-large);
+      }
+
+      div {
+        position: absolute;
+        cursor: pointer;
+        border: 1px solid;
+        border-radius: 3px;
+        opacity: 0;
+        transition: ease-out var(--delay-large);
+
+        &.active {
+          transition: ease-out var(--delay-small);
+          animation: pulsate ease-in-out alternate infinite 1s;
+        }
+
+        &.face {
+          border-color: var(--color-yellow-500);
+          border-radius: 100%;
+
+          &.active {
+            background: #eab30870;
+          }
+        }
+
+        &.object {
+          border-color: var(--color-accent);
+
+          &.active {
+            background: #dc262670;
+          }
+        }
+      }
     }
 
-    figure img {
-      width: 100%;
-      cursor: pointer;
-      border-radius: 4px;
+    :host(:not(.selected)) figure img:hover {
+      transform: scale(1.05);
+      transition: transform ease-out var(--delay-x-small);
     }
 
-    figure div {
-      position: absolute;
-      cursor: pointer;
-      border: 1px solid;
-      border-radius: 3px;
-      opacity: 0;
-      transition: ease-out 350ms;
-    }
-
-    :host(.selected) figure:hover div,
-    :host(.selected) figure.active div {
-      opacity: 1;
-    }
-
-    figure div.active {
-      transition: ease-out 150ms;
-      animation: pulsate ease-in-out alternate infinite 1s;
-    }
-
-    figure div.face {
-      border-color: var(--color-yellow-500);
-      border-radius: 100%;
-    }
-
-    figure div.object {
-      border-color: var(--color-accent);
-    }
-
-    figure div.face.active {
-      background: #eab30870;
-    }
-
-    figure div.object.active {
-      background: #dc262670;
+    :host(.selected) figure {
+      :is(&:hover, &.active) div {
+        opacity: 1;
+      }
     }
   `
 
-  static html = html`
-    <figure>
-      <img />
-    </figure>
-  `
+  static html = html`<figure><img /></figure>`
 
   figure
   img

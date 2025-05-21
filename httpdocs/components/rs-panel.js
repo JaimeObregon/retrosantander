@@ -28,134 +28,136 @@ class Panel extends MyElement {
       box-shadow: 5px 0 5px var(--color-box-shadow);
       opacity: 1;
       backdrop-filter: blur(var(--panel-blur));
-      transition: 350ms;
-    }
+      transition: var(--delay-large);
 
-    aside.hidden {
-      opacity: 0;
-      transform: translateX(calc(-1 * var(--panel-width)));
-    }
+      &.hidden {
+        opacity: 0;
+        transform: translateX(calc(-1 * var(--panel-width)));
+      }
 
-    aside button {
-      position: absolute;
-      top: 0.25em;
-      right: 0.25em;
-      width: 4em;
-      height: 4em;
-      padding: 0;
-      cursor: pointer;
-      background: transparent;
-      border: none;
-      border-radius: 100%;
-      transition: background ease-in-out 150ms;
-    }
+      button {
+        position: absolute;
+        top: 0.25em;
+        right: 0.25em;
+        width: 4em;
+        height: 4em;
+        padding: 0;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        border-radius: 100%;
+        transition: background ease-in-out var(--delay-small);
 
-    aside button:hover {
-      background: var(--color-neutral-800);
-    }
+        &:hover {
+          background: var(--color-neutral-800);
+        }
 
-    aside button svg {
-      display: block;
-      width: 25px;
-      margin: auto;
-      color: var(--color-neutral-500);
-      stroke: currentcolor;
-      stroke-width: 2px;
-      transition: color ease-in-out 150ms;
-    }
+        svg {
+          display: block;
+          width: 25px;
+          margin: auto;
+          color: var(--color-neutral-500);
+          stroke: currentcolor;
+          stroke-width: 2px;
+          transition: color ease-in-out var(--delay-small);
 
-    aside button:hover svg {
-      color: var(--color-neutral-400);
-    }
+          path {
+            stroke-linecap: round;
+            stroke-linejoin: round;
+          }
+        }
 
-    aside button svg path {
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
+        &:hover svg {
+          color: var(--color-neutral-400);
+        }
+      }
 
-    aside h2 {
-      margin: 0 0 10px;
-      font-size: 11px;
-      font-weight: 500;
-      color: var(--color-neutral-400);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
+      h2 {
+        margin: 0 0 10px;
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--color-neutral-400);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
 
-    aside ul {
-      padding: 0;
-      margin: 0;
-      line-height: 1.5;
-      list-style: none;
-    }
+      ul {
+        padding: 0;
+        margin: 0;
+        line-height: 1.5;
+        list-style: none;
+      }
 
-    aside section ul li {
-      display: inline;
-      width: calc(100% / ${facesPerRow});
-    }
+      section {
+        font-weight: 500;
 
-    aside a {
-      color: inherit;
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
-      text-decoration-style: dotted;
-    }
+        &.hidden {
+          display: none;
+        }
 
-    aside a:hover {
-      text-decoration-style: solid;
-    }
+        &:not(:first-of-type) h2 {
+          margin-top: calc(2 * var(--gap));
+        }
 
-    aside section {
-      font-weight: 500;
-    }
+        ul li {
+          display: inline;
+          width: calc(100% / ${facesPerRow});
+        }
 
-    aside section.hidden {
-      display: none;
-    }
+        &#faces ul {
+          --border-width: 3px;
 
-    aside section:not(:first-of-type) h2 {
-      margin-top: calc(2 * var(--gap));
-    }
+          display: flex;
+          flex-wrap: wrap;
 
-    aside section#faces ul {
-      --border-width: 3px;
+          li {
+            box-sizing: border-box;
+            padding: var(--border-width);
+            font-size: 0;
 
-      display: flex;
-      flex-wrap: wrap;
-    }
+            img {
+              box-sizing: border-box;
+              width: 100%;
+              height: 100%;
+              background-repeat: no-repeat;
+              border: var(--border-width) solid transparent;
+              border-radius: 100%;
 
-    aside section#faces ul li {
-      box-sizing: border-box;
-      padding: var(--border-width);
-      font-size: 0;
-    }
+              &.active {
+                border-color: var(--color-yellow-500);
+              }
+            }
+          }
+        }
 
-    aside section#objects ul li.active {
-      color: var(--color-red-600);
-    }
+        &#objects ul {
+          li.active {
+            color: var(--color-red-600);
+          }
+        }
+      }
 
-    aside section#faces ul li img {
-      box-sizing: border-box;
-      width: 100%;
-      height: 100%;
-      background-repeat: no-repeat;
-      border: var(--border-width) solid transparent;
-      border-radius: 100%;
-    }
+      a {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-style: dotted;
 
-    aside section#faces ul li img.active {
-      border-color: var(--color-yellow-500);
-    }
+        &:hover {
+          text-decoration-style: solid;
+        }
+      }
 
-    aside .license {
-      display: block;
-      padding: var(--space-medium);
-      margin: calc(2 * var(--gap)) 0 0;
-      font-size: 14px;
-      line-height: var(--line-height-condensed);
-      hyphens: auto;
-      background: var(--color-neutral-800);
-      border-radius: 5px;
+      .license {
+        display: block;
+        padding: var(--space-medium);
+        margin: calc(2 * var(--gap)) 0 0;
+        font-size: 14px;
+        line-height: var(--line-height-condensed);
+        hyphens: auto;
+        background: var(--color-neutral-800);
+        border-radius: 5px;
+      }
     }
 
     @media (width <= 768px) {
@@ -167,19 +169,19 @@ class Panel extends MyElement {
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
         box-shadow: 0 -5px 5px var(--color-box-shadow);
-      }
 
-      aside section#details dl {
-        display: flex;
-        flex-wrap: wrap;
-      }
+        section#details dl {
+          display: flex;
+          flex-wrap: wrap;
 
-      aside section#details dl dt {
-        width: 25px;
-      }
+          dt {
+            width: 25px;
+          }
 
-      aside section#details dl dd {
-        width: calc(50% - 25px);
+          dd {
+            width: calc(50% - 25px);
+          }
+        }
       }
     }
   `

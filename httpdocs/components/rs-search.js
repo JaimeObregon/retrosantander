@@ -260,7 +260,7 @@ class Search extends MyElement {
 
     window.addEventListener('popstate', () => {
       const url = new URL(document.location.href)
-      this.query = url.searchParams.get('q')
+      this.query = url.searchParams.get('q') ?? ''
     })
 
     window.addEventListener('languagechange', this.onLanguagechange.bind(this))
