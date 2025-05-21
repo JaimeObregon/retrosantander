@@ -30,7 +30,7 @@ class Menu extends MyElement {
       }
 
       svg {
-        height: calc(var(--header-height) - var(--space-large));
+        height: var(--space-large);
         vertical-align: middle;
         fill: currentcolor;
       }
@@ -44,9 +44,8 @@ class Menu extends MyElement {
       width: 100%;
       max-width: var(--menu-width);
       height: calc(100vh - var(--header-height));
-      padding: var(--space-large);
+      padding: var(--space-medium);
       overflow: scroll;
-      font-size: var(--type-small);
       font-weight: 400;
       line-height: var(--line-height-condensed);
       background-color: var(--color-panel);

@@ -86,14 +86,20 @@ rs-header > a {
 
 rs-menu {
   h1 {
-    padding: 0 var(--space-large);
-    margin: 0 calc(-1 * var(--space-large));
+    padding: 0 var(--space-medium);
+    margin: var(--space-large) calc(-1 * var(--space-medium)) 0;
+    font-size: var(--type-medium);
+    line-height: var(--line-height-normal);
     color: var(--color-highlight-inverted);
     background: var(--color-text);
 
-    &:not(:first-of-type) {
-      margin-top: var(--space-large);
+    &:first-of-type {
+      margin-top: calc(-1 * var(--space-medium));
     }
+  }
+
+  :is(p, ul) {
+    font-size: var(--type-small);
   }
 
   ul {

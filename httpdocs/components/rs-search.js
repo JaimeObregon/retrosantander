@@ -18,142 +18,155 @@ class Search extends MyElement {
   static styles = css`
     :host {
       flex-shrink: 0;
+
+      --max-suggestions: 10;
+      --width-closed: 10em;
+      --width-open: 22em;
     }
 
     label {
       position: relative;
       display: flex;
       align-items: center;
-      width: 15em;
-      font-size: 16px;
-      transition: width 350ms ease;
-    }
+      width: var(--width-closed);
+      font-size: var(--type-small);
+      font-weight: 400;
+      transition: var(--delay-large) ease;
 
-    label:focus-within {
-      width: 22em;
-    }
+      &:focus-within {
+        width: var(--width-open);
+      }
 
-    label svg {
-      position: absolute;
-      left: 0.65em;
-      width: 1em;
-      pointer-events: none;
-      fill: var(--color-text-pale);
-    }
+      svg {
+        position: absolute;
+        left: var(--space-small);
+        height: 55%;
+        pointer-events: none;
+        fill: var(--color-search-placeholder);
+      }
 
-    label input {
-      width: 100%;
-      padding: 0.35em 0.25em 0.35em 2.25em;
-      font-size: inherit;
-      font-weight: 500;
-      appearance: none;
-      cursor: pointer;
-      outline: none;
-      background: var(--color-highlight-inverted);
-      border: none;
-      border: 1px solid var(--color-line);
-      border-radius: 1rem;
-      box-shadow: 0 0 0 1px var(--color-neutral-50);
-      transition: background 350ms ease;
-    }
+      input {
+        width: 100%;
+        height: var(--space-large);
+        padding: 0 var(--space-medium) 0 var(--space-large);
+        font-size: inherit;
+        font-weight: 700;
+        appearance: none;
+        cursor: pointer;
+        outline: none;
+        background: var(--color-search-background);
+        border: 1px solid var(--color-line);
+        border-radius: 1em;
+        transition: background var(--delay-large) ease;
 
-    label input:hover,
-    label input:focus {
-      background: white;
-    }
+        &::placeholder {
+          font-weight: 400;
+          color: var(--color-search-placeholder);
+        }
 
-    label.open input:focus {
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
-    }
+        &:hover,
+        &:focus {
+          background: var(--color-search-highlighted);
+        }
+      }
 
-    label ul {
-      position: absolute;
-      top: 29px;
-      left: 0;
-      z-index: 1;
-      box-sizing: border-box;
-      display: none;
-      width: 100%;
-      max-height: 70vh;
-      padding: 0;
-      margin: 0;
-      overflow: scroll;
-      font-weight: 500;
-      color: var(--color-neutral-800);
-      list-style: none;
-      background: white;
+      &.open {
+        input:focus {
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0;
+        }
 
-      /* box-shadow: 0 1px 0 1px var(--color-backdrop); */
-      border: 1px solid var(--color-line);
-      border-top: none;
-      border-bottom-right-radius: 1rem;
-      border-bottom-left-radius: 1rem;
-    }
+        ul {
+          display: block;
+        }
+      }
 
-    label.open ul {
-      display: block;
-    }
+      ul {
+        position: absolute;
+        top: calc(var(--space-large) - 1px);
+        left: 0;
+        z-index: 1;
+        box-sizing: border-box;
+        display: none;
+        width: 100%;
+        max-height: min(
+          calc(var(--max-suggestions) * var(--space-large)),
+          calc(100vh - 2 * var(--space-large))
+        );
+        padding: 0;
+        margin: 0;
+        overflow: scroll;
+        color: var(--color-search-placeholder);
+        list-style: none;
+        background: var(--color-search-highlighted);
+        border: 1px solid var(--color-line);
+        border-top: none;
+        border-bottom-right-radius: 1em;
+        border-bottom-left-radius: 1em;
 
-    label ul li a {
-      display: block;
-      padding: 8px var(--gap) 8px 35px;
-      color: inherit;
-      text-decoration: none;
-    }
+        li {
+          a {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 0 var(--space-small) 0 var(--space-large);
+            line-height: var(--space-large);
+            color: inherit;
+            text-decoration: none;
 
-    label ul li a.selected {
-      color: var(--color-accent);
-      background: var(--color-background);
-    }
+            &.selected {
+              color: var(--color-highlight-inverted);
+              background: var(--color-text-pale);
+            }
 
-    label ul li a svg {
-      position: absolute;
-    }
+            svg {
+              position: absolute;
+            }
 
-    label ul li a mark {
-      font-weight: 700;
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
-      text-decoration-style: dotted;
-      background: inherit;
+            mark {
+              font-weight: 700;
+              text-decoration: underline;
+              text-decoration-thickness: 2px;
+              text-decoration-style: dotted;
+              text-underline-offset: 3px;
+              background: inherit;
+            }
+          }
+        }
+      }
     }
 
     @media (width <= 1280px) {
       label {
-        font-size: 15px;
-      }
-
-      label:focus-within {
-        width: 18rem;
+        &:focus-within {
+          width: 18rem;
+        }
       }
     }
 
     @media (width <= 1024px) {
       label {
         width: 12rem;
-      }
 
-      label:focus-within {
-        width: 15rem;
+        &:focus-within {
+          width: 15rem;
+        }
       }
     }
 
     @media (width <= 768px) {
       label {
         width: 8rem;
-        font-size: 14px;
-      }
 
-      label:focus-within {
-        width: 12rem;
+        &:focus-within {
+          width: 12rem;
+        }
       }
     }
 
     @media (width <= 640px) {
       label {
         width: 2rem;
-        font-size: 13px;
       }
     }
   `
