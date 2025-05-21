@@ -14,7 +14,7 @@
     stroke-width: 4;
     stroke-linecap: round;
     stroke-linejoin: round;
-    transition: fill 500ms;
+    transition: fill var(--delay-x-large);
   }
 
   rs-map svg g:not(.inert) {
@@ -23,7 +23,7 @@
 
   rs-map svg g:not(.inert):hover path {
     fill: var(--color-accent);
-    transition: fill 150ms;
+    transition: fill var(--delay-small);
     cursor: pointer;
   }
 
