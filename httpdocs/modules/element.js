@@ -1,4 +1,6 @@
 class MyElement extends HTMLElement {
+  #listeners = []
+
   constructor() {
     super()
 
@@ -18,6 +20,19 @@ class MyElement extends HTMLElement {
     if (html) {
       shadowRoot.innerHTML = html
     }
+  }
+
+  disconnectedCallback() {
+    this.#listeners.forEach(({ target, type, handler, options }) => {
+      target.removeEventListener(type, handler, options)
+    })
+
+    this.#listeners = []
+  }
+
+  myAddEventListener(target, type, handler, options) {
+    target.addEventListener(type, handler, options)
+    this.#listeners.push({ target, type, handler, options })
   }
 }
 

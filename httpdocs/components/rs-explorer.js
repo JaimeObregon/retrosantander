@@ -110,18 +110,18 @@ class Explorer extends MyElement {
 
     observer.observe(this.hr)
 
-    this.container.addEventListener('mouseover', (event) => {
+    this.onMouseover = (event) => {
       const id = event.target.getAttribute('id')
       if (id) {
         app.title = database.find(id).title
       }
-    })
+    }
 
-    this.container.addEventListener('mouseout', () => {
+    this.onMouseout = () => {
       app.title = ''
-    })
+    }
 
-    this.container.addEventListener('click', async (event) => {
+    this.onClick = async (event) => {
       const selected = this.container.querySelector('rs-image.selected')
       selected && (selected.areas = false)
 
@@ -142,14 +142,28 @@ class Explorer extends MyElement {
 
       // @ts-ignore
       this.panel.data = { faces, objects, tags, details, exif }
-    })
+    }
 
-    document.addEventListener('keyup', (event) => {
+    this.onKeyup = (event) => {
       event.key === 'Escape' && this.restore()
-    })
+    }
 
-    window.addEventListener('resize', this.arrange.bind(this))
-    window.addEventListener('searchcomplete', this.onSearchcomplete.bind(this))
+    this.onResize = () => {
+      this.arrange()
+    }
+
+    this.onSearchcomplete = (event) => {
+      this.restore()
+      this.results = event.detail.results
+      this.results.length ? this.appendItems() : this.clear()
+    }
+
+    this.myAddEventListener(this.container, 'mouseover', this.onMouseover)
+    this.myAddEventListener(this.container, 'mouseout', this.onMouseout)
+    this.myAddEventListener(this.container, 'click', this.onClick)
+    this.myAddEventListener(document, 'keyup', this.onKeyup)
+    this.myAddEventListener(window, 'resize', this.onResize)
+    this.myAddEventListener(window, 'searchcomplete', this.onSearchcomplete)
   }
 
   async attributeChangedCallback(name, previous, current) {
@@ -165,12 +179,6 @@ class Explorer extends MyElement {
 
   static get observedAttributes() {
     return ['index']
-  }
-
-  onSearchcomplete(event) {
-    this.restore()
-    this.results = event.detail.results
-    this.results.length ? this.appendItems() : this.clear()
   }
 
   onIntersect(intersections) {

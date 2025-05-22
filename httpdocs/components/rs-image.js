@@ -105,21 +105,24 @@ class Image extends MyElement {
     this.img.setAttribute('src', src)
     this.img.setAttribute('alt', escape(details.title))
 
-    this.figure.addEventListener('mouseover', (event) => {
+    this.onMouseover = (event) => {
       const isDiv = event.target instanceof HTMLDivElement
       if (!isDiv) {
         return
       }
 
       this.explorer.activeLayer = event.target.dataset.id
-    })
+    }
 
-    this.figure.addEventListener('mouseout', (event) => {
+    this.onMouseout = (event) => {
       const isDiv = event.target instanceof HTMLDivElement
       if (isDiv) {
         this.explorer.activeLayer = false
       }
-    })
+    }
+
+    this.myAddEventListener(this.figure, 'mouseover', this.onMouseover)
+    this.myAddEventListener(this.figure, 'mouseout', this.onMouseout)
   }
 
   set areas(areas) {

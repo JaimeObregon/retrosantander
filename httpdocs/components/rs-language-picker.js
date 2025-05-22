@@ -61,9 +61,9 @@ class LanguagePicker extends MyElement {
       )
       .join('')
 
-    this.form.addEventListener('click', (event) => event.stopPropagation())
+    this.onClick = (event) => event.stopPropagation()
 
-    this.form.addEventListener('change', () => {
+    this.onChange = (event) => {
       if (!this.form) {
         return
       }
@@ -73,7 +73,10 @@ class LanguagePicker extends MyElement {
         const language = input.value
         i18n.setLanguage(language)
       }
-    })
+    }
+
+    this.myAddEventListener(this.form, 'click', this.onClick)
+    this.myAddEventListener(this.form, 'change', this.onChange)
   }
 }
 

@@ -119,7 +119,7 @@ class Collections extends MyElement {
       )
       .join('')
 
-    this.nav.addEventListener('click', async (event) => {
+    this.onClick = async (event) => {
       if (event.target.nodeName !== 'A') {
         return
       }
@@ -144,7 +144,9 @@ class Collections extends MyElement {
       const contents = await response.text()
 
       this.article.innerHTML = contents
-    })
+    }
+
+    this.myAddEventListener(this.nav, 'click', this.onClick)
   }
 }
 

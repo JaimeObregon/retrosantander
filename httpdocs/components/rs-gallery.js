@@ -82,7 +82,7 @@ class Gallery extends MyElement {
 
     setInterval(this.next.bind(this), this.delay)
 
-    document.addEventListener('keydown', (event) => {
+    this.onKeydown = (event) => {
       if (event.key === 'ArrowLeft') {
         this.previous()
         event.preventDefault()
@@ -90,16 +90,19 @@ class Gallery extends MyElement {
         this.next()
         event.preventDefault()
       }
-    })
+    }
 
-    this.nav.addEventListener('click', (event) => {
+    this.onClick = (event) => {
       if (event.target.nodeName !== 'BUTTON') {
         return
       }
 
       const buttons = [...this.nav.querySelectorAll('button')]
       this.current = buttons.findIndex((button) => button === event.target)
-    })
+    }
+
+    this.myAddEventListener(document, 'keydown', this.onKeydown)
+    this.myAddEventListener(this.nav, 'click', this.onClick)
   }
 
   next() {
