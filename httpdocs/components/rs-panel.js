@@ -223,36 +223,6 @@ class Panel extends MyElement {
     </aside>
   `
 
-  onLanguagechange() {
-    const tagsHeading = this.aside?.querySelector('section#tags h2')
-    const exifHeading = this.aside?.querySelector('section#exif h2')
-    const facesHeading = this.aside?.querySelector('section#faces h2')
-    const objectsHeading = this.aside?.querySelector('section#objects h2')
-
-    if (!tagsHeading || !exifHeading || !facesHeading || !objectsHeading) {
-      return
-    }
-
-    tagsHeading.innerHTML = i18n.get('panel.tags')
-    exifHeading.innerHTML = i18n.get('panel.exif')
-
-    if (!this.metadata) {
-      return
-    }
-
-    const { faces, objects } = this.metadata
-
-    faces.innerHTML = i18n.get(
-      faces.length > 1 ? 'panel.faces.many' : 'panel.faces.one',
-      { count: faces.length },
-    )
-
-    objectsHeading.innerHTML = i18n.get(
-      objects.length > 1 ? 'panel.objects.many' : 'panel.objects.one',
-      { count: objects.length },
-    )
-  }
-
   async connectedCallback() {
     i18n.push({
       'panel.faces.many': {
@@ -311,9 +281,9 @@ class Panel extends MyElement {
       return
     }
 
-    this.button.addEventListener('click', () => this.explorer.restore())
+    this.onClick = () => this.explorer.restore()
 
-    this.aside.addEventListener('mouseover', (event) => {
+    this.onMouseover = (event) => {
       if (!(event.target instanceof HTMLElement)) {
         return
       }
@@ -321,9 +291,9 @@ class Panel extends MyElement {
       if (event.target.dataset.id) {
         this.explorer.activeLayer = event.target.dataset.id
       }
-    })
+    }
 
-    this.aside.addEventListener('mouseout', (event) => {
+    this.onMouseout = (event) => {
       if (!(event.target instanceof HTMLElement)) {
         return
       }
@@ -331,9 +301,42 @@ class Panel extends MyElement {
       if (event.target.dataset.id) {
         this.explorer.activeLayer = false
       }
-    })
+    }
 
-    window.addEventListener('languagechange', this.onLanguagechange.bind(this))
+    this.onLanguagechange = () => {
+      const tagsHeading = this.aside?.querySelector('section#tags h2')
+      const exifHeading = this.aside?.querySelector('section#exif h2')
+      const facesHeading = this.aside?.querySelector('section#faces h2')
+      const objectsHeading = this.aside?.querySelector('section#objects h2')
+
+      if (!tagsHeading || !exifHeading || !facesHeading || !objectsHeading) {
+        return
+      }
+
+      tagsHeading.innerHTML = i18n.get('panel.tags')
+      exifHeading.innerHTML = i18n.get('panel.exif')
+
+      if (!this.metadata) {
+        return
+      }
+
+      const { faces, objects } = this.metadata
+
+      faces.innerHTML = i18n.get(
+        faces.length > 1 ? 'panel.faces.many' : 'panel.faces.one',
+        { count: faces.length },
+      )
+
+      objectsHeading.innerHTML = i18n.get(
+        objects.length > 1 ? 'panel.objects.many' : 'panel.objects.one',
+        { count: objects.length },
+      )
+    }
+
+    this.myAddEventListener(this.button, 'click', this.onClick)
+    this.myAddEventListener(this.aside, 'mouseover', this.onMouseover)
+    this.myAddEventListener(this.aside, 'mouseout', this.onMouseout)
+    this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
   }
 
   set activeLayer(id) {

@@ -134,14 +134,16 @@ class ThemeSwitcher extends MyElement {
 
     this.theme = stored === 'light' || stored === 'dark' ? stored : system
 
-    this.changeMediaHandler = (event) => {
+    this.onChangeMedia = (event) => {
       const dark = event.matches
       this.theme = dark ? 'dark' : 'light'
     }
 
-    window
-      .matchMedia(mediaQuery)
-      .addEventListener('change', this.changeMediaHandler)
+    this.myAddEventListener(
+      window.matchMedia(mediaQuery),
+      'change',
+      this.onChangeMedia,
+    )
   }
 
   get theme() {
@@ -156,20 +158,15 @@ class ThemeSwitcher extends MyElement {
     this.isDark = value === 'dark'
   }
 
-  clickHandler(event) {
-    this.theme = this.theme === 'light' ? 'dark' : 'light'
-    event.stopPropagation()
-  }
-
   connectedCallback() {
-    this.button = this.shadowRoot?.querySelector('button')
-    this.button?.addEventListener('click', this.clickHandler.bind(this))
-  }
+    this.onClick = (event) => {
+      this.theme = this.theme === 'light' ? 'dark' : 'light'
+      event.stopPropagation()
+    }
 
-  disconnectedCallback() {
-    window
-      .matchMedia(mediaQuery)
-      .removeEventListener('change', this.changeMediaHandler)
+    this.button = this.shadowRoot?.querySelector('button')
+
+    this.myAddEventListener(this.button, 'click', this.onClick)
   }
 }
 
