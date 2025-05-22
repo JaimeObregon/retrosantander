@@ -96,7 +96,7 @@ class Panel extends MyElement {
         }
 
         &:not(:first-of-type) h2 {
-          margin-top: calc(2 * var(--gap));
+          margin-top: var(--space-large);
         }
 
         ul li {

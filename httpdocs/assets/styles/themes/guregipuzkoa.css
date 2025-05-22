@@ -150,3 +150,24 @@ ul li::before {
   font-size: var(--type-large);
   content: '–';
 }
+
+rs-menu {
+  rs-theme-switcher {
+    display: inline-block;
+  }
+
+  nav {
+    display: flex;
+    height: 8em;
+    margin-bottom: var(--gap);
+
+    a {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      width: 50%;
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}

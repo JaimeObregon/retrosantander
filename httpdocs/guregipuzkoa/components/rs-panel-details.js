@@ -16,7 +16,7 @@ class PanelDetails extends MyElement {
       display: grid;
       grid-template-rows: auto;
       grid-template-columns: 25px auto;
-      row-gap: calc(var(--gap) / 3);
+      row-gap: var(--space-small);
       margin: 0;
 
       dd {

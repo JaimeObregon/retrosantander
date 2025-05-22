@@ -1,5 +1,5 @@
 import { MyElement } from '../modules/element.js'
-import { css, html } from '../modules/strings.js'
+import { css } from '../modules/strings.js'
 import { app } from '../modules/app.js'
 
 class Logo extends MyElement {
@@ -13,7 +13,7 @@ class Logo extends MyElement {
     }
   `
 
-  static html = html``
+  static html = ``
 
   connectedCallback() {
     const name = this.getAttribute('name')
