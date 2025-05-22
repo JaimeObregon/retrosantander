@@ -12,7 +12,7 @@ class Map extends MyElement {
       return
     }
 
-    svg.addEventListener('click', (event) => {
+    this.onClick = (event) => {
       if (!(event.target instanceof Element)) {
         return
       }
@@ -27,9 +27,9 @@ class Map extends MyElement {
 
       history.pushState(null, '', url)
       app.dispatch(url)
-    })
+    }
 
-    svg.addEventListener('mouseover', (event) => {
+    this.onMouseover = (event) => {
       if (
         !(event.target instanceof Element) ||
         event.target.nodeName !== 'path'
@@ -38,11 +38,15 @@ class Map extends MyElement {
       }
 
       app.title = event.target.closest('g')?.dataset.title
-    })
+    }
 
-    svg.addEventListener('mouseout', () => {
+    this.onMouseout = () => {
       app.title = ''
-    })
+    }
+
+    this.myAddEventListener(svg, 'click', this.onClick)
+    this.myAddEventListener(svg, 'mouseover', this.onMouseover)
+    this.myAddEventListener(svg, 'mouseout', this.onMouseout)
   }
 }
 

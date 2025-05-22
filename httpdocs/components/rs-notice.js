@@ -24,20 +24,21 @@ class Notice extends MyElement {
     this.innerHTML = await response.text()
   }
 
-  onLanguagechange() {
-    this.loadNotice()
-  }
-
-  onSearchcomplete(event) {
-    const { results } = event.detail
-    const hidden = Boolean(results.length)
-    this.classList.toggle('hidden', hidden)
-  }
-
   connectedCallback() {
     this.loadNotice()
-    window.addEventListener('languagechange', this.onLanguagechange.bind(this))
-    window.addEventListener('searchcomplete', this.onSearchcomplete.bind(this))
+
+    this.onLanguagechange = () => {
+      this.loadNotice()
+    }
+
+    this.onSearchcomplete = (event) => {
+      const { results } = event.detail
+      const hidden = Boolean(results.length)
+      this.classList.toggle('hidden', hidden)
+    }
+
+    this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
+    this.myAddEventListener(window, 'searchcomplete', this.onSearchcomplete)
   }
 }
 

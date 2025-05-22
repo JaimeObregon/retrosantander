@@ -185,10 +185,6 @@ class Search extends MyElement {
   value = ''
   ul
 
-  onLanguagechange() {
-    this.input.setAttribute('placeholder', i18n.get('search.placeholder'))
-  }
-
   connectedCallback() {
     this.label = this.shadowRoot?.querySelector('label')
     this.input = this.shadowRoot?.querySelector('input')
@@ -203,7 +199,7 @@ class Search extends MyElement {
       },
     })
 
-    document.addEventListener('keydown', (event) => {
+    this.onKeydown = (event) => {
       if (event.key.length === 1 || event.key === 'Backspace') {
         this.input.focus()
       }
@@ -228,9 +224,9 @@ class Search extends MyElement {
       })
 
       event.preventDefault()
-    })
+    }
 
-    this.ul.addEventListener('mouseover', (event) => {
+    this.onMouseover = (event) => {
       const li = event.target.closest('li')
       if (!li) {
         return
@@ -239,29 +235,39 @@ class Search extends MyElement {
       this.selected = this.results
         .map((result) => result.innerText)
         .indexOf(li.innerText)
-    })
+    }
 
-    this.input.addEventListener('input', () => {
+    this.onInput = () => {
       this.query = this.input.value
-    })
+    }
 
-    this.input.addEventListener('focus', () => {
+    this.onFocus = () => {
       this.label.classList.toggle('open', this.results?.length)
 
       const end = this.input.value.length
       this.input.setSelectionRange(end, end)
-    })
+    }
 
-    this.input.addEventListener('blur', () => {
+    this.onBlur = () => {
       this.label.classList.remove('open')
-    })
+    }
 
-    window.addEventListener('popstate', () => {
+    this.onPopstate = () => {
       const url = new URL(document.location.href)
       this.query = url.searchParams.get('q') ?? ''
-    })
+    }
 
-    window.addEventListener('languagechange', this.onLanguagechange.bind(this))
+    this.onLanguagechange = () => {
+      this.input.setAttribute('placeholder', i18n.get('search.placeholder'))
+    }
+
+    this.myAddEventListener(document, 'keydown', this.onKeydown)
+    this.myAddEventListener(this.ul, 'mouseover', this.onMouseover)
+    this.myAddEventListener(this.input, 'input', this.onInput)
+    this.myAddEventListener(this.input, 'focus', this.onFocus)
+    this.myAddEventListener(this.input, 'blur', this.onBlur)
+    this.myAddEventListener(window, this.onPopstate)
+    this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
   }
 
   // Devuelve el término de la búsqueda actual

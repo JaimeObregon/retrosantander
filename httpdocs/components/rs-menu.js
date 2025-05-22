@@ -85,31 +85,34 @@ class Menu extends MyElement {
   hamburger
   article
 
-  async onLanguagechange() {
-    const language = i18n.getLanguage()
-
-    const url = `about.${language}.html`
-    const response = await fetch(url)
-    const html = await response.text()
-
-    app.header.menu.innerHTML = html
-  }
-
   connectedCallback() {
     this.hamburger = this.shadowRoot?.querySelector('button')
     this.article = this.shadowRoot?.querySelector('article')
 
-    this.hamburger.addEventListener('click', () => (this.open = !this.open))
+    this.onHamburgerClick = () => (this.open = !this.open)
 
-    document.addEventListener('click', (event) => {
+    this.onClick = (event) => {
       event.target !== this && (this.open = false)
-    })
+    }
 
-    document.addEventListener('keyup', (event) => {
+    this.onKeyup = (event) => {
       event.key === 'Escape' && (this.open = false)
-    })
+    }
 
-    window.addEventListener('languagechange', this.onLanguagechange.bind(this))
+    this.onLanguagechange = async () => {
+      const language = i18n.getLanguage()
+
+      const url = `about.${language}.html`
+      const response = await fetch(url)
+      const html = await response.text()
+
+      app.header.menu.innerHTML = html
+    }
+
+    this.myAddEventListener(this.hamburger, 'click', this.onHamburgerClick)
+    this.myAddEventListener(document, 'click', this.onClick)
+    this.myAddEventListener(document, 'keyup', this.onKeyup)
+    this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
   }
 
   get open() {
