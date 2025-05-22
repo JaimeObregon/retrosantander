@@ -103,12 +103,12 @@ class Explorer extends MyElement {
 
     this.notice = this.querySelector('rs-notice')
 
-    const observer = new IntersectionObserver(this.onIntersect.bind(this), {
+    this.observer = new IntersectionObserver(this.onIntersect.bind(this), {
       rootMargin: '0px',
       threshold: 0,
     })
 
-    observer.observe(this.hr)
+    this.observer.observe(this.hr)
 
     this.onMouseover = (event) => {
       const id = event.target.getAttribute('id')
@@ -166,6 +166,14 @@ class Explorer extends MyElement {
     this.myAddEventListener(window, 'searchcomplete', this.onSearchcomplete)
   }
 
+  disconnectedCallback() {
+    if (this.interval) {
+      clearTimeout(this.interval)
+    }
+
+    this.observer?.disconnect()
+  }
+
   async attributeChangedCallback(name, previous, current) {
     if (name !== 'index') {
       return
@@ -211,7 +219,7 @@ class Explorer extends MyElement {
       .map((id) => `<rs-image id="${id}" class="hidden"></rs-image>`)
       .join('')
 
-    const interval = setInterval(() => {
+    this.interval = setInterval(() => {
       this.pending = [...this.container.querySelectorAll('rs-image')].filter(
         (image) => !image.complete,
       ).length
@@ -220,7 +228,7 @@ class Explorer extends MyElement {
       this.throbber.progress = 1 - this.pending / images.length
 
       if (!this.pending) {
-        clearInterval(interval)
+        clearInterval(this.interval)
         this.arrange()
       }
     }, this.frequency)

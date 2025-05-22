@@ -22,30 +22,29 @@ class Gallery extends MyElement {
 
     nav {
       position: absolute;
-      bottom: var(--gap);
+      bottom: var(--space-small);
       left: 0;
       display: flex;
       justify-content: center;
       width: 100%;
-    }
 
-    nav button {
-      width: 1em;
-      height: 1em;
-      margin: 0 5px;
-      cursor: pointer;
-      background: none;
-      border: 1px solid var(--color-backdrop);
-      border-radius: 100%;
-      transition: var(--delay-large) ease;
-    }
+      button {
+        width: 1em;
+        height: 1em;
+        margin: 0 5px;
+        cursor: pointer;
+        background: none;
+        border: 1px solid var(--color-backdrop);
+        border-radius: 100%;
+        transition: var(--delay-large) ease;
 
-    nav button:hover,
-    nav button.active {
-      background: var(--color-accent);
-      border-color: var(--color-line);
-      transition: var(--delay-small) ease;
-      transform: scale(125%);
+        :is(&:hover, &.active) {
+          background: var(--color-accent);
+          border-color: var(--color-line);
+          transform: scale(125%);
+          transition: var(--delay-small) ease;
+        }
+      }
     }
   `
 
@@ -80,7 +79,7 @@ class Gallery extends MyElement {
 
     this.current = 0
 
-    setInterval(this.next.bind(this), this.delay)
+    this.carouselInterval = setInterval(this.next.bind(this), this.delay)
 
     this.onKeydown = (event) => {
       if (event.key === 'ArrowLeft') {
@@ -105,6 +104,20 @@ class Gallery extends MyElement {
     this.myAddEventListener(this.nav, 'click', this.onClick)
   }
 
+  disconnectedCallback() {
+    if (this.timeout) {
+      clearTimeout(this.timeout)
+    }
+
+    if (this.carouselInterval) {
+      clearInterval(this.carouselInterval)
+    }
+
+    if (this.imageReadyInterval) {
+      clearInterval(this.imageReadyInterval)
+    }
+  }
+
   next() {
     this.current = this.index >= this.gallery.length - 1 ? 0 : this.index + 1
   }
@@ -120,12 +133,12 @@ class Gallery extends MyElement {
     const url = app.project.image(id)
     img.setAttribute('src', url)
 
-    const interval = setInterval(() => {
+    this.imageReadyInterval = setInterval(() => {
       if (!img.complete) {
         return
       }
 
-      clearInterval(interval)
+      clearInterval(this.imageReadyInterval)
 
       this.front.style.backgroundImage = this.back.style.backgroundImage
 
@@ -135,7 +148,7 @@ class Gallery extends MyElement {
 
       this.front.style.opacity = 0
 
-      setTimeout(() => {
+      this.timeout = setTimeout(() => {
         this.front.style.backgroundImage = this.back.style.backgroundImage
         this.front.style.opacity = 1
       }, crossFadeDuration)

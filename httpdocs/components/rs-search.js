@@ -270,6 +270,12 @@ class Search extends MyElement {
     this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
   }
 
+  disconnectedCallback() {
+    if (this.timeout) {
+      clearTimeout(this.timeout)
+    }
+  }
+
   // Devuelve el término de la búsqueda actual
   get query() {
     return this.value

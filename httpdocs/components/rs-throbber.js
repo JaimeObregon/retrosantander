@@ -28,12 +28,18 @@ class Throbber extends MyElement {
     this.footer = this.shadowRoot?.querySelector('footer')
   }
 
+  disconnectedCallback() {
+    if (this.timeout) {
+      clearTimeout(this.timeout)
+    }
+  }
+
   set progress(value) {
     this.footer.style.width = `${100 * value}%`
     this.footer.classList.toggle('hidden', value === 0)
 
     if (value === 1) {
-      setTimeout(() => (this.progress = 0), delay)
+      this.timeout = setTimeout(() => (this.progress = 0), delay)
     }
   }
 }

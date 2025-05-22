@@ -70,6 +70,12 @@ class Title extends MyElement {
     this.myAddEventListener(window, 'searchcomplete', this.onSearchcomplete)
   }
 
+  disconnectedCallback() {
+    if (this.timeout) {
+      clearTimeout(this.timeout)
+    }
+  }
+
   set caption(caption) {
     const text = caption.trim().length ? caption.trim() : this.default
 
@@ -82,7 +88,7 @@ class Title extends MyElement {
     this.cite.style.width = '0ch'
     this.cite.style.transitionDuration = `${duration}ms`
 
-    setTimeout(() => {
+    this.timeout = setTimeout(() => {
       const duration = text.length * this.speeds.typing
       this.cite.innerText = text
       this.cite.style.width = `${text.length}ch`
