@@ -50,15 +50,6 @@ class Title extends MyElement {
     typing: 8,
   }
 
-  onLanguagechange() {
-    this.default = i18n.get('title.default')
-    this.caption = this.default
-  }
-
-  onSearchcomplete() {
-    this.caption = this.default
-  }
-
   connectedCallback() {
     this.cite = this.shadowRoot?.querySelector('cite')
 
@@ -66,8 +57,17 @@ class Title extends MyElement {
       'title.default': app.project.title,
     })
 
-    window.addEventListener('languagechange', this.onLanguagechange.bind(this))
-    window.addEventListener('searchcomplete', this.onSearchcomplete.bind(this))
+    this.onLanguagechange = () => {
+      this.default = i18n.get('title.default')
+      this.caption = this.default
+    }
+
+    this.onSearchcomplete = () => {
+      this.caption = this.default
+    }
+
+    this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
+    this.myAddEventListener(window, 'searchcomplete', this.onSearchcomplete)
   }
 
   set caption(caption) {
