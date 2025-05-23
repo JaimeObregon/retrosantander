@@ -127,6 +127,10 @@ class Explorer extends MyElement {
 
       const image = event.target
 
+      if (image.constructor.name !== 'Image') {
+        return
+      }
+
       this.zoom(image)
 
       if (selected) {

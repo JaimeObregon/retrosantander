@@ -6,90 +6,91 @@ class Collections extends MyElement {
   static styles = css`
     main {
       position: relative;
-      top: calc(var(--header-height) + var(--gap));
+      top: calc(var(--header-height) + var(--image-gap));
       display: flex;
-      height: calc(100vh - var(--header-height) - 2 * var(--gap));
+      height: calc(100vh - var(--header-height) - 2 * var(--image-gap));
       overflow: scroll;
-    }
 
-    main section,
-    main nav,
-    main article {
-      flex-shrink: 0;
-      width: 50%;
-      overflow: scroll;
-    }
+      section,
+      nav,
+      article {
+        flex-shrink: 0;
+        width: 50%;
+        overflow: scroll;
+      }
 
-    main section {
-      box-sizing: border-box;
-      padding-right: 3em;
-      font-size: 19px;
-      font-weight: 400;
-    }
+      section {
+        box-sizing: border-box;
+        padding-right: 3em;
+        font-size: 19px;
+        font-weight: 400;
+      }
 
-    main article {
-      box-sizing: border-box;
-      padding: 3em;
-      font-size: 19px;
-      font-weight: 400;
-      background: var(--color-panel);
-    }
+      article {
+        box-sizing: border-box;
+        padding: 3em;
+        font-size: 19px;
+        font-weight: 400;
+        background: var(--color-panel);
 
-    main article p {
-      line-height: 1.5;
-    }
+        p {
+          line-height: 1.5;
+        }
 
-    main article a {
-      color: inherit;
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
-      text-decoration-style: dotted;
-    }
+        a {
+          color: inherit;
+          text-decoration: underline;
+          text-decoration-thickness: 2px;
+          text-decoration-style: dotted;
+        }
 
-    main article img {
-      width: 100%;
-    }
+        img {
+          width: 100%;
+        }
+      }
 
-    main nav {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      width: 50%;
-      padding: 0 0 calc(100vh - var(--header-height) - 2 * var(--gap) - 3em);
-      font-size: 23px;
-      font-weight: 600;
-      text-align: right;
-    }
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 50%;
+        padding: 0 0
+          calc(100vh - var(--header-height) - 2 * var(--image-gap) - 3em);
+        font-size: 23px;
+        font-weight: 600;
+        text-align: right;
 
-    main nav a {
-      position: relative;
-      padding: 1em 2em 1em 1em;
-      color: var(--color-link);
-      text-decoration: none;
-      background: var(--color-neutral-900);
-    }
+        a {
+          position: relative;
+          padding: 1em 2em 1em 1em;
+          color: var(--color-link);
+          text-decoration: none;
+          background: var(--color-neutral-900);
 
-    main nav a::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      width: 100%;
-      height: 100%;
-      content: '';
-      background: inherit;
-      transform: skewX(-15deg);
-      transform-origin: 0 0;
-    }
+          &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background: inherit;
+            transform: skewX(-15deg);
+            transform-origin: 0 0;
+          }
 
-    main nav a.active {
-      color: var(--color-accent);
-      background: var(--color-panel);
-    }
+          &.active {
+            color: var(--color-accent);
+            background: var(--color-panel);
+          }
 
-    main nav a:hover {
-      color: var(--color-highlight-inverted);
-      background: var(--color-accent);
+          &:hover {
+            color: var(--color-highlight-inverted);
+            background: var(--color-accent);
+          }
+        }
+      }
     }
   `
 
