@@ -44,7 +44,7 @@ class ThemeSwitcher extends MyElement {
         }
 
         :is(mask#moon, circle#sun) {
-          fill: var(--color-text-pale);
+          fill: var(--color-text-muted);
         }
 
         circle#sun {
@@ -56,7 +56,7 @@ class ThemeSwitcher extends MyElement {
         }
 
         g {
-          stroke: var(--color-text-pale);
+          stroke: var(--color-text-muted);
           stroke-width: 2px;
           transition:
             transform var(--delay-x-large) var(--ease-elastic-4),

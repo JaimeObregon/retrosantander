@@ -17,7 +17,7 @@ class Header extends MyElement {
       width: 100%;
       height: var(--header-height);
       background-color: var(--color-panel);
-      border-bottom: 1px solid var(--color-line);
+      border-bottom: 1px solid var(--color-border);
       box-shadow: 0 5px 5px var(--color-box-shadow);
       backdrop-filter: blur(var(--panel-blur));
     }

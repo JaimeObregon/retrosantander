@@ -49,7 +49,7 @@ class Menu extends MyElement {
       font-weight: 400;
       line-height: var(--line-height-condensed);
       background-color: var(--color-panel);
-      border-left: 1px solid var(--color-line);
+      border-left: 1px solid var(--color-border);
       box-shadow: -5px 0 5px var(--color-box-shadow);
       opacity: 0;
       backdrop-filter: blur(var(--panel-blur));

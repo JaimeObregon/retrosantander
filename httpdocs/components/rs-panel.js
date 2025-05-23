@@ -24,7 +24,7 @@ class Panel extends MyElement {
       padding: var(--space-medium);
       overflow: scroll;
       background-color: var(--color-panel);
-      border-right: 1px solid var(--color-line);
+      border-right: 1px solid var(--color-border);
       box-shadow: 5px 0 5px var(--color-box-shadow);
       opacity: 1;
       backdrop-filter: blur(var(--panel-blur));
@@ -56,7 +56,7 @@ class Panel extends MyElement {
           display: block;
           width: var(--space-large);
           margin: auto;
-          color: var(--color-text-pale);
+          color: var(--color-text-muted);
           stroke: currentcolor;
           stroke-width: 2px;
           transition: color ease-in-out var(--delay-small);
@@ -124,7 +124,7 @@ class Panel extends MyElement {
               border-radius: 100%;
 
               &.active {
-                border-color: var(--color-image-face);
+                border-color: var(--color-overlay-face);
               }
             }
           }
@@ -132,7 +132,7 @@ class Panel extends MyElement {
 
         &#objects ul {
           li.active {
-            color: var(--color-image-object);
+            color: var(--color-overlay-object);
           }
         }
       }

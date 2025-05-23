@@ -40,7 +40,7 @@ class Gallery extends MyElement {
 
         :is(&:hover, &.active) {
           background: var(--color-accent);
-          border-color: var(--color-line);
+          border-color: var(--color-border);
           transform: scale(125%);
           transition: var(--delay-small) ease;
         }

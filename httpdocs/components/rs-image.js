@@ -43,25 +43,25 @@ class Image extends MyElement {
         }
 
         &.face {
-          border-color: var(--color-image-face);
+          border-color: var(--color-overlay-face);
           border-radius: 100%;
 
           &.active {
             background: color-mix(
               in srgb,
-              var(--color-image-face) 50%,
+              var(--color-overlay-face) 50%,
               transparent
             );
           }
         }
 
         &.object {
-          border-color: var(--color-image-object);
+          border-color: var(--color-overlay-object);
 
           &.active {
             background: color-mix(
               in srgb,
-              var(--color-image-object) 50%,
+              var(--color-overlay-object) 50%,
               transparent
             );
           }

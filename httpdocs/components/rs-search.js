@@ -49,7 +49,7 @@ class Search extends MyElement {
         cursor: pointer;
         outline: none;
         background: var(--color-search-background);
-        border: 1px solid var(--color-line);
+        border: 1px solid var(--color-border);
         border-radius: 1em;
         transition:
           background var(--delay-large) ease,
@@ -99,7 +99,7 @@ class Search extends MyElement {
         color: var(--color-search-placeholder);
         list-style: none;
         background: var(--color-search-highlighted);
-        border: 1px solid var(--color-line);
+        border: 1px solid var(--color-border);
         border-top: none;
         border-bottom-right-radius: 1em;
         border-bottom-left-radius: 1em;
