@@ -43,15 +43,25 @@ main {
   margin-top: var(--header-height);
 }
 
+strong {
+  font-weight: bold;
+  color: var(--color-highlight);
+}
+
 a {
   font-weight: 800;
-  color: inherit;
-  text-underline-offset: 3px;
+  color: var(--color-link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 
   &:hover {
     color: var(--color-background);
     text-decoration: none;
-    background-color: var(--color-text);
+    background-color: var(--color-link);
+  }
+
+  strong {
+    color: inherit;
   }
 }
 
@@ -61,7 +71,9 @@ h1 {
   color: var(--color-highlight);
 }
 
-:is(h1, p, ul) {
+h1,
+ul,
+p {
   margin: 0;
 
   &:not(:last-child) {
@@ -89,6 +101,9 @@ rs-header > a {
 }
 
 rs-menu {
+  text-align: justify;
+  hyphens: auto;
+
   h1 {
     padding: 0 var(--space-medium);
     margin: var(--space-large) calc(-1 * var(--space-medium)) 0;

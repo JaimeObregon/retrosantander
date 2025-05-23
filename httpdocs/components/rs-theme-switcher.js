@@ -7,6 +7,10 @@ const storageKey = 'theme'
 
 class ThemeSwitcher extends MyElement {
   static styles = css`
+    :host {
+      display: inline-block;
+    }
+
     button {
       display: block;
       width: 100%;

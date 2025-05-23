@@ -15,7 +15,6 @@ html {
     --color-accent: #ccec88;
     --color-background: #0d2630;
     --color-panel: #19313cd9;
-    --color-heading: #fff;
     --color-link: #ccec88;
     --color-highlight: #fff;
     --color-highlight-inverted: #0a1e26;
@@ -37,7 +36,6 @@ html {
     --color-accent: #c71585;
     --color-background: #fbf7f0;
     --color-panel: #ffffffd9;
-    --color-heading: #0d1a26;
     --color-link: #c71585;
     --color-highlight: #222;
     --color-highlight-inverted: #fff;
@@ -56,64 +54,29 @@ html {
 
   font-family: var(--font-serif);
   font-variant-numeric: oldstyle-nums;
-  line-height: var(--line-height-normal);
-  text-align: justify;
-  letter-spacing: 0.025em;
-  hyphens: auto;
   color-scheme: dark light;
 }
 
-strong {
-  font-weight: bold;
-  color: var(--color-highlight);
-}
+/*************************/
 
-a {
-  color: var(--color-link);
-  text-decoration: 0.075em underline;
-  text-underline-offset: var(--space-x-small);
+rs-menu nav {
+  display: flex;
+  height: 8em;
+  margin-bottom: var(--space-large);
 
-  &:hover {
-    text-decoration: 0.075em underline double;
-  }
-
-  &[href^='http'] {
+  a {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 50%;
     color: inherit;
-    text-decoration: inherit;
-
-    &:hover {
-      text-decoration: none;
-      background: var(--color-highlight-inverted);
-    }
-
-    &::after {
-      position: relative;
-      top: -0.2em;
-      color: var(--color-accent);
-      content: '°';
-    }
-  }
-
-  strong {
-    color: inherit;
+    text-decoration: none;
   }
 }
 
 i,
 em {
   font-style: italic;
-}
-
-h1 {
-  font-style: italic;
-  letter-spacing: 0;
-}
-
-h2 {
-  margin: var(--space-large) 0 0 0;
-  font-size: var(--type-large);
-  line-height: var(--line-height-condensed);
-  color: var(--color-heading);
 }
 
 ol,
@@ -137,7 +100,6 @@ ol {
     font-family: Numbered, sans-serif;
     font-size: var(--type-large);
     font-style: normal;
-    letter-spacing: 0;
     content: counter(number);
     counter-increment: number;
   }
@@ -149,25 +111,4 @@ ul li::before {
   left: 0;
   font-size: var(--type-large);
   content: '–';
-}
-
-rs-menu {
-  rs-theme-switcher {
-    display: inline-block;
-  }
-
-  nav {
-    display: flex;
-    height: 8em;
-    margin-bottom: var(--space-large);
-
-    a {
-      display: flex;
-      align-self: center;
-      justify-content: center;
-      width: 50%;
-      color: inherit;
-      text-decoration: none;
-    }
-  }
 }
