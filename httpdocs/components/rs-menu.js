@@ -92,7 +92,9 @@ class Menu extends MyElement {
     this.onHamburgerClick = () => (this.open = !this.open)
 
     this.onClick = (event) => {
-      event.target !== this && (this.open = false)
+      if (!this.contains(event.target)) {
+        this.open = false
+      }
     }
 
     this.onKeyup = (event) => {
