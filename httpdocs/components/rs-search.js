@@ -44,6 +44,7 @@ class Search extends MyElement {
         height: var(--space-large);
         padding: 0 var(--space-medium) 0 var(--space-large);
         font-size: inherit;
+        color: var(--color-search-text);
         appearance: none;
         cursor: pointer;
         outline: none;
@@ -110,12 +111,12 @@ class Search extends MyElement {
             align-items: center;
             padding: 0 var(--space-small) 0 var(--space-large);
             line-height: var(--space-large);
-            color: inherit;
+            color: var(--color-search-text);
             text-decoration: none;
 
             &.selected {
-              color: var(--color-highlight-inverted);
-              background: var(--color-text-pale);
+              color: var(--color-search-selected-color);
+              background: var(--color-search-selected-background);
             }
 
             svg {
@@ -124,6 +125,7 @@ class Search extends MyElement {
 
             mark {
               font-weight: 700;
+              color: inherit;
               text-decoration: underline;
               text-decoration-thickness: 2px;
               text-decoration-style: dotted;
