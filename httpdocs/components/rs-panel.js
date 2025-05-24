@@ -48,10 +48,6 @@ class Panel extends MyElement {
         border-radius: 100%;
         transition: background ease-in-out var(--delay-small);
 
-        &:hover {
-          background: var(--color-neutral-800);
-        }
-
         svg {
           display: block;
           width: var(--space-large);

@@ -63,7 +63,7 @@ class Collections extends MyElement {
         a {
           position: relative;
           padding: 1em 2em 1em 1em;
-          color: var(--color-link);
+          /*color: var(--color-link);*/
           text-decoration: none;
           background: var(--color-neutral-900);
 

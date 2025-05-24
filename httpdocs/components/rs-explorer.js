@@ -279,6 +279,10 @@ class Explorer extends MyElement {
       this.container.offsetWidth / images[0].offsetWidth,
     )
 
+    if (!columns) {
+      return
+    }
+
     if (this.columns !== columns) {
       images.forEach((image) => delete image.dataset.column)
     }
