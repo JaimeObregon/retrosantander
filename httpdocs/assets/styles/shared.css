@@ -101,8 +101,10 @@ rs-header > a {
 }
 
 rs-menu {
-  text-align: justify;
-  hyphens: auto;
+  :is(p, li) {
+    text-align: justify;
+    hyphens: auto;
+  }
 
   h1 {
     padding: 0 var(--space-medium);

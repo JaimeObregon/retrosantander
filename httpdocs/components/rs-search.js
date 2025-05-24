@@ -91,8 +91,8 @@ class Search extends MyElement {
         display: none;
         width: 100%;
         max-height: min(
-          calc(var(--max-suggestions) * var(--space-large)),
-          calc(100vh - 2 * var(--space-large))
+          calc(var(--max-suggestions) * var(--input-height)),
+          calc(100vh - var(--header-height) + 1px)
         );
         padding: 0;
         margin: 0;
@@ -111,7 +111,7 @@ class Search extends MyElement {
             display: flex;
             align-items: center;
             padding: 0 var(--space-small) 0 var(--space-large);
-            line-height: var(--space-large);
+            line-height: var(--input-height);
             color: var(--color-search-text);
             text-decoration: none;
 
