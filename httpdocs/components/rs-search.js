@@ -19,6 +19,7 @@ class Search extends MyElement {
     :host {
       flex-shrink: 0;
 
+      --input-height: 2.25em;
       --max-suggestions: 10;
       --width-closed: 10em;
       --width-open: 22em;
@@ -34,14 +35,14 @@ class Search extends MyElement {
       svg {
         position: absolute;
         left: var(--space-small);
-        height: 55%;
+        max-height: 50%;
         pointer-events: none;
         fill: var(--color-search-placeholder);
       }
 
       input {
         width: var(--width-closed);
-        height: var(--space-large);
+        height: var(--input-height);
         padding: 0 var(--space-medium) 0 var(--space-large);
         font-size: inherit;
         color: var(--color-search-text);
@@ -50,7 +51,7 @@ class Search extends MyElement {
         outline: none;
         background: var(--color-search-background);
         border: 1px solid var(--color-border);
-        border-radius: 1em;
+        border-radius: calc(var(--input-height) / 2);
         transition:
           background var(--delay-large) ease,
           width var(--delay-large) ease;
@@ -83,7 +84,7 @@ class Search extends MyElement {
 
       ul {
         position: absolute;
-        top: calc(var(--space-large) - 1px);
+        top: calc(var(--input-height) - 1px);
         left: 0;
         z-index: 1;
         box-sizing: border-box;
