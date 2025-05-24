@@ -120,7 +120,7 @@ class Panel extends MyElement {
               border-radius: 100%;
 
               &.active {
-                border-color: var(--color-overlay-face);
+                border-color: var(--color-area-face);
               }
             }
           }
@@ -128,7 +128,7 @@ class Panel extends MyElement {
 
         &#objects ul {
           li.active {
-            color: var(--color-overlay-object);
+            color: var(--color-area-object);
           }
         }
       }

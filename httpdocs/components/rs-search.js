@@ -239,6 +239,10 @@ class Search extends MyElement {
         .indexOf(li.innerText)
     }
 
+    this.onMousedown = (event) => {
+      event.target.click()
+    }
+
     this.onInput = () => {
       this.query = this.input.value
     }
@@ -265,6 +269,7 @@ class Search extends MyElement {
 
     this.myAddEventListener(document, 'keydown', this.onKeydown)
     this.myAddEventListener(this.ul, 'mouseover', this.onMouseover)
+    this.myAddEventListener(this.ul, 'mousedown', this.onMousedown)
     this.myAddEventListener(this.input, 'input', this.onInput)
     this.myAddEventListener(this.input, 'focus', this.onFocus)
     this.myAddEventListener(this.input, 'blur', this.onBlur)

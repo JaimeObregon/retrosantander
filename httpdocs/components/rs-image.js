@@ -43,25 +43,25 @@ class Image extends MyElement {
         }
 
         &.face {
-          border-color: var(--color-overlay-face);
+          border-color: var(--color-area-face);
           border-radius: 100%;
 
           &.active {
             background: color-mix(
               in srgb,
-              var(--color-overlay-face) 50%,
+              var(--color-area-face) 50%,
               transparent
             );
           }
         }
 
         &.object {
-          border-color: var(--color-overlay-object);
+          border-color: var(--color-area-object);
 
           &.active {
             background: color-mix(
               in srgb,
-              var(--color-overlay-object) 50%,
+              var(--color-area-object) 50%,
               transparent
             );
           }
@@ -126,7 +126,7 @@ class Image extends MyElement {
   }
 
   set areas(areas) {
-    this.figure.querySelectorAll('div').forEach((div) => div.remove())
+    this.figure?.querySelectorAll('div').forEach((div) => div.remove())
 
     if (!areas) {
       return
