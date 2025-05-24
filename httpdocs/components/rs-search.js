@@ -316,7 +316,12 @@ class Search extends MyElement {
     this.timeout = setTimeout(() => {
       const url = new URL(document.location.href)
       if (app.query !== url.searchParams.get('q')) {
-        history.pushState(null, '', app.query ? `/?q=${app.query}` : '/')
+        if (app.query) {
+          url.searchParams.set('q', app.query)
+        } else {
+          url.searchParams.delete('q')
+        }
+        history.pushState(null, '', url.toString())
       }
 
       const detail = { results }
@@ -342,11 +347,12 @@ class Search extends MyElement {
 
   set suggestions(suggestions) {
     const query = normalize(this.query)
+
     this.ul.innerHTML = suggestions
       .map(
         (q) => html`
           <li>
-            <a href="/?q=${q}">
+            <a href="${document.location.pathname}?q=${q}">
               ${icon} ${q.replace(query, `<mark>${query}</mark>`)}
             </a>
           </li>

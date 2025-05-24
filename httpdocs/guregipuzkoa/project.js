@@ -635,28 +635,56 @@ const project = {
   routes: [
     {
       pattern: /^\/$/,
-      exec: (app) => {
-        const main = document.querySelector('main')
-        main.innerHTML = `<rs-gallery></rs-gallery>`
+      exec: async (app) => {
+        const url = `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/indices/indices.json`
+        const response = await fetch(url)
+        const json = await response.json()
+
+        app.main.innerHTML = json
+          .map(
+            ([folder, id, name, count]) => html`
+              <a href="/bildumak/${folder}/${id}"> ${folder} → ${name} </a>
+              (${count})
+            `,
+          )
+          .join('<br/>')
       },
     },
+
     {
-      pattern: /^\/mapa/,
+      pattern:
+        /^\/bildumak\/(?<folder>[\wñ\-_]+)\/(?<id>[\wñ\-_]+)(\/?(\?q=(?<query>.+))?)?$/,
+      exec: (app, groups) => {
+        const { folder, id } = groups
+        const index = project.index(folder, id)
+
+        app.main.innerHTML = `<rs-explorer index="${index}"></rs-explorer>`
+      },
+    },
+
+    {
+      pattern: /^\/mapa\/?$/,
       exec: async (app) => {
-        const { Map } = await import('../components/rs-map.js')
-
-        customElements.get('rs-map') || customElements.define('rs-map', Map)
-
         const response = await fetch('map.html')
         const contents = await response.text()
 
         app.main.innerHTML = `<rs-map>${contents}</rs-map>`
       },
     },
+
+    /*
     {
-      pattern: /^\/mapa\/(?<location>[\wñ]+)(\/?(\?q=(?<query>.+))?)?$/,
-      exec: (app, groups) => {
-        const slug = document.location.pathname.replace(/^\/mapa\//, '')
+      pattern: /^\/$/,
+      exec: async (app) => {
+        const gallery = 'baserriak'
+        app.main.innerHTML = `<rs-gallery gallery="${gallery}"></rs-gallery>`
+      },
+    },
+
+    {
+      pattern: /^\/mapa\/(?<location>[\wñ\-_]+)(\/?(\?q=(?<query>.+))?)?$/,
+      exec: (app) => {
+        const id = document.location.pathname.replace(/^\/mapa\//, '')
 
         const location = app.project.locations.find(
           (location) => location.slug === slug
@@ -678,8 +706,9 @@ const project = {
         app.main.innerHTML = `<rs-collections>${contents}</rs-collections>`
       },
     },
+
     {
-      pattern: /^\/bildumak\/(?<collection>[\wñ]+)(\/?(\?q=(?<query>.+))?)?$/,
+      pattern: /^\/bildumak\/(?<collection>[\wñ\-_]+)(\/?(\?q=(?<query>.+))?)?$/,
       exec: (app, groups) => {
         const slug = document.location.pathname.replace(/^\/bildumak\//, '')
 
@@ -696,11 +725,12 @@ const project = {
       },
     },
     {
-      pattern: /^\/bildumak\/(?<collection>[\wñ]+)\/?(?<image>\d+)$/,
+      pattern: /^\/bildumak\/(?<collection>[\wñ\-_]+)\/?(?<image>\d+)$/,
       exec: (app, groups) => {
         console.log(app, groups)
       },
     },
+    */
   ],
 
   logos: {
