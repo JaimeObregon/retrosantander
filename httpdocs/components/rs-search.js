@@ -285,6 +285,10 @@ class Search extends MyElement {
 
   // Lanza una búsqueda del término existente en `this.query`
   set query(value) {
+    if (!database.records) {
+      return
+    }
+
     this.value = this.input.value = value ?? ''
 
     const { results, suggestions } = database.search(this.value)

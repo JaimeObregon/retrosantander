@@ -101,8 +101,6 @@ class Explorer extends MyElement {
 
     this.innerHTML = html`<rs-notice class="hidden"></rs-notice>`
 
-    this.notice = this.querySelector('rs-notice')
-
     this.observer = new IntersectionObserver(this.onIntersect.bind(this), {
       rootMargin: '0px',
       threshold: 0,
@@ -343,6 +341,11 @@ class Explorer extends MyElement {
   clear() {
     this.container.innerHTML = ''
     this.container.style.height = 0
+
+    // @ts-ignore
+    this.throbber.progress = 0
+
+    clearInterval(this.interval)
 
     if (!this.hr) {
       return

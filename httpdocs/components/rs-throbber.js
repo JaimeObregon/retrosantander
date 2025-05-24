@@ -9,6 +9,7 @@ class Throbber extends MyElement {
       position: fixed;
       bottom: 0;
       left: 0;
+      z-index: 1;
       width: 0;
       height: var(--space-small);
       background: var(--color-text);
