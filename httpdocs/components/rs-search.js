@@ -118,6 +118,10 @@ class Search extends MyElement {
             &.selected {
               color: var(--color-search-selected-color);
               background: var(--color-search-selected-background);
+
+              svg {
+                fill: var(--color-search-selected-placeholder);
+              }
             }
 
             svg {
