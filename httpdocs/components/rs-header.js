@@ -13,9 +13,11 @@ class Header extends MyElement {
       z-index: 1;
       box-sizing: border-box;
       display: flex;
+      gap: var(--space-medium);
       align-items: center;
       width: 100%;
       height: var(--header-height);
+      padding-inline: var(--space-medium);
       background-color: var(--color-panel);
       border-bottom: 1px solid var(--color-border);
       box-shadow: 0 5px 5px var(--color-box-shadow);
