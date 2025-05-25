@@ -7,7 +7,7 @@ class Title extends MyElement {
   static styles = css`
     :host {
       flex-grow: 1;
-      margin: 0 var(--space-medium);
+      margin-inline: var(--space-medium);
       overflow: hidden;
     }
 
@@ -15,12 +15,11 @@ class Title extends MyElement {
       box-sizing: border-box;
       display: block;
       max-width: 100%;
-      margin: 0 auto;
+      margin-inline: auto;
       overflow: hidden;
       text-overflow: ellipsis;
-      font-family: var(--font-mono);
-      font-size: var(--type-small);
       font-style: normal;
+      font-weight: 500;
       color: var(--color-accent);
       text-align: center;
       white-space: nowrap;
@@ -50,6 +49,8 @@ class Title extends MyElement {
     typing: 8,
   }
 
+  resetDelay = 1000
+
   connectedCallback() {
     this.cite = this.shadowRoot?.querySelector('cite')
 
@@ -77,21 +78,30 @@ class Title extends MyElement {
   }
 
   set caption(caption) {
-    const text = caption.trim().length ? caption.trim() : this.default
+    const title = caption.trim() || this.default
+    const previous = this.cite.innerText
 
-    if (this.cite.innerText === text) {
+    clearTimeout(this.resetTimeout)
+
+    if (!this.resetTimeout && title === this.default) {
+      this.resetTimeout = setTimeout(
+        () => (this.caption = this.default),
+        this.resetDelay,
+      )
       return
     }
 
-    const duration = this.cite.innerText.length * this.speeds.deleting
+    this.resetTimeout = undefined
+
+    const duration = previous.length * this.speeds.deleting
 
     this.cite.style.width = '0ch'
     this.cite.style.transitionDuration = `${duration}ms`
 
     this.timeout = setTimeout(() => {
-      const duration = text.length * this.speeds.typing
-      this.cite.innerText = text
-      this.cite.style.width = `${text.length}ch`
+      const duration = title.length * this.speeds.typing
+      this.cite.innerText = title
+      this.cite.style.width = `${title.length}ch`
       this.cite.style.transitionDuration = `${duration}ms`
     }, duration)
   }
