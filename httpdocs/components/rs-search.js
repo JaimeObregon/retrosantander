@@ -19,7 +19,7 @@ class Search extends MyElement {
     :host {
       flex-shrink: 0;
 
-      --input-height: 2.25em;
+      --input-height: 2em;
       --max-suggestions: 10;
       --width-closed: 10em;
       --width-open: 22em;
@@ -158,7 +158,7 @@ class Search extends MyElement {
 
     @media (width <= 640px) {
       :host {
-        --width-closed: var(--space-large);
+        --width-closed: var(--input-height);
       }
 
       label:not(:focus-within) {
