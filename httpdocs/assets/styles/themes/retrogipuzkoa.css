@@ -61,3 +61,9 @@ html {
 rs-header > a {
   margin-top: 7px;
 }
+
+@media (width <= 1280px) {
+  rs-header > a {
+    display: none;
+  }
+}

@@ -57,3 +57,9 @@ html {
   --header-actions-size: 1.5rem;
   --panel-blur: 14px;
 }
+
+@media (width <= 1280px) {
+  rs-header > a {
+    display: none;
+  }
+}
