@@ -20,21 +20,24 @@ class Search extends MyElement {
       flex-shrink: 0;
 
       --max-suggestions: 10;
-      --width-closed: 10em;
-      --width-open: 22em;
+      --width-closed: 7em;
+      --width-open: 16em;
+      --icon-width: calc(var(--header-actions-size) * 0.55);
+      --padding-left: calc(var(--icon-width) + var(--space-medium));
     }
 
     label {
       position: relative;
       display: flex;
       align-items: center;
+      font-family: var(--font-sans);
       font-size: var(--type-small);
       font-weight: 400;
 
       svg {
         position: absolute;
         left: var(--space-small);
-        max-height: 50%;
+        width: var(--icon-width);
         pointer-events: none;
         fill: var(--color-search-placeholder);
       }
@@ -42,7 +45,7 @@ class Search extends MyElement {
       input {
         width: var(--width-closed);
         height: var(--header-actions-size);
-        padding: 0 var(--space-medium) 0 var(--space-large);
+        padding: 0 var(--space-medium) 0 var(--padding-left);
         font-size: inherit;
         color: var(--color-search-text);
         appearance: none;
@@ -109,7 +112,7 @@ class Search extends MyElement {
             position: relative;
             display: flex;
             align-items: center;
-            padding: 0 var(--space-small) 0 var(--space-large);
+            padding: 0 var(--space-small) 0 var(--padding-left);
             line-height: var(--header-actions-size);
             color: var(--color-search-text);
             text-decoration: none;
@@ -198,10 +201,10 @@ class Search extends MyElement {
 
     i18n.push({
       'search.placeholder': {
-        es: 'Buscar…',
-        eu: 'Bilatu…',
-        en: 'Search…',
-        fr: 'Rechercher…',
+        es: 'Filtrar…',
+        eu: 'Iragazi…',
+        en: 'Filter…',
+        fr: 'Filtrer…',
       },
     })
 
