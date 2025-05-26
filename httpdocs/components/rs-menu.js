@@ -14,7 +14,7 @@ class Menu extends MyElement {
     button {
       display: block;
       padding: 0;
-      margin: 0 var(--space-medium);
+      font-size: var(--type-medium);
       color: inherit;
       cursor: pointer;
       background: none;
@@ -30,9 +30,12 @@ class Menu extends MyElement {
       }
 
       svg {
-        height: var(--space-large);
+        height: var(--input-height);
         vertical-align: middle;
-        fill: currentcolor;
+        stroke: currentcolor;
+        stroke-width: 3px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
       }
     }
 
@@ -71,10 +74,8 @@ class Menu extends MyElement {
 
   static html = html`
     <button>
-      <svg viewBox="0 0 16 16">
-        <path
-          d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
-        ></path>
+      <svg viewBox="0 0 24 24">
+        <path d="M3.75 5.5 h16.5 M3.75 12 h16.5 m-16.5 6.5 h16.5" />
       </svg>
     </button>
     <article>
