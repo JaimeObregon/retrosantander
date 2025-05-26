@@ -110,7 +110,7 @@ class ThemeSwitcher extends MyElement {
 
   static html = html`
     <button>
-      <svg width="24" height="24" viewBox="0 0 24 24">
+      <svg viewBox="0 0 24 24">
         <mask id="moon">
           <rect x="0" y="0" width="100%" height="100%" fill="white" />
           <circle cx="24" cy="10" r="6" fill="black" />

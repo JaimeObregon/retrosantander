@@ -30,7 +30,7 @@ class Menu extends MyElement {
       }
 
       svg {
-        height: var(--input-height);
+        height: var(--header-actions-size);
         vertical-align: middle;
         stroke: currentcolor;
         stroke-width: 3px;

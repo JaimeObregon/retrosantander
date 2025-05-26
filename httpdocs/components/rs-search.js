@@ -19,7 +19,6 @@ class Search extends MyElement {
     :host {
       flex-shrink: 0;
 
-      --input-height: 2em;
       --max-suggestions: 10;
       --width-closed: 10em;
       --width-open: 22em;
@@ -42,7 +41,7 @@ class Search extends MyElement {
 
       input {
         width: var(--width-closed);
-        height: var(--input-height);
+        height: var(--header-actions-size);
         padding: 0 var(--space-medium) 0 var(--space-large);
         font-size: inherit;
         color: var(--color-search-text);
@@ -51,7 +50,7 @@ class Search extends MyElement {
         outline: none;
         background: var(--color-search-background);
         border: 1px solid var(--color-border);
-        border-radius: calc(var(--input-height) / 2);
+        border-radius: calc(var(--header-actions-size) / 2);
         transition:
           background var(--delay-large) ease,
           width var(--delay-large) ease;
@@ -84,14 +83,14 @@ class Search extends MyElement {
 
       ul {
         position: absolute;
-        top: calc(var(--input-height) - 1px);
+        top: calc(var(--header-actions-size) - 1px);
         left: 0;
         z-index: 1;
         box-sizing: border-box;
         display: none;
         width: 100%;
         max-height: min(
-          calc(var(--max-suggestions) * var(--input-height)),
+          calc(var(--max-suggestions) * var(--header-actions-size)),
           calc(100vh - var(--header-height) + 1px)
         );
         padding: 0;
@@ -111,7 +110,7 @@ class Search extends MyElement {
             display: flex;
             align-items: center;
             padding: 0 var(--space-small) 0 var(--space-large);
-            line-height: var(--input-height);
+            line-height: var(--header-actions-size);
             color: var(--color-search-text);
             text-decoration: none;
 
@@ -162,7 +161,7 @@ class Search extends MyElement {
 
     @media (width <= 640px) {
       :host {
-        --width-closed: var(--input-height);
+        --width-closed: var(--header-actions-size);
       }
 
       label:not(:focus-within) {
