@@ -2,7 +2,7 @@ import { html } from '../modules/strings.js'
 import './components/rs-panel-details.js'
 
 const project = {
-  name: 'GureGipuzkoa',
+  name: 'Gure Gipuzkoa',
 
   folder: 'guregipuzkoa',
 

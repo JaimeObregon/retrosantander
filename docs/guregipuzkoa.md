@@ -1,4 +1,4 @@
-# GureGipuzkoa
+# Gure Gipuzkoa
 
 [guregipuzkoa.eus](https://guregipuzkoa.eus) es el portal que aloja el archivo fotográfico de la Diputación Foral de Gipuzkoa. Es un desarrollo sobre WordPress que sustituyó hacia 2011 a uno previo, más completo y ambicioso.
 
@@ -102,7 +102,7 @@ done
 
 Los ficheros JSON así generados ocupan unos 700 MB.
 
-# 6. Descarga de los metadatos de GureGipuzkoa
+# 6. Descarga de los metadatos de Gure Gipuzkoa
 
 En el WordPress del portal oficial existe una ruta AJAX que devuelve en forma JSON metadatos de las fotografías tales como sus etiquetas, comentarios de usuarios y otra información relevante. Tiene esta forma:
 
@@ -167,7 +167,7 @@ Para subirlos manualmente después.
 
 Proceso cada imagen con las API `detect-faces` y `detect-lables` de AWS Rekognition.
 
-En 2022 ya procesé de esta manera, para Retrogipuzkoa.com, la colección de Jesús Elósegui. Podría reaprovechar ese trabajo y ahorrar así unos 30 euros en costes de AWS, pero decido reprocesarla porque el modelo de visión artificial de Amazon ha sido actualizado en este tiempo y proporciona ahora resultados mejores. También porque ello me evitará hacer un renombrado complejo de los ficheros de Retrogipuzkoa para adaptarlos a la nueva nomenclatura que he adoptado en GureGipuzkoa.
+En 2022 ya procesé de esta manera, para Retrogipuzkoa.com, la colección de Jesús Elósegui. Podría reaprovechar ese trabajo y ahorrar así unos 30 euros en costes de AWS, pero decido reprocesarla porque el modelo de visión artificial de Amazon ha sido actualizado en este tiempo y proporciona ahora resultados mejores. También porque ello me evitará hacer un renombrado complejo de los ficheros de Retrogipuzkoa para adaptarlos a la nueva nomenclatura que he adoptado en Gure Gipuzkoa.
 
 El _bucket_ `guregipuzkoa` está en la región `eu-south-2` (España). Rekognition es más barato en `eu-west-1`, así que copio el archivo fotográfico a un nuevo _bucket_ temporal creado en esta región:
 

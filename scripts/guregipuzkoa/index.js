@@ -19,7 +19,7 @@ import {
 
 const output_directory = 'indices'
 
-// Fechas que aparecen en los metadatos de GureGipuzkoa y que no son válidas
+// Fechas que aparecen en los metadatos de Gure Gipuzkoa y que no son válidas
 // Pero que podemos —más o menos— arreglar.
 const dates = [
   {
@@ -84,7 +84,7 @@ args.forEach((input) => {
 
   const { photographer, municipio, fecha, author } = json.details.image_data
 
-  // No genero índices para las etiquetas de GureGipuzkoa porque no confío
+  // No genero índices para las etiquetas de Gure Gipuzkoa porque no confío
   // en ellas como criterio taxonómico…
   // const tags = json.details.image_data.tags.map(({ name }) => name)
 

@@ -44,7 +44,7 @@ const types = {
   places: (slug) => find(locations, slug),
 
   // Yo prefiero llamarlo «usuarios», para no confundir, semánticamente,
-  // «author» con «photographer», pero en GureGipuzkoa estaba así.
+  // «author» con «photographer», pero en Gure Gipuzkoa estaba así.
   users: (slug) => find(authors, slug),
 }
 

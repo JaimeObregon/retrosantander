@@ -20,11 +20,11 @@ Descartada la resignación, decidí seguir el experimento con el Fondo Fotográf
 
 Así he podido continuar en [retrogipuzkoa.com](https://retrogipuzkoa.com) lo que inicié en Retrosantander. [En este hilo de 𝐗 (antes Twitter)](https://x.com/JaimeObregon/status/1524494203614543876) he explicado mis razones.
 
-# GureGipuzkoa
+# Gure Gipuzkoa
 
-Retrogipuzkoa captó la atención de la Diputación Foral de Gipuzkoa, que me ha permitido y animado a extender mi proyecto con la colección de Jesús Elósegui al resto de colecciones contenidas en su portal GureGipuzkoa («nuestra Guipúzcoa»), [guregipuzkoa.eus](https://guregipuzkoa.eus).
+Retrogipuzkoa captó la atención de la Diputación Foral de Gipuzkoa, que me ha permitido y animado a extender mi proyecto con la colección de Jesús Elósegui al resto de colecciones contenidas en su portal Gure Gipuzkoa («nuestra Guipúzcoa»), [guregipuzkoa.eus](https://guregipuzkoa.eus).
 
-Nace así una nueva versión de GureGipuzkoa, [guregipuzkoa.com](https://guregipuzkoa.com), resultado de conectar todas las colecciones del portal de la Diputación con la herramienta que he ido construyendo y refinando para explorar estos archivos fotográficos.
+Nace así una nueva versión de Gure Gipuzkoa, [guregipuzkoa.com](https://guregipuzkoa.com), resultado de conectar todas las colecciones del portal de la Diputación con la herramienta que he ido construyendo y refinando para explorar estos archivos fotográficos.
 
 ⚠ Nótese que, al menos durante el desarrollo, el portal preexistente de la Diputación está en el dominio [guregipuzkoa.eus](https://guregipuzkoa.eus) y mi nuevo desarrollo basado en Retrosantander está desplegado en [guregipuzkoa.com](https://guregipuzkoa.com). Supongo que durante 2025 desaparecerá el portal antiguo y ambos dominios apuntarán al proyecto renovado.
 
@@ -32,7 +32,7 @@ Aparte he escrito la documentación [sobre el _scraping_ a guregipuzkoa.eus](/do
 
 # Evolución del proyecto
 
-Hasta la retirada del archivo del CDIS por parte del Ayuntamiento de Santander, [Retrosantander](https://retrosantander.com) brindaba acceso a una colección fotográfica con 9506 imágenes históricas. [Retrogipuzkoa](https://retrogipuzkoa.com) presenta 15&#x202F;236 fotografías, organizadas también en una monocolección, la del fotógrafo vasco Jesús Elósegui. En [GureGipuzkoa](https://guregipuzkoa.com) la cantidad crece hasta las 158&#x202F;687 imágenes, organizadas ahora en múltiples colecciones.
+Hasta la retirada del archivo del CDIS por parte del Ayuntamiento de Santander, [Retrosantander](https://retrosantander.com) brindaba acceso a una colección fotográfica con 9506 imágenes históricas. [Retrogipuzkoa](https://retrogipuzkoa.com) presenta 15&#x202F;236 fotografías, organizadas también en una monocolección, la del fotógrafo vasco Jesús Elósegui. En [Gure Gipuzkoa](https://guregipuzkoa.com) la cantidad crece hasta las 158&#x202F;687 imágenes, organizadas ahora en múltiples colecciones.
 
 # Adaptación a otros archivos
 
@@ -48,9 +48,9 @@ Hasta la retirada del archivo del CDIS por parte del Ayuntamiento de Santander, 
 
 1. **Visor dinámico**. La herramienta presenta las imágenes en un lienzo con desplazamiento vertical (_scroll_) infinito que aprovecha toda la superficie útil de la pantalla del dispositivo. Pulsar en una imagen la amplía y da acceso a la ficha de la imagen y las características detectadas por la visión artificial, que se presentan superpuestas a la fotografía.
 
-1. **Multicolección**. En GureGipuzkoa, a diferencia de Retrosantander y Retrogipuzkoa, es posible explorar múltiples colecciones fotográficas independientes.
+1. **Multicolección**. En Gure Gipuzkoa, a diferencia de Retrosantander y Retrogipuzkoa, es posible explorar múltiples colecciones fotográficas independientes.
 
-1. **Cartografía**. El proyecto GureGipuzkoa ilustra la utilización de un mapa vectorial interactivo de la provincia de Guipúzcoa, lo que hace posible vincular fotografías a municipios y mostrar todas las fotografías de uno.
+1. **Cartografía**. El proyecto Gure Gipuzkoa ilustra la utilización de un mapa vectorial interactivo de la provincia de Guipúzcoa, lo que hace posible vincular fotografías a municipios y mostrar todas las fotografías de uno.
 
 1. **Soporte multilingüe**. El programa implementa una interfaz de usuario traducible. Se incorporan cuatro: castellano, euskera, inglés y francés.
 
@@ -62,7 +62,7 @@ Este repositorio es multiproyecto, y en la actualidad aloja tres proyectos:
 
 1. **Retrogipuzkoa**, desplegado en [retrogipuzkoa.com](https://retrogipuzkoa.com), y que proporciona acceso a la colección fotográfica de Jesús Elósegui.
 
-1. **GureGipuzkoa**, desplegado en [guregipuzkoa.com](https://guregipuzkoa.com) y en desarrollo durante 2023 y 2024. No confundir con guregipuzkoa.eus, que es el portal original de la Diputación Foral de Gipuzkoa que guregipuzkoa.com pretende superar.
+1. **Gure Gipuzkoa**, desplegado en [guregipuzkoa.com](https://guregipuzkoa.com) y en desarrollo durante 2023 y 2024. No confundir con guregipuzkoa.eus, que es el portal original de la Diputación Foral de Gipuzkoa que guregipuzkoa.com pretende superar.
 
 La arquitectura de la aplicación, por lo tanto, sirve a múltiples archivos fotográficos desde una misma base de código común y extensible.
 
@@ -100,7 +100,7 @@ Adicionalmente, la aplicación sabe qué proyecto servir por el nombre del _host
 
 - **Retrosantander**. No tengo permiso del CDIS del Ayuntamiento de Santander para redifundir el archivo fotográfico del CDIS. Por esta razón Retrosantander solicita los archivos directamente al servidor web del CDIS. Cuando el Ayuntamiento [ha retirado](https://x.com/JaimeObregon/status/1523955161151983616) este servidor y todo el archivo, Retrosantander ha dejado de poder brindarte acceso a él.
 
-- **Retrogipuzkoa** y **GureGipuzkoa**. He obtenido permiso de la Diputación para copiar y distribuir el archivo fotográfico del portal guregipuzkoa.eus, que es distribuido por la Diputación con licencia Creative Commons. Yo he descargado (_scraping_) y copiado en Amazon S3 este archivo (fotografías y metadatos), y mis proyectos retrogipuzkoa.com y guregipuzkoa.com lo sirven desde ahí.
+- **Retrogipuzkoa** y **Gure Gipuzkoa**. He obtenido permiso de la Diputación para copiar y distribuir el archivo fotográfico del portal guregipuzkoa.eus, que es distribuido por la Diputación con licencia Creative Commons. Yo he descargado (_scraping_) y copiado en Amazon S3 este archivo (fotografías y metadatos), y mis proyectos retrogipuzkoa.com y guregipuzkoa.com lo sirven desde ahí.
 
   Esto me ha permitido también transcodificar las imágenes desde el formato JPEG original al más moderno AVIF, optimizándolas para tiempos de acceso más breves en aquellos navegadores que lo soportan.
 

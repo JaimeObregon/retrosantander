@@ -3871,7 +3871,7 @@ const photographers = [
 ]
 
 // Yo prefiero llamarlo «usuarios», para no confundir, semánticamente, «author»
-// con «photographer», pero en GureGipuzkoa estaba así. Son unos 170. Asigno un
+// con «photographer», pero en Gure Gipuzkoa estaba así. Son unos 170. Asigno un
 // nombre más correcto allá donde es posible.
 const authors = [
   {
@@ -4460,7 +4460,7 @@ const authors = [
   },
   {
     value: 'guregipuzkoa',
-    name: 'GureGipuzkoa',
+    name: 'Gure Gipuzkoa',
   },
   {
     value: 'gipuzkoakomuseoak',
