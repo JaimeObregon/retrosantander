@@ -16,7 +16,7 @@ const escape = (string) =>
       })[tag],
   )
 
-// He comprobado que estas son las únicas entidades que aparecen en los metadatos del CDIS y de GureGipuzkoa.
+// He comprobado que estas son las únicas entidades que aparecen en los metadatos del CDIS y de Gure Gipuzkoa.
 const decode = (string) => {
   return string.replace(
     /&amp;|&lt;|&gt;|&#39;|&quot;|&apos;|&ordm;|&aacute;|&eacute;|&iacute;|&iquest;|&ntilde;|&oacute;/g,
