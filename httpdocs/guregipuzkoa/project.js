@@ -1,5 +1,6 @@
 import { html } from '../modules/strings.js'
 import './components/rs-panel-details.js'
+import './components/rs-map.js'
 
 const project = {
   name: 'Gure Gipuzkoa',
@@ -236,8 +237,11 @@ const project = {
         fr: 'Archive de la Direction Générale du Patrimoine Culturel',
       },
     },
+    // Por lo que veo en guregipuzkoa.eus, tanto el Fondo Marín como el Fondo
+    // Car son ambos enlaces a la Fototeca de Kutxa. No tiene sentido, entonces,
+    // tenerlos como colecciones independientes. Por eso los omito aquí.
     // {
-    //   id: 'car', // "Kutxa_Fototeka". GG: 14988
+    //   id: 'car',
     //   title: {
     //     es: 'Fondo Car',
     //     eu: 'Car Funtsa',
@@ -246,7 +250,7 @@ const project = {
     //   },
     // },
     // {
-    //   id: 'marin', // Es el mismo enlace que el Fondo Car
+    //   id: 'marin',
     //   title: {
     //     es: 'Fondo Marín',
     //     eu: 'Marín Funtsa',
@@ -265,7 +269,7 @@ const project = {
     },
   ],
 
-  locations: [
+  places: [
     {
       title: 'Abaltzisketa',
       id: 'abaltzisketa',
