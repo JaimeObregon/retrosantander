@@ -13,7 +13,7 @@ class Header extends MyElement {
       z-index: 1;
       box-sizing: border-box;
       display: flex;
-      gap: var(--space-medium);
+      gap: var(--header-actions-gap);
       align-items: center;
       width: 100%;
       height: var(--header-height);
