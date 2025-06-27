@@ -33,11 +33,13 @@ const app = {
     this.header.search.query = query
   },
 
-  dispatch(route) {
+  dispatch(url) {
+    const route = decodeURIComponent(url)
+
     const rule = this.project.routes.find(({ pattern }) => route.match(pattern))
 
     if (rule) {
-      const groups = route.match(rule.pattern).groups || {}
+      const groups = route.match(rule.pattern)?.groups || {}
       if (rule.exec(this, groups) !== false) {
         return
       }

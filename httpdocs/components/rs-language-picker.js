@@ -63,7 +63,7 @@ class LanguagePicker extends MyElement {
 
     this.onClick = (event) => event.stopPropagation()
 
-    this.onChange = (event) => {
+    this.onChange = () => {
       if (!this.form) {
         return
       }
