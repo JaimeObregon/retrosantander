@@ -13,30 +13,29 @@ class ThemeSwitcher extends MyElement {
 
     button {
       display: block;
-      width: 100%;
-      aspect-ratio: 1;
       padding: 0;
+      font-size: var(--type-medium);
+      color: inherit;
       touch-action: manipulation;
       cursor: pointer;
-      outline-offset: 5px;
       background: none;
       border: none;
-      border-radius: 50%;
       -webkit-tap-highlight-color: transparent;
 
-      &:is(:hover, :focus-visible) svg {
+      &:hover svg {
         :is(mask#moon, circle#sun) {
-          fill: var(--color-text);
+          color: var(--color-accent);
         }
 
         g {
-          stroke: var(--color-text);
+          color: var(--color-accent);
+          transition: var(--delay-medium);
         }
       }
 
       svg {
-        width: 100%;
-        height: 100%;
+        height: var(--header-actions-size);
+        vertical-align: middle;
         stroke-linecap: round;
 
         :is(mask#moon, circle#sun, g) {
@@ -44,11 +43,13 @@ class ThemeSwitcher extends MyElement {
         }
 
         :is(mask#moon, circle#sun) {
-          fill: var(--color-text-muted);
+          fill: currentcolor;
         }
 
         circle#sun {
-          transition: transform var(--delay-x-large) var(--ease-elastic-3);
+          transition:
+            color var(--delay-medium),
+            transform var(--delay-x-large) var(--ease-elastic-3);
         }
 
         mask#moon circle {
@@ -56,9 +57,10 @@ class ThemeSwitcher extends MyElement {
         }
 
         g {
-          stroke: var(--color-text-muted);
+          stroke: currentcolor;
           stroke-width: 2px;
           transition:
+            color var(--delay-medium),
             transform var(--delay-x-large) var(--ease-elastic-4),
             opacity var(--delay-x-large) var(--ease-3);
         }
