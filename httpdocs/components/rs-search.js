@@ -118,7 +118,7 @@ class Search extends MyElement {
             text-decoration: none;
 
             &.selected {
-              color: var(--color-search-selected-color);
+              color: var(--color-search-selected);
               background: var(--color-search-selected-background);
 
               svg {
