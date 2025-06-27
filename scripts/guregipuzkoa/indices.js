@@ -9,12 +9,7 @@ import fs from 'fs'
 import { slugize } from '../../httpdocs/modules/strings.js'
 import path from 'path'
 
-import {
-  photographers,
-  authors,
-  locations,
-  collections,
-} from './collections.js'
+import { photographers, authors, places, collections } from './collections.js'
 
 const indices = []
 
@@ -41,7 +36,7 @@ const types = {
 
   collections: (slug) => find(collections, slug),
   photographers: (slug) => find(photographers, slug),
-  places: (slug) => find(locations, slug),
+  places: (slug) => find(places, slug),
 
   // Yo prefiero llamarlo «usuarios», para no confundir, semánticamente,
   // «author» con «photographer», pero en Gure Gipuzkoa estaba así.

@@ -4563,7 +4563,7 @@ const authors = [
 // Municipios. Los he revisado todos, tratando de normalizar los nombres (de
 // «Tel Abib» o «Biena» a «Tel Aviv» y «Viena»…). También he añadido la clave
 // «parents» a cada uno.
-const locations = [
+const places = [
   {
     value: 'DONOSTIA-SAN SEBASTIAN',
     name: 'Donostia-San Sebastián',
@@ -6952,4 +6952,4 @@ const collections = [
   },
 ]
 
-export { photographers, authors, locations, folders, collections }
+export { photographers, authors, places, folders, collections }

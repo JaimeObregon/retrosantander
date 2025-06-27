@@ -13,7 +13,7 @@ import {
   authors,
   collections,
   folders,
-  locations,
+  places,
   photographers,
 } from './collections.js'
 
@@ -102,16 +102,16 @@ args.forEach((input) => {
   // - .exif.model === "NIKON D70",
 
   if (municipio) {
-    const found = locations.find(({ value }) => value === municipio)
+    const found = places.find(({ value }) => value === municipio)
     if (!found) {
       throw new Error(`El lugar "${municipio}" no está en el catálogo.`)
     }
 
-    const places = [found.name, ...found.parents]
+    const locations = [found.name, ...found.parents]
       .map(slugize)
       .map((slug) => `places/${slug}`)
 
-    indices.push(...places)
+    indices.push(...locations)
   }
 
   if (fecha) {
