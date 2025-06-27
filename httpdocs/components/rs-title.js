@@ -14,25 +14,32 @@ class Title extends MyElement {
       box-sizing: border-box;
       display: block;
       max-width: 100%;
+      margin-inline: auto;
       overflow: hidden;
       text-overflow: ellipsis;
       font-style: normal;
       font-weight: 500;
       color: var(--color-accent);
+      text-align: center;
       white-space: nowrap;
       transition: width linear;
     }
 
+    :host(.left) cite {
+      margin-inline: 0;
+      text-align: left;
+    }
+
     @media (width <= 1280px) {
       cite {
-        margin: 0;
+        margin-inline: 0;
         text-align: left;
       }
     }
 
     @media (width <= 1024px) {
       cite {
-        font-size: var(--type-x-small);
+        font-size: var(--type-small);
       }
     }
   `
