@@ -47,7 +47,7 @@ class Menu extends MyElement {
       width: 100%;
       max-width: var(--menu-width);
       height: calc(100vh - var(--header-height));
-      padding: var(--space-medium);
+      padding: var(--space-large);
       overflow: scroll;
       font-weight: 400;
       line-height: var(--line-height-condensed);
