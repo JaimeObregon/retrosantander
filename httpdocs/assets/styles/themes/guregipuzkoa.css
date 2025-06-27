@@ -73,35 +73,3 @@ html {
   font-variant-numeric: oldstyle-nums;
   color-scheme: dark light;
 }
-
-ol,
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-:is(ol, ul) li {
-  position: relative;
-  padding-left: var(--space-x-large);
-}
-
-ol {
-  counter-reset: number;
-
-  li::before {
-    position: absolute;
-    left: 0;
-    font-family: Numbered, sans-serif;
-    font-style: normal;
-    content: counter(number);
-    counter-increment: number;
-  }
-}
-
-ul li::before {
-  position: absolute;
-  top: -0.15em;
-  left: 0;
-  font-size: var(--type-large);
-  content: '–';
-}
