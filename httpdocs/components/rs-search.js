@@ -112,7 +112,8 @@ class Search extends MyElement {
             position: relative;
             display: flex;
             align-items: center;
-            padding: 0 var(--space-small) 0 var(--padding-left);
+            padding-block: 0;
+            padding-inline: var(--padding-left) var(--space-small);
             line-height: var(--header-actions-size);
             color: var(--color-search-text);
             text-decoration: none;
