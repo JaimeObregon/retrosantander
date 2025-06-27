@@ -1,12 +1,54 @@
 import { app } from '../../modules/app.js'
 import { MyElement } from '../../modules/element.js'
-import { html, slugize } from '../../modules/strings.js'
+import { html, css, slugize } from '../../modules/strings.js'
 
 class Map extends MyElement {
-  static html = html`<slot></slot>`
+  static styles = css`
+    svg {
+      display: block;
+      width: 100vw;
+      height: calc(100vh - var(--header-height));
+      min-height: 45vmax;
+      background: var(--color-map-sea);
 
-  connectedCallback() {
-    const svg = this.querySelector('svg')
+      g {
+        path {
+          fill: var(--color-map-land);
+          stroke: var(--color-map-lines);
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          transition: fill var(--delay-x-large);
+        }
+
+        &[data-title] {
+          cursor: pointer;
+
+          path {
+            fill: var(--color-map-place);
+            stroke-width: 2;
+          }
+
+          &:hover path {
+            cursor: pointer;
+            fill: var(--color-accent);
+            transition: fill var(--delay-small);
+          }
+        }
+      }
+    }
+  `
+
+  async connectedCallback() {
+    const response = await fetch('map.html')
+    const contents = await response.text()
+
+    if (!this.shadowRoot) {
+      return
+    }
+
+    this.shadowRoot.innerHTML = contents
+
+    const svg = this.shadowRoot?.querySelector('svg')
 
     if (!svg) {
       return

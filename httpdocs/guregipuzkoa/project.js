@@ -667,10 +667,7 @@ const project = {
     {
       pattern: /^\/mapa\/?$/,
       exec: async (app) => {
-        const response = await fetch('map.html')
-        const contents = await response.text()
-
-        app.main.innerHTML = `<rs-map>${contents}</rs-map>`
+        app.main.innerHTML = '<rs-map></rs-map>'
       },
     },
 
