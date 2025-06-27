@@ -221,7 +221,7 @@ class Search extends MyElement {
           this.selected === undefined ? (this.selected = 0) : ++this.selected,
       }
 
-      if (!actions[event.key]) {
+      if (!this.results || !actions[event.key]) {
         return
       }
 

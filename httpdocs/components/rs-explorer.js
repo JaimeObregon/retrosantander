@@ -181,7 +181,11 @@ class Explorer extends MyElement {
       return
     }
 
-    await database.load(current)
+    try {
+      await database.load(current)
+    } catch (error) {
+      app.main.innerHTML = '<rs-404></rs-404>'
+    }
 
     const url = new URL(document.location.href)
     app.query = url.searchParams.get('q')

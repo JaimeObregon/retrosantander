@@ -640,29 +640,27 @@ const project = {
     {
       pattern: /^\/$/,
       exec: async (app) => {
+        // const gallery = 'baserriak'
+        // app.main.innerHTML = `<rs-gallery gallery="${gallery}"></rs-gallery>`
+
         const url = `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/indices/indices.json`
         const response = await fetch(url)
         const json = await response.json()
 
-        app.main.innerHTML = json
+        const items = json
           .map(
             ([folder, id, name, count]) => html`
-              <a href="/bildumak/${folder}/${id}"> ${folder} → ${name} </a>
-              (${count})
+              <li>
+                <a href="/bildumak/${folder}/${id}"> ${folder} → ${name} </a>
+                (${count})
+              </li>
             `,
           )
-          .join('<br/>')
-      },
-    },
+          .join('')
 
-    {
-      pattern:
-        /^\/bildumak\/(?<folder>[\wñ\-_]+)\/(?<id>[\wñ\-_]+)(\/?(\?q=(?<query>.+))?)?$/,
-      exec: (app, groups) => {
-        const { folder, id } = groups
-        const index = project.index(folder, id)
-
-        app.main.innerHTML = `<rs-explorer index="${index}"></rs-explorer>`
+        app.main.innerHTML = html`<ol>
+          ${items}
+        </ol>`
       },
     },
 
@@ -676,33 +674,16 @@ const project = {
       },
     },
 
-    /*
     {
-      pattern: /^\/$/,
-      exec: async (app) => {
-        const gallery = 'baserriak'
-        app.main.innerHTML = `<rs-gallery gallery="${gallery}"></rs-gallery>`
+      pattern: /^\/mapa\/(?<place>[\wñ\-_]+)(\/?(\?q=(?<query>.+))?)?$/,
+      exec: (app, groups) => {
+        const index = project.index('places', groups.place)
+        app.main.innerHTML = `<rs-explorer index="${index}"></rs-explorer>`
       },
     },
 
     {
-      pattern: /^\/mapa\/(?<location>[\wñ\-_]+)(\/?(\?q=(?<query>.+))?)?$/,
-      exec: (app) => {
-        const id = document.location.pathname.replace(/^\/mapa\//, '')
-
-        const location = app.project.locations.find(
-          (location) => location.slug === slug
-        )
-
-        if (!location) {
-          return false
-        }
-
-        app.main.innerHTML = `<rs-explorer index="${location.index}"></rs-explorer>`
-      },
-    },
-    {
-      pattern: /^\/bildumak$/,
+      pattern: /^\/bildumak\/?$/,
       exec: async (app) => {
         const response = await fetch('collections.html')
         const contents = await response.text()
@@ -712,29 +693,13 @@ const project = {
     },
 
     {
-      pattern: /^\/bildumak\/(?<collection>[\wñ\-_]+)(\/?(\?q=(?<query>.+))?)?$/,
+      pattern:
+        /^\/bildumak\/(?<folder>[\wñ\-_]+)\/(?<id>[\wñ\-_]+)(\/?(\?q=(?<query>.+))?)?$/,
       exec: (app, groups) => {
-        const slug = document.location.pathname.replace(/^\/bildumak\//, '')
-
-        const collection = app.project.collections.find(
-          (collection) => collection.slug === slug
-        )
-
-        if (!collection) {
-          return false
-        }
-
-        const main = document.querySelector('main')
-        main.innerHTML = `<rs-grid index="${collection.index}"></rs-grid>`
+        const index = project.index(groups.folder, groups.id)
+        app.main.innerHTML = `<rs-explorer index="${index}"></rs-explorer>`
       },
     },
-    {
-      pattern: /^\/bildumak\/(?<collection>[\wñ\-_]+)\/?(?<image>\d+)$/,
-      exec: (app, groups) => {
-        console.log(app, groups)
-      },
-    },
-    */
   ],
 
   logos: {

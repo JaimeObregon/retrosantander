@@ -14,13 +14,11 @@ class Title extends MyElement {
       box-sizing: border-box;
       display: block;
       max-width: 100%;
-      margin-inline: auto;
       overflow: hidden;
       text-overflow: ellipsis;
       font-style: normal;
       font-weight: 500;
       color: var(--color-accent);
-      text-align: center;
       white-space: nowrap;
       transition: width linear;
     }
