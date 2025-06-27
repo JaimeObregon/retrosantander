@@ -5,8 +5,8 @@
 html {
   --type-base: calc(0.75rem + 0.5vw);
   --image-gap: 4px;
-  --panel-width: 380px;
-  --menu-width: 480px;
+  --panel-width: 420px;
+  --menu-width: 540px;
   --header-height: 64px;
   --header-actions-size: 26px;
   --header-actions-gap: 14px;
@@ -78,6 +78,7 @@ html {
 rs-menu {
   rs-logo {
     display: block;
-    margin-top: var(--space-large);
+    margin-block: var(--space-large) 0;
+    margin-inline: var(--space-large);
   }
 }

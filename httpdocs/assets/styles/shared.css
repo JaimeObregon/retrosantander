@@ -68,16 +68,15 @@ strong {
 h1 {
   margin: 0;
   font-size: var(--type-x-large);
+  line-height: 1;
   color: var(--color-highlight);
 }
 
-h1,
-ul,
-p {
-  margin: 0;
+:is(h1, ul, p) {
+  margin: 0 0 1lh;
 
-  &:not(:last-child) {
-    margin-bottom: 1rem;
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -85,15 +84,14 @@ abbr {
   cursor: help;
 }
 
-ol,
-ul {
+:is(ol, ul) {
   padding: 0;
   list-style: none;
 }
 
 :is(ol, ul) li {
   position: relative;
-  padding-left: var(--space-large);
+  padding-left: 2ch;
 }
 
 ol {
@@ -156,10 +154,10 @@ rs-menu {
 
   h1 {
     padding: 0 var(--space-large);
-    margin-block: 0;
+    margin-block: var(--space-large);
     margin-inline: calc(-1 * var(--space-large));
     font-size: var(--type-medium);
-    line-height: var(--line-height-normal);
+    line-height: 3;
     color: var(--color-highlight-inverted);
     background: var(--color-text);
 
