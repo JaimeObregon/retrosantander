@@ -55,9 +55,18 @@ class Menu extends MyElement {
       border-left: 1px solid var(--color-border);
       box-shadow: -5px 0 5px var(--color-box-shadow);
       opacity: 0;
-      backdrop-filter: blur(var(--panel-blur));
       transform: translateX(var(--menu-width));
       transition: var(--delay-large);
+
+      /* Necesario para tener backdrop-filter tanto aquí como en <rs-header>. */
+      &::before {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        content: '';
+        backdrop-filter: blur(var(--panel-blur));
+      }
 
       &.open {
         opacity: 1;
