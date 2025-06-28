@@ -111,25 +111,26 @@ class Collections extends MyElement {
   async connectedCallback() {
     this.nav = this.shadowRoot?.querySelector('nav')
     this.article = this.shadowRoot?.querySelector('article')
-    this.section = this.shadowRoot?.querySelector('section')
 
-    if (!this.section || !this.nav || !this.article) {
-      return
-    }
+    this.onLanguagechange = async () => {
+      const language = i18n.getLanguage()
 
-    const response = await fetch('collections.html')
-    const contents = await response.text()
+      const url = `collections.${language}.html`
 
-    this.section.innerHTML = contents
+      const response = await fetch(url)
+      const html = await response.text()
 
-    this.nav.innerHTML = app.project.collections
-      .map(
-        (collection) => `
+      this.innerHTML = html
+
+      this.nav.innerHTML = app.project.collections
+        .map(
+          (collection) => `
           <a href="/${collection.slug}">
             ${collection.title.es}
           </a>`,
-      )
-      .join('')
+        )
+        .join('')
+    }
 
     this.onClick = async (event) => {
       if (event.target.nodeName !== 'A') {
