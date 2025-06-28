@@ -22,18 +22,26 @@ const project = {
     fr: 'Explorez 159\u202F013 photographies historiques de Guipuscoa',
   },
 
-  image: (id) =>
-    `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/optimized/${id}.avif`,
+  origin: 'https://guregipuzkoa.s3.eu-south-2.amazonaws.com',
 
-  metadata: (id) =>
-    `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/metadata/${id}.json`,
+  image: (id) => `${project.origin}/optimized/${id}.avif`,
+
+  metadata: (id) => `${project.origin}/metadata/${id}.json`,
+
+  index: (folder, id) => `${project.origin}/indices/${folder}/${id}.json`,
+
+  galleries: () => `${project.origin}/galleries.json`,
+
+  external: (id) => `https://www.guregipuzkoa.eus/photo/${id}`,
+
+  hosts: ['guregipuzkoa.com', 'guregipuzkoa.eus'],
 
   fetchIndices: async () => {
     if (project.indices) {
       return project.indices
     }
 
-    const url = `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/indices/indices.json`
+    const url = `${project.origin}/indices/indices.json`
 
     const response = await fetch(url)
     const json = await response.json()
@@ -42,15 +50,6 @@ const project = {
 
     return json
   },
-
-  index: (folder, id) =>
-    `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/indices/${folder}/${id}.json`,
-
-  external: (id) => `https://www.guregipuzkoa.eus/photo/${id}`,
-
-  galleries: `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/galleries.json`,
-
-  hosts: ['guregipuzkoa.com', 'guregipuzkoa.eus'],
 
   // Cuántas sugerencias de búsqueda mostrar al buscar.
   maxSuggestions: 100,

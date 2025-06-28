@@ -12,13 +12,13 @@ const project = {
     es: 'Explora 15\u202F210 imágenes históricas de la Colección Jesús Elósegui',
   },
 
-  image: (id) =>
-    `https://retrogipuzkoa.s3.eu-south-2.amazonaws.com/jpeg/${id}.jpg`,
+  origin: 'https://retrogipuzkoa.s3.eu-south-2.amazonaws.com',
 
-  metadata: (id) =>
-    `https://retrogipuzkoa.s3.eu-south-2.amazonaws.com/metadata/${id}.json`,
+  image: (id) => `${project.origin}/jpeg/${id}.jpg`,
 
-  index: `https://retrogipuzkoa.s3.eu-south-2.amazonaws.com/indices/jesus_elosegui.json`,
+  metadata: (id) => `${project.origin}/metadata/${id}.json`,
+
+  index: () => `${project.origin}/indices/jesus_elosegui.json`,
 
   external: (id) => `https://www.guregipuzkoa.eus/photo/${id}`,
 
@@ -35,7 +35,7 @@ const project = {
     {
       pattern: /^\/(\?q=(?<query>.+))?$/,
       exec: (app, groups) => {
-        app.main.innerHTML = `<rs-explorer index="${project.index}"></rs-explorer>`
+        app.main.innerHTML = `<rs-explorer index="${project.index()}"></rs-explorer>`
         if (groups.query) {
           app.title = groups.query
         }

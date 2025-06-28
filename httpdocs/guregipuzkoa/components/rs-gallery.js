@@ -66,7 +66,7 @@ class Gallery extends MyElement {
     this.back = this.shadowRoot?.querySelector('div#back')
     this.nav = this.shadowRoot?.querySelector('nav')
 
-    const response = await fetch(app.project.galleries)
+    const response = await fetch(app.project.galleries())
     const galleries = await response.json()
 
     const id = this.getAttribute('gallery')

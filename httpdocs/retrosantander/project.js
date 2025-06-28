@@ -12,15 +12,16 @@ const project = {
     es: 'Explora 9506 imágenes históricas de Santander',
   },
 
+  origin: 'https://retrosantander.s3.eu-south-2.amazonaws.com',
+
   image: (id) =>
     // `https://portal.ayto-santander.es/portalcdis/image/DownloadFileExposicion.do?id=${id}`,
-    // `https://retrosantander.s3.eu-south-2.amazonaws.com/xxxx/xxxxxxxxx_xxxxxxx/${id}.jpeg`,
+    // `${project.origin}/xxxx/xxxxxxxxx_xxxxxxx/${id}.jpeg`,
     'assets/images/unavailable.svg',
 
-  metadata: (id) =>
-    `https://retrosantander.s3.eu-south-2.amazonaws.com/metadata/${id}.json`,
+  metadata: (id) => `${project.origin}/metadata/${id}.json`,
 
-  index: `https://retrosantander.s3.eu-south-2.amazonaws.com/indices/cdis.json`,
+  index: () => `${project.origin}/indices/cdis.json`,
 
   external: (id) =>
     `http://portal.ayto-santander.es/portalcdis/Public/FotoView.do?id=${id}`,
@@ -38,7 +39,7 @@ const project = {
     {
       pattern: /^\/(\?q=(?<query>.+))?$/,
       exec: (app, groups) => {
-        app.main.innerHTML = `<rs-explorer index="${project.index}"></rs-explorer>`
+        app.main.innerHTML = `<rs-explorer index="${project.index()}"></rs-explorer>`
         if (groups.query) {
           app.title = groups.query
         }
