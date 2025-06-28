@@ -7,11 +7,11 @@ const app = {
     this.header = document.querySelector('rs-header')
     this.main = document.querySelector('main')
 
-    i18n.setLanguage()
-
     const { location } = window
     const route = location.href.replace(location.origin, '')
     app.dispatch(route)
+
+    i18n.setLanguage()
   },
 
   get isProduction() {

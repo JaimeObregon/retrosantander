@@ -1,5 +1,6 @@
 import { app } from '../../modules/app.js'
 import { MyElement } from '../../modules/element.js'
+import { i18n } from '../../modules/i18n.js'
 import { css, html } from '../../modules/strings.js'
 
 class Collections extends MyElement {
@@ -96,7 +97,9 @@ class Collections extends MyElement {
 
   static html = html`
     <main>
-      <section></section>
+      <section>
+        <slot></slot>
+      </section>
       <nav></nav>
       <article></article>
     </main>
@@ -156,6 +159,7 @@ class Collections extends MyElement {
     }
 
     this.myAddEventListener(this.nav, 'click', this.onClick)
+    this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
   }
 }
 
