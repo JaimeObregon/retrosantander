@@ -28,6 +28,21 @@ const project = {
   metadata: (id) =>
     `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/metadata/${id}.json`,
 
+  fetchIndices: async () => {
+    if (project.indices) {
+      return project.indices
+    }
+
+    const url = `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/indices/indices.json`
+
+    const response = await fetch(url)
+    const json = await response.json()
+
+    project.indices = json
+
+    return json
+  },
+
   index: (folder, id) =>
     `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/indices/${folder}/${id}.json`,
 
@@ -646,27 +661,8 @@ const project = {
     {
       pattern: /^\/$/,
       exec: async (app) => {
-        // const gallery = 'baserriak'
-        // app.main.innerHTML = `<rs-gallery gallery="${gallery}"></rs-gallery>`
-
-        const url = `https://guregipuzkoa.s3.eu-south-2.amazonaws.com/indices/indices.json`
-        const response = await fetch(url)
-        const json = await response.json()
-
-        const items = json
-          .map(
-            ([folder, id, name, count]) => html`
-              <li>
-                <a href="/bildumak/${folder}/${id}"> ${folder} → ${name} </a>
-                (${count})
-              </li>
-            `,
-          )
-          .join('')
-
-        app.main.innerHTML = html`<ol>
-          ${items}
-        </ol>`
+        const gallery = 'baserriak'
+        app.main.innerHTML = `<rs-gallery gallery="${gallery}"></rs-gallery>`
       },
     },
 
@@ -701,6 +697,34 @@ const project = {
       exec: (app, groups) => {
         const index = project.index(groups.folder, groups.id)
         app.main.innerHTML = `<rs-explorer index="${index}"></rs-explorer>`
+      },
+    },
+
+    {
+      pattern: /^\/etiketak\/?$/,
+      exec: async (app) => {
+        app.main.innerHTML = '<rs-labels></rs-labels>'
+      },
+    },
+
+    {
+      pattern: /^\/datak\/?$/,
+      exec: async (app) => {
+        app.main.innerHTML = '<rs-dates></rs-dates>'
+      },
+    },
+
+    {
+      pattern: /^\/egileak\/?$/,
+      exec: async (app) => {
+        app.main.innerHTML = '<rs-authors></rs-authors>'
+      },
+    },
+
+    {
+      pattern: /^\/karpetak\/?$/,
+      exec: async (app) => {
+        app.main.innerHTML = '<rs-folders></rs-folders>'
       },
     },
   ],
