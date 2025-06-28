@@ -1,6 +1,6 @@
-import { app } from '../modules/app.js'
-import { MyElement } from '../modules/element.js'
-import { css, html } from '../modules/strings.js'
+import { app } from '../../modules/app.js'
+import { MyElement } from '../../modules/element.js'
+import { css, html } from '../../modules/strings.js'
 
 class Collections extends MyElement {
   static styles = css`

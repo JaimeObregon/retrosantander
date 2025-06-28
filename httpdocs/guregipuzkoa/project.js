@@ -1,6 +1,12 @@
 import { html } from '../modules/strings.js'
-import './components/rs-panel-details.js'
+import './components/rs-authors.js'
+import './components/rs-collections.js'
+import './components/rs-dates.js'
+import './components/rs-folders.js'
+import './components/rs-gallery.js'
+import './components/rs-labels.js'
 import './components/rs-map.js'
+import './components/rs-panel-details.js'
 
 const project = {
   name: 'Gure Gipuzkoa',

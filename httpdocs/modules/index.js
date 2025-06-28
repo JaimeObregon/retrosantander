@@ -7,9 +7,7 @@ app.project = project
 
 await Promise.all([
   import('../components/rs-404.js'),
-  import('../components/rs-collections.js'),
   import('../components/rs-explorer.js'),
-  import('../components/rs-gallery.js'),
   import('../components/rs-header.js'),
   import('../components/rs-icon.js'),
   import('../components/rs-logo.js'),
