@@ -322,16 +322,6 @@ class Search extends MyElement {
 
     clearTimeout(this.timeout)
     this.timeout = setTimeout(() => {
-      const url = new URL(document.location.href)
-      if (app.query !== url.searchParams.get('q')) {
-        if (app.query) {
-          url.searchParams.set('q', app.query)
-        } else {
-          url.searchParams.delete('q')
-        }
-        history.pushState(null, '', url.toString())
-      }
-
       const detail = { results }
       const event = new CustomEvent('searchcomplete', { detail })
       window.dispatchEvent(event)

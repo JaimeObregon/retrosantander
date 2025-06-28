@@ -21,7 +21,7 @@ class Authors extends MyElement {
       .map(
         ([folder, id, name, count]) => html`
           <li>
-            <a href="/bildumak/${folder}/${id}"> ${folder} → ${name} </a>
+            <a href="/ikusi/${folder}/${id}"> ${folder} → ${name} </a>
             (${count})
           </li>
         `,

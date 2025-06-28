@@ -659,71 +659,46 @@ const project = {
   routes: [
     {
       pattern: /^\/$/,
-      exec: async (app) => {
-        const gallery = 'baserriak'
-        app.main.innerHTML = `<rs-gallery gallery="${gallery}"></rs-gallery>`
-      },
+      exec: async (app) => (app.main.innerHTML = `<rs-gallery></rs-gallery>`),
     },
 
     {
       pattern: /^\/mapa\/?$/,
-      exec: async (app) => {
-        app.main.innerHTML = '<rs-map></rs-map>'
-      },
-    },
-
-    {
-      pattern: /^\/mapa\/(?<place>[\wñ\-_]+)(\/?(\?q=(?<query>.+))?)?$/,
-      exec: (app, groups) => {
-        const index = project.index('places', groups.place)
-        app.main.innerHTML = `<rs-explorer index="${index}"></rs-explorer>`
-      },
+      exec: async (app) => (app.main.innerHTML = '<rs-map></rs-map>'),
     },
 
     {
       pattern: /^\/bildumak\/?$/,
-      exec: async (app) => {
-        const response = await fetch('collections.html')
-        const contents = await response.text()
-
-        app.main.innerHTML = `<rs-collections>${contents}</rs-collections>`
-      },
-    },
-
-    {
-      pattern:
-        /^\/bildumak\/(?<folder>[\wñ\-_]+)\/(?<id>[\wñ\-_]+)(\/?(\?q=(?<query>.+))?)?$/,
-      exec: (app, groups) => {
-        const index = project.index(groups.folder, groups.id)
-        app.main.innerHTML = `<rs-explorer index="${index}"></rs-explorer>`
-      },
+      exec: async (app) =>
+        (app.main.innerHTML = `<rs-collections></rs-collections>`),
     },
 
     {
       pattern: /^\/etiketak\/?$/,
-      exec: async (app) => {
-        app.main.innerHTML = '<rs-labels></rs-labels>'
-      },
+      exec: async (app) => (app.main.innerHTML = '<rs-labels></rs-labels>'),
     },
 
     {
       pattern: /^\/datak\/?$/,
-      exec: async (app) => {
-        app.main.innerHTML = '<rs-dates></rs-dates>'
-      },
+      exec: async (app) => (app.main.innerHTML = '<rs-dates></rs-dates>'),
     },
 
     {
       pattern: /^\/egileak\/?$/,
-      exec: async (app) => {
-        app.main.innerHTML = '<rs-authors></rs-authors>'
-      },
+      exec: async (app) => (app.main.innerHTML = '<rs-authors></rs-authors>'),
     },
 
     {
       pattern: /^\/karpetak\/?$/,
-      exec: async (app) => {
-        app.main.innerHTML = '<rs-folders></rs-folders>'
+      exec: async (app) => (app.main.innerHTML = '<rs-folders></rs-folders>'),
+    },
+
+    {
+      pattern:
+        /^\/ikusi\/(?<folder>[\wñ\-_]+)\/(?<id>[\wñ\-_]+)(\/?(\?q=(?<query>.+))?)?$/,
+      exec: (app, groups) => {
+        const index = project.index(groups.folder, groups.id)
+        app.main.innerHTML = `<rs-explorer index="${index}"></rs-explorer>`
       },
     },
   ],

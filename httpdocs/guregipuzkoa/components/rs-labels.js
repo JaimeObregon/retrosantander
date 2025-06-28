@@ -20,7 +20,7 @@ class Labels extends MyElement {
       .filter(([folder]) => folder === 'labels')
       .map(
         ([folder, id, name]) => html`
-          <a href="/bildumak/${folder}/${id}"> ${name} </a>
+          <a href="/ikusi/${folder}/${id}"> ${name} </a>
         `,
       )
       .join('')

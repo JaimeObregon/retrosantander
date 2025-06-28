@@ -96,9 +96,7 @@ class Collections extends MyElement {
 
   static html = html`
     <main>
-      <section>
-        <slot></slot>
-      </section>
+      <section></section>
       <nav></nav>
       <article></article>
     </main>
@@ -107,9 +105,19 @@ class Collections extends MyElement {
   article
   nav
 
-  connectedCallback() {
+  async connectedCallback() {
     this.nav = this.shadowRoot?.querySelector('nav')
     this.article = this.shadowRoot?.querySelector('article')
+    this.section = this.shadowRoot?.querySelector('section')
+
+    if (!this.section || !this.nav || !this.article) {
+      return
+    }
+
+    const response = await fetch('collections.html')
+    const contents = await response.text()
+
+    this.section.innerHTML = contents
 
     this.nav.innerHTML = app.project.collections
       .map(

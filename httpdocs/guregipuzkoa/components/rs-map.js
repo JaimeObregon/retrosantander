@@ -67,7 +67,7 @@ class Map extends MyElement {
       }
 
       const slug = slugize(g.dataset.title)
-      const path = `/mapa/${slug}`
+      const path = `/ikusi/places/${slug}`
 
       const url = new URL(path, document.location.href)
 
