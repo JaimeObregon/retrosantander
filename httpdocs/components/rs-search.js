@@ -302,9 +302,11 @@ class Search extends MyElement {
       return
     }
 
-    this.value = this.input.value = value ?? ''
+    const query = value ?? ''
 
-    const { results, suggestions } = database.search(this.value)
+    this.value = this.input.value = query
+
+    const { results, suggestions } = database.search(query)
 
     app.results = app.results ?? []
 
@@ -322,7 +324,7 @@ class Search extends MyElement {
 
     clearTimeout(this.timeout)
     this.timeout = setTimeout(() => {
-      const detail = { results }
+      const detail = { results, query }
       const event = new CustomEvent('searchcomplete', { detail })
       window.dispatchEvent(event)
     }, debounceDelay)

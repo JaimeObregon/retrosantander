@@ -4,7 +4,12 @@ import { labels } from '../../modules/labels.js'
 import { css, html } from '../../modules/strings.js'
 
 class Labels extends MyElement {
-  static styles = css``
+  static styles = css`
+    a {
+      text-decoration: none;
+      text-transform: lowercase;
+    }
+  `
 
   static html = html`<nav></nav>`
 
