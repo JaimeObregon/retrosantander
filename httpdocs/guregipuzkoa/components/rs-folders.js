@@ -21,7 +21,7 @@ class Folders extends MyElement {
       .map(
         ([folder, id, name, count]) => html`
           <li>
-            <a href="/ikusi/${folder}/${id}">/${name} </a>
+            <a href="/albumak/${id}">/${name}</a>
             (${count})
           </li>
         `,
