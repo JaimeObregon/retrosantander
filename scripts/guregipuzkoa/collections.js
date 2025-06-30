@@ -4886,7 +4886,7 @@ const places = [
   },
   {
     value: 'BIDEGOIAN',
-    name: 'bidania_goiaz',
+    name: 'bidania_goiatz',
     parents: ['Gipuzkoa', 'España', 'Europa'],
   },
   {
