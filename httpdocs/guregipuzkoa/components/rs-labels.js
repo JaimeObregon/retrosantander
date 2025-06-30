@@ -1,5 +1,6 @@
 import { app } from '../../modules/app.js'
 import { MyElement } from '../../modules/element.js'
+import { labels } from '../../modules/labels.js'
 import { css, html } from '../../modules/strings.js'
 
 class Labels extends MyElement {

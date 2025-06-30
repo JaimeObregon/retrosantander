@@ -1,9 +1,9 @@
 import { app } from '../../modules/app.js'
 import { MyElement } from '../../modules/element.js'
-import { css, html } from '../../modules/strings.js'
+import { html } from '../../modules/strings.js'
 
 class Folders extends MyElement {
-  static styles = css``
+  static styles = ``
 
   static html = html`<nav></nav>`
 

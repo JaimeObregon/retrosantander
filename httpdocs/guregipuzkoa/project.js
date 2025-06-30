@@ -689,7 +689,7 @@ const project = {
     },
 
     {
-      pattern: /^\/karpetak\/?$/,
+      pattern: /^\/albumak\/?$/,
       exec: async (app) => (app.main.innerHTML = '<rs-folders></rs-folders>'),
     },
 

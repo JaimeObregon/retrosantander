@@ -61,6 +61,7 @@ class Menu extends MyElement {
       /* Necesario para tener backdrop-filter tanto aquí como en <rs-header>. */
       &::before {
         position: absolute;
+        left: 0;
         z-index: -1;
         width: 100%;
         height: 100%;
