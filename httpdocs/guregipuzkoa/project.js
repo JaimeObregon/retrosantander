@@ -15,11 +15,79 @@ const project = {
 
   languages: ['eu', 'es', 'fr', 'en'],
 
-  title: {
-    es: 'Explora 159\u202F013 fotografías históricas de Guipúzcoa',
-    eu: 'Arakatu Gipuzkoako 159.013 argazki historiko',
-    en: 'Explore 159,013 historic photographs of Gipuzkoa',
-    fr: 'Explorez 159\u202F013 photographies historiques de Guipuscoa',
+  titles: {
+    default: {
+      es: 'Explora 159\u202F013 fotografías históricas de Guipúzcoa',
+      eu: 'Arakatu Gipuzkoako 159.013 argazki historiko',
+      en: 'Explore 159,013 historic photographs of Gipuzkoa',
+      fr: 'Explorez 159\u202F013 photographies historiques de Guipuscoa',
+    },
+    search: (query) => ({
+      es: `Búsqueda de «${query}»`,
+      eu: `«${query}» bilaketa`,
+      en: `Search for "${query}"`,
+      fr: `Recherche «\u202F${query}\u202F»`,
+    }),
+    centuries: (id, name, count) => ({
+      es: `Siglo ${name}`,
+      eu: `${name}. mendea`,
+      en: `Century ${name}`,
+      fr: `Siècle ${name}`,
+    }),
+    collections: (id, name, count) => ({
+      es: `Colección ${name}`,
+      eu: `${name} bilduma`,
+      en: `Collection ${name}`,
+      fr: `Collection ${name}`,
+    }),
+    decades: (id, name, count) => ({
+      es: `Década de ${name}`,
+      eu: `${name}. hamarkada`,
+      en: `${name}s decade`,
+      fr: `Décennie ${name}`,
+    }),
+    faces: (id, name, count) => ({
+      es: `Con ${name} rostros`,
+      eu: `${name} aurpegi`,
+      en: `With ${name} faces`,
+      fr: `Avec ${name} visages`,
+    }),
+    folders: (id, name, count) => ({
+      es: `Álbum «${name}»`,
+      eu: `«${name}» albuma`,
+      en: `Album "${name}"`,
+      fr: `Album «\u202F${name}\u202F»`,
+    }),
+    labels: (id, name, count) => ({
+      es: `Con «${name}» detectado`,
+      eu: `«${name}» etiketarekin`,
+      en: `With "${name}" detected`,
+      fr: `Avec «\u202F${name}\u202F» détecté`,
+    }),
+    photographers: (id, name, count) => ({
+      es: `Tomadas por ${name}`,
+      eu: `${name}k hartuak`,
+      en: `Taken by ${name}`,
+      fr: `Prises par ${name}`,
+    }),
+    places: (id, name, count) => ({
+      es: `De ${name}`,
+      eu: `${name}koak`,
+      en: `From ${name}`,
+      fr: `De ${name}`,
+    }),
+    users: (id, name, count) => ({
+      es: `Aportadas por ${name}`,
+      eu: `${name}k ekarritakoak`,
+      en: `Contributed by ${name}`,
+      fr: `Contribuées par ${name}`,
+    }),
+    years: (id, name, count) => ({
+      es: `Año ${name}`,
+      eu: `${name}. urtea`,
+      en: `Year ${name}`,
+      fr: `Année ${name}`,
+    }),
   },
 
   origin: 'https://guregipuzkoa.s3.eu-south-2.amazonaws.com',
@@ -36,27 +104,25 @@ const project = {
 
   hosts: ['guregipuzkoa.com', 'guregipuzkoa.eus'],
 
-  fetchIndices: async () => {
-    if (project.indices) {
-      return project.indices
-    }
-
-    const url = `${project.origin}/indices/indices.json`
-
-    const response = await fetch(url)
-    const json = await response.json()
-
-    project.indices = json
-
-    return json
-  },
-
   // Cuántas sugerencias de búsqueda mostrar al buscar.
   maxSuggestions: 100,
 
   // Umbral de confianza en la visión artificial.
   // Los objetos detectados por debajo de éste umbral serán ignorados.
   confidenceThreshold: 80,
+
+  async init() {
+    const url = `${project.origin}/indices/indices.json`
+
+    const response = await fetch(url)
+    const indices = await response.json()
+
+    project.indices = indices.map((index) => {
+      const [folder, id, name, count] = index
+      const title = project.titles[folder](id, name, count)
+      return { folder, id, name, count, title }
+    })
+  },
 
   collections: [
     {

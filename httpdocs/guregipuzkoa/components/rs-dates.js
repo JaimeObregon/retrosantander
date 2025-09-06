@@ -14,18 +14,24 @@ class Dates extends MyElement {
       return
     }
 
-    const indices = await app.project.fetchIndices()
+    const items = app.project.indices
+      .filter(({ folder }) =>
+        ['centuries', 'decades', 'years'].includes(folder),
+      )
+      .map(({ folder, id, name, count }) => {
+        const path = {
+          centuries: 'mendeak',
+          decades: 'hamarkadak',
+          years: 'urteak',
+        }[folder]
 
-    const items = indices
-      .filter(([folder]) => ['centuries', 'decades', 'years'].includes(folder))
-      .map(
-        ([folder, id, name, count]) => html`
+        return html`
           <li>
-            <a href="/ikusi/${folder}/${id}"> ${name} </a>
+            <a href="/${path}/${id}"> ${name} </a>
             (${count})
           </li>
-        `,
-      )
+        `
+      })
       .join('')
 
     this.container.innerHTML = html`<ol>

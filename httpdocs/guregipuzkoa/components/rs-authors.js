@@ -14,18 +14,21 @@ class Authors extends MyElement {
       return
     }
 
-    const indices = await app.project.fetchIndices()
+    const items = app.project.indices
+      .filter(({ folder }) => ['users', 'photographers'].includes(folder))
+      .map(({ folder, id, name, count }) => {
+        const path = {
+          users: 'erabiltzaileak',
+          photographers: 'argazkilariak',
+        }[folder]
 
-    const items = indices
-      .filter(([folder]) => ['users', 'photographers'].includes(folder))
-      .map(
-        ([folder, id, name, count]) => html`
+        return html`
           <li>
             <a href="/${path}/${id}">${folder} → ${name}</a>
             (${count})
           </li>
-        `,
-      )
+        `
+      })
       .join('')
 
     this.container.innerHTML = html`<ol>

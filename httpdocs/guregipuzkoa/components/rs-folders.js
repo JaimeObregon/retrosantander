@@ -14,12 +14,10 @@ class Folders extends MyElement {
       return
     }
 
-    const indices = await app.project.fetchIndices()
-
-    const items = indices
-      .filter(([folder]) => folder === 'folders')
+    const items = app.project.indices
+      .filter(({ folder }) => folder === 'folders')
       .map(
-        ([folder, id, name, count]) => html`
+        ({ id, name, count }) => html`
           <li>
             <a href="/albumak/${id}">/${name}</a>
             (${count})

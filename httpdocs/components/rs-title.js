@@ -46,7 +46,7 @@ class Title extends MyElement {
 
   static html = `<cite></cite>`
 
-  default
+  placeholder
   cite
   speeds = {
     deleting: 2,
@@ -58,17 +58,20 @@ class Title extends MyElement {
   connectedCallback() {
     this.cite = this.shadowRoot?.querySelector('cite')
 
-    i18n.push({
-      'title.default': app.project.title,
-    })
+    this.placeholder = app.project.titles.default
 
     this.onLanguagechange = () => {
-      this.default = i18n.get('title.default')
-      this.caption = this.default
+      const language = i18n.getLanguage()
+      this.caption = this.placeholder[language]
     }
 
-    this.onSearchcomplete = () => {
-      this.caption = this.default
+    this.onSearchcomplete = ({ detail }) => {
+      const { query } = detail
+      if (query) {
+        const language = i18n.getLanguage()
+        this.placeholder = app.project.titles.search(query)
+        this.caption = this.placeholder[language]
+      }
     }
 
     this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
@@ -81,15 +84,20 @@ class Title extends MyElement {
     }
   }
 
+  set default(caption) {
+    this.placeholder = caption
+  }
+
   set caption(caption) {
-    const title = caption.trim() || this.default
+    const language = i18n.getLanguage()
+    const title = caption.trim() || this.placeholder[language]
     const previous = this.cite.innerText
 
     clearTimeout(this.resetTimeout)
 
-    if (!this.resetTimeout && title === this.default) {
+    if (!this.resetTimeout && title === this.placeholder[language]) {
       this.resetTimeout = setTimeout(
-        () => (this.caption = this.default),
+        () => (this.caption = this.placeholder[language]),
         this.resetDelay,
       )
       return
