@@ -99,7 +99,30 @@ class Explorer extends MyElement {
       return
     }
 
+    const folder = this.getAttribute('folder')
+    const id = this.getAttribute('id')
+
+    const index = app.project.index(folder, id)
+
+    try {
+      await database.load(index)
+    } catch (error) {
+      this.outerHTML = '<rs-404></rs-404>'
+      return
+    }
+
     this.innerHTML = html`<rs-notice class="hidden"></rs-notice>`
+
+    if (folder && id) {
+      const { title } = app.project.indices.find(
+        (index) => index.folder === folder && index.id === id,
+      )
+
+      app.defaultTitle = title
+    }
+
+    const url = new URL(document.location.href)
+    app.query = url.searchParams.get('q')
 
     this.observer = new IntersectionObserver(this.onIntersect.bind(this), {
       rootMargin: '0px',
@@ -174,25 +197,6 @@ class Explorer extends MyElement {
     }
 
     this.observer?.disconnect()
-  }
-
-  async attributeChangedCallback(name, previous, current) {
-    if (name !== 'index') {
-      return
-    }
-
-    try {
-      await database.load(current)
-    } catch (error) {
-      app.main.innerHTML = '<rs-404></rs-404>'
-    }
-
-    const url = new URL(document.location.href)
-    app.query = url.searchParams.get('q')
-  }
-
-  static get observedAttributes() {
-    return ['index']
   }
 
   onIntersect(intersections) {

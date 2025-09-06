@@ -122,6 +122,8 @@ class Collections extends MyElement {
 
       this.innerHTML = html
 
+      // TODO Esto corre dos veces (pasa lo mismo en rs-labels)
+
       this.nav.innerHTML = app.project.collections
         .map(
           (collection) => `
@@ -158,6 +160,9 @@ class Collections extends MyElement {
 
       this.article.innerHTML = contents
     }
+
+    // TODO No me gusta esto (pasa igual que en rs-labels):
+    this.onLanguagechange()
 
     this.myAddEventListener(this.nav, 'click', this.onClick)
     this.myAddEventListener(window, 'languagechange', this.onLanguagechange)

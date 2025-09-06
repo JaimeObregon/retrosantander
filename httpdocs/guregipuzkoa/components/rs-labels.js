@@ -32,14 +32,14 @@ class Labels extends MyElement {
         })
         .join('')
 
-      // TODO Esto corre dos veces
+      // TODO Esto corre dos veces (pasa lo mismo en rs-collections)
 
       this.container.innerHTML = html`<ol>
         ${links}
       </ol>`
     }
 
-    // TODO No me gusta esto:
+    // TODO No me gusta esto (pasa igual que en rs-collections):
     this.onLanguagechange()
 
     this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
