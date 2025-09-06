@@ -154,6 +154,7 @@ class Gallery extends MyElement {
       }, crossFadeDuration)
     }, frequency)
 
+    // TODO
     app.title = 'caption'
 
     const buttons = this.nav.querySelectorAll('button')

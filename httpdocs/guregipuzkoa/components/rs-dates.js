@@ -3,7 +3,62 @@ import { MyElement } from '../../modules/element.js'
 import { css, html } from '../../modules/strings.js'
 
 class Dates extends MyElement {
-  static styles = css``
+  static styles = css`
+    nav {
+      text-align: center;
+    }
+
+    main {
+      display: inline-flex;
+      flex-direction: column;
+      gap: var(--space-medium);
+      margin: auto;
+      font-variant-numeric: tabular-nums;
+
+      a {
+        text-decoration: none;
+        margin: 0.125em 0.5em;
+        xbackground: black;
+      }
+
+      div {
+        padding: var(--space-medium);
+        padding: 0;
+        background: none !important;
+      }
+
+      > div {
+        display: flex;
+        flex-direction: row;
+        background: blue;
+        align-items: center;
+        font-size: 1.5rem;
+
+        > a {
+          font-variant: small-caps;
+        }
+
+        > div {
+          background: magenta;
+          display: flex;
+          flex-direction: column;
+
+          > div {
+            background: black;
+            align-items: center;
+            display: flex;
+            font-size: 1.15rem;
+            flex-direction: row;
+
+            > div {
+              background: orange;
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  `
 
   static html = html`<nav></nav>`
 
@@ -34,6 +89,61 @@ class Dates extends MyElement {
     this.container.innerHTML = html`<ol>
       ${items}
     </ol>`
+
+    const centuries = app.project.indices.filter(
+      ({ folder }) => folder === 'centuries',
+    )
+
+    const decades = app.project.indices.filter(
+      ({ folder }) => folder === 'decades',
+    )
+
+    const years = app.project.indices.filter(({ folder }) => folder === 'years')
+
+    this.container.innerHTML = html`
+      <main>
+        ${centuries
+          .map(
+            (century) => html`
+              <div>
+                <a href="/mendeak/${century.id}">Siglo ${century.name}</a>
+                <div>
+                  ${decades
+                    .filter(
+                      (decade) =>
+                        Number(decade.id.substring(0, 2)) + 1 == century.id,
+                    )
+                    .map(
+                      (decade) =>
+                        html`<div>
+                          <a href="/hamarkadak/${decade.id}"
+                            >Década de ${decade.name}</a
+                          >
+                          <div>
+                            ${years
+                              .filter(
+                                (year) =>
+                                  year.id.substring(0, 3) ==
+                                  decade.id.substring(0, 3),
+                              )
+                              .map(
+                                (year) =>
+                                  html`<a href="/urteak/${year.id}"
+                                    >${year.name}</a
+                                  >`,
+                              )
+                              .join(' · ')}
+                          </div>
+                        </div>`,
+                    )
+                    .join('')}
+                </div>
+              </div>
+            `,
+          )
+          .join('')}
+      </main>
+    `
   }
 }
 

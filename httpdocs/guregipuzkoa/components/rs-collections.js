@@ -7,30 +7,25 @@ class Collections extends MyElement {
   static styles = css`
     main {
       position: relative;
-      top: calc(var(--header-height) + var(--image-gap));
       display: flex;
-      height: calc(100vh - var(--header-height) - 2 * var(--image-gap));
-      overflow: scroll;
+      align-items: flex-start;
+      padding: var(--space-large);
 
       section,
       nav,
       article {
         flex-shrink: 0;
         width: 50%;
-        overflow: scroll;
       }
 
       section {
-        box-sizing: border-box;
-        padding-right: 3em;
-        font-size: 19px;
-        font-weight: 400;
+        position: sticky;
+        top: calc(var(--header-height) + var(--space-large));
       }
 
       article {
         box-sizing: border-box;
         padding: 3em;
-        font-size: 19px;
         font-weight: 400;
         background: var(--color-panel);
 
@@ -54,19 +49,17 @@ class Collections extends MyElement {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        width: 50%;
-        padding: 0 0
-          calc(100vh - var(--header-height) - 2 * var(--image-gap) - 3em);
-        font-size: 23px;
-        font-weight: 600;
-        text-align: right;
+        font-size: var(--type-large);
+        font-weight: bold;
 
         a {
           position: relative;
-          padding: 1em 2em 1em 1em;
-          /*color: var(--color-link);*/
+          padding-block: var(--space-small);
+          padding-inline: var(--space-medium);
           text-decoration: none;
-          background: var(--color-neutral-900);
+          text-wrap: balance;
+          text-align: right;
+          color: var(--color-accent);
 
           &::before {
             position: absolute;
