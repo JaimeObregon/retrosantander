@@ -15,9 +15,10 @@
   "type": "module",
   "scripts": {
     "build": "bin/build.sh",
-    "guregipuzkoa": "bin/serve.sh guregipuzkoa",
-    "retrogipuzkoa": "bin/serve.sh retrogipuzkoa",
-    "retrosantander": "bin/serve.sh retrosantander"
+    "serve": "bin/serve.sh",
+    "serve:guregipuzkoa": "yarn run serve guregipuzkoa 8002",
+    "serve:retrogipuzkoa": "yarn run serve retrogipuzkoa 8001",
+    "serve:retrosantander": "yarn run serve retrosantander 8000"
   },
   "prettier": {
     "semi": false,
@@ -40,9 +41,6 @@
       "no-descending-specificity": null
     }
   },
-  "engines": {
-    "node": ">=20.12.0"
-  },
   "devDependencies": {
     "@aws-sdk/client-rekognition": "^3.883.0",
     "@aws-sdk/client-s3": "^3.883.0",
@@ -58,5 +56,8 @@
     "stylelint-config-recess-order": "^7.3.0",
     "stylelint-config-standard": "^39.0.0",
     "stylelint-order": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=20.12.0"
   }
 }

@@ -75,10 +75,10 @@ El programa determina qué proyecto servir en función del nombre del _host_. Pa
 Para iniciar el entorno de desarrollo basta instalar las dependencias (`yarn install`) y arrancar el servidor web invocando el script de `package.json` correspondiente al proyecto que se desea servir:
 
 ```console
-yarn run guregipuzkoa
+yarn run serve:guregipuzkoa
 ```
 
-El _stack_ tecnológico es deliberadamente minimalista y está basada en estándares W3C: _web components_, _shadow DOM_, HTML5, CSS y JavaScript (ES6). Parte del reto ha sido elaborar complementamente a medida todos los componentes, de forma que no hay dependencias externas, ni tampoco un _backend_ o una base de datos.
+El _stack_ tecnológico es deliberadamente mínimo y está basado en estándares W3C: _web components_, _shadow DOM_, HTML5, CSS y JavaScript (ES6). Parte del reto ha sido elaborar complementamente a medida todos los componentes, de forma que no hay dependencias externas, ni tampoco un _backend_ o una base de datos.
 
 # Integración con VS Code
 
