@@ -56,10 +56,10 @@ class Collections extends MyElement {
           position: relative;
           padding-block: var(--space-small);
           padding-inline: var(--space-medium);
-          text-decoration: none;
-          text-wrap: balance;
-          text-align: right;
           color: var(--color-accent);
+          text-align: right;
+          text-wrap: balance;
+          text-decoration: none;
 
           &::before {
             position: absolute;
