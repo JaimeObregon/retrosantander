@@ -8,8 +8,13 @@ const project = {
 
   languages: ['es'],
 
-  title: {
-    es: 'Explora 9506 imágenes históricas de Santander',
+  titles: {
+    default: {
+      es: 'Explora 9506 imágenes históricas de Santander',
+    },
+    search: (query) => ({
+      es: `Búsqueda de «${query}»`,
+    }),
   },
 
   origin: 'https://retrosantander.s3.eu-south-2.amazonaws.com',

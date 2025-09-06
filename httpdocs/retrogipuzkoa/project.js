@@ -8,8 +8,13 @@ const project = {
 
   languages: ['es'],
 
-  title: {
-    es: 'Explora 15\u202F210 imágenes históricas de la Colección Jesús Elósegui',
+  titles: {
+    default: {
+      es: 'Explora 15\u202F210 imágenes históricas de la Colección Jesús Elósegui',
+    },
+    search: (query) => ({
+      es: `Búsqueda de «${query}»`,
+    }),
   },
 
   origin: 'https://retrogipuzkoa.s3.eu-south-2.amazonaws.com',
