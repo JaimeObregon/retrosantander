@@ -17,10 +17,8 @@ class Authors extends MyElement {
     const items = app.project.indices
       .filter(({ folder }) => ['users', 'photographers'].includes(folder))
       .map(({ folder, id, name, count }) => {
-        const path = {
-          users: 'erabiltzaileak',
-          photographers: 'argazkilariak',
-        }[folder]
+        const { paths } = app.project
+        const path = Object.keys(paths).find((key) => paths[key] === folder)
 
         return html`
           <li>

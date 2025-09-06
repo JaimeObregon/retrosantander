@@ -31,15 +31,12 @@ const project = {
   // Los objetos detectados por debajo de éste umbral serán ignorados.
   confidenceThreshold: 80,
 
+  init() {},
+
   routes: [
     {
       pattern: /^\/(\?q=(?<query>.+))?$/,
-      exec: (app, groups) => {
-        app.main.innerHTML = `<rs-explorer index="${project.index()}"></rs-explorer>`
-        if (groups.query) {
-          app.title = groups.query
-        }
-      },
+      exec: (app) => (app.main.innerHTML = `<rs-explorer></rs-explorer>`),
     },
   ],
 

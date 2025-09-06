@@ -19,11 +19,8 @@ class Dates extends MyElement {
         ['centuries', 'decades', 'years'].includes(folder),
       )
       .map(({ folder, id, name, count }) => {
-        const path = {
-          centuries: 'mendeak',
-          decades: 'hamarkadak',
-          years: 'urteak',
-        }[folder]
+        const { paths } = app.project
+        const path = Object.keys(paths).find((key) => paths[key] === folder)
 
         return html`
           <li>

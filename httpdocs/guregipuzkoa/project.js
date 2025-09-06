@@ -90,6 +90,19 @@ const project = {
     }),
   },
 
+  paths: {
+    mendeak: 'centuries',
+    hamarkadak: 'decades',
+    urteak: 'years',
+    bildumak: 'collections',
+    aurpegiak: 'faces',
+    albumak: 'folders',
+    etiketak: 'labels',
+    argazkilariak: 'photographers',
+    lekuak: 'places',
+    erabiltzaileak: 'users',
+  },
+
   origin: 'https://guregipuzkoa.s3.eu-south-2.amazonaws.com',
 
   image: (id) => `${project.origin}/optimized/${id}.avif`,
@@ -761,10 +774,10 @@ const project = {
 
     {
       pattern:
-        /^\/ikusi\/(?<folder>[\wñ\-_]+)\/(?<id>[\wñ\-_]+)(\/?(\?q=(?<query>.+))?)?$/,
-      exec: (app, groups) => {
-        const index = project.index(groups.folder, groups.id)
-        app.main.innerHTML = `<rs-explorer index="${index}"></rs-explorer>`
+        /^\/(?<path>[\wñ\-_]+)\/(?<id>[\wñ\-_]+)(\/?(\?q=(?<query>.+))?)?$/,
+      exec: (app, { path, id }) => {
+        const folder = project.paths[path]
+        app.main.innerHTML = `<rs-explorer folder="${folder}" id="${id}"></rs-explorer>`
       },
     },
   ],

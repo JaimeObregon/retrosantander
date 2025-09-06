@@ -24,7 +24,8 @@ window.addEventListener('languagechange', () => {
   document.documentElement.lang = language
 })
 
-app.init()
+await app.project.init()
+await app.init()
 
 document.addEventListener('click', (event) => {
   const link = event
