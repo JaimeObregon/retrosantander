@@ -23,6 +23,11 @@ const app = {
     this.header.title.caption = caption
   },
 
+  // Establece el título predeterminado (multiidioma)
+  set defaultTitle(title) {
+    this.header.title.default = title
+  },
+
   // Devuelve el término de la búsqueda actual.
   get query() {
     return this.header.search.query
