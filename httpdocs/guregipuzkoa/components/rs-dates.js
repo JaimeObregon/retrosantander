@@ -4,6 +4,10 @@ import { css, html } from '../../modules/strings.js'
 
 class Dates extends MyElement {
   static styles = css`
+    :host {
+      display: block;
+    }
+
     nav {
       text-align: center;
     }
@@ -16,21 +20,19 @@ class Dates extends MyElement {
       font-variant-numeric: tabular-nums;
 
       a {
-        text-decoration: none;
         margin: 0.125em 0.5em;
-        xbackground: black;
+        color: var(--color-accent);
+        text-decoration: none;
       }
 
       div {
         padding: var(--space-medium);
         padding: 0;
-        background: none !important;
       }
 
       > div {
         display: flex;
         flex-direction: row;
-        background: blue;
         align-items: center;
         font-size: 1.5rem;
 
@@ -39,19 +41,16 @@ class Dates extends MyElement {
         }
 
         > div {
-          background: magenta;
           display: flex;
           flex-direction: column;
 
           > div {
-            background: black;
-            align-items: center;
             display: flex;
-            font-size: 1.15rem;
             flex-direction: row;
+            align-items: center;
+            font-size: 1.15rem;
 
             > div {
-              background: orange;
               font-size: 0.75rem;
             }
           }

@@ -6,9 +6,19 @@ import { css, html } from '../../modules/strings.js'
 
 class Labels extends MyElement {
   static styles = css`
+    :host {
+      display: block;
+    }
+
+    ol {
+      padding: 0;
+      margin: 0;
+    }
+
     a {
-      text-decoration: none;
+      color: var(--color-accent);
       text-transform: lowercase;
+      text-decoration: none;
     }
   `
 
@@ -17,11 +27,11 @@ class Labels extends MyElement {
   async connectedCallback() {
     this.container = this.shadowRoot?.querySelector('nav')
 
-    if (!this.container) {
-      return
-    }
-
     this.onLanguagechange = async () => {
+      if (!this.container) {
+        return
+      }
+
       const language = i18n.getLanguage()
 
       const links = app.project.indices

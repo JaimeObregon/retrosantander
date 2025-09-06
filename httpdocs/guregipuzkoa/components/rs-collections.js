@@ -5,11 +5,14 @@ import { css, html } from '../../modules/strings.js'
 
 class Collections extends MyElement {
   static styles = css`
+    :host {
+      display: block;
+    }
+
     main {
       position: relative;
       display: flex;
       align-items: flex-start;
-      padding: var(--space-large);
 
       section,
       nav,
