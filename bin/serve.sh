@@ -12,4 +12,5 @@ esbuild \
   --outdir=httpdocs/build \
   --servedir=httpdocs \
   --serve-fallback="httpdocs/$1/index.html" \
+  --serve=$1.local:$2
   --watch
