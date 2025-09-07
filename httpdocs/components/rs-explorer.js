@@ -93,17 +93,19 @@ class Explorer extends MyElement {
   resetTitle() {
     const language = i18n.getLanguage()
 
+    const folder = this.getAttribute('folder')
+    const id = this.getAttribute('id')
+
     if (app.query) {
       app.title = app.project.titles.search(app.query)[language]
-    } else {
-      const folder = this.getAttribute('folder')
-      const id = this.getAttribute('id')
-
+    } else if (folder && id) {
       const { title } = app.project.indices.find(
         (index) => index.folder === folder && index.id === id,
       )
 
       app.title = title[language]
+    } else {
+      app.title = ''
     }
   }
 
