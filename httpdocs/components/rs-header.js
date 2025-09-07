@@ -10,7 +10,7 @@ class Header extends MyElement {
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 1;
+      z-index: 2;
       box-sizing: border-box;
       display: flex;
       gap: var(--header-actions-gap);

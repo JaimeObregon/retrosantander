@@ -6,23 +6,49 @@ import { css, html } from '../modules/strings.js'
 class LanguagePicker extends MyElement {
   static styles = css`
     :host {
+      position: relative;
       display: inline-block;
+      font-family: var(--font-sans);
+      font-weight: bold;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      height: var(--header-actions-size);
+      padding: 0 var(--space-x-small);
+      font-size: var(--type-medium);
+      font-weight: bold;
+      color: var(--color-background);
+      background: var(--color-text);
+      border: none;
+      border-radius: var(--space-small);
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      -webkit-tap-highlight-color: transparent;
     }
 
     form {
+      position: absolute;
+      right: 0;
       display: flex;
-      gap: var(--space-small);
+      flex-direction: column;
+      color: var(--color-background);
+      background: var(--color-text);
+      border-radius: var(--space-small);
+      border-top-right-radius: 0;
+      overflow: hidden;
+      box-shadow: 0 5px 5px var(--color-box-shadow);
+      backdrop-filter: blur(var(--panel-blur));
+      font-size: var(--type-small);
 
       label {
-        padding: 0 var(--space-small);
+        padding: var(--space-x-small) var(--space-medium);
         cursor: pointer;
 
-        &:has(input[checked]) {
-          color: var(--color-accent);
-        }
-
-        &:hover {
-          text-decoration: underline;
+        :is(&:has(input[checked]), &:hover) {
+          color: var(--color-background);
+          background: var(--color-accent);
         }
 
         input {
@@ -32,7 +58,10 @@ class LanguagePicker extends MyElement {
     }
   `
 
-  static html = `<form></form>`
+  static html = html`
+    <button>EU <rs-icon name="chevronDown"></rs-icon></button>
+    <form></form>
+  `
 
   connectedCallback() {
     this.form = this.shadowRoot?.querySelector('form')
@@ -60,6 +89,8 @@ class LanguagePicker extends MyElement {
         `,
       )
       .join('')
+
+    // this.form.innerHTML = 'eu'
 
     this.onClick = (event) => event.stopPropagation()
 
