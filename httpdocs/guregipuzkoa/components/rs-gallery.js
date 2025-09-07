@@ -18,12 +18,31 @@ class Gallery extends MyElement {
       height: 100vh;
       background-size: cover;
       transition: opacity ${crossFadeDuration}ms;
+
+      &#back {
+        &::before {
+          position: fixed;
+          top: var(--header-height);
+          left: 0;
+          z-index: 1;
+          display: block;
+          width: 100%;
+          height: calc(100vh - var(--header-height));
+          pointer-events: none;
+          content: '';
+          background: radial-gradient(
+            transparent 35%,
+            var(--color-backdrop) 98%
+          );
+        }
+      }
     }
 
     nav {
       position: absolute;
-      bottom: var(--space-small);
+      bottom: var(--space-medium);
       left: 0;
+      z-index: 1;
       display: flex;
       justify-content: center;
       width: 100%;
@@ -148,11 +167,7 @@ class Gallery extends MyElement {
       clearInterval(this.imageReadyInterval)
 
       this.front.style.backgroundImage = this.back.style.backgroundImage
-
-      this.back.style.backgroundImage = `
-        radial-gradient(transparent 25%, var(--color-backdrop) 95%),
-        url(${src})`
-
+      this.back.style.backgroundImage = `url(${src})`
       this.front.style.opacity = 0
 
       this.timeout = setTimeout(() => {
