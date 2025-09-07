@@ -28,61 +28,61 @@ const project = {
       en: `Search for "${query}"`,
       fr: `Recherche «\u202F${query}\u202F»`,
     }),
-    centuries: (id, name, count) => ({
+    centuries: (name) => ({
       es: `Siglo ${name}`,
       eu: `${name}. mendea`,
       en: `Century ${name}`,
       fr: `Siècle ${name}`,
     }),
-    collections: (id, name, count) => ({
+    collections: (name) => ({
       es: `Colección ${name}`,
       eu: `${name} bilduma`,
       en: `Collection ${name}`,
       fr: `Collection ${name}`,
     }),
-    decades: (id, name, count) => ({
+    decades: (name) => ({
       es: `Década de ${name}`,
       eu: `${name}. hamarkada`,
       en: `${name}s decade`,
       fr: `Décennie ${name}`,
     }),
-    faces: (id, name, count) => ({
+    faces: (name) => ({
       es: `Con ${name} rostros`,
       eu: `${name} aurpegi`,
       en: `With ${name} faces`,
       fr: `Avec ${name} visages`,
     }),
-    folders: (id, name, count) => ({
+    folders: (name) => ({
       es: `Álbum «${name}»`,
       eu: `«${name}» albuma`,
       en: `Album "${name}"`,
       fr: `Album «\u202F${name}\u202F»`,
     }),
-    labels: (id, name, count) => ({
+    labels: (name) => ({
       es: `Con «${name}» detectado`,
       eu: `«${name}» etiketarekin`,
       en: `With "${name}" detected`,
       fr: `Avec «\u202F${name}\u202F» détecté`,
     }),
-    photographers: (id, name, count) => ({
+    photographers: (name) => ({
       es: `Tomadas por ${name}`,
       eu: `${name}k hartuak`,
       en: `Taken by ${name}`,
       fr: `Prises par ${name}`,
     }),
-    places: (id, name, count) => ({
+    places: (name) => ({
       es: `De ${name}`,
       eu: `${name}koak`,
       en: `From ${name}`,
       fr: `De ${name}`,
     }),
-    users: (id, name, count) => ({
+    users: (name) => ({
       es: `Aportadas por ${name}`,
       eu: `${name}k ekarritakoak`,
       en: `Contributed by ${name}`,
       fr: `Contribuées par ${name}`,
     }),
-    years: (id, name, count) => ({
+    years: (name) => ({
       es: `Año ${name}`,
       eu: `${name}. urtea`,
       en: `Year ${name}`,
@@ -132,7 +132,7 @@ const project = {
 
     project.indices = indices.map((index) => {
       const [folder, id, name, count] = index
-      const title = project.titles[folder](id, name, count)
+      const title = project.titles[folder](name)
       return { folder, id, name, count, title }
     })
   },
