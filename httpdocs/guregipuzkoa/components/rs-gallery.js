@@ -2,11 +2,11 @@ import { app } from '../../modules/app.js'
 import { MyElement } from '../../modules/element.js'
 import { css, html } from '../../modules/strings.js'
 
-// Duración del fundido entre dos imágenes
+const delay = 7000
+
 const crossFadeDuration = 250
 
-// Cada cuántos milisegundos comprobar si ha terminado de cargar la siguiente imagen
-const frequency = 50
+const imageReadyInterval = 50
 
 class Gallery extends MyElement {
   static styles = css`
@@ -54,7 +54,6 @@ class Gallery extends MyElement {
     <nav></nav>
   `
 
-  delay = 50000
   gallery
   index
   front
@@ -69,23 +68,27 @@ class Gallery extends MyElement {
     const response = await fetch(app.project.galleries())
     const galleries = await response.json()
 
-    const id = this.getAttribute('gallery') ?? 'baserriak'
+    const id = this.getAttribute('gallery')
 
-    this.gallery = galleries.find((gallery) => gallery.id === id)
+    this.gallery = id
+      ? galleries.find((gallery) => gallery.id === id)
+      : galleries[0]
 
     this.nav.innerHTML = this.gallery.images
       .map(() => `<button></button>`)
       .join('')
 
-    this.current = 0
+    this.load(0)
 
-    this.carouselInterval = setInterval(this.next.bind(this), this.delay)
+    this.carouselInterval = setInterval(this.next.bind(this), delay)
 
     this.onKeydown = (event) => {
       if (event.key === 'ArrowLeft') {
+        this.clearIntervalsAndTimeouts()
         this.previous()
         event.preventDefault()
       } else if (event.key === 'ArrowRight') {
+        this.clearIntervalsAndTimeouts()
         this.next()
         event.preventDefault()
       }
@@ -97,14 +100,14 @@ class Gallery extends MyElement {
       }
 
       const buttons = [...this.nav.querySelectorAll('button')]
-      this.current = buttons.findIndex((button) => button === event.target)
+      this.load(buttons.findIndex((button) => button === event.target))
     }
 
     this.myAddEventListener(document, 'keydown', this.onKeydown)
     this.myAddEventListener(this.nav, 'click', this.onClick)
   }
 
-  disconnectedCallback() {
+  clearIntervalsAndTimeouts() {
     if (this.timeout) {
       clearTimeout(this.timeout)
     }
@@ -118,20 +121,24 @@ class Gallery extends MyElement {
     }
   }
 
+  disconnectedCallback() {
+    this.clearIntervalsAndTimeouts()
+  }
+
   next() {
-    this.current = this.index >= this.gallery.length - 1 ? 0 : this.index + 1
+    this.load(this.index >= this.gallery.images.length - 1 ? 0 : this.index + 1)
   }
 
   previous() {
-    this.current = !this.index ? this.gallery.length - 1 : this.index - 1
+    this.load(!this.index ? this.gallery.images.length - 1 : this.index - 1)
   }
 
-  set current(index) {
+  async load(index) {
     const id = this.gallery.images[index]
 
     const img = document.createElement('img')
-    const url = app.project.image(id)
-    img.setAttribute('src', url)
+    const src = app.project.image(id)
+    img.setAttribute('src', src)
 
     this.imageReadyInterval = setInterval(() => {
       if (!img.complete) {
@@ -144,7 +151,7 @@ class Gallery extends MyElement {
 
       this.back.style.backgroundImage = `
         radial-gradient(transparent 25%, var(--color-backdrop) 95%),
-        url(${url})`
+        url(${src})`
 
       this.front.style.opacity = 0
 
@@ -152,10 +159,7 @@ class Gallery extends MyElement {
         this.front.style.backgroundImage = this.back.style.backgroundImage
         this.front.style.opacity = 1
       }, crossFadeDuration)
-    }, frequency)
-
-    // TODO
-    app.title = 'caption'
+    }, imageReadyInterval)
 
     const buttons = this.nav.querySelectorAll('button')
     buttons.forEach((button, i) =>
@@ -163,6 +167,12 @@ class Gallery extends MyElement {
     )
 
     this.index = index
+
+    const url = app.project.metadata(id)
+    const response = await fetch(url)
+    const json = await response.json()
+
+    app.title = json.summary.title
   }
 }
 
