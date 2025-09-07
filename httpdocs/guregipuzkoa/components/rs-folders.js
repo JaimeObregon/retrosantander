@@ -20,10 +20,10 @@ class Folders extends MyElement {
     }
   `
 
-  static html = html`<nav></nav>`
+  static html = html`<ol></ol>`
 
   render() {
-    this.container = this.shadowRoot?.querySelector('nav')
+    this.container = this.shadowRoot?.querySelector('ol')
 
     if (!this.container) {
       return
@@ -31,21 +31,14 @@ class Folders extends MyElement {
 
     app.title = ''
 
-    const items = app.project.indices
+    this.container.innerHTML = app.project.indices
       .filter(({ folder }) => folder === 'folders')
       .map(
         ({ id, name, count }) => html`
-          <li>
-            <a href="/albumak/${id}">/${name}</a>
-            (${count})
-          </li>
+          <li><a href="/albumak/${id}">${name}</a> (${count})</li>
         `,
       )
       .join('')
-
-    this.container.innerHTML = html`<ol>
-      ${items}
-    </ol>`
   }
 
   connectedCallback() {

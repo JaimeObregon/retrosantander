@@ -10,22 +10,27 @@ class Labels extends MyElement {
       display: block;
     }
 
-    ol {
-      padding: 0;
-      margin: 0;
-    }
+    div {
+      font-size: var(--type-small);
+      line-height: var(--line-height-condensed);
+      text-align: center;
 
-    a {
-      color: var(--color-accent);
-      text-transform: lowercase;
-      text-decoration: none;
+      a {
+        color: var(--color-accent);
+        text-transform: lowercase;
+        text-decoration: none;
+
+        + a::before {
+          content: ' • ';
+        }
+      }
     }
   `
 
-  static html = html`<nav></nav>`
+  static html = html`<div></div>`
 
   render() {
-    this.container = this.shadowRoot?.querySelector('nav')
+    this.container = this.shadowRoot?.querySelector('div')
     if (!this.container) {
       return
     }
@@ -34,17 +39,13 @@ class Labels extends MyElement {
 
     const language = i18n.getLanguage()
 
-    const links = app.project.indices
+    this.container.innerHTML = app.project.indices
       .filter(({ folder }) => folder === 'labels')
       .map(({ id, name }) => {
         const label = labels[name][language]
-        return html` <a href="/etiketak/${id}">${label}</a> `
+        return html`<a href="/etiketak/${id}">${label}</a>`
       })
       .join('')
-
-    this.container.innerHTML = html`<ol>
-      ${links}
-    </ol>`
   }
 
   async connectedCallback() {
