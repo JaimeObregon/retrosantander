@@ -13,28 +13,25 @@ class Authors extends MyElement {
       padding: 0;
       margin: 0;
       list-style: none;
-    }
 
-    a {
-      color: var(--color-accent);
-      text-decoration: none;
+      a {
+        color: var(--color-accent);
+        text-decoration: none;
+      }
     }
   `
 
-  static html = html`<nav></nav>`
+  static html = `<ol></ol>`
 
   render() {
-    this.container = this.shadowRoot?.querySelector('nav')
-
+    this.container = this.shadowRoot?.querySelector('ol')
     if (!this.container) {
       return
     }
 
     app.title = ''
 
-    const language = i18n.getLanguage()
-
-    const items = app.project.indices
+    this.container.innerHTML = app.project.indices
       .filter(({ folder }) => ['users', 'photographers'].includes(folder))
       .map(({ folder, id, name, count }) => {
         const { paths } = app.project
@@ -43,17 +40,10 @@ class Authors extends MyElement {
         const label = i18n.get(`authors.${folder}`)
 
         return html`
-          <li>
-            <a href="/${path}/${id}">${label} → ${name}</a>
-            (${count})
-          </li>
+          <li><a href="/${path}/${id}">${label} → ${name}</a> (${count})</li>
         `
       })
       .join('')
-
-    this.container.innerHTML = html`<ol>
-      ${items}
-    </ol>`
   }
 
   connectedCallback() {

@@ -24,7 +24,6 @@ class Folders extends MyElement {
 
   render() {
     this.container = this.shadowRoot?.querySelector('ol')
-
     if (!this.container) {
       return
     }

@@ -65,7 +65,6 @@ class Dates extends MyElement {
 
   render() {
     this.container = this.shadowRoot?.querySelector('nav')
-
     if (!this.container) {
       return
     }
