@@ -28,12 +28,20 @@ const project = {
       en: `Search for "${query}"`,
       fr: `Recherche «\u202F${query}\u202F»`,
     }),
-    centuries: (name) => ({
-      es: `Siglo ${name}`,
-      eu: `${name}. mendea`,
-      en: `Century ${name}`,
-      fr: `Siècle ${name}`,
-    }),
+    centuries: (name) => {
+      const romans = {
+        19: 'xix',
+        20: 'xx',
+        21: 'xxi',
+      }[name]
+
+      return {
+        es: `Siglo ${romans}`,
+        eu: `${romans}. mendea`,
+        en: `${romans} century`,
+        fr: `${romans}<sup>e</sup> Siècle`,
+      }
+    },
     collections: (name) => ({
       es: `Colección ${name}`,
       eu: `${name} bilduma`,

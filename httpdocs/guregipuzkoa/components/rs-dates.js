@@ -16,12 +16,12 @@ class Dates extends MyElement {
     main {
       display: inline-flex;
       flex-direction: column;
-      gap: var(--space-medium);
+      gap: var(--space-large);
       margin: auto;
       font-variant-numeric: tabular-nums;
 
       a {
-        margin: 0.125em 0.5em;
+        margin: var(--space-xx-small) var(--space-x-small);
         color: var(--color-accent);
         text-decoration: none;
       }
@@ -33,13 +33,11 @@ class Dates extends MyElement {
 
       > div {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 1.15rem;
+        flex-direction: column;
 
         > a {
+          font-size: var(--type-large);
           font-variant: small-caps;
-          writing-mode: vertical-rl;
         }
 
         > div {
@@ -50,10 +48,10 @@ class Dates extends MyElement {
             display: flex;
             flex-direction: row;
             align-items: center;
-            font-size: 1rem;
+            font-size: var(--type-small);
 
-            > div {
-              font-size: 0.75rem;
+            > a {
+              margin-right: var(--space-medium);
             }
           }
         }
@@ -72,27 +70,6 @@ class Dates extends MyElement {
     app.title = ''
 
     const language = i18n.getLanguage()
-
-    const items = app.project.indices
-      .filter(({ folder }) =>
-        ['centuries', 'decades', 'years'].includes(folder),
-      )
-      .map(({ folder, id, name, count }) => {
-        const { paths } = app.project
-        const path = Object.keys(paths).find((key) => paths[key] === folder)
-
-        return html`
-          <li>
-            <a href="/${path}/${id}"> ${name} </a>
-            (${count})
-          </li>
-        `
-      })
-      .join('')
-
-    this.container.innerHTML = html`<ol>
-      ${items}
-    </ol>`
 
     const centuries = app.project.indices.filter(
       ({ folder }) => folder === 'centuries',
@@ -140,7 +117,7 @@ class Dates extends MyElement {
                                     >${year.name}</a
                                   >`,
                               )
-                              .join(' · ')}
+                              .join(' • ')}
                           </div>
                         </div>`,
                     )

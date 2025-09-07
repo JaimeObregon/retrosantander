@@ -26,28 +26,6 @@ class Collections extends MyElement {
         top: calc(var(--header-height) + var(--space-large));
       }
 
-      article {
-        box-sizing: border-box;
-        padding: 3em;
-        font-weight: 400;
-        background: var(--color-panel);
-
-        p {
-          line-height: 1.5;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: underline;
-          text-decoration-thickness: 2px;
-          text-decoration-style: dotted;
-        }
-
-        img {
-          width: 100%;
-        }
-      }
-
       nav {
         display: flex;
         flex-direction: column;
@@ -86,6 +64,28 @@ class Collections extends MyElement {
             color: var(--color-highlight-inverted);
             background: var(--color-accent);
           }
+        }
+      }
+
+      article {
+        box-sizing: border-box;
+        padding: 3em;
+        font-weight: 400;
+        background: var(--color-panel);
+
+        p {
+          line-height: 1.5;
+        }
+
+        a {
+          color: inherit;
+          text-decoration: underline;
+          text-decoration-thickness: 2px;
+          text-decoration-style: dotted;
+        }
+
+        img {
+          width: 100%;
         }
       }
     }
