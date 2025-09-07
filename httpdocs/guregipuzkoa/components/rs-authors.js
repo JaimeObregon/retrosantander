@@ -23,12 +23,16 @@ class Authors extends MyElement {
 
   static html = html`<nav></nav>`
 
-  async connectedCallback() {
+  render() {
     this.container = this.shadowRoot?.querySelector('nav')
 
     if (!this.container) {
       return
     }
+
+    app.title = ''
+
+    const language = i18n.getLanguage()
 
     const items = app.project.indices
       .filter(({ folder }) => ['users', 'photographers'].includes(folder))
@@ -36,9 +40,11 @@ class Authors extends MyElement {
         const { paths } = app.project
         const path = Object.keys(paths).find((key) => paths[key] === folder)
 
+        const label = i18n.get(`authors.${folder}`)
+
         return html`
           <li>
-            <a href="/${path}/${id}">${folder} → ${name}</a>
+            <a href="/${path}/${id}">${label} → ${name}</a>
             (${count})
           </li>
         `
@@ -48,6 +54,29 @@ class Authors extends MyElement {
     this.container.innerHTML = html`<ol>
       ${items}
     </ol>`
+  }
+
+  connectedCallback() {
+    i18n.push({
+      'authors.photographers': {
+        es: 'Fotógrafos',
+        eu: 'Argazkilariak',
+        en: 'Photographers',
+        fr: 'Photographes',
+      },
+      'authors.users': {
+        es: 'Usuarios',
+        eu: 'Erabiltzaileak',
+        en: 'Users',
+        fr: 'Utilisateurs',
+      },
+    })
+
+    this.render()
+
+    this.onLanguagechange = () => this.render()
+
+    this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
   }
 }
 

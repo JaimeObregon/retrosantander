@@ -22,12 +22,14 @@ class Folders extends MyElement {
 
   static html = html`<nav></nav>`
 
-  async connectedCallback() {
+  render() {
     this.container = this.shadowRoot?.querySelector('nav')
 
     if (!this.container) {
       return
     }
+
+    app.title = ''
 
     const items = app.project.indices
       .filter(({ folder }) => folder === 'folders')
@@ -44,6 +46,14 @@ class Folders extends MyElement {
     this.container.innerHTML = html`<ol>
       ${items}
     </ol>`
+  }
+
+  connectedCallback() {
+    this.render()
+
+    this.onLanguagechange = () => this.render()
+
+    this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
   }
 }
 

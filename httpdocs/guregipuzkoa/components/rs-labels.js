@@ -24,33 +24,33 @@ class Labels extends MyElement {
 
   static html = html`<nav></nav>`
 
-  async connectedCallback() {
+  render() {
     this.container = this.shadowRoot?.querySelector('nav')
-
-    this.onLanguagechange = async () => {
-      if (!this.container) {
-        return
-      }
-
-      const language = i18n.getLanguage()
-
-      const links = app.project.indices
-        .filter(({ folder }) => folder === 'labels')
-        .map(({ id, name }) => {
-          const label = labels[name][language]
-          return html` <a href="/etiketak/${id}">${label}</a> `
-        })
-        .join('')
-
-      // TODO Esto corre dos veces (pasa lo mismo en rs-collections)
-
-      this.container.innerHTML = html`<ol>
-        ${links}
-      </ol>`
+    if (!this.container) {
+      return
     }
 
-    // TODO No me gusta esto (pasa igual que en rs-collections):
-    this.onLanguagechange()
+    app.title = ''
+
+    const language = i18n.getLanguage()
+
+    const links = app.project.indices
+      .filter(({ folder }) => folder === 'labels')
+      .map(({ id, name }) => {
+        const label = labels[name][language]
+        return html` <a href="/etiketak/${id}">${label}</a> `
+      })
+      .join('')
+
+    this.container.innerHTML = html`<ol>
+      ${links}
+    </ol>`
+  }
+
+  async connectedCallback() {
+    this.render()
+
+    this.onLanguagechange = () => this.render()
 
     this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
   }

@@ -50,6 +50,8 @@ class Map extends MyElement {
       return
     }
 
+    app.title = ''
+
     this.onMouseover = (event) => {
       const link = event.target.closest('a[title]')
       if (!link) {
@@ -59,12 +61,13 @@ class Map extends MyElement {
       app.title = link.getAttribute('title')
     }
 
-    this.onMouseout = () => {
-      app.title = ''
-    }
+    this.onMouseout = () => (app.title = '')
+
+    this.onLanguagechange = () => (app.title = '')
 
     this.myAddEventListener(svg, 'mouseout', this.onMouseout)
     this.myAddEventListener(svg, 'mouseover', this.onMouseover)
+    this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
   }
 }
 

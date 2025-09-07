@@ -104,31 +104,40 @@ class Collections extends MyElement {
   article
   nav
 
+  async render() {
+    this.container = this.shadowRoot?.querySelector('nav')
+    if (!this.container) {
+      return
+    }
+
+    app.title = ''
+
+    const language = i18n.getLanguage()
+
+    const url = `collections.${language}.html`
+
+    const response = await fetch(url)
+    const html = await response.text()
+
+    this.innerHTML = html
+
+    this.nav.innerHTML = app.project.collections
+      .map(
+        (collection) => `
+          <a href="/${collection.slug}">
+            ${collection.title.es}
+          </a>`,
+      )
+      .join('')
+  }
+
   async connectedCallback() {
     this.nav = this.shadowRoot?.querySelector('nav')
     this.article = this.shadowRoot?.querySelector('article')
 
-    this.onLanguagechange = async () => {
-      const language = i18n.getLanguage()
+    this.render()
 
-      const url = `collections.${language}.html`
-
-      const response = await fetch(url)
-      const html = await response.text()
-
-      this.innerHTML = html
-
-      // TODO Esto corre dos veces (pasa lo mismo en rs-labels)
-
-      this.nav.innerHTML = app.project.collections
-        .map(
-          (collection) => `
-          <a href="/${collection.slug}">
-            ${collection.title.es}
-          </a>`,
-        )
-        .join('')
-    }
+    this.onLanguagechange = () => this.render()
 
     this.onClick = async (event) => {
       if (event.target.nodeName !== 'A') {
@@ -156,9 +165,6 @@ class Collections extends MyElement {
 
       this.article.innerHTML = contents
     }
-
-    // TODO No me gusta esto (pasa igual que en rs-labels):
-    this.onLanguagechange()
 
     this.myAddEventListener(this.nav, 'click', this.onClick)
     this.myAddEventListener(window, 'languagechange', this.onLanguagechange)

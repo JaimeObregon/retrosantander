@@ -35,10 +35,11 @@ class Dates extends MyElement {
         display: flex;
         flex-direction: row;
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 1.15rem;
 
         > a {
           font-variant: small-caps;
+          writing-mode: vertical-rl;
         }
 
         > div {
@@ -49,7 +50,7 @@ class Dates extends MyElement {
             display: flex;
             flex-direction: row;
             align-items: center;
-            font-size: 1.15rem;
+            font-size: 1rem;
 
             > div {
               font-size: 0.75rem;
@@ -62,12 +63,16 @@ class Dates extends MyElement {
 
   static html = html`<nav></nav>`
 
-  async connectedCallback() {
+  render() {
     this.container = this.shadowRoot?.querySelector('nav')
 
     if (!this.container) {
       return
     }
+
+    app.title = ''
+
+    const language = i18n.getLanguage()
 
     const items = app.project.indices
       .filter(({ folder }) =>
@@ -100,13 +105,17 @@ class Dates extends MyElement {
 
     const years = app.project.indices.filter(({ folder }) => folder === 'years')
 
+    const { titles } = app.project
+
     this.container.innerHTML = html`
       <main>
         ${centuries
           .map(
             (century) => html`
               <div>
-                <a href="/mendeak/${century.id}">Siglo ${century.name}</a>
+                <a href="/mendeak/${century.id}"
+                  >${titles.centuries(century.name)[language]}</a
+                >
                 <div>
                   ${decades
                     .filter(
@@ -117,7 +126,7 @@ class Dates extends MyElement {
                       (decade) =>
                         html`<div>
                           <a href="/hamarkadak/${decade.id}"
-                            >Década de ${decade.name}</a
+                            >${titles.decades(decade.name)[language]}</a
                           >
                           <div>
                             ${years
@@ -144,6 +153,14 @@ class Dates extends MyElement {
           .join('')}
       </main>
     `
+  }
+
+  async connectedCallback() {
+    this.render()
+
+    this.onLanguagechange = () => this.render()
+
+    this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
   }
 }
 
