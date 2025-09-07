@@ -46,36 +46,14 @@ class Title extends MyElement {
 
   static html = `<cite></cite>`
 
-  placeholder
   cite
   speeds = {
     deleting: 2,
     typing: 8,
   }
 
-  resetDelay = 1000
-
   connectedCallback() {
     this.cite = this.shadowRoot?.querySelector('cite')
-
-    this.placeholder = app.project.titles.default
-
-    this.onLanguagechange = () => {
-      const language = i18n.getLanguage()
-      this.caption = this.placeholder[language]
-    }
-
-    this.onSearchcomplete = ({ detail }) => {
-      const { query } = detail
-      if (query) {
-        const language = i18n.getLanguage()
-        this.placeholder = app.project.titles.search(query)
-        this.caption = this.placeholder[language]
-      }
-    }
-
-    this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
-    this.myAddEventListener(window, 'searchcomplete', this.onSearchcomplete)
   }
 
   disconnectedCallback() {
@@ -84,26 +62,14 @@ class Title extends MyElement {
     }
   }
 
-  set default(caption) {
-    this.placeholder = caption
-  }
-
   set caption(caption) {
     const language = i18n.getLanguage()
-    const title = caption.trim() || this.placeholder[language]
+    const title = caption.trim() || app.project.titles.default[language]
     const previous = this.cite.innerText
 
-    clearTimeout(this.resetTimeout)
-
-    if (!this.resetTimeout && title === this.placeholder[language]) {
-      this.resetTimeout = setTimeout(
-        () => (this.caption = this.placeholder[language]),
-        this.resetDelay,
-      )
+    if (title === previous) {
       return
     }
-
-    this.resetTimeout = undefined
 
     const duration = previous.length * this.speeds.deleting
 

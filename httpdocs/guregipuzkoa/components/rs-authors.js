@@ -1,6 +1,7 @@
 import { app } from '../../modules/app.js'
 import { MyElement } from '../../modules/element.js'
 import { css, html } from '../../modules/strings.js'
+import { i18n } from '../../modules/i18n.js'
 
 class Authors extends MyElement {
   static styles = css`

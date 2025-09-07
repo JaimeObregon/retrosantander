@@ -1,6 +1,7 @@
 import { app } from '../modules/app.js'
 import { database } from '../modules/database.js'
 import { MyElement } from '../modules/element.js'
+import { i18n } from '../modules/i18n.js'
 import { css, html } from '../modules/strings.js'
 import './rs-image.js'
 import './rs-notice.js'
@@ -89,6 +90,23 @@ class Explorer extends MyElement {
   scale = 1
   padding
 
+  resetTitle() {
+    const language = i18n.getLanguage()
+
+    if (app.query) {
+      app.title = app.project.titles.search(app.query)[language]
+    } else {
+      const folder = this.getAttribute('folder')
+      const id = this.getAttribute('id')
+
+      const { title } = app.project.indices.find(
+        (index) => index.folder === folder && index.id === id,
+      )
+
+      app.title = title[language]
+    }
+  }
+
   async connectedCallback() {
     this.container = this.shadowRoot?.querySelector('main')
     this.throbber = this.shadowRoot?.querySelector('rs-throbber')
@@ -113,16 +131,10 @@ class Explorer extends MyElement {
 
     this.innerHTML = html`<rs-notice class="hidden"></rs-notice>`
 
-    if (folder && id) {
-      const { title } = app.project.indices.find(
-        (index) => index.folder === folder && index.id === id,
-      )
-
-      app.defaultTitle = title
-    }
-
     const url = new URL(document.location.href)
     app.query = url.searchParams.get('q')
+
+    this.resetTitle()
 
     this.observer = new IntersectionObserver(this.onIntersect.bind(this), {
       rootMargin: '0px',
@@ -138,9 +150,7 @@ class Explorer extends MyElement {
       }
     }
 
-    this.onMouseout = () => {
-      app.title = ''
-    }
+    this.onMouseout = () => this.resetTitle()
 
     this.onClick = async (event) => {
       const selected = this.container.querySelector('rs-image.selected')
@@ -183,12 +193,15 @@ class Explorer extends MyElement {
       this.results.length ? this.appendItems() : this.clear()
     }
 
+    this.onLanguagechange = () => this.resetTitle()
+
     this.myAddEventListener(this.container, 'mouseover', this.onMouseover)
     this.myAddEventListener(this.container, 'mouseout', this.onMouseout)
     this.myAddEventListener(this.container, 'click', this.onClick)
     this.myAddEventListener(document, 'keyup', this.onKeyup)
     this.myAddEventListener(window, 'resize', this.onResize)
     this.myAddEventListener(window, 'searchcomplete', this.onSearchcomplete)
+    this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
   }
 
   disconnectedCallback() {

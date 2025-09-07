@@ -1,5 +1,6 @@
 import { app } from '../../modules/app.js'
 import { MyElement } from '../../modules/element.js'
+import { i18n } from '../../modules/i18n.js'
 import { css, html } from '../../modules/strings.js'
 
 class Dates extends MyElement {
