@@ -38,8 +38,8 @@ const project = {
       return {
         es: `Siglo ${romans}`,
         eu: `${romans}. mendea`,
-        en: `${romans} century`,
-        fr: `${romans}<sup>e</sup> Siècle`,
+        en: `${romans} Century`,
+        fr: `${romans}<sup>e</sup> siècle`,
       }
     },
     collections: (name) => ({

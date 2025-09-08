@@ -10,11 +10,14 @@ class LanguagePicker extends MyElement {
       display: inline-block;
       font-family: var(--font-sans);
       font-weight: bold;
+      user-select: none;
     }
 
     button {
       display: flex;
       align-items: center;
+      justify-content: center;
+      width: 5ch;
       height: var(--header-actions-size);
       font-size: var(--type-medium);
       font-weight: bold;
@@ -52,7 +55,7 @@ class LanguagePicker extends MyElement {
         padding: var(--space-x-small) var(--space-medium);
         cursor: pointer;
 
-        :is(&:has(input[checked]), &:hover) {
+        :is(&:has(input:checked), &:hover) {
           color: var(--color-background);
           background: var(--color-accent);
         }
