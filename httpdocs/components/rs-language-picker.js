@@ -16,31 +16,37 @@ class LanguagePicker extends MyElement {
       display: flex;
       align-items: center;
       height: var(--header-actions-size);
-      padding: 0 var(--space-x-small);
       font-size: var(--type-medium);
       font-weight: bold;
       color: var(--color-background);
+      cursor: pointer;
       background: var(--color-text);
       border: none;
       border-radius: var(--space-small);
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
-      -webkit-tap-highlight-color: transparent;
+      transition: background var(--delay-medium);
+
+      span {
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        background: var(--color-accent);
+      }
     }
 
     form {
       position: absolute;
       right: 0;
-      display: flex;
+      display: none;
       flex-direction: column;
+      overflow: hidden;
+      font-size: var(--type-small);
       color: var(--color-background);
       background: var(--color-text);
       border-radius: var(--space-small);
       border-top-right-radius: 0;
-      overflow: hidden;
       box-shadow: 0 5px 5px var(--color-box-shadow);
       backdrop-filter: blur(var(--panel-blur));
-      font-size: var(--type-small);
 
       label {
         padding: var(--space-x-small) var(--space-medium);
@@ -56,23 +62,39 @@ class LanguagePicker extends MyElement {
         }
       }
     }
+
+    :host(.open) button {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    :host(.open) form {
+      display: flex;
+    }
   `
 
   static html = html`
-    <button>EU <rs-icon name="chevronDown"></rs-icon></button>
+    <button>
+      <span></span>
+      <rs-icon name="chevronDown"></rs-icon>
+    </button>
     <form></form>
   `
 
-  connectedCallback() {
-    this.form = this.shadowRoot?.querySelector('form')
+  span
+  button
+  form
 
-    if (!this.form) {
-      return
-    }
+  connectedCallback() {
+    this.button = this.shadowRoot?.querySelector('button')
+    this.form = this.shadowRoot?.querySelector('form')
+    this.span = this.shadowRoot?.querySelector('span')
 
     const { languages } = app.project
 
     const language = i18n.getLanguage()
+
+    this.span.innerText = language
 
     this.form.innerHTML = languages
       .map(
@@ -90,24 +112,46 @@ class LanguagePicker extends MyElement {
       )
       .join('')
 
-    // this.form.innerHTML = 'eu'
+    this.onButtonClick = () => (this.open = !this.open)
 
-    this.onClick = (event) => event.stopPropagation()
+    this.onClick = (event) => {
+      if (!this.contains(event.target)) {
+        this.open = false
+      }
+    }
+
+    this.onKeyup = (event) => {
+      event.key === 'Escape' && (this.open = false)
+    }
 
     this.onChange = () => {
-      if (!this.form) {
-        return
-      }
       const input = this.form.querySelector('input:checked')
 
       if (input instanceof HTMLInputElement) {
         const language = input.value
         i18n.setLanguage(language)
+
+        this.span.innerText = language
+        this.open = false
       }
     }
 
-    this.myAddEventListener(this.form, 'click', this.onClick)
+    this.myAddEventListener(this.button, 'click', this.onButtonClick)
+    this.myAddEventListener(document, 'click', this.onClick)
+    this.myAddEventListener(document, 'keyup', this.onKeyup)
     this.myAddEventListener(this.form, 'change', this.onChange)
+  }
+
+  get open() {
+    return this.classList.contains('open')
+  }
+
+  set open(value) {
+    if (this.open === value) {
+      return
+    }
+
+    this.classList.toggle('open', value)
   }
 }
 

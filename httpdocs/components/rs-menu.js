@@ -93,14 +93,14 @@ class Menu extends MyElement {
     </article>
   `
 
-  hamburger
+  button
   article
 
   connectedCallback() {
-    this.hamburger = this.shadowRoot?.querySelector('button')
+    this.button = this.shadowRoot?.querySelector('button')
     this.article = this.shadowRoot?.querySelector('article')
 
-    this.onHamburgerClick = () => (this.open = !this.open)
+    this.onButtonClick = () => (this.open = !this.open)
 
     this.onClick = (event) => {
       if (!this.contains(event.target)) {
@@ -122,14 +122,14 @@ class Menu extends MyElement {
       app.header.menu.innerHTML = html
     }
 
-    this.myAddEventListener(this.hamburger, 'click', this.onHamburgerClick)
+    this.myAddEventListener(this.button, 'click', this.onButtonClick)
     this.myAddEventListener(document, 'click', this.onClick)
     this.myAddEventListener(document, 'keyup', this.onKeyup)
     this.myAddEventListener(window, 'languagechange', this.onLanguagechange)
   }
 
   get open() {
-    return this.hamburger.classList.contains('open')
+    return this.button.classList.contains('open')
   }
 
   set open(value) {
@@ -137,7 +137,7 @@ class Menu extends MyElement {
       return
     }
 
-    this.hamburger.classList.toggle('open', value)
+    this.button.classList.toggle('open', value)
     this.article.classList.toggle('open', value)
   }
 }

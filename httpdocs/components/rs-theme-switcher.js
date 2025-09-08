@@ -167,7 +167,6 @@ class ThemeSwitcher extends MyElement {
   connectedCallback() {
     this.onClick = (event) => {
       this.theme = this.theme === 'light' ? 'dark' : 'light'
-      event.stopPropagation()
     }
 
     this.button = this.shadowRoot?.querySelector('button')
