@@ -2,7 +2,7 @@ import { app } from '../../modules/app.js'
 import { MyElement } from '../../modules/element.js'
 import { css, html } from '../../modules/strings.js'
 
-const delay = 7000
+const delay = 6000
 
 const crossFadeDuration = 250
 
@@ -16,6 +16,7 @@ class Gallery extends MyElement {
       left: 0;
       width: 100%;
       height: 100vh;
+      background-position: center center;
       background-size: cover;
       transition: opacity ${crossFadeDuration}ms;
 
