@@ -35,8 +35,7 @@ class Collections extends MyElement {
 
         a {
           position: relative;
-          padding-block: var(--space-small);
-          padding-inline: var(--space-medium);
+          padding: var(--space-small) var(--space-medium);
           color: var(--color-accent);
           text-align: right;
           text-wrap: balance;
@@ -68,14 +67,14 @@ class Collections extends MyElement {
       }
 
       article {
+        position: sticky;
+        top: var(--header-height);
         box-sizing: border-box;
-        padding: 3em;
+        height: calc(100vh - var(--header-height));
+        padding: var(--space-x-large);
+        overflow: scroll;
         font-weight: 400;
         background: var(--color-panel);
-
-        p {
-          line-height: 1.5;
-        }
 
         a {
           color: inherit;
@@ -122,12 +121,7 @@ class Collections extends MyElement {
     this.innerHTML = html
 
     this.nav.innerHTML = app.project.collections
-      .map(
-        (collection) => `
-          <a href="/${collection.slug}">
-            ${collection.title.es}
-          </a>`,
-      )
+      .map(({ id, title }) => `<a href="/${id}">${title.es}</a>`)
       .join('')
   }
 
