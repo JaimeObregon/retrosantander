@@ -151,7 +151,7 @@ const project = {
       title: {
         es: 'Ayuntamiento de Beasain',
         eu: 'Beasaingo Udala',
-        en: 'City Council of Beasain',
+        en: 'Council of Beasain',
         fr: 'Mairie de Beasain',
       },
     },
@@ -160,7 +160,7 @@ const project = {
       title: {
         es: 'Archivo Municipal de Oñate',
         eu: 'Oñatiko Udal Artxiboa',
-        en: 'City Council of Oñati',
+        en: 'Council of Oñati',
         fr: "Mairie d'Oñati",
       },
     },
@@ -169,7 +169,7 @@ const project = {
       title: {
         es: 'Ayuntamiento de Hondarribia',
         eu: 'Hondarribiko Udala',
-        en: 'City Council of Hondarribia',
+        en: 'Council of Hondarribia',
         fr: "Mairie d'Hondarribia",
       },
     },
@@ -178,7 +178,7 @@ const project = {
       title: {
         es: 'Ayuntamiento de Pasaia',
         eu: 'Pasaiako Udala',
-        en: 'City Council of Pasaia',
+        en: 'Council of Pasaia',
         fr: 'Mairie de Pasaia',
       },
     },
@@ -187,7 +187,7 @@ const project = {
       title: {
         es: 'Ayuntamiento de Urnieta',
         eu: 'Urnietako Udala',
-        en: 'City Council of Urnieta',
+        en: 'Council of Urnieta',
         fr: "Mairie d'Urnieta",
       },
     },
@@ -196,7 +196,7 @@ const project = {
       title: {
         es: 'Ayuntamiento de Zaldibia',
         eu: 'Zaldibiako Udala',
-        en: 'City Council of Zaldibia',
+        en: 'Council of Zaldibia',
         fr: 'Mairie de Zaldibia',
       },
     },
@@ -205,7 +205,7 @@ const project = {
       title: {
         es: 'Ayuntamiento de Zestoa',
         eu: 'Zestoako Udala',
-        en: 'City Council of Zestoa',
+        en: 'Council of Zestoa',
         fr: 'Mairie de Zestoa',
       },
     },
@@ -286,7 +286,7 @@ const project = {
       title: {
         es: 'Fondo del Ayuntamiento de Antzuola',
         eu: 'Antzuolako Udalaren bilduma',
-        en: 'City Council of Antzuola Collection',
+        en: 'Council of Antzuola Collection',
         fr: "Collection Mairie d'Antzuola",
       },
     },

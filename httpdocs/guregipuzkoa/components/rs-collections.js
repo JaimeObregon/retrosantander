@@ -102,6 +102,17 @@ class Collections extends MyElement {
 
   article
   nav
+  collection
+
+  async load() {
+    const language = i18n.getLanguage()
+
+    const url = `collections/${this.collection}/${language}.html`
+    const response = await fetch(url)
+    const contents = await response.text()
+
+    this.article.innerHTML = contents
+  }
 
   async render() {
     this.container = this.shadowRoot?.querySelector('nav')
@@ -116,13 +127,23 @@ class Collections extends MyElement {
     const url = `collections.${language}.html`
 
     const response = await fetch(url)
-    const html = await response.text()
+    const text = await response.text()
 
-    this.innerHTML = html
+    this.innerHTML = text
 
     this.nav.innerHTML = app.project.collections
-      .map(({ id, title }) => `<a href="/${id}">${title.es}</a>`)
+      .map(({ id, title }) => {
+        const active = id === this.collection
+        console.log(id, this.collection)
+        return html`
+          <a class="${active ? 'active' : ''}" href="/${id}"
+            >${title[language]}</a
+          >
+        `
+      })
       .join('')
+
+    this.load()
   }
 
   async connectedCallback() {
@@ -143,6 +164,9 @@ class Collections extends MyElement {
 
       const url = new URL(event.target.href)
       const slug = url.pathname.replace(/^\//, '')
+      const collection = decodeURIComponent(slug)
+
+      this.collection = collection
 
       this.nav
         .querySelectorAll('a')
@@ -153,11 +177,6 @@ class Collections extends MyElement {
         block: 'start',
         inline: 'start',
       })
-
-      const response = await fetch(`collections/${slug}/es.html`)
-      const contents = await response.text()
-
-      this.article.innerHTML = contents
     }
 
     this.myAddEventListener(this.nav, 'click', this.onClick)
