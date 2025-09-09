@@ -147,7 +147,7 @@ const project = {
 
   collections: [
     {
-      id: 'beasain',
+      id: 'beasaingo_udala',
       title: {
         es: 'Ayuntamiento de Beasain',
         eu: 'Beasaingo Udala',
@@ -156,7 +156,7 @@ const project = {
       },
     },
     {
-      id: 'oñati',
+      id: 'oñatiko_udala',
       title: {
         es: 'Archivo Municipal de Oñate',
         eu: 'Oñatiko Udal Artxiboa',
@@ -165,7 +165,7 @@ const project = {
       },
     },
     {
-      id: 'hondarribia',
+      id: 'hondarribiko_udala',
       title: {
         es: 'Ayuntamiento de Hondarribia',
         eu: 'Hondarribiko Udala',
@@ -174,7 +174,7 @@ const project = {
       },
     },
     {
-      id: 'pasaia',
+      id: 'pasaiako_udala',
       title: {
         es: 'Ayuntamiento de Pasaia',
         eu: 'Pasaiako Udala',
@@ -183,7 +183,7 @@ const project = {
       },
     },
     {
-      id: 'urnieta',
+      id: 'urnietako_udala',
       title: {
         es: 'Ayuntamiento de Urnieta',
         eu: 'Urnietako Udala',
@@ -192,7 +192,7 @@ const project = {
       },
     },
     {
-      id: 'zaldibia',
+      id: 'zaldibiako_udala',
       title: {
         es: 'Ayuntamiento de Zaldibia',
         eu: 'Zaldibiako Udala',
@@ -201,7 +201,7 @@ const project = {
       },
     },
     {
-      id: 'zestoa',
+      id: 'zestoako_udala',
       title: {
         es: 'Ayuntamiento de Zestoa',
         eu: 'Zestoako Udala',
@@ -210,7 +210,7 @@ const project = {
       },
     },
     {
-      id: 'zarautz',
+      id: 'gure_zarautz',
       title: {
         es: 'Nuestro Zarautz',
         eu: 'Gure Zarautz',
@@ -219,7 +219,7 @@ const project = {
       },
     },
     {
-      id: 'indalecio-ojanguren',
+      id: 'indalecio_ojanguren',
       title: {
         es: 'Colección Indalecio Ojanguren',
         eu: 'Indalecio Ojanguren Bilduma',
@@ -228,7 +228,7 @@ const project = {
       },
     },
     {
-      id: 'jesus-elosegui',
+      id: 'jesus_elosegui',
       title: {
         es: 'Colección Jesús Elósegui',
         eu: 'Jesús Elósegui Bilduma',
@@ -237,7 +237,7 @@ const project = {
       },
     },
     {
-      id: 'juan-san-martin',
+      id: 'juan_san_martin',
       title: {
         es: 'Colección Juan San Martín',
         eu: 'Juan San Martín Bilduma',
@@ -255,7 +255,7 @@ const project = {
       },
     },
     {
-      id: 'sigfrido-koch',
+      id: 'sigfrido_koch',
       title: {
         es: 'Colección Sigfrido Koch',
         eu: 'Sigfrido Koch Bilduma',
@@ -264,7 +264,7 @@ const project = {
       },
     },
     {
-      id: 'andres-arlanzon',
+      id: 'andres_arlanzon',
       title: {
         es: 'Fondo Andrés Arlanzón',
         eu: 'Andrés Arlanzón Bilduma',
@@ -273,7 +273,7 @@ const project = {
       },
     },
     {
-      id: 'arantza-cuesta',
+      id: 'arantza_cuesta_ezeiza',
       title: {
         es: 'Fondo Arantza Cuesta Ezeiza',
         eu: 'Arantza Cuesta Bilduma',
@@ -282,7 +282,7 @@ const project = {
       },
     },
     {
-      id: 'antzuola',
+      id: 'antzuolako_udala',
       title: {
         es: 'Fondo del Ayuntamiento de Antzuola',
         eu: 'Antzuolako Udalaren bilduma',
@@ -291,7 +291,7 @@ const project = {
       },
     },
     {
-      id: 'javier-etxaniz',
+      id: 'jabier_etxaniz_apaolaza',
       title: {
         es: 'Fondo Javier Etxaniz',
         eu: 'Javier Etxaniz Bilduma',
@@ -300,7 +300,7 @@ const project = {
       },
     },
     {
-      id: 'jone-larrañaga',
+      id: 'jone_larrañaga',
       title: {
         es: 'Fondo Jone Larrañaga',
         eu: 'Jone Larrañaga Bilduma',
@@ -309,7 +309,7 @@ const project = {
       },
     },
     {
-      id: 'luis-mari-elosegi',
+      id: 'luis_mari_elosegi_aldasoro',
       title: {
         es: 'Fondo Luis Mari Elosegi Aldasoro',
         eu: 'Luis Mari Elosegi Aldasoro Bilduma',
@@ -318,7 +318,7 @@ const project = {
       },
     },
     {
-      id: 'polikarpo-elosegi',
+      id: 'polikarpo_elosegi',
       title: {
         es: 'Fondo Polikarpo Elosegi',
         eu: 'Polikarpo Elosegi Bilduma',
@@ -327,7 +327,7 @@ const project = {
       },
     },
     {
-      id: 'koldo-mitxelena',
+      id: 'koldo_mitxelena',
       title: {
         es: 'Biblioteca Koldo Mitxelena Kulturunea',
         eu: 'Koldo Mitxelena Kulturuneko Liburutegia',
@@ -366,7 +366,7 @@ const project = {
     //   },
     // },
     {
-      id: 'kutxa',
+      id: 'kutxa_fototeka',
       title: {
         es: 'Fototeca de Kutxa',
         eu: 'Kutxa Fototeka',
