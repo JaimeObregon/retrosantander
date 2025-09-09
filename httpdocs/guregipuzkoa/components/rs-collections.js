@@ -13,10 +13,11 @@ class Collections extends MyElement {
       position: relative;
       display: flex;
       align-items: flex-start;
+      margin-inline: calc(-1 * var(--space-medium));
 
       section,
       nav,
-      article {
+      div {
         flex-shrink: 0;
         width: 50%;
       }
@@ -24,11 +25,14 @@ class Collections extends MyElement {
       section {
         position: sticky;
         top: calc(var(--header-height) + var(--space-large));
+        box-sizing: border-box;
+        padding-left: var(--space-medium);
       }
 
       nav {
         display: flex;
         flex-direction: column;
+        gap: var(--space-small);
         align-items: flex-end;
         font-size: var(--type-large);
         font-weight: bold;
@@ -36,6 +40,7 @@ class Collections extends MyElement {
         a {
           position: relative;
           padding: var(--space-small) var(--space-medium);
+          line-height: var(--line-height-condensed);
           color: var(--color-accent);
           text-align: right;
           text-wrap: balance;
@@ -66,25 +71,37 @@ class Collections extends MyElement {
         }
       }
 
-      article {
+      div {
         position: sticky;
-        top: var(--header-height);
-        box-sizing: border-box;
-        height: calc(100vh - var(--header-height));
-        padding: var(--space-x-large);
-        overflow: scroll;
+        top: 0;
+        padding-right: var(--space-medium);
         font-weight: 400;
-        background: var(--color-panel);
 
-        a {
-          color: inherit;
-          text-decoration: underline;
-          text-decoration-thickness: 2px;
-          text-decoration-style: dotted;
-        }
+        article {
+          box-sizing: border-box;
+          height: calc(100vh - var(--header-height));
+          padding: var(--space-x-large);
+          overflow: scroll;
+          background: var(--color-panel);
 
-        img {
-          width: 100%;
+          &:empty {
+            /*display: none;*/
+          }
+
+          :first-child {
+            margin-top: 0;
+          }
+
+          :last-child {
+            margin-bottom: 0;
+          }
+
+          a {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-decoration-style: dotted;
+          }
         }
       }
     }
@@ -96,7 +113,9 @@ class Collections extends MyElement {
         <slot></slot>
       </section>
       <nav></nav>
-      <article></article>
+      <div>
+        <article></article>
+      </div>
     </main>
   `
 
@@ -105,6 +124,10 @@ class Collections extends MyElement {
   collection
 
   async load() {
+    if (!this.collection) {
+      return
+    }
+
     const language = i18n.getLanguage()
 
     const url = `collections/${this.collection}/${language}.html`
@@ -132,15 +155,13 @@ class Collections extends MyElement {
     this.innerHTML = text
 
     this.nav.innerHTML = app.project.collections
-      .map(({ id, title }) => {
-        const active = id === this.collection
-        console.log(id, this.collection)
-        return html`
-          <a class="${active ? 'active' : ''}" href="/${id}"
+      .map(
+        ({ id, title }) => html`
+          <a class="${id === this.collection ? 'active' : ''}" href="/${id}"
             >${title[language]}</a
           >
-        `
-      })
+        `,
+      )
       .join('')
 
     this.load()
@@ -167,6 +188,8 @@ class Collections extends MyElement {
       const collection = decodeURIComponent(slug)
 
       this.collection = collection
+
+      this.load()
 
       this.nav
         .querySelectorAll('a')
