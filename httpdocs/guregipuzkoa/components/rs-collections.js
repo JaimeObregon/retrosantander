@@ -8,6 +8,7 @@ class Collections extends MyElement {
   static styles = css`
     :host {
       display: block;
+      scroll-margin-top: var(--header-height);
     }
 
     main {
@@ -33,19 +34,19 @@ class Collections extends MyElement {
       nav {
         display: flex;
         flex-direction: column;
-        gap: var(--space-small);
         align-items: flex-end;
         font-size: var(--type-large);
         font-weight: bold;
 
         a {
           position: relative;
-          padding: var(--space-small) var(--space-medium);
+          padding: 0.75em var(--space-medium);
           line-height: var(--line-height-condensed);
           color: var(--color-accent);
           text-align: right;
           text-wrap: balance;
           text-decoration: none;
+          scroll-margin-top: var(--header-height);
 
           &::before {
             position: absolute;
@@ -97,7 +98,7 @@ class Collections extends MyElement {
           a {
             display: flex;
             gap: var(--space-small);
-            padding: var(--space-x-small) var(--space-small);
+            padding: var(--space-small) var(--space-small);
             font-size: var(--type-large);
             line-height: var(--line-height-condensed);
             color: inherit;
@@ -170,7 +171,6 @@ class Collections extends MyElement {
     this.myAddEventListener(button, 'click', () => {
       this.scrollIntoView({
         behavior: 'smooth',
-        block: 'start',
         inline: 'start',
       })
     })
@@ -193,7 +193,7 @@ class Collections extends MyElement {
 
     this.innerHTML = text
 
-    await this.load()
+    this.load()
 
     this.nav.innerHTML = app.project.collections
       .map(
@@ -232,9 +232,11 @@ class Collections extends MyElement {
 
       this.nav
         .querySelectorAll('a')
-        .forEach((anchor) => a.classList.toggle('active', anchor === a))
+        .forEach((element) => element.classList.toggle('active', element === a))
 
-      this.article.scrollIntoView({
+      const active = this.nav.querySelector('a.active')
+
+      active.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
         inline: 'start',
