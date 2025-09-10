@@ -2,6 +2,7 @@ import { app } from '../modules/app.js'
 import { MyElement } from '../modules/element.js'
 import { i18n } from '../modules/i18n.js'
 import { css, html } from '../modules/strings.js'
+import './rs-close-button.js'
 import './rs-license-cc-by-sa.js'
 import './rs-license-cdis.js'
 
@@ -33,39 +34,6 @@ class Panel extends MyElement {
       &.hidden {
         opacity: 0;
         transform: translateX(calc(-1 * var(--panel-width)));
-      }
-
-      button {
-        position: absolute;
-        top: var(--space-x-small);
-        right: var(--space-x-small);
-        width: var(--space-x-large);
-        height: var(--space-x-large);
-        padding: 0;
-        cursor: pointer;
-        background: transparent;
-        border: none;
-        border-radius: 100%;
-        transition: background ease-in-out var(--delay-small);
-
-        svg {
-          display: block;
-          width: var(--space-large);
-          margin: auto;
-          color: var(--color-text-muted);
-          stroke: currentcolor;
-          stroke-width: 2px;
-          transition: color ease-in-out var(--delay-small);
-
-          path {
-            stroke-linecap: round;
-            stroke-linejoin: round;
-          }
-        }
-
-        &:hover svg {
-          color: var(--color-text);
-        }
       }
 
       h2 {
@@ -184,11 +152,7 @@ class Panel extends MyElement {
 
   static html = html`
     <aside class="hidden">
-      <button>
-        <svg viewBox="0 0 24 24">
-          <path d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
+      <rs-close-button></rs-close-button>
 
       <rs-panel-details>
         <h2></h2>
@@ -267,7 +231,7 @@ class Panel extends MyElement {
 
     this.aside = this.shadowRoot?.querySelector('aside')
     this.details = this.shadowRoot?.querySelector('rs-panel-details')
-    this.button = this.aside?.querySelector('button')
+    this.button = this.aside?.querySelector('rs-close-button')
     this.footer = this.shadowRoot?.querySelector('footer')
 
     // @ts-ignore

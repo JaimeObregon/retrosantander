@@ -79,7 +79,7 @@ class LanguagePicker extends MyElement {
   static html = html`
     <button>
       <span></span>
-      <rs-icon name="chevronDown"></rs-icon>
+      <rs-icon name="triangleDown"></rs-icon>
     </button>
     <form></form>
   `

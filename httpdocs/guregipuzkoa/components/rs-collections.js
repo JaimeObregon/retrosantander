@@ -1,3 +1,4 @@
+import '../../components/rs-close-button.js'
 import { app } from '../../modules/app.js'
 import { MyElement } from '../../modules/element.js'
 import { i18n } from '../../modules/i18n.js'
