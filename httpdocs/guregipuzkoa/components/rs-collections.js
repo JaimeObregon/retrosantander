@@ -18,7 +18,7 @@ class Collections extends MyElement {
 
       section,
       nav,
-      div {
+      article {
         flex-shrink: 0;
         width: 50%;
       }
@@ -72,37 +72,53 @@ class Collections extends MyElement {
         }
       }
 
-      div {
+      article {
         position: sticky;
-        top: 0;
-        padding-right: var(--space-medium);
+        top: var(--header-height);
+        box-sizing: border-box;
+        min-height: calc(100vh - var(--header-height));
+        padding: var(--space-x-large);
+        margin-block: calc(-1 * var(--space-medium));
+        overflow: scroll;
         font-weight: 400;
+        background: var(--color-panel);
 
-        article {
-          box-sizing: border-box;
-          height: calc(100vh - var(--header-height));
-          padding: var(--space-x-large);
-          overflow: scroll;
-          background: var(--color-panel);
+        &:empty {
+          display: none;
+        }
 
-          &:empty {
-            /*display: none;*/
-          }
-
-          :first-child {
-            margin-top: 0;
-          }
-
-          :last-child {
-            margin-bottom: 0;
-          }
+        header {
+          display: flex;
+          gap: var(--space-medium);
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: var(--space-large);
 
           a {
+            display: flex;
+            gap: var(--space-small);
+            padding: var(--space-x-small) var(--space-small);
+            font-size: var(--type-large);
+            line-height: var(--line-height-condensed);
             color: inherit;
-            text-decoration: underline;
-            text-decoration-thickness: 2px;
-            text-decoration-style: dotted;
+            text-wrap: balance;
+            text-decoration: none;
+            border: 1px solid currentcolor;
+            border-radius: var(--space-small);
+
+            &:hover {
+              color: var(--color-highlight-inverted);
+              background: var(--color-accent);
+            }
+
+            rs-icon {
+              min-width: var(--space-medium);
+            }
           }
+        }
+
+        :last-child {
+          margin-bottom: 0;
         }
       }
     }
@@ -114,9 +130,7 @@ class Collections extends MyElement {
         <slot></slot>
       </section>
       <nav></nav>
-      <div>
-        <article></article>
-      </div>
+      <article></article>
     </main>
   `
 
@@ -135,7 +149,31 @@ class Collections extends MyElement {
     const response = await fetch(url)
     const contents = await response.text()
 
-    this.article.innerHTML = contents
+    const collection = app.project.collections.find(
+      (collection) => collection.id === this.collection,
+    )
+
+    this.article.innerHTML = html`
+      <header>
+        <a href="/bildumak/${this.collection}">
+          <rs-icon name="rectangleStack"></rs-icon>
+          ${collection.title[language]}
+          <rs-icon name="chevronRight"></rs-icon>
+        </a>
+        <rs-close-button></rs-close-button>
+      </header>
+      ${contents}
+    `
+
+    const button = this.article.querySelector('rs-close-button')
+
+    this.myAddEventListener(button, 'click', () => {
+      this.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'start',
+      })
+    })
   }
 
   async render() {
@@ -155,6 +193,8 @@ class Collections extends MyElement {
 
     this.innerHTML = text
 
+    await this.load()
+
     this.nav.innerHTML = app.project.collections
       .map(
         ({ id, title }) => html`
@@ -164,8 +204,6 @@ class Collections extends MyElement {
         `,
       )
       .join('')
-
-    this.load()
   }
 
   async connectedCallback() {
@@ -177,26 +215,26 @@ class Collections extends MyElement {
     this.onLanguagechange = () => this.render()
 
     this.onClick = async (event) => {
-      if (event.target.nodeName !== 'A') {
-        return
-      }
+      const a = event
+        .composedPath()
+        .find((element) => element instanceof HTMLAnchorElement)
 
       event.stopPropagation()
       event.preventDefault()
 
-      const url = new URL(event.target.href)
+      const url = new URL(a.href)
       const slug = url.pathname.replace(/^\//, '')
       const collection = decodeURIComponent(slug)
 
       this.collection = collection
 
-      this.load()
+      await this.load()
 
       this.nav
         .querySelectorAll('a')
-        .forEach((a) => a.classList.toggle('active', a === event.target))
+        .forEach((anchor) => a.classList.toggle('active', anchor === a))
 
-      event.target.scrollIntoView({
+      this.article.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
         inline: 'start',

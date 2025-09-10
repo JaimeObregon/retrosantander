@@ -23,12 +23,12 @@ class Gallery extends MyElement {
       &#back {
         &::before {
           position: fixed;
-          top: var(--header-height);
+          top: 0;
           left: 0;
           z-index: 1;
           display: block;
-          width: 100%;
-          height: calc(100vh - var(--header-height));
+          width: 100vw;
+          height: 100vh;
           pointer-events: none;
           content: '';
           background: radial-gradient(

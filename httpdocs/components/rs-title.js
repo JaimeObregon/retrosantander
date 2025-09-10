@@ -1,7 +1,7 @@
 import { app } from '../modules/app.js'
 import { MyElement } from '../modules/element.js'
 import { i18n } from '../modules/i18n.js'
-import { css } from '../modules/strings.js'
+import { css, decode } from '../modules/strings.js'
 
 class Title extends MyElement {
   static styles = css`
@@ -19,7 +19,6 @@ class Title extends MyElement {
       text-overflow: ellipsis;
       font-style: normal;
       font-weight: 500;
-      color: var(--color-accent);
       text-align: center;
       white-space: nowrap;
       transition: width linear;
@@ -78,7 +77,7 @@ class Title extends MyElement {
 
     this.timeout = setTimeout(() => {
       const duration = title.length * this.speeds.typing
-      this.cite.innerText = title
+      this.cite.innerText = decode(title)
       this.cite.style.width = `${title.length}ch`
       this.cite.style.transitionDuration = `${duration}ms`
     }, duration)

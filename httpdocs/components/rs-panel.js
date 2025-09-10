@@ -120,7 +120,7 @@ class Panel extends MyElement {
         line-height: var(--line-height-condensed);
         hyphens: auto;
         background: var(--color-neutral-800);
-        border-radius: 5px;
+        border-radius: 4px;
       }
     }
 

@@ -285,7 +285,7 @@ const project = {
       id: 'antzuolako_udala',
       title: {
         es: 'Fondo del Ayuntamiento de Antzuola',
-        eu: 'Antzuolako Udalaren bilduma',
+        eu: 'Antzuolako Udalaren Bilduma',
         en: 'Council of Antzuola Collection',
         fr: "Collection Mairie d'Antzuola",
       },

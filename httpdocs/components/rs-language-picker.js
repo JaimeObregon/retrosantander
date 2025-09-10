@@ -28,36 +28,49 @@ class LanguagePicker extends MyElement {
       border-radius: var(--space-small);
       transition: background var(--delay-medium);
 
+      &:hover {
+        background: var(--color-accent);
+      }
+
       span {
+        font-size: 0.85em;
         text-transform: uppercase;
       }
 
-      &:hover {
-        background: var(--color-accent);
+      rs-icon {
+        transition: ease-in-out var(--delay-small);
       }
     }
 
     form {
       position: absolute;
+      top: calc((var(--header-height) + var(--header-actions-size)) / 2);
       right: 0;
       display: none;
       flex-direction: column;
+      width: 11em;
       overflow: hidden;
       font-size: var(--type-small);
       color: var(--color-background);
       background: var(--color-text);
+      border: 1px solid var(--color-text);
       border-radius: var(--space-small);
-      border-top-right-radius: 0;
       box-shadow: 0 5px 5px var(--color-box-shadow);
       backdrop-filter: blur(var(--panel-blur));
 
       label {
-        padding: var(--space-x-small) var(--space-medium);
+        padding: var(--space-small) var(--space-medium);
         cursor: pointer;
 
-        :is(&:has(input:checked), &:hover) {
+        &:has(input:checked) {
           color: var(--color-background);
           background: var(--color-accent);
+        }
+
+        &:hover,
+        &:has(input:checked):hover {
+          color: var(--color-text);
+          background: var(--color-background);
         }
 
         input {
@@ -66,9 +79,8 @@ class LanguagePicker extends MyElement {
       }
     }
 
-    :host(.open) button {
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
+    :host(.open) button rs-icon {
+      transform: rotate(180deg);
     }
 
     :host(.open) form {
