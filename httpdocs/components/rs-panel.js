@@ -406,13 +406,17 @@ class Panel extends MyElement {
       .join('')
 
     tagsList.innerHTML = tags
-      .map(
-        (tag) => `
-            <li><a
-                href="/?q=${tag.name}"
-                title="«${tag.label}» (Confianza: ${tag.confidence} %)"
-              >${tag.name}</a></li>`,
-      )
+      .map((tag) => {
+        return html`
+          <li>
+            <a
+              href="/?q=${tag.name}"
+              title="«${tag.label}» (Confianza: ${tag.confidence} %)"
+              >${tag.name}</a
+            >
+          </li>
+        `
+      })
       .join(', ')
 
     if (!this.footer) {

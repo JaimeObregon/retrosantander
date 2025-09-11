@@ -1,7 +1,6 @@
 import { app } from '../modules/app.js'
 import { database } from '../modules/database.js'
 import { MyElement } from '../modules/element.js'
-import { labels } from '../modules/labels.js'
 import { css, escape, html } from '../modules/strings.js'
 
 class Image extends MyElement {
@@ -245,8 +244,8 @@ class Image extends MyElement {
         ).map((instance, i) => ({
           type: 'object',
           id: `object-${accumulator.length + i}`,
-          name: `${labels[object.Name]} ${i + 1}`,
-          title: labels[object.Name],
+          name: object.Name,
+          order: i + 1,
           confidence: instance.Confidence,
           top: instance.BoundingBox.Top,
           left: instance.BoundingBox.Left,
@@ -260,7 +259,6 @@ class Image extends MyElement {
     const tags = json.labels.Labels.filter((label) => !label.Instances.length)
       .filter((label) => label.Confidence > confidenceThreshold)
       .map((label) => ({
-        name: labels[label.Name],
         label: label.Name,
         confidence: label.Confidence,
       }))
