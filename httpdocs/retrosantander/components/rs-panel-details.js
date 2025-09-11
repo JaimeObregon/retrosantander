@@ -51,36 +51,41 @@ class PanelDetails extends MyElement {
       <dd>
         <slot name="date"></slot>
       </dd>
+
       <dt title="Colección o fondo">
         <rs-icon name="documentDuplicate"></rs-icon>
       </dt>
       <dd>
         <slot name="collection"></slot>
       </dd>
+
       <dt title="Fotógrafo">
         <rs-icon name="camera"></rs-icon>
       </dt>
       <dd>
         <slot name="author"></slot>
       </dd>
+
       <dt title="Material">
         <rs-icon name="photo"></rs-icon>
       </dt>
       <dd>
         <slot name="material"></slot>
       </dd>
+
       <dt title="Procedimiento">
         <rs-icon name="beaker"></rs-icon>
       </dt>
       <dd>
         <slot name="procedure"></slot>
       </dd>
+
       <dt title="Referencia">
         <rs-icon name="arrowTopRightOnSquare"></rs-icon>
       </dt>
-      <dd id="link">
+      <dd>
         <a>
-          Ver #<slot name="id"></slot> en el
+          Ver <code>#<slot name="id"></slot></code> en el
           <abbr title="Centro de Documentación de la Imagen de Santander"
             >CDIS</abbr
           >
@@ -93,7 +98,7 @@ class PanelDetails extends MyElement {
     const { details } = data
 
     const slots = Object.entries(details).map(
-      ([key, value]) => `<span slot="${key}">${value}</span>`,
+      ([key, value]) => html`<span slot="${key}">${value}</span>`,
     )
 
     this.innerHTML = slots.join('')

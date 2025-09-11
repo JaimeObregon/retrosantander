@@ -51,10 +51,11 @@ class PanelDetails extends MyElement {
       <dd>
         <slot name="caption"></slot>
       </dd>
+
       <dt title="Referencia">
         <rs-icon name="arrowTopRightOnSquare"></rs-icon>
       </dt>
-      <dd id="link">
+      <dd>
         <a>Ver #<slot name="id"></slot> en Gure Gipuzkoa</a>
       </dd>
     </dl>
@@ -64,7 +65,7 @@ class PanelDetails extends MyElement {
     const { details } = data
 
     const slots = Object.entries(details).map(
-      ([key, value]) => `<span slot="${key}">${value}</span>`,
+      ([key, value]) => html`<span slot="${key}">${value}</span>`,
     )
 
     this.innerHTML = slots.join('')

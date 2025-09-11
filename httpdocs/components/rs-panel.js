@@ -187,7 +187,7 @@ class Panel extends MyElement {
     i18n.push({
       'panel.faces.many': {
         es: '${count} personas',
-        eu: '${count} gizakiak',
+        eu: '${count} pertsona',
         en: '${count} people',
         fr: '${count} personnes',
       },
@@ -199,7 +199,7 @@ class Panel extends MyElement {
       },
       'panel.objects.many': {
         es: '${count} objetos',
-        eu: '${count} gauzak',
+        eu: '${count} objektu',
         en: '${count} objects',
         fr: '${count} objets',
       },
@@ -212,7 +212,7 @@ class Panel extends MyElement {
       'panel.details': {
         es: 'Ficha técnica',
         eu: 'Fitxa teknikoa',
-        en: 'Data sheet',
+        en: 'Technical sheet',
         fr: 'Fiche technique',
       },
       'panel.tags': {
@@ -224,7 +224,7 @@ class Panel extends MyElement {
       'panel.exif': {
         es: 'Metadatos Exif',
         eu: 'Exif metadatuak',
-        en: 'Exif metadata',
+        en: 'EXIF metadata',
         fr: 'Métadonnées EXIF',
       },
     })
@@ -243,22 +243,22 @@ class Panel extends MyElement {
 
     this.onClick = () => this.explorer.restore()
 
-    this.onMouseover = (event) => {
-      if (!(event.target instanceof HTMLElement)) {
+    this.onMouseover = ({ target }) => {
+      if (!(target instanceof HTMLElement)) {
         return
       }
 
-      if (event.target.dataset.id) {
-        this.explorer.activeLayer = event.target.dataset.id
+      if (target.dataset.id) {
+        this.explorer.activeLayer = target.dataset.id
       }
     }
 
-    this.onMouseout = (event) => {
-      if (!(event.target instanceof HTMLElement)) {
+    this.onMouseout = ({ target }) => {
+      if (!(target instanceof HTMLElement)) {
         return
       }
 
-      if (event.target.dataset.id) {
+      if (target.dataset.id) {
         this.explorer.activeLayer = false
       }
     }
@@ -300,7 +300,8 @@ class Panel extends MyElement {
   }
 
   set activeLayer(id) {
-    this.aside?.querySelectorAll('section *[data-id]').forEach((element) => {
+    const elements = this.aside?.querySelectorAll('section *[data-id]')
+    elements?.forEach((element) => {
       if (element instanceof HTMLElement) {
         element.classList.toggle('active', element.dataset.id === id)
       }
@@ -309,7 +310,6 @@ class Panel extends MyElement {
 
   set data(data) {
     const panel = this.shadowRoot?.querySelector('aside')
-
     if (!panel) {
       return
     }
@@ -340,7 +340,6 @@ class Panel extends MyElement {
     const url = app.project.image(details.id)
 
     const ul = panel.querySelector('ul')
-
     if (!ul) {
       return
     }
@@ -370,22 +369,22 @@ class Panel extends MyElement {
         const positionX = backgroundWidth * face.left - facePadding
         const positionY = backgroundHeight * face.top
 
-        return `
-            <li style="width: ${containerHeight}px; height: ${containerHeight}px">
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-id="${face.id}"
-                alt="${face.name}"
-                style="
-                  background-image: url(${url});
-                  background-size: ${backgroundWidth}px ${backgroundHeight}px;
-                  background-position:
-                    -${Math.max(positionX, 0)}px
-                    -${Math.max(positionY, 0)}px;
+        return html`
+          <li style="width: ${containerHeight}px; height: ${containerHeight}px">
+            <img
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-id="${face.id}"
+              alt="${face.name}"
+              style="
+                background-image: url(${url});
+                background-size: ${backgroundWidth}px ${backgroundHeight}px;
+                background-position:
+                  -${Math.max(positionX, 0)}px
+                  -${Math.max(positionY, 0)}px;
                 "
-              />
-            </li>
-          `
+            />
+          </li>
+        `
       })
       .join('')
 
