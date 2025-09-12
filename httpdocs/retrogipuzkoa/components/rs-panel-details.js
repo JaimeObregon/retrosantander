@@ -1,3 +1,4 @@
+import { app } from '../../modules/app.js'
 import { MyElement } from '../../modules/element.js'
 import { css, html } from '../../modules/strings.js'
 
@@ -18,11 +19,15 @@ class PanelDetails extends MyElement {
         font-size: var(--type-small);
         font-weight: 500;
         line-height: var(--line-height-condensed);
-      }
-    }
 
-    abbr {
-      cursor: help;
+        a {
+          color: var(--color-link);
+          text-decoration: underline;
+          text-decoration-thickness: 1px;
+          text-decoration-style: dotted;
+          text-underline-offset: 2px;
+        }
+      }
     }
   `
 

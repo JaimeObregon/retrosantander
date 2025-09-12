@@ -22,6 +22,10 @@ class PanelDetails extends MyElement {
         a {
           color: var(--color-link);
           text-decoration: line-through;
+
+          abbr {
+            cursor: help;
+          }
         }
 
         p {
@@ -30,10 +34,6 @@ class PanelDetails extends MyElement {
           font-weight: normal;
         }
       }
-    }
-
-    abbr {
-      cursor: help;
     }
   `
 
