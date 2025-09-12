@@ -192,6 +192,44 @@ class Panel extends MyElement {
     </aside>
   `
 
+  render() {
+    const detailsHeading = this.aside?.querySelector('h2')
+    const tagsHeading = this.aside?.querySelector('section#tags h2')
+    const exifHeading = this.aside?.querySelector('section#exif h2')
+    const facesHeading = this.aside?.querySelector('section#faces h2')
+    const objectsHeading = this.aside?.querySelector('section#objects h2')
+
+    if (
+      !detailsHeading ||
+      !tagsHeading ||
+      !exifHeading ||
+      !facesHeading ||
+      !objectsHeading
+    ) {
+      return
+    }
+
+    detailsHeading.innerHTML = i18n.get('panel.details')
+    tagsHeading.innerHTML = i18n.get('panel.tags')
+    exifHeading.innerHTML = i18n.get('panel.exif')
+
+    if (!this.metadata) {
+      return
+    }
+
+    const { faces, objects } = this.metadata
+
+    faces.innerHTML = i18n.get(
+      faces.length > 1 ? 'panel.faces.many' : 'panel.faces.one',
+      { count: faces.length },
+    )
+
+    objectsHeading.innerHTML = i18n.get(
+      objects.length > 1 ? 'panel.objects.many' : 'panel.objects.one',
+      { count: objects.length },
+    )
+  }
+
   async connectedCallback() {
     i18n.push({
       'panel.faces.many': {
@@ -246,9 +284,7 @@ class Panel extends MyElement {
     // @ts-ignore
     this.explorer = this.getRootNode().host
 
-    if (!this.aside || !this.details || !this.button || !this.footer) {
-      return
-    }
+    this.render()
 
     this.onClick = () => this.explorer.restore()
 
@@ -272,35 +308,7 @@ class Panel extends MyElement {
       }
     }
 
-    this.onLanguagechange = () => {
-      const tagsHeading = this.aside?.querySelector('section#tags h2')
-      const exifHeading = this.aside?.querySelector('section#exif h2')
-      const facesHeading = this.aside?.querySelector('section#faces h2')
-      const objectsHeading = this.aside?.querySelector('section#objects h2')
-
-      if (!tagsHeading || !exifHeading || !facesHeading || !objectsHeading) {
-        return
-      }
-
-      tagsHeading.innerHTML = i18n.get('panel.tags')
-      exifHeading.innerHTML = i18n.get('panel.exif')
-
-      if (!this.metadata) {
-        return
-      }
-
-      const { faces, objects } = this.metadata
-
-      faces.innerHTML = i18n.get(
-        faces.length > 1 ? 'panel.faces.many' : 'panel.faces.one',
-        { count: faces.length },
-      )
-
-      objectsHeading.innerHTML = i18n.get(
-        objects.length > 1 ? 'panel.objects.many' : 'panel.objects.one',
-        { count: objects.length },
-      )
-    }
+    this.onLanguagechange = () => this.render()
 
     this.myAddEventListener(this.button, 'click', this.onClick)
     this.myAddEventListener(this.aside, 'mouseover', this.onMouseover)
