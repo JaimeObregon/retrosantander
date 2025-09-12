@@ -19,6 +19,9 @@ class Panel extends MyElement {
       top: var(--header-height);
       left: 0;
       box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-large);
       width: 100%;
       max-width: var(--panel-width);
       height: calc(100% - var(--header-height));
@@ -48,8 +51,8 @@ class Panel extends MyElement {
       }
 
       h2 {
-        margin: 0 0 10px;
-        font-size: 11px;
+        margin: 0 0 var(--space-small) 0;
+        font-size: var(--type-xx-small);
         font-weight: 500;
         color: var(--color-neutral-400);
         text-transform: uppercase;
@@ -163,10 +166,12 @@ class Panel extends MyElement {
 
   static html = html`
     <aside class="hidden">
-      <h2></h2>
       <rs-close-button></rs-close-button>
 
-      <rs-panel-details></rs-panel-details>
+      <section>
+        <h2></h2>
+        <rs-panel-details></rs-panel-details>
+      </section>
 
       <section id="exif">
         <h2></h2>
@@ -219,7 +224,7 @@ class Panel extends MyElement {
 
     const { faces, objects } = this.metadata
 
-    faces.innerHTML = i18n.get(
+    facesHeading.innerHTML = i18n.get(
       faces.length > 1 ? 'panel.faces.many' : 'panel.faces.one',
       { count: faces.length },
     )
@@ -284,8 +289,6 @@ class Panel extends MyElement {
     // @ts-ignore
     this.explorer = this.getRootNode().host
 
-    this.render()
-
     this.onClick = () => this.explorer.restore()
 
     this.onMouseover = ({ target }) => {
@@ -338,6 +341,8 @@ class Panel extends MyElement {
 
     this.metadata = data
 
+    this.render()
+
     const { json, faces, objects, tags } = data
 
     if (!this.details) {
@@ -354,7 +359,7 @@ class Panel extends MyElement {
       section.classList.toggle('hidden', !data[key].length)
     })
 
-    const url = app.project.image(json.details.id)
+    const url = app.project.image(data.id)
 
     const ul = panel.querySelector('ul')
     if (!ul) {
