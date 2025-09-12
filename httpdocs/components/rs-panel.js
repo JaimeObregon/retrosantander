@@ -36,6 +36,17 @@ class Panel extends MyElement {
         transform: translateX(calc(-1 * var(--panel-width)));
       }
 
+      rs-close-button {
+        position: absolute;
+        top: var(--space-small);
+        right: var(--space-small);
+        width: 1.75em;
+      }
+
+      rs-panel-details {
+        display: block;
+      }
+
       h2 {
         margin: 0 0 10px;
         font-size: 11px;
@@ -152,12 +163,10 @@ class Panel extends MyElement {
 
   static html = html`
     <aside class="hidden">
+      <h2></h2>
       <rs-close-button></rs-close-button>
 
-      <rs-panel-details>
-        <h2></h2>
-        <dl></dl>
-      </rs-panel-details>
+      <rs-panel-details></rs-panel-details>
 
       <section id="exif">
         <h2></h2>

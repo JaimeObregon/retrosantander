@@ -1,40 +1,30 @@
-import { app } from '../../modules/app.js'
 import { MyElement } from '../../modules/element.js'
 import { css, html } from '../../modules/strings.js'
 
 class PanelDetails extends MyElement {
   static styles = css`
-    svg {
-      width: 20px;
-      vertical-align: middle;
-      fill: none;
-      stroke: currentcolor;
-      stroke-width: 2px;
-    }
-
     dl {
       display: grid;
       grid-template-rows: auto;
-      grid-template-columns: 25px auto;
+      grid-template-columns: 1.5em auto;
       row-gap: var(--space-small);
       margin: 0;
 
       dd {
-        display: flex;
         grid-column-start: 2;
         align-items: center;
         margin: 0;
         text-overflow: ellipsis;
+        font-size: var(--type-small);
+        font-weight: 500;
+        line-height: var(--line-height-condensed);
       }
 
-      dt svg path {
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-
-      dt,
-      dd {
-        vertical-align: middle;
+      a {
+        color: var(--color-link);
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-style: dotted;
       }
     }
 
@@ -69,10 +59,6 @@ class PanelDetails extends MyElement {
     )
 
     this.innerHTML = slots.join('')
-
-    const a = this.shadowRoot?.querySelector('a')
-    const href = app.project.external(details.id)
-    a?.setAttribute('href', href)
   }
 }
 
