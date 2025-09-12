@@ -1,4 +1,5 @@
 import { app } from '../../modules/app.js'
+import { i18n } from '../../modules/i18n.js'
 import { MyElement } from '../../modules/element.js'
 import { css, html } from '../../modules/strings.js'
 
@@ -40,11 +41,25 @@ class PanelDetails extends MyElement {
         <slot name="caption"></slot>
       </dd>
 
-      <dt title="Referencia">
+      <dt>
+        <rs-icon name="whatsapp"></rs-icon>
+      </dt>
+      <dd>
+        <a id="whatsapp"></a>
+      </dd>
+
+      <dt>
+        <rs-icon name="arrowDownCircle"></rs-icon>
+      </dt>
+      <dd>
+        <a download></a>
+      </dd>
+
+      <dt>
         <rs-icon name="arrowTopRightOnSquare"></rs-icon>
       </dt>
       <dd>
-        <a>Ver #<slot name="id"></slot> en Gure Gipuzkoa</a>
+        <a id="link"></a>
       </dd>
     </dl>
   `

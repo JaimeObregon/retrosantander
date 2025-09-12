@@ -39,15 +39,41 @@ class PanelDetails extends MyElement {
       <dd>
         <slot name="caption"></slot>
       </dd>
+
+      <dt>
+        <rs-icon name="whatsapp"></rs-icon>
+      </dt>
+      <dd>
+        <a id="whatsapp">Enviar por WhatsApp</a>
+      </dd>
+
+      <dt>
+        <rs-icon name="arrowDownCircle"></rs-icon>
+      </dt>
+      <dd>
+        <a download>Descargar imagen</a>
+      </dd>
     </dl>
   `
 
-  set data(data) {
-    const { details } = data
+  buildWhatsAppLink() {
+    const { whatsapp } = app.project
+    const message = whatsapp.message(window.location.href)
+    const encodedMessage = encodeURIComponent(message)
+    const url = whatsapp.url(encodedMessage)
+    return url
+  }
 
-    this.innerHTML = Object.entries(details)
-      .map(([key, value]) => html`<span slot="${key}">${value}</span>`)
-      .join('')
+  set data(data) {
+    const { details } = data.json
+
+    this.innerHTML = html`<span slot="caption">${details.caption}</span>`
+
+    const whatsapp = this.shadowRoot?.querySelector('a#whatsapp')
+    const download = this.shadowRoot?.querySelector('a[download]')
+
+    whatsapp?.setAttribute('href', this.buildWhatsAppLink())
+    download?.setAttribute('href', app.project.image(details.id))
   }
 }
 

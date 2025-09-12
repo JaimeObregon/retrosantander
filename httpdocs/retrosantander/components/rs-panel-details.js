@@ -91,9 +91,7 @@ class PanelDetails extends MyElement {
   `
 
   set data(data) {
-    const { details } = data
-
-    this.innerHTML = Object.entries(details)
+    this.innerHTML = Object.entries(data.json.details)
       .map(([key, value]) => html`<span slot="${key}">${value}</span>`)
       .join('')
   }
