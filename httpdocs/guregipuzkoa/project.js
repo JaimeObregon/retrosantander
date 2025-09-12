@@ -121,8 +121,6 @@ const project = {
 
   galleries: () => `${project.origin}/galleries.json`,
 
-  external: (id) => `https://www.guregipuzkoa.eus/photo/${id}`,
-
   hosts: ['guregipuzkoa.com', 'guregipuzkoa.eus'],
 
   // Cuántas sugerencias de búsqueda mostrar al buscar.

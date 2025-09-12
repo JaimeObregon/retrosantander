@@ -25,8 +25,6 @@ const project = {
 
   index: () => `${project.origin}/indices/jesus_elosegui.json`,
 
-  external: (id) => `https://www.guregipuzkoa.eus/photo/${id}`,
-
   hosts: ['retrogipuzkoa.com'],
 
   // Cuántas sugerencias de búsqueda mostrar al buscar.

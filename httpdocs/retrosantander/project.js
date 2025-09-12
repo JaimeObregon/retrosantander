@@ -28,9 +28,6 @@ const project = {
 
   index: () => `${project.origin}/indices/cdis.json`,
 
-  external: (id) =>
-    `http://portal.ayto-santander.es/portalcdis/Public/FotoView.do?id=${id}`,
-
   hosts: ['retrosantander.com'],
 
   // Cuántas sugerencias de búsqueda mostrar al buscar.
