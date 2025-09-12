@@ -121,6 +121,13 @@ const project = {
 
   galleries: () => `${project.origin}/galleries.json`,
 
+  external: (id) => `https://www.guregipuzkoa.eus/photo/${id}`,
+
+  whatsapp: {
+    url: (text) => `https://api.whatsapp.com/send?text=${text}`,
+    message: (url) => `Echa un vistazo a esto: ${url}`,
+  },
+
   hosts: ['guregipuzkoa.com', 'guregipuzkoa.eus'],
 
   // Cuántas sugerencias de búsqueda mostrar al buscar.

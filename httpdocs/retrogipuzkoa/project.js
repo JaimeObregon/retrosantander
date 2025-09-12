@@ -25,6 +25,11 @@ const project = {
 
   index: () => `${project.origin}/indices/jesus_elosegui.json`,
 
+  whatsapp: {
+    url: (text) => `https://api.whatsapp.com/send?text=${text}`,
+    message: (url) => `Echa un vistazo a esto: ${url}`,
+  },
+
   hosts: ['retrogipuzkoa.com'],
 
   // Cuántas sugerencias de búsqueda mostrar al buscar.
