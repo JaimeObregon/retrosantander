@@ -172,13 +172,13 @@ class Explorer extends MyElement {
 
       image.classList.add('selected')
 
-      const { areas, faces, objects, tags, exif, details } =
+      const { id, json, faces, objects, tags, areas } =
         await image.getMetadata()
 
       image.areas = areas
 
       // @ts-ignore
-      this.panel.data = { faces, objects, tags, details, exif }
+      this.panel.data = { id, json, faces, objects, tags, areas }
     }
 
     this.onKeyup = (event) => {

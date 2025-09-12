@@ -125,7 +125,12 @@ const project = {
 
   whatsapp: {
     url: (text) => `https://api.whatsapp.com/send?text=${text}`,
-    message: (url) => `Echa un vistazo a esto: ${url}`,
+    message: (url) => ({
+      es: `Echa un vistazo a esto: ${url}`,
+      eu: `Bota begirada bat honi: ${url}`,
+      fr: `Jette un coup d'œil à ça : ${url}`,
+      en: `Take a look at this: ${url}`,
+    }),
   },
 
   hosts: ['guregipuzkoa.com', 'guregipuzkoa.eus'],

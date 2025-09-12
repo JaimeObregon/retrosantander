@@ -169,8 +169,6 @@ class Image extends MyElement {
 
     const json = await response.json()
 
-    const { exif, details } = json
-
     const gender = (value) =>
       ({
         Male: 'Hombre',
@@ -275,7 +273,9 @@ class Image extends MyElement {
       area: 10000 * area.width * area.height,
     }))
 
-    return { faces, objects, tags, areas, details, exif }
+    const id = this.id
+
+    return { id, json, faces, objects, tags, areas }
   }
 }
 

@@ -330,7 +330,7 @@ class Panel extends MyElement {
 
     this.metadata = data
 
-    const { faces, objects, tags, details, exif } = data
+    const { json, faces, objects, tags } = data
 
     if (!this.details) {
       return
@@ -346,7 +346,7 @@ class Panel extends MyElement {
       section.classList.toggle('hidden', !data[key].length)
     })
 
-    const url = app.project.image(details.id)
+    const url = app.project.image(json.details.id)
 
     const ul = panel.querySelector('ul')
     if (!ul) {
@@ -409,7 +409,7 @@ class Panel extends MyElement {
       .map((object) => `<li data-id="${object.id}">${object.name}</li>`)
       .join(', ')
 
-    exifList.innerHTML = Object.entries(exif)
+    exifList.innerHTML = Object.entries(json.exif)
       .map(([key, value]) => `<dt>${key}</dt><dd>${value}</dd>`)
       .join('')
 
@@ -431,7 +431,7 @@ class Panel extends MyElement {
       return
     }
 
-    const { license } = details
+    const { license } = json.details
 
     if (license) {
       this.footer.innerHTML = html`
