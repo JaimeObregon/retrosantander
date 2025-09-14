@@ -3,7 +3,9 @@
 
 yarn || exit 1
 
-cp -aR httpdocs/. httpdocs/build
+cp -a httpdocs tmp
+mv tmp httpdocs/build
+
 cp "httpdocs/$PROJECT/index.html" httpdocs/build/index.html
 
 esbuild \
