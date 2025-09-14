@@ -491,6 +491,10 @@ class Panel extends MyElement {
 
     if (json.indices) {
       indicesList.innerHTML = json.indices
+        .filter((index) => {
+          const [type] = index.split('/')
+          return type !== 'labels'
+        })
         .map((index) => html`<li><a href="">${index}</a></li>`)
         .join(', ')
     }
