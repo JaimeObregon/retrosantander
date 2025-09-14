@@ -22,10 +22,6 @@ class PanelDetails extends MyElement {
         a {
           color: var(--color-link);
           text-decoration: line-through;
-
-          abbr {
-            cursor: help;
-          }
         }
 
         p {

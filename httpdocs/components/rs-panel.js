@@ -8,6 +8,19 @@ import './rs-license-cdis.js'
 
 const facesPerRow = 5
 
+const hiddenExifKeys = [
+  'ColorHalftoningInfo',
+  'ColorTransferFuncs',
+  'Directory',
+  'ExifToolVersion',
+  'FileAccessDate',
+  'FileInodeChangeDate',
+  'FileModifyDate',
+  'FileName',
+  'FilePermissions',
+  'SourceFile',
+]
+
 class Panel extends MyElement {
   static styles = css`
     :host {
@@ -21,7 +34,7 @@ class Panel extends MyElement {
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      gap: var(--space-large);
+      gap: var(--space-medium);
       width: 100%;
       max-width: var(--panel-width);
       height: calc(100% - var(--header-height));
@@ -50,36 +63,39 @@ class Panel extends MyElement {
         display: block;
       }
 
-      h2 {
-        margin: 0 0 var(--space-small) 0;
-        font-size: var(--type-xx-small);
-        font-weight: 500;
-        color: var(--color-neutral-400);
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-
-      ul {
-        padding: 0;
-        margin: 0;
-        line-height: 1.5;
-        list-style: none;
-      }
-
       section {
-        font-weight: 500;
-
         &.hidden {
           display: none;
         }
 
-        &:not(:first-of-type) h2 {
-          margin-top: var(--space-large);
+        h2 {
+          margin: 0 0 var(--space-x-small) 0;
+          font-size: var(--type-xx-small);
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 1px;
         }
 
-        ul li {
-          display: inline;
-          width: calc(100% / ${facesPerRow});
+        ul {
+          padding: 0;
+          margin: 0;
+          font-size: var(--type-small);
+          line-height: var(--line-height-condensed);
+          list-style: none;
+
+          li {
+            display: inline;
+            font-weight: 500;
+
+            a {
+              color: var(--color-link);
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
         }
 
         &#faces ul {
@@ -90,6 +106,7 @@ class Panel extends MyElement {
 
           li {
             box-sizing: border-box;
+            width: calc(100% / ${facesPerRow});
             padding: var(--border-width);
             font-size: 0;
 
@@ -108,33 +125,62 @@ class Panel extends MyElement {
           }
         }
 
-        &#objects ul {
-          li.active {
-            color: var(--color-area-object);
+        &#indices:has(ul:empty) {
+          display: none;
+        }
+
+        &#exif {
+          dl {
+            margin: 0;
+            font-size: var(--type-xx-small);
+
+            dt {
+              font-weight: 500;
+              font-variant: small-caps;
+            }
+
+            dd {
+              margin: 0;
+              font-family: var(--font-mono);
+              color: var(--color-highlight);
+
+              &:not(:last-child) {
+                margin-bottom: var(--space-small);
+              }
+            }
           }
         }
       }
 
-      a {
-        color: inherit;
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-        text-decoration-style: dotted;
-
-        &:hover {
-          text-decoration-style: solid;
-        }
-      }
-
-      .license {
+      footer {
         display: block;
         padding: var(--space-medium);
-        margin: var(--space-medium) 0 0 0;
         font-size: var(--type-x-small);
         line-height: var(--line-height-condensed);
         hyphens: auto;
-        background: var(--color-neutral-800);
+        background: var(--color-border);
         border-radius: 4px;
+
+        &:empty {
+          display: none;
+        }
+
+        a {
+          color: var(--color-link);
+          text-decoration-thickness: 1px;
+          text-underline-offset: 2px;
+
+          &:hover {
+            color: var(--color-link-hover);
+            text-decoration: none;
+            background-color: var(--color-link);
+          }
+
+          abbr {
+            text-decoration: none;
+            cursor: help;
+          }
+        }
       }
     }
 
@@ -147,19 +193,6 @@ class Panel extends MyElement {
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
         box-shadow: 0 -5px 5px var(--color-box-shadow);
-
-        section#details dl {
-          display: flex;
-          flex-wrap: wrap;
-
-          dt {
-            width: 25px;
-          }
-
-          dd {
-            width: calc(50% - 25px);
-          }
-        }
       }
     }
   `
@@ -171,11 +204,6 @@ class Panel extends MyElement {
       <section>
         <h2></h2>
         <rs-panel-details></rs-panel-details>
-      </section>
-
-      <section id="exif">
-        <h2></h2>
-        <dl></dl>
       </section>
 
       <section id="faces">
@@ -199,6 +227,11 @@ class Panel extends MyElement {
       </section>
 
       <footer></footer>
+
+      <section id="exif">
+        <h2></h2>
+        <dl></dl>
+      </section>
     </aside>
   `
 
@@ -438,7 +471,13 @@ class Panel extends MyElement {
       .join(', ')
 
     exifList.innerHTML = Object.entries(json.exif)
-      .map(([key, value]) => `<dt>${key}</dt><dd>${value}</dd>`)
+      .filter(([key]) => !hiddenExifKeys.includes(key))
+      .map(
+        ([key, value]) => html`
+          <dt>${key}</dt>
+          <dd>${String(value).replace(', use -b option to extract', '')}</dd>
+        `,
+      )
       .join('')
 
     tagsList.innerHTML = tags
@@ -450,9 +489,11 @@ class Panel extends MyElement {
       })
       .join(', ')
 
-    indicesList.innerHTML = json.indices
-      .map((index) => html`<li><a href="">${index}</a></li>`)
-      .join(', ')
+    if (json.indices) {
+      indicesList.innerHTML = json.indices
+        .map((index) => html`<li><a href="">${index}</a></li>`)
+        .join(', ')
+    }
 
     if (!this.footer) {
       return
@@ -462,7 +503,7 @@ class Panel extends MyElement {
 
     if (license) {
       this.footer.innerHTML = html`
-        <rs-license-${license} class="license"></rs-license-${license}>
+        <rs-license-${license}></rs-license-${license}>
       `
     }
 

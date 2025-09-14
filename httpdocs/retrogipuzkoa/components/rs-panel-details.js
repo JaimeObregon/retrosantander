@@ -22,10 +22,11 @@ class PanelDetails extends MyElement {
 
         a {
           color: var(--color-link);
-          text-decoration: underline;
-          text-decoration-thickness: 1px;
-          text-decoration-style: dotted;
-          text-underline-offset: 2px;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
