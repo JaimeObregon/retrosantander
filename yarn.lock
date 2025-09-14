@@ -1136,6 +1136,14 @@
   resolved "https://registry.yarnpkg.com/@import-maps/resolve/-/resolve-2.0.0.tgz#d03d31dfee2994dc2bf8233a6e0862a137e8a575"
   integrity sha512-RwzRTpmrrS6Q1ZhQExwuxJGK1Wqhv4stt+OF2JzS+uawewpwNyU7EJL1WpBex7aDiiGLs4FsXGkfUBdYuX7xiQ==
 
+"@inquirer/external-editor@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@inquirer/external-editor/-/external-editor-1.0.1.tgz#ab0a82c5719a963fb469021cde5cd2b74fea30f8"
+  integrity sha512-Oau4yL24d2B5IL4ma4UpbQigkVhzPDXLoqy1ggK4gnHg/stmkffJE4oOXHXF3uz0UEpywG68KcyXsyYpA1Re/Q==
+  dependencies:
+    chardet "^2.1.0"
+    iconv-lite "^0.6.3"
+
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/@isaacs/cliui/-/cliui-8.0.2.tgz#b37667b7bc181c168782259bab42474fbf52b550"
@@ -1211,7 +1219,7 @@
   resolved "https://registry.yarnpkg.com/@netlify/binary-info/-/binary-info-1.0.0.tgz#cd0d86fb783fb03e52067f0cd284865e57be86c8"
   integrity sha512-4wMPu9iN3/HL97QblBsBay3E1etIciR84izI3U+4iALY+JHCrI+a2jO0qbAZ/nxKoegypYEaiiqWXylm+/zfrw==
 
-"@netlify/blobs@10.0.10", "@netlify/blobs@^10.0.8":
+"@netlify/blobs@10.0.10", "@netlify/blobs@^10.0.10":
   version "10.0.10"
   resolved "https://registry.yarnpkg.com/@netlify/blobs/-/blobs-10.0.10.tgz#a196fb769bed47c467d6862cfa40cdeaee3f9408"
   integrity sha512-900jiduBT3b7GagpOGJKD3FQypkNbskGyx+Mvd9Ajy7pU3K0CNj4JBaji4aJZz7krrMxZZJacr0wCEsqWLQQmA==
@@ -1234,22 +1242,22 @@
     yaml "^2.8.0"
     yargs "^17.6.0"
 
-"@netlify/build@35.1.3":
-  version "35.1.3"
-  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-35.1.3.tgz#4928fac41c26d42a123ea82a5221146ff219880d"
-  integrity sha512-UTkLnw3S3QboUHtBXbbYXa5/oa/PtebWTI+rXyBW07nKCPHC/J7i9KSeBKy0y4XLF/F/NqaE0pyfhE142SC77g==
+"@netlify/build@35.1.6":
+  version "35.1.6"
+  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-35.1.6.tgz#90b6361cf517663c4d6e1db0872f6fc72d492c1a"
+  integrity sha512-zt8UaxhH7p4WzM82uWhLX06tjVAe//ox9tFhfNjR1pq0zFxAXjQ78eJ50fwnVvLJSxWcOenVwvXB6tC8DYsvNw==
   dependencies:
     "@bugsnag/js" "^8.0.0"
-    "@netlify/blobs" "^10.0.8"
+    "@netlify/blobs" "^10.0.10"
     "@netlify/cache-utils" "^6.0.4"
     "@netlify/config" "^24.0.3"
-    "@netlify/edge-bundler" "14.5.3"
-    "@netlify/functions-utils" "^6.2.5"
+    "@netlify/edge-bundler" "14.5.4"
+    "@netlify/functions-utils" "^6.2.7"
     "@netlify/git-utils" "^6.0.2"
     "@netlify/opentelemetry-utils" "^2.0.1"
     "@netlify/plugins-list" "^6.80.0"
     "@netlify/run-utils" "^6.0.2"
-    "@netlify/zip-it-and-ship-it" "14.1.5"
+    "@netlify/zip-it-and-ship-it" "14.1.7"
     "@sindresorhus/slugify" "^2.0.0"
     ansi-escapes "^7.0.0"
     ansis "^4.1.0"
@@ -1335,27 +1343,6 @@
     yargs "^17.6.0"
     zod "^4.0.5"
 
-"@netlify/dev-utils@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@netlify/dev-utils/-/dev-utils-4.1.2.tgz#ef1660024a33fc75fc50ecb6741ac0ba80b73070"
-  integrity sha512-C4X4Voe7fBrAZVpo5FlZYP4s5BwpGU3/kJI5CxNdwjX5FxHujQPRzV9fnzT1RRvi1IHaYOMjXFXsLYDtkM8Ggw==
-  dependencies:
-    "@whatwg-node/server" "^0.10.0"
-    ansis "^4.1.0"
-    chokidar "^4.0.1"
-    decache "^4.6.2"
-    dettle "^1.0.5"
-    dot-prop "9.0.0"
-    empathic "^2.0.0"
-    env-paths "^3.0.0"
-    image-size "^2.0.2"
-    js-image-generator "^1.0.4"
-    parse-gitignore "^2.0.0"
-    semver "^7.7.2"
-    tmp-promise "^3.0.3"
-    uuid "^11.1.0"
-    write-file-atomic "^5.0.1"
-
 "@netlify/dev-utils@4.1.3":
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/@netlify/dev-utils/-/dev-utils-4.1.3.tgz#922237b3ce424314af3c069740c960c7501dddb2"
@@ -1377,10 +1364,10 @@
     uuid "^11.1.0"
     write-file-atomic "^5.0.1"
 
-"@netlify/edge-bundler@14.5.3":
-  version "14.5.3"
-  resolved "https://registry.yarnpkg.com/@netlify/edge-bundler/-/edge-bundler-14.5.3.tgz#1a1192d60a263d66369c3debef53d527490dd1cd"
-  integrity sha512-yjtgJfg9uHC81T8pfRBmzLNVn5T+C5ByiWGoA7cZvojMZbAtXAeFedFUxmXLdfCTaoGsJWM+4cZ77+45tL7j3w==
+"@netlify/edge-bundler@14.5.4":
+  version "14.5.4"
+  resolved "https://registry.yarnpkg.com/@netlify/edge-bundler/-/edge-bundler-14.5.4.tgz#f9cf470ff2e62d5c8ce681da7c478b3bad73a006"
+  integrity sha512-mGEQTOsC3VoUcio6y5zXj5s5Rs4ygFGWdHmweU2K7QH+Zy5co7GuzbpivoP0VCBws3VSBCdx1rvGPY9ylZaOHQ==
   dependencies:
     "@import-maps/resolve" "^2.0.0"
     ajv "^8.11.2"
@@ -1408,7 +1395,7 @@
   resolved "https://registry.yarnpkg.com/@netlify/edge-functions-bootstrap/-/edge-functions-bootstrap-2.14.0.tgz#20b424c9dbf3a828dab5e9a475bf35f6904aa44e"
   integrity sha512-Fs1cQ+XKfKr2OxrAvmX+S46CJmrysxBdCUCTk/wwcCZikrDvsYUFG7FTquUl4JfAf9taYYyW/tPv35gKOKS8BQ==
 
-"@netlify/functions-utils@^6.2.5":
+"@netlify/functions-utils@^6.2.7":
   version "6.2.7"
   resolved "https://registry.yarnpkg.com/@netlify/functions-utils/-/functions-utils-6.2.7.tgz#591ae9f1c162461e4ad943bfb517bde393416d0b"
   integrity sha512-oIMwnEzCiACUG3ZUHplMNMQVuQmjSeoklWHs+AGebk4kitnxgo624JRB90sAhAU6G2A/7i/uSgqcv5BoYRNlUg==
@@ -1555,48 +1542,10 @@
   resolved "https://registry.yarnpkg.com/@netlify/runtime-utils/-/runtime-utils-2.1.0.tgz#0a828ab5e26c139fd72eee0f0d25d66d9d718bc1"
   integrity sha512-z1h+wjB7IVYUsFZsuIYyNxiw5WWuylseY+eXaUDHBxNeLTlqziy+lz03QkR67CUR4Y790xGIhaHV00aOR2KAtw==
 
-"@netlify/serverless-functions-api@^2.3.0", "@netlify/serverless-functions-api@^2.5.0":
+"@netlify/serverless-functions-api@^2.5.0":
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/@netlify/serverless-functions-api/-/serverless-functions-api-2.5.0.tgz#e9ef8bc713a3fc49b5fc31891eb54cde5b96a6a9"
   integrity sha512-0Hl6POpkEs3aan8T+EQvPIj5/gNc+64nwNv93VY4JoxFSrLPKYWmUyXJhT9lG93VxwGfmbxrCOV8U4sq2eWgTw==
-
-"@netlify/zip-it-and-ship-it@14.1.5":
-  version "14.1.5"
-  resolved "https://registry.yarnpkg.com/@netlify/zip-it-and-ship-it/-/zip-it-and-ship-it-14.1.5.tgz#639607ca9ced3356d6c0a074019d8e8171a6b708"
-  integrity sha512-T+9y2tnAUWIh5kOcgV6648V1ahdaAyWReNKVXeF2WpqJ7MLgiVvcGNKIvJjMgu3yYmxlbCLK0Cy8jLh0pTMmOA==
-  dependencies:
-    "@babel/parser" "^7.22.5"
-    "@babel/types" "7.28.1"
-    "@netlify/binary-info" "^1.0.0"
-    "@netlify/serverless-functions-api" "^2.3.0"
-    "@vercel/nft" "0.29.4"
-    archiver "^7.0.0"
-    common-path-prefix "^3.0.0"
-    copy-file "^11.0.0"
-    es-module-lexer "^1.0.0"
-    esbuild "0.25.9"
-    execa "^8.0.0"
-    fast-glob "^3.3.3"
-    filter-obj "^6.0.0"
-    find-up "^7.0.0"
-    is-path-inside "^4.0.0"
-    junk "^4.0.0"
-    locate-path "^7.0.0"
-    merge-options "^3.0.4"
-    minimatch "^9.0.0"
-    normalize-path "^3.0.0"
-    p-map "^7.0.0"
-    path-exists "^5.0.0"
-    precinct "^12.0.0"
-    require-package-name "^2.0.1"
-    resolve "^2.0.0-next.1"
-    semver "^7.3.8"
-    tmp-promise "^3.0.2"
-    toml "^3.0.0"
-    unixify "^1.0.0"
-    urlpattern-polyfill "8.0.2"
-    yargs "^17.0.0"
-    zod "^3.23.8"
 
 "@netlify/zip-it-and-ship-it@14.1.7":
   version "14.1.7"
@@ -3282,10 +3231,10 @@ chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.1, chalk@^4.1.2:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chardet@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
-  integrity sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==
+chardet@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/chardet/-/chardet-2.1.0.tgz#1007f441a1ae9f9199a4a67f6e978fb0aa9aa3fe"
+  integrity sha512-bNFETTG/pM5ryzQ9Ad0lJOTa6HWD/YsScAR3EnCPZRPlQh77JocYktSHOUHelyhm8IARL+o4c4F1bP5KVOjiRA==
 
 chokidar@4.0.3, chokidar@^4.0.1, chokidar@^4.0.3:
   version "4.0.3"
@@ -4294,15 +4243,6 @@ ext-name@^5.0.0:
     ext-list "^2.0.0"
     sort-keys-length "^1.0.0"
 
-external-editor@^3.0.3:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/external-editor/-/external-editor-3.1.0.tgz#cb03f740befae03ea4d283caed2741a83f335495"
-  integrity sha512-hMQ4CX1p1izmuLYyZqLMO/qGNw10wSv9QDCPfzXfyFrOaCSSoRfqE1Kf1s5an66J5JZC62NewG+mK49jOCtQew==
-  dependencies:
-    chardet "^0.7.0"
-    iconv-lite "^0.4.24"
-    tmp "^0.0.33"
-
 extract-zip@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/extract-zip/-/extract-zip-2.0.1.tgz#663dca56fe46df890d5f131ef4a06d22bb8ba13a"
@@ -5013,14 +4953,14 @@ human-signals@^5.0.0:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-5.0.0.tgz#42665a284f9ae0dade3ba41ebc37eb4b852f3a28"
   integrity sha512-AXcZb6vzzrFAUE61HnN4mpLqd/cSIwNQjtNWR0euPm6y0iqx3G4gOXaIDdtdDwZmhwe82LA6+zinmW4UBWVePQ==
 
-iconv-lite@0.4.24, iconv-lite@^0.4.24:
+iconv-lite@0.4.24:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
   integrity sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
-iconv-lite@0.6.3:
+iconv-lite@0.6.3, iconv-lite@^0.6.3:
   version "0.6.3"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.6.3.tgz#a52f80bf38da1952eb5c681790719871a1a72501"
   integrity sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==
@@ -5106,16 +5046,16 @@ inquirer-autocomplete-prompt@1.4.0:
     run-async "^2.4.0"
     rxjs "^6.6.2"
 
-inquirer@8.2.6:
-  version "8.2.6"
-  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-8.2.6.tgz#733b74888195d8d400a67ac332011b5fae5ea562"
-  integrity sha512-M1WuAmb7pn9zdFRtQYk26ZBoY043Sse0wVDdk4Bppr+JOXyQYybdtvK+l9wUibhtjdjvtoiNy8tk+EgsYIUqKg==
+inquirer@8.2.7:
+  version "8.2.7"
+  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-8.2.7.tgz#62f6b931a9b7f8735dc42db927316d8fb6f71de8"
+  integrity sha512-UjOaSel/iddGZJ5xP/Eixh6dY1XghiBw4XK13rCCIJcJfyhhoul/7KhLLUGtebEj6GDYM6Vnx/mVsjx2L/mFIA==
   dependencies:
+    "@inquirer/external-editor" "^1.0.0"
     ansi-escapes "^4.2.1"
     chalk "^4.1.1"
     cli-cursor "^3.1.0"
     cli-width "^3.0.0"
-    external-editor "^3.0.3"
     figures "^3.0.0"
     lodash "^4.17.21"
     mute-stream "0.0.8"
@@ -5990,24 +5930,24 @@ netlify-redirector@0.5.0:
   resolved "https://registry.yarnpkg.com/netlify-redirector/-/netlify-redirector-0.5.0.tgz#9611dd8497dab4e13d9f6a6f1595b9528b9e7abf"
   integrity sha512-4zdzIP+6muqPCuE8avnrgDJ6KW/2+UpHTRcTbMXCIRxiRmyrX+IZ4WSJGZdHPWF3WmQpXpy603XxecZ9iygN7w==
 
-netlify@^23.5.0:
-  version "23.5.0"
-  resolved "https://registry.yarnpkg.com/netlify/-/netlify-23.5.0.tgz#1f0e62951f9bcf3ea366b5ef7b428edbd1af9be8"
-  integrity sha512-r/Yil9VCd0F4g/2UQsam7KKkKNXfj67E1wv8HUhoeJC1Rh8HtY3YYtDJeWAUlK7BKFc9n37ZJwnr9hP/bnbVgA==
+netlify@^23.5.1:
+  version "23.5.1"
+  resolved "https://registry.yarnpkg.com/netlify/-/netlify-23.5.1.tgz#a179317a68a188114e893c9efd7edebb0f98d88b"
+  integrity sha512-b3oke4FYzudG6j04fj6NnEJFe4VnZ2vvZI5NaiWCizm8Mq4gv3fHwMZpLn/MAEfZNCwrwGg8mE3YB9fgwPG50w==
   dependencies:
     "@fastify/static" "7.0.4"
     "@netlify/api" "14.0.4"
     "@netlify/blobs" "10.0.10"
-    "@netlify/build" "35.1.3"
+    "@netlify/build" "35.1.6"
     "@netlify/build-info" "10.0.7"
     "@netlify/config" "24.0.3"
-    "@netlify/dev-utils" "4.1.2"
-    "@netlify/edge-bundler" "14.5.3"
+    "@netlify/dev-utils" "4.1.3"
+    "@netlify/edge-bundler" "14.5.4"
     "@netlify/edge-functions-bootstrap" "2.14.0"
     "@netlify/headers-parser" "9.0.2"
     "@netlify/local-functions-proxy" "2.0.3"
     "@netlify/redirect-parser" "15.0.3"
-    "@netlify/zip-it-and-ship-it" "14.1.5"
+    "@netlify/zip-it-and-ship-it" "14.1.7"
     "@octokit/rest" "21.1.1"
     "@opentelemetry/api" "1.8.0"
     "@pnpm/tabtab" "0.5.4"
@@ -6048,7 +5988,7 @@ netlify@^23.5.0:
     http-proxy "1.18.1"
     http-proxy-middleware "2.0.9"
     https-proxy-agent "7.0.6"
-    inquirer "8.2.6"
+    inquirer "8.2.7"
     inquirer-autocomplete-prompt "1.4.0"
     ipx "3.1.1"
     is-docker "3.0.0"
@@ -6322,11 +6262,6 @@ os-name@^6.0.0:
   dependencies:
     macos-release "^3.3.0"
     windows-release "^6.1.0"
-
-os-tmpdir@~1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
-  integrity sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g==
 
 p-cancelable@^3.0.0:
   version "3.0.0"
@@ -7718,13 +7653,6 @@ tmp-promise@^3.0.2, tmp-promise@^3.0.3:
   integrity sha512-RwM7MoPojPxsOBYnyd2hy0bxtIlVrihNs9pj5SUvY8Zz1sQcQG2tG1hSr8PDxfgEB8RNKDhqbIlroIarSNDNsQ==
   dependencies:
     tmp "^0.2.0"
-
-tmp@^0.0.33:
-  version "0.0.33"
-  resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
-  integrity sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==
-  dependencies:
-    os-tmpdir "~1.0.2"
 
 tmp@^0.2.0:
   version "0.2.5"
