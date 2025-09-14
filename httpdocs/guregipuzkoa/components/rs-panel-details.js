@@ -121,9 +121,10 @@ class PanelDetails extends MyElement {
   }
 
   set data(data) {
+    const caption = data.json.summary.caption || data.json.summary.title
     this.innerHTML = html`
       <span slot="id">${data.id}</span>
-      <span slot="caption">${data.json.summary.caption}</span>
+      <span slot="caption">${caption}</span>
     `
 
     this.download.setAttribute('href', app.project.image(data.id))
