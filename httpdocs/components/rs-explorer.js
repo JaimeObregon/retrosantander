@@ -224,7 +224,7 @@ class Explorer extends MyElement {
 
       const image = event.target
 
-      if (image.constructor.name !== 'Image') {
+      if (image.tagName !== 'rs-image') {
         return
       }
 
