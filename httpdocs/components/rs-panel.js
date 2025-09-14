@@ -193,6 +193,11 @@ class Panel extends MyElement {
         <ul></ul>
       </section>
 
+      <section id="indices">
+        <h2></h2>
+        <ul></ul>
+      </section>
+
       <footer></footer>
     </aside>
   `
@@ -203,13 +208,15 @@ class Panel extends MyElement {
     const exifHeading = this.aside?.querySelector('section#exif h2')
     const facesHeading = this.aside?.querySelector('section#faces h2')
     const objectsHeading = this.aside?.querySelector('section#objects h2')
+    const indicesHeading = this.aside?.querySelector('section#indices h2')
 
     if (
       !detailsHeading ||
       !tagsHeading ||
       !exifHeading ||
       !facesHeading ||
-      !objectsHeading
+      !objectsHeading ||
+      !indicesHeading
     ) {
       return
     }
@@ -217,6 +224,7 @@ class Panel extends MyElement {
     detailsHeading.innerHTML = i18n.get('panel.details')
     tagsHeading.innerHTML = i18n.get('panel.tags')
     exifHeading.innerHTML = i18n.get('panel.exif')
+    indicesHeading.innerHTML = i18n.get('panel.indices')
 
     if (!this.metadata) {
       return
@@ -278,6 +286,12 @@ class Panel extends MyElement {
         eu: 'Exif metadatuak',
         en: 'EXIF metadata',
         fr: 'Métadonnées EXIF',
+      },
+      'panel.indices': {
+        es: 'Aparece también en',
+        eu: 'Honetan ere ageri da',
+        en: 'Also appears in',
+        fr: 'Apparaît aussi dans',
       },
     })
 
@@ -392,7 +406,7 @@ class Panel extends MyElement {
         const positionY = backgroundHeight * face.top
 
         return html`
-          <li style="width: ${containerHeight}px; height: ${containerHeight}px">
+          <li>
             <img
               src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
               data-id="${face.id}"
@@ -413,13 +427,14 @@ class Panel extends MyElement {
     const objectsList = panel.querySelector('section#objects ul')
     const exifList = panel.querySelector('section#exif dl')
     const tagsList = panel.querySelector('section#tags ul')
+    const indicesList = panel.querySelector('section#indices ul')
 
-    if (!objectsList || !exifList || !tagsList) {
+    if (!objectsList || !exifList || !tagsList || !indicesList) {
       return
     }
 
     objectsList.innerHTML = objects
-      .map((object) => `<li data-id="${object.id}">${object.name}</li>`)
+      .map((object) => html`<li data-id="${object.id}">${object.name}</li>`)
       .join(', ')
 
     exifList.innerHTML = Object.entries(json.exif)
@@ -428,16 +443,15 @@ class Panel extends MyElement {
 
     tagsList.innerHTML = tags
       .map((tag) => {
-        return html`
-          <li>
-            <a
-              href="/?q=${tag.name}"
-              title="«${tag.label}» (Confianza: ${tag.confidence} %)"
-              >${tag.name}</a
-            >
-          </li>
-        `
+        const href = `/?q=${tag.label}`
+        const title = `«${tag.label}» (Confianza: ${tag.confidence} %)`
+        const label = tag.label
+        return html`<li><a href="${href}" title="${title}">${label}</a></li>`
       })
+      .join(', ')
+
+    indicesList.innerHTML = json.indices
+      .map((index) => html`<li><a href="">${index}</a></li>`)
       .join(', ')
 
     if (!this.footer) {

@@ -26,6 +26,7 @@ class Explorer extends MyElement {
       flex-grow: 1;
       width: 100%;
       margin: var(--image-gap) 0;
+      user-select: none;
       transition: transform var(--delay-x-large) ease;
 
       &:empty {
@@ -118,6 +119,69 @@ class Explorer extends MyElement {
     if (!this.hr) {
       return
     }
+
+    i18n.push({
+      'explorer.face.male': {
+        es: 'Hombre n.º ${i}, de entre ${min} y ${max} años',
+        eu: '${i}. gizona, ${min} eta ${max} urte bitartekoa',
+        en: 'Man no. ${i}, aged between ${min} and ${max}',
+        fr: 'Homme nº ${i}, âgé de ${min} à ${max} ans',
+      },
+      'explorer.face.female': {
+        es: 'Mujer n.º ${i}, de entre ${min} y ${max} años',
+        eu: '${i}. emakumea, ${min} eta ${max} urte bitartekoa',
+        en: 'Woman no. ${i}, aged between ${min} and ${max}',
+        fr: 'Femme n° ${i}, âgée de ${min} à ${max} ans',
+      },
+      'explorer.emotions.calm': {
+        es: 'Tranquilo',
+        eu: 'Lasai',
+        fr: 'Calme',
+        en: 'Calm',
+      },
+      'explorer.emotions.surprised': {
+        es: 'Sorprendido',
+        eu: 'Harrituta',
+        fr: 'Surpris',
+        en: 'Surprised',
+      },
+      'explorer.emotions.fear': {
+        es: 'Asustado',
+        eu: 'Beldurtuta',
+        fr: 'Effrayé',
+        en: 'Afraid',
+      },
+      'explorer.emotions.sad': {
+        es: 'Triste',
+        eu: 'Triste',
+        fr: 'Triste',
+        en: 'Sad',
+      },
+      'explorer.emotions.disgusted': {
+        es: 'Disgustado',
+        eu: 'Nazkatuta',
+        fr: 'Dégoûté',
+        en: 'Disgusted',
+      },
+      'explorer.emotions.confused': {
+        es: 'Confundido',
+        eu: 'Nahastuta',
+        fr: 'Confus',
+        en: 'Confused',
+      },
+      'explorer.emotions.happy': {
+        es: 'Contento',
+        eu: 'Pozik',
+        fr: 'Heureux',
+        en: 'Happy',
+      },
+      'explorer.emotions.angry': {
+        es: 'Enfadado',
+        eu: 'Haserre',
+        fr: 'En colère',
+        en: 'Angry',
+      },
+    })
 
     const folder = this.getAttribute('folder')
     const id = this.getAttribute('id')
