@@ -143,6 +143,7 @@ class Panel extends MyElement {
               margin: 0;
               font-family: var(--font-mono);
               color: var(--color-highlight);
+              word-break: break-all;
 
               &:not(:last-child) {
                 margin-bottom: var(--space-small);

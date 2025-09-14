@@ -6877,27 +6877,27 @@ const collections = [
   {
     author: 'ARANZADI',
     photographer: 'Fondo NIESSEN - ABB. Desconocido',
-    name: 'niessen',
+    name: 'Niessen',
   },
   {
     author: 'ARANZADI',
     photographer: 'Fondo NIESSEN - IÑAKI ZARRANZ. Desconocido',
-    name: 'niessen',
+    name: 'Niessen',
   },
   {
     author: 'ARANZADI',
     photographer: 'Fondo NIESSEN - JAVIER CANTERA. Desconocido',
-    name: 'niessen',
+    name: 'Niessen',
   },
   {
     author: 'ARANZADI',
     photographer: 'Fondo NIESSEN - ABB. Javier Larrea',
-    name: 'niessen',
+    name: 'Niessen',
   },
   {
     author: 'ARANZADI',
     photographer: 'Fondo NIESSEN - MIKEL LIZARRALDE. Desconocido',
-    name: 'niessen',
+    name: 'Niessen',
   },
   {
     author: 'GipuzkoaKultura',
