@@ -1,6 +1,13 @@
+# Fuente de la verdad para los despliegues en Netlify.
+# Lo aquí configurado prevalece sobre la UI.
+
 [build]
-   command = "yarn run build"
-   publish = "build"
+  command = "yarn run build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Aquí solo las variables de entorno no secretas. Las secretas, en la UI.
 
 [[redirects]]
   from = "/*"
